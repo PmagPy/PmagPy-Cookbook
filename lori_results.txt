@@ -1,0 +1,406 @@
+5.2.1 aarm_magic.py
+      produces reasonable-looking output into a text file, but does not have terminal output as in your example
+
+5.2.4 aniso_magic.py
+      the first example with the dike_anisotropy.txt works, but produces slightly different numbers from yours.
+      the second example does not work, with this error: IndexError: index out of bounds
+
+5.2.6  atrm_magic.py
+       appears to work, but does not log to console as in example
+
+5.2.11 bootams.py
+       works, but output is slightly different than in example
+
+5.2.17 cont_rot.py
+      works, but the single quotes are formatted, so the sequence fails if you copy and paste it into your terminal.
+      I think this is probably minor, but I thought I would pass it on.  I don't think there's an easy way to fix the formatting since it is wrapped in a verbatim section, and it would require new packages in any case.
+
+
+5.2.22 customize_criteria.py
+       works, but does not output to console as in example
+
+
+5.2.58 KLY4s_magic.py
+	example seems to work, but KLY4s_magic_example.dat is in Measurement_Import.  This should probably be noted in the text, or else it is hard to find.
+
+
+5.2.62 MagIC.py Tutorial
+       This is a little confusing to follow.
+       Specific problems:
+       while selecting options for orientation and declination, "Lab arrow azimuth = mag_azimuth; Lab arrow dip=-field_dip(field_dip is hade)" is selected automatically.  It is not noted in the text whether or not this default is correct.  
+      "Select method codes: Check ’FS-FD’ and ’FS-POM’. All the site locations were determined with a GPS."
+       	      there is no code FS-POM
+       "For the AARM data, check the ’ANI’ box and the ’AF’ box and fill in the peak AF (180 mT) and dc field values (50 μT) to the right (bottom panel). Do not try to use the Anisotropy import option because that is only for magnetic susceptibility."
+       	   fill in both dc field values as 50?
+	   
+	   Finally, I got stuck on the "assembling specimens" step:
+	   I "successfully" assembled specimens --
+	   Created fake pmag_specimens.txt file in:  /Users/nebula/Desktop/Magic_files/pmag_specimens.txt
+	   -- but when I try to assemble results it says I need to assemble specimens first.  
+
+
+5.2.75 plot_mapPTS.py
+       doesn't work
+       IOError: [Errno 2] No such file or directory: '/Library/Frameworks/Python.framework/Versions/7.3/lib/python2.7/site-packages/mpl_toolkits/basemap/data/etopo20data.gz'
+
+
+5.2.83 s_eigs.py
+       works, but different output
+
+
+5.2.85 s_hext.py
+       works, but different output
+
+5.2.90 site_edit_magic.py
+       some directions seem off. It isn't clear how to get from the first edit to the second. Also, possibly in the previous exercises I've done something to change around the download_magic directory, but the graphs I get are not very similar to the ones in the text example.
+
+5.2.91 specimens_results_magic.py
+       does not work: bad_file  this is not a valid pmag_specimens file
+       The problem may just be that I was unable to properly execute site_edit_magic.py
+
+5.2.92 stats.py
+       works, but different output than in text
+
+5.2.93 strip_magic.py
+       works, but slightly different output from text (Using Tauxe and Hartl 1997)
+
+5.2.95 thellier_GUI.py
+       maybe note in text that you need to use the same folder as for the MagIC GUI. 
+
+       It is not showing consistently any number for B_anc (when manually interpreting samples) -- it did once, for one of the samples, but I can't get it to update or reproduce that effect with another sample. When I put in a number it has no effect and won't save.  
+
+       "Save current interpretation" seems to have no effect either.  I stopped here in the example because it seemed not to be working correctly.
+
+5.2.96 thellier_magic.py
+       Graphs look different
+       gives this additional output for the second specimen (with bounds given)
+ killed by:
+['specimen_mad', 'specimen_alpha95']
+
+specimen     Tmin  Tmax  N  lab_field  B_anc  b  q  f(coe)  Fvds  beta  MAD  Dang  Drats  Nptrm  Grade  R  MD%  sigma  Gmax 
+
+s2s0-01    0  430 9 40.0 75.5 -1.888  21.3 1.003 0.928 0.031      1.6     1.4     2.6 3 F  0.997 -1 0.059     6.2
+
+
+5.2.97 thellier_magic_redo.py
+       thellier_magic_redo.py example gave this error on my first command:
+       mk_redo.py -f thellier_specimens.txt 
+       Warning: Uneven record lengths detected:
+       ....
+       
+       then this on the second:
+       ValueError: could not convert string to float: 
+
+5.2.101 upload_magic.py
+	this example is confusing.  It's not clear how to edit the er_sites.txt and er_samples.txt, or how to run them to propogate changes.
+
+
+5.2.105 vgmap_magic.py
+	fails
+IOError: [Errno 2] No such file or directory: '/Library/Frameworks/Python.framework/Versions/7.3/lib/python2.7/site-packages/mpl_toolkits/basemap/data/etopo20data.gz'
+
+5.2.106 watsonsF.py
+	fails
+with this command: watsonsF.py -f watsonsF_example_file1.dat -f2 watsonsF_example_file2.dat
+TypeError: fcalc() takes exactly 2 arguments (1 given)
+
+
+5.2.110 zeq_magic_redo.py
+	zeq_specimens.txt does not exist in zeq_magic/  but it is available in a few other places.  I'm not sure when it was supposed to be created, but zeq_magic.py doesn't seem to do it.  
+	this sems to work in the download_magic directory
+
+
+done!!!
+       
+
+no test:
+5.2.18 convert2unix.py
+       no test
+
+5.2.44 foldtest_magic.py
+       no test
+
+5.2.72  plotXY.py
+	no test
+
+5.2.74 plot_magic_keys
+	no test
+
+5.2.100 update_measurements.py
+	no test
+
+
+stuff that works:
+ 
+5.2.2 angle.py
+      works
+
+5.2.3 ani_depthplot.py
+      works
+
+5.2.5 apwp.py
+      works
+
+5.2.7  azdip_magic.py
+       works
+
+5.2.8 b_vdm.py 
+      works
+
+5.2.9 basemap_magic.py
+      works
+
+5.2.10 biplot_magic.py
+       works
+
+5.2.12 cart_dir.py
+       works
+
+5.2.13 chartmaker.py
+       works
+
+5.2.14 chi_magic.py
+       works
+
+5.2.16 common_mean.py
+       works
+
+5.2.19 convert_samples.py
+       works
+
+5.2.20 core_depthplot
+       works
+
+5.2.21 curie.py
+       works
+
+5.2.23 dayplot_magic.py
+       works
+
+5.2.24 di_eq.py 
+       works
+
+5.2.25 di_geo.py
+       works
+
+5.2.26 di_rot.py
+       works
+
+5.2.27 di_tilt.py
+	works
+
+5.2.28 di_vgp.py
+       works
+
+5.2.29 dipole_pinc.py
+       works
+
+5.2.30 dipole_plat.py
+       works
+
+5.2.31 dir_cart.py
+       works
+
+5.2.32 dmag_magic.py
+       works
+
+5.2.33 download_magic.py
+       works
+
+5.2.34 eigs_s.py
+       works
+
+5.2.35 eq_di.py
+       works
+
+
+5.2.36 eqarea.py
+       works, but different output each time
+
+
+5.2.37 eqarea_ell.py
+       works, but different output each time
+
+   
+5.2.38 eqarea_magic.py
+       works
+
+5.2.39 find_EI.py
+       works
+
+5.2.40 fisher_py
+       works
+
+5.2.41 fishqq.py
+       works
+
+5.2.42 fishrot.py
+       works
+
+5.2.43 foldtest.py
+	works
+  
+5.2.45 gaussian.py
+       works (probably)
+
+5.2.46 gobing.py
+       works
+
+5.2.47 gofish.py
+       works
+
+5.2.48 gokent.py
+       works
+
+5.2.49 goprinc.py
+       works
+
+5.2.50 grab_magic_key.py
+       works
+
+5.2.51 histplot.py
+       works
+
+5.2.52 hysteresis_magic
+       works
+
+5.2.53 igrf.py
+       works
+
+5.2.54 incfish.py
+       works
+
+5.2.55 irmaq_magic.py 
+       works, but needs to be reformatted.  there is an inaccurate newline "\" that makes it confusing
+
+5.2.56 k15_magic.py
+       works
+
+5.2.57 k15_s.py
+       works
+
+5.2.59 lnp_magic.py
+       works
+
+5.2.60 lowrie.py
+       works
+
+5.2.61 lowrie_magic.py
+       works
+
+5.2.63 magic_select.py
+       works
+
+5.2.64 make_magic_plots.py
+       works
+
+5.2.65 Measurement Import Scripts
+       2G_bin_magic.py
+		no test
+	AGM_magic.py
+		works
+	CIT_magic.py
+		works
+	HUJI_magic.py
+		no test
+      	LEDO_magic.py
+		works
+	IODP_csv_magic.py
+		works
+	PMD_magic.py
+		works
+	sio_magic.py
+		works, but changed:
+		af_mag_example.dat (in text) should actually be sio_af_example.dat (which is what's in Datafiles)
+	SUFAR4-asc_magic.py
+		works
+	TDT_magic.py
+		works
+
+5.2.66 measurements_normalize.py
+       works
+
+5.2.67 mk_redo.py
+       works
+
+5.2.68 nrm_specimens_magic.py
+       works
+
+5.2.69 orientation_magic.py
+       works
+
+5.2.70 parse_measurements.py
+	works
+	
+5.2.71 pca.py
+	works
+
+5.2.73 plot_cdf.py
+       works
+   
+
+5.2.76 plotdi_a.py
+       works
+
+5.2.77 pmag_results_extract.py
+       works
+
+5.2.78 pt_rot.py
+       works
+
+5.2.79 qqplot.py
+       works, but different output
+
+5.2.80 quick_hyst.py
+       works
+
+5.2.81 revtest.py
+       works
+
+5.2.82 revtest_magic.py
+       works
+
+5.2.84 s_geo.py
+       works
+
+5.2.86 s_tilt.py
+       works
+
+5.2.87 s_magic.py
+       work
+
+5.2.88 scalc.py
+       works
+
+5.2.89 scalc_magic.py
+       works
+
+5.2.94 sundec.py
+       works
+ 
+5.2.96 thellier_magic.py
+	works
+
+5.2.98 tk03.py
+       works
+
+5.2.99 uniform.py
+       works
+
+5.2.102 vdm_b.py
+	works
+
+5.2.103 vector_mean.py
+	works
+
+5.2.104 vgp_di.py
+	works
+
+5.2.107 watsonsV.py
+	works
+
+5.2.108 zeq.py
+	works
+
+5.2.109 zep_magic.py
+	works

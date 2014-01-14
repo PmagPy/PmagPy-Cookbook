@@ -1,0 +1,261 @@
+------------------------
+-I- Start rmag anisrotropy script
+------------------------
+-I- Start calculating AARM tensors specimen su100202a
+-I- Start calculating AARM tensors specimen su100202b
+-I- No aTRM baseline for specimen su100202c
+-E- ERROR: missing atrm data for specimen su100202c
+-E- ERROR: missing atrm data for specimen su100202c
+-W- Warning: no alteration check for specimen su100202c 
+ -I- Found 1 ATRM baselines for specimen su100202d in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100202d 
+ -I- Found 1 ATRM baselines for specimen su100202e in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100202e 
+ -I- Found 1 ATRM baselines for specimen su100301a in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100301a 
+ -I- Found 1 ATRM baselines for specimen su100301b in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100301b 
+ -I- Found 1 ATRM baselines for specimen su100301c in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100301c 
+ -I- Found 1 ATRM baselines for specimen su100301e in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100301e 
+ -I- Found 1 ATRM baselines for specimen su100301f in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100301f 
+ -I- Found 1 ATRM baselines for specimen su100301g in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100301g 
+ -I- Found 1 ATRM baselines for specimen su100301h in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100301h 
+ -I- Start calculating AARM tensors specimen su100301h
+-I- Found 1 ATRM baselines for specimen su100501a in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100501a 
+ -I- Start calculating AARM tensors specimen su100501a
+-I- Found 1 ATRM baselines for specimen su100501b in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100501b 
+ -I- Found 1 ATRM baselines for specimen su100501c in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100501c 
+ -I- Found 1 ATRM baselines for specimen su100501d in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100501d 
+ -I- Start calculating AARM tensors specimen su100501d
+-I- Found 1 ATRM baselines for specimen su100501e in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100501e 
+ -I- Start calculating AARM tensors specimen su100501e
+-I- Found 1 ATRM baselines for specimen su100501f in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100501f 
+ -I- Found 1 ATRM baselines for specimen su100501g in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100501g 
+ -I- Found 1 ATRM baselines for specimen su100501h in Zijderveld block. Averaging measurements
+-E- ERROR: missing atrm data for specimen su100501h
+-W- Warning: no alteration check for specimen su100501h 
+ -I- Found 1 ATRM baselines for specimen su100601a in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100601a 
+ -I- Found 1 ATRM baselines for specimen su100601c in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100601c 
+ -I- Found 1 ATRM baselines for specimen su100601f in Zijderveld block. Averaging measurements
+-E- ERROR: missing atrm data for specimen su100601f
+-W- Warning: no alteration check for specimen su100601f 
+ -I- Start calculating AARM tensors specimen su100601f
+-I- Found 1 ATRM baselines for specimen su100601g in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100601g 
+ -I- Found 1 ATRM baselines for specimen su100901b in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100901b 
+ -I- Found 1 ATRM baselines for specimen su100901c in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100901c 
+ -I- Found 1 ATRM baselines for specimen su100901d in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100901d 
+ -I- Found 1 ATRM baselines for specimen su100901e in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100901e 
+ -I- Found 1 ATRM baselines for specimen su100901f in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100901f 
+ -I- Found 1 ATRM baselines for specimen su100901g in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100901g 
+ -I- Found 1 ATRM baselines for specimen su100901h in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100901h 
+ -I- Found 1 ATRM baselines for specimen su100902a in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100902a 
+ -I- Found 1 ATRM baselines for specimen su100902b in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100902b 
+ -I- Found 1 ATRM baselines for specimen su100902c in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100902c 
+ -I- Found 1 ATRM baselines for specimen su100902d in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100902d 
+ -I- Found 1 ATRM baselines for specimen su100902e in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100902e 
+ -I- Found 1 ATRM baselines for specimen su100902f in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100902f 
+ -I- Found 1 ATRM baselines for specimen su100902g in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100902g 
+ -I- Found 1 ATRM baselines for specimen su100902h in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100902h 
+ -I- Found 1 ATRM baselines for specimen su100902i in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su100902i 
+ -I- Found 1 ATRM baselines for specimen su101001c in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su101001c 
+ -I- Found 1 ATRM baselines for specimen su101001f in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su101001f 
+ -I- Found 1 ATRM baselines for specimen su101001g in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su101001g 
+ -I- Found 1 ATRM baselines for specimen su101201d in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su101201d 
+ -I- Found 1 ATRM baselines for specimen su101201e in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su101201e 
+ -I- Found 1 ATRM baselines for specimen su101201f in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su101201f 
+ -I- Start calculating AARM tensors specimen su101201f
+-I- Found 1 ATRM baselines for specimen su101801a in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su101801a 
+ -I- Found 1 ATRM baselines for specimen su101801b in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su101801b 
+ -I- Found 1 ATRM baselines for specimen su101801c in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su101801c 
+ -I- Found 1 ATRM baselines for specimen su101801d in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su101801d 
+ -I- Found 1 ATRM baselines for specimen su101801e in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su101801e 
+ -I- Found 1 ATRM baselines for specimen su101801f in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su101801f 
+ -I- Found 1 ATRM baselines for specimen su101801g in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su101801g 
+ -I- Found 1 ATRM baselines for specimen su101801h in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su101801h 
+ -I- Found 1 ATRM baselines for specimen su102501a in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su102501a 
+ -I- Found 1 ATRM baselines for specimen su102501b in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su102501b 
+ -I- Found 1 ATRM baselines for specimen su102501c in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su102501c 
+ -I- Found 1 ATRM baselines for specimen su102501g in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su102501g 
+ -I- Found 1 ATRM baselines for specimen su103201b in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su103201b 
+ -I- Found 1 ATRM baselines for specimen su103201c in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su103201c 
+ -I- Start calculating AARM tensors specimen su103201e
+-I- Found 1 ATRM baselines for specimen su105301a in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su105301a 
+ -I- Start calculating AARM tensors specimen su105301a
+-I- Found 1 ATRM baselines for specimen su105301c in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su105301c 
+ -I- Start calculating AARM tensors specimen su105301c
+-I- Found 1 ATRM baselines for specimen su105301f in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su105301f 
+ -I- Start calculating AARM tensors specimen su105301f
+-I- Found 1 ATRM baselines for specimen su105301g in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su105301g 
+ -I- Start calculating AARM tensors specimen su105301g
+-I- No aTRM baseline for specimen su107101a
+-W- Warning: no alteration check for specimen su107101a 
+ -I- No aTRM baseline for specimen su107101b
+-W- Warning: no alteration check for specimen su107101b 
+ -I- Start calculating AARM tensors specimen su107101b
+-I- No aTRM baseline for specimen su107101c
+-W- Warning: no alteration check for specimen su107101c 
+ -I- Found 1 ATRM baselines for specimen su107101h in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su107101h 
+ -I- Found 1 ATRM baselines for specimen su107201a in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su107201a 
+ -I- Found 1 ATRM baselines for specimen su107201b in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su107201b 
+ -I- Found 1 ATRM baselines for specimen su107201d in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su107201d 
+ -I- Found 1 ATRM baselines for specimen su107201e in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su107201e 
+ -I- Start calculating AARM tensors specimen su107201e
+-I- Found 1 ATRM baselines for specimen su107501a in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su107501a 
+ -I- Found 1 ATRM baselines for specimen su107501b in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su107501b 
+ -I- Found 1 ATRM baselines for specimen su107501c in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su107501c 
+ -I- Found 1 ATRM baselines for specimen su107501d in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su107501d 
+ -I- Found 1 ATRM baselines for specimen su107501e in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su107501e 
+ -I- Found 1 ATRM baselines for specimen su107501g in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su107501g 
+ -I- Found 1 ATRM baselines for specimen su109001a in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su109001a 
+ -I- Found 1 ATRM baselines for specimen su109001b in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su109001b 
+ -I- Found 1 ATRM baselines for specimen su109001c in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su109001c 
+ -I- Found 1 ATRM baselines for specimen su109102a in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su109102a 
+ -I- Found 1 ATRM baselines for specimen su109102b in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su109102b 
+ -I- No aTRM baseline for specimen su109302a
+-W- Warning: no alteration check for specimen su109302a 
+ -I- No aTRM baseline for specimen su109302c
+-W- Warning: no alteration check for specimen su109302c 
+ -I- Found 1 ATRM baselines for specimen su109302e in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su109302e 
+ -I- Found 1 ATRM baselines for specimen su109302f in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su109302f 
+ -I- Found 1 ATRM baselines for specimen su109702a in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su109702a 
+ -I- Found 1 ATRM baselines for specimen su109702b in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su109702b 
+ -I- Found 1 ATRM baselines for specimen su109702c in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su109702c 
+ -I- Found 1 ATRM baselines for specimen su109702d in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su109702d 
+ -I- Found 1 ATRM baselines for specimen su109702e in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su109702e 
+ -I- Found 1 ATRM baselines for specimen su109702f in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su109702f 
+ -I- Found 1 ATRM baselines for specimen su109801a in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su109801a 
+ -I- Found 1 ATRM baselines for specimen su110301a in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su110301a 
+ -I- Found 1 ATRM baselines for specimen su110301b in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su110301b 
+ -I- Found 1 ATRM baselines for specimen su110301d in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su110301d 
+ -I- Found 1 ATRM baselines for specimen su110301e in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su110301e 
+ -I- Found 1 ATRM baselines for specimen su110301f in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su110301f 
+ -I- Found 1 ATRM baselines for specimen su110402a in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su110402a 
+ -I- Found 1 ATRM baselines for specimen su110402b in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su110402b 
+ -I- Found 1 ATRM baselines for specimen su110701a in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su110701a 
+ -I- Found 1 ATRM baselines for specimen su110701b in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su110701b 
+ -I- Found 1 ATRM baselines for specimen su110701d in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su110701d 
+ -I- Start calculating AARM tensors specimen su110701d
+-I- Found 1 ATRM baselines for specimen su110701e in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su110701e 
+ -I- Found 1 ATRM baselines for specimen su110701g in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su110701g 
+ -I- Start calculating AARM tensors specimen su110701g
+-I- Found 1 ATRM baselines for specimen su110801a in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su110801a 
+ -I- Found 1 ATRM baselines for specimen su110801b in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su110801b 
+ -I- Found 1 ATRM baselines for specimen su110801c in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su110801c 
+ -I- No aTRM baseline for specimen su111601a
+-W- Warning: no alteration check for specimen su111601a 
+ -I- No aTRM baseline for specimen su111601c
+-W- Warning: no alteration check for specimen su111601c 
+ -I- Found 1 ATRM baselines for specimen su111601g in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su111601g 
+ -I- Found 1 ATRM baselines for specimen su111601h in Zijderveld block. Averaging measurements
+-W- Warning: no alteration check for specimen su111601h 
+ -I- Start calculating AARM tensors specimen su111601h
+-W- WARNING: both aarm and atrm data exist for specimen su100301h. using AARM by default. If you prefer using one of them, delete the other!
+-W- WARNING: both aarm and atrm data exist for specimen su111601h. using AARM by default. If you prefer using one of them, delete the other!
+-W- WARNING: both aarm and atrm data exist for specimen su100501a. using AARM by default. If you prefer using one of them, delete the other!
+-W- WARNING: both aarm and atrm data exist for specimen su100501d. using AARM by default. If you prefer using one of them, delete the other!
+-W- WARNING: both aarm and atrm data exist for specimen su100501e. using AARM by default. If you prefer using one of them, delete the other!
+-W- WARNING: both aarm and atrm data exist for specimen su107101b. using AARM by default. If you prefer using one of them, delete the other!
+-W- WARNING: both aarm and atrm data exist for specimen su101201f. using AARM by default. If you prefer using one of them, delete the other!
+-W- WARNING: both aarm and atrm data exist for specimen su110701d. using AARM by default. If you prefer using one of them, delete the other!
+-W- WARNING: both aarm and atrm data exist for specimen su110701g. using AARM by default. If you prefer using one of them, delete the other!
+-W- WARNING: both aarm and atrm data exist for specimen su105301f. using AARM by default. If you prefer using one of them, delete the other!
+-W- WARNING: both aarm and atrm data exist for specimen su105301g. using AARM by default. If you prefer using one of them, delete the other!
+-W- WARNING: both aarm and atrm data exist for specimen su105301c. using AARM by default. If you prefer using one of them, delete the other!
+-W- WARNING: both aarm and atrm data exist for specimen su105301a. using AARM by default. If you prefer using one of them, delete the other!
+-W- WARNING: both aarm and atrm data exist for specimen su107201e. using AARM by default. If you prefer using one of them, delete the other!

@@ -1,0 +1,3 @@
+tab 	er_sites
+er_citation_name	er_location_name	er_site_name	site_lat	site_lon
+This study	Mamainse Point	MP18	47.1	275.3

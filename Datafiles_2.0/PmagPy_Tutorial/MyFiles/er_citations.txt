@@ -1,0 +1,6 @@
+tab 	er_citations										
+city	publisher	book_title	long_authors	title	journal	citation_type	volume	doi	year	er_citation_name	pages
+			Lawrence, K.P., Tauxe, L., Staudigel, H., Constable, C.G., Koppers, A., McIntosh, W. and Johnson, C.L.	Paleomagnetic Field Properties Near the Southern Hemisphere Tangent Cylinder	Geochemistry, Geophysics, Geosystems	Electronic Journal	10, Q01005	10.1029/2008GC002072	2009	This study	
+			Armstrong, R.L.	K-Ar dating: Late Cenozoic McMurdo Volcanic Group and dry valley glacial history, Victoria Land, Antarctica	New Zealand Journal of Geology and Geophysics	Journal	21		1978	Armstrong 1978	685-698
+			Esser, R.P., Kyle, P.R. and McIntosh, W.C.	40Ar/39Ar dating of the eruptive history of Mount Erebus, Antarctica: Volcano evolution	Bulletin of Volcanology	Journal	66		2004	Esser et al. 2004	671-68
+			Fleck, R.J., Jones, L.M. and Behling, R.E.	K-Ar dates of the McMurdo volcanics and their relation to the glacial history of Wright Valley	Antarctic Journal of the United States	Journal	7		1972	Fleck et al. 1972	244-246

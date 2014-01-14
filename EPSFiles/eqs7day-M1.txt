@@ -1,0 +1,912 @@
+Src	Eqid	Version	Datetime	Lat	Lon	Magnitude	Depth	NST	Region
+ci	10791277	2	"Thursday, September  2, 2010 21:39:33 UTC"	32.8758	-115.5268	1.7	19	12	Southern California
+nc	71449980	0	"Thursday, September  2, 2010 21:34:52 UTC"	35.6953	-120.7907	1.4	2.5	5	Central California
+uw	9022113	0	"Thursday, September  2, 2010 21:13:19 UTC"	45.5203	-122.6595	2.1	6.5	15	"Portland urban area, Oregon"
+ci	10791261	2	"Thursday, September  2, 2010 20:32:04 UTC"	33.8493	-118.4682	2.6	14	51	"Santa Monica Bay, California"
+nc	71449950	0	"Thursday, September  2, 2010 20:30:20 UTC"	38.7618	-122.7422	1	2.3	17	Northern California
+nc	71449945	0	"Thursday, September  2, 2010 20:27:43 UTC"	38.776	-122.711	1.2	4	8	Northern California
+ci	10791253	4	"Thursday, September  2, 2010 19:53:20 UTC"	32.9347	-116.3488	1.2	12.2	35	Southern California
+ci	10791245	6	"Thursday, September  2, 2010 19:51:29 UTC"	32.257	-115.3497	2.5	10	11	"Baja California, Mexico"
+ci	10791237	4	"Thursday, September  2, 2010 19:19:43 UTC"	33.9148	-116.7885	1.2	19.2	44	Southern California
+ci	10791229	4	"Thursday, September  2, 2010 19:04:24 UTC"	33.3752	-116.404	1.1	10.6	40	Southern California
+ak	10075716	1	"Thursday, September  2, 2010 18:53:48 UTC"	62.9769	-149.4445	2.3	99.6	25	Central Alaska
+mb	25732	1	"Thursday, September  2, 2010 18:10:19 UTC"	45.4038	-112.5308	1	1.5	7	western Montana
+ci	10791221	4	"Thursday, September  2, 2010 18:10:00 UTC"	33.9217	-116.8505	1.5	5.5	62	Southern California
+ci	10791213	4	"Thursday, September  2, 2010 18:03:43 UTC"	32.8642	-116.2295	1.7	10.5	48	Southern California
+ci	10791205	4	"Thursday, September  2, 2010 17:47:34 UTC"	32.7302	-115.8752	1.1	5.1	18	Southern California
+nn	316135	7	"Thursday, September  2, 2010 17:44:55 UTC"	38.2365	-118.6452	1.1	7	10	Nevada
+ci	10791197	2	"Thursday, September  2, 2010 17:34:04 UTC"	35.3018	-118.5482	1.2	10	11	Central California
+ci	10791189	5	"Thursday, September  2, 2010 17:23:25 UTC"	32.1372	-115.2232	3.1	10	15	"Baja California, Mexico"
+nc	71449855	1	"Thursday, September  2, 2010 17:17:00 UTC"	36.7545	-121.3535	1.8	14.8	37	Central California
+nc	71449850	1	"Thursday, September  2, 2010 17:05:47 UTC"	37.9715	-122.3502	2.4	5.5	53	"San Francisco Bay area, California"
+ci	10791173	4	"Thursday, September  2, 2010 16:59:24 UTC"	34.3325	-116.931	1.2	0	10	Southern California
+nc	71449845	0	"Thursday, September  2, 2010 16:48:48 UTC"	37.3243	-122.1022	1.8	0.4	11	"San Francisco Bay area, California"
+nc	71449830	7	"Thursday, September  2, 2010 16:35:33 UTC"	37.9617	-122.3473	3.1	5.2	187	"San Francisco Bay area, California"
+hv	60176226	1	"Thursday, September  2, 2010 16:32:13 UTC"	19.491	-155.3972	1.9	7.6	11	"Island of Hawaii, Hawaii"
+us	2010asa6	6	"Thursday, September  2, 2010 16:12:44 UTC"	8.3086	91.7677	4.6	28.5	23	"Nicobar Islands, India region"
+nc	71449820	1	"Thursday, September  2, 2010 16:07:17 UTC"	40.3183	-124.3982	2.7	15.5	9	offshore Northern California
+ci	10791149	2	"Thursday, September  2, 2010 16:04:15 UTC"	33.836	-117.4925	1.4	0	20	"Greater Los Angeles area, California"
+ci	10791133	4	"Thursday, September  2, 2010 15:22:23 UTC"	32.7287	-115.9562	1.7	3.9	24	Southern California
+uu	9021519	2	"Thursday, September  2, 2010 15:19:53 UTC"	40.9982	-111.6223	1.4	5.2	6	Utah
+ci	10791117	4	"Thursday, September  2, 2010 15:12:47 UTC"	34.3095	-116.835	1.1	2.3	20	Southern California
+nn	316112	7	"Thursday, September  2, 2010 15:03:19 UTC"	36.1028	-114.784	1.8	0	13	Nevada
+ak	10075698	1	"Thursday, September  2, 2010 13:40:59 UTC"	65.0406	-148.7491	2.2	8.5	15	northern Alaska
+us	2010asas	6	"Thursday, September  2, 2010 13:28:10 UTC"	-6.7035	-75.963	5	55.3	49	northern Peru
+ci	10791085	3	"Thursday, September  2, 2010 12:57:55 UTC"	32.1447	-115.2022	2.6	10	10	"Baja California, Mexico"
+ci	10791077	2	"Thursday, September  2, 2010 12:54:06 UTC"	32.715	-115.9487	1.4	5.6	20	Southern California
+ci	10791061	5	"Thursday, September  2, 2010 12:46:21 UTC"	32.0827	-115.2148	2.5	10	8	"Baja California, Mexico"
+nc	71449780	1	"Thursday, September  2, 2010 12:45:23 UTC"	38.7968	-122.7635	1.8	1.9	29	Northern California
+hv	60176181	1	"Thursday, September  2, 2010 12:27:19 UTC"	19.5573	-156.2955	2.1	9.3	28	"Hawaii region, Hawaii"
+nc	71449775	0	"Thursday, September  2, 2010 12:22:37 UTC"	36.717	-121.2253	1	7.2	8	Central California
+nc	71449770	0	"Thursday, September  2, 2010 12:20:08 UTC"	38.8882	-123.0028	1.3	5	10	Northern California
+nc	71449765	1	"Thursday, September  2, 2010 12:17:44 UTC"	38.8342	-122.8007	2.1	2.5	37	Northern California
+nc	71449905	2	"Thursday, September  2, 2010 12:05:07 UTC"	40.2888	-121.2063	1.3	3.6	6	Northern California
+ci	10791013	2	"Thursday, September  2, 2010 11:22:37 UTC"	32.665	-115.8255	1.2	5.2	12	Southern California
+ci	10791005	4	"Thursday, September  2, 2010 11:20:28 UTC"	32.5357	-115.6632	1.5	5.6	11	"Baja California, Mexico"
+ak	10075687	1	"Thursday, September  2, 2010 10:44:23 UTC"	61.9869	-149.1216	1.3	33.1	7	Southern Alaska
+ak	10075684	1	"Thursday, September  2, 2010 10:20:37 UTC"	61.508	-140.6653	1.5	0.1	13	"Southern Yukon Territory, Canada"
+ci	10790997	4	"Thursday, September  2, 2010 09:32:28 UTC"	34.0258	-116.8657	1	13.2	48	Southern California
+uu	9020913	2	"Thursday, September  2, 2010 09:13:06 UTC"	41.517	-112.2097	1.1	9.8	27	Utah
+nc	71449725	1	"Thursday, September  2, 2010 09:04:09 UTC"	38.8162	-122.784	1.4	1.9	25	Northern California
+ak	10075681	1	"Thursday, September  2, 2010 08:44:42 UTC"	61.7574	-149.6774	1.4	35.9	9	Southern Alaska
+nc	71449715	0	"Thursday, September  2, 2010 08:24:01 UTC"	38.805	-122.8093	1	2.4	16	Northern California
+ci	10790981	4	"Thursday, September  2, 2010 08:21:35 UTC"	32.1497	-115.4015	2	10	14	"Baja California, Mexico"
+us	2010asan	8	"Thursday, September  2, 2010 08:01:08 UTC"	0.154	97.1747	4.7	35	23	"Nias region, Indonesia"
+nc	71449705	0	"Thursday, September  2, 2010 07:59:15 UTC"	39.3115	-122.8053	2	10.4	13	Northern California
+nc	71449860	2	"Thursday, September  2, 2010 07:15:40 UTC"	37.4222	-118.5818	1	11.5	17	Central California
+nc	71449700	1	"Thursday, September  2, 2010 07:13:44 UTC"	38.8282	-122.797	2.5	2.6	58	Northern California
+ci	10790965	2	"Thursday, September  2, 2010 07:08:34 UTC"	32.2293	-115.3308	1.8	10	7	"Baja California, Mexico"
+us	2010asam	6	"Thursday, September  2, 2010 07:08:05 UTC"	52.136	142.1509	4.8	43.5	162	"Sakhalin, Russia"
+us	2010asak	7	"Thursday, September  2, 2010 06:57:42 UTC"	22.4642	143.0492	4.7	120.9	60	"Volcano Islands, Japan region"
+ak	10075670	1	"Thursday, September  2, 2010 06:47:36 UTC"	61.6527	-150.6358	1.7	0	16	Southern Alaska
+ci	10790957	4	"Thursday, September  2, 2010 06:41:01 UTC"	32.7242	-115.9582	1.5	4.1	23	Southern California
+ci	10790949	4	"Thursday, September  2, 2010 06:39:35 UTC"	32.721	-115.9573	1.4	4.1	23	Southern California
+ci	10790941	4	"Thursday, September  2, 2010 06:24:55 UTC"	33.9125	-118.2877	1.9	16.4	37	"Greater Los Angeles area, California"
+ci	10790933	4	"Thursday, September  2, 2010 05:42:34 UTC"	34.0497	-118.9757	2	8	16	"Channel Islands region, California"
+nn	316102	7	"Thursday, September  2, 2010 05:39:41 UTC"	38.3627	-115.0723	1.6	7.4	4	Nevada
+ci	10790909	2	"Thursday, September  2, 2010 05:13:18 UTC"	34.8427	-120.5133	1.7	2.2	19	Central California
+ak	10075660	1	"Thursday, September  2, 2010 05:03:40 UTC"	60.1996	-151.7026	1.8	59.5	19	"Kenai Peninsula, Alaska"
+ak	10075659	2	"Thursday, September  2, 2010 05:02:08 UTC"	63.9335	-148.7653	1.4	2.6	15	Central Alaska
+uw	9020448	1	"Thursday, September  2, 2010 04:48:39 UTC"	46.636	-122.4953	1.2	17.5	18	Washington
+ci	10790893	4	"Thursday, September  2, 2010 04:07:14 UTC"	33.352	-116.3078	1	11.4	35	Southern California
+nc	71449640	2	"Thursday, September  2, 2010 03:52:48 UTC"	37.3253	-118.6555	1	15.9	18	Central California
+ak	10075655	2	"Thursday, September  2, 2010 03:45:29 UTC"	59.7917	-154.5309	2.3	116.9	9	Southern Alaska
+ak	10075656	2	"Thursday, September  2, 2010 03:43:55 UTC"	51.0703	-178.41	2.1	13.2	6	"Andreanof Islands, Aleutian Islands, Alaska"
+nc	71449630	2	"Thursday, September  2, 2010 03:06:59 UTC"	37.4713	-118.8423	1.1	7.7	19	Central California
+nn	316118	7	"Thursday, September  2, 2010 03:06:22 UTC"	36.1	-114.8255	1.9	9.5	8	Nevada
+ci	10790861	4	"Thursday, September  2, 2010 02:34:20 UTC"	32.916	-116.2427	1.2	6.9	43	Southern California
+pr	10245000	0	"Thursday, September  2, 2010 01:46:33 UTC"	18.0079	-64.347	3.3	24.8	6	Virgin Islands region
+ci	10790845	3	"Thursday, September  2, 2010 01:40:28 UTC"	32.0733	-115.122	1.9	10	5	"Baja California, Mexico"
+ci	10790837	2	"Thursday, September  2, 2010 01:18:46 UTC"	32.2197	-115.2907	2.4	10	10	"Baja California, Mexico"
+ci	10790829	4	"Thursday, September  2, 2010 01:10:34 UTC"	33.154	-116.0035	2.6	12	104	Southern California
+nc	71449600	0	"Thursday, September  2, 2010 01:09:44 UTC"	38.7685	-122.707	1.1	2.4	13	Northern California
+nc	71449595	0	"Thursday, September  2, 2010 01:08:03 UTC"	38.769	-122.71	1.3	2.2	16	Northern California
+us	2010asaf	6	"Thursday, September  2, 2010 00:57:19 UTC"	2.4346	95.9613	4.8	13.2	35	"Simeulue, Indonesia"
+ci	10790813	2	"Thursday, September  2, 2010 00:47:43 UTC"	32.503	-115.642	1.9	5.7	18	"Baja California, Mexico"
+nc	71449580	3	"Thursday, September  2, 2010 00:33:38 UTC"	38.772	-122.713	2.1	2.2	49	Northern California
+ci	10790797	4	"Thursday, September  2, 2010 00:17:28 UTC"	33.7423	-117.474	1.4	9.1	34	Southern California
+us	2010asac	6	"Thursday, September  2, 2010 00:16:40 UTC"	12.7594	92.6421	5.1	30.1	40	"Andaman Islands, India region"
+uw	9020011	1	"Thursday, September  2, 2010 00:11:25 UTC"	46.4889	-122.4048	1	21.4	15	Washington
+uu	9012327	2	"Wednesday, September  1, 2010 23:27:53 UTC"	44.634	-110.3445	1.2	2.2	19	"Yellowstone National Park, Wyoming"
+ci	10790789	4	"Wednesday, September  1, 2010 23:10:25 UTC"	34.0115	-117.1965	1.2	9.3	47	"Greater Los Angeles area, California"
+nc	71449570	0	"Wednesday, September  1, 2010 23:08:54 UTC"	36.497	-121.0733	1.6	3.7	14	Central California
+uw	9012250	1	"Wednesday, September  1, 2010 22:50:07 UTC"	47.8576	-122.7389	1.6	19.9	25	"Puget Sound region, Washington"
+hv	60176061	1	"Wednesday, September  1, 2010 22:47:26 UTC"	19.3255	-155.1455	2.4	5.5	37	"Island of Hawaii, Hawaii"
+ci	10790781	4	"Wednesday, September  1, 2010 22:44:26 UTC"	32.9182	-116.2383	1	7.7	28	Southern California
+nc	71449565	0	"Wednesday, September  1, 2010 22:26:51 UTC"	38.7987	-122.7368	1.2	1.1	10	Northern California
+ak	10075552	1	"Wednesday, September  1, 2010 21:39:23 UTC"	59.9362	-152.3578	1.6	46.8	10	Southern Alaska
+us	2010arci	6	"Wednesday, September  1, 2010 21:37:15 UTC"	-17.6395	-178.417	4.8	536.3	48	Fiji region
+ci	10790757	4	"Wednesday, September  1, 2010 20:21:12 UTC"	32.5148	-115.6465	2.7	5.6	28	"Baja California, Mexico"
+uu	9012016	2	"Wednesday, September  1, 2010 20:16:26 UTC"	44.0705	-110.693	1.1	6.8	8	Wyoming
+uw	9012014	1	"Wednesday, September  1, 2010 20:14:19 UTC"	46.8723	-121.7388	1.1	1.3	8	"Mount Rainier area, Washington"
+ak	10075544	1	"Wednesday, September  1, 2010 19:44:31 UTC"	60.7036	-152.0047	2.3	91.9	29	Southern Alaska
+ak	10075542	2	"Wednesday, September  1, 2010 19:40:56 UTC"	61.4226	-141.1568	1.8	13.9	11	Southern Alaska
+nc	71449520	0	"Wednesday, September  1, 2010 19:29:09 UTC"	38.8052	-122.7978	1.4	3.1	22	Northern California
+nc	71449505	6	"Wednesday, September  1, 2010 19:27:33 UTC"	38.8055	-122.7982	2.4	3.4	61	Northern California
+nc	71449485	0	"Wednesday, September  1, 2010 19:02:58 UTC"	38.812	-122.7428	1.3	2.3	23	Northern California
+ci	10790725	6	"Wednesday, September  1, 2010 18:52:50 UTC"	34.2843	-116.9435	1.1	8.2	11	Southern California
+ci	10790717	4	"Wednesday, September  1, 2010 18:37:38 UTC"	33.8515	-117.7887	1.8	8	33	"Greater Los Angeles area, California"
+mb	25727	1	"Wednesday, September  1, 2010 18:11:25 UTC"	44.7686	-112.7943	1.2	7.1	6	western Montana
+ci	10790701	4	"Wednesday, September  1, 2010 17:58:13 UTC"	32.2415	-115.2875	2.2	10	13	"Baja California, Mexico"
+ak	10075459	1	"Wednesday, September  1, 2010 17:55:17 UTC"	63.5926	-150.7766	1.5	0	8	Central Alaska
+ci	10790693	2	"Wednesday, September  1, 2010 17:49:16 UTC"	32.5052	-115.651	1.8	7	15	"Baja California, Mexico"
+uw	9011740	1	"Wednesday, September  1, 2010 17:40:32 UTC"	48.2566	-124.3973	1	10.6	8	"Olympic Peninsula, Washington"
+ci	10790685	2	"Wednesday, September  1, 2010 17:36:06 UTC"	32.5368	-115.6502	1.5	7	16	"Baja California, Mexico"
+ci	10790677	4	"Wednesday, September  1, 2010 17:32:28 UTC"	32.1982	-115.278	2.3	10	9	"Baja California, Mexico"
+nn	316071	7	"Wednesday, September  1, 2010 17:32:03 UTC"	36.0253	-114.7292	1.9	0.1	12	Nevada
+nc	71449470	0	"Wednesday, September  1, 2010 17:22:23 UTC"	38.736	-122.664	1.4	0	8	Northern California
+ci	10790669	6	"Wednesday, September  1, 2010 17:19:13 UTC"	32.6578	-115.9112	2.7	7	30	Southern California
+ak	10075456	1	"Wednesday, September  1, 2010 17:02:58 UTC"	60.6459	-142.5428	1.5	0.1	18	Southern Alaska
+ci	10790661	4	"Wednesday, September  1, 2010 17:00:04 UTC"	33.972	-118.3573	2	10.6	30	"Greater Los Angeles area, California"
+uw	9011655	1	"Wednesday, September  1, 2010 16:55:49 UTC"	48.5278	-121.6849	1	15.8	4	Washington
+ci	10790637	6	"Wednesday, September  1, 2010 16:54:38 UTC"	32.6887	-115.8908	1.4	4.6	18	Southern California
+ci	10790645	5	"Wednesday, September  1, 2010 16:52:34 UTC"	32.4097	-115.4312	1.8	10	9	"Baja California, Mexico"
+us	2010arby	Q	"Wednesday, September  1, 2010 16:42:29 UTC"	-4.7615	102.009	4.4	54.2	14	"southern Sumatra, Indonesia"
+ak	10075454	1	"Wednesday, September  1, 2010 16:38:08 UTC"	60.8124	-146.8197	1.7	20.8	18	Southern Alaska
+ak	10075452	1	"Wednesday, September  1, 2010 16:33:51 UTC"	63.186	-149.2159	1.5	85.3	12	Central Alaska
+hv	60176016	1	"Wednesday, September  1, 2010 16:07:28 UTC"	19.3268	-154.8802	2.4	41.7	44	"Hawaii region, Hawaii"
+nc	71449430	0	"Wednesday, September  1, 2010 16:05:49 UTC"	38.8393	-122.829	1.3	2.8	16	Northern California
+ci	10790629	4	"Wednesday, September  1, 2010 15:40:13 UTC"	32.6772	-115.8542	1.5	5.4	19	Southern California
+ci	10790621	4	"Wednesday, September  1, 2010 15:39:15 UTC"	32.6797	-115.8802	1	6.8	15	Southern California
+nn	316063	7	"Wednesday, September  1, 2010 15:09:24 UTC"	36.1163	-114.8227	1.8	0	13	Nevada
+us	2010arbw	Q	"Wednesday, September  1, 2010 14:34:40 UTC"	-17.9861	167.4552	4.8	35	13	Vanuatu
+ak	10075450	2	"Wednesday, September  1, 2010 14:12:12 UTC"	52.8543	-167.3707	2.2	25.7	11	"Fox Islands, Aleutian Islands, Alaska"
+ci	10790589	2	"Wednesday, September  1, 2010 14:04:34 UTC"	32.0675	-115.0883	2.3	10	6	"Baja California, Mexico"
+ak	10075448	2	"Wednesday, September  1, 2010 14:04:22 UTC"	52.6752	-169.428	2.7	3	11	"Fox Islands, Aleutian Islands, Alaska"
+ci	10790581	4	"Wednesday, September  1, 2010 14:02:40 UTC"	32.6092	-115.738	1.8	2.6	18	"Baja California, Mexico"
+ci	10790573	6	"Wednesday, September  1, 2010 13:40:33 UTC"	33.2855	-116.2423	1.1	5.5	42	Southern California
+uu	9011333	2	"Wednesday, September  1, 2010 13:33:02 UTC"	39.7192	-110.6148	1.8	4.6	28	Utah
+ci	10790557	2	"Wednesday, September  1, 2010 13:06:44 UTC"	33.159	-115.6285	1.1	0.1	14	Southern California
+ak	10075445	1	"Wednesday, September  1, 2010 13:02:13 UTC"	62.5936	-151.1318	1.9	75.8	18	Central Alaska
+ci	10790541	4	"Wednesday, September  1, 2010 13:01:47 UTC"	32.9168	-116.2458	1.5	7.3	37	Southern California
+ci	10790533	4	"Wednesday, September  1, 2010 12:49:33 UTC"	33.5098	-116.4487	1.4	7.6	46	Southern California
+nc	71449395	0	"Wednesday, September  1, 2010 12:47:48 UTC"	38.7882	-122.7432	1.4	2.1	20	Northern California
+nc	71449390	0	"Wednesday, September  1, 2010 12:31:52 UTC"	38.7982	-122.7365	1.1	0	12	Northern California
+ci	10790525	2	"Wednesday, September  1, 2010 12:25:25 UTC"	32.2855	-115.3182	2.1	10	12	"Baja California, Mexico"
+us	2010ara7	6	"Wednesday, September  1, 2010 12:24:50 UTC"	-6.1093	147.616	4.7	66.8	12	"eastern New Guinea region, Papua New Guinea"
+ak	10075442	2	"Wednesday, September  1, 2010 12:22:45 UTC"	51.8699	-173.4245	2.6	54.4	7	"Andreanof Islands, Aleutian Islands, Alaska"
+ci	10790517	4	"Wednesday, September  1, 2010 12:15:34 UTC"	33.4462	-116.5857	1.7	10.2	69	Southern California
+nc	71449385	0	"Wednesday, September  1, 2010 11:59:12 UTC"	38.8253	-122.8033	1	2.7	17	Northern California
+nc	71449375	2	"Wednesday, September  1, 2010 11:53:09 UTC"	38.0747	-118.9633	1.5	2.3	20	Central California
+ak	10075441	2	"Wednesday, September  1, 2010 11:43:05 UTC"	63.4576	-146.5544	1.2	25.1	8	Central Alaska
+nc	71449360	0	"Wednesday, September  1, 2010 11:35:47 UTC"	38.8147	-122.7847	1.1	1.3	14	Northern California
+us	2010ara6	6	"Wednesday, September  1, 2010 11:13:49 UTC"	2.6849	95.4612	4.4	27.4	21	"Simeulue, Indonesia"
+nc	71449345	1	"Wednesday, September  1, 2010 11:05:39 UTC"	36.8593	-121.5928	1.5	5.3	24	Central California
+ci	10790501	4	"Wednesday, September  1, 2010 11:00:56 UTC"	33.8345	-116.9103	1.5	13.2	61	Southern California
+pr	10244002	0	"Wednesday, September  1, 2010 10:40:43 UTC"	18.1949	-68.5699	3.2	125.9	10	"Mona Passage, Dominican Republic"
+ak	10075436	1	"Wednesday, September  1, 2010 10:28:33 UTC"	60.5078	-149.3396	1.7	1.4	17	"Kenai Peninsula, Alaska"
+ak	10075432	1	"Wednesday, September  1, 2010 09:06:31 UTC"	60.3762	-147.7503	2	16.3	17	Southern Alaska
+nc	71449325	3	"Wednesday, September  1, 2010 08:56:06 UTC"	35.997	-120.5568	2.1	10.8	61	Central California
+ak	10075429	1	"Wednesday, September  1, 2010 08:56:00 UTC"	62.1	-148.3359	2.1	29.2	29	Central Alaska
+hv	60175971	1	"Wednesday, September  1, 2010 07:57:14 UTC"	19.3912	-155.457	1.8	8.5	43	"Island of Hawaii, Hawaii"
+nc	71449305	0	"Wednesday, September  1, 2010 07:39:35 UTC"	39.311	-122.8058	1.8	10.4	7	Northern California
+ci	10790461	4	"Wednesday, September  1, 2010 07:37:23 UTC"	32.679	-115.8357	1.1	5	20	Southern California
+ci	10790453	4	"Wednesday, September  1, 2010 07:36:01 UTC"	32.6783	-115.8773	1.3	8	29	Southern California
+us	2010arat	6	"Wednesday, September  1, 2010 07:32:53 UTC"	37.9697	141.7565	5	38.4	65	"near the east coast of Honshu, Japan"
+nm	hnw0901b	A	"Wednesday, September  1, 2010 07:27:13 UTC"	35.3276	-92.3572	1.1	4.7	3	Arkansas
+nm	hnw0901a	A	"Wednesday, September  1, 2010 07:26:33 UTC"	35.33	-92.34	1	4.2	5	Arkansas
+ak	10075421	1	"Wednesday, September  1, 2010 07:02:24 UTC"	60.1967	-152.5528	1.7	91.8	13	Southern Alaska
+nc	71449300	0	"Wednesday, September  1, 2010 06:51:38 UTC"	36.8558	-121.592	1	5	15	Central California
+ak	10075416	2	"Wednesday, September  1, 2010 06:02:12 UTC"	52.666	-169.1419	2	1.4	6	"Fox Islands, Aleutian Islands, Alaska"
+nc	71449285	2	"Wednesday, September  1, 2010 06:02:03 UTC"	37.3228	-118.6528	1.1	16.4	15	Central California
+nc	71449280	5	"Wednesday, September  1, 2010 05:58:35 UTC"	36.857	-121.5953	3.2	6.8	88	Central California
+ak	10075414	2	"Wednesday, September  1, 2010 05:47:48 UTC"	52.7788	-169.5397	2.7	2.9	10	"Fox Islands, Aleutian Islands, Alaska"
+pr	10244001	0	"Wednesday, September  1, 2010 05:41:37 UTC"	18.5499	-68.6409	4.2	163	18	Dominican Republic
+ak	10075412	1	"Wednesday, September  1, 2010 05:09:59 UTC"	62.5809	-151.1661	2.1	84.3	22	Central Alaska
+nc	71449265	3	"Wednesday, September  1, 2010 04:46:16 UTC"	35.5385	-120.7615	2.2	1.6	72	Central California
+nc	71449260	0	"Wednesday, September  1, 2010 04:40:30 UTC"	38.82	-122.8472	1.2	0.6	14	Northern California
+nc	71449255	0	"Wednesday, September  1, 2010 04:34:43 UTC"	38.8208	-122.8447	1.5	0	15	Northern California
+ak	10075408	1	"Wednesday, September  1, 2010 04:28:49 UTC"	61.5987	-146.4465	2.1	27.3	30	Southern Alaska
+ak	10075405	2	"Wednesday, September  1, 2010 03:38:14 UTC"	59.9949	-152.1092	1.7	73.9	12	Southern Alaska
+ci	10790389	4	"Wednesday, September  1, 2010 03:31:54 UTC"	32.6773	-115.8208	1.4	7	20	Southern California
+ci	10790373	4	"Wednesday, September  1, 2010 03:13:48 UTC"	32.2762	-115.3292	1.9	10	11	"Baja California, Mexico"
+ci	10790381	2	"Wednesday, September  1, 2010 03:12:22 UTC"	32.5953	-115.8088	1.4	5.7	15	"Baja California, Mexico"
+ak	10075402	1	"Wednesday, September  1, 2010 03:10:09 UTC"	61.3658	-141.2019	1	35.1	8	Southern Alaska
+us	2010arak	6	"Wednesday, September  1, 2010 02:57:38 UTC"	12.8675	142.9642	4.9	157.3	132	Mariana Islands region
+ci	10790357	4	"Wednesday, September  1, 2010 02:35:22 UTC"	36.0078	-117.4107	1.5	7.2	17	Central California
+pr	10244000	0	"Wednesday, September  1, 2010 02:21:30 UTC"	18.666	-65.178	3.1	30.9	7	Puerto Rico region
+uu	9010208	2	"Wednesday, September  1, 2010 02:08:52 UTC"	39.7052	-111.2328	1.5	1.7	20	Utah
+ak	10075398	2	"Wednesday, September  1, 2010 01:59:00 UTC"	52.6226	-169.4069	2.5	5.7	6	"Fox Islands, Aleutian Islands, Alaska"
+ak	10075397	2	"Wednesday, September  1, 2010 01:53:18 UTC"	52.6536	-169.5096	1.9	6.7	5	"Fox Islands, Aleutian Islands, Alaska"
+ak	10075395	1	"Wednesday, September  1, 2010 01:51:27 UTC"	62.6819	-149.7908	2.2	34.2	21	Central Alaska
+us	2010arai	6	"Wednesday, September  1, 2010 01:46:21 UTC"	-6.8772	150.2424	5.1	40.3	49	"New Britain region, Papua New Guinea"
+ak	10075394	2	"Wednesday, September  1, 2010 01:29:19 UTC"	56.6262	-170.7605	3.3	30.8	7	"Pribilof Islands, Alaska region"
+nc	71449220	B	"Wednesday, September  1, 2010 01:26:55 UTC"	37.9865	-122.0675	3	15.6	140	"San Francisco Bay area, California"
+nc	71449215	0	"Wednesday, September  1, 2010 00:56:40 UTC"	38.8143	-122.8123	1.6	2.8	13	Northern California
+us	2010arag	7	"Wednesday, September  1, 2010 00:46:30 UTC"	35.633	-97.2057	3.1	5	13	Oklahoma
+ci	10790349	4	"Wednesday, September  1, 2010 00:42:00 UTC"	32.7553	-115.8703	2.2	6.3	39	Southern California
+ci	10790341	4	"Tuesday, August 31, 2010 23:27:12 UTC"	33.325	-116.384	1.2	8.8	39	Southern California
+ci	10790333	2	"Tuesday, August 31, 2010 23:19:42 UTC"	35.0402	-117.6743	1.4	0	13	Southern California
+ak	10075381	1	"Tuesday, August 31, 2010 23:01:19 UTC"	64.9059	-147.4414	1.1	6.8	8	Central Alaska
+nc	71449170	1	"Tuesday, August 31, 2010 22:35:06 UTC"	37.4767	-121.8048	1.9	7.3	38	"San Francisco Bay area, California"
+ci	10790293	4	"Tuesday, August 31, 2010 22:28:33 UTC"	32.7228	-115.9495	1.2	3.9	17	Southern California
+ci	10790253	4	"Tuesday, August 31, 2010 22:00:42 UTC"	32.7207	-115.9587	1.5	3.7	29	Southern California
+ak	10075281	2	"Tuesday, August 31, 2010 21:57:27 UTC"	51.4926	179.3866	2.7	60.8	12	"Rat Islands, Aleutian Islands, Alaska"
+ci	10790245	4	"Tuesday, August 31, 2010 21:55:27 UTC"	35.7837	-117.6412	1	0	6	Southern California
+nc	71449140	0	"Tuesday, August 31, 2010 21:24:38 UTC"	36.5455	-121.1037	1.2	7.9	9	Central California
+us	2010aqck	6	"Tuesday, August 31, 2010 21:16:01 UTC"	13.7384	144.9174	5	124.8	140	Guam region
+ci	10790205	4	"Tuesday, August 31, 2010 21:12:21 UTC"	32.6338	-115.7465	1.5	2.9	15	"Baja California, Mexico"
+ak	10075273	2	"Tuesday, August 31, 2010 21:09:43 UTC"	52.6456	-169.2577	2.1	6.8	7	"Fox Islands, Aleutian Islands, Alaska"
+ci	10790181	2	"Tuesday, August 31, 2010 20:51:57 UTC"	32.3365	-115.4278	2.1	10	10	"Baja California, Mexico"
+us	2010aqcj	8	"Tuesday, August 31, 2010 20:47:46 UTC"	-3.588	127.4183	5	53.1	73	"Seram, Indonesia"
+ak	10075272	2	"Tuesday, August 31, 2010 20:34:52 UTC"	52.6205	-169.2222	2.4	16.1	7	"Fox Islands, Aleutian Islands, Alaska"
+ci	10790173	2	"Tuesday, August 31, 2010 20:21:33 UTC"	32.2768	-115.395	2.2	10	11	"Baja California, Mexico"
+nc	71449135	0	"Tuesday, August 31, 2010 19:55:27 UTC"	38.7922	-122.7468	1.2	1.7	11	Northern California
+ak	10075268	1	"Tuesday, August 31, 2010 19:44:10 UTC"	61.5099	-146.4695	1.7	19.8	14	Southern Alaska
+nc	71449155	2	"Tuesday, August 31, 2010 19:17:01 UTC"	37.6927	-119.3898	1.2	22.6	15	Central California
+ci	36045759	2	"Tuesday, August 31, 2010 19:12:38 UTC"	32.6222	-115.7462	1.3	0.3	9	"Baja California, Mexico"
+ci	10790125	4	"Tuesday, August 31, 2010 19:12:31 UTC"	33.2712	-116.3348	1.3	12.9	37	Southern California
+ak	10075264	2	"Tuesday, August 31, 2010 18:23:16 UTC"	52.6741	-169.4035	2.4	6.5	6	"Fox Islands, Aleutian Islands, Alaska"
+ci	10790109	4	"Tuesday, August 31, 2010 18:19:50 UTC"	34.1427	-116.4232	1.5	4.6	30	Southern California
+ci	10790101	4	"Tuesday, August 31, 2010 18:17:37 UTC"	33.4882	-116.541	1.1	11.8	43	Southern California
+us	2010aqby	A	"Tuesday, August 31, 2010 18:00:30 UTC"	41.8	-87.856	2.7	0	3	Illinois
+ci	10790077	4	"Tuesday, August 31, 2010 17:56:37 UTC"	32.7548	-115.84	1.1	4	17	Southern California
+uw	8311733	1	"Tuesday, August 31, 2010 17:33:57 UTC"	47.3591	-122.7568	2.1	18.4	20	"Puget Sound region, Washington"
+nn	316009	7	"Tuesday, August 31, 2010 17:27:57 UTC"	36.1553	-114.8113	1.9	0	10	Nevada
+ci	10790045	2	"Tuesday, August 31, 2010 16:57:49 UTC"	32.6633	-115.9053	2	7.7	15	Southern California
+ci	10790037	2	"Tuesday, August 31, 2010 16:44:41 UTC"	34.3043	-116.4413	1.3	8.7	23	Southern California
+nc	71449105	2	"Tuesday, August 31, 2010 16:32:10 UTC"	37.994	-118.6028	1.2	4.8	13	Central California
+ak	10075249	1	"Tuesday, August 31, 2010 15:46:13 UTC"	60.9486	-151.1969	1.3	19.9	8	"Kenai Peninsula, Alaska"
+ak	10075250	2	"Tuesday, August 31, 2010 15:44:17 UTC"	51.6968	-179.8215	2.4	102.4	9	"Andreanof Islands, Aleutian Islands, Alaska"
+ci	10789981	4	"Tuesday, August 31, 2010 15:40:23 UTC"	32.1773	-115.3003	2.3	12.7	14	"Baja California, Mexico"
+ci	10789957	2	"Tuesday, August 31, 2010 15:16:33 UTC"	32.229	-115.2927	2.2	10	7	"Baja California, Mexico"
+ak	10075243	2	"Tuesday, August 31, 2010 14:43:28 UTC"	52.7434	-169.2734	1.7	6.8	6	"Fox Islands, Aleutian Islands, Alaska"
+ak	10075240	2	"Tuesday, August 31, 2010 14:06:54 UTC"	59.3634	-152.7725	1.9	70.9	12	Southern Alaska
+ci	10789933	4	"Tuesday, August 31, 2010 14:05:22 UTC"	32.6155	-115.6678	1.6	12.6	20	"Baja California, Mexico"
+ak	10075236	2	"Tuesday, August 31, 2010 13:58:40 UTC"	59.9243	-153.6736	2.3	148.7	24	Southern Alaska
+ci	10789925	4	"Tuesday, August 31, 2010 13:55:29 UTC"	34.0418	-117.2405	1	15.3	32	"Greater Los Angeles area, California"
+nm	hnw0831b	A	"Tuesday, August 31, 2010 13:38:23 UTC"	35.2628	-92.2067	1.7	5.1	5	Arkansas
+nc	71448995	0	"Tuesday, August 31, 2010 13:20:23 UTC"	35.4502	-120.7735	1.4	8.6	9	Central California
+ci	10789917	4	"Tuesday, August 31, 2010 13:16:34 UTC"	36.2223	-117.5677	1	3.7	9	Central California
+nc	71448990	0	"Tuesday, August 31, 2010 13:02:14 UTC"	38.8452	-122.8235	1.3	1.1	13	Northern California
+nc	71448985	0	"Tuesday, August 31, 2010 13:00:53 UTC"	38.8488	-122.8292	1.4	0	11	Northern California
+nc	71448980	0	"Tuesday, August 31, 2010 12:37:32 UTC"	36.008	-120.5918	1.2	0	9	Central California
+ci	10789893	4	"Tuesday, August 31, 2010 12:28:11 UTC"	32.3508	-115.5802	2.5	5.9	13	"Baja California, Mexico"
+nc	71448975	0	"Tuesday, August 31, 2010 12:08:30 UTC"	38.8257	-122.7942	1.1	2.6	15	Northern California
+nc	71448970	0	"Tuesday, August 31, 2010 12:04:41 UTC"	38.7787	-122.7567	1.1	1.4	10	Northern California
+nn	315996	7	"Tuesday, August 31, 2010 11:24:46 UTC"	37.4443	-117.5284	1	11.8	8	Nevada
+nc	71448955	0	"Tuesday, August 31, 2010 11:22:55 UTC"	38.8353	-122.8038	1	1.7	12	Northern California
+ak	10075229	1	"Tuesday, August 31, 2010 11:00:22 UTC"	61.3592	-152.4723	1.4	140.9	8	Southern Alaska
+nc	71448935	0	"Tuesday, August 31, 2010 10:34:15 UTC"	38.8132	-122.7915	1.2	3.1	15	Northern California
+ak	10075225	2	"Tuesday, August 31, 2010 10:00:43 UTC"	61.679	-146.3228	2	86.3	5	Southern Alaska
+nc	71448930	0	"Tuesday, August 31, 2010 09:54:00 UTC"	37.3542	-121.716	1.2	9	9	Northern California
+ci	10789853	2	"Tuesday, August 31, 2010 09:40:06 UTC"	32.217	-115.3043	2.3	10	9	"Baja California, Mexico"
+ci	10789845	4	"Tuesday, August 31, 2010 09:32:46 UTC"	32.2283	-115.295	3.1	10	14	"Baja California, Mexico"
+ak	10075222	2	"Tuesday, August 31, 2010 09:18:36 UTC"	52.629	-169.53	3.1	5	8	"Fox Islands, Aleutian Islands, Alaska"
+ci	10789837	2	"Tuesday, August 31, 2010 09:04:19 UTC"	32.1377	-115.2987	2.3	10	9	"Baja California, Mexico"
+ci	10789829	4	"Tuesday, August 31, 2010 08:58:21 UTC"	32.6722	-115.8265	1.5	5.2	26	Southern California
+ci	10789821	2	"Tuesday, August 31, 2010 08:47:59 UTC"	32.1467	-115.2965	2.1	10	7	"Baja California, Mexico"
+nc	71448905	0	"Tuesday, August 31, 2010 08:35:13 UTC"	36.2645	-120.3292	1.4	13.4	8	Central California
+ak	10075217	1	"Tuesday, August 31, 2010 08:33:14 UTC"	61.2808	-152.4144	2.1	4.6	19	Southern Alaska
+ci	10789797	5	"Tuesday, August 31, 2010 08:22:29 UTC"	34.2255	-119.5167	2.9	11.8	29	"Santa Barbara Channel, California"
+ak	10075209	2	"Tuesday, August 31, 2010 07:54:29 UTC"	60.6473	-142.5342	2.8	8.9	21	Southern Alaska
+nc	71448885	4	"Tuesday, August 31, 2010 07:48:54 UTC"	40.5915	-124.3023	2.7	21.6	22	Northern California
+ak	10075204	2	"Tuesday, August 31, 2010 06:49:02 UTC"	52.7242	-169.3327	1.9	14.3	7	"Fox Islands, Aleutian Islands, Alaska"
+ak	10075203	2	"Tuesday, August 31, 2010 06:43:17 UTC"	51.0625	-179.956	2.6	13.2	7	"Andreanof Islands, Aleutian Islands, Alaska"
+ci	10789781	2	"Tuesday, August 31, 2010 06:18:18 UTC"	32.4055	-115.5187	1.4	5.8	9	"Baja California, Mexico"
+nc	71448860	0	"Tuesday, August 31, 2010 06:16:36 UTC"	38.8377	-122.8267	1.4	2.2	11	Northern California
+ak	10075198	1	"Tuesday, August 31, 2010 06:13:35 UTC"	62.2964	-151.9066	1.6	98.4	14	Central Alaska
+nc	71448845	1	"Tuesday, August 31, 2010 05:44:58 UTC"	38.8423	-122.8268	2	2	24	Northern California
+hv	60175746	1	"Tuesday, August 31, 2010 05:44:01 UTC"	19.4422	-155.4252	2.7	8.9	45	"Island of Hawaii, Hawaii"
+ak	10075197	2	"Tuesday, August 31, 2010 05:41:05 UTC"	52.6999	-169.4061	1.8	8.9	6	"Fox Islands, Aleutian Islands, Alaska"
+nc	71448835	0	"Tuesday, August 31, 2010 05:25:01 UTC"	38.8315	-122.8087	1.4	2	13	Northern California
+nc	71448830	1	"Tuesday, August 31, 2010 05:24:36 UTC"	38.833	-122.8102	1.8	2.1	25	Northern California
+ak	10075195	1	"Tuesday, August 31, 2010 05:16:51 UTC"	63.2651	-151.4385	1.9	0.5	9	Central Alaska
+ci	10789765	6	"Tuesday, August 31, 2010 04:46:29 UTC"	33.4218	-116.3805	1.2	12.5	51	Southern California
+ci	10789757	4	"Tuesday, August 31, 2010 04:41:34 UTC"	32.1552	-115.2147	3	10	10	"Baja California, Mexico"
+nc	71449080	5	"Tuesday, August 31, 2010 04:32:08 UTC"	38.076	-118.9677	1.1	2.7	19	Central California
+nm	hnw0831a	A	"Tuesday, August 31, 2010 03:49:54 UTC"	36.5361	-89.6443	1.5	8.6	19	southeastern Missouri
+nc	71448800	0	"Tuesday, August 31, 2010 03:24:24 UTC"	36.9537	-121.4422	1.2	6.6	20	Central California
+hv	60175711	1	"Tuesday, August 31, 2010 03:19:35 UTC"	19.0633	-155.5752	2.1	54.3	10	"Island of Hawaii, Hawaii"
+ci	10789733	4	"Tuesday, August 31, 2010 03:18:12 UTC"	35.7887	-118.0485	1.7	8.6	45	Central California
+ci	10789725	4	"Tuesday, August 31, 2010 03:04:08 UTC"	32.6812	-115.891	1.5	5.4	30	Southern California
+nc	71448785	3	"Tuesday, August 31, 2010 02:50:05 UTC"	38.8223	-122.7942	2.1	3.4	44	Northern California
+nc	71448780	0	"Tuesday, August 31, 2010 02:47:28 UTC"	38.7563	-122.694	1.2	0.1	8	Northern California
+nc	71448775	3	"Tuesday, August 31, 2010 02:40:09 UTC"	38.8227	-122.7925	2.1	3.6	51	Northern California
+us	2010aqad	6	"Tuesday, August 31, 2010 02:30:36 UTC"	40.3641	139.1487	5.2	49	173	"near the west coast of Honshu, Japan"
+ci	10789717	4	"Tuesday, August 31, 2010 02:23:39 UTC"	32.7047	-115.9337	1	6.6	17	Southern California
+ak	10075182	1	"Tuesday, August 31, 2010 02:23:09 UTC"	58.2066	-151.5448	2.5	7.2	9	"Kodiak Island region, Alaska"
+ci	10789709	4	"Tuesday, August 31, 2010 02:01:15 UTC"	32.6762	-115.9428	1.4	3.5	16	Southern California
+nc	71448760	2	"Tuesday, August 31, 2010 01:43:34 UTC"	39.239	-123.191	2.2	7.3	25	Northern California
+ci	10789701	2	"Tuesday, August 31, 2010 01:40:18 UTC"	32.1982	-115.2507	2.2	10	8	"Baja California, Mexico"
+ak	10075179	1	"Tuesday, August 31, 2010 01:32:07 UTC"	60.2332	-152.7795	1.9	111	16	Southern Alaska
+nn	316000	7	"Tuesday, August 31, 2010 01:14:15 UTC"	40.331	-119.7287	2	10	11	Nevada
+ci	10789685	3	"Tuesday, August 31, 2010 01:12:40 UTC"	32.3053	-115.4413	2	10	8	"Baja California, Mexico"
+nc	71448735	0	"Tuesday, August 31, 2010 01:03:10 UTC"	38.7038	-122.914	1.2	7.2	5	Northern California
+ci	10789677	4	"Tuesday, August 31, 2010 00:57:52 UTC"	32.678	-115.8173	1.1	9.3	18	Southern California
+ci	10789661	2	"Tuesday, August 31, 2010 00:35:49 UTC"	32.1683	-115.23	2.3	10	10	"Baja California, Mexico"
+uu	8310016	2	"Tuesday, August 31, 2010 00:16:04 UTC"	38.021	-111.1127	1.9	11.1	14	Utah
+us	2010apcd	6	"Monday, August 30, 2010 23:25:40 UTC"	-16.0529	-173.2739	5.3	38.7	268	Tonga
+nc	71448715	0	"Monday, August 30, 2010 23:20:41 UTC"	35.722	-121.0715	1.5	3	10	Central California
+nc	71448710	3	"Monday, August 30, 2010 23:10:29 UTC"	36.8198	-121.544	2.1	5.3	66	Central California
+ci	10789613	4	"Monday, August 30, 2010 22:26:15 UTC"	32.2035	-115.2947	2.3	10	13	"Baja California, Mexico"
+ci	10789605	8	"Monday, August 30, 2010 22:03:02 UTC"	31.9988	-114.964	3.3	10	5	"Sonora, Mexico"
+ci	10789581	4	"Monday, August 30, 2010 21:36:09 UTC"	32.6843	-115.8552	1.6	8	24	Southern California
+ak	10075160	2	"Monday, August 30, 2010 21:35:40 UTC"	59.8377	-153.3366	2.2	125.8	22	Southern Alaska
+ci	10789573	4	"Monday, August 30, 2010 21:28:40 UTC"	32.5037	-115.656	2.2	1.6	17	"Baja California, Mexico"
+uu	8302123	2	"Monday, August 30, 2010 21:23:16 UTC"	38.9677	-112.9442	1.3	1.3	8	Utah
+ak	10075156	1	"Monday, August 30, 2010 21:18:08 UTC"	59.7761	-152.9292	2.2	98.4	22	Southern Alaska
+ci	10789541	4	"Monday, August 30, 2010 21:06:45 UTC"	33.2777	-116.2763	1.1	5.6	40	Southern California
+nc	71448685	2	"Monday, August 30, 2010 21:00:40 UTC"	36.4328	-120.2232	2.2	6.5	44	Central California
+uu	8302047	2	"Monday, August 30, 2010 20:47:40 UTC"	44.3845	-111.0455	1.7	6.8	18	"Yellowstone National Park, Wyoming"
+nc	71448665	0	"Monday, August 30, 2010 20:31:34 UTC"	36.5575	-121.1198	1.1	4.6	7	Central California
+ak	10075140	1	"Monday, August 30, 2010 20:11:11 UTC"	59.4246	-152.7231	3.3	84.5	89	Southern Alaska
+ak	10075136	1	"Monday, August 30, 2010 20:07:37 UTC"	63.2008	-150.4107	2.7	118.2	43	Central Alaska
+nc	71448660	2	"Monday, August 30, 2010 20:04:20 UTC"	39.8057	-121.6325	1.5	20.2	8	Northern California
+nc	71448655	0	"Monday, August 30, 2010 19:38:40 UTC"	38.833	-122.8813	1	1.8	12	Northern California
+nc	71448645	0	"Monday, August 30, 2010 19:13:41 UTC"	36.5612	-121.1205	1.4	3.6	9	Central California
+nn	315953	7	"Monday, August 30, 2010 19:08:36 UTC"	36.129	-115.1388	1.5	1.4	11	"Las Vegas urban area, Nevada"
+nn	315952	7	"Monday, August 30, 2010 19:07:30 UTC"	38.579	-116.9642	1.8	1.6	18	Nevada
+nc	71448615	0	"Monday, August 30, 2010 18:36:37 UTC"	38.8385	-122.8283	1.6	2.4	17	Northern California
+ci	10789477	3	"Monday, August 30, 2010 18:22:31 UTC"	35.8222	-117.7425	1	8.7	23	Central California
+ci	10789453	3	"Monday, August 30, 2010 18:10:28 UTC"	35.9433	-117.1285	1.1	0	7	Central California
+ak	10075014	1	"Monday, August 30, 2010 18:07:47 UTC"	60.892	-149.0957	1.6	19.9	13	"Kenai Peninsula, Alaska"
+nc	71448605	0	"Monday, August 30, 2010 18:01:54 UTC"	37.827	-121.9888	1.3	14	10	"San Francisco Bay area, California"
+nc	71448595	0	"Monday, August 30, 2010 17:45:02 UTC"	35.4837	-120.7955	1.5	12.7	10	Central California
+ci	10789421	4	"Monday, August 30, 2010 17:40:07 UTC"	32.7313	-115.9725	1.5	5.5	27	Southern California
+nc	71448590	0	"Monday, August 30, 2010 17:35:28 UTC"	38.7738	-122.7437	1.8	1.1	14	Northern California
+ci	10789405	3	"Monday, August 30, 2010 17:21:13 UTC"	32.226	-115.2743	1.9	10	7	"Baja California, Mexico"
+nn	315933	7	"Monday, August 30, 2010 17:03:33 UTC"	37.0785	-114.3505	1.4	16.1	6	Nevada
+ci	10789397	4	"Monday, August 30, 2010 16:51:36 UTC"	33.8388	-117.4947	1.4	0	25	"Greater Los Angeles area, California"
+ci	10789389	3	"Monday, August 30, 2010 16:44:43 UTC"	32.01	-115.1155	2.8	10	8	"Baja California, Mexico"
+nn	315932	7	"Monday, August 30, 2010 16:34:45 UTC"	36.2248	-114.9925	1.8	0	7	"Las Vegas urban area, Nevada"
+se	hnw0830c	B	"Monday, August 30, 2010 16:31:03 UTC"	36.4896	-81.7237	2.7	10.6	27	eastern Tennessee
+nc	71448580	1	"Monday, August 30, 2010 16:29:37 UTC"	38.8047	-122.7932	1.9	3.9	27	Northern California
+ci	10789301	4	"Monday, August 30, 2010 14:02:00 UTC"	34.2968	-116.4433	1.5	7.4	36	Southern California
+us	2010apa4	Q	"Monday, August 30, 2010 13:40:34 UTC"	18.8782	145.3922	4.7	220.7	8	"Pagan region, Northern Mariana Islands"
+us	2010apa1	6	"Monday, August 30, 2010 12:57:45 UTC"	58.1878	-32.1799	4.9	10	69	Reykjanes Ridge
+us	2010apa2	7	"Monday, August 30, 2010 12:35:57 UTC"	-5.5569	149.8046	5	10	25	"New Britain region, Papua New Guinea"
+nc	71448535	0	"Monday, August 30, 2010 12:23:49 UTC"	38.7902	-122.7443	1.4	1.2	10	Northern California
+nc	71448520	0	"Monday, August 30, 2010 11:45:01 UTC"	38.766	-122.7053	1.8	2.3	16	Northern California
+ak	10074997	1	"Monday, August 30, 2010 11:27:49 UTC"	62.1347	-152.1543	2.2	123.4	32	Central Alaska
+ak	10074994	1	"Monday, August 30, 2010 11:14:50 UTC"	60.164	-141.3486	1.6	0.1	16	Southern Alaska
+nc	71448510	0	"Monday, August 30, 2010 10:48:11 UTC"	36.7077	-121.3472	1.6	3.2	21	Central California
+nc	71448505	1	"Monday, August 30, 2010 10:34:41 UTC"	36.8357	-121.5698	1.4	3.2	23	Central California
+ak	10074986	1	"Monday, August 30, 2010 10:29:32 UTC"	62.0963	-149.6644	2.9	5	57	Central Alaska
+nc	71448500	0	"Monday, August 30, 2010 10:24:57 UTC"	38.8055	-122.7695	1.4	1.6	19	Northern California
+ak	10074982	2	"Monday, August 30, 2010 09:51:08 UTC"	64.4977	-147.5504	2.3	5	19	Central Alaska
+ak	10074980	1	"Monday, August 30, 2010 09:48:40 UTC"	61.9802	-149.8537	1	34.9	8	Southern Alaska
+us	2010apaw	7	"Monday, August 30, 2010 09:39:28 UTC"	25.0825	95.3429	4.6	136	18	Myanmar
+nc	71448480	0	"Monday, August 30, 2010 09:30:17 UTC"	38.8228	-122.8317	1.2	0.8	10	Northern California
+nc	71448475	0	"Monday, August 30, 2010 09:29:21 UTC"	36.003	-120.5788	1.2	2.4	16	Central California
+ci	10789269	2	"Monday, August 30, 2010 09:27:23 UTC"	31.7712	-114.9323	2.4	10	6	"Baja California, Mexico"
+nc	71448470	4	"Monday, August 30, 2010 09:25:59 UTC"	37.4288	-118.6315	1.3	15.5	17	Central California
+ci	10789253	4	"Monday, August 30, 2010 09:10:27 UTC"	33.633	-116.7083	1.1	17.6	46	Southern California
+uw	8300852	1	"Monday, August 30, 2010 08:52:12 UTC"	47.6646	-120.3278	1.4	2.1	5	Washington
+us	2010apar	7	"Monday, August 30, 2010 08:45:09 UTC"	24.8824	122.2121	5	12.2	41	Taiwan region
+nc	71448460	0	"Monday, August 30, 2010 08:35:12 UTC"	38.8345	-122.7745	1.2	1.2	8	Northern California
+ak	10074973	1	"Monday, August 30, 2010 08:34:49 UTC"	59.9408	-152.7928	1.8	193.9	9	Southern Alaska
+ci	10789245	4	"Monday, August 30, 2010 08:31:04 UTC"	32.4658	-115.6047	1.9	5.9	13	"Baja California, Mexico"
+ak	10074971	1	"Monday, August 30, 2010 08:26:01 UTC"	60.0772	-152.7633	2	90	8	Southern Alaska
+uu	8300801	2	"Monday, August 30, 2010 08:01:46 UTC"	37.4353	-113.1205	1	6.7	12	Utah
+ci	10789229	2	"Monday, August 30, 2010 07:56:15 UTC"	32.1962	-115.215	1.8	10	5	"Baja California, Mexico"
+nc	71448455	0	"Monday, August 30, 2010 07:55:28 UTC"	38.8275	-122.7933	1.1	1	10	Northern California
+ci	10789221	4	"Monday, August 30, 2010 07:49:31 UTC"	32.6595	-115.9408	1.4	6.7	21	Southern California
+nc	71448450	0	"Monday, August 30, 2010 07:42:47 UTC"	38.8363	-122.8465	1.4	1.5	11	Northern California
+ci	10789213	4	"Monday, August 30, 2010 07:34:00 UTC"	32.574	-115.7072	1.6	7.6	19	"Baja California, Mexico"
+ci	10789205	4	"Monday, August 30, 2010 07:24:11 UTC"	32.6765	-115.94	1.6	4.9	34	Southern California
+nm	hnw0830b	A	"Monday, August 30, 2010 07:11:30 UTC"	35.2686	-92.1883	1.8	2.6	5	Arkansas
+ci	10789197	2	"Monday, August 30, 2010 07:04:54 UTC"	36.7102	-117.727	1.5	12.3	14	Central California
+pr	10242000	0	"Monday, August 30, 2010 06:55:11 UTC"	18.451	-69.024	2.7	109.5	4	Dominican Republic
+nc	71448435	2	"Monday, August 30, 2010 06:52:41 UTC"	40.6617	-123.8402	2.4	25.8	30	Northern California
+ci	10789189	4	"Monday, August 30, 2010 06:41:09 UTC"	33.3558	-116.3582	1.5	13	60	Southern California
+nc	71448420	1	"Monday, August 30, 2010 06:34:21 UTC"	37.8542	-122.241	1.6	4.7	30	"San Francisco Bay area, California"
+nm	hnw0830a	A	"Monday, August 30, 2010 06:33:03 UTC"	35.2688	-92.188	1.6	2.8	5	Arkansas
+ci	10789181	4	"Monday, August 30, 2010 06:32:39 UTC"	33.814	-116.9892	1	12.6	30	Southern California
+nc	71448415	0	"Monday, August 30, 2010 06:10:19 UTC"	36.0078	-120.6373	1.4	4.3	18	Central California
+nc	71448410	5	"Monday, August 30, 2010 05:46:19 UTC"	35.9882	-119.896	1.9	23.8	49	Central California
+nc	71448405	2	"Monday, August 30, 2010 05:25:20 UTC"	37.3232	-118.6608	1.4	14.4	16	Central California
+us	2010apam	6	"Monday, August 30, 2010 05:15:59 UTC"	-19.2877	-175.7577	4.6	189.6	72	Tonga
+ak	10074953	1	"Monday, August 30, 2010 05:13:22 UTC"	60.7794	-151.1486	3.3	68.7	72	"Kenai Peninsula, Alaska"
+ci	10789149	2	"Monday, August 30, 2010 05:02:39 UTC"	32.3653	-115.4227	2.5	10	10	"Baja California, Mexico"
+ci	10789133	2	"Monday, August 30, 2010 04:44:30 UTC"	33.318	-116.3753	1	5.4	29	Southern California
+us	2010apaj	6	"Monday, August 30, 2010 04:44:14 UTC"	-14.9355	-174.193	5.1	10	81	Samoa Islands region
+hv	60175486	1	"Monday, August 30, 2010 04:40:36 UTC"	19.2478	-155.4313	1.9	33.2	20	"Island of Hawaii, Hawaii"
+us	2010apai	Q	"Monday, August 30, 2010 04:25:04 UTC"	30.7804	132.2094	4.7	27.1	41	"southeast of Shikoku, Japan"
+ci	10789109	4	"Monday, August 30, 2010 04:22:14 UTC"	33.7658	-116.9803	1	17.6	35	Southern California
+nc	71448380	7	"Monday, August 30, 2010 03:25:50 UTC"	39.2403	-120.4903	2.1	6.2	13	Northern California
+uu	8300324	2	"Monday, August 30, 2010 03:24:37 UTC"	41.7958	-111.68	1.2	17.3	18	Utah
+nc	71448375	0	"Monday, August 30, 2010 03:11:19 UTC"	38.8348	-122.7755	2	2.3	21	Northern California
+uw	8300305	1	"Monday, August 30, 2010 03:05:14 UTC"	47.7121	-122.6156	1.3	19.5	18	"Seattle-Tacoma urban area, Washington"
+nc	71448370	4	"Monday, August 30, 2010 02:59:15 UTC"	38.577	-122.6585	1.2	7	15	Northern California
+ci	10789101	6	"Monday, August 30, 2010 02:57:21 UTC"	36.077	-117.8832	1.7	3.5	34	Central California
+ci	10789093	4	"Monday, August 30, 2010 02:50:29 UTC"	32.1087	-115.2287	2.6	10	9	"Baja California, Mexico"
+nn	315905	7	"Monday, August 30, 2010 02:36:45 UTC"	37.9865	-118.5302	1.6	4.3	12	Nevada
+ci	10789069	2	"Monday, August 30, 2010 02:21:03 UTC"	35.829	-118.4963	1.2	11	16	Central California
+ak	10074941	1	"Monday, August 30, 2010 02:19:32 UTC"	62.4017	-151.2129	1.5	83.3	10	Central Alaska
+ci	10789053	4	"Monday, August 30, 2010 02:15:33 UTC"	32.1763	-115.2965	3	4.9	12	"Baja California, Mexico"
+ci	10789061	4	"Monday, August 30, 2010 02:14:27 UTC"	32.2083	-115.385	2.4	10	8	"Baja California, Mexico"
+nc	71448350	0	"Monday, August 30, 2010 01:59:47 UTC"	36.0837	-120.686	1.5	1.7	13	Central California
+ci	10789045	4	"Monday, August 30, 2010 01:43:24 UTC"	33.2688	-116.1235	1	11.6	26	Southern California
+ci	10789037	6	"Monday, August 30, 2010 01:18:07 UTC"	32.2738	-115.3273	2.5	3.4	13	"Baja California, Mexico"
+ci	10789029	4	"Monday, August 30, 2010 01:00:07 UTC"	32.8868	-117.6058	1.9	10	23	"Gulf of Santa Catalina, California"
+nc	71448325	2	"Monday, August 30, 2010 00:42:39 UTC"	37.5313	-118.8275	1.2	6.5	22	Central California
+nc	71448320	2	"Monday, August 30, 2010 00:42:08 UTC"	37.5318	-118.8208	1.2	6.7	21	Central California
+nc	71448305	3	"Monday, August 30, 2010 00:41:14 UTC"	37.5318	-118.82	2.1	6.7	35	Central California
+nc	71448315	2	"Monday, August 30, 2010 00:40:23 UTC"	37.5338	-118.822	1.2	4.9	20	Central California
+nc	71043924	2	"Monday, August 30, 2010 00:39:15 UTC"	37.5352	-118.8217	1.2	6.2	8	Central California
+us	2010apag	6	"Monday, August 30, 2010 00:39:00 UTC"	-5.6178	150.0231	5.1	33.3	26	"New Britain region, Papua New Guinea"
+nc	71043919	6	"Monday, August 30, 2010 00:38:42 UTC"	37.5362	-118.8242	2.3	5.7	18	Central California
+nc	71448300	4	"Monday, August 30, 2010 00:38:13 UTC"	37.5333	-118.8177	2.7	7.7	40	Central California
+ak	10074928	1	"Monday, August 30, 2010 00:33:58 UTC"	62.0997	-149.4752	2.2	15.8	32	Central Alaska
+ak	10074926	1	"Monday, August 30, 2010 00:30:40 UTC"	62.7184	-149.25	1.6	93.1	13	Central Alaska
+ci	10788997	6	"Monday, August 30, 2010 00:12:10 UTC"	35.0398	-117.6828	1.7	0	24	Southern California
+ci	10788981	4	"Monday, August 30, 2010 00:07:09 UTC"	32.8353	-116.0375	1.1	5.3	17	Southern California
+ak	10074940	2	"Sunday, August 29, 2010 23:53:00 UTC"	51.515	-175.7312	2.3	22.8	11	"Andreanof Islands, Aleutian Islands, Alaska"
+ak	10074921	1	"Sunday, August 29, 2010 23:43:12 UTC"	63.0593	-150.8545	2.1	136.7	23	Central Alaska
+ak	10074919	1	"Sunday, August 29, 2010 23:03:51 UTC"	60.8724	-150.7412	1.3	46.6	10	"Kenai Peninsula, Alaska"
+ci	10788957	4	"Sunday, August 29, 2010 22:55:49 UTC"	32.1627	-115.2417	2.6	14.5	9	"Baja California, Mexico"
+nc	71448280	4	"Sunday, August 29, 2010 22:27:57 UTC"	39.7585	-122.0693	1.8	24.9	27	Northern California
+ci	10788941	2	"Sunday, August 29, 2010 22:23:42 UTC"	36.1422	-118.067	1.3	3.4	17	Central California
+ci	10788933	6	"Sunday, August 29, 2010 22:05:44 UTC"	34.0393	-117.2522	1.1	15.4	33	"Greater Los Angeles area, California"
+nc	71448260	2	"Sunday, August 29, 2010 21:55:57 UTC"	37.3227	-118.6583	1.1	15.2	10	Central California
+ci	10788917	4	"Sunday, August 29, 2010 21:52:41 UTC"	32.8052	-116.0207	1.5	9.2	28	Southern California
+ci	10788925	2	"Sunday, August 29, 2010 21:51:13 UTC"	32.2298	-115.299	2.2	10	6	"Baja California, Mexico"
+ci	10788909	4	"Sunday, August 29, 2010 21:43:44 UTC"	32.2273	-115.3518	2.5	5.6	11	"Baja California, Mexico"
+ci	10788901	8	"Sunday, August 29, 2010 21:41:14 UTC"	32.1778	-115.3608	3.4	0.4	17	"Baja California, Mexico"
+ak	10074911	1	"Sunday, August 29, 2010 21:39:22 UTC"	61.4688	-146.6215	2.6	23.7	47	Southern Alaska
+ci	10788893	5	"Sunday, August 29, 2010 21:39:04 UTC"	32.2132	-115.3513	3.1	7.6	17	"Baja California, Mexico"
+ci	10788885	4	"Sunday, August 29, 2010 21:34:46 UTC"	32.9198	-116.2822	1.1	5.6	30	Southern California
+ci	10788853	4	"Sunday, August 29, 2010 20:43:56 UTC"	33.96	-116.748	1	14.9	30	Southern California
+nm	hnw0829b	A	"Sunday, August 29, 2010 20:30:42 UTC"	35.269	-92.1873	1.9	2	5	Arkansas
+ci	10788845	4	"Sunday, August 29, 2010 20:11:16 UTC"	32.2867	-115.3353	2.4	5.7	11	"Baja California, Mexico"
+nc	71448230	2	"Sunday, August 29, 2010 20:00:30 UTC"	37.5498	-118.8753	1.1	4.4	21	Central California
+nc	71448225	2	"Sunday, August 29, 2010 19:55:00 UTC"	38.9715	-123.0238	1.2	6.2	11	Northern California
+ci	10788837	4	"Sunday, August 29, 2010 19:48:40 UTC"	34.037	-117.2773	1.3	17.6	47	"Greater Los Angeles area, California"
+nc	71448220	2	"Sunday, August 29, 2010 19:44:18 UTC"	37.8263	-121.788	1.1	11.6	11	"San Francisco Bay area, California"
+nc	71448210	3	"Sunday, August 29, 2010 19:34:19 UTC"	38.7892	-122.8013	2.4	4.1	51	Northern California
+uw	8291930	1	"Sunday, August 29, 2010 19:30:13 UTC"	48.617	-122.9828	1.4	18.9	27	"San Juan Islands region, Washington"
+uw	8291905	1	"Sunday, August 29, 2010 19:05:43 UTC"	46.0475	-122.7263	1.9	9.3	16	Washington
+nc	71448200	0	"Sunday, August 29, 2010 18:55:08 UTC"	36.7658	-121.2733	1.3	7.1	11	Central California
+nc	71448195	C	"Sunday, August 29, 2010 18:37:26 UTC"	39.2517	-120.5212	1.4	18.1	5	Northern California
+ak	10074901	1	"Sunday, August 29, 2010 18:32:58 UTC"	61.548	-151.5024	2.3	82.1	33	Southern Alaska
+nc	71448190	2	"Sunday, August 29, 2010 18:24:57 UTC"	38.4168	-122.4312	1.2	9.8	21	Northern California
+ci	10788805	4	"Sunday, August 29, 2010 18:20:00 UTC"	32.191	-115.3473	2.6	6.1	14	"Baja California, Mexico"
+ak	10074897	1	"Sunday, August 29, 2010 18:08:06 UTC"	64.7207	-149.595	2.9	15.8	22	Central Alaska
+ak	10074895	1	"Sunday, August 29, 2010 17:49:59 UTC"	63.2247	-152.1319	2.4	10.5	16	Central Alaska
+ak	10074890	2	"Sunday, August 29, 2010 17:07:12 UTC"	57.4808	-152.8105	3.4	31.9	70	"Kodiak Island region, Alaska"
+nn	316081	7	"Sunday, August 29, 2010 17:03:30 UTC"	37.1976	-114.9679	1.5	0	5	Nevada
+ci	10788797	4	"Sunday, August 29, 2010 16:59:47 UTC"	33.3645	-116.3593	1.1	9.5	31	Southern California
+ci	10788789	4	"Sunday, August 29, 2010 16:59:25 UTC"	33.5915	-117.2232	1.3	13.7	38	Southern California
+ci	10788781	2	"Sunday, August 29, 2010 16:46:00 UTC"	32.1165	-115.2202	2	10	8	"Baja California, Mexico"
+ci	10788773	4	"Sunday, August 29, 2010 16:43:41 UTC"	33.6173	-116.812	1	13	34	Southern California
+ci	10788765	5	"Sunday, August 29, 2010 15:53:43 UTC"	32.1803	-115.293	4.3	10	15	"Baja California, Mexico"
+ci	10788757	4	"Sunday, August 29, 2010 15:48:24 UTC"	34.1985	-117.5693	1.3	5.2	30	"Greater Los Angeles area, California"
+ak	10074884	1	"Sunday, August 29, 2010 15:35:15 UTC"	61.3536	-150.0645	1.3	41	9	Southern Alaska
+nc	71448095	2	"Sunday, August 29, 2010 15:27:29 UTC"	39.3917	-122.8983	1.6	9.7	14	Northern California
+ci	10788749	4	"Sunday, August 29, 2010 15:21:53 UTC"	32.5283	-115.708	1.8	3.2	9	"Baja California, Mexico"
+ci	10788741	2	"Sunday, August 29, 2010 15:07:35 UTC"	35.9742	-117.324	1.1	5.5	20	Central California
+ak	10074878	1	"Sunday, August 29, 2010 14:40:26 UTC"	60.2145	-141.5789	1.7	2.7	14	Southern Alaska
+pr	10241003	0	"Sunday, August 29, 2010 14:15:27 UTC"	17.8589	-66.694	1.5	23.1	5	Puerto Rico region
+ak	10074875	1	"Sunday, August 29, 2010 14:12:08 UTC"	63.077	-151.5517	1.6	5	9	Central Alaska
+nn	316035	7	"Sunday, August 29, 2010 14:01:26 UTC"	38.9761	-118.7618	1.7	10.8	7	Nevada
+ak	10074866	1	"Sunday, August 29, 2010 13:44:34 UTC"	62.0125	-145.5897	2.2	10.9	24	Central Alaska
+nc	71448070	0	"Sunday, August 29, 2010 13:32:57 UTC"	36.7578	-121.3533	1.4	6.1	16	Central California
+hv	60175381	1	"Sunday, August 29, 2010 13:26:12 UTC"	18.8148	-155.1905	2.1	13	30	"Hawaii region, Hawaii"
+ak	10074865	1	"Sunday, August 29, 2010 13:25:19 UTC"	62.1091	-149.5839	1.4	34.4	8	Central Alaska
+ci	10788725	4	"Sunday, August 29, 2010 13:24:23 UTC"	32.6197	-115.7742	1.6	8.1	19	"Baja California, Mexico"
+nc	71448055	0	"Sunday, August 29, 2010 13:24:09 UTC"	38.7477	-122.7137	1.2	2.2	10	Northern California
+hv	60175371	1	"Sunday, August 29, 2010 12:58:56 UTC"	19.9177	-156.6943	2.3	7	21	"Hawaii region, Hawaii"
+ci	10788717	4	"Sunday, August 29, 2010 12:58:23 UTC"	33.3653	-116.3573	1	11.1	29	Southern California
+uw	8291249	1	"Sunday, August 29, 2010 12:49:38 UTC"	46.1993	-122.1863	1.5	0	7	"Mount St. Helens area, Washington"
+nc	71448035	1	"Sunday, August 29, 2010 12:33:13 UTC"	36.0917	-120.6683	1.7	6.5	22	Central California
+nc	71448025	0	"Sunday, August 29, 2010 11:58:51 UTC"	38.8078	-122.8078	1.5	1.6	19	Northern California
+ci	10788701	4	"Sunday, August 29, 2010 11:39:42 UTC"	36.0122	-117.8508	1.3	3.6	21	Central California
+ci	10788693	4	"Sunday, August 29, 2010 11:11:34 UTC"	32.3838	-115.5375	1.9	13.4	12	"Baja California, Mexico"
+nc	71448010	2	"Sunday, August 29, 2010 11:02:45 UTC"	39.312	-122.7913	1.7	13.3	16	Northern California
+ci	10788685	3	"Sunday, August 29, 2010 10:55:08 UTC"	35.9343	-117.2297	1	8.4	21	Central California
+nm	hnw0829a	A	"Sunday, August 29, 2010 10:40:26 UTC"	36.2159	-89.4578	1.3	7.3	12	Tennessee
+ak	10074854	1	"Sunday, August 29, 2010 10:30:27 UTC"	59.7155	-153.4181	2.6	114.1	54	Southern Alaska
+ak	10074853	2	"Sunday, August 29, 2010 10:29:21 UTC"	51.6456	-175.7457	2.2	49.9	12	"Andreanof Islands, Aleutian Islands, Alaska"
+ci	10788669	6	"Sunday, August 29, 2010 10:17:56 UTC"	32.7223	-115.9772	1.4	3.4	27	Southern California
+pr	10241002	0	"Sunday, August 29, 2010 10:03:51 UTC"	18.5079	-68.804	3.3	128.3	15	Dominican Republic
+us	2010anaz	7	"Sunday, August 29, 2010 10:02:44 UTC"	-0.3898	132.9141	4.9	52.2	20	"near the north coast of Papua, Indonesia"
+uw	8290937	1	"Sunday, August 29, 2010 09:37:11 UTC"	48.1976	-122.2074	1.4	12.5	10	"Puget Sound region, Washington"
+ci	10788661	6	"Sunday, August 29, 2010 09:14:01 UTC"	34.3793	-118.5607	1.6	8.1	31	"Greater Los Angeles area, California"
+ne	1192	a	"Sunday, August 29, 2010 08:59:59 UTC"	43.6868	-70.6246	2.3	6.7	14	Maine
+us	2010anay	7	"Sunday, August 29, 2010 08:51:01 UTC"	-37.638	-73.3931	4.7	35	27	"Bio-Bio, Chile"
+ak	10074845	1	"Sunday, August 29, 2010 08:47:57 UTC"	61.1824	-146.7068	1.2	43.4	8	Southern Alaska
+ak	10074844	1	"Sunday, August 29, 2010 08:31:47 UTC"	61.1637	-146.9961	1.7	0	7	Southern Alaska
+nc	71447995	3	"Sunday, August 29, 2010 08:26:19 UTC"	38.8177	-122.8048	2.1	2.6	49	Northern California
+ci	10788645	2	"Sunday, August 29, 2010 08:18:03 UTC"	32.3863	-115.2275	1.6	10	10	"Baja California, Mexico"
+ak	10074841	1	"Sunday, August 29, 2010 08:12:47 UTC"	64.3633	-148.1558	2.4	15.3	19	Central Alaska
+ci	10788629	4	"Sunday, August 29, 2010 07:42:14 UTC"	32.6362	-115.732	1	6.9	9	"Baja California, Mexico"
+pr	10241001	0	"Sunday, August 29, 2010 07:38:13 UTC"	18.7989	-65.355	2.7	20	4	Puerto Rico region
+nc	71447985	0	"Sunday, August 29, 2010 07:36:53 UTC"	38.8363	-122.7753	1	2.3	12	Northern California
+ak	10074839	1	"Sunday, August 29, 2010 07:33:31 UTC"	63.1101	-144.3654	1.6	0	9	Central Alaska
+ci	10788621	2	"Sunday, August 29, 2010 07:27:04 UTC"	32.171	-115.2558	2.4	10	9	"Baja California, Mexico"
+ci	10788613	4	"Sunday, August 29, 2010 07:23:25 UTC"	32.2322	-115.3692	2.8	6.3	13	"Baja California, Mexico"
+ak	10074835	1	"Sunday, August 29, 2010 07:03:01 UTC"	60.3063	-141.089	1.8	23.4	15	Southern Alaska
+ak	10074833	1	"Sunday, August 29, 2010 06:59:02 UTC"	61.5056	-142.6506	1.2	5	8	Southern Alaska
+nn	316034	7	"Sunday, August 29, 2010 06:47:06 UTC"	38.9762	-118.7693	2.8	11.4	10	Nevada
+ci	10788597	4	"Sunday, August 29, 2010 06:46:38 UTC"	33.469	-116.4437	1.2	13.4	60	Southern California
+ci	10788605	2	"Sunday, August 29, 2010 06:43:55 UTC"	32.1137	-115.1702	2.2	10	8	"Baja California, Mexico"
+us	2010anat	7	"Sunday, August 29, 2010 06:43:28 UTC"	-41.7915	-105.1134	5.2	10	141	southern East Pacific Rise
+ci	35981759	2	"Sunday, August 29, 2010 06:41:26 UTC"	33.4895	-116.4373	1.2	13.3	27	Southern California
+ci	10788573	4	"Sunday, August 29, 2010 06:41:14 UTC"	33.4827	-116.4437	1.2	14.4	45	Southern California
+us	2010anaq	7	"Sunday, August 29, 2010 06:37:48 UTC"	-55.8198	-26.9619	5.4	35	58	South Sandwich Islands region
+pr	10241000	0	"Sunday, August 29, 2010 06:17:01 UTC"	18.527	-66.5569	2.4	85.3	7	Puerto Rico region
+ci	10788541	6	"Sunday, August 29, 2010 06:09:04 UTC"	35.1098	-118.9962	1.6	14.1	23	Central California
+ak	10074824	1	"Sunday, August 29, 2010 05:25:35 UTC"	62.866	-150.0141	1.4	74.8	8	Central Alaska
+ci	10788533	4	"Sunday, August 29, 2010 05:18:04 UTC"	36.4522	-118.2563	1.6	10.3	23	Central California
+nc	71447960	0	"Sunday, August 29, 2010 04:39:30 UTC"	38.7625	-122.7233	1.2	3.4	14	Northern California
+us	2010anam	7	"Sunday, August 29, 2010 04:39:29 UTC"	14.1695	-91.5938	4.6	77.2	94	Guatemala
+ci	10788517	4	"Sunday, August 29, 2010 04:37:10 UTC"	32.0173	-115.1437	2.8	10	9	"Baja California, Mexico"
+nc	71447950	3	"Sunday, August 29, 2010 04:37:00 UTC"	37.6963	-121.9923	2	10.2	76	"San Francisco Bay area, California"
+uw	8290435	1	"Sunday, August 29, 2010 04:35:42 UTC"	47.7188	-122.2435	1.2	18.8	11	"Seattle-Tacoma urban area, Washington"
+ci	10788509	2	"Sunday, August 29, 2010 03:38:49 UTC"	32.7302	-115.828	1.3	5.9	10	Southern California
+nc	71447925	2	"Sunday, August 29, 2010 02:57:23 UTC"	37.6328	-119.4273	1.7	15.3	15	Central California
+ci	10788493	2	"Sunday, August 29, 2010 02:37:34 UTC"	35.974	-117.3333	1.3	8.6	16	Central California
+us	2010anaj	Q	"Sunday, August 29, 2010 02:07:58 UTC"	50.2914	149.3694	4.1	523.9	25	Sea of Okhotsk
+ci	10788485	2	"Sunday, August 29, 2010 02:02:24 UTC"	32.0545	-115.0478	2.2	10	5	"Baja California, Mexico"
+us	2010anag	Q	"Sunday, August 29, 2010 01:56:43 UTC"	55.0203	-160.4717	4.6	57.9	108	Alaska Peninsula
+nc	71447910	0	"Sunday, August 29, 2010 01:44:46 UTC"	38.8238	-122.7957	1.1	3	13	Northern California
+us	2010anah	7	"Sunday, August 29, 2010 01:30:35 UTC"	-0.1052	125.0715	4.6	72.4	38	Molucca Sea
+nc	71447890	2	"Sunday, August 29, 2010 01:09:56 UTC"	40.297	-124.45	2.4	20.5	18	offshore Northern California
+ci	10788477	2	"Sunday, August 29, 2010 01:00:31 UTC"	35.7902	-118.0445	1.1	6.8	11	Central California
+ci	10788469	4	"Sunday, August 29, 2010 00:54:51 UTC"	32.1713	-115.2583	2.8	10	10	"Baja California, Mexico"
+us	2010anaf	6	"Sunday, August 29, 2010 00:53:31 UTC"	27.2108	103.015	5	32.8	80	"Sichuan-Yunnan-Guizhou region, China"
+nc	71447880	0	"Sunday, August 29, 2010 00:38:40 UTC"	38.8062	-122.7713	1.1	0.3	10	Northern California
+ci	10788453	6	"Sunday, August 29, 2010 00:13:00 UTC"	33.6797	-117.8988	2.1	4.6	43	"Greater Los Angeles area, California"
+pr	10240000	0	"Sunday, August 29, 2010 00:02:12 UTC"	19.3169	-65.2539	3.8	100	10	Puerto Rico region
+nc	71447860	2	"Sunday, August 29, 2010 00:01:37 UTC"	37.3658	-118.3737	1.8	11	20	Central California
+nc	71447855	4	"Saturday, August 28, 2010 23:59:03 UTC"	36.5562	-121.1508	3	7.3	73	Central California
+ak	10074793	2	"Saturday, August 28, 2010 23:54:51 UTC"	52.6985	-169.1879	2.2	5.1	13	"Fox Islands, Aleutian Islands, Alaska"
+ak	10074792	2	"Saturday, August 28, 2010 23:47:53 UTC"	52.6523	-169.2377	2.3	1	13	"Fox Islands, Aleutian Islands, Alaska"
+ak	10075642	2	"Saturday, August 28, 2010 23:45:34 UTC"	52.5585	-169.0635	1.8	13.6	12	"Fox Islands, Aleutian Islands, Alaska"
+ci	10788429	2	"Saturday, August 28, 2010 23:43:00 UTC"	36.4273	-117.8975	1.6	10	20	Central California
+ak	10074791	2	"Saturday, August 28, 2010 23:39:22 UTC"	59.2384	-150.5273	2	10.3	16	"Kenai Peninsula, Alaska"
+ci	10788421	5	"Saturday, August 28, 2010 23:30:25 UTC"	32.8077	-115.4827	2	13.2	13	Southern California
+ak	10074780	3	"Saturday, August 28, 2010 23:14:09 UTC"	60.4164	-153.1103	3.5	148	85	Southern Alaska
+nc	71447850	0	"Saturday, August 28, 2010 23:12:31 UTC"	36.5582	-121.1352	1.3	8.3	9	Central California
+ak	10074778	2	"Saturday, August 28, 2010 23:08:09 UTC"	63.8219	-148.7088	1.6	116.6	28	Central Alaska
+ak	10075638	2	"Saturday, August 28, 2010 23:03:28 UTC"	54.1456	-164.1408	2.1	24.7	13	"Unimak Island region, Alaska"
+ak	10075637	2	"Saturday, August 28, 2010 22:58:10 UTC"	61.7341	-149.7434	1	3	11	Southern Alaska
+ci	10788413	4	"Saturday, August 28, 2010 22:35:45 UTC"	32.2617	-115.3795	2.3	10	10	"Baja California, Mexico"
+ak	10074776	2	"Saturday, August 28, 2010 22:34:31 UTC"	61.3197	-152.4875	1	3.3	10	Southern Alaska
+ak	10075635	2	"Saturday, August 28, 2010 22:27:33 UTC"	60.9509	-150.9912	1.1	57.6	9	"Kenai Peninsula, Alaska"
+nc	71447840	0	"Saturday, August 28, 2010 22:22:36 UTC"	38.8195	-122.8195	1.1	2.8	13	Northern California
+nc	71447835	0	"Saturday, August 28, 2010 22:15:13 UTC"	36.4897	-121.5107	1.3	8.8	6	Central California
+ci	10788405	6	"Saturday, August 28, 2010 22:10:17 UTC"	33.2913	-115.713	2	5.9	43	Southern California
+ak	10074774	2	"Saturday, August 28, 2010 22:02:50 UTC"	60.7125	-151.8414	1.5	88.2	15	"Kenai Peninsula, Alaska"
+ak	10074772	2	"Saturday, August 28, 2010 21:54:42 UTC"	53.868	-165.2089	2.5	61.8	24	"Fox Islands, Aleutian Islands, Alaska"
+ak	10074771	2	"Saturday, August 28, 2010 21:48:31 UTC"	63.0532	-149.0572	1.3	76.1	14	Central Alaska
+ci	10788389	4	"Saturday, August 28, 2010 21:39:05 UTC"	33.3273	-115.6865	1.3	12.3	11	Southern California
+ak	10074765	3	"Saturday, August 28, 2010 21:32:37 UTC"	59.8235	-138.8046	3.5	5.5	54	Southeastern Alaska
+ci	10788373	2	"Saturday, August 28, 2010 21:23:05 UTC"	33.3077	-115.7018	1.7	10.5	27	Southern California
+ci	10788357	4	"Saturday, August 28, 2010 21:13:05 UTC"	33.3083	-115.698	1.5	9.8	6	Southern California
+ci	10788349	4	"Saturday, August 28, 2010 21:12:10 UTC"	33.2923	-115.7122	2.1	4.6	27	Southern California
+ci	35933759	2	"Saturday, August 28, 2010 21:12:08 UTC"	33.2993	-115.6883	1.2	4.6	7	Southern California
+ci	10788341	7	"Saturday, August 28, 2010 21:10:30 UTC"	33.2895	-115.7145	2.5	4.4	57	Southern California
+ci	10788325	4	"Saturday, August 28, 2010 21:09:16 UTC"	33.2998	-115.7075	1.9	4.9	16	Southern California
+ci	10788317	4	"Saturday, August 28, 2010 21:05:21 UTC"	33.2927	-115.7108	1.9	5	38	Southern California
+ak	10074763	2	"Saturday, August 28, 2010 20:56:12 UTC"	59.4628	-152.628	1.7	74.8	26	Southern Alaska
+ci	10788309	4	"Saturday, August 28, 2010 20:52:47 UTC"	33.2892	-115.7192	2	4.2	39	Southern California
+ak	10075629	2	"Saturday, August 28, 2010 20:52:30 UTC"	52.5873	-169.5914	1.9	6.3	12	"Fox Islands, Aleutian Islands, Alaska"
+nc	71447795	0	"Saturday, August 28, 2010 20:44:12 UTC"	38.7875	-122.7738	1.3	1.2	14	Northern California
+ci	10788301	4	"Saturday, August 28, 2010 20:42:57 UTC"	33.2953	-115.7057	1.8	7	21	Southern California
+ci	10788293	4	"Saturday, August 28, 2010 20:41:43 UTC"	33.2877	-115.7172	2.4	4.1	63	Southern California
+ci	10788285	4	"Saturday, August 28, 2010 20:38:09 UTC"	33.2925	-115.7018	2.4	5.4	42	Southern California
+ci	35949767	2	"Saturday, August 28, 2010 20:37:17 UTC"	33.2935	-115.7077	1.7	2.6	11	Southern California
+ci	10788269	4	"Saturday, August 28, 2010 20:37:00 UTC"	33.3015	-115.7027	1.6	6.2	13	Southern California
+ci	10788253	4	"Saturday, August 28, 2010 20:35:51 UTC"	33.2968	-115.707	1.8	4.3	31	Southern California
+ci	35925759	2	"Saturday, August 28, 2010 20:35:45 UTC"	33.3028	-115.7005	1.3	2.7	15	Southern California
+ci	10788277	2	"Saturday, August 28, 2010 20:34:32 UTC"	33.305	-115.7103	1.2	6.1	17	Southern California
+ci	10788261	2	"Saturday, August 28, 2010 20:32:51 UTC"	33.303	-115.6838	1.6	13.1	21	Southern California
+ci	10788229	4	"Saturday, August 28, 2010 20:31:47 UTC"	33.2963	-115.6975	1.5	7.4	24	Southern California
+ak	10074760	2	"Saturday, August 28, 2010 20:30:44 UTC"	60.4652	-145.1452	1.7	9.8	23	Southern Alaska
+ci	10788221	5	"Saturday, August 28, 2010 20:16:16 UTC"	33.2877	-115.713	2.5	4.7	63	Southern California
+ci	35949759	2	"Saturday, August 28, 2010 20:14:45 UTC"	32.3487	-115.4685	2	7	10	"Baja California, Mexico"
+ci	10788205	4	"Saturday, August 28, 2010 20:14:21 UTC"	33.3012	-115.6943	1.9	8.4	16	Southern California
+ci	35957759	2	"Saturday, August 28, 2010 20:13:32 UTC"	33.3018	-115.7112	1.4	5.8	13	Southern California
+ak	10074759	2	"Saturday, August 28, 2010 20:13:24 UTC"	51.871	-177.6133	1.8	6.6	17	"Andreanof Islands, Aleutian Islands, Alaska"
+ci	10788197	4	"Saturday, August 28, 2010 20:13:01 UTC"	33.3037	-115.6985	1.7	9.9	26	Southern California
+nc	71447790	0	"Saturday, August 28, 2010 20:06:42 UTC"	35.7143	-121.1157	1.8	7.6	14	Central California
+nc	71447785	4	"Saturday, August 28, 2010 20:04:03 UTC"	38.8118	-122.7902	2	3.3	39	Northern California
+nc	71447780	0	"Saturday, August 28, 2010 19:53:31 UTC"	38.838	-122.7735	1.4	2.3	14	Northern California
+ak	10074757	2	"Saturday, August 28, 2010 19:37:22 UTC"	51.6888	-176.7513	1.5	48	9	"Andreanof Islands, Aleutian Islands, Alaska"
+ci	10788157	5	"Saturday, August 28, 2010 19:34:29 UTC"	32.8502	-116.0473	2.2	5.3	55	Southern California
+ci	10788165	3	"Saturday, August 28, 2010 19:31:46 UTC"	32.0403	-115.176	2.2	7.1	5	"Baja California, Mexico"
+ak	10074756	2	"Saturday, August 28, 2010 19:11:26 UTC"	58.4836	-153.7208	1.7	63.1	15	"Kodiak Island region, Alaska"
+ak	10074755	2	"Saturday, August 28, 2010 19:09:18 UTC"	52.661	-169.3764	2.3	1.4	13	"Fox Islands, Aleutian Islands, Alaska"
+us	2010ambc	8	"Saturday, August 28, 2010 18:46:31 UTC"	18.7204	-107.107	5	63.6	186	"off the coast of Jalisco, Mexico"
+ci	10788133	4	"Saturday, August 28, 2010 18:31:38 UTC"	32.5735	-115.6913	1.3	7.9	17	"Baja California, Mexico"
+ci	10788125	8	"Saturday, August 28, 2010 18:08:22 UTC"	32.886	-116.2432	1.3	5.2	24	Southern California
+nm	hnw0828b	A	"Saturday, August 28, 2010 17:51:56 UTC"	35.3358	-92.3308	1	4.1	5	Arkansas
+ci	10788117	4	"Saturday, August 28, 2010 17:51:35 UTC"	32.2068	-115.3335	2.4	10	11	"Baja California, Mexico"
+ci	10788109	4	"Saturday, August 28, 2010 17:32:26 UTC"	34.4543	-116.4673	1.8	5.7	38	Southern California
+ak	10074742	3	"Saturday, August 28, 2010 17:30:19 UTC"	60.6432	-152.1012	3.7	82.3	91	Southern Alaska
+hv	60175216	1	"Saturday, August 28, 2010 17:28:40 UTC"	19.3275	-155.1078	1.8	6.5	19	"Island of Hawaii, Hawaii"
+ak	10074740	2	"Saturday, August 28, 2010 17:24:40 UTC"	63.2007	-150.4226	1.5	118.5	22	Central Alaska
+us	2010ama8	Q	"Saturday, August 28, 2010 17:08:51 UTC"	35.6052	-97.2416	2.5	4.3	9	Oklahoma
+ci	10788101	4	"Saturday, August 28, 2010 17:07:59 UTC"	32.068	-115.0887	2.8	10	10	"Baja California, Mexico"
+ak	10075620	2	"Saturday, August 28, 2010 17:02:49 UTC"	52.635	-169.5329	1.9	5	11	"Fox Islands, Aleutian Islands, Alaska"
+ci	10788093	4	"Saturday, August 28, 2010 17:00:25 UTC"	32.2793	-115.3517	2.2	10	10	"Baja California, Mexico"
+ak	10074739	2	"Saturday, August 28, 2010 17:00:18 UTC"	51.8805	-175.6717	2.5	65.6	14	"Andreanof Islands, Aleutian Islands, Alaska"
+ak	10074738	2	"Saturday, August 28, 2010 16:55:53 UTC"	61.2012	-151.4639	1.5	75.7	18	Southern Alaska
+ak	10075617	2	"Saturday, August 28, 2010 16:42:32 UTC"	52.6936	-169.5538	2	3.3	13	"Fox Islands, Aleutian Islands, Alaska"
+ak	10074737	2	"Saturday, August 28, 2010 16:41:40 UTC"	52.6243	-169.7227	2.3	4.9	13	"Fox Islands, Aleutian Islands, Alaska"
+ci	10788077	6	"Saturday, August 28, 2010 16:38:55 UTC"	32.4333	-118.2248	3	10	7	off the coast of California
+ak	10074735	2	"Saturday, August 28, 2010 16:32:54 UTC"	63.207	-150.4897	1.4	125.6	16	Central Alaska
+ak	10074734	2	"Saturday, August 28, 2010 16:18:23 UTC"	54.4644	-161.5197	2.7	12	14	Alaska Peninsula
+ci	10788053	4	"Saturday, August 28, 2010 16:17:30 UTC"	33.059	-116.4537	1	15.7	32	Southern California
+ak	10074730	2	"Saturday, August 28, 2010 15:57:11 UTC"	62.9588	-150.9123	1.8	112.5	28	Central Alaska
+ak	10074729	2	"Saturday, August 28, 2010 15:55:43 UTC"	61.4438	-140.5235	1	6.2	13	"Southern Yukon Territory, Canada"
+nc	71447740	0	"Saturday, August 28, 2010 15:55:11 UTC"	37.206	-121.6028	1.6	2.8	16	Northern California
+nc	71447735	2	"Saturday, August 28, 2010 15:19:58 UTC"	36.5608	-121.1145	1	4.2	11	Central California
+ci	10788037	7	"Saturday, August 28, 2010 15:05:09 UTC"	32.7098	-115.7912	1.3	10.9	14	Southern California
+ak	10074728	2	"Saturday, August 28, 2010 14:58:42 UTC"	61.6365	-148.1127	1.2	9.8	8	Southern Alaska
+nc	71447725	0	"Saturday, August 28, 2010 14:54:16 UTC"	37.7995	-122.0295	1.8	6.3	15	"San Francisco Bay area, California"
+ci	10788013	4	"Saturday, August 28, 2010 14:51:26 UTC"	34.3072	-116.4448	1.2	12.4	18	Southern California
+ci	10787997	4	"Saturday, August 28, 2010 14:48:37 UTC"	34.3053	-116.4442	2.4	10	49	Southern California
+ci	10787989	4	"Saturday, August 28, 2010 14:48:32 UTC"	34.3058	-116.4518	2.1	10.2	56	Southern California
+ak	10074726	2	"Saturday, August 28, 2010 14:30:56 UTC"	61.3092	-150.2149	1.1	61.6	11	Southern Alaska
+nc	71447715	4	"Saturday, August 28, 2010 14:25:48 UTC"	37.5047	-118.8683	1.1	23.7	13	Central California
+ci	10787965	2	"Saturday, August 28, 2010 14:16:35 UTC"	33.2278	-115.6203	1	5	16	Southern California
+ak	10074714	3	"Saturday, August 28, 2010 14:16:25 UTC"	57.5288	-155.6419	4.6	86.3	125	Alaska Peninsula
+ci	10787949	5	"Saturday, August 28, 2010 14:13:27 UTC"	33.231	-115.6385	3.3	3.1	56	Southern California
+ci	10787933	4	"Saturday, August 28, 2010 14:03:34 UTC"	33.2198	-115.6307	1.3	0.3	12	Southern California
+nc	71447700	5	"Saturday, August 28, 2010 13:05:55 UTC"	40.4557	-124.3548	2	19.9	22	Northern California
+ak	10074712	2	"Saturday, August 28, 2010 13:05:48 UTC"	52.5845	-169.3886	2.7	4.9	16	"Fox Islands, Aleutian Islands, Alaska"
+ak	10075607	2	"Saturday, August 28, 2010 12:55:17 UTC"	62.0694	-151.3617	1.2	12.5	13	Central Alaska
+ak	10074711	2	"Saturday, August 28, 2010 12:40:32 UTC"	63.4829	-148.8237	1	12	8	Central Alaska
+nc	71447685	2	"Saturday, August 28, 2010 12:26:51 UTC"	39.8393	-123.235	1.7	9.6	15	Northern California
+nc	71447675	1	"Saturday, August 28, 2010 12:19:11 UTC"	36.9718	-121.6238	1.9	4.3	39	Northern California
+nc	71447670	2	"Saturday, August 28, 2010 12:17:22 UTC"	39.7938	-121.6363	1.5	16.8	9	Northern California
+ci	10787909	4	"Saturday, August 28, 2010 12:04:28 UTC"	36.0713	-117.8917	1.1	4.6	23	Central California
+nc	71447665	3	"Saturday, August 28, 2010 12:02:27 UTC"	38.8223	-122.8043	2.2	3.2	48	Northern California
+nc	71447660	2	"Saturday, August 28, 2010 11:57:28 UTC"	39.3133	-122.8037	1.4	12.4	10	Northern California
+nc	71447655	6	"Saturday, August 28, 2010 11:49:55 UTC"	39.3068	-122.7983	3.6	14.1	61	Northern California
+uu	8281124	2	"Saturday, August 28, 2010 11:24:55 UTC"	37.6275	-113.2127	1.5	3.1	14	Utah
+ak	10074708	2	"Saturday, August 28, 2010 11:20:57 UTC"	59.7396	-151.3328	1.5	43.3	15	"Kenai Peninsula, Alaska"
+us	2010amat	7	"Saturday, August 28, 2010 11:19:33 UTC"	36.1596	70.4938	4.9	73.9	31	"Hindu Kush region, Afghanistan"
+ci	10787893	6	"Saturday, August 28, 2010 11:08:08 UTC"	32.2088	-115.342	2.6	6.3	17	"Baja California, Mexico"
+ak	10075604	2	"Saturday, August 28, 2010 11:07:24 UTC"	51.4657	178.4865	2	60.2	8	"Rat Islands, Aleutian Islands, Alaska"
+ak	10074706	2	"Saturday, August 28, 2010 11:06:45 UTC"	52.701	-169.1248	2.1	3.8	13	"Fox Islands, Aleutian Islands, Alaska"
+ak	10074707	2	"Saturday, August 28, 2010 11:06:06 UTC"	59.9893	-152.2589	1.4	72.6	15	Southern Alaska
+ak	10074705	2	"Saturday, August 28, 2010 11:05:14 UTC"	61.8696	-149.2094	1.3	6.7	19	Southern Alaska
+ci	10787885	2	"Saturday, August 28, 2010 10:59:32 UTC"	32.1035	-115.2657	2.6	10	10	"Baja California, Mexico"
+uw	8281058	1	"Saturday, August 28, 2010 10:58:18 UTC"	47.7186	-122.3158	1.4	22.2	8	"Seattle-Tacoma urban area, Washington"
+nc	71449450	2	"Saturday, August 28, 2010 10:49:50 UTC"	40.2968	-122.2127	1.5	23.8	12	Northern California
+ci	10787877	4	"Saturday, August 28, 2010 10:42:41 UTC"	32.1172	-115.159	2.7	10	10	"Baja California, Mexico"
+ak	10075598	2	"Saturday, August 28, 2010 10:41:46 UTC"	58.5197	-152.7697	1.5	21.8	6	"Kodiak Island region, Alaska"
+ci	10787869	4	"Saturday, August 28, 2010 10:28:43 UTC"	34.3058	-116.8137	1	6.3	30	Southern California
+ak	10074699	2	"Saturday, August 28, 2010 09:59:51 UTC"	61.7446	-149.8305	1.5	33.4	22	Southern Alaska
+nc	71447630	4	"Saturday, August 28, 2010 09:59:47 UTC"	40.1343	-121.3137	1.4	4.7	12	Northern California
+ak	10075595	2	"Saturday, August 28, 2010 09:51:35 UTC"	57.5393	-151.9201	1.7	9.9	7	"Kodiak Island region, Alaska"
+ak	10074698	2	"Saturday, August 28, 2010 09:45:38 UTC"	60.1627	-141.4295	1.2	0	5	Southern Alaska
+ak	10074695	2	"Saturday, August 28, 2010 09:44:51 UTC"	51.6087	-175.6588	1.9	28.2	11	"Andreanof Islands, Aleutian Islands, Alaska"
+ci	10787853	4	"Saturday, August 28, 2010 09:37:55 UTC"	32.1842	-115.2525	2.1	10	11	"Baja California, Mexico"
+ak	10074694	2	"Saturday, August 28, 2010 09:37:03 UTC"	57.4899	-151.9041	2.3	2.6	13	"Kodiak Island region, Alaska"
+ak	10075590	2	"Saturday, August 28, 2010 09:29:07 UTC"	62.9021	-150.3061	1.1	93.9	16	Central Alaska
+ak	10075589	2	"Saturday, August 28, 2010 09:00:50 UTC"	58.9669	-152.7982	1.5	66.2	14	"Kodiak Island region, Alaska"
+uw	8280837	1	"Saturday, August 28, 2010 08:37:55 UTC"	46.6558	-122.3081	1.3	17.7	16	Washington
+ci	10787829	4	"Saturday, August 28, 2010 08:01:18 UTC"	32.2238	-115.363	2.2	10	10	"Baja California, Mexico"
+ci	10787821	4	"Saturday, August 28, 2010 07:58:25 UTC"	33.2182	-115.6388	1.4	3	34	Southern California
+ci	10787813	4	"Saturday, August 28, 2010 07:42:30 UTC"	33.9552	-116.7528	1.1	16	44	Southern California
+us	2010amam	6	"Saturday, August 28, 2010 07:26:48 UTC"	4.0963	127.0603	4.8	40.2	24	"Kepulauan Talaud, Indonesia"
+ci	10787805	2	"Saturday, August 28, 2010 07:02:12 UTC"	32.2143	-115.28	2.6	10	11	"Baja California, Mexico"
+ak	10074692	2	"Saturday, August 28, 2010 06:57:38 UTC"	61.2051	-147.0067	1.6	0	8	Southern Alaska
+nc	71447590	3	"Saturday, August 28, 2010 06:36:37 UTC"	36.5857	-121.1837	2.4	5.5	65	Central California
+nc	71447585	4	"Saturday, August 28, 2010 06:23:49 UTC"	39.5583	-123.3837	1.9	6.2	25	Northern California
+ak	10074691	2	"Saturday, August 28, 2010 06:23:48 UTC"	52.6198	-169.3569	2.4	5.9	13	"Fox Islands, Aleutian Islands, Alaska"
+ci	10787789	4	"Saturday, August 28, 2010 06:12:21 UTC"	32.3457	-115.5615	2.1	5.8	15	"Baja California, Mexico"
+ak	10075585	2	"Saturday, August 28, 2010 06:07:11 UTC"	59.841	-152.1329	1.5	70.4	9	Southern Alaska
+ak	10074690	2	"Saturday, August 28, 2010 05:57:48 UTC"	61.8478	-149.1961	1	10.3	12	Southern Alaska
+nm	hnw0828a	B	"Saturday, August 28, 2010 05:49:38 UTC"	36.4561	-89.5248	1.9	7.8	32	Tennessee
+nc	71447560	1	"Saturday, August 28, 2010 05:49:15 UTC"	38.8182	-122.7942	1.6	2.8	26	Northern California
+uu	8280547	2	"Saturday, August 28, 2010 05:47:50 UTC"	37.6322	-113.2108	2.5	3.1	24	Utah
+ci	10787773	4	"Saturday, August 28, 2010 05:26:18 UTC"	33.9977	-117.1382	1.2	11.3	31	"Greater Los Angeles area, California"
+ak	10074689	2	"Saturday, August 28, 2010 05:09:22 UTC"	61.5488	-146.3379	1	32.8	11	Southern Alaska
+ci	10787765	4	"Saturday, August 28, 2010 05:00:47 UTC"	33.9815	-117.2288	1.2	11.6	63	"Greater Los Angeles area, California"
+ak	10075582	2	"Saturday, August 28, 2010 04:30:56 UTC"	52.6071	-169.4771	2.1	3.1	11	"Fox Islands, Aleutian Islands, Alaska"
+ci	10787757	4	"Saturday, August 28, 2010 04:20:49 UTC"	35.165	-118.6163	1.3	9.5	17	Central California
+ak	10075581	2	"Saturday, August 28, 2010 04:15:27 UTC"	61.407	-149.9482	1.3	51.8	13	Southern Alaska
+ak	10074688	2	"Saturday, August 28, 2010 04:10:41 UTC"	52.7552	-169.1118	2.5	4	15	"Fox Islands, Aleutian Islands, Alaska"
+ci	10787749	2	"Saturday, August 28, 2010 04:06:36 UTC"	34.582	-116.5885	1.3	11.9	18	Southern California
+uw	8280352	1	"Saturday, August 28, 2010 03:52:18 UTC"	45.3576	-121.7673	1.6	6	18	"Mount Hood area, Oregon"
+nc	71447535	4	"Saturday, August 28, 2010 03:49:24 UTC"	35.8968	-119.9032	1.6	11.3	22	Central California
+nc	71447530	2	"Saturday, August 28, 2010 03:15:02 UTC"	39.2207	-123.2848	1.8	3.1	14	Northern California
+ak	10074680	2	"Saturday, August 28, 2010 03:02:49 UTC"	59.0769	-153.0888	3.4	75.5	89	Southern Alaska
+ak	10075578	2	"Saturday, August 28, 2010 02:59:28 UTC"	51.1685	-178.4569	2.2	29.4	14	"Andreanof Islands, Aleutian Islands, Alaska"
+ci	10787741	2	"Saturday, August 28, 2010 02:41:10 UTC"	36.1142	-117.7857	1	10.4	21	Central California
+ak	10075577	2	"Saturday, August 28, 2010 02:39:44 UTC"	52.5792	-169.1259	2.1	13.4	9	"Fox Islands, Aleutian Islands, Alaska"
+ak	10075576	2	"Saturday, August 28, 2010 02:27:35 UTC"	52.5975	-169.6496	2.3	4.8	13	"Fox Islands, Aleutian Islands, Alaska"
+ci	10787733	6	"Saturday, August 28, 2010 02:19:46 UTC"	33.1663	-115.6737	1.2	0.7	11	Southern California
+nc	71447520	2	"Saturday, August 28, 2010 02:12:28 UTC"	40.7547	-122.1408	1.2	7.5	8	Northern California
+ak	10074679	2	"Saturday, August 28, 2010 02:10:19 UTC"	59.325	-153.2482	1.9	113.6	16	Southern Alaska
+ak	10075574	2	"Saturday, August 28, 2010 02:00:09 UTC"	52.5491	-168.9918	1.9	12.6	9	"Fox Islands, Aleutian Islands, Alaska"
+ci	10787725	2	"Saturday, August 28, 2010 01:48:04 UTC"	32.55	-115.7055	2.6	10	11	"Baja California, Mexico"
+nn	315851	7	"Saturday, August 28, 2010 01:34:45 UTC"	37.264	-115.6673	1.5	0	9	Nevada
+us	2010amae	6	"Saturday, August 28, 2010 00:46:59 UTC"	39.4704	54.3863	4.9	29.6	78	Turkmenistan
+us	2010amac	6	"Saturday, August 28, 2010 00:29:08 UTC"	35.6818	54.6204	4.8	26.6	51	northern Iran
+ak	10074593	2	"Saturday, August 28, 2010 00:18:01 UTC"	52.49	-169.9148	2.9	3.1	11	"Fox Islands, Aleutian Islands, Alaska"
+ak	10074592	2	"Saturday, August 28, 2010 00:11:10 UTC"	52.5122	-170.1825	3.1	4.9	13	"Fox Islands, Aleutian Islands, Alaska"
+ak	10075571	2	"Saturday, August 28, 2010 00:00:29 UTC"	52.7042	-169.4084	2.2	8.6	10	"Fox Islands, Aleutian Islands, Alaska"
+ak	10074590	2	"Friday, August 27, 2010 23:57:36 UTC"	61.7857	-150.0679	1.3	7.2	15	Southern Alaska
+ak	10075379	2	"Friday, August 27, 2010 23:47:21 UTC"	63.2867	-151.1463	1.9	7.3	22	Central Alaska
+nc	71447490	2	"Friday, August 27, 2010 23:33:58 UTC"	36.5627	-121.1177	1	4.8	11	Central California
+ak	10074587	2	"Friday, August 27, 2010 23:31:42 UTC"	61.3016	-152.4568	2	0.6	29	Southern Alaska
+ak	10075377	2	"Friday, August 27, 2010 23:28:24 UTC"	52.4803	-169.3191	2.2	6.5	11	"Fox Islands, Aleutian Islands, Alaska"
+nn	315848	7	"Friday, August 27, 2010 23:22:46 UTC"	37.2593	-115.4677	1.1	0	8	Nevada
+ak	10074582	2	"Friday, August 27, 2010 23:14:05 UTC"	60.2728	-152.4054	2.6	89.1	60	Southern Alaska
+ci	10787685	2	"Friday, August 27, 2010 23:10:03 UTC"	36.081	-117.8738	1.1	4.6	11	Central California
+ak	10075375	2	"Friday, August 27, 2010 23:04:30 UTC"	50.1566	177.2578	3	2.3	15	"Rat Islands, Aleutian Islands, Alaska"
+uu	8272302	2	"Friday, August 27, 2010 23:02:33 UTC"	44.3855	-110.8205	1	3.5	9	"Yellowstone National Park, Wyoming"
+nc	71447480	2	"Friday, August 27, 2010 22:58:27 UTC"	37.8027	-122.0333	1.1	5.1	10	"San Francisco Bay area, California"
+nc	71447475	5	"Friday, August 27, 2010 22:53:49 UTC"	37.6207	-118.8147	1.9	7.4	35	"Long Valley area, California"
+ak	10074580	2	"Friday, August 27, 2010 22:38:00 UTC"	60.1663	-147.5298	2.3	6.2	30	Southern Alaska
+nc	71447465	2	"Friday, August 27, 2010 22:29:09 UTC"	36.8855	-121.6152	1.4	2.4	20	Central California
+ci	10787669	4	"Friday, August 27, 2010 22:19:10 UTC"	33.4652	-116.458	1	12.5	32	Southern California
+us	2010alce	7	"Friday, August 27, 2010 22:14:29 UTC"	52.5658	-169.1925	4.7	40.6	116	"Fox Islands, Aleutian Islands, Alaska"
+nc	71447455	2	"Friday, August 27, 2010 21:55:20 UTC"	37.5493	-118.867	1.5	5	28	Central California
+ak	10075372	2	"Friday, August 27, 2010 21:54:16 UTC"	54.6517	-161.8628	1.9	43.4	9	Alaska Peninsula
+ci	10787653	2	"Friday, August 27, 2010 21:50:30 UTC"	32.2108	-115.287	2.1	10	7	"Baja California, Mexico"
+ak	10074568	2	"Friday, August 27, 2010 21:37:41 UTC"	52.9105	-166.5076	3.3	36.7	30	"Fox Islands, Aleutian Islands, Alaska"
+uw	8272128	1	"Friday, August 27, 2010 21:28:00 UTC"	48.4038	-122.8258	1.7	18	26	"Strait of Juan de Fuca, Washington"
+ak	10074566	2	"Friday, August 27, 2010 21:25:11 UTC"	52.6963	-169.3133	2.5	4.8	15	"Fox Islands, Aleutian Islands, Alaska"
+ci	10787637	2	"Friday, August 27, 2010 21:06:31 UTC"	34.0208	-117.212	1.3	14.6	14	"Greater Los Angeles area, California"
+ci	10787629	4	"Friday, August 27, 2010 20:58:13 UTC"	32.6972	-115.9162	1.2	4.9	14	Southern California
+ci	10787613	4	"Friday, August 27, 2010 20:41:59 UTC"	35.7243	-118.0535	1.3	6.2	26	Central California
+ak	10074564	2	"Friday, August 27, 2010 20:36:41 UTC"	61.2568	-150.3259	1.3	13	20	Southern Alaska
+ak	10074563	2	"Friday, August 27, 2010 20:34:53 UTC"	53.0306	-167.9194	2.4	87.6	14	"Fox Islands, Aleutian Islands, Alaska"
+ak	10074562	2	"Friday, August 27, 2010 20:29:35 UTC"	52.6267	-169.3795	2.4	6.9	13	"Fox Islands, Aleutian Islands, Alaska"
+ak	10075366	2	"Friday, August 27, 2010 20:29:06 UTC"	60.1984	-153.0685	1.6	136.8	14	Southern Alaska
+ak	10074454	2	"Friday, August 27, 2010 19:59:39 UTC"	52.743	-169.3015	2.2	3.4	14	"Fox Islands, Aleutian Islands, Alaska"
+ak	10075364	2	"Friday, August 27, 2010 19:44:50 UTC"	58.7474	-154.6593	1.5	130.6	8	Alaska Peninsula
+ak	10074452	2	"Friday, August 27, 2010 19:43:29 UTC"	61.2813	-146.6518	1	29.4	10	Southern Alaska
+us	2010alby	6	"Friday, August 27, 2010 19:23:48 UTC"	35.4571	54.5497	5.7	10	100	northern Iran
+us	2010albv	6	"Friday, August 27, 2010 19:13:02 UTC"	39.6193	54.5594	4.6	10	28	Turkmenistan
+ci	10787597	4	"Friday, August 27, 2010 19:05:20 UTC"	32.9967	-116.3452	1.8	9.9	59	Southern California
+hv	60175011	1	"Friday, August 27, 2010 19:04:27 UTC"	20.0537	-155.8433	2.4	12.4	12	"Hawaii region, Hawaii"
+nc	71447395	3	"Friday, August 27, 2010 19:03:47 UTC"	39.7497	-122.0698	2.7	23.8	50	Northern California
+uu	8271848	2	"Friday, August 27, 2010 18:48:02 UTC"	39.0527	-111.3915	1.2	4.3	7	Utah
+nn	315836	7	"Friday, August 27, 2010 18:37:17 UTC"	36.2273	-114.993	1.8	0	8	"Las Vegas urban area, Nevada"
+ak	10074444	2	"Friday, August 27, 2010 18:34:23 UTC"	60.3823	-152.1695	1.6	84.5	20	Southern Alaska
+ci	10787589	2	"Friday, August 27, 2010 18:19:23 UTC"	34.6443	-117.1092	1.5	0	9	Southern California
+ak	10074442	2	"Friday, August 27, 2010 18:11:34 UTC"	63.4482	-147.6425	1.3	8.2	11	Central Alaska
+ci	10787573	4	"Friday, August 27, 2010 18:02:42 UTC"	32.718	-115.953	1.3	3.7	14	Southern California
+nc	71447390	2	"Friday, August 27, 2010 18:01:24 UTC"	37.2055	-122.1133	1.3	11.3	26	Northern California
+ci	10787565	4	"Friday, August 27, 2010 18:01:13 UTC"	32.7152	-115.9518	1.3	5.1	19	Southern California
+ak	10075359	2	"Friday, August 27, 2010 17:59:35 UTC"	61.5887	-147.884	1.3	20	15	Southern Alaska
+nc	71447385	2	"Friday, August 27, 2010 17:54:13 UTC"	36.5653	-121.1583	1.1	3.8	17	Central California
+ci	10787549	2	"Friday, August 27, 2010 17:40:04 UTC"	33.2183	-115.633	1.7	2.4	19	Southern California
+ci	10787533	4	"Friday, August 27, 2010 17:37:25 UTC"	33.2248	-115.6305	1.5	3.5	20	Southern California
+ak	10075358	2	"Friday, August 27, 2010 17:35:10 UTC"	52.7121	-169.2162	2.2	4.7	13	"Fox Islands, Aleutian Islands, Alaska"
+ci	10787509	4	"Friday, August 27, 2010 17:32:47 UTC"	33.2238	-115.6298	3.6	2	33	Southern California
+ak	10075357	2	"Friday, August 27, 2010 17:29:55 UTC"	52.6721	-169.2115	2.2	3.9	12	"Fox Islands, Aleutian Islands, Alaska"
+ak	10074440	2	"Friday, August 27, 2010 17:27:48 UTC"	63.6944	-150.4594	2.1	13.9	18	Central Alaska
+nc	71447375	0	"Friday, August 27, 2010 17:26:54 UTC"	38.7877	-122.775	1.3	2.7	16	Northern California
+uw	8271717	1	"Friday, August 27, 2010 17:17:47 UTC"	47.1279	-121.8481	1.2	18	14	Washington
+nc	71447365	2	"Friday, August 27, 2010 17:12:41 UTC"	37.8027	-122.0338	1.3	6.1	11	"San Francisco Bay area, California"
+ak	10075355	2	"Friday, August 27, 2010 17:11:35 UTC"	64.5805	-151.0949	1	10.8	10	Central Alaska
+ak	10074438	2	"Friday, August 27, 2010 16:57:04 UTC"	53.157	-174.0374	3.2	19.9	13	"Andreanof Islands, Aleutian Islands, Alaska"
+nc	71447350	0	"Friday, August 27, 2010 16:55:13 UTC"	38.8348	-122.7867	1.4	1.5	14	Northern California
+ci	10787493	4	"Friday, August 27, 2010 16:47:05 UTC"	32.1138	-115.2428	2.4	10	11	"Baja California, Mexico"
+ci	10787485	4	"Friday, August 27, 2010 16:38:18 UTC"	32.258	-115.3578	2.2	10	11	"Baja California, Mexico"
+ak	10074437	2	"Friday, August 27, 2010 16:26:57 UTC"	63.4007	-145.8944	1.3	2.2	11	Central Alaska
+ak	10075351	2	"Friday, August 27, 2010 16:26:21 UTC"	51.426	-176.0691	1.8	36.6	12	"Andreanof Islands, Aleutian Islands, Alaska"
+ak	10074436	2	"Friday, August 27, 2010 16:15:38 UTC"	62.5728	-151.7167	1	13.1	11	Central Alaska
+ak	10074434	2	"Friday, August 27, 2010 16:12:18 UTC"	60.6715	-151.8363	1.9	66.5	29	"Kenai Peninsula, Alaska"
+nc	71447335	0	"Friday, August 27, 2010 16:08:16 UTC"	38.7872	-122.7733	1.3	0.6	13	Northern California
+ak	10074433	2	"Friday, August 27, 2010 15:59:19 UTC"	52.6193	-169.4243	2.8	5.2	12	"Fox Islands, Aleutian Islands, Alaska"
+ci	10787469	4	"Friday, August 27, 2010 15:47:53 UTC"	31.9737	-115.1208	2.6	10	7	"Baja California, Mexico"
+ak	10075347	2	"Friday, August 27, 2010 15:42:50 UTC"	59.1053	-151.8617	1.6	58.6	8	"Kenai Peninsula, Alaska"
+nc	71447320	4	"Friday, August 27, 2010 15:33:19 UTC"	37.457	-118.8445	1.4	8.7	25	Central California
+nn	315820	7	"Friday, August 27, 2010 15:29:12 UTC"	36.2219	-114.9746	1.8	0	9	"Las Vegas urban area, Nevada"
+ak	10074432	2	"Friday, August 27, 2010 15:26:43 UTC"	59.9557	-141.1903	1.4	3.9	9	Southeastern Alaska
+ak	10074431	2	"Friday, August 27, 2010 15:23:27 UTC"	62.4645	-148.4425	1.7	6	27	Central Alaska
+nc	71447310	2	"Friday, August 27, 2010 15:18:53 UTC"	37.801	-122.0323	1.6	5.7	7	"San Francisco Bay area, California"
+uu	8271518	2	"Friday, August 27, 2010 15:18:18 UTC"	42.043	-111.5148	2.2	0.1	32	southern Idaho
+ak	10075344	2	"Friday, August 27, 2010 15:15:07 UTC"	52.0616	-176.1093	1.7	3.9	9	"Andreanof Islands, Aleutian Islands, Alaska"
+ak	10074428	2	"Friday, August 27, 2010 15:06:09 UTC"	61.2001	-146.9996	1.4	0	6	Southern Alaska
+nc	71447305	2	"Friday, August 27, 2010 15:04:54 UTC"	37.803	-122.0328	1	5.4	10	"San Francisco Bay area, California"
+nc	71447295	2	"Friday, August 27, 2010 14:54:48 UTC"	37.8032	-122.031	1.3	5.7	15	"San Francisco Bay area, California"
+hv	60174966	1	"Friday, August 27, 2010 14:52:41 UTC"	19.359	-155.5012	2.1	9.3	34	"Island of Hawaii, Hawaii"
+ak	10074427	2	"Friday, August 27, 2010 14:50:08 UTC"	51.3358	-178.3045	2.2	42.5	20	"Andreanof Islands, Aleutian Islands, Alaska"
+nc	71447290	2	"Friday, August 27, 2010 14:49:41 UTC"	37.8017	-122.0328	1.1	5.7	14	"San Francisco Bay area, California"
+ak	10074425	2	"Friday, August 27, 2010 14:42:30 UTC"	60.0952	-141.4707	1.7	0	8	Southern Alaska
+nc	71447285	3	"Friday, August 27, 2010 14:40:29 UTC"	37.8015	-122.0318	2.6	7.4	107	"San Francisco Bay area, California"
+nc	71447280	0	"Friday, August 27, 2010 14:38:37 UTC"	38.8242	-122.7957	1.8	2.7	22	Northern California
+ak	10074424	2	"Friday, August 27, 2010 14:19:18 UTC"	57.4573	-155.4011	2.4	60.8	24	Alaska Peninsula
+ak	10075338	2	"Friday, August 27, 2010 14:05:03 UTC"	63.1449	-150.4854	1.2	111.9	12	Central Alaska
+ci	10787445	2	"Friday, August 27, 2010 13:22:51 UTC"	32.4025	-115.2275	2.1	6	10	"Baja California, Mexico"
+ak	10074421	2	"Friday, August 27, 2010 13:22:44 UTC"	61.2891	-151.4224	1.6	68.1	23	Southern Alaska
+uw	8271305	1	"Friday, August 27, 2010 13:05:22 UTC"	46.9495	-121.5591	1.8	8	29	Washington
+ci	10787437	4	"Friday, August 27, 2010 13:04:49 UTC"	32.7862	-116.1157	1.3	5.7	33	Southern California
+uw	8271304	1	"Friday, August 27, 2010 13:04:42 UTC"	47.3821	-124.056	1.4	26.6	10	"Olympic Peninsula, Washington"
+ak	10074420	2	"Friday, August 27, 2010 12:51:27 UTC"	63.2848	-151.0681	1.4	5.8	12	Central Alaska
+us	2010ala8	7	"Friday, August 27, 2010 12:32:57 UTC"	52.6658	160.7294	4.7	35.2	92	"off the east coast of the Kamchatka Peninsula, Russia"
+ak	10074411	2	"Friday, August 27, 2010 12:26:14 UTC"	60.1793	-152.6231	2.6	94.3	57	Southern Alaska
+nc	71447265	2	"Friday, August 27, 2010 12:17:13 UTC"	38.8183	-122.798	1	3.7	38	Northern California
+ci	10787421	4	"Friday, August 27, 2010 11:59:25 UTC"	32.5647	-115.6857	1.4	7.5	23	"Baja California, Mexico"
+nc	71447260	2	"Friday, August 27, 2010 11:45:21 UTC"	39.3142	-122.8028	1.3	11.7	8	Northern California
+nc	71447255	2	"Friday, August 27, 2010 11:44:11 UTC"	39.3098	-122.8023	1.8	10.9	29	Northern California
+ak	10074410	2	"Friday, August 27, 2010 11:18:44 UTC"	52.7114	-169.5038	2.5	3.9	12	"Fox Islands, Aleutian Islands, Alaska"
+ci	10787413	4	"Friday, August 27, 2010 11:16:43 UTC"	32.609	-115.7697	2.1	4.9	32	"Baja California, Mexico"
+ci	10787405	6	"Friday, August 27, 2010 11:13:36 UTC"	32.8723	-117.6558	1.4	6	22	"Gulf of Santa Catalina, California"
+ci	10787397	4	"Friday, August 27, 2010 11:04:02 UTC"	32.6088	-115.7645	2.2	5.2	31	"Baja California, Mexico"
+ci	10787389	4	"Friday, August 27, 2010 10:56:24 UTC"	35.8918	-117.6933	1.4	4.2	29	Central California
+ak	10075332	2	"Friday, August 27, 2010 10:56:15 UTC"	50.8643	174.794	3.5	25	16	south of the Aleutian Islands
+mb	10032977	2	"Friday, August 27, 2010 10:52:36 UTC"	44.961	-112.3091	1.1	0.8	12	western Montana
+ak	10075331	2	"Friday, August 27, 2010 10:52:21 UTC"	52.1422	-178.9031	2.4	156.4	16	"Andreanof Islands, Aleutian Islands, Alaska"
+ak	10075330	2	"Friday, August 27, 2010 10:49:53 UTC"	50.9527	-179.1223	2.2	8.4	12	"Andreanof Islands, Aleutian Islands, Alaska"
+nc	71447230	3	"Friday, August 27, 2010 10:46:33 UTC"	38.8137	-122.7933	2.2	3.8	57	Northern California
+ci	10787357	4	"Friday, August 27, 2010 10:42:10 UTC"	32.388	-115.4443	2.1	10	16	"Baja California, Mexico"
+ak	10074409	2	"Friday, August 27, 2010 10:41:10 UTC"	59.4004	-152.5213	2	85.7	32	Southern Alaska
+ak	10075328	2	"Friday, August 27, 2010 10:32:33 UTC"	62.3058	-149.5585	1	12.5	13	Central Alaska
+ak	10075327	2	"Friday, August 27, 2010 10:31:38 UTC"	59.7626	-153.1431	1.7	127.5	10	Southern Alaska
+uw	8271027	1	"Friday, August 27, 2010 10:27:28 UTC"	46.7176	-119.5661	1.5	0	10	Washington
+ak	10074407	2	"Friday, August 27, 2010 10:27:13 UTC"	54.4932	-164.0101	2.5	87.3	16	"Unimak Island region, Alaska"
+ak	10075325	2	"Friday, August 27, 2010 10:09:08 UTC"	51.2737	-178.4329	2	31.6	16	"Andreanof Islands, Aleutian Islands, Alaska"
+ci	10787333	4	"Friday, August 27, 2010 10:01:02 UTC"	33.2255	-115.6425	3.2	2	62	Southern California
+nc	71447225	2	"Friday, August 27, 2010 09:52:51 UTC"	38.5718	-122.425	1.5	4.7	12	Northern California
+pr	10239000	0	"Friday, August 27, 2010 09:37:27 UTC"	18.45	-67.4359	2.9	15.1	10	"Mona Passage, Puerto Rico"
+ak	10074404	2	"Friday, August 27, 2010 09:15:18 UTC"	52.5902	-169.1429	2.8	4.6	12	"Fox Islands, Aleutian Islands, Alaska"
+us	2010alaz	7	"Friday, August 27, 2010 09:10:13 UTC"	-55.5232	-27.9077	5.2	35	11	South Sandwich Islands region
+ak	10074402	2	"Friday, August 27, 2010 09:04:07 UTC"	61.296	-152.4087	1.5	0.8	11	Southern Alaska
+ak	10075322	2	"Friday, August 27, 2010 08:53:49 UTC"	51.6528	-177.2297	1.5	26.2	9	"Andreanof Islands, Aleutian Islands, Alaska"
+nc	71447220	3	"Friday, August 27, 2010 08:51:16 UTC"	36.5972	-121.1977	2	4.8	46	Central California
+ak	10075321	2	"Friday, August 27, 2010 08:36:37 UTC"	61.5638	-151.942	1.2	83.1	8	Southern Alaska
+ci	10787285	4	"Friday, August 27, 2010 08:22:17 UTC"	32.6655	-115.9473	1.6	6.8	30	Southern California
+ci	10787277	4	"Friday, August 27, 2010 08:20:18 UTC"	32.6783	-115.8667	1.2	5	25	Southern California
+us	2010ala9	6	"Friday, August 27, 2010 08:03:58 UTC"	-5.9269	152.4676	4.7	39.1	23	"New Britain region, Papua New Guinea"
+ak	10075320	2	"Friday, August 27, 2010 08:03:22 UTC"	60.1834	-153.0174	1.8	122.9	24	Southern Alaska
+ak	10075319	2	"Friday, August 27, 2010 08:02:40 UTC"	61.4789	-149.9737	1.1	42.9	13	Southern Alaska
+ci	10787261	3	"Friday, August 27, 2010 08:01:36 UTC"	32.163	-115.2848	2.2	10	11	"Baja California, Mexico"
+nm	hnw0827a	A	"Friday, August 27, 2010 08:01:17 UTC"	35.2718	-92.1913	2.2	1.8	7	Arkansas
+ak	10074400	2	"Friday, August 27, 2010 07:46:16 UTC"	52.617	-169.2592	2.7	2.4	11	"Fox Islands, Aleutian Islands, Alaska"
+nc	71447200	2	"Friday, August 27, 2010 07:44:32 UTC"	38.7798	-122.7137	1.8	2.5	39	Northern California
+ci	10787253	4	"Friday, August 27, 2010 07:44:16 UTC"	32.6912	-115.8135	1.4	5.6	21	Southern California
+ak	10075317	2	"Friday, August 27, 2010 07:40:47 UTC"	52.4223	-170.1458	2.6	4.6	12	"Fox Islands, Aleutian Islands, Alaska"
+ak	10074399	3	"Friday, August 27, 2010 07:24:59 UTC"	51.8334	-176.0878	1.9	67	9	"Andreanof Islands, Aleutian Islands, Alaska"
+ak	10075315	2	"Friday, August 27, 2010 07:21:37 UTC"	62.2285	-149.3104	1.1	64.7	11	Central Alaska
+ak	10075314	2	"Friday, August 27, 2010 07:21:32 UTC"	59.2023	-153.488	1.6	102.4	8	Southern Alaska
+hv	60174896	1	"Friday, August 27, 2010 07:20:16 UTC"	19.6455	-155.8277	2	7	13	"Island of Hawaii, Hawaii"
+nc	71447190	3	"Friday, August 27, 2010 07:15:23 UTC"	38.8153	-122.811	1.6	3.9	47	Northern California
+ci	10787237	4	"Friday, August 27, 2010 07:13:22 UTC"	36.0138	-117.7982	1.2	3	29	Central California
+nn	315808	7	"Friday, August 27, 2010 07:12:23 UTC"	37.2143	-115.3778	1	2.1	12	Nevada
+ci	10787229	4	"Friday, August 27, 2010 07:10:43 UTC"	32.6955	-115.8205	1.3	5.7	27	Southern California
+nc	71447185	7	"Friday, August 27, 2010 07:09:40 UTC"	35.996	-119.9767	1.8	17.3	45	Central California
+nn	316026	7	"Friday, August 27, 2010 07:06:42 UTC"	37.2507	-115.4487	1.5	3.2	9	Nevada
+nn	315806	7	"Friday, August 27, 2010 07:02:53 UTC"	37.2697	-115.471	1.4	0	8	Nevada
+nc	71447175	5	"Friday, August 27, 2010 06:43:39 UTC"	35.7533	-120.3023	2.2	8.9	62	Central California
+us	2010alat	6	"Friday, August 27, 2010 06:42:22 UTC"	-6.2217	146.4078	5	114.3	39	"eastern New Guinea region, Papua New Guinea"
+nc	71447180	5	"Friday, August 27, 2010 06:40:43 UTC"	40.2795	-124.4913	2	19.2	22	offshore Northern California
+hv	60174886	3	"Friday, August 27, 2010 06:40:15 UTC"	19.4202	-155.4053	2.8	11.4	42	"Island of Hawaii, Hawaii"
+ak	10075313	2	"Friday, August 27, 2010 06:39:34 UTC"	50.1457	-179.8465	2.6	24.8	10	"Andreanof Islands, Aleutian Islands, Alaska"
+ak	10074397	2	"Friday, August 27, 2010 06:39:29 UTC"	59.6971	-137.9123	1.6	10.5	8	"British Columbia, Canada"
+ci	10787213	4	"Friday, August 27, 2010 06:30:18 UTC"	32.6733	-115.8772	1.5	7.5	29	Southern California
+ak	10075311	2	"Friday, August 27, 2010 06:29:12 UTC"	52.6909	-169.4345	2.4	1.2	9	"Fox Islands, Aleutian Islands, Alaska"
+ak	10074396	2	"Friday, August 27, 2010 06:28:31 UTC"	61.2765	-147.2097	1.4	10.4	15	Southern Alaska
+ak	10074392	3	"Friday, August 27, 2010 06:22:07 UTC"	61.7407	-153.8868	2.9	0	35	Southern Alaska
+ak	10074391	2	"Friday, August 27, 2010 06:10:22 UTC"	52.6567	-169.5032	2.5	5.2	12	"Fox Islands, Aleutian Islands, Alaska"
+ak	10075307	2	"Friday, August 27, 2010 06:08:18 UTC"	52.6813	-169.4785	2.3	2.8	11	"Fox Islands, Aleutian Islands, Alaska"
+ak	10075306	2	"Friday, August 27, 2010 05:55:01 UTC"	52.6823	-169.442	2.3	4.9	9	"Fox Islands, Aleutian Islands, Alaska"
+ak	10075305	2	"Friday, August 27, 2010 05:48:19 UTC"	52.6752	-169.4987	2.7	4.9	10	"Fox Islands, Aleutian Islands, Alaska"
+ak	10074390	2	"Friday, August 27, 2010 05:47:53 UTC"	52.6654	-169.0383	2.7	4.8	10	"Fox Islands, Aleutian Islands, Alaska"
+nc	71447165	3	"Friday, August 27, 2010 05:44:53 UTC"	35.9107	-121.26	1.8	9.3	35	Central California
+ak	10075303	2	"Friday, August 27, 2010 05:33:08 UTC"	63.6861	-152.2249	1.2	12.4	9	Central Alaska
+ci	10787205	4	"Friday, August 27, 2010 05:31:21 UTC"	34.0575	-117.2538	1.1	17.4	43	"Greater Los Angeles area, California"
+ak	10074388	2	"Friday, August 27, 2010 05:27:45 UTC"	50.974	-179.1039	3.5	0.6	26	"Andreanof Islands, Aleutian Islands, Alaska"
+ak	10074387	2	"Friday, August 27, 2010 05:03:07 UTC"	52.6881	-169.6017	3	2.4	12	"Fox Islands, Aleutian Islands, Alaska"
+ci	10787189	4	"Friday, August 27, 2010 05:02:38 UTC"	32.1582	-115.2105	2.1	10	13	"Baja California, Mexico"
+ci	10787173	4	"Friday, August 27, 2010 04:55:04 UTC"	33.1107	-116.2637	1	7.6	32	Southern California
+nn	315833	7	"Friday, August 27, 2010 04:51:20 UTC"	37.2648	-115.4691	1.7	0	11	Nevada
+nn	315842	7	"Friday, August 27, 2010 04:44:12 UTC"	37.2376	-115.4472	1.4	0	9	Nevada
+us	2010alam	7	"Friday, August 27, 2010 04:40:57 UTC"	-7.4662	-75.0912	5.1	133.6	158	northern Peru
+ak	10075299	2	"Friday, August 27, 2010 04:14:55 UTC"	57.8849	-155.2297	1.8	75.7	12	Alaska Peninsula
+ak	10074377	2	"Friday, August 27, 2010 04:09:13 UTC"	60.351	-141.1622	2.9	2.6	25	Southern Alaska
+ak	10074374	2	"Friday, August 27, 2010 04:02:39 UTC"	63.8078	-149.2361	1.7	115.3	26	Central Alaska
+uw	8270356	1	"Friday, August 27, 2010 03:56:58 UTC"	46.7155	-119.5715	1.9	0	13	Washington
+ak	10074372	2	"Friday, August 27, 2010 03:54:27 UTC"	52.3279	-168.8894	3	7.1	14	"Fox Islands, Aleutian Islands, Alaska"
+ci	10787165	4	"Friday, August 27, 2010 03:48:03 UTC"	32.7277	-116.069	1.7	8.9	35	Southern California
+ci	10787149	2	"Friday, August 27, 2010 03:14:45 UTC"	32.1795	-115.2452	2.4	10	10	"Baja California, Mexico"
+ak	10074370	2	"Friday, August 27, 2010 03:03:34 UTC"	53.7296	-165.7881	2.4	30	15	"Fox Islands, Aleutian Islands, Alaska"
+ci	10787141	4	"Friday, August 27, 2010 02:59:15 UTC"	32.2282	-115.3303	2.5	3.8	15	"Baja California, Mexico"
+ak	10075294	2	"Friday, August 27, 2010 02:52:16 UTC"	53.0655	-174.2165	2.7	200	12	"Andreanof Islands, Aleutian Islands, Alaska"
+ak	10074368	2	"Friday, August 27, 2010 02:41:38 UTC"	63.8191	-149.3022	1.5	113.3	23	Central Alaska
+ci	10787133	2	"Friday, August 27, 2010 02:40:33 UTC"	32.1883	-115.2598	2.3	10	8	"Baja California, Mexico"
+ak	10074367	2	"Friday, August 27, 2010 02:33:39 UTC"	51.3292	-178.3182	3	36.9	23	"Andreanof Islands, Aleutian Islands, Alaska"
+ci	10787125	4	"Friday, August 27, 2010 02:05:48 UTC"	36.0125	-117.8743	1.2	4.8	24	Central California
+nc	71447105	0	"Friday, August 27, 2010 02:05:29 UTC"	38.8168	-122.8247	1	2.5	13	Northern California
+ak	10075291	2	"Friday, August 27, 2010 01:42:22 UTC"	63.127	-149.8623	1	92.2	10	Central Alaska
+nc	71447080	3	"Friday, August 27, 2010 01:33:10 UTC"	38.8328	-122.7945	2	2.6	43	Northern California
+ci	10787109	4	"Friday, August 27, 2010 01:32:38 UTC"	32.4525	-115.582	2.1	2.4	22	"Baja California, Mexico"
+ci	10787117	2	"Friday, August 27, 2010 01:30:34 UTC"	32.4167	-115.5933	1.7	7.1	11	"Baja California, Mexico"
+ak	10074365	2	"Friday, August 27, 2010 01:07:28 UTC"	50.925	-179.1006	3	8.6	21	"Andreanof Islands, Aleutian Islands, Alaska"
+us	2010alae	7	"Friday, August 27, 2010 00:56:12 UTC"	-5.4555	102.8141	5	35	45	"southern Sumatra, Indonesia"
+ci	10787093	2	"Friday, August 27, 2010 00:55:54 UTC"	32.5555	-115.7225	1.7	3.4	18	"Baja California, Mexico"
+ci	10787085	4	"Friday, August 27, 2010 00:42:06 UTC"	33.2023	-116.3995	1	13.8	46	Southern California
+hv	60174826	1	"Friday, August 27, 2010 00:25:34 UTC"	19.4345	-155.3925	2	9	32	"Island of Hawaii, Hawaii"
+ak	10075288	2	"Friday, August 27, 2010 00:18:48 UTC"	50.8934	-179.0863	2.4	1.5	12	"Andreanof Islands, Aleutian Islands, Alaska"
+us	2010alad	6	"Friday, August 27, 2010 00:17:07 UTC"	-55.9247	-27.7537	5.3	130.9	74	South Sandwich Islands region
+ak	10074359	2	"Friday, August 27, 2010 00:09:39 UTC"	62.1455	-150.4271	1.3	54.2	16	Central Alaska
+nn	315834	7	"Friday, August 27, 2010 00:09:00 UTC"	37.2494	-115.4546	1.2	0	9	Nevada
+ak	10074677	2	"Thursday, August 26, 2010 23:55:01 UTC"	52.7734	-169.5835	2.3	13.3	8	"Fox Islands, Aleutian Islands, Alaska"
+ak	10074676	2	"Thursday, August 26, 2010 23:35:58 UTC"	59.1642	-149.8731	1.7	25.5	12	"Kenai Peninsula, Alaska"
+ak	10074675	2	"Thursday, August 26, 2010 23:25:51 UTC"	52.7501	-169.6405	2.2	13.1	8	"Fox Islands, Aleutian Islands, Alaska"
+ak	10074354	2	"Thursday, August 26, 2010 23:18:19 UTC"	62.3875	-149.5765	2.8	50.7	53	Central Alaska
+ak	10074672	2	"Thursday, August 26, 2010 22:54:46 UTC"	51.4312	-177.9611	2.1	53.2	11	"Andreanof Islands, Aleutian Islands, Alaska"
+ci	10787045	2	"Thursday, August 26, 2010 22:54:32 UTC"	34.8425	-118.9652	1	5.2	14	Central California
+pr	10238007	0	"Thursday, August 26, 2010 22:37:18 UTC"	17.9209	-65.583	3.1	10	13	Puerto Rico region

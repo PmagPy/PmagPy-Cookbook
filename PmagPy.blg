@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: PmagPy.aux
+The style file: apalike2.bst
+Database file #1: UCPbook.bib
+You've used 30 entries,
+            2229 wiz_defined-function locations,
+            687 strings with 9864 characters,
+and the built_in function-call counts, 16349 in all, are:
+= -- 1587
+> -- 744
+< -- 18
++ -- 270
+- -- 262
+* -- 1452
+:= -- 2676
+add.period$ -- 91
+call.type$ -- 30
+change.case$ -- 276
+chr.to.int$ -- 30
+cite$ -- 30
+duplicate$ -- 523
+empty$ -- 1113
+format.name$ -- 306
+if$ -- 3287
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 33
+newline$ -- 153
+num.names$ -- 92
+pop$ -- 233
+preamble$ -- 1
+purify$ -- 279
+quote$ -- 0
+skip$ -- 448
+stack$ -- 0
+substring$ -- 1617
+swap$ -- 130
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 174
+warning$ -- 0
+while$ -- 92
+width$ -- 0
+write$ -- 395
