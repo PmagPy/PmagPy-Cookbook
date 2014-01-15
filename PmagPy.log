@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2012.6.30)  24 MAY 2013 12:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2013.5.30)  14 JAN 2014 21:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -9,9 +9,9 @@ documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
  tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{
 \HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode html,1,sections+.a.b.c.\inp
 ut  PmagPy
-(./PmagPy.tex (/usr/local/texlive/2012/texmf-dist/tex/latex/base/book.cls
+(./PmagPy.tex (/usr/local/texlive/2013/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/bk11.clo
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/bk11.clo
 File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -27,7 +27,7 @@ File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/tex4ht.sty
 version 2008-10-27-17:23
 Package: tex4ht 
 --------------------------------------
@@ -38,52 +38,52 @@ Package: tex4ht
 --------------------------------------
 \tmp:toks=\toks14
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/usepackage.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/usepackage.4ht
 version 2009-05-21-09:32
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: dvips.def on input line 91.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/dvips.def
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/dvips.def
 File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/color.cfg
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: dvips.def on input line 130.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/dvipsnam.def
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/latex/natbib/natbib.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip43
 \bibsep=\skip44
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count88
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/bm.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
 \symboldletters=\mathgroup5
@@ -91,25 +91,25 @@ Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
 LaTeX Info: Redefining \bm on input line 204.
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2009/06/22 v3.00
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks16
 \symAMSa=\mathgroup7
 \symAMSb=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2012/05/13 v6.82q Hypertext links for LaTeX
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
@@ -150,52 +150,60 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+
+
+Package auxhook Warning: Cannot patch \document,
+(auxhook)                using \AtBeginDocument instead.
+
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen105
 \Hy@linkcounter=\count89
 \Hy@pagecounter=\count90
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count91
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 3941.
-Package hyperref Info: Hyper figures OFF on input line 4062.
-Package hyperref Info: Link nesting OFF on input line 4067.
-Package hyperref Info: Hyper index ON on input line 4070.
-Package hyperref Info: Plain pages OFF on input line 4077.
-Package hyperref Info: Backreferencing OFF on input line 4082.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4300.
+Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count92
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4653.
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen106
 \Fld@menulength=\count93
-\Field@Width=\dimen106
-\Fld@charsize=\dimen107
+\Field@Width=\dimen107
+\Fld@charsize=\dimen108
 \Field@toks=\toks17
-Package hyperref Info: Hyper figures OFF on input line 5773.
-Package hyperref Info: Link nesting OFF on input line 5778.
-Package hyperref Info: Hyper index ON on input line 5781.
-Package hyperref Info: backreferencing OFF on input line 5788.
-Package hyperref Info: Link coloring ON on input line 5791.
-Package hyperref Info: Link coloring with OCG OFF on input line 5798.
-Package hyperref Info: PDF/A mode OFF on input line 5803.
-LaTeX Info: Redefining \ref on input line 5843.
-LaTeX Info: Redefining \pageref on input line 5847.
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring ON on input line 6313.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
 \Hy@abspage=\count94
 
 
@@ -205,11 +213,11 @@ Package hyperref Message: Stopped early.
 
 Package hyperref Message: Driver: htex4ht.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/htex4ht.def
-File: htex4ht.def 2012/05/13 v6.82q Hyperref driver for TeX4ht
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/htex4ht.def
+File: htex4ht.def 2012/11/06 v6.83m Hyperref driver for TeX4ht
 Package hyperref Info: tex4ht is already loaded.
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/tex4ht.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/tex4ht.4ht
 version 2009-01-07-07:11
 --------------------------------------
 --- Note --- for additional information, use the command line option `info'
@@ -218,7 +226,7 @@ version 2009-01-07-07:11
 ::::::::::::::::::::::::::::::::::::::::::
  TeX4ht info is available in the log file 
 ::::::::::::::::::::::::::::::::::::::::::
-) (/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+) (/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/tex4ht.sty
 version 2008-10-27-17:23
 
 --- needs --- tex4ht PmagPy ---
@@ -235,7 +243,7 @@ version 2008-10-27-17:23
 \openout3 = `PmagPy.xref'.
 
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 --------------------------------------
 --- Note --- to remove the <?xml version=...?> processing instruction use the c
@@ -246,7 +254,7 @@ ommand line option `no-VERSION'
 DOCTYPE'
 --------------------------------------
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 )
 --------------------------------------
@@ -266,7 +274,7 @@ version 2009-05-18-23:01
 --- Note --- for ^ of catcode 13, use the command line option `^13'
 --------------------------------------
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 --------------------------------------
 --- Note --- For section filenames that reflect on their titles use the command
@@ -317,7 +325,7 @@ TeX4ht package options: html,1,sections+
 on `imgdir:.../'
 --------------------------------------
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 )
 \:tokwrite=\toks18
@@ -332,20 +340,20 @@ version 2009-05-18-23:01
 \openout4 = `PmagPy.4tc'.
 
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/latex.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/latex.4ht
 version 2009-05-21-09:32
 --------------------------------------
 --- Note --- for links into captions, instead of float heads, use the command l
 ine option `refcaption'
 --------------------------------------
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 --------------------------------------
 --- Note --- For mini tocs immediately aftter the header use the command line o
@@ -385,7 +393,7 @@ ommand line option or a configuration similar to \Configure{HColWidth}{\HCode{
 style="width:\HColWidth"}}
 --------------------------------------
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 --------------------------------------
 --- Note --- for pictorial eqnarray, use the command line option `pic-eqnarray'
@@ -406,19 +414,19 @@ he command line option `pic-m+' (not safe!!)
 --- Note --- for pictorial array, use the command line option `pic-array'
 --------------------------------------
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/fontmath.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/fontmath.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/book.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/book.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 --------------------------------------
 --- Note --- for tocs without * entries, use command line option `notoc*'
@@ -440,22 +448,22 @@ option `sec-filename'
 index=2)
 --------------------------------------
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/graphicx.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/graphicx.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/graphics.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/graphics.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 --------------------------------------
 --- Note --- if included graphics are of degraded quality, try the command line
@@ -467,128 +475,128 @@ version 2009-05-18-23:01
 en bounding box is unavailable try `Gin-dim+'; neither is recommended
 --------------------------------------
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/dvips.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/dvips.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/color.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/color.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/dvipsnam.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/dvipsnam.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/dvipsnam.def)
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/dvipsnam.def)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/natbib.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/natbib.4ht
+version 2013-01-19-12:33
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/bm.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/bm.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/amssymb.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/amssymb.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/amsfonts.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/amsfonts.4ht
-version 2009-05-21-09:32
-
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
-version 2009-05-18-23:01
-)
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
-version 2009-05-18-23:01
-))
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/hyperref.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/hyperref.4ht
 version 2011-01-30-16:01
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count96
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/nameref.4ht
-version 2010-09-04-21:02
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/nameref.4ht
+version 2012-10-14-11:06
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
 LaTeX Info: Redefining \autoref on input line 100.
 \Hy@SectionHShift=\skip46
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/pd1enc.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/pd1enc.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/url.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/url.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 --------------------------------------
 --- Note --- for URL encoding within href use the command line option `url-enc'
 
 --------------------------------------
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
 (./PmagPy.aux)
@@ -627,36 +635,33 @@ File: EPSfiles/logo.eps Graphic file (type eps)
 ] [9]
 LaTeX Font Info:    Try loading font information for U+msa on input line 43.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 43.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 LaTeX Warning: No \author given.
 
-[1] [2]
+[1]
+
+Package natbib Warning: Citation `tauxe10' undefined on input line 46.
+
+[2]
 Chapter 1.
  --- Customlinks says: Link to chapter 1: PmagPy.html#ch1
  --- Customlinks says: Custom link named 'quick_start': PmagPy.html#quick_start
  
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 66.
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
-
- --- Customlinks says: Custom link named 'hires': PmagPy.html#hires 
-[3
-
-]
  --- Customlinks says: Custom link named 'survival_skills': PmagPy.html#surviva
 l_skills 
-[4]
+[3
+
+] [4
+
+]
 Chapter 2.
  --- Customlinks says: Link to chapter 2: PmagPy.html#ch2
  --- Customlinks says: Custom link named 'command_line': PmagPy.html#command_li
@@ -667,9 +672,7 @@ File: EPSfiles/terminal.eps Graphic file (type eps)
 <EPSfiles/terminal.eps>
 l. 103 Writing PmagPy.idv[3] (PmagPy2x.png)
 File: EPSfiles/cmd.eps Graphic file (type eps)
- <EPSfiles/cmd.eps> [5
-
-]
+ <EPSfiles/cmd.eps> [5]
 l. 107 Writing PmagPy.idv[4] (PmagPy3x.png)
 File: EPSfiles/terminals.eps Graphic file (type eps)
  <EPSfiles/terminals.eps>
@@ -735,9 +738,12 @@ File: EPSfiles/ProjectDirectory.eps Graphic file (type eps)
 l. 404 Writing PmagPy.idv[9] (PmagPy8x.png)
 File: EPSfiles/orient.eps Graphic file (type eps)
  <EPSfiles/orient.eps> [21]
+
+Package natbib Warning: Citation `tauxe10' undefined on input line 418.
+
 l. 420 Writing PmagPy.idv[10] (PmagPy9x.png)
 File: EPSfiles/suncomp.eps Graphic file (type eps)
- <EPSfiles/suncomp.eps>
+<EPSfiles/suncomp.eps>
  --- Customlinks says: Custom link named 'orientation_schemes': PmagPy.html#ori
 entation_schemes 
 [22]
@@ -784,9 +790,23 @@ etometer_files
  --- Customlinks says: Link to subsubsection 4.1.2.0: PmagPy.html#subsubsec4-1-
 2-0
 [33]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 522.
+
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 522.
+
  --- Customlinks says: Custom link named 'anisotropy_files': PmagPy.html#anisot
 ropy_files 
+
+Package natbib Warning: Citation `gee08' undefined on input line 544.
+
 [34]
+
+Package natbib Warning: Citation `tauxe98' undefined on input line 545.
+
  --- Customlinks says: Custom link named 'Hysteresis_file_formats': PmagPy.html
 #Hysteresis_file_formats 
  --- Customlinks says: Link to subsubsection 4.1.2.0: PmagPy.html#subsubsec4-1-
@@ -821,9 +841,19 @@ core_summary
 [39]
 l. 629 Writing PmagPy.idv[22] (PmagPy21x.png)
 File: EPSfiles/make_sio.eps Graphic file (type eps)
- <EPSfiles/make_sio.eps> [40] [41] [42]
+ <EPSfiles/make_sio.eps> [40]
+
+Package natbib Warning: Citation `lowrie90' undefined on input line 638.
+
+[41] [42]
  --- Customlinks says: Link to subsubsection 4.2.2.0: PmagPy.html#subsubsec4-2-
 2-0
+
+Package natbib Warning: Citation `gee08' undefined on input line 678.
+
+
+Package natbib Warning: Citation `tauxe98' undefined on input line 680.
+
  --- Customlinks says: Custom link named 'ImportHysteresis': PmagPy.html#Import
 Hysteresis 
  --- Customlinks says: Link to subsubsection 4.2.2.0: PmagPy.html#subsubsec4-2-
@@ -843,6 +873,9 @@ html#Combining_measurement_files
 [44]
  --- Customlinks says: Link to subsubsection 4.2.2.0: PmagPy.html#subsubsec4-2-
 2-0
+
+Package natbib Warning: Citation `cogne03' undefined on input line 725.
+
  --- Customlinks says: Custom link named 'import_redo': PmagPy.html#import_redo
  
  --- Customlinks says: Custom link named 'ImportMagIC': PmagPy.html#ImportMagIC
@@ -855,7 +888,14 @@ sisPlotsMenu
  --- Customlinks says: Link to subsection 4.2.3: PmagPy.html#subsec4-2-3
  --- Customlinks says: Custom link named 'customize_criteria': PmagPy.html#cust
 omize_criteria 
-[46] [47] [48]
+[46] [47]
+
+Package natbib Warning: Citation `lowrie90' undefined on input line 763.
+
+
+Package natbib Warning: Citation `lowrie90' undefined on input line 763.
+
+[48]
  --- Customlinks says: Custom link named 'PrepareMagicConsole': PmagPy.html#Pre
 pareMagicConsole 
  --- Customlinks says: Link to subsection 4.2.4: PmagPy.html#subsec4-2-4
@@ -865,6 +905,9 @@ eResults
  --- Customlinks says: Custom link named 'Utilities': PmagPy.html#Utilities 
  --- Customlinks says: Link to subsection 4.2.5: PmagPy.html#subsec4-2-5
 [51]
+
+Package natbib Warning: Citation `tauxe04' undefined on input line 804.
+
  --- Customlinks says: Link to subsection 4.2.6: PmagPy.html#subsec4-2-6
  --- Customlinks says: Custom link named 'PmagPy': PmagPy.html#PmagPy 
 [52]
@@ -892,9 +935,12 @@ c.py
 pthplot.py 
  --- Customlinks says: Link to subsection 5.2.3: PmagPy.html#subsec5-2-3
 [59]
+
+Package natbib Warning: Citation `tauxe12' undefined on input line 971.
+
 l. 978 Writing PmagPy.idv[23] (PmagPy22x.png)
 File: EPSfiles/tauxe12-magic.eps Graphic file (type eps)
- <EPSfiles/tauxe12-magic.eps> [60]
+<EPSfiles/tauxe12-magic.eps> [60]
 l. 989 Writing PmagPy.idv[24] (PmagPy23x.png)
 File: EPSfiles/ani-depthplot.eps Graphic file (type eps)
  <EPSfiles/ani-depthplot.eps>
@@ -910,6 +956,9 @@ File: EPSfiles/sed-aniso.eps Graphic file (type eps)
  <EPSfiles/sed-aniso.eps> [65]
  --- Customlinks says: Custom link named 'apwp.py': PmagPy.html#apwp.py 
  --- Customlinks says: Link to subsection 5.2.5: PmagPy.html#subsec5-2-5
+
+Package natbib Warning: Citation `besse02' undefined on input line 1057.
+
 [66] [67]
  --- Customlinks says: Custom link named 'atrm_magic.py': PmagPy.html#atrm_magi
 c.py 
@@ -952,6 +1001,10 @@ r.py
  --- Customlinks says: Custom link named 'chi_magic.py': PmagPy.html#chi_magic.
 py 
  --- Customlinks says: Link to subsection 5.2.14: PmagPy.html#subsec5-2-14
+
+Package natbib Warning: Citation `carterstiglitz06' undefined on input line 135
+0.
+
 [82]
 l. 1365 Writing PmagPy.idv[30] (PmagPy29x.png)
 File: EPSfiles/chi-magic.eps Graphic file (type eps)
@@ -977,6 +1030,9 @@ File: EPSfiles/common-mean-EX.eps Graphic file (type eps)
  --- Customlinks says: Custom link named 'cont_rot.py': PmagPy.html#cont_rot.py
  
  --- Customlinks says: Link to subsection 5.2.17: PmagPy.html#subsec5-2-17
+
+Package natbib Warning: Citation `torsvik08' undefined on input line 1439.
+
 [87]
 l. 1456 Writing PmagPy.idv[34] (PmagPy33x.png)
 File: EPSfiles/controt.eps Graphic file (type eps)
@@ -992,6 +1048,12 @@ ert_samples.py
  --- Customlinks says: Custom link named 'core_depthplot.py': PmagPy.html#core_
 depthplot.py 
  --- Customlinks says: Link to subsection 5.2.20: PmagPy.html#subsec5-2-20
+
+Package natbib Warning: Citation `tauxe97' undefined on input line 1485.
+
+
+Package natbib Warning: Citation `gradstein04' undefined on input line 1485.
+
 [90]
 l. 1493 Writing PmagPy.idv[35] (PmagPy34x.png)
 File: EPSfiles/core-depthplot.eps Graphic file (type eps)
@@ -1010,6 +1072,12 @@ ustomize_criteria.py
  --- Customlinks says: Custom link named 'dayplot_magic.py': PmagPy.html#dayplo
 t_magic.py 
  --- Customlinks says: Link to subsection 5.2.23: PmagPy.html#subsec5-2-23
+
+Package natbib Warning: Citation `day77' undefined on input line 1563.
+
+
+Package natbib Warning: Citation `tauxe02' undefined on input line 1563.
+
 [95] [96]
 l. 1579 Writing PmagPy.idv[37] (PmagPy36x.png)
 File: EPSfiles/dayplot.eps Graphic file (type eps)
@@ -1053,6 +1121,9 @@ lat.py
  --- Customlinks says: Custom link named 'dmag_magic.py': PmagPy.html#dmag_magi
 c.py 
  --- Customlinks says: Link to subsection 5.2.32: PmagPy.html#subsec5-2-32
+
+Package natbib Warning: Citation `lawrence09' undefined on input line 1820.
+
 [110]
 l. 1849 Writing PmagPy.idv[41] (PmagPy40x.png)
 File: EPSfiles/dmag.eps Graphic file (type eps)
@@ -1060,7 +1131,11 @@ File: EPSfiles/dmag.eps Graphic file (type eps)
  --- Customlinks says: Custom link named 'download_magic.py': PmagPy.html#downl
 oad_magic.py 
  --- Customlinks says: Link to subsection 5.2.33: PmagPy.html#subsec5-2-33
-[111] [112]
+[111]
+
+Package natbib Warning: Citation `tauxe04b' undefined on input line 1855.
+
+[112]
  --- Customlinks says: Custom link named 'eigs_s.py': PmagPy.html#eigs_s.py 
  --- Customlinks says: Link to subsection 5.2.34: PmagPy.html#subsec5-2-34
 [113] [114]
@@ -1093,7 +1168,11 @@ File: EPSfiles/eqarea_magic_BV.eps Graphic file (type eps)
 <EPSfiles/eqarea_magic_BV.eps> [125]
  --- Customlinks says: Custom link named 'find_EI.py': PmagPy.html#find_EI.py 
  --- Customlinks says: Link to subsection 5.2.39: PmagPy.html#subsec5-2-39
-[126] [127]
+[126]
+
+Package natbib Warning: Citation `tauxe04d' undefined on input line 2116.
+
+[127]
 l. 2144 Writing PmagPy.idv[46] (PmagPy45x.png)
 File: EPSfiles/find_EI.eps Graphic file (type eps)
  <EPSfiles/find_EI.eps> [128]
@@ -1112,6 +1191,9 @@ File: EPSfiles/fishqq-ex.eps Graphic file (type eps)
  --- Customlinks says: Custom link named 'foldtest.py': PmagPy.html#foldtest.py
  
  --- Customlinks says: Link to subsection 5.2.43: PmagPy.html#subsec5-2-43
+
+Package natbib Warning: Citation `tauxe94' undefined on input line 2215.
+
 [133]
 l. 2239 Writing PmagPy.idv[48] (PmagPy47x.png)
 File: EPSfiles/foldtest-ex.eps Graphic file (type eps)
@@ -1152,13 +1234,23 @@ File: EPSfiles/hist.eps Graphic file (type eps)
  --- Customlinks says: Custom link named 'hysteresis_magic.py': PmagPy.html#hys
 teresis_magic.py 
  --- Customlinks says: Link to subsection 5.2.52: PmagPy.html#subsec5-2-52
+
+Package natbib Warning: Citation `benyosef08' undefined on input line 2379.
+
 [144] [145]
 l. 2396 Writing PmagPy.idv[51] (PmagPy50x.png)
 File: EPSfiles/hysteresis-magic.eps Graphic file (type eps)
  <EPSfiles/hysteresis-magic.eps> [146]
  --- Customlinks says: Custom link named 'igrf.py': PmagPy.html#igrf.py 
  --- Customlinks says: Link to subsection 5.2.53: PmagPy.html#subsec5-2-53
-[147] [148] [149] [150]
+[147] [148]
+
+Package natbib Warning: Citation `korte11a' undefined on input line 2422.
+
+
+Package natbib Warning: Citation `korte11b' undefined on input line 2422.
+
+[149] [150]
 l. 2439 Writing PmagPy.idv[52] (PmagPy51x.png)
 File: EPSfiles/igrf.eps Graphic file (type eps)
  <EPSfiles/igrf.eps>
@@ -1176,19 +1268,35 @@ File: EPSfiles/irmaq_magic.eps Graphic file (type eps)
 py 
  --- Customlinks says: Link to subsection 5.2.56: PmagPy.html#subsec5-2-56
 [155] [156]
+
+Package natbib Warning: Citation `jelinek77' undefined on input line 2518.
+
 l. 2520 Writing PmagPy.idv[54] (PmagPy53x.png)
 File: EPSfiles/meas15.eps Graphic file (type eps)
- <EPSfiles/meas15.eps> [157] [158] [159]
+<EPSfiles/meas15.eps> [157] [158] [159]
  --- Customlinks says: Custom link named 'k15_s.py': PmagPy.html#k15_s.py 
  --- Customlinks says: Link to subsection 5.2.57: PmagPy.html#subsec5-2-57
+
+Package natbib Warning: Citation `jelinek77' undefined on input line 2539.
+
 [160]
  --- Customlinks says: Custom link named 'KLY4S_magic.py': PmagPy.html#KLY4S_ma
 gic.py 
  --- Customlinks says: Link to subsection 5.2.58: PmagPy.html#subsec5-2-58
-[161] [162]
+
+Package natbib Warning: Citation `gee08' undefined on input line 2567.
+
+[161]
+
+Package natbib Warning: Citation `tauxe12' undefined on input line 2582.
+
+[162]
  --- Customlinks says: Custom link named 'lnp_magic.py': PmagPy.html#lnp_magic.
 py 
  --- Customlinks says: Link to subsection 5.2.59: PmagPy.html#subsec5-2-59
+
+Package natbib Warning: Citation `tauxe03b' undefined on input line 2599.
+
 [163]
 l. 2625 Writing PmagPy.idv[55] (PmagPy54x.png)
 File: EPSfiles/lnp-ex.eps Graphic file (type eps)
@@ -1253,6 +1361,10 @@ py
 py 
  --- Customlinks says: Link to subsubsection 5.2.65.0: PmagPy.html#subsubsec5-2
 -65-0
+
+Package natbib Warning: Citation `swansonhysell09' undefined on input line 2841
+.
+
 [179] [180] [181]
  --- Customlinks says: Custom link named 'HUJI_magic.py': PmagPy.html#HUJI_magi
 c.py 
@@ -1268,11 +1380,17 @@ c.py
 csv_magic.py 
  --- Customlinks says: Link to subsubsection 5.2.65.0: PmagPy.html#subsubsec5-2
 -65-0
+
+Package natbib Warning: Citation `tauxe12' undefined on input line 2975.
+
 [186]
  --- Customlinks says: Custom link named 'PMD_magic.py': PmagPy.html#PMD_magic.
 py 
  --- Customlinks says: Link to subsubsection 5.2.65.0: PmagPy.html#subsubsec5-2
 -65-0
+
+Package natbib Warning: Citation `cogne03' undefined on input line 2996.
+
 [187]
  --- Customlinks says: Custom link named 'naming_schemes': PmagPy.html#naming_s
 chemes 
@@ -1284,7 +1402,11 @@ py
 [190]
 l. 3066 Writing PmagPy.idv[62] (PmagPy61x.png)
 File: EPSfiles/samples.eps Graphic file (type eps)
- <EPSfiles/samples.eps> [191] [192] [193]
+ <EPSfiles/samples.eps>
+
+Package natbib Warning: Citation `sbarbori09' undefined on input line 3071.
+
+[191] [192] [193]
  --- Customlinks says: Custom link named 'SUFAR4-asc_magic.py': PmagPy.html#SUF
 AR4-asc_magic.py 
  --- Customlinks says: Link to subsubsection 5.2.65.0: PmagPy.html#subsubsec5-2
@@ -1294,6 +1416,9 @@ AR4-asc_magic.py
 py 
  --- Customlinks says: Link to subsubsection 5.2.65.0: PmagPy.html#subsubsec5-2
 -65-0
+
+Package natbib Warning: Citation `leonhardt04' undefined on input line 3149.
+
 [195] [196]
  --- Customlinks says: Custom link named 'measurements_normalize.py': PmagPy.ht
 ml#measurements_normalize.py 
@@ -1388,200 +1513,233 @@ File: EPSfiles/revtest.eps Graphic file (type eps)
 t_magic.py 
  --- Customlinks says: Link to subsection 5.2.82: PmagPy.html#subsec5-2-82
 [221]
- --- Customlinks says: Custom link named 's_eigs.py': PmagPy.html#s_eigs.py 
  --- Customlinks says: Link to subsection 5.2.83: PmagPy.html#subsec5-2-83
 [222]
- --- Customlinks says: Custom link named 's_geo.py': PmagPy.html#s_geo.py 
- --- Customlinks says: Link to subsection 5.2.84: PmagPy.html#subsec5-2-84
-[223]
- --- Customlinks says: Custom link named 's_hext.py': PmagPy.html#s_hext.py 
- --- Customlinks says: Link to subsection 5.2.85: PmagPy.html#subsec5-2-85
+l. 3598 Writing PmagPy.idv[72] (PmagPy71x.png)
+File: EPSfiles/Ao2013eq.eps Graphic file (type eps)
+ <EPSfiles/Ao2013eq.eps> [223]
+l. 3623 Writing PmagPy.idv[73] (PmagPy72x.png)
+File: EPSfiles/WatsonsV_Ao_etal2013.eps Graphic file (type eps)
+ <EPSfiles/WatsonsV_Ao_etal2013.eps>
 [224]
- --- Customlinks says: Custom link named 's_tilt.py': PmagPy.html#s_tilt.py 
- --- Customlinks says: Link to subsection 5.2.86: PmagPy.html#subsec5-2-86
+ --- Customlinks says: Custom link named 's_eigs.py': PmagPy.html#s_eigs.py 
+ --- Customlinks says: Link to subsection 5.2.84: PmagPy.html#subsec5-2-84
 [225]
- --- Customlinks says: Custom link named 's_magic.py': PmagPy.html#s_magic.py 
- --- Customlinks says: Link to subsection 5.2.87: PmagPy.html#subsec5-2-87
+ --- Customlinks says: Custom link named 's_geo.py': PmagPy.html#s_geo.py 
+ --- Customlinks says: Link to subsection 5.2.85: PmagPy.html#subsec5-2-85
 [226]
- --- Customlinks says: Custom link named 'scalc.py': PmagPy.html#scalc.py 
- --- Customlinks says: Link to subsection 5.2.88: PmagPy.html#subsec5-2-88
+ --- Customlinks says: Custom link named 's_hext.py': PmagPy.html#s_hext.py 
+ --- Customlinks says: Link to subsection 5.2.86: PmagPy.html#subsec5-2-86
 [227]
+ --- Customlinks says: Custom link named 's_tilt.py': PmagPy.html#s_tilt.py 
+ --- Customlinks says: Link to subsection 5.2.87: PmagPy.html#subsec5-2-87
+[228]
+ --- Customlinks says: Custom link named 's_magic.py': PmagPy.html#s_magic.py 
+ --- Customlinks says: Link to subsection 5.2.88: PmagPy.html#subsec5-2-88
+[229]
+ --- Customlinks says: Custom link named 'scalc.py': PmagPy.html#scalc.py 
+ --- Customlinks says: Link to subsection 5.2.89: PmagPy.html#subsec5-2-89
+
+Package natbib Warning: Citation `vandamme94' undefined on input line 3712.
+
+[230]
  --- Customlinks says: Custom link named 'scalc_magic.py': PmagPy.html#scalc_ma
 gic.py 
- --- Customlinks says: Link to subsection 5.2.89: PmagPy.html#subsec5-2-89
-[228]
+ --- Customlinks says: Link to subsection 5.2.90: PmagPy.html#subsec5-2-90
+[231]
  --- Customlinks says: Custom link named 'site_edit_magic.py': PmagPy.html#site
 _edit_magic.py 
- --- Customlinks says: Link to subsection 5.2.90: PmagPy.html#subsec5-2-90
-[229] [230]
-l. 3766 Writing PmagPy.idv[72] (PmagPy71x.png)
+ --- Customlinks says: Link to subsection 5.2.91: PmagPy.html#subsec5-2-91
+
+Package natbib Warning: Citation `lawrence09' undefined on input line 3742.
+
+[232] [233]
+l. 3799 Writing PmagPy.idv[74] (PmagPy73x.png)
 File: EPSfiles/site_edit_magic.eps Graphic file (type eps)
  <EPSfiles/site_edit_magic.eps>
  --- Customlinks says: Custom link named 'specimens_results_magic.py': PmagPy.h
 tml#specimens_results_magic.py 
-[231]
- --- Customlinks says: Link to subsection 5.2.91: PmagPy.html#subsec5-2-91
-[232]
- --- Customlinks says: Custom link named 'stats.py': PmagPy.html#stats.py 
+[234]
  --- Customlinks says: Link to subsection 5.2.92: PmagPy.html#subsec5-2-92
-[233] [234]
+[235]
+ --- Customlinks says: Custom link named 'stats.py': PmagPy.html#stats.py 
+ --- Customlinks says: Link to subsection 5.2.93: PmagPy.html#subsec5-2-93
+[236] [237]
  --- Customlinks says: Custom link named 'strip_magic.py': PmagPy.html#strip_ma
 gic.py 
- --- Customlinks says: Link to subsection 5.2.93: PmagPy.html#subsec5-2-93
-[235]
-l. 3859 Writing PmagPy.idv[73] (PmagPy72x.png)
-File: EPSfiles/latVage.eps Graphic file (type eps)
- <EPSfiles/latVage.eps> [236]
- --- Customlinks says: Custom link named 'sundec.py': PmagPy.html#sundec.py 
  --- Customlinks says: Link to subsection 5.2.94: PmagPy.html#subsec5-2-94
-[237] [238] [239] [240]
+[238]
+l. 3892 Writing PmagPy.idv[75] (PmagPy74x.png)
+File: EPSfiles/latVage.eps Graphic file (type eps)
+ <EPSfiles/latVage.eps> [239]
+ --- Customlinks says: Custom link named 'sundec.py': PmagPy.html#sundec.py 
+ --- Customlinks says: Link to subsection 5.2.95: PmagPy.html#subsec5-2-95
+[240] [241] [242] [243]
  --- Customlinks says: Custom link named 'thellier_GUI.py': PmagPy.html#thellie
 r_GUI.py 
- --- Customlinks says: Link to subsection 5.2.95: PmagPy.html#subsec5-2-95
-[241]
- --- Customlinks says: Link to subsubsection 5.2.95.0: PmagPy.html#subsubsec5-2
--95-0
-[242]
+ --- Customlinks says: Link to subsection 5.2.96: PmagPy.html#subsec5-2-96
+[244]
+ --- Customlinks says: Link to subsubsection 5.2.96.0: PmagPy.html#subsubsec5-2
+-96-0
+[245]
  --- Customlinks says: Custom link named 'choose_directory': PmagPy.html#choose
 _directory 
-l. 3942 Writing PmagPy.idv[74] (PmagPy73x.png)
+l. 3975 Writing PmagPy.idv[76] (PmagPy75x.png)
 File: EPSFiles/Screenshot_choose_directory.eps Graphic file (type eps)
 <EPSFiles/Screenshot_choose_directory.eps>
- --- Customlinks says: Link to subsubsection 5.2.95.0: PmagPy.html#subsubsec5-2
--95-0
-[243]
- --- Customlinks says: Link to subsubsection 5.2.95.0: PmagPy.html#subsubsec5-2
--95-0
-l. 3956 Writing PmagPy.idv[75] (PmagPy74x.png)
-File: EPSFiles/Screenshot_main_panel.eps Graphic file (type eps)
-<EPSFiles/Screenshot_main_panel.eps> [244] [245]
- --- Customlinks says: Link to subsubsection 5.2.95.0: PmagPy.html#subsubsec5-2
--95-0
+ --- Customlinks says: Link to subsubsection 5.2.96.0: PmagPy.html#subsubsec5-2
+-96-0
+
+Package natbib Warning: Citation `shaar10' on page 246 undefined on input line 
+3982.
+
 [246]
+ --- Customlinks says: Link to subsubsection 5.2.96.0: PmagPy.html#subsubsec5-2
+-96-0
+l. 3989 Writing PmagPy.idv[77] (PmagPy76x.png)
+File: EPSFiles/Screenshot_main_panel.eps Graphic file (type eps)
+<EPSFiles/Screenshot_main_panel.eps> [247] [248]
+
+Package natbib Warning: Citation `shaar12' undefined on input line 4017.
+
+ --- Customlinks says: Link to subsubsection 5.2.96.0: PmagPy.html#subsubsec5-2
+-96-0
+[249]
  --- Customlinks says: Custom link named 'acceptance_criteria': PmagPy.html#acc
 eptance_criteria 
-[247] [248] [249] [250] [251] [252]
+[250] [251] [252]
+
+Package natbib Warning: Citation `shaar12' undefined on input line 4075.
+
+[253]
+
+Package natbib Warning: Citation `shaar12' undefined on input line 4082.
+
+[254] [255]
  --- Customlinks says: Custom link named 'thellier_magic.py': PmagPy.html#thell
 ier_magic.py 
- --- Customlinks says: Link to subsection 5.2.96: PmagPy.html#subsec5-2-96
-[253] [254] [255]
-l. 4175 Writing PmagPy.idv[76] (PmagPy75x.png)
+ --- Customlinks says: Link to subsection 5.2.97: PmagPy.html#subsec5-2-97
+
+Package natbib Warning: Citation `shaar11' undefined on input line 4107.
+
+[256] [257] [258]
+l. 4208 Writing PmagPy.idv[78] (PmagPy77x.png)
 File: EPSfiles/thellier_magic.eps Graphic file (type eps)
- <EPSfiles/thellier_magic.eps> [256]
+ <EPSfiles/thellier_magic.eps> [259]
  --- Customlinks says: Custom link named 'thellier_magic_redo.py': PmagPy.html#
 thellier_magic_redo.py 
- --- Customlinks says: Link to subsection 5.2.97: PmagPy.html#subsec5-2-97
-[257]
- --- Customlinks says: Custom link named 'tk03.py': PmagPy.html#tk03.py 
  --- Customlinks says: Link to subsection 5.2.98: PmagPy.html#subsec5-2-98
-[258]
-l. 4220 Writing PmagPy.idv[77] (PmagPy76x.png)
+[260]
+ --- Customlinks says: Custom link named 'tk03.py': PmagPy.html#tk03.py 
+ --- Customlinks says: Link to subsection 5.2.99: PmagPy.html#subsec5-2-99
+
+Package natbib Warning: Citation `tauxe04' undefined on input line 4244.
+
+[261]
+l. 4253 Writing PmagPy.idv[79] (PmagPy78x.png)
 File: EPSfiles/tk03.eps Graphic file (type eps)
  <EPSfiles/tk03.eps>
  --- Customlinks says: Custom link named 'uniform.py': PmagPy.html#uniform.py 
- --- Customlinks says: Link to subsection 5.2.99: PmagPy.html#subsec5-2-99
-[259] [260]
-l. 4238 Writing PmagPy.idv[78] (PmagPy77x.png)
+ --- Customlinks says: Link to subsection 5.2.100: PmagPy.html#subsec5-2-100
+[262] [263]
+l. 4271 Writing PmagPy.idv[80] (PmagPy79x.png)
 File: EPSfiles/uniform.eps Graphic file (type eps)
  <EPSfiles/uniform.eps>
  --- Customlinks says: Custom link named 'update_measurements.py': PmagPy.html#
 update_measurements.py 
- --- Customlinks says: Link to subsection 5.2.100: PmagPy.html#subsec5-2-100
-[261]
+ --- Customlinks says: Link to subsection 5.2.101: PmagPy.html#subsec5-2-101
+[264]
  --- Customlinks says: Custom link named 'upload_magic.py': PmagPy.html#upload_
 magic.py 
- --- Customlinks says: Link to subsection 5.2.101: PmagPy.html#subsec5-2-101
-[262]
- --- Customlinks says: Custom link named 'vdm_b.py': PmagPy.html#vdm_b.py 
  --- Customlinks says: Link to subsection 5.2.102: PmagPy.html#subsec5-2-102
-[263]
+[265]
+ --- Customlinks says: Custom link named 'vdm_b.py': PmagPy.html#vdm_b.py 
+ --- Customlinks says: Link to subsection 5.2.103: PmagPy.html#subsec5-2-103
+[266]
  --- Customlinks says: Custom link named 'vector_mean.py': PmagPy.html#vector_m
 ean.py 
- --- Customlinks says: Link to subsection 5.2.103: PmagPy.html#subsec5-2-103
-[264]
- --- Customlinks says: Custom link named 'vgp_di.py': PmagPy.html#vgp_di.py 
  --- Customlinks says: Link to subsection 5.2.104: PmagPy.html#subsec5-2-104
-[265]
+[267]
+ --- Customlinks says: Custom link named 'vgp_di.py': PmagPy.html#vgp_di.py 
+ --- Customlinks says: Link to subsection 5.2.105: PmagPy.html#subsec5-2-105
+[268]
  --- Customlinks says: Custom link named 'vgpmap_magic.py': PmagPy.html#vgpmap_
 magic.py 
- --- Customlinks says: Link to subsection 5.2.105: PmagPy.html#subsec5-2-105
-[266]
-l. 4376 Writing PmagPy.idv[79] (PmagPy78x.png)
+ --- Customlinks says: Link to subsection 5.2.106: PmagPy.html#subsec5-2-106
+[269]
+l. 4409 Writing PmagPy.idv[81] (PmagPy80x.png)
 File: EPSfiles/VGP_map.eps Graphic file (type eps)
- <EPSfiles/VGP_map.eps> [267]
+ <EPSfiles/VGP_map.eps> [270]
  --- Customlinks says: Custom link named 'watsonsF.py': PmagPy.html#watsonsF.py
  
- --- Customlinks says: Link to subsection 5.2.106: PmagPy.html#subsec5-2-106
-[268] [269]
+ --- Customlinks says: Link to subsection 5.2.107: PmagPy.html#subsec5-2-107
+[271] [272]
  --- Customlinks says: Custom link named 'watsonsV.py': PmagPy.html#watsonsV.py
  
- --- Customlinks says: Link to subsection 5.2.107: PmagPy.html#subsec5-2-107
-[270]
-l. 4427 Writing PmagPy.idv[80] (PmagPy79x.png)
-File: EPSfiles/watsonsV_example.eps Graphic file (type eps)
- <EPSfiles/watsonsV_example.eps> [271]
- --- Customlinks says: Custom link named 'zeq.py': PmagPy.html#zeq.py 
  --- Customlinks says: Link to subsection 5.2.108: PmagPy.html#subsec5-2-108
-[272] [273]
-l. 4450 Writing PmagPy.idv[81] (PmagPy80x.png)
+[273]
+l. 4460 Writing PmagPy.idv[82] (PmagPy81x.png)
+File: EPSfiles/watsonsV_example.eps Graphic file (type eps)
+ <EPSfiles/watsonsV_example.eps> [274]
+ --- Customlinks says: Custom link named 'zeq.py': PmagPy.html#zeq.py 
+ --- Customlinks says: Link to subsection 5.2.109: PmagPy.html#subsec5-2-109
+[275] [276]
+l. 4483 Writing PmagPy.idv[83] (PmagPy82x.png)
 File: EPSfiles/zeq.eps Graphic file (type eps)
  <EPSfiles/zeq.eps>
  --- Customlinks says: Custom link named 'zeq_magic.py': PmagPy.html#zeq_magic.
 py 
- --- Customlinks says: Link to subsection 5.2.109: PmagPy.html#subsec5-2-109
-[274]
+ --- Customlinks says: Link to subsection 5.2.110: PmagPy.html#subsec5-2-110
+[277]
  --- Customlinks says: Custom link named 'zeq_magic_redo.py': PmagPy.html#zeq_m
 agic_redo.py 
- --- Customlinks says: Link to subsection 5.2.110: PmagPy.html#subsec5-2-110
-[275] [276]
+ --- Customlinks says: Link to subsection 5.2.111: PmagPy.html#subsec5-2-111
+[278] [279]
  --- Customlinks says: Link to section 5.3: PmagPy.html#sec5-3
  --- Customlinks says: Custom link named 'Python': PmagPy.html#Python 
-[277] [278
-
-]
+[280]
 Chapter 6.
  --- Customlinks says: Link to chapter 6: PmagPy.html#ch6
-[279]
-l. 4555 Writing PmagPy.idv[82] (PmagPy81x.png)
- [280]
+[281
+
+]
+l. 4588 Writing PmagPy.idv[84] (PmagPy83x.png)
+ [282]
  --- Customlinks says: Link to section 6.1: PmagPy.html#sec6-1
-[281] [282] [283] [284] [285] [286]
+[283] [284] [285] [286] [287] [288]
  --- Customlinks says: Link to section 6.2: PmagPy.html#sec6-2
-[287] [288] [289]
+[289] [290] [291]
  --- Customlinks says: Link to section 6.3: PmagPy.html#sec6-3
  --- Customlinks says: Link to subsubsection 6.3.0.0: PmagPy.html#subsubsec6-3-
 0-0
-[290] [291] [292] [293] [294] [295] [296] [297]
+[292] [293] [294] [295] [296] [297] [298] [299]
  --- Customlinks says: Link to subsubsection 6.3.0.0: PmagPy.html#subsubsec6-3-
 0-0
-[298]
+[300]
  --- Customlinks says: Link to subsubsection 6.3.0.0: PmagPy.html#subsubsec6-3-
 0-0
  --- Customlinks says: Link to subsubsection 6.3.0.0: PmagPy.html#subsubsec6-3-
 0-0
-[299]
+[301]
  --- Customlinks says: Link to subsubsection 6.3.0.0: PmagPy.html#subsubsec6-3-
 0-0
-[300] [301] [302] [303] [304]
+[302] [303] [304] [305] [306]
  --- Customlinks says: Link to subsubsection 6.3.0.0: PmagPy.html#subsubsec6-3-
 0-0
-[305] [306] [307]
-l. 4948 Writing PmagPy.idv[83] (PmagPy82x.png)
+[307] [308] [309]
+l. 4981 Writing PmagPy.idv[85] (PmagPy84x.png)
 File: EPSfiles/ndim.eps Graphic file (type eps)
- <EPSfiles/ndim.eps> [308] [309] [310] [311] [312] [313]
-[314] [315] [316] [317]
+ <EPSfiles/ndim.eps> [310] [311] [312] [313] [314] [315]
+[316] [317] [318] [319]
  --- Customlinks says: Link to section 6.4: PmagPy.html#sec6-4
-[318] [319] [320] [321] [322] [323] [324] [325]
+[320] [321] [322] [323] [324] [325] [326] [327]
  --- Customlinks says: Link to section 6.5: PmagPy.html#sec6-5
-[326] [327]
+[328] [329]
  --- Customlinks says: Link to subsubsection 6.5.0.0: PmagPy.html#subsubsec6-5-
 0-0
  --- Customlinks says: Link to subsubsection 6.5.0.0: PmagPy.html#subsubsec6-5-
 0-0
-[328] [329] [330] [331] [332] [333] [334]
- --- Customlinks says: Link to subsubsection 6.5.0.0: PmagPy.html#subsubsec6-5-
-0-0
-[335] [336]
+[330] [331] [332] [333] [334] [335] [336]
  --- Customlinks says: Link to subsubsection 6.5.0.0: PmagPy.html#subsubsec6-5-
 0-0
 [337] [338]
@@ -1590,105 +1748,108 @@ File: EPSfiles/ndim.eps Graphic file (type eps)
 [339] [340]
  --- Customlinks says: Link to subsubsection 6.5.0.0: PmagPy.html#subsubsec6-5-
 0-0
-[341]
+[341] [342]
  --- Customlinks says: Link to subsubsection 6.5.0.0: PmagPy.html#subsubsec6-5-
 0-0
-[342]
+[343]
+ --- Customlinks says: Link to subsubsection 6.5.0.0: PmagPy.html#subsubsec6-5-
+0-0
+[344]
  --- Customlinks says: Link to section 6.6: PmagPy.html#sec6-6
  --- Customlinks says: Link to subsubsection 6.6.0.0: PmagPy.html#subsubsec6-6-
 0-0
  --- Customlinks says: Link to subsubsection 6.6.0.0: PmagPy.html#subsubsec6-6-
 0-0
  --- Customlinks says: Custom link named 'raw_input': PmagPy.html#raw_input 
-[343] [344] [345] [346] [347] [348] [349] [350]
- --- Customlinks says: Link to subsubsection 6.6.0.0: PmagPy.html#subsubsec6-6-
-0-0
-[351] [352]
+[345] [346] [347] [348] [349] [350] [351] [352]
  --- Customlinks says: Link to subsubsection 6.6.0.0: PmagPy.html#subsubsec6-6-
 0-0
 [353] [354]
  --- Customlinks says: Link to subsubsection 6.6.0.0: PmagPy.html#subsubsec6-6-
 0-0
+[355] [356]
  --- Customlinks says: Link to subsubsection 6.6.0.0: PmagPy.html#subsubsec6-6-
 0-0
-[355] [356] [357] [358] [359] [360] [361]
+ --- Customlinks says: Link to subsubsection 6.6.0.0: PmagPy.html#subsubsec6-6-
+0-0
+[357] [358] [359] [360] [361] [362] [363]
  --- Customlinks says: Link to section 6.7: PmagPy.html#sec6-7
-[362]
+[364]
  --- Customlinks says: Link to subsubsection 6.7.0.0: PmagPy.html#subsubsec6-7-
 0-0
  --- Customlinks says: Link to subsubsection 6.7.0.0: PmagPy.html#subsubsec6-7-
 0-0
-[363] [364] [365] [366]
+[365] [366] [367] [368]
  --- Customlinks says: Link to subsubsection 6.7.0.0: PmagPy.html#subsubsec6-7-
 0-0
  --- Customlinks says: Link to subsubsection 6.7.0.0: PmagPy.html#subsubsec6-7-
 0-0
  --- Customlinks says: Link to subsubsection 6.7.0.0: PmagPy.html#subsubsec6-7-
 0-0
-[367]
+[369]
  --- Customlinks says: Link to subsubsection 6.7.0.0: PmagPy.html#subsubsec6-7-
 0-0
-[368] [369] [370]
+[370] [371] [372]
  --- Customlinks says: Link to subsubsection 6.7.0.0: PmagPy.html#subsubsec6-7-
 0-0
-[371]
+[373]
  --- Customlinks says: Link to section 6.8: PmagPy.html#sec6-8
-[372] [373] [374]
+[374] [375] [376]
  --- Customlinks says: Custom link named 'matplotlib': PmagPy.html#matplotlib 
  --- Customlinks says: Link to section 6.9: PmagPy.html#sec6-9
  --- Customlinks says: Link to subsubsection 6.9.0.0: PmagPy.html#subsubsec6-9-
 0-0
-[375] [376]
-l. 5955 Writing PmagPy.idv[84] (PmagPy83x.png)
+[377] [378]
+l. 5988 Writing PmagPy.idv[86] (PmagPy85x.png)
 File: EPSfiles/matplotlib1.eps Graphic file (type eps)
- <EPSfiles/matplotlib1.eps> [377] [378] [379]
-l. 5998 Writing PmagPy.idv[85] (PmagPy84x.png)
+ <EPSfiles/matplotlib1.eps> [379] [380] [381]
+l. 6031 Writing PmagPy.idv[87] (PmagPy86x.png)
 File: EPSfiles/matplotlib2.eps Graphic file (type eps)
 
-<EPSfiles/matplotlib2.eps> [380]
+<EPSfiles/matplotlib2.eps> [382]
  --- Customlinks says: Link to subsubsection 6.9.0.0: PmagPy.html#subsubsec6-9-
 0-0
-[381] [382] [383]
-l. 6056 Writing PmagPy.idv[86] (PmagPy85x.png)
+[383] [384] [385]
+l. 6089 Writing PmagPy.idv[88] (PmagPy87x.png)
 File: EPSfiles/matplotlib3.eps Graphic file (type eps)
- <EPSfiles/matplotlib3.eps> [384]
+ <EPSfiles/matplotlib3.eps> [386]
  --- Customlinks says: Link to subsubsection 6.9.0.0: PmagPy.html#subsubsec6-9-
 0-0
-[385]
-l. 6090 Writing PmagPy.idv[87] (PmagPy86x.png)
+[387]
+l. 6123 Writing PmagPy.idv[89] (PmagPy88x.png)
 File: EPSfiles/matplotlib4.eps Graphic file (type eps)
- <EPSfiles/matplotlib4.eps> [386] [387] (./PmagPy.bbl [388] [389
+ <EPSfiles/matplotlib4.eps> [388] [389]
+No file PmagPy.bbl.
 
-] [390]
-[391] [392])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6110.
- [393]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 6110.
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6143.
+[390]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 6143.
  (./PmagPy.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6110.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 6110.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6143.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 6143.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6110.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6143.
  )
-(\end occurred inside a group at level 6)
+(\end occurred inside a group at level 5)
 
-### simple group (level 6) entered at line 6062 ({)
-### simple group (level 5) entered at line 6028 ({)
-### simple group (level 4) entered at line 4809 ({)
-### simple group (level 3) entered at line 1089 ({)
+### simple group (level 5) entered at line 6095 ({)
+### simple group (level 4) entered at line 6061 ({)
+### simple group (level 3) entered at line 4842 ({)
 ### simple group (level 2) entered at line 832 ({)
 ### simple group (level 1) entered at line 39 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10263 strings out of 493489
- 140984 string characters out of 3141349
- 335370 words of memory out of 3000000
- 13292 multiletter control sequences out of 15000+200000
- 15547 words of font info for 57 fonts, out of 3000000 for 9000
+ 10262 strings out of 493316
+ 141088 string characters out of 6137930
+ 340847 words of memory out of 5000000
+ 13433 multiletter control sequences out of 15000+600000
+ 15547 words of font info for 57 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,9n,30p,1998b,3482s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,9n,32p,1998b,2381s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on PmagPy.dvi (402 pages, 1111312 bytes).
+Output written on PmagPy.dvi (399 pages, 1100016 bytes).
