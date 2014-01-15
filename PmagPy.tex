@@ -61,19 +61,19 @@
  To skip all the details and just start using MagIC.py to upload data into the \href{#MagIC}{MagIC database}, you follow these steps:
  
  \begin{enumerate}
- \item Download and install the {Enthought Python Distribution} (NOTE: the Enthought Academic Version has a problem with PmagPy that is begin fixed.  In the mean time, you can use this version:  
-\begin{itemize}
-	\item  \href{http://magician.ucsd.edu/Software/PmagPy/Archive/epd-7.1-2-macosx-i386.dmg}{For MacOS}
-	\item \href{http://magician.ucsd.edu/Software/PmagPy/Archive/epd-6.2-2-win-x86.msi}{For PCs}
-	%  Enthought temporarily down
-% \item Download and install the  \href{http://www.enthought.com/products/getepd.php}{Enthought Python Distribution}:  
-%  \begin{itemize}
-% 	\item If you have an academic email address:  scroll down to "Academic versions", provide your academic e-mail and you will be sent a download link. 
-%  Download the package and install it.
-%  \item If the academic package is not available or you have no academic e-mail address:  download the EPD Free version.  This has almost everything you need, but does not have basemap (the mapping software), so a few of the PmagPy programs will not work.   
-  \customlink{hires}
-  \item If you have installed the full version and want the high resolution data files, follow the instructions \href{http://magician.ucsd.edu/Software/PmagPy/hires.html}{here}.
-  \end{itemize}
+ \item Download and install the Enthought Canopy distribution of Python \url{https://www.enthought.com/products/canopy/}. Canopy Express (the free version) contains everything you need, but if you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license} that gives you access to additional features and bundled packages.
+% \begin{itemize}
+%	\item  \href{http://magician.ucsd.edu/Software/PmagPy/Archive/epd-7.1-2-macosx-i386.dmg}{For MacOS}
+%	\item \href{http://magician.ucsd.edu/Software/PmagPy/Archive/epd-6.2-2-win-x86.msi}{For PCs}
+%	%  Enthought temporarily down
+%% \item Download and install the  \href{http://www.enthought.com/products/getepd.php}{Enthought Python Distribution}:  
+%%  \begin{itemize}
+%% 	\item If you have an academic email address:  scroll down to "Academic versions", provide your academic e-mail and you will be sent a download link. 
+%%  Download the package and install it.
+%%  \item If the academic package is not available or you have no academic e-mail address:  download the EPD Free version.  This has almost everything you need, but does not have basemap (the mapping software), so a few of the PmagPy programs will not work.   
+%  \customlink{hires}
+%  \item If you have installed the full version and want the high resolution data files, follow the instructions \href{http://magician.ucsd.edu/Software/PmagPy/hires.html}{here}.
+%  \end{itemize}
  \item Download the \href{https://github.com/ltauxe/PmagPy}{PmagPy} software package: unzip the zip file, extract all the files to a file on your desktop (or wherever)  and double click on the {\it install\_MacOS} or {\it install\_Windows} file depending on your operating system.  (If you are a Linux user, just copy the files to some directory and put it in your path - you know what to do.)
  \item For example data files, download the \href{#Datafiles}{Datafiles\_2.0} directory and unzip it.
   \item Create a \href{#Project_Directory}{MagIC Project Directory}.
@@ -868,7 +868,7 @@ In all examples, the '\%' prompt stands for whatever command line prompt you hav
 Download the package containing example data files  from: 
 
 \customlink{Datafiles}
- \url{http://earthref.org/PmagPy/Datafiles_2.0.zip} 
+ \url{https://github.com/ltauxe/PmagPy-Cookbook/blob/master/Datafiles_2.0.zip} 
  
 \noindent  and unzip the file.   Data files for the following examples can be found in the directory with the name of the program (except for measurement input files which are all in the {\it Measurement\_Import} folder.  
 
@@ -3585,9 +3585,42 @@ s[a]ve plots, [q]uit: q
 % revtest_magic.py -f revtest_sites.txt -exc
 \end{verbatim} 
 
+\subsection{revtext\_MM1990.py} 
 
+This program tests whether two sets of observations (one with normal and one with reverse polarity) could have been drawn from distributions that are 180$\,^{\circ}$ apart using the McFadden and McElhinny (1990) implementation of the Watson (1983) V statistic test for a common mean. The implementation of the V statistic test in this program is the same as in \href{#WatsonsV.py}{WatsonsV.py}. Use \textbf{revtext\textunderscore MM1990.py} to perform a reversal test on data from the Ao et al., 2013 study of Early Pleistocene fluvio-lacustrine sediments of the Nihewan Basin of North China.
 
-%
+Lets plot the combined data set \textit{Ao\textunderscore etal2013\textunderscore combined.txt} using \href{#eqarea.py}{eqarea.py}:
+
+\begin{verbatim}
+% eqarea.py -f Ao_etal2013_combined.txt
+\end{verbatim}
+
+\includegraphics[width=8cm]{EPSfiles/Ao2013eq.eps}}
+
+Conduct a reversal test between the normal directions \textit{Ao\textunderscore etal2013\textunderscore norm.txt} and reversed directions \textit{Ao\textunderscore etal2013\textunderscore rev.txt}:
+
+\begin{verbatim}
+% MM1990_revtest.py -f Ao_etal2013_norm.txt -f2 Ao_etal2013_rev.txt
+be patient, your computer is doing 5000 simulations...
+
+Results of Watson V test: 
+
+Watson's V:           2.7
+Critical value of V:  6.0
+"Pass": Since V is less than Vcrit, the null hypothesis that the
+ two populations are drawn from distributions that share a 
+ common mean direction (antipodal to one another) cannot be rejected.
+
+M&M1990 classification:
+
+Angle between data set means: 2.9
+Critical angle for M&M1990:   4.3
+The McFadden and McElhinny (1990) classification for this test is: `A'
+\end{verbatim}
+
+As with \href{#WatsonsV.py}{WatsonsV.py}, this program produces a plot that displays the cumulative distribution (CDF) of the Watson V values resulting from the Monte Carlo simulation. In the plot below, the red line is the CDF, the green solid line is the value of the V statistic calculated for the two populations and the dashed blue line is the critical value for the V statistic. In this example, the data are consistent with the two directional groups sharing a common mean as evidenced by V (green solid line) being a lower value than the critical value of V (dashed blue line).
+
+\includegraphics[width=8cm]{EPSfiles/WatsonsV_Ao_etal2013.eps}
 
 \customlink{s_eigs.py}
 \subsection{s\_eigs.py} 
