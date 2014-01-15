@@ -4,7 +4,7 @@ PmagPy-Cookbook
 This repository contains the cookbook for installing and using PmagPy.
 
 Project Information
-===============
+---------------
 
 This documentation is updated from that in the book entitled Essentials of Paleomagnetism by Tauxe et al., (2010). This cookbook was designed and written by Lisa Tauxe as a companion website to the the book Essentials of Paleomagnetism, 2nd Web Edition. Chapter references to this companion book are, for example, “Essentials Chapter X”.
 
