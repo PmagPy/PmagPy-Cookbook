@@ -33,7 +33,7 @@
  \setcounter{tocdepth}{3}
 \tableofcontents
 
- % comment these out for pdf version   and comment out all lines:  \customlink
+ % comment out the line below for the pdf version and comment out all lines that have the command  \customlink
 \input{customlinks} % comment
 
 {\hskip 1in \includegraphics[width=10cm]{EPSfiles/logo.eps}
@@ -3585,9 +3585,9 @@ s[a]ve plots, [q]uit: q
 % revtest_magic.py -f revtest_sites.txt -exc
 \end{verbatim} 
 
-\subsection{revtext\_MM1990.py} 
+\subsection{revtest\_MM1990.py} 
 
-This program tests whether two sets of observations (one with normal and one with reverse polarity) could have been drawn from distributions that are 180$\,^{\circ}$ apart using the McFadden and McElhinny (1990) implementation of the Watson (1983) V statistic test for a common mean. The implementation of the V statistic test in this program is the same as in \href{#WatsonsV.py}{WatsonsV.py}. Use \textbf{revtext\textunderscore MM1990.py} to perform a reversal test on data from the Ao et al., 2013 study of Early Pleistocene fluvio-lacustrine sediments of the Nihewan Basin of North China.
+This program tests whether two sets of observations (one with normal and one with reverse polarity) could have been drawn from distributions that are 180$\,^{\circ}$ apart using the McFadden and McElhinny (1990) implementation of the Watson (1983) V statistic test for a common mean. The implementation of the V statistic test in this program is the same as in \href{#WatsonsV.py}{WatsonsV.py}. Use \textbf{revtest\_MM1990.py} to perform a reversal test on data from the Ao et al., 2013 study of Early Pleistocene fluvio-lacustrine sediments of the Nihewan Basin of North China.
 
 Lets plot the combined data set \textit{Ao\textunderscore etal2013\textunderscore combined.txt} using \href{#eqarea.py}{eqarea.py}:
 
@@ -4560,7 +4560,7 @@ Recalculated specimen data stored in  ./zeq_specimens_g.txt
 %
 \section{Complaints department}
 
-Most of the software and this documentation were written by Lisa Tauxe (\href{mailto:ltauxe@ucsd.edu}{ltauxe@usd.edu}) who is solely responsible for all bugs and boo-boos.  Please contact me with bug reports,  suggestions and requests.  
+The best way to raise issues with any of the software or its documentation is to post to the issues page of the Github project: \url{https://github.com/ltauxe/PmagPy/issues}. Given that most of the software as well as this documentation were written by Lisa Tauxe (\href{mailto:ltauxe@ucsd.edu}{ltauxe@usd.edu}), she can also be contacted by email with bug reports, suggestions and requests. 
 \customlink{Python}
 \chapter{Introduction to Python Programming}
 \label{chap:python}
