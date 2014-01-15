@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2013.5.30)  14 JAN 2014 21:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2013.5.30)  14 JAN 2014 22:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -646,11 +646,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 LaTeX Warning: No \author given.
 
-[1]
-
-Package natbib Warning: Citation `tauxe10' undefined on input line 46.
-
-[2]
+[1] [2]
 Chapter 1.
  --- Customlinks says: Link to chapter 1: PmagPy.html#ch1
  --- Customlinks says: Custom link named 'quick_start': PmagPy.html#quick_start
@@ -738,12 +734,9 @@ File: EPSfiles/ProjectDirectory.eps Graphic file (type eps)
 l. 404 Writing PmagPy.idv[9] (PmagPy8x.png)
 File: EPSfiles/orient.eps Graphic file (type eps)
  <EPSfiles/orient.eps> [21]
-
-Package natbib Warning: Citation `tauxe10' undefined on input line 418.
-
 l. 420 Writing PmagPy.idv[10] (PmagPy9x.png)
 File: EPSfiles/suncomp.eps Graphic file (type eps)
-<EPSfiles/suncomp.eps>
+ <EPSfiles/suncomp.eps>
  --- Customlinks says: Custom link named 'orientation_schemes': PmagPy.html#ori
 entation_schemes 
 [22]
@@ -800,13 +793,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 
  --- Customlinks says: Custom link named 'anisotropy_files': PmagPy.html#anisot
 ropy_files 
-
-Package natbib Warning: Citation `gee08' undefined on input line 544.
-
 [34]
-
-Package natbib Warning: Citation `tauxe98' undefined on input line 545.
-
  --- Customlinks says: Custom link named 'Hysteresis_file_formats': PmagPy.html
 #Hysteresis_file_formats 
  --- Customlinks says: Link to subsubsection 4.1.2.0: PmagPy.html#subsubsec4-1-
@@ -841,19 +828,9 @@ core_summary
 [39]
 l. 629 Writing PmagPy.idv[22] (PmagPy21x.png)
 File: EPSfiles/make_sio.eps Graphic file (type eps)
- <EPSfiles/make_sio.eps> [40]
-
-Package natbib Warning: Citation `lowrie90' undefined on input line 638.
-
-[41] [42]
+ <EPSfiles/make_sio.eps> [40] [41] [42]
  --- Customlinks says: Link to subsubsection 4.2.2.0: PmagPy.html#subsubsec4-2-
 2-0
-
-Package natbib Warning: Citation `gee08' undefined on input line 678.
-
-
-Package natbib Warning: Citation `tauxe98' undefined on input line 680.
-
  --- Customlinks says: Custom link named 'ImportHysteresis': PmagPy.html#Import
 Hysteresis 
  --- Customlinks says: Link to subsubsection 4.2.2.0: PmagPy.html#subsubsec4-2-
@@ -873,9 +850,6 @@ html#Combining_measurement_files
 [44]
  --- Customlinks says: Link to subsubsection 4.2.2.0: PmagPy.html#subsubsec4-2-
 2-0
-
-Package natbib Warning: Citation `cogne03' undefined on input line 725.
-
  --- Customlinks says: Custom link named 'import_redo': PmagPy.html#import_redo
  
  --- Customlinks says: Custom link named 'ImportMagIC': PmagPy.html#ImportMagIC
@@ -888,14 +862,7 @@ sisPlotsMenu
  --- Customlinks says: Link to subsection 4.2.3: PmagPy.html#subsec4-2-3
  --- Customlinks says: Custom link named 'customize_criteria': PmagPy.html#cust
 omize_criteria 
-[46] [47]
-
-Package natbib Warning: Citation `lowrie90' undefined on input line 763.
-
-
-Package natbib Warning: Citation `lowrie90' undefined on input line 763.
-
-[48]
+[46] [47] [48]
  --- Customlinks says: Custom link named 'PrepareMagicConsole': PmagPy.html#Pre
 pareMagicConsole 
  --- Customlinks says: Link to subsection 4.2.4: PmagPy.html#subsec4-2-4
@@ -905,9 +872,6 @@ eResults
  --- Customlinks says: Custom link named 'Utilities': PmagPy.html#Utilities 
  --- Customlinks says: Link to subsection 4.2.5: PmagPy.html#subsec4-2-5
 [51]
-
-Package natbib Warning: Citation `tauxe04' undefined on input line 804.
-
  --- Customlinks says: Link to subsection 4.2.6: PmagPy.html#subsec4-2-6
  --- Customlinks says: Custom link named 'PmagPy': PmagPy.html#PmagPy 
 [52]
@@ -935,12 +899,9 @@ c.py
 pthplot.py 
  --- Customlinks says: Link to subsection 5.2.3: PmagPy.html#subsec5-2-3
 [59]
-
-Package natbib Warning: Citation `tauxe12' undefined on input line 971.
-
 l. 978 Writing PmagPy.idv[23] (PmagPy22x.png)
 File: EPSfiles/tauxe12-magic.eps Graphic file (type eps)
-<EPSfiles/tauxe12-magic.eps> [60]
+ <EPSfiles/tauxe12-magic.eps> [60]
 l. 989 Writing PmagPy.idv[24] (PmagPy23x.png)
 File: EPSfiles/ani-depthplot.eps Graphic file (type eps)
  <EPSfiles/ani-depthplot.eps>
@@ -956,9 +917,6 @@ File: EPSfiles/sed-aniso.eps Graphic file (type eps)
  <EPSfiles/sed-aniso.eps> [65]
  --- Customlinks says: Custom link named 'apwp.py': PmagPy.html#apwp.py 
  --- Customlinks says: Link to subsection 5.2.5: PmagPy.html#subsec5-2-5
-
-Package natbib Warning: Citation `besse02' undefined on input line 1057.
-
 [66] [67]
  --- Customlinks says: Custom link named 'atrm_magic.py': PmagPy.html#atrm_magi
 c.py 
@@ -1001,10 +959,6 @@ r.py
  --- Customlinks says: Custom link named 'chi_magic.py': PmagPy.html#chi_magic.
 py 
  --- Customlinks says: Link to subsection 5.2.14: PmagPy.html#subsec5-2-14
-
-Package natbib Warning: Citation `carterstiglitz06' undefined on input line 135
-0.
-
 [82]
 l. 1365 Writing PmagPy.idv[30] (PmagPy29x.png)
 File: EPSfiles/chi-magic.eps Graphic file (type eps)
@@ -1030,9 +984,6 @@ File: EPSfiles/common-mean-EX.eps Graphic file (type eps)
  --- Customlinks says: Custom link named 'cont_rot.py': PmagPy.html#cont_rot.py
  
  --- Customlinks says: Link to subsection 5.2.17: PmagPy.html#subsec5-2-17
-
-Package natbib Warning: Citation `torsvik08' undefined on input line 1439.
-
 [87]
 l. 1456 Writing PmagPy.idv[34] (PmagPy33x.png)
 File: EPSfiles/controt.eps Graphic file (type eps)
@@ -1048,12 +999,6 @@ ert_samples.py
  --- Customlinks says: Custom link named 'core_depthplot.py': PmagPy.html#core_
 depthplot.py 
  --- Customlinks says: Link to subsection 5.2.20: PmagPy.html#subsec5-2-20
-
-Package natbib Warning: Citation `tauxe97' undefined on input line 1485.
-
-
-Package natbib Warning: Citation `gradstein04' undefined on input line 1485.
-
 [90]
 l. 1493 Writing PmagPy.idv[35] (PmagPy34x.png)
 File: EPSfiles/core-depthplot.eps Graphic file (type eps)
@@ -1072,12 +1017,6 @@ ustomize_criteria.py
  --- Customlinks says: Custom link named 'dayplot_magic.py': PmagPy.html#dayplo
 t_magic.py 
  --- Customlinks says: Link to subsection 5.2.23: PmagPy.html#subsec5-2-23
-
-Package natbib Warning: Citation `day77' undefined on input line 1563.
-
-
-Package natbib Warning: Citation `tauxe02' undefined on input line 1563.
-
 [95] [96]
 l. 1579 Writing PmagPy.idv[37] (PmagPy36x.png)
 File: EPSfiles/dayplot.eps Graphic file (type eps)
@@ -1121,9 +1060,6 @@ lat.py
  --- Customlinks says: Custom link named 'dmag_magic.py': PmagPy.html#dmag_magi
 c.py 
  --- Customlinks says: Link to subsection 5.2.32: PmagPy.html#subsec5-2-32
-
-Package natbib Warning: Citation `lawrence09' undefined on input line 1820.
-
 [110]
 l. 1849 Writing PmagPy.idv[41] (PmagPy40x.png)
 File: EPSfiles/dmag.eps Graphic file (type eps)
@@ -1131,11 +1067,7 @@ File: EPSfiles/dmag.eps Graphic file (type eps)
  --- Customlinks says: Custom link named 'download_magic.py': PmagPy.html#downl
 oad_magic.py 
  --- Customlinks says: Link to subsection 5.2.33: PmagPy.html#subsec5-2-33
-[111]
-
-Package natbib Warning: Citation `tauxe04b' undefined on input line 1855.
-
-[112]
+[111] [112]
  --- Customlinks says: Custom link named 'eigs_s.py': PmagPy.html#eigs_s.py 
  --- Customlinks says: Link to subsection 5.2.34: PmagPy.html#subsec5-2-34
 [113] [114]
@@ -1168,11 +1100,7 @@ File: EPSfiles/eqarea_magic_BV.eps Graphic file (type eps)
 <EPSfiles/eqarea_magic_BV.eps> [125]
  --- Customlinks says: Custom link named 'find_EI.py': PmagPy.html#find_EI.py 
  --- Customlinks says: Link to subsection 5.2.39: PmagPy.html#subsec5-2-39
-[126]
-
-Package natbib Warning: Citation `tauxe04d' undefined on input line 2116.
-
-[127]
+[126] [127]
 l. 2144 Writing PmagPy.idv[46] (PmagPy45x.png)
 File: EPSfiles/find_EI.eps Graphic file (type eps)
  <EPSfiles/find_EI.eps> [128]
@@ -1191,9 +1119,6 @@ File: EPSfiles/fishqq-ex.eps Graphic file (type eps)
  --- Customlinks says: Custom link named 'foldtest.py': PmagPy.html#foldtest.py
  
  --- Customlinks says: Link to subsection 5.2.43: PmagPy.html#subsec5-2-43
-
-Package natbib Warning: Citation `tauxe94' undefined on input line 2215.
-
 [133]
 l. 2239 Writing PmagPy.idv[48] (PmagPy47x.png)
 File: EPSfiles/foldtest-ex.eps Graphic file (type eps)
@@ -1234,23 +1159,13 @@ File: EPSfiles/hist.eps Graphic file (type eps)
  --- Customlinks says: Custom link named 'hysteresis_magic.py': PmagPy.html#hys
 teresis_magic.py 
  --- Customlinks says: Link to subsection 5.2.52: PmagPy.html#subsec5-2-52
-
-Package natbib Warning: Citation `benyosef08' undefined on input line 2379.
-
 [144] [145]
 l. 2396 Writing PmagPy.idv[51] (PmagPy50x.png)
 File: EPSfiles/hysteresis-magic.eps Graphic file (type eps)
  <EPSfiles/hysteresis-magic.eps> [146]
  --- Customlinks says: Custom link named 'igrf.py': PmagPy.html#igrf.py 
  --- Customlinks says: Link to subsection 5.2.53: PmagPy.html#subsec5-2-53
-[147] [148]
-
-Package natbib Warning: Citation `korte11a' undefined on input line 2422.
-
-
-Package natbib Warning: Citation `korte11b' undefined on input line 2422.
-
-[149] [150]
+[147] [148] [149] [150]
 l. 2439 Writing PmagPy.idv[52] (PmagPy51x.png)
 File: EPSfiles/igrf.eps Graphic file (type eps)
  <EPSfiles/igrf.eps>
@@ -1268,35 +1183,19 @@ File: EPSfiles/irmaq_magic.eps Graphic file (type eps)
 py 
  --- Customlinks says: Link to subsection 5.2.56: PmagPy.html#subsec5-2-56
 [155] [156]
-
-Package natbib Warning: Citation `jelinek77' undefined on input line 2518.
-
 l. 2520 Writing PmagPy.idv[54] (PmagPy53x.png)
 File: EPSfiles/meas15.eps Graphic file (type eps)
-<EPSfiles/meas15.eps> [157] [158] [159]
+ <EPSfiles/meas15.eps> [157] [158] [159]
  --- Customlinks says: Custom link named 'k15_s.py': PmagPy.html#k15_s.py 
  --- Customlinks says: Link to subsection 5.2.57: PmagPy.html#subsec5-2-57
-
-Package natbib Warning: Citation `jelinek77' undefined on input line 2539.
-
 [160]
  --- Customlinks says: Custom link named 'KLY4S_magic.py': PmagPy.html#KLY4S_ma
 gic.py 
  --- Customlinks says: Link to subsection 5.2.58: PmagPy.html#subsec5-2-58
-
-Package natbib Warning: Citation `gee08' undefined on input line 2567.
-
-[161]
-
-Package natbib Warning: Citation `tauxe12' undefined on input line 2582.
-
-[162]
+[161] [162]
  --- Customlinks says: Custom link named 'lnp_magic.py': PmagPy.html#lnp_magic.
 py 
  --- Customlinks says: Link to subsection 5.2.59: PmagPy.html#subsec5-2-59
-
-Package natbib Warning: Citation `tauxe03b' undefined on input line 2599.
-
 [163]
 l. 2625 Writing PmagPy.idv[55] (PmagPy54x.png)
 File: EPSfiles/lnp-ex.eps Graphic file (type eps)
@@ -1361,10 +1260,6 @@ py
 py 
  --- Customlinks says: Link to subsubsection 5.2.65.0: PmagPy.html#subsubsec5-2
 -65-0
-
-Package natbib Warning: Citation `swansonhysell09' undefined on input line 2841
-.
-
 [179] [180] [181]
  --- Customlinks says: Custom link named 'HUJI_magic.py': PmagPy.html#HUJI_magi
 c.py 
@@ -1380,17 +1275,11 @@ c.py
 csv_magic.py 
  --- Customlinks says: Link to subsubsection 5.2.65.0: PmagPy.html#subsubsec5-2
 -65-0
-
-Package natbib Warning: Citation `tauxe12' undefined on input line 2975.
-
 [186]
  --- Customlinks says: Custom link named 'PMD_magic.py': PmagPy.html#PMD_magic.
 py 
  --- Customlinks says: Link to subsubsection 5.2.65.0: PmagPy.html#subsubsec5-2
 -65-0
-
-Package natbib Warning: Citation `cogne03' undefined on input line 2996.
-
 [187]
  --- Customlinks says: Custom link named 'naming_schemes': PmagPy.html#naming_s
 chemes 
@@ -1402,11 +1291,7 @@ py
 [190]
 l. 3066 Writing PmagPy.idv[62] (PmagPy61x.png)
 File: EPSfiles/samples.eps Graphic file (type eps)
- <EPSfiles/samples.eps>
-
-Package natbib Warning: Citation `sbarbori09' undefined on input line 3071.
-
-[191] [192] [193]
+ <EPSfiles/samples.eps> [191] [192] [193]
  --- Customlinks says: Custom link named 'SUFAR4-asc_magic.py': PmagPy.html#SUF
 AR4-asc_magic.py 
  --- Customlinks says: Link to subsubsection 5.2.65.0: PmagPy.html#subsubsec5-2
@@ -1416,9 +1301,6 @@ AR4-asc_magic.py
 py 
  --- Customlinks says: Link to subsubsection 5.2.65.0: PmagPy.html#subsubsec5-2
 -65-0
-
-Package natbib Warning: Citation `leonhardt04' undefined on input line 3149.
-
 [195] [196]
  --- Customlinks says: Custom link named 'measurements_normalize.py': PmagPy.ht
 ml#measurements_normalize.py 
@@ -1539,9 +1421,6 @@ File: EPSfiles/WatsonsV_Ao_etal2013.eps Graphic file (type eps)
 [229]
  --- Customlinks says: Custom link named 'scalc.py': PmagPy.html#scalc.py 
  --- Customlinks says: Link to subsection 5.2.89: PmagPy.html#subsec5-2-89
-
-Package natbib Warning: Citation `vandamme94' undefined on input line 3712.
-
 [230]
  --- Customlinks says: Custom link named 'scalc_magic.py': PmagPy.html#scalc_ma
 gic.py 
@@ -1550,9 +1429,6 @@ gic.py
  --- Customlinks says: Custom link named 'site_edit_magic.py': PmagPy.html#site
 _edit_magic.py 
  --- Customlinks says: Link to subsection 5.2.91: PmagPy.html#subsec5-2-91
-
-Package natbib Warning: Citation `lawrence09' undefined on input line 3742.
-
 [232] [233]
 l. 3799 Writing PmagPy.idv[74] (PmagPy73x.png)
 File: EPSfiles/site_edit_magic.eps Graphic file (type eps)
@@ -1589,39 +1465,21 @@ File: EPSFiles/Screenshot_choose_directory.eps Graphic file (type eps)
 <EPSFiles/Screenshot_choose_directory.eps>
  --- Customlinks says: Link to subsubsection 5.2.96.0: PmagPy.html#subsubsec5-2
 -96-0
-
-Package natbib Warning: Citation `shaar10' on page 246 undefined on input line 
-3982.
-
 [246]
  --- Customlinks says: Link to subsubsection 5.2.96.0: PmagPy.html#subsubsec5-2
 -96-0
 l. 3989 Writing PmagPy.idv[77] (PmagPy76x.png)
 File: EPSFiles/Screenshot_main_panel.eps Graphic file (type eps)
 <EPSFiles/Screenshot_main_panel.eps> [247] [248]
-
-Package natbib Warning: Citation `shaar12' undefined on input line 4017.
-
  --- Customlinks says: Link to subsubsection 5.2.96.0: PmagPy.html#subsubsec5-2
 -96-0
 [249]
  --- Customlinks says: Custom link named 'acceptance_criteria': PmagPy.html#acc
 eptance_criteria 
-[250] [251] [252]
-
-Package natbib Warning: Citation `shaar12' undefined on input line 4075.
-
-[253]
-
-Package natbib Warning: Citation `shaar12' undefined on input line 4082.
-
-[254] [255]
+[250] [251] [252] [253] [254] [255]
  --- Customlinks says: Custom link named 'thellier_magic.py': PmagPy.html#thell
 ier_magic.py 
  --- Customlinks says: Link to subsection 5.2.97: PmagPy.html#subsec5-2-97
-
-Package natbib Warning: Citation `shaar11' undefined on input line 4107.
-
 [256] [257] [258]
 l. 4208 Writing PmagPy.idv[78] (PmagPy77x.png)
 File: EPSfiles/thellier_magic.eps Graphic file (type eps)
@@ -1632,9 +1490,6 @@ thellier_magic_redo.py
 [260]
  --- Customlinks says: Custom link named 'tk03.py': PmagPy.html#tk03.py 
  --- Customlinks says: Link to subsection 5.2.99: PmagPy.html#subsec5-2-99
-
-Package natbib Warning: Citation `tauxe04' undefined on input line 4244.
-
 [261]
 l. 4253 Writing PmagPy.idv[79] (PmagPy78x.png)
 File: EPSfiles/tk03.eps Graphic file (type eps)
@@ -1818,13 +1673,12 @@ File: EPSfiles/matplotlib3.eps Graphic file (type eps)
 [387]
 l. 6123 Writing PmagPy.idv[89] (PmagPy88x.png)
 File: EPSfiles/matplotlib4.eps Graphic file (type eps)
- <EPSfiles/matplotlib4.eps> [388] [389]
-No file PmagPy.bbl.
+ <EPSfiles/matplotlib4.eps> [388] [389] (./PmagPy.bbl [390] [391
 
-Package natbib Warning: There were undefined citations.
-
+] [392]
+[393] [394])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6143.
-[390]
+ [395]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 6143.
  (./PmagPy.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6143.
@@ -1844,12 +1698,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6143.
 ### simple group (level 1) entered at line 39 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10262 strings out of 493316
- 141088 string characters out of 6137930
- 340847 words of memory out of 5000000
- 13433 multiletter control sequences out of 15000+600000
+ 10360 strings out of 493316
+ 142795 string characters out of 6137930
+ 340943 words of memory out of 5000000
+ 13529 multiletter control sequences out of 15000+600000
  15547 words of font info for 57 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,9n,32p,1998b,2381s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,9n,32p,1998b,2358s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on PmagPy.dvi (399 pages, 1100016 bytes).
+Output written on PmagPy.dvi (404 pages, 1118728 bytes).
