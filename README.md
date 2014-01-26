@@ -22,7 +22,7 @@ Generating the PDF and website after edits to the cookbook
     
 4) This command will regenerate PmagPy.html and the .png files that are called upon in the .html
 
-5) If this all works, you will have updated the webpage which can be checked locally by opening PmagPy.html in a browser. If satisfied with the results, commit the changes and synchronize with the master PmagPy-Cookbook branch. Github hosts the webpage through the gh-pages branch of the PmagPy-Cookbook. When changes are committed to the master branch they need to be merged into the gh-pages branch is they appear at: http://ltauxe.github.io/PmagPy-Cookbook/PmagPy.html This can be done readily in the Github app within the branches tab or with these commands:
+5) If this all works, you will have updated the webpage which can be checked locally by opening PmagPy.html in a browser. If satisfied with the results, commit the changes and synchronize with the master PmagPy-Cookbook branch. Github hosts the webpage through the gh-pages branch of the PmagPy-Cookbook. When changes are committed to the master branch they need to be merged into the gh-pages branch so they appear at: http://ltauxe.github.io/PmagPy-Cookbook/PmagPy.html This can be done readily in the Github app within the branches tab or with these commands:
 
     git checkout gh-pages
     git merge master
