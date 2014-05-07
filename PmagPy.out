@@ -1,211 +1,210 @@
 \BOOKMARK [0][-]{chapter.1}{MagIC Quick Start}{}% 1
-\BOOKMARK [0][-]{chapter.2}{Survival computer skills}{}% 2
-\BOOKMARK [1][-]{section.2.1}{Finding your command line}{chapter.2}% 3
-\BOOKMARK [1][-]{section.2.2}{File systems}{chapter.2}% 4
-\BOOKMARK [1][-]{section.2.3}{Moving around in the file system}{chapter.2}% 5
-\BOOKMARK [1][-]{section.2.4}{Wildcards}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.5}{Redirecting input and output}{chapter.2}% 7
-\BOOKMARK [1][-]{section.2.6}{Text editors}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.7}{Installing Python and PmagPy}{chapter.2}% 9
-\BOOKMARK [0][-]{chapter.3}{The MagIC database and file formats}{}% 10
-\BOOKMARK [1][-]{section.3.1}{Perusing the existing data}{chapter.3}% 11
-\BOOKMARK [1][-]{section.3.2}{Uploading data to the database}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.3}{Structure of the database tables}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.4}{A word about method codes}{chapter.3}% 14
-\BOOKMARK [0][-]{chapter.4}{MagIC.py}{}% 15
-\BOOKMARK [1][-]{section.4.1}{Preparing for MagIC}{chapter.4}% 16
-\BOOKMARK [2][-]{subsection.4.1.1}{Project Directory}{section.4.1}% 17
-\BOOKMARK [2][-]{subsection.4.1.2}{What goes in MyFiles}{section.4.1}% 18
-\BOOKMARK [3][-]{section*.2}{Field and sampling information}{subsection.4.1.2}% 19
-\BOOKMARK [3][-]{section*.3}{AZDIP formatted files}{subsection.4.1.2}% 20
-\BOOKMARK [3][-]{section*.4}{Data files downloaded from the IODP \(LIMS\) database}{subsection.4.1.2}% 21
-\BOOKMARK [3][-]{section*.5}{Supported Rock Magnetometer files}{subsection.4.1.2}% 22
-\BOOKMARK [3][-]{section*.6}{Hysteresis file formats}{subsection.4.1.2}% 23
-\BOOKMARK [3][-]{section*.7}{Prior interpretations}{subsection.4.1.2}% 24
-\BOOKMARK [3][-]{section*.8}{Import MagIC formatted file}{subsection.4.1.2}% 25
-\BOOKMARK [1][-]{section.4.2}{Using the MagIC.py GUI}{chapter.4}% 26
-\BOOKMARK [2][-]{subsection.4.2.1}{The File menu}{section.4.2}% 27
-\BOOKMARK [2][-]{subsection.4.2.2}{The Import Menu}{section.4.2}% 28
-\BOOKMARK [3][-]{section*.9}{Importing field and sampling information}{subsection.4.2.2}% 29
-\BOOKMARK [3][-]{section*.10}{Importing magnetometer data}{subsection.4.2.2}% 30
-\BOOKMARK [3][-]{section*.11}{Importing Anisotropy of magnetic susceptibility data}{subsection.4.2.2}% 31
-\BOOKMARK [3][-]{section*.12}{Importing hysteresis data}{subsection.4.2.2}% 32
-\BOOKMARK [3][-]{section*.13}{Combining measurement files}{subsection.4.2.2}% 33
-\BOOKMARK [3][-]{section*.14}{Creating an orient.txt file from er\137samples}{subsection.4.2.2}% 34
-\BOOKMARK [3][-]{section*.15}{Update measurements:}{subsection.4.2.2}% 35
-\BOOKMARK [3][-]{section*.16}{Importing prior interpretations}{subsection.4.2.2}% 36
-\BOOKMARK [3][-]{section*.17}{Copying over your MagIC formatted files}{subsection.4.2.2}% 37
-\BOOKMARK [2][-]{subsection.4.2.3}{Analysis and Plots Menu}{section.4.2}% 38
-\BOOKMARK [2][-]{subsection.4.2.4}{Prepare for MagIC Console}{section.4.2}% 39
-\BOOKMARK [2][-]{subsection.4.2.5}{Utilities Menu}{section.4.2}% 40
-\BOOKMARK [2][-]{subsection.4.2.6}{Help Menu}{section.4.2}% 41
-\BOOKMARK [0][-]{chapter.5}{The PmagPy software package}{}% 42
-\BOOKMARK [1][-]{section.5.1}{General characteristics of PmagPy programs}{chapter.5}% 43
-\BOOKMARK [1][-]{section.5.2}{Examples of how to use PmagPy programs}{chapter.5}% 44
-\BOOKMARK [2][-]{subsection.5.2.1}{aarm\137magic.py}{section.5.2}% 45
-\BOOKMARK [2][-]{subsection.5.2.2}{angle.py }{section.5.2}% 46
-\BOOKMARK [2][-]{subsection.5.2.3}{ani\137depthplot.py}{section.5.2}% 47
-\BOOKMARK [2][-]{subsection.5.2.4}{aniso\137magic.py}{section.5.2}% 48
-\BOOKMARK [2][-]{subsection.5.2.5}{apwp.py }{section.5.2}% 49
-\BOOKMARK [2][-]{subsection.5.2.6}{atrm\137magic.py}{section.5.2}% 50
-\BOOKMARK [2][-]{subsection.5.2.7}{azdip\137magic.py}{section.5.2}% 51
-\BOOKMARK [2][-]{subsection.5.2.8}{b\137vdm.py}{section.5.2}% 52
-\BOOKMARK [2][-]{subsection.5.2.9}{basemap\137magic.py}{section.5.2}% 53
-\BOOKMARK [2][-]{subsection.5.2.10}{biplot\137magic.py}{section.5.2}% 54
-\BOOKMARK [2][-]{subsection.5.2.11}{bootams.py}{section.5.2}% 55
-\BOOKMARK [2][-]{subsection.5.2.12}{cart\137dir.py}{section.5.2}% 56
-\BOOKMARK [2][-]{subsection.5.2.13}{chartmaker.py}{section.5.2}% 57
-\BOOKMARK [2][-]{subsection.5.2.14}{chi\137magic.py}{section.5.2}% 58
-\BOOKMARK [2][-]{subsection.5.2.15}{combine\137magic.py}{section.5.2}% 59
-\BOOKMARK [2][-]{subsection.5.2.16}{common\137mean.py}{section.5.2}% 60
-\BOOKMARK [2][-]{subsection.5.2.17}{cont\137rot.py}{section.5.2}% 61
-\BOOKMARK [2][-]{subsection.5.2.18}{convert2unix.py}{section.5.2}% 62
-\BOOKMARK [2][-]{subsection.5.2.19}{convert\137samples.py}{section.5.2}% 63
-\BOOKMARK [2][-]{subsection.5.2.20}{core\137depthplot.py}{section.5.2}% 64
-\BOOKMARK [2][-]{subsection.5.2.21}{curie.py}{section.5.2}% 65
-\BOOKMARK [2][-]{subsection.5.2.22}{customize\137criteria.py}{section.5.2}% 66
-\BOOKMARK [2][-]{subsection.5.2.23}{dayplot\137magic.py}{section.5.2}% 67
-\BOOKMARK [2][-]{subsection.5.2.24}{di\137eq.py}{section.5.2}% 68
-\BOOKMARK [2][-]{subsection.5.2.25}{di\137geo.py}{section.5.2}% 69
-\BOOKMARK [2][-]{subsection.5.2.26}{di\137rot.py}{section.5.2}% 70
-\BOOKMARK [2][-]{subsection.5.2.27}{di\137tilt.py}{section.5.2}% 71
-\BOOKMARK [2][-]{subsection.5.2.28}{di\137vgp.py}{section.5.2}% 72
-\BOOKMARK [2][-]{subsection.5.2.29}{dipole\137pinc.py}{section.5.2}% 73
-\BOOKMARK [2][-]{subsection.5.2.30}{dipole\137plat.py}{section.5.2}% 74
-\BOOKMARK [2][-]{subsection.5.2.31}{dir\137cart.py}{section.5.2}% 75
-\BOOKMARK [2][-]{subsection.5.2.32}{dmag\137magic.py}{section.5.2}% 76
-\BOOKMARK [2][-]{subsection.5.2.33}{download\137magic.py}{section.5.2}% 77
-\BOOKMARK [2][-]{subsection.5.2.34}{eigs\137s.py}{section.5.2}% 78
-\BOOKMARK [2][-]{subsection.5.2.35}{eq\137di.py}{section.5.2}% 79
-\BOOKMARK [2][-]{subsection.5.2.36}{eqarea.py}{section.5.2}% 80
-\BOOKMARK [2][-]{subsection.5.2.37}{eqarea\137ell.py}{section.5.2}% 81
-\BOOKMARK [2][-]{subsection.5.2.38}{eqarea\137magic.py}{section.5.2}% 82
-\BOOKMARK [2][-]{subsection.5.2.39}{find\137EI.py}{section.5.2}% 83
-\BOOKMARK [2][-]{subsection.5.2.40}{fisher.py}{section.5.2}% 84
-\BOOKMARK [2][-]{subsection.5.2.41}{fishqq.py}{section.5.2}% 85
-\BOOKMARK [2][-]{subsection.5.2.42}{fishrot.py}{section.5.2}% 86
-\BOOKMARK [2][-]{subsection.5.2.43}{foldtest.py}{section.5.2}% 87
-\BOOKMARK [2][-]{subsection.5.2.44}{foldtest\137magic.py}{section.5.2}% 88
-\BOOKMARK [2][-]{subsection.5.2.45}{gaussian.py}{section.5.2}% 89
-\BOOKMARK [2][-]{subsection.5.2.46}{gobing.py}{section.5.2}% 90
-\BOOKMARK [2][-]{subsection.5.2.47}{gofish.py}{section.5.2}% 91
-\BOOKMARK [2][-]{subsection.5.2.48}{gokent.py}{section.5.2}% 92
-\BOOKMARK [2][-]{subsection.5.2.49}{goprinc.py}{section.5.2}% 93
-\BOOKMARK [2][-]{subsection.5.2.50}{grab\137magic\137key.py}{section.5.2}% 94
-\BOOKMARK [2][-]{subsection.5.2.51}{histplot.py}{section.5.2}% 95
-\BOOKMARK [2][-]{subsection.5.2.52}{hysteresis\137magic.py}{section.5.2}% 96
-\BOOKMARK [2][-]{subsection.5.2.53}{igrf.py}{section.5.2}% 97
-\BOOKMARK [2][-]{subsection.5.2.54}{incfish.py}{section.5.2}% 98
-\BOOKMARK [2][-]{subsection.5.2.55}{irmaq\137magic.py}{section.5.2}% 99
-\BOOKMARK [2][-]{subsection.5.2.56}{k15\137magic.py}{section.5.2}% 100
-\BOOKMARK [2][-]{subsection.5.2.57}{k15\137s.py}{section.5.2}% 101
-\BOOKMARK [2][-]{subsection.5.2.58}{KLY4S\137magic.py}{section.5.2}% 102
-\BOOKMARK [2][-]{subsection.5.2.59}{lnp\137magic.py}{section.5.2}% 103
-\BOOKMARK [2][-]{subsection.5.2.60}{lowrie.py}{section.5.2}% 104
-\BOOKMARK [2][-]{subsection.5.2.61}{lowrie\137magic.py}{section.5.2}% 105
-\BOOKMARK [2][-]{subsection.5.2.62}{MagIC.py Tutorial}{section.5.2}% 106
-\BOOKMARK [3][-]{section*.18}{Importing data into the MagIC Project Directory}{subsection.5.2.62}% 107
-\BOOKMARK [3][-]{section*.19}{Using the MagIC Console}{subsection.5.2.62}% 108
-\BOOKMARK [2][-]{subsection.5.2.63}{magic\137select.py}{section.5.2}% 109
-\BOOKMARK [2][-]{subsection.5.2.64}{make\137magic\137plots.py}{section.5.2}% 110
-\BOOKMARK [2][-]{subsection.5.2.65}{Measurement Import Scripts}{section.5.2}% 111
-\BOOKMARK [3][-]{section*.20}{2G\137bin\137magic.py}{subsection.5.2.65}% 112
-\BOOKMARK [3][-]{section*.21}{AGM\137magic.py}{subsection.5.2.65}% 113
-\BOOKMARK [3][-]{section*.22}{CIT\137magic.py}{subsection.5.2.65}% 114
-\BOOKMARK [3][-]{section*.23}{HUJI\137magic.py}{subsection.5.2.65}% 115
-\BOOKMARK [3][-]{section*.24}{LDEO\137magic.py}{subsection.5.2.65}% 116
-\BOOKMARK [3][-]{section*.25}{IODP\137csv\137magic.py}{subsection.5.2.65}% 117
-\BOOKMARK [3][-]{section*.26}{PMD\137magic.py}{subsection.5.2.65}% 118
-\BOOKMARK [3][-]{section*.27}{sio\137magic.py}{subsection.5.2.65}% 119
-\BOOKMARK [3][-]{section*.28}{SUFAR4-asc\137magic.py}{subsection.5.2.65}% 120
-\BOOKMARK [3][-]{section*.29}{TDT\137magic.py}{subsection.5.2.65}% 121
-\BOOKMARK [2][-]{subsection.5.2.66}{measurements\137normalize.py}{section.5.2}% 122
-\BOOKMARK [2][-]{subsection.5.2.67}{mk\137redo.py}{section.5.2}% 123
-\BOOKMARK [2][-]{subsection.5.2.68}{nrm\137specimens\137magic.py}{section.5.2}% 124
-\BOOKMARK [2][-]{subsection.5.2.69}{orientation\137magic.py}{section.5.2}% 125
-\BOOKMARK [2][-]{subsection.5.2.70}{parse\137measurements.py}{section.5.2}% 126
-\BOOKMARK [2][-]{subsection.5.2.71}{pca.py}{section.5.2}% 127
-\BOOKMARK [2][-]{subsection.5.2.72}{plotXY.py}{section.5.2}% 128
-\BOOKMARK [2][-]{subsection.5.2.73}{plot\137cdf.py}{section.5.2}% 129
-\BOOKMARK [2][-]{subsection.5.2.74}{plot\137magic\137keys.py}{section.5.2}% 130
-\BOOKMARK [2][-]{subsection.5.2.75}{plot\137mapPTS.py}{section.5.2}% 131
-\BOOKMARK [2][-]{subsection.5.2.76}{plotdi\137a.py}{section.5.2}% 132
-\BOOKMARK [2][-]{subsection.5.2.77}{pmag\137results\137extract.py}{section.5.2}% 133
-\BOOKMARK [2][-]{subsection.5.2.78}{pt\137rot.py}{section.5.2}% 134
-\BOOKMARK [2][-]{subsection.5.2.79}{qqlot.py}{section.5.2}% 135
-\BOOKMARK [2][-]{subsection.5.2.80}{quick\137hyst.py}{section.5.2}% 136
-\BOOKMARK [2][-]{subsection.5.2.81}{revtest.py}{section.5.2}% 137
-\BOOKMARK [2][-]{subsection.5.2.82}{revtest\137magic.py}{section.5.2}% 138
-\BOOKMARK [2][-]{subsection.5.2.83}{revtest\137MM1990.py}{section.5.2}% 139
-\BOOKMARK [2][-]{subsection.5.2.84}{s\137eigs.py}{section.5.2}% 140
-\BOOKMARK [2][-]{subsection.5.2.85}{s\137geo.py}{section.5.2}% 141
-\BOOKMARK [2][-]{subsection.5.2.86}{s\137hext.py}{section.5.2}% 142
-\BOOKMARK [2][-]{subsection.5.2.87}{s\137tilt.py}{section.5.2}% 143
-\BOOKMARK [2][-]{subsection.5.2.88}{s\137magic.py}{section.5.2}% 144
-\BOOKMARK [2][-]{subsection.5.2.89}{scalc.py}{section.5.2}% 145
-\BOOKMARK [2][-]{subsection.5.2.90}{scalc\137magic.py}{section.5.2}% 146
-\BOOKMARK [2][-]{subsection.5.2.91}{site\137edit\137magic.py}{section.5.2}% 147
-\BOOKMARK [2][-]{subsection.5.2.92}{specimens\137results\137magic.py}{section.5.2}% 148
-\BOOKMARK [2][-]{subsection.5.2.93}{stats.py}{section.5.2}% 149
-\BOOKMARK [2][-]{subsection.5.2.94}{strip\137magic.py}{section.5.2}% 150
-\BOOKMARK [2][-]{subsection.5.2.95}{sundec.py}{section.5.2}% 151
-\BOOKMARK [2][-]{subsection.5.2.96}{thellier\137GUI.py}{section.5.2}% 152
-\BOOKMARK [3][-]{section*.30}{Starting the GUI}{subsection.5.2.96}% 153
-\BOOKMARK [3][-]{section*.31}{Reading and compiling measurements data}{subsection.5.2.96}% 154
-\BOOKMARK [3][-]{section*.32}{Main panel}{subsection.5.2.96}% 155
-\BOOKMARK [3][-]{section*.33}{ Tutorial by example}{subsection.5.2.96}% 156
-\BOOKMARK [2][-]{subsection.5.2.97}{thellier\137magic.py}{section.5.2}% 157
-\BOOKMARK [2][-]{subsection.5.2.98}{thellier\137magic\137redo.py}{section.5.2}% 158
-\BOOKMARK [2][-]{subsection.5.2.99}{tk03.py}{section.5.2}% 159
-\BOOKMARK [2][-]{subsection.5.2.100}{uniform.py}{section.5.2}% 160
-\BOOKMARK [2][-]{subsection.5.2.101}{update\137measurements.py}{section.5.2}% 161
-\BOOKMARK [2][-]{subsection.5.2.102}{upload\137magic.py}{section.5.2}% 162
-\BOOKMARK [2][-]{subsection.5.2.103}{vdm\137b.py}{section.5.2}% 163
-\BOOKMARK [2][-]{subsection.5.2.104}{vector\137mean.py}{section.5.2}% 164
-\BOOKMARK [2][-]{subsection.5.2.105}{vgp\137di.py}{section.5.2}% 165
-\BOOKMARK [2][-]{subsection.5.2.106}{vgpmap\137magic.py}{section.5.2}% 166
-\BOOKMARK [2][-]{subsection.5.2.107}{watsonsF.py}{section.5.2}% 167
-\BOOKMARK [2][-]{subsection.5.2.108}{watsonsV.py}{section.5.2}% 168
-\BOOKMARK [2][-]{subsection.5.2.109}{zeq.py}{section.5.2}% 169
-\BOOKMARK [2][-]{subsection.5.2.110}{zeq\137magic.py}{section.5.2}% 170
-\BOOKMARK [2][-]{subsection.5.2.111}{zeq\137magic\137redo.py}{section.5.2}% 171
-\BOOKMARK [1][-]{section.5.3}{Complaints department}{chapter.5}% 172
-\BOOKMARK [0][-]{chapter.6}{Introduction to Python Programming}{}% 173
-\BOOKMARK [1][-]{section.6.1}{A first look at NumPy}{chapter.6}% 174
-\BOOKMARK [1][-]{section.6.2}{Variable types}{chapter.6}% 175
-\BOOKMARK [1][-]{section.6.3}{Data Structures}{chapter.6}% 176
-\BOOKMARK [2][-]{section*.34}{Lists}{section.6.3}% 177
-\BOOKMARK [3][-]{section*.35}{More about strings}{section*.34}% 178
-\BOOKMARK [3][-]{section*.36}{Data structures as objects}{section*.34}% 179
-\BOOKMARK [3][-]{section*.37}{Tuples}{section*.34}% 180
-\BOOKMARK [3][-]{section*.38}{Dictionaries!}{section*.34}% 181
-\BOOKMARK [3][-]{section*.39}{N-dimensional arrays}{section*.34}% 182
-\BOOKMARK [1][-]{section.6.4}{Python Scripts}{chapter.6}% 183
-\BOOKMARK [1][-]{section.6.5}{Code blocks}{chapter.6}% 184
-\BOOKMARK [2][-]{section*.40}{The for loop}{section.6.5}% 185
-\BOOKMARK [3][-]{section*.41}{Looping through lists}{section*.40}% 186
-\BOOKMARK [3][-]{section*.42}{Looping through arrays}{section*.40}% 187
-\BOOKMARK [3][-]{section*.43}{If and while blocks}{section*.40}% 188
-\BOOKMARK [3][-]{section*.44}{Finer points of `if' blocks}{section*.40}% 189
-\BOOKMARK [3][-]{section*.45}{While loops}{section*.40}% 190
-\BOOKMARK [3][-]{section*.46}{Code blocks in interactive Python}{section*.40}% 191
-\BOOKMARK [1][-]{section.6.6}{File I/O in Python}{chapter.6}% 192
-\BOOKMARK [2][-]{section*.47}{Reading data in}{section.6.6}% 193
-\BOOKMARK [3][-]{section*.48}{From a file}{section*.47}% 194
-\BOOKMARK [3][-]{section*.49}{From Standard Input }{section*.47}% 195
-\BOOKMARK [3][-]{section*.50}{Command line switches}{section*.47}% 196
-\BOOKMARK [3][-]{section*.51}{Reading numeric files}{section*.47}% 197
-\BOOKMARK [3][-]{section*.52}{Writing data out}{section*.47}% 198
-\BOOKMARK [1][-]{section.6.7}{Functions}{chapter.6}% 199
-\BOOKMARK [2][-]{section*.53}{Line by line analysis}{section.6.7}% 200
-\BOOKMARK [3][-]{section*.54}{def FUNCNAME\(in\137args\):}{section*.53}% 201
-\BOOKMARK [3][-]{section*.55}{Doc String}{section*.53}% 202
-\BOOKMARK [3][-]{section*.56}{Function body}{section*.53}% 203
-\BOOKMARK [3][-]{section*.57}{Return statement}{section*.53}% 204
-\BOOKMARK [3][-]{section*.58}{Main program as function}{section*.53}% 205
-\BOOKMARK [3][-]{section*.59}{Scope of variables}{section*.53}% 206
-\BOOKMARK [1][-]{section.6.8}{Classes}{chapter.6}% 207
-\BOOKMARK [1][-]{section.6.9}{Matplotlib}{chapter.6}% 208
-\BOOKMARK [2][-]{section*.60}{A first plot}{section.6.9}% 209
-\BOOKMARK [3][-]{section*.61}{Multiple figures and more customization}{section*.60}% 210
-\BOOKMARK [3][-]{section*.62}{Adding text}{section*.60}% 211
+\BOOKMARK [0][-]{chapter.2}{The MagIC database and file formats}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Perusing the existing data}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Uploading data to the database}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Structure of the database tables}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.4}{A word about method codes}{chapter.2}% 6
+\BOOKMARK [0][-]{chapter.3}{MagIC.py}{}% 7
+\BOOKMARK [1][-]{section.3.1}{Preparing for MagIC}{chapter.3}% 8
+\BOOKMARK [2][-]{subsection.3.1.1}{Project Directory}{section.3.1}% 9
+\BOOKMARK [2][-]{subsection.3.1.2}{What goes in MyFiles}{section.3.1}% 10
+\BOOKMARK [3][-]{section*.2}{Field and sampling information}{subsection.3.1.2}% 11
+\BOOKMARK [3][-]{section*.3}{AZDIP formatted files}{subsection.3.1.2}% 12
+\BOOKMARK [3][-]{section*.4}{Data files downloaded from the IODP \(LIMS\) database}{subsection.3.1.2}% 13
+\BOOKMARK [3][-]{section*.5}{Supported Rock Magnetometer files}{subsection.3.1.2}% 14
+\BOOKMARK [3][-]{section*.6}{Hysteresis file formats}{subsection.3.1.2}% 15
+\BOOKMARK [3][-]{section*.7}{Prior interpretations}{subsection.3.1.2}% 16
+\BOOKMARK [3][-]{section*.8}{Import MagIC formatted file}{subsection.3.1.2}% 17
+\BOOKMARK [1][-]{section.3.2}{Using the MagIC.py GUI}{chapter.3}% 18
+\BOOKMARK [2][-]{subsection.3.2.1}{The File menu}{section.3.2}% 19
+\BOOKMARK [2][-]{subsection.3.2.2}{The Import Menu}{section.3.2}% 20
+\BOOKMARK [3][-]{section*.9}{Importing field and sampling information}{subsection.3.2.2}% 21
+\BOOKMARK [3][-]{section*.10}{Importing magnetometer data}{subsection.3.2.2}% 22
+\BOOKMARK [3][-]{section*.11}{Importing Anisotropy of magnetic susceptibility data}{subsection.3.2.2}% 23
+\BOOKMARK [3][-]{section*.12}{Importing hysteresis data}{subsection.3.2.2}% 24
+\BOOKMARK [3][-]{section*.13}{Combining measurement files}{subsection.3.2.2}% 25
+\BOOKMARK [3][-]{section*.14}{Creating an orient.txt file from er\137samples}{subsection.3.2.2}% 26
+\BOOKMARK [3][-]{section*.15}{Update measurements:}{subsection.3.2.2}% 27
+\BOOKMARK [3][-]{section*.16}{Importing prior interpretations}{subsection.3.2.2}% 28
+\BOOKMARK [3][-]{section*.17}{Copying over your MagIC formatted files}{subsection.3.2.2}% 29
+\BOOKMARK [2][-]{subsection.3.2.3}{Analysis and Plots Menu}{section.3.2}% 30
+\BOOKMARK [2][-]{subsection.3.2.4}{Prepare for MagIC Console}{section.3.2}% 31
+\BOOKMARK [2][-]{subsection.3.2.5}{Utilities Menu}{section.3.2}% 32
+\BOOKMARK [2][-]{subsection.3.2.6}{Help Menu}{section.3.2}% 33
+\BOOKMARK [0][-]{chapter.4}{The PmagPy software package}{}% 34
+\BOOKMARK [1][-]{section.4.1}{General characteristics of PmagPy programs}{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.2}{Examples of how to use PmagPy programs}{chapter.4}% 36
+\BOOKMARK [2][-]{subsection.4.2.1}{aarm\137magic.py}{section.4.2}% 37
+\BOOKMARK [2][-]{subsection.4.2.2}{angle.py }{section.4.2}% 38
+\BOOKMARK [2][-]{subsection.4.2.3}{ANI\137depthplot.py}{section.4.2}% 39
+\BOOKMARK [2][-]{subsection.4.2.4}{aniso\137magic.py}{section.4.2}% 40
+\BOOKMARK [2][-]{subsection.4.2.5}{apwp.py }{section.4.2}% 41
+\BOOKMARK [2][-]{subsection.4.2.6}{atrm\137magic.py}{section.4.2}% 42
+\BOOKMARK [2][-]{subsection.4.2.7}{azdip\137magic.py}{section.4.2}% 43
+\BOOKMARK [2][-]{subsection.4.2.8}{b\137vdm.py}{section.4.2}% 44
+\BOOKMARK [2][-]{subsection.4.2.9}{basemap\137magic.py}{section.4.2}% 45
+\BOOKMARK [2][-]{subsection.4.2.10}{biplot\137magic.py}{section.4.2}% 46
+\BOOKMARK [2][-]{subsection.4.2.11}{bootams.py}{section.4.2}% 47
+\BOOKMARK [2][-]{subsection.4.2.12}{cart\137dir.py}{section.4.2}% 48
+\BOOKMARK [2][-]{subsection.4.2.13}{chartmaker.py}{section.4.2}% 49
+\BOOKMARK [2][-]{subsection.4.2.14}{chi\137magic.py}{section.4.2}% 50
+\BOOKMARK [2][-]{subsection.4.2.15}{combine\137magic.py}{section.4.2}% 51
+\BOOKMARK [2][-]{subsection.4.2.16}{common\137mean.py}{section.4.2}% 52
+\BOOKMARK [2][-]{subsection.4.2.17}{cont\137rot.py}{section.4.2}% 53
+\BOOKMARK [2][-]{subsection.4.2.18}{convert2unix.py}{section.4.2}% 54
+\BOOKMARK [2][-]{subsection.4.2.19}{convert\137samples.py}{section.4.2}% 55
+\BOOKMARK [2][-]{subsection.4.2.20}{core\137depthplot.py}{section.4.2}% 56
+\BOOKMARK [2][-]{subsection.4.2.21}{curie.py}{section.4.2}% 57
+\BOOKMARK [2][-]{subsection.4.2.22}{customize\137criteria.py}{section.4.2}% 58
+\BOOKMARK [2][-]{subsection.4.2.23}{dayplot\137magic.py}{section.4.2}% 59
+\BOOKMARK [2][-]{subsection.4.2.24}{demag\137gui.py}{section.4.2}% 60
+\BOOKMARK [2][-]{subsection.4.2.25}{di\137eq.py}{section.4.2}% 61
+\BOOKMARK [2][-]{subsection.4.2.26}{di\137geo.py}{section.4.2}% 62
+\BOOKMARK [2][-]{subsection.4.2.27}{di\137rot.py}{section.4.2}% 63
+\BOOKMARK [2][-]{subsection.4.2.28}{di\137tilt.py}{section.4.2}% 64
+\BOOKMARK [2][-]{subsection.4.2.29}{di\137vgp.py}{section.4.2}% 65
+\BOOKMARK [2][-]{subsection.4.2.30}{dipole\137pinc.py}{section.4.2}% 66
+\BOOKMARK [2][-]{subsection.4.2.31}{dipole\137plat.py}{section.4.2}% 67
+\BOOKMARK [2][-]{subsection.4.2.32}{dir\137cart.py}{section.4.2}% 68
+\BOOKMARK [2][-]{subsection.4.2.33}{dmag\137magic.py}{section.4.2}% 69
+\BOOKMARK [2][-]{subsection.4.2.34}{download\137magic.py}{section.4.2}% 70
+\BOOKMARK [2][-]{subsection.4.2.35}{eigs\137s.py}{section.4.2}% 71
+\BOOKMARK [2][-]{subsection.4.2.36}{eq\137di.py}{section.4.2}% 72
+\BOOKMARK [2][-]{subsection.4.2.37}{eqarea.py}{section.4.2}% 73
+\BOOKMARK [2][-]{subsection.4.2.38}{eqarea\137ell.py}{section.4.2}% 74
+\BOOKMARK [2][-]{subsection.4.2.39}{eqarea\137magic.py}{section.4.2}% 75
+\BOOKMARK [2][-]{subsection.4.2.40}{find\137EI.py}{section.4.2}% 76
+\BOOKMARK [2][-]{subsection.4.2.41}{fisher.py}{section.4.2}% 77
+\BOOKMARK [2][-]{subsection.4.2.42}{fishqq.py}{section.4.2}% 78
+\BOOKMARK [2][-]{subsection.4.2.43}{fishrot.py}{section.4.2}% 79
+\BOOKMARK [2][-]{subsection.4.2.44}{foldtest.py}{section.4.2}% 80
+\BOOKMARK [2][-]{subsection.4.2.45}{foldtest\137magic.py}{section.4.2}% 81
+\BOOKMARK [2][-]{subsection.4.2.46}{gaussian.py}{section.4.2}% 82
+\BOOKMARK [2][-]{subsection.4.2.47}{gobing.py}{section.4.2}% 83
+\BOOKMARK [2][-]{subsection.4.2.48}{gofish.py}{section.4.2}% 84
+\BOOKMARK [2][-]{subsection.4.2.49}{gokent.py}{section.4.2}% 85
+\BOOKMARK [2][-]{subsection.4.2.50}{goprinc.py}{section.4.2}% 86
+\BOOKMARK [2][-]{subsection.4.2.51}{grab\137magic\137key.py}{section.4.2}% 87
+\BOOKMARK [2][-]{subsection.4.2.52}{histplot.py}{section.4.2}% 88
+\BOOKMARK [2][-]{subsection.4.2.53}{hysteresis\137magic.py}{section.4.2}% 89
+\BOOKMARK [2][-]{subsection.4.2.54}{igrf.py}{section.4.2}% 90
+\BOOKMARK [2][-]{subsection.4.2.55}{incfish.py}{section.4.2}% 91
+\BOOKMARK [2][-]{subsection.4.2.56}{irmaq\137magic.py}{section.4.2}% 92
+\BOOKMARK [2][-]{subsection.4.2.57}{k15\137magic.py}{section.4.2}% 93
+\BOOKMARK [2][-]{subsection.4.2.58}{k15\137s.py}{section.4.2}% 94
+\BOOKMARK [2][-]{subsection.4.2.59}{KLY4S\137magic.py}{section.4.2}% 95
+\BOOKMARK [2][-]{subsection.4.2.60}{lnp\137magic.py}{section.4.2}% 96
+\BOOKMARK [2][-]{subsection.4.2.61}{lowrie.py}{section.4.2}% 97
+\BOOKMARK [2][-]{subsection.4.2.62}{lowrie\137magic.py}{section.4.2}% 98
+\BOOKMARK [2][-]{subsection.4.2.63}{MagIC.py Tutorial}{section.4.2}% 99
+\BOOKMARK [3][-]{section*.18}{Importing data into the MagIC Project Directory}{subsection.4.2.63}% 100
+\BOOKMARK [2][-]{subsection.4.2.64}{magic\137select.py}{section.4.2}% 101
+\BOOKMARK [2][-]{subsection.4.2.65}{make\137magic\137plots.py}{section.4.2}% 102
+\BOOKMARK [2][-]{subsection.4.2.66}{Measurement Import Scripts}{section.4.2}% 103
+\BOOKMARK [3][-]{section*.19}{2G\137bin\137magic.py}{subsection.4.2.66}% 104
+\BOOKMARK [3][-]{section*.20}{AGM\137magic.py}{subsection.4.2.66}% 105
+\BOOKMARK [3][-]{section*.21}{CIT\137magic.py}{subsection.4.2.66}% 106
+\BOOKMARK [3][-]{section*.22}{HUJI\137magic.py}{subsection.4.2.66}% 107
+\BOOKMARK [3][-]{section*.23}{LDEO\137magic.py}{subsection.4.2.66}% 108
+\BOOKMARK [3][-]{section*.24}{IODP\137csv\137magic.py}{subsection.4.2.66}% 109
+\BOOKMARK [3][-]{section*.25}{PMD\137magic.py}{subsection.4.2.66}% 110
+\BOOKMARK [3][-]{section*.26}{sio\137magic.py}{subsection.4.2.66}% 111
+\BOOKMARK [3][-]{section*.27}{SUFAR4-asc\137magic.py}{subsection.4.2.66}% 112
+\BOOKMARK [3][-]{section*.28}{TDT\137magic.py}{subsection.4.2.66}% 113
+\BOOKMARK [2][-]{subsection.4.2.67}{measurements\137normalize.py}{section.4.2}% 114
+\BOOKMARK [2][-]{subsection.4.2.68}{mk\137redo.py}{section.4.2}% 115
+\BOOKMARK [2][-]{subsection.4.2.69}{nrm\137specimens\137magic.py}{section.4.2}% 116
+\BOOKMARK [2][-]{subsection.4.2.70}{orientation\137magic.py}{section.4.2}% 117
+\BOOKMARK [2][-]{subsection.4.2.71}{parse\137measurements.py}{section.4.2}% 118
+\BOOKMARK [2][-]{subsection.4.2.72}{pca.py}{section.4.2}% 119
+\BOOKMARK [2][-]{subsection.4.2.73}{plotXY.py}{section.4.2}% 120
+\BOOKMARK [2][-]{subsection.4.2.74}{plot\137cdf.py}{section.4.2}% 121
+\BOOKMARK [2][-]{subsection.4.2.75}{plot\137magic\137keys.py}{section.4.2}% 122
+\BOOKMARK [2][-]{subsection.4.2.76}{plot\137mapPTS.py}{section.4.2}% 123
+\BOOKMARK [2][-]{subsection.4.2.77}{plotdi\137a.py}{section.4.2}% 124
+\BOOKMARK [2][-]{subsection.4.2.78}{pmag\137results\137extract.py}{section.4.2}% 125
+\BOOKMARK [2][-]{subsection.4.2.79}{pt\137rot.py}{section.4.2}% 126
+\BOOKMARK [2][-]{subsection.4.2.80}{qqlot.py}{section.4.2}% 127
+\BOOKMARK [2][-]{subsection.4.2.81}{quick\137hyst.py}{section.4.2}% 128
+\BOOKMARK [2][-]{subsection.4.2.82}{revtest.py}{section.4.2}% 129
+\BOOKMARK [2][-]{subsection.4.2.83}{revtest\137magic.py}{section.4.2}% 130
+\BOOKMARK [2][-]{subsection.4.2.84}{revtest\137MM1990.py}{section.4.2}% 131
+\BOOKMARK [2][-]{subsection.4.2.85}{s\137eigs.py}{section.4.2}% 132
+\BOOKMARK [2][-]{subsection.4.2.86}{s\137geo.py}{section.4.2}% 133
+\BOOKMARK [2][-]{subsection.4.2.87}{s\137hext.py}{section.4.2}% 134
+\BOOKMARK [2][-]{subsection.4.2.88}{s\137tilt.py}{section.4.2}% 135
+\BOOKMARK [2][-]{subsection.4.2.89}{s\137magic.py}{section.4.2}% 136
+\BOOKMARK [2][-]{subsection.4.2.90}{scalc.py}{section.4.2}% 137
+\BOOKMARK [2][-]{subsection.4.2.91}{scalc\137magic.py}{section.4.2}% 138
+\BOOKMARK [2][-]{subsection.4.2.92}{site\137edit\137magic.py}{section.4.2}% 139
+\BOOKMARK [2][-]{subsection.4.2.93}{specimens\137results\137magic.py}{section.4.2}% 140
+\BOOKMARK [2][-]{subsection.4.2.94}{stats.py}{section.4.2}% 141
+\BOOKMARK [2][-]{subsection.4.2.95}{strip\137magic.py}{section.4.2}% 142
+\BOOKMARK [2][-]{subsection.4.2.96}{sundec.py}{section.4.2}% 143
+\BOOKMARK [2][-]{subsection.4.2.97}{thellier\137GUI.py}{section.4.2}% 144
+\BOOKMARK [3][-]{section*.29}{Starting the GUI}{subsection.4.2.97}% 145
+\BOOKMARK [3][-]{section*.30}{Reading and compiling measurements data}{subsection.4.2.97}% 146
+\BOOKMARK [3][-]{section*.31}{Main panel}{subsection.4.2.97}% 147
+\BOOKMARK [3][-]{section*.32}{ Tutorial by example}{subsection.4.2.97}% 148
+\BOOKMARK [2][-]{subsection.4.2.98}{thellier\137magic.py}{section.4.2}% 149
+\BOOKMARK [2][-]{subsection.4.2.99}{thellier\137magic\137redo.py}{section.4.2}% 150
+\BOOKMARK [2][-]{subsection.4.2.100}{tk03.py}{section.4.2}% 151
+\BOOKMARK [2][-]{subsection.4.2.101}{uniform.py}{section.4.2}% 152
+\BOOKMARK [2][-]{subsection.4.2.102}{update\137measurements.py}{section.4.2}% 153
+\BOOKMARK [2][-]{subsection.4.2.103}{upload\137magic.py}{section.4.2}% 154
+\BOOKMARK [2][-]{subsection.4.2.104}{vdm\137b.py}{section.4.2}% 155
+\BOOKMARK [2][-]{subsection.4.2.105}{vector\137mean.py}{section.4.2}% 156
+\BOOKMARK [2][-]{subsection.4.2.106}{vgp\137di.py}{section.4.2}% 157
+\BOOKMARK [2][-]{subsection.4.2.107}{vgpmap\137magic.py}{section.4.2}% 158
+\BOOKMARK [2][-]{subsection.4.2.108}{watsonsF.py}{section.4.2}% 159
+\BOOKMARK [2][-]{subsection.4.2.109}{watsonsV.py}{section.4.2}% 160
+\BOOKMARK [2][-]{subsection.4.2.110}{zeq.py}{section.4.2}% 161
+\BOOKMARK [2][-]{subsection.4.2.111}{zeq\137magic.py}{section.4.2}% 162
+\BOOKMARK [2][-]{subsection.4.2.112}{zeq\137magic\137redo.py}{section.4.2}% 163
+\BOOKMARK [1][-]{section.4.3}{Complaints department}{chapter.4}% 164
+\BOOKMARK [0][-]{chapter.5}{Survival computer skills}{}% 165
+\BOOKMARK [1][-]{section.5.1}{Finding your command line}{chapter.5}% 166
+\BOOKMARK [1][-]{section.5.2}{File systems}{chapter.5}% 167
+\BOOKMARK [1][-]{section.5.3}{Moving around in the file system}{chapter.5}% 168
+\BOOKMARK [1][-]{section.5.4}{Wildcards}{chapter.5}% 169
+\BOOKMARK [1][-]{section.5.5}{Redirecting input and output}{chapter.5}% 170
+\BOOKMARK [1][-]{section.5.6}{Text editors}{chapter.5}% 171
+\BOOKMARK [0][-]{chapter.6}{Introduction to Python Programming}{}% 172
+\BOOKMARK [1][-]{section.6.1}{A first look at NumPy}{chapter.6}% 173
+\BOOKMARK [1][-]{section.6.2}{Variable types}{chapter.6}% 174
+\BOOKMARK [1][-]{section.6.3}{Data Structures}{chapter.6}% 175
+\BOOKMARK [2][-]{section*.33}{Lists}{section.6.3}% 176
+\BOOKMARK [3][-]{section*.34}{More about strings}{section*.33}% 177
+\BOOKMARK [3][-]{section*.35}{Data structures as objects}{section*.33}% 178
+\BOOKMARK [3][-]{section*.36}{Tuples}{section*.33}% 179
+\BOOKMARK [3][-]{section*.37}{Dictionaries!}{section*.33}% 180
+\BOOKMARK [3][-]{section*.38}{N-dimensional arrays}{section*.33}% 181
+\BOOKMARK [1][-]{section.6.4}{Python Scripts}{chapter.6}% 182
+\BOOKMARK [1][-]{section.6.5}{Code blocks}{chapter.6}% 183
+\BOOKMARK [2][-]{section*.39}{The for loop}{section.6.5}% 184
+\BOOKMARK [3][-]{section*.40}{Looping through lists}{section*.39}% 185
+\BOOKMARK [3][-]{section*.41}{Looping through arrays}{section*.39}% 186
+\BOOKMARK [3][-]{section*.42}{If and while blocks}{section*.39}% 187
+\BOOKMARK [3][-]{section*.43}{Finer points of `if' blocks}{section*.39}% 188
+\BOOKMARK [3][-]{section*.44}{While loops}{section*.39}% 189
+\BOOKMARK [3][-]{section*.45}{Code blocks in interactive Python}{section*.39}% 190
+\BOOKMARK [1][-]{section.6.6}{File I/O in Python}{chapter.6}% 191
+\BOOKMARK [2][-]{section*.46}{Reading data in}{section.6.6}% 192
+\BOOKMARK [3][-]{section*.47}{From a file}{section*.46}% 193
+\BOOKMARK [3][-]{section*.48}{From Standard Input }{section*.46}% 194
+\BOOKMARK [3][-]{section*.49}{Command line switches}{section*.46}% 195
+\BOOKMARK [3][-]{section*.50}{Reading numeric files}{section*.46}% 196
+\BOOKMARK [3][-]{section*.51}{Writing data out}{section*.46}% 197
+\BOOKMARK [1][-]{section.6.7}{Functions}{chapter.6}% 198
+\BOOKMARK [2][-]{section*.52}{Line by line analysis}{section.6.7}% 199
+\BOOKMARK [3][-]{section*.53}{def FUNCNAME\(in\137args\):}{section*.52}% 200
+\BOOKMARK [3][-]{section*.54}{Doc String}{section*.52}% 201
+\BOOKMARK [3][-]{section*.55}{Function body}{section*.52}% 202
+\BOOKMARK [3][-]{section*.56}{Return statement}{section*.52}% 203
+\BOOKMARK [3][-]{section*.57}{Main program as function}{section*.52}% 204
+\BOOKMARK [3][-]{section*.58}{Scope of variables}{section*.52}% 205
+\BOOKMARK [1][-]{section.6.8}{Classes}{chapter.6}% 206
+\BOOKMARK [1][-]{section.6.9}{Matplotlib}{chapter.6}% 207
+\BOOKMARK [2][-]{section*.59}{A first plot}{section.6.9}% 208
+\BOOKMARK [3][-]{section*.60}{Multiple figures and more customization}{section*.59}% 209
+\BOOKMARK [3][-]{section*.61}{Adding text}{section*.59}% 210

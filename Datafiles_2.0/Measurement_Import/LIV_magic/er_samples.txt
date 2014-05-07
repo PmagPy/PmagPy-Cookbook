@@ -1,3 +1,0 @@
-tab 	er_samples
-er_citation_names	er_location_name	er_sample_name	er_site_name	sample_azimuth	sample_dip
-This study	unknown	t		358.7	-0.5

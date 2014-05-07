@@ -77,159 +77,15 @@
  \item Download the \href{https://github.com/ltauxe/PmagPy}{PmagPy} software package: unzip the zip file, extract all the files to a file on your desktop (or wherever)  and double click on the {\it install\_MacOS} or {\it install\_Windows} file depending on your operating system.  (If you are a Linux user, just copy the files to some directory and put it in your path - you know what to do.)
  \item For example data files, download the \href{#Datafiles}{Datafiles\_2.0} directory and unzip it.
   \item Create a \href{#Project_Directory}{MagIC Project Directory}.
-  \item Find your \href{#command_line}{command line} and type {\bf MagIC.py}. [Windows users must have already created the MagIC directory before starting {\bf MagIC.py}.]
+  \item Find your \href{#command_line}{command line} and type {\bf MagIC.py}. [Windows users must have already created the MagIC directory before starting {\bf MagIC.py}.]  
+  \item Select your MagIC Project Directory as your working directory.  
  \item \href{#ImportMenu}{Import} your data files and \href{#Combining_measurement_files}{combine your measurements}.
  \item Use one of the \href{#AnalysisPlotsMenu}{plotting and analysis} tools (demagnetization data, Thellier-type experiments, etc.).
- \item Assemble your results into file for importing into a \href{#Uploading}{MagIC smartbook} and thence to the \href{http://earthref.org/MAGIC}{MagIC database}.   
+ \item Assemble your results into file for importing into  the \href{http://earthref.org/MAGIC}{MagIC database}.   
  \end{enumerate}
 
 %\setcounter{tocdepth}{1}
 %\tableofcontents
-\customlink{survival_skills}
-\chapter{Survival computer skills}
-\label{ex:unix}
-
-The `Py' part of  `PmagPy' stands for Python, the language in which all the code is written.   It is not essential, but it is helpful to understand a bit about computer operating systems and the Python language when using PmagPy because no one should be using programs as black boxes without understanding what they are doing. As all the programs are open source, you have the opportunity to look into them.  If you understand a bit  about how computers work yourself, you will be able to follow along what they are doing and even modify them to work better for you.   So in this chapter you will find a brief introduction to the computer skills necessary for using the programs properly.   I have tried very hard to make this tutorial operating system independent.  All the examples should work equally well on Mac OS, Windows and Unix-type operating systems.  For an introduction to programming in Python, see Chapter~\ref{chap:python}. For now, we're just interested in getting started with \href{#PmagPy}{PmagPy}.   
-
-
-\customlink{command_line}
-\section{Finding your command line}
-If you are not using a Unix-like computer (*NIX), you may never have encountered a command line. While the \href{#MagIC.py}{MagIC.py} Graphical User Interface (GUI) is an attempt to make life as easy for you by constructing commands for you, you still need to find the command line to start it up.  Under the MacOS X operating system look for the Terminal application in the Utilities folder within the Applications folder:
-
-  \includegraphics[width=15cm]{EPSfiles/terminal.eps}
-
-Under the Windows operating system, find the program called: Command Prompt in the Start menu:
-
-  \includegraphics[width=15cm]{EPSfiles/cmd.eps}
-  
-  Note that the location of this program varies on different computers, so you may have to hunt around a little to find yours. Also, the actual "prompt" will vary for different machines. The MacOS (C-shell) and Windows command line windows look like these:
-  
-    \includegraphics[width=15cm]{EPSfiles/terminals.eps}
-    
-The Unix (and Mac OS) Bash shell has a \$ sign as a prompt.   I will use the \% prompt in the examples here, but any of these command line prompts will work.    
-  
-  
-\section{File systems}
-\label{sect:file_systems}
-    When you open one of these terminal windows,  you are in your  ``home'' directory.   
-Fundamental to all  operating systems is the concept of
-directories and files.  On windows-based operating systems (MacOS or Windows), directories are depicted
-as ``folders'' and moving about is accomplished by clicking on the different icons.
-In the world of terminal windows, the directories have names and are arranged in a hierarchical sequence with
-the top directory being the ``root'' directory, known as  ``/'' (or C:'backslash' in Windows) and the file system looks something like this:
-
-
-  \includegraphics[width=15cm]{EPSfiles/filesys.eps}
-
- Within the root directory, there are subdirectories
-(e.g. {\bf Applications} and {\bf Users} in bold face).  In any directory, there can also be ``files''
-(e.g. {\it dir\_cart\_example.dat} in italics).   To
-refer to directories,  the operating system relies on what is called a ``pathname''. Every object
-has an ``absolute'' pathname which is valid from anywhere on the computer.  The
-absolute pathname in *NIX always begins from the root directory {\bf /} and in DOS (the operating system working in the Windows command line window), it is C:'backslash'. 
-
-The absolute pathname to the home directory {\bf lisa} in the figure is {\bf /Users/lisa}.  
-Similarly, the absolute pathname to the directory containing {\bf PmagPy}  
-scripts  would be  {\bf /Users/ltauxe/PmagPy}.  There is also a ``relative'' pathname,
-which is in reference to the  current directory (the one you are `sitting' in).  If user ``lisa'' is sitting in 
-her home directory, the relative pathname for the file {\it dir\_cart\_example.dat} in the directory
-{\bf Datafiles\_2.0} would be {\it Datafiles\_2.0/dir\_cart/dir\_cart\_example.dat}.  When using relative
-pathnames, it is useful to remember that {\bf ./} refers to the current
-directory and {\bf ../} refers to the directory  ``above''.     Also, lisa's home directory would be $\sim$lisa, or if you are logged in as lisa yourself, then it is just $\sim$. 
-
-\section{Moving around in the file system}
-
-Now that you have found your command line and are comfortable in your home directory, you can view the contents of your directory with the Unix command {\bf ls} or the DOS command {\bf dir}.  
-\customlink{mkdir}
-You can make a new directory with the command 
-\begin{verbatim}
-%mkdir NEW_DIRECTORY_NAME 
-\end{verbatim}
-This works in both Unix and DOS environments) and you can move into your new directory with the command 
-\begin{verbatim}
-% cd NEW_DIRECTORY_NAME
-\end{verbatim}
-   To move back up into the home directory, just type {\bf cd ..} remembering that .. refers to the directory above.  Also, {\bf cd} by itself will transport you home from where ever you are (there's no place like home....).     You can also change to any arbitrary directory by specifying the full path of the destination directory. 
-
-
-\section {Wildcards}
-
-Unix and DOS have the ability to refer to a number of files and/or directories using
-``wildcards''.  The  wildcard for a  single character is ``?'' and for any number of
-characters is ``*''.  For example, to refer to all the files with ``.py'' in their name in the PmagPy directory in my home directory, 
-I would type:
-
-\begin{verbatim}
-% ls PmagPy/*.py
-apwp.py bootams.py fishrot.py.....
-\end{verbatim}
-
-
-
-\section {Redirecting input and output}
-
-Programs that operate at the command line level print  output to the screen and read input
-from the keyboard. This is
-\customlink{standard_IO}
-known as ``standard input and output'' or ``standard I/O''.
-One of the nicest things about working at the command line level is the ability to redirect input and output.
-For example, instead of typing input to a program with the keyboard, it can
-be read from a file using the symbol {\bf $<$}.   Output can either be printed to the screen (standard output), redirected into a 
-file using the symbol {\bf $>$}, appended to the end of a file with {\bf $>>$} or 
-used as input to another program with the pipe operator ({\bf$ |$}).
-
-
-
-\section{Text editors}
-
-Text editing is a blessing and a curse.  You either love it or
-hate it and in the beginning, and if you are used to programs like Word, you will certainly hate it. (And if you are used to a decent text editor, you will hate Word!).   There are many ways of
-editing text and the subject is beyond the scope of this documentation.   But you can't use Word because the output is in a weird format that no scripting languages read easily.  So you have to use an editor that will produce a plain (ascii) file, like Notepad or TextWrangler.   The latter is freeware available for Macs and the former comes standard in the Windows operating system.  
-
-\customlink{installing_python}
-\section{Installing Python and PmagPy}
-\label{sect:python}
-
-
-
-Python can  be painful to install (but so can  all other programming environments).  There are  a few recipes that work for Mac OS (at least for 10.4 and later) and for Windows.  These recipes and ingredients are available through the website: 
-
-\url{http://earthref.org/PmagPy}.
-
-
-
-Once Python is installed, \href{#command_line}{find your command line} with its prompt.    After the command prompt, type:  {\bf python} to start the interactive python shell.  To get back out again,   hold down the control key while typing the letter ``d''.  On Windows machines, you may have to substitute a letter ``c'' to achieve the same effect. This action will be referred to with  `ctrl-D' here. 
-
- Everyone should now have the $>>>$ Python prompt.  Here is a transcript of a python interpreter session which should make a simple graph:  
- 
- \begin{verbatim}
-% python
-Enthought Python Distribution -- www.enthought.com
-Version: 7.1-2 (32-bit)
-
-Python 2.7.2 |EPD 7.1-2 (32-bit)| (default, Jul 27 2011, 13:29:32) 
-[GCC 4.0.1 (Apple Inc. build 5493)] on darwin
-Type "packages", "demo" or "enthought" for more information.
->>> import matplotlib
->>> matplotlib.use("TkAgg")
->>> import pylab
->>> pylab.plot([1,2,3,4])
-[<matplotlib.lines.Line2D object at 0x64eb270>]
->>> pylab.show()
-
-\end{verbatim}
-
-which produces the fascinating graph:
-
-  \includegraphics[width=15cm]{EPSfiles/matplotlib.eps}
-
-
-To kill the interpreter, close the plot window (red button) and type ctrl-D.  
-
-
-If you don't get something about Enthought Python, you are probably using the standard Mac Os version, which has none of the whistles and bells we want (plotting, numerical packages, etc.), and you'll need to set your path properly. Look for hints at:
-\url{http://earthref.org/PmagPy}.     For more on how to program in Python, see Chapter~\ref{chap:python}.
-
 
 
 
@@ -243,9 +99,8 @@ Anyone interested in the MagIC database should first become a registered EarthRe
 
 \section {Perusing the existing data}
 
-The MagIC database is designed to have two web portals, one for paleomagnetic data (PMAG) and one for rock magnetic data (RMAG).  If you click on the PMAG PORTAL link,  you will see a link labeled ``Open the data tab to Start searching'' which, if you click on it, takes you to the main MagIC search engine.  You can look for data from a particular reference by typing in the author's name in the ``Reference Text Search'' box, or search by any column with a little magnifying glass icon.   
-  Once the data you want have been identified, you can download the whole data set for example by clicking on the
-  icon for the textfile:
+The MagIC database is designed to have two web portals, one for paleomagnetic data (PMAG) and one for rock magnetic data (RMAG).  If you click on the PMAG PORTAL link,  you will be taken  to the main MagIC search engine.  You can look for data from a particular reference by typing in the author's name in the ``Reference Text Search'' box, or search by any column with a little magnifying glass icon.   If you click on the   You can show or hide columns  and look at data at various levels (location, site, sample, and so on to retrieve the data you want.  
+  Once the data you want have been identified, you can download the data by clicking on the `Save Results' button.     
   
     \includegraphics[width=15cm]{EPSfiles/MagIC_search.eps}
   
@@ -255,7 +110,7 @@ The MagIC database is designed to have two web portals, one for paleomagnetic da
 \customlink{Uploading}
 \section{Uploading data to the database}
 
-Paleomagnetic and rock magnetic data are collected and analyzed in a wide variety of ways with different objectives.  Data sets can be extremely large or can be the barest boned data summaries published in legacy data tables.   The goal of MagIC has been to have the flexibility to allow a whole range of data including legacy data from publications or other databases to new studies which include all the measurements, field photos, methodology, and so on.  The general procedure for the future will be to archive the data at the same time that they are published.    So, to smooth the path, it is advisable to put your data into the MagIC format as early in the process as possible.  All data that enters the database must pass through    an Excel spreadsheet, called the \href{http://earthref.org/MAGIC/software.htm}{MagIC Console}.  The Console program allows you to open a ``smartbook''  comprised of  some 30 tables each with dozens of column headings (meta-data).      Data are assembled in  a MagIC template file, checked for consistency and completeness, then exported to text and excel files.  These can then be uploaded into the MagIC database.   Data can either be entered directly into the Console, or can be prepared into a strictly formatted ascii file behind the scenes which can be imported into the Console late in the process. Here,  we illustrate the use of  a number of programs (the \href{#PmagPy}{PmagPy}  package in Python) to facilitate the `behind the scenes' process.      
+Paleomagnetic and rock magnetic data are collected and analyzed in a wide variety of ways with different objectives.  Data sets can be extremely large or can be the barest boned data summaries published in legacy data tables.   The goal of MagIC has been to have the flexibility to allow a whole range of data including legacy data from publications or other databases to new studies which include all the measurements, field photos, methodology, and so on.  The general procedure for the future will be to archive the data at the same time that they are published.    So, to smooth the path, it is advisable to put your data into the MagIC format as early in the process as possible.  All data that enters the database must be converted to the standard MagIC format either as a set of MagIC tables, or as one combined text file.    These can then be uploaded into the MagIC database.   Here,  we illustrate the use of  a number of programs (the \href{#PmagPy}{PmagPy}  package in Python) to facilitate the `behind the scenes' process of making MagIC formatted tables.     
 
 \customlink{DataTables}
 \section{Structure of the database tables}  
@@ -320,8 +175,8 @@ AZ01\qquad &Azores \qquad & basalt \qquad &lava flow \qquad & 37.80\qquad &-25.8
 \end{tabular}
 }
 
-Although data can be entered directly into the MagIC Console, it is easier to generate the necessary tables as a by-product of ordinary data processing without having to know details of the meta-data and method codes. 
-  The following section describes how to use the {\bf PmagPy} software for  data analysis and generate the MagIC data tables automatically for the most common paleomagnetic studies involving directions and/or paleointensities.    
+Although data can be entered directly into Excel spreadsheets by hand, it is easier to generate the necessary tables as a by-product of ordinary data processing without having to know details of the meta-data and method codes. 
+Section~\ref{chap:MagIC} describes how to use the {\bf PmagPy} software for  data analysis and generate the MagIC data tables automatically for the most common paleomagnetic studies involving directions and/or paleointensities.    
  
   
 \customlink{method_codes}
@@ -748,7 +603,7 @@ After you have imported your various datafiles, you can process them using the t
 \customlink{customize_criteria}
 \begin{itemize}
 \item Customize Criteria: here you can change your criteria for acceptance or rejection of data.
-		\item Demagnetization Data:  calls the program \href{#zeq_magic.py}{zeq\_magic.py}.  It reads in the {\it magic\_measurements.txt} file created when you \href{#Combining_measurement_files}{combine} your imported  measurement files.  If you have \href{#ImportOrient }{imported orientation} information, it will make the plots using the geographic coordinate system. 
+		\item Demagnetization Data:  allows you to call  the programs \href{#zeq_magic.py}{zeq\_magic.py} or \href{#demag_gui.py}.  These reads in the {\it magic\_measurements.txt} file created when you \href{#Combining_measurement_files}{combine} your imported  measurement files.  If you have \href{#ImportOrient }{imported orientation} information, it will make the plots using the geographic coordinate system. 
 		\item Thellier-type experiments:  There are two options here.  The first calls the program \href{#thellier_magic.py}{thellier\_magic.py} and the second calls \href{#thellier_gui.py}{thellier\_gui.py}.  Both  read in the {\it magic\_measurements.txt} file created when you \href{#Combining_measurement_files}{combine} your imported  measurement files.   The {\bf thellier\_gui.py} program works a little differently than the other {\bf PmagPy} programs in that the output interpretations are   not immediately  available to {\bf MagIC.py} when you quit {\bf thellier\_gui.py}.  To use the interpretations, for example from  the auto-interpreter function, you must \href{#import_redo}  import the redo file as described under the Import menu.  You will find the auto-interpreter redo file in the  with the {\it thellier\_interpreter} folder.  
 		 %\item Microwave experiments
                   \item Equal area: 
@@ -762,7 +617,7 @@ After you have imported your various datafiles, you can process them using the t
 		\item IRM acquisition: This calls \href{#irmaq_magic.py}{irmaq\_magic.py} to make plots of IRM acquisition and back field curves.  It uses the {\it magic\_measurements.txt} file created when you \href{#Combining_measurement_files}{combine} your imported  IRM data.
 		\item 3D-IRM experiment:   makes plots of the \nocite{lowrie90} 3D-IRM experiment of Lowrie (1990),  \nocite{lowrie90} using the program \href{#lowrie_magic.py}{lowrie\_magic.py}.   It uses the {\it magic\_measurements.txt} file created when you \href{#Combining_measurement_files}{combine} your imported  3D-IRM data and allows the option to normalize the intensity data by the NRM.
 		\item Remanence versus depth/height:   makes plots using a call to \href{#core_depthplot.py}{core\_depthplot.py}.  The GUI allows customization of the plot with choice of data type (inclination, declination, etc.), time scale, depth scale, and customization of plot symbols.  If you have imported a \href{#IODP_core_summary}{core summary file}, you can plot the core tops as well.  There is a choice of depth scales with a common depth scale (mcd) as an option.   
-		\item Anisotropy data versus depth/height:  makes plots using a call to \href{#ani_depthplot.py}{ani\_depthplot.py}, reading the {\it rmag\_anisotropy.txt} and {\it magic\_measurements.txt} files in the Project Directory.  
+		\item Anisotropy data versus depth/height:  makes plots using a call to \href{#ANI_depthplot.py}{ANI\_depthplot.py}, reading the {\it rmag\_anisotropy.txt} and {\it magic\_measurements.txt} files in the Project Directory.  
 		\end{itemize}
 		\item Reversals test: performs a bootstrap reversals test with the \href{#revtest_magic.py}{revtest\_magic.py} program.  You can choose coordinate system and selection criteria.  
 		\item Fold test: performs a fold test with \href{#foldtest_magic.py}{foldtest\_magic.py} and allows choice of selection critieria.  Note - it takes a while so be patient and you need to have \href{#ImportMenu}{imported} structural corrections. 
@@ -870,14 +725,14 @@ Download the package containing example data files  from:
 \customlink{Datafiles}
  \url{https://github.com/ltauxe/PmagPy-Cookbook/blob/master/Datafiles_2.0.zip} 
  
-\noindent  and unzip the file.   Data files for the following examples can be found in the directory with the name of the program (except for measurement input files which are all in the {\it Measurement\_Import} folder.  
+\noindent right click on the 'Raw' tab to download the zip file to your downloads folder, then double click on it  to unzip the file.   Data files for the following examples can be found in the directory with the name of the program (except for measurement input files which are all in the {\it Measurement\_Import} folder.  
 
 
 \customlink{aarm_magic.py}
 \subsection{aarm\_magic.py}
  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]} 
 \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/aarm_magic-module.html}{[aarm\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/aarm_magic.py}{[aarm\_magic docs]}
 %LJ
 
 Anisotropy of anhysteretic or other remanence can be converted to a tensor and used to correct natural remanence data for the effects of anisotropy remanence acquisition.  For example, directions may be deflected from the geomagnetic field direction or intensities may be biased by strong anisotropies in the magnetic fabric of the specimen.  By imparting an anhysteretic or thermal remanence in many specific orientations, the anisotropy of remanence acquisition can be characterized and used for correction.   We do this for anisotropy of anhysteretic remanence (AARM) by imparting an ARM in 9, 12  or 15 positions.  Each ARM must be preceded by an AF demagnetization step.    The 15 positions are shown in the \href{#k15_magic.py}{k15\_magic.py} example. 
@@ -912,7 +767,7 @@ specimen statistics and eigenparameters stored in  ./aarm_results.txt
 %
 \customlink{angle.py}
 \subsection{angle.py } [\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ap1.html#Vector_multiplication}{Essentials Appendix A.3.4}]
-\href{http://earthref.org/PmagPy/pmagpydocs/angle-module.html}{[angle docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/angle.py}{[angle docs]}
 
 
  Use the program {\bf angle.py} to calculate the angle ($\alpha$) between two directions $D=350.2, I=26.8; D=98.6, I=67.3$. 
@@ -960,13 +815,13 @@ Good bye
 .
 \end{verbatim}
 
-\customlink{ani_depthplot.py}
-\subsection{ani\_depthplot.py} 
+\customlink{ANI_depthplot.py}
+\subsection{ANI\_depthplot.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]}; 
 \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/ani_depthplot-module.html}{[ani\_depthplot docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/ANI_depthplot.py}{[ANIi\_depthplot docs]}
 
-Anisotropy data can be plotted versus depth.  The program {\bf ani\_depthplot.py} uses MagIC formatted data tables of the {\it rmag\_anisotropy.txt} and {\it er\_samples.txt} types.  {\it rmag\_anisotropy.txt} stores the tensor elements and measurement meta-data while {\it er\_samples.txt} stores the depths, location and other information.  Bulk susceptibility measurements can also be plotted if they are available in a {\it magic\_measurements.txt} formatted file.  
+Anisotropy data can be plotted versus depth.  The program {\bf ANI\_depthplot.py} uses MagIC formatted data tables of the {\it rmag\_anisotropy.txt} and {\it er\_samples.txt} types.  {\it rmag\_anisotropy.txt} stores the tensor elements and measurement meta-data while {\it er\_samples.txt} stores the depths, location and other information.  Bulk susceptibility measurements can also be plotted if they are available in a {\it magic\_measurements.txt} formatted file.  
 
 In this example, we will use the data from Tauxe et al. (2012) \nocite{tauxe12} measured on samples obtained during Expedition 318 of the International Ocean Drilling Program.  To get the entire dataset, go to the MagIC data base at:  \url{http://earthref.org/MAGIC/}   
 and find the data using the search interface.   As a short-cut, you can use the ``permalink'': 
@@ -977,11 +832,11 @@ Download the text file by clicking on the icon under the red arrow in:
 
   \includegraphics[width=15cm]{EPSfiles/tauxe12-magic.eps}
 
-Unpack the data using the program \href{#download_magic.py}{download\_magic.py}.  This will unpack the data into the different holes.  Change directories into Location\_2 (which contains the data for Hole U1359A).  Or, you can use the data in the {\bf ani\_depthplot} directory of the \href{#Examples}{example data files}.
+Unpack the data using the program \href{#download_magic.py}{download\_magic.py}.  This will unpack the data into the different holes.  Change directories into Location\_2 (which contains the data for Hole U1359A).  Or, you can use the data in the {\bf ANI\_depthplot} directory of the \href{#Examples}{example data files}.
 
 
 \begin{verbatim}
-% ani_depthplot.py
+% ANI_depthplot.py
 \end{verbatim}
 
 \noindent will create the plot:
@@ -992,7 +847,7 @@ Unpack the data using the program \href{#download_magic.py}{download\_magic.py}.
 \subsection{aniso\_magic.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]}; 
 \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/aniso_magic-module.html}{[aniso\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/aniso_magic.py}{[aniso\_magic docs]}
 
 Samples were collected from the eastern margin a dike  oriented  with a bedding pole declination of 110$^{\circ}$ and dip of 2$^{\circ}$.      The data have been imported into a rmag\_anisotropy formatted file named {\it dike\_anisotropy.txt}.    
 
@@ -1052,7 +907,7 @@ compare with [d]irection
 \customlink{apwp.py}
 \subsection{apwp.py }
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch16.html#ch16}{[Essentials Chapter 16]}
-\href{http://earthref.org/PmagPy/pmagpydocs/apwp-module.html}{[apwp docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/apwp.py}{[apwp docs]}
 
 The program {\bf apwp.py} calculates paleolatitude, declination, inclination from  a pole latitude and longitude based on  the paper Besse and Courtillot (2002; see  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch16.html#apparent_polar_wander_path}{Essentials Chapter 16} for complete discussion).  \nocite{besse02}
 Use it  to calculate the expected direction for 100 million year old rocks at a locality in La Jolla Cove (Latitude: 33N, Longitude 117W).    Assume that we are on the North American Plate!  (Note that there IS no option for the Pacific plate in the program {\bf apwp.py}, and that La Jolla was on the North American plate until a few million years ago (6?).   
@@ -1088,7 +943,7 @@ Note that as with many {\bf PmagPy}  programs, the input information can be read
 \subsection{atrm\_magic.py}
 { \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]} 
 \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/atrm_magic-module.html}{[atrm\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/atrm_magic.py}{[atrm\_magic docs]}
 
 Anisotropy of thermal  remanence (ATRM) is similar to anisotropy of anhysteretic remanence (AARM) and the procedure for obtaining the tensor is also similar.  Therefore, the program {\bf atrm\_magic.py} is quite similar to \href{#aarm_magic.py}{aarm\_magic.py}.  However, the SIO lab procedures for the two experiments are somewhat different.  In the ATRM experiment, there is a single, zero field step at the chosen temperature which is used as a baseline.  We use only six positions (as opposed to nine for AARM) because of the additional risk of alteration at each temperature step.  The positions are also different:  
 
@@ -1117,7 +972,7 @@ specimen statistics and eigenparameters stored in  ./atrm_results.txt
 \customlink{azdip_magic.py}
 \subsection {azdip\_magic.py}
  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]} and \href{#MagIC}{[MagIC]}% 
- \href{http://earthref.org/PmagPy/pmagpydocs/azdip_magic-module.html}{[azdip\_magic docs]}
+ \href{https://github.com/ltauxe/PmagPy/blob/master/azdip_magic.py}{[azdip\_magic docs]}
 
 Many paleomagnetists save orientation information in files in this format:
 Sample  Azimuth Plunge  Strike  Dip (AZDIP format),  where the Azimuth and Plunge are the declination and inclination of the drill direction and the strike and dip are the attitude of the sampled unit (with dip to the right of strike).   The MagIC database convention is to 
@@ -1137,7 +992,7 @@ Another way to do this is to use the \href{#orientation_magic.py}{orientation\_m
 \customlink{b_vdm.py}
 \subsection{b\_vdm.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#Virtual_dipole_moment}{[Essentials Chapter 2]}
-\href{http://earthref.org/PmagPy/pmagpydocs/b_vdm-module.html}{[b\_vdm docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/b_vdm.py}{[b\_vdm docs]}
 
 Use the program {\bf b\_vdm} to convert an estimated paleofield value of 33 $\mu$T obtained from a lava flow at 22$^{\circ}$ N latitude to the equivalent Virtual Dipole Moment (VDM) in Am$^2$.   Put the input information into a file called {\it vdm\_input.dat}  and read from it using  \href{#standard_IO}{standard input }:
 
@@ -1153,7 +1008,7 @@ Use the program {\bf b\_vdm} to convert an estimated paleofield value of 33 $\mu
 \subsection{basemap\_magic.py}
 \label{ex:basemap_magic}
 \href{#MagIC}{[MagIC]} and   \href{http://earthref.org/PmagPy/hires.html}{high resolution instructions}
-\href{http://earthref.org/PmagPy/pmagpydocs/basemap_magic-module.html}{[basemap\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/basemap_magic.py}{[basemap\_magic docs]}
 
 Python has a complete map plotting package and PmagPy has a utility for making simple base maps for projects.  Site location data imported for example using \href{#orientation_magic.py}{orientation\_magic.py} into an {\it er\_sites} formatted text file can be plotted using {\bf basemap\_magic.py}.  There are many options, so check the help message for more details.   Note that if you want to use  \href{http://earthref.org/PmagPy/hires.html}{high resolution datafiles}
  or the etopo20 meshgrid (-etp option), you must install the high resolution continental outlines as described on the  \href{http://earthref.org/PmagPy/hires.html}{high resolution instructions} website.
@@ -1180,7 +1035,7 @@ As an example, use the program {\bf basemap\_magic.py} to make  a simple basemap
 \label{ex:biplot_magic}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch8.html#ch8}{
 [Essentials Chapter 8]} and \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/biplot_magic-module.html}{[biplot\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/biplot_magic.py}{[biplot\_magic docs]}
 
 It is often useful to plot measurements from one experiement against another.  For example, rock magnetic studies of sediments often plot the IRM against the ARM or magnetic susceptibility.  All of these types of measurements can be imported into a single {\it magic\_measurements} formatted file, using magic method codes and other clues (lab fields, etc.) to differentiate one from another.  
 Data  were obtained from a Paleogene core from 28$^{\circ}$S for a relative paleointensity study.    IRM, ARM, magnetic susceptibility and remanence data were uploaded to the MagIC database.  The magic\_measurements formatted file for this study is saved in {\it core\_measurements.txt}.  
@@ -1220,7 +1075,7 @@ S[a]ve plots, [q]uit,  Return for next plot
 \customlink{bootams.py}
 \subsection{bootams.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]}
-\href{http://earthref.org/PmagPy/pmagpydocs/bootams-module.html}{[bootams docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/bootams.py}{[bootams docs]}
 
 The program {\bf bootams.py} calculates bootstrap statistics for anisotropy tensor data in the form of:
 
@@ -1249,7 +1104,7 @@ Note that every time bootams gets called, the output will be slightly different 
 \customlink{cart_dir.py}
 \subsection {cart\_dir.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#ch2}{[Essentials Chapter 2]} 
-\href{http://earthref.org/PmagPy/pmagpydocs/cart_dir-module.html}{[cart\_dir docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/cart_dir.py}{[cart\_dir docs]}
 
 Use the program {\bf cart\_dir.py} to convert these cartesian
 coordinates to geomagnetic elements:
@@ -1291,7 +1146,7 @@ To read from a file:
 \subsection{chartmaker.py}
 \label{ex:chartmaker}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#ch10}{[Essentials Chapter 10]}
-\href{http://earthref.org/PmagPy/pmagpydocs/chartmaker-module.html}{[chartmaker docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/chartmaker.py}{[chartmaker docs]}
 
 Paleointensity experiments are quite complex and it is easy to make a mistake in the laboratory.  The SIO lab uses a simple chart that helps the experimenter keep track of in-field and zero field steps and makes sure that the field gets verified before each run.   You can make a chart for an infield-zerofield, zerofield-infield (IZZI) experiment using the program {\bf chartmaker.py}.   Make such a chart using 50$^{\circ}$C steps up to 500$^{\circ}$C  followed by 10$^{\circ}$C steps up to 600$^{\circ}$C.
 
@@ -1345,7 +1200,7 @@ infield steps.  The designations `Z', `I', 'T', 'and 'P'  are for zero-field, in
 \customlink{chi_magic.py}
 \subsection{chi\_magic.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch8.html#ch8}{[Essentials Chapter 8]} \& \href{#MagIC}{[MagIC]}\label{ex:chi_magic}
-\href{http://earthref.org/PmagPy/pmagpydocs/chi_magic-module.html}{[chi\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/chi_magic.py}{[chi\_magic docs]}
 
 It is sometimes useful to measure susceptibility as a function of temperature, applied field and frequency.   Here we use a data set that came from the Tiva Canyon Tuff sequence (see Carter-Stiglitz,  2006).  \nocite{carterstiglitz06}    Use the program {\bf chi\_magic.py} to plot the data in the magic\_measurements formatted file: {\it chi\_magic\_example.dat}.   
 
@@ -1369,7 +1224,7 @@ You can see the dependence on temperature, frequency and applied field.  These d
 \customlink{combine_magic}
 \subsection {combine\_magic.py} \href{#MagIC}{[MagIC]}
 \label{ex:combine_magic}
-\href{http://earthref.org/PmagPy/pmagpydocs/combine_magic-module.html}{[combine\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/combine_magic.py}{[combine\_magic docs]}
 
 MagIC tables have many columns only some of which are used in a particular instance.  So combining files of the same type must be done carefully to ensure that the right data come under the right headings.  The program {\bf combine\_magic.py} can be used to combine any number of MagIC files from a given type.    For an example of how to use this program, see \href{#AGM_magic.py}{AGM\_magic.py}. 
 
@@ -1378,7 +1233,7 @@ MagIC tables have many columns only some of which are used in a particular insta
 \customlink{common_mean.py}
 \subsection{common\_mean.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch12.html#ch12}{[Essentials Chapter 12]}
-\href{http://earthref.org/PmagPy/pmagpydocs/common_mean-module.html}{[common\_mean docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/common_mean.py}{[common\_mean docs]}
 
 Most paleomagnetists use some form of Fisher Statistics to decide if two directions are statistically distinct or not (see \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{Essentials Chapter 11} for a discussion of those techniques.  But often directional data are not fisher distributed and the parametric approach will give misleading answers.  In these cases, one can use a boostrap approach, described in detail in \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch12.html#ch12}{[Essentials Chapter 12]}.  Here we
 use the program {\bf common\_mean.py} for a bootstrap test for common mean to check whether two declination, inclination data sets have a common mean at the 95\% level of confidence.    The data sets are: {\it common\_mean\_ex\_file1.dat } and {\it common\_mean\_ex\_file2.dat}.  But first, let's look at the data in equal area projection  using the program \href{#eqarea.py}{eqarea.py}.
@@ -1434,7 +1289,7 @@ Apparently the data (cumulative distribution functions) are entirely consistent 
 \customlink{cont_rot.py}
 \subsection{cont\_rot.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch16.html#ch16}{[Essentials Chapter 16 }and \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ap1.html#polerot}{Essentials Appendix A.3.5.]}
-\href{http://earthref.org/PmagPy/pmagpydocs/cont_rot-module.html}{[cont\_rot docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/cont_rot.py}{[cont\_rot docs]}
 
 Use the program {\bf cont\_rot.py} to make an orthographic projection with latitude = -20$^{\circ}$ and longitude = 0$^{\circ}$ at the center of the African and South American  continents reconstructed to 180 Ma using the Torsvik et al. (2008) poles of finite rotation.  \nocite{torsvik08} Do this by first holding Africa fixed.  Move the output plot to {\it fixed\_africa.svg}.  Then make the plot for Africa adjusted  to the paleomagnetic reference frame.  Make the continental outlines in black lines and set the resolution to 'low'.  
 
@@ -1457,14 +1312,14 @@ These commands generated the following plots (first on left, second on right):
 
 \customlink{convert2unix.py}
 \subsection{convert2unix.py}
-\href{http://earthref.org/PmagPy/pmagpydocs/convert2unix-module.html}{[convert2unix docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/convert2unix.py}{[convert2unix docs]}
 
 This is a handy little script that turns Windows or Mac file formatted files (not Word or other proprietary formats) into Unix file format.  It does the change in place, overwriting the original file.
 
 \customlink{convert_samples.py}
 \subsection{convert\_samples.py}
 \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/convert_samples-module.html}{[convert\_samples docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/convert_samples.py}{[convert\_samples docs]}
 
 If one of the MagIC related programs in PmagPy created a very lean looking {\it er\_samples.txt} file (for example using \href{#azdip_magic.py}{azdip\_magic.py}) and you need to add more information (say, latitude, longitude, lithology, etc.), you can convert the {\it er\_samples.txt} file into an \href{#orientation_magic.py}{orient.txt} file format, edit it in, for example Excel, and then re-import it back into the {\it er\_samples.txt} file format.  Try this on the {\it er\_samples} formatted file in the {\it convert\_samples} directory, {\it convert\_samples\_example.dat}.
 
@@ -1478,7 +1333,7 @@ Data saved in:  orient_Northern_Iceland.txt
 
 \customlink{core_depthplot.py}
 \subsection{core\_depthplot.py} [\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch15.html#ch15}{[Essentials Chapter 15]}
-\href{http://earthref.org/PmagPy/pmagpydocs/core_depthplot-module.html}{[core\_depthplot docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/core_depthplot.py}{[core\_depthplot docs]}
 
 Use the program {\bf core\_depthplot.py} to plot various measurement data versus sample depth.   The data must be in the MagIC data formats.  The program will plot whole core data, discrete sample at a bulk demagnetization step, data from vector demagnetization experiments, and so on.  There are many options, so check the help menu before you begin.     
 
@@ -1496,7 +1351,7 @@ We can try this out on some data from DSDP Hole 522, measured by Tauxe and Hartl
 \customlink{curie.py}
 \subsection{curie.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch6.html#ch6}{[Essentials Chapter 6]}
-\href{http://earthref.org/PmagPy/pmagpydocs/curie-module.html}{[curie docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/curie.py}{[curie docs]}
 % NOTE TO SELF:  THIS NEEDS TO BE UPDATED USING THE BETTER METHOD OF FABIAN FOR CURIE T ESTIMATION
 
 Use the program {\bf curie.py} to interpret curie temperature data in the example file {\it curie\_example.dat}.  Use a smoothing window of 10$^{\circ}$.
@@ -1518,7 +1373,7 @@ second deriative maximum is at T=552
 \customlink{customize_criteria.py}
 \subsection{customize\_criteria.py} 
 \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/customize_criteria-module.html}{[customize\_criteria docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/customize_criteria.py}{[customize\_criteria docs]}
 
 The MagIC database allows documentation of which criteria were used in selecting data on a specimen, sample or site level and to easily apply those criteria (and re-apply them as they change) in preparing the different tables.  These choices are stored in the {\it pmag\_criteria} table in each MagIC project directory (see \href{#MagIC.py}{MagIC.py} documentation).
 
@@ -1558,7 +1413,7 @@ Note that the default place for the PmagPy programs to look for criteria is in {
 \customlink{dayplot_magic.py}
 \subsection{dayplot\_magic.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch5.html#ch5}{[Essentials Chapter 5]} 
-\href{http://earthref.org/PmagPy/pmagpydocs/dayplot_magic-module.html}{[dayplot\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/dayplot_magic.py}{[dayplot\_magic docs]}
 
  Use the program {\bf dayplot\_magic.py}  to make Day (Day et al., 1977) \nocite{day77}, or Squareness-Coercivity and Squareness-Coercivity of Remanence plots (e.g., Tauxe et al., 2002) \nocite{tauxe02} from the rmag\_hyseresis formatted data in {\it dayplot\_magic\_example.dat.}     
  
@@ -1577,12 +1432,20 @@ Note that the default place for the PmagPy programs to look for criteria is in {
 %\epsfxsize 14.5cm
 {%\epsffile{EPSfiles/dayplot.eps}
   \includegraphics[width=15cm]{EPSfiles/dayplot.eps}}
+  
+  
+\customlink{demag_gui.py}
+\subsection{demag\_gui.py}
+\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch7.html}{[Essentials Chapter 7]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/demag_gui.py}{[demag\_gui docs]}
+
+HERE WE NEED A QUICKY TUTORIAL!!!!   
 
 
 \customlink{di_eq.py}
 \subsection{di\_eq.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ap2.html#equal_area}{[Essentials Appendix B]}
-\href{http://earthref.org/PmagPy/pmagpydocs/di_eq-module.html}{[di\_eq docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/di_eq.py}{[di\_eq docs]}
 
 Paleomagnetic data are frequently plotted in equal area projection.  PmagPy has several plotting programs which do this (e.g., \href{#eqarea.py}{eqarea.py}, but occasionally it is handy to be able to convert the directions to X,Y coordinates directly, without plotting them at all.  The program {\bf di\_eq.py} does this.  Here is an example transcript of a session using the datafile {\it di\_eq\_example.dat}:
 
@@ -1603,7 +1466,7 @@ Paleomagnetic data are frequently plotted in equal area projection.  PmagPy has 
 \subsection{di\_geo.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]} and
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ap1.html#Changing_coordinate_systems}{Changing coordinate systems}
-\href{http://earthref.org/PmagPy/pmagpydocs/di_geo-module.html}{[di\_geo docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/di_geo.py}{[di\_geo docs]}
 
 Use the programs {\bf di\_geo.py}  to convert
 $D=8.1, I=45.2$ from specimen coordinates  to geographic  adjusted coordinates. The
@@ -1649,7 +1512,7 @@ di_geo.py -f di_geo_example.dat >di_geo.out;  eqarea.py -f di_geo.out
 \customlink{di_rot.py}
 \subsection{di\_rot.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter  11]}
-\href{http://earthref.org/PmagPy/pmagpydocs/di_rot-module.html}{[di\_rot docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/di_rot.py}{[di\_rot docs]}
 
 
 Generate a Fisher distributed set of data from a population with a mean direction of $D=0, I=42$ using the program {\bf fishrot.py}.  Calculate the mean direction of the data set using {\bf gofish.py}.  Now use the program \href{#di_rot.py}{di\_rot.py} to rotate the set of directions to the mean direction.  Look at the data before and after rotation using \href{#eqarea.py}{eqarea.py}.  
@@ -1674,7 +1537,7 @@ Note that every instance of {\bf fisher.py} will draw a different sample from a 
 \subsection{di\_tilt.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]} and
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ap1.html#Changing_coordinate_systems}{Changing coordinate systems}
-\href{http://earthref.org/PmagPy/pmagpydocs/di_tilt-module.html}{[di\_tilt docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/di_tilt.py}{[di\_tilt docs]}
 
 
 Use the program {\bf di\_tilt.py} to rotate a direction of Declination = 5.3 and Inclination = 71.6 to ``stratigraphic'' coordinates.  The  strike was 135 and the dip was 21.
@@ -1702,7 +1565,7 @@ Try the same on the data file saved as {\it di\_tilt\_example.dat} using the com
 \customlink{di_vgp.py}
 \subsection{di\_vgp.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#Virtual_geomagnetic_poles}{[Essentials Chapter  2]}
-\href{http://earthref.org/PmagPy/pmagpydocs/di_vgp-module.html}{[di\_vgp docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/di_vgp.py}{[di\_vgp docs]}
 
 Use the program {\bf di\_vgp} to convert the
 following:
@@ -1729,7 +1592,7 @@ Here is a transcript of a typical session using the command line option for file
 \customlink{dipole_pinc.py}
 \subsection{dipole\_pinc.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#Virtual_geomagnetic_poles}{[Essentials Chapter  2]}
-\href{http://earthref.org/PmagPy/pmagpydocs/dipole_pinc-module.html}{[dipole\_pinc docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/dipole_pinc.py}{[dipole\_pinc docs]}
 
 Calculate the expected inclination at a paleolatitude of 24$^{\circ}$S.
 
@@ -1745,7 +1608,7 @@ Paleolat for converting to inclination: <cntl-D> to quit ^D
 \customlink{dipole_plat.py}
 \subsection{dipole\_plat.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#Virtual_geomagnetic_poles}{[Essentials Chapter  2]}
-\href{http://earthref.org/PmagPy/pmagpydocs/dipole_plat-module.html}{[dipole\_plat docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/dipole_plat.py}{[dipole\_plat docs]}
 
 
 Calculate the paleolatitude for an average inclination of 23$^{\circ}$.  
@@ -1760,7 +1623,7 @@ Inclination for converting to paleolatitude: <cntl-D> to quit ^D
 
 \customlink{dir_cart.py}
 \subsection {dir\_cart.py} \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#ch2}{[Essentials Chapter 2]}]
-\href{http://earthref.org/PmagPy/pmagpydocs/dir_cart-module.html}{[dir\_cart docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/dir_cart.py}{[dir\_cart docs]}
 
 Use the program {\bf dir\_cart.py} to convert the
 following data from declination $D$, inclination $I$ and intensity
@@ -1814,7 +1677,7 @@ Declination: [cntrl-D  to quit] ^D
 \customlink{dmag_magic.py}
  \subsection{dmag\_magic.py}
   \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]} and \href{#MagIC}{[MagIC]}
-  \href{http://earthref.org/PmagPy/pmagpydocs/dmag_magic-module.html}{[dmag\_magic docs]}
+  \href{https://github.com/ltauxe/PmagPy/blob/master/dmag_magic.py}{[dmag\_magic docs]}
  
 Use {\bf dmag\_magic.py} to plot out the decay of all alternating field demagnetization experiments in the magic\_measurements 
 formatted file in {\it dmag\_magic\_example.dat}.   These are from Lawrence et al. (2009). \nocite{lawrence09}  Repeat for all thermal measurements, but exclude all the data acquired during the thermal but not  paleointensity experiments.   Try this at the location level and then at the site level. 
@@ -1850,7 +1713,7 @@ mc200 plotting by:  er_site_name
 
 \customlink{download_magic.py}
  \subsection{download\_magic.py} [\href{http://earthref.org/MagIC}{MagIC}]
-\href{http://earthref.org/PmagPy/pmagpydocs/download_magic-module.html}{[download\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/download_magic.py}{[download\_magic docs]}
  
  This program unpacks .txt files downloaded from the MagIC database into individual directories for each location into which the individual files for each table (e.g., {\it er\_locations.txt, magic\_measurements.txt, pmag\_results.txt} and so on) get placed.   As an example, go to the MagIC data base at \url{http://earthref.org/MAGIC/search}.  Enter ``Tauxe and 2004'' into the Reference Text Search field will show you several references.   Look for the one for Tauxe, L., Luskin, C., Selkin, P., Gans, P. and Calvert, A. (2004). \nocite{tauxe04b}  Download the  text file under the ``Contribution SmartBook'' column and save it to your desktop.   Make a   folder into which  you should put the downloaded txt file called MagIC\_download and move the file into it.  Now use the program {\bf download\_magic.py} to unpack the .txt file ({\it zmab0083201tmp03.txt}).   
  
@@ -1892,7 +1755,7 @@ You can change directories into each Location directory (in this case only one) 
  \customlink{eigs_s.py}
 \subsection{eigs\_s.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{ [Essentials Chapter 13]}
-\href{http://earthref.org/PmagPy/pmagpydocs/eigs_s-module.html}{[eigs\_s docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/eigs_s.py}{[eigs\_s docs]}
 
 Print out the eigenparameters  in the file {\it eigs\_s\_example.dat} and then
 convert them to tensor data in the .s format (x11,x22,x33,x12,x13,x23).   
@@ -1927,7 +1790,7 @@ form {\bf type} in a Windows command line window.]    Then, it prints the tensor
 \customlink{eq_di.py}
 \subsection{eq\_di.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3.html#equal_area}{[Essentials Appendix B]}
-\href{http://earthref.org/PmagPy/pmagpydocs/eq_di-module.html}{[eq\_di docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/eq_di.py}{[eq\_di docs]}
 
 Data are frequently  published as equal area projections and not listed in data tables.  These data can be digitized as x,y data (assuming the outer rim is unity) and converted to approximate directions with the program {\bf eq\_di.py}.  To use this program, install a graph digitizer (GraphClick from \url{http://www.arizona-software.ch/graphclick/} works on Macs).
 
@@ -1952,7 +1815,7 @@ You can verify the process by comparing the plot generated for these data using 
 \subsection{eqarea.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#ch2}{ [Essentials Chapter 2]} and 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ap1.html#Plots_useful_in_paleomagnetism}{[Essentials Appendix B.1]}
-\href{http://earthref.org/PmagPy/pmagpydocs/eqarea-module.html}{[eqarea docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/eqarea.py}{[eqarea docs]}
 
 Use the program \href{#fishrot.py}{fishrot.py} to generate a Fisher distiributed set of data drawn from a distribution with mean declination of 42$^{\circ}$ and a mean inclination of 60$^{\circ}$.  LSave this to a file called {it fishrot.out}.   Use {\bf eqarea.py} to 
 plot an equal area projection of the data.
@@ -1971,7 +1834,7 @@ which produces the plot:
 \customlink{eqarea_ell.py}
 \subsection{eqarea\_ell.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{ [Essentials Chapters 11]} and \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch12.html#ch12}{ [Essentials Chapter 12]}
-\href{http://earthref.org/PmagPy/pmagpydocs/eqarea_ell-module.html}{[eqarea\_ell docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/eqarea_ell.py}{[eqarea\_ell docs]}
 
 Use the program \href{#tk03.py}{tk03.py} to generate a set of simulated data for a latitude of 42$^{\circ}$N including reversals.  
 Then use the program {\bf eqarea\_ell.py} to 
@@ -2003,7 +1866,7 @@ Other ellipses are Kent, Fisher and bootstrapped ellipses.  Check the documentat
 
 \customlink{eqarea_magic.py}
 \subsection{eqarea\_magic.py} \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/eqarea_magic-module.html}{[eqarea\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/eqarea_magic.py}{[eqarea\_magic docs]}
 
 Follow the instructions for downloading and unpacking a data file from the MagIC database or use the file in the {\it download\_magic} directory already downloaded from the  \href{http://earthref.org/MagIC/search}{MagIC} website.    Plot the directional data for the study from the {\it pmag\_results.txt} file along with the bootstrapped 
  confidence ellipse.   
@@ -2098,7 +1961,7 @@ which produces plots like:
 \customlink{find_EI.py}
 \subsection{find\_EI.py}
  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch14.html#ch14}{ [Essentials Chapter 14]}%
-\href{http://earthref.org/PmagPy/pmagpydocs/find_EI-module.html}{[find\_EI docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/find_EI.py}{[find\_EI docs]}
 
 A data file was prepared using \href{#tk03}{tk03.py} to simulate directions at a latitude of 42$^{\circ}$.   Use the program \href{#dipole_pinc.py}{dipole\_pinc.py} to find what the expected inclination at this latitude is!    
 
@@ -2150,7 +2013,7 @@ In this example, the original expected inclination at paleolatitude of 42 (61$^{
 \customlink{fisher.py}
 \subsection{fisher.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{ [Essentials Chapter 11]}
-\href{http://earthref.org/PmagPy/pmagpydocs/fisher-module.html}{[fisher docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/fisher.py}{[fisher docs]}
 
 Draw a set of 10 directions from a Fisher distribution with a $\kappa$ of 30 using {\bf fisher.py}:
 
@@ -2172,7 +2035,7 @@ Draw a set of 10 directions from a Fisher distribution with a $\kappa$ of 30 usi
 \customlink{fishqq.py}
 \subsection{fishqq.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{ [Essentials Chapter 11]}
-\href{http://earthref.org/PmagPy/pmagpydocs/fishqq-module.html}{[fishqq docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/fishqq.py}{[fishqq docs]}
 
 Test whether a set of 100 data points generated with \href{#fisher.py}{fisher.py} are in fact Fisher distributed by using a Quantile-Quantile plot:
 
@@ -2194,7 +2057,7 @@ Test whether a set of 100 data points generated with \href{#fisher.py}{fisher.py
 \customlink{fishrot.py}
 \subsection{fishrot.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{ [Essentials Chapter 11]}
-\href{http://earthref.org/PmagPy/pmagpydocs/fishrot-module.html}{[fishrot docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/fishrot.py}{[fishrot docs]}
 
 Draw a set of 5 directions drawn  from a Fisher distribution with a true mean declination of 33, a true mean inclination of 41, and a $\kappa$ of  50:
 
@@ -2210,7 +2073,7 @@ Draw a set of 5 directions drawn  from a Fisher distribution with a true mean de
 \customlink{foldtest.py}
  \subsection{foldtest.py}
  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch12.html#ch12}{[Essentials Chapter 12]}
- \href{http://earthref.org/PmagPy/pmagpydocs/foldtest-module.html}{[foldtest docs]}
+ \href{https://github.com/ltauxe/PmagPy/blob/master/foldtest.py}{[foldtest docs]}
 
  Use {\bf foldtest.py} to perform the Tauxe and Watson (1994) \nocite{tauxe94}  foldtest on the data in {\it foldtest\_example.dat}.   
  
@@ -2243,7 +2106,7 @@ S[a]ve all figures, <Return> to quit   a
 % 
 \customlink{foldtest_magic.py}
 \subsection{foldtest\_magic.py} \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch12.html#ch12}{[Essentials Chapter 12]} and \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/foldtest_magic-module.html}{[foldtest\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/foldtest_magic.py}{[foldtest\_magic docs]}
 
 This program performs the same test as \href{#foldtest.py}{foldtest.py}.  The only difference is that it reads MagIC formatted input files and allows the application of selection criteria as specified in the {\it pmag\_criteria.txt} formatted file.   
 % 
@@ -2251,7 +2114,7 @@ This program performs the same test as \href{#foldtest.py}{foldtest.py}.  The on
 \customlink{gaussian.py}
 \subsection{gaussian.py} 
  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter 11]}
- \href{http://earthref.org/PmagPy/pmagpydocs/gaussian-module.html}{[gaussian docs]}
+ \href{https://github.com/ltauxe/PmagPy/blob/master/gaussian.py}{[gaussian docs]}
  
 
 Use {\bf gaussian.py} to generate a set of 100 normally distributed data points drawn from a population with a mean of 10.0  and   standard deviation of 30.  Save it to a file named {\bf gauss.out}.  
@@ -2268,7 +2131,7 @@ You can check the sample mean and standard deviation with \href{#stats.py}{stats
 \customlink{gobing.py}
 \subsection{gobing.py}
  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter 12]}
- \href{http://earthref.org/PmagPy/pmagpydocs/gobing-module.html}{[gobing docs]}
+ \href{https://github.com/ltauxe/PmagPy/blob/master/gobing.py}{[gobing docs]}
 
 Use the dataset generated in the \href{#eqarea_ell.py}{eqarea\_ell.py} example.   Calculate Bingham parameters using {\bf gobing.py}  instead of within the plotting program:
 
@@ -2285,7 +2148,7 @@ mean dec, mean inc, Eta, Deta, Ieta, Zeta, Zdec, Zinc, N
 \customlink{gofish.py}
 \subsection{gofish.py} 
  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter 11]}
- \href{http://earthref.org/PmagPy/pmagpydocs/gofish-module.html}{[gofish docs]}
+ \href{https://github.com/ltauxe/PmagPy/blob/master/gofish.py}{[gofish docs]}
  
  Draw a set of 10 directions drawn  from a Fisher distribution with a true mean declination of 15, a true mean inclination of 41, and a $\kappa$ of  50 and save it to a file, then use {\bf gofish.py} to calculate the Fisher parameters:
 
@@ -2302,7 +2165,7 @@ mean dec, mean inc, Eta, Deta, Ieta, Zeta, Zdec, Zinc, N
 \customlink{gokent.py}
 \subsection{gokent.py} 
  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter 12]}
- \href{http://earthref.org/PmagPy/pmagpydocs/gokent-module.html}{[gokent docs]}
+ \href{https://github.com/ltauxe/PmagPy/blob/master/gokent.py}{[gokent docs]}
 
 Draw a set of 20 data points  from a TK03.GAD distibution predicted for a latitude of 42$^{\circ}$N (see  14), without  reversals.  Calculate kent parameters using {\bf gokent.py} 
 
@@ -2316,7 +2179,7 @@ Draw a set of 20 data points  from a TK03.GAD distibution predicted for a latitu
 
 \subsection{goprinc.py} 
  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter 12]}
- \href{http://earthref.org/PmagPy/pmagpydocs/goprinc-module.html}{[goprinc docs]}
+ \href{https://github.com/ltauxe/PmagPy/blob/master/goprinc.py}{[goprinc docs]}
 
 Draw a set of 20 data points  from a TK03.GAD distibution predicted for a latitude of 42$^{\circ}$N (see  14), including reversals.  Calculate the eigenparameters of the orientation matrix (the principal components)  using {\bf goprinc.py} 
 
@@ -2330,7 +2193,7 @@ Draw a set of 20 data points  from a TK03.GAD distibution predicted for a latitu
 \customlink{grab_magic_key.py}
 \subsection{grab\_magic\_key.py}
 \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/grab_magic_key-module.html}{[grab\_magic\_key docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/grab_magic_key.py}{[grab\_magic\_key docs]}
 
 {\bf grab\_magic\_key.py} is  a utility that will print out any column (-key option) from any \href{#MagIC}{[MagIC]} formatted file.  For example, we could print out all the site latitudes from the  {\it er\_sites.txt} file down loaded in the \href{#download_magic.py}{download\_magic.py} example:
 
@@ -2357,7 +2220,7 @@ which produces  the fascinating (NOT!) plot:
 
 \customlink{histplot.py}
 \subsection{histplot.py}
-\href{http://earthref.org/PmagPy/pmagpydocs/histplot-module.html}{[histplot docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/histplot.py}{[histplot docs]}
 
 Make a histogram of the data generated with the {\bf gaussian.py} program.
 
@@ -2374,7 +2237,7 @@ Make a histogram of the data generated with the {\bf gaussian.py} program.
 \customlink{hysteresis_magic.py}
 \subsection{hysteresis\_magic.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch5.html#ch5}{[Essentials Chapters 5]}, \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch7.html#ch7}{[Essentials Chapter 7], }  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ap3.html#hysteresis_parameters}{[Essentials Appendix C.1]} \& \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/hysteresis_magic-module.html}{[hysteresis\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/hysteresis_magic.py}{[hysteresis\_magic docs]}
 
 Plot the data in {\it hysteresis\_magic\_example.txt}, (from  Ben-Yosef et al., 2008) \nocite{benyosef08} which were imported into MagIC using  \href{#AGM_magic.py}{AGM\_magic.py}.   Use the program  {\bf hysteresis\_magic.py} to plot the data.   
 
@@ -2401,7 +2264,7 @@ S[a]ve plots, [s]pecimen name, [q]uit, <return> to continue
 \customlink{igrf.py}
 \subsection{igrf.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#ch2}{[Essentials Chapter 2]}[Essentials Chapter 2]
-\href{http://earthref.org/PmagPy/pmagpydocs/igrf-module.html}{[igrf docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/igrf.py}{[igrf docs]}
 
 Use the program {\bf igrf.py } to estimate the
 field on June 1, 1995 in Amsterdam, The Netherlands (52.5$^{\circ}$ N, 5$^{\circ}$E).
@@ -2442,7 +2305,7 @@ and get this plot:
 \customlink{incfish.py}
 \subsection{incfish.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{ [ Essentials Chapter 11]}
-\href{http://earthref.org/PmagPy/pmagpydocs/incfish-module.html}{[incfish docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/incfish.py}{[incfish docs]}
 
 Use the program {\bf incfish.py} to calculate average inclination for inclination only data 
 simulated by fishrot.py for an average inclination of 60$^{\circ}$.   If you save the declination, inclination 
@@ -2462,7 +2325,7 @@ The output for {\bf incfish.py} is:  [gaussian] mean inc, Fisher inc, $N, R, k, 
 \customlink{irmaq_magic.py}
 \subsection{irmaq\_magic.py}
 \href{#MagIC}{MagIC}
-\href{http://earthref.org/PmagPy/pmagpydocs/irmaq_magic-module.html}{[irmaq\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/irmaq_magic.py}{[irmaq\_magic docs]}
 
 Someone (Saiko Sugisaki) measured a number of samples from IODP Expedition 318 Hole U1359A for IRM acquisition curves.  She used the ASC impulse magnetizer's coils \# 2 and 3 and saved the data in the \href{#sio_magic.py}{SIO format}.   Convert these to the \href{#MagIC}{MagIC} measurements  format, combine them in a  single {\it magic\_measurements.txt} file with \href{#combine_magic.py}{combine\_magic.py} and plot the data with {\bf irmaq\_magic.py}. 
 
@@ -2489,7 +2352,7 @@ which produces the plot:
 \subsection{k15\_magic.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]}; 
 \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/k15_magic-module.html}{[k15\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/k15_magic.py}{[k15\_magic docs]}
 
 
 Someone took a set of samples from a dike margin in the Troodos Ophiolite and measured their anisotropy of magnetic susceptibility on an a Kappabridge KLY 2.0 instrument in the SIO laboratory:
@@ -2533,7 +2396,7 @@ You can plot the output of this example (default file {\it rmag\_anisotropy.txt}
 \subsection{k15\_s.py}  
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]}; 
 \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/k15_s-module.html}{[k15\_s docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/k15_s.py}{[k15\_s docs]}
 
 %
 Use {\bf k15\_s.py} to calculate the best-fit tensor elements and residual error for the data in the file {\it k15\_example.dat} (same file as for \href{#k15_magic.py}{k15\_magic.py}.  These are: the specimen name, azimuth and plunge and the strike and dip, followed by the 15 measurements made using the Jelinek 1977 \nocite{jelinek77} scheme shown in the \href{#k15_magic.py}{k15\_magic.py} example.  Calculate the .s data in specimen, geographic  and tilt adjusted coordinates:
@@ -2562,7 +2425,7 @@ Use {\bf k15\_s.py} to calculate the best-fit tensor elements and residual error
 \customlink{KLY4S_magic.py} 
 \subsection{KLY4S\_magic.py}  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]}; 
 \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/KLY4S_magic-module.html}{[KLY4S\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/KLY4S_magic.py}{[KLY4S\_magic docs]}
 
 The program {\bf AMSSpin} available for downloading from \url{http://earthref.org/ERDA/940/}  generates data for the Kappabridge KLY4S spinning magnetic susceptibility instrument as described by Gee et al. (2008).  \nocite{gee08}  
 
@@ -2585,7 +2448,7 @@ Try it out on some data from IODP Expedition 318 (Hole U1359B) published by Taux
 %KLY4S_magic.py -f KLY4S_magic_example.dat  -spc 0 -ncn 5
 \end{verbatim}
 
-This command will create the files needed by the MagIC database and the data can be plotted using {\bf aniso\_magic.py}.    If you were to import the sample files from the \href{#LIMS}{LIMS} data base for these samples, you could plot them versus depth, or as equal area projections using \href{#ani_depthplot.py}{ani\_depthplot.py} and \href{#aniso_magic.py}{aniso\_magic.py} respectively.     
+This command will create the files needed by the MagIC database and the data can be plotted using {\bf aniso\_magic.py}.    If you were to import the sample files from the \href{#LIMS}{LIMS} data base for these samples, you could plot them versus depth, or as equal area projections using \href{#ANI_depthplot.py}{ANI\_depthplot.py} and \href{#aniso_magic.py}{aniso\_magic.py} respectively.     
 
 
 
@@ -2594,7 +2457,7 @@ This command will create the files needed by the MagIC database and the data can
 \customlink{lnp_magic.py}
 \subsection{lnp\_magic.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{ [Essentials Chapter 11]},  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ap3.html#linesNplanes}{[Essentials Appendix C2.2]} \& \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/lnp_magic-module.html}{[lnp\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/lnp_magic.py}{[lnp\_magic docs]}
 
 This program will take {\it pmag\_specimen} formatted MagIC files (for example, generated by \href{#zeq_magic.py}{zeq\_magic.py}) and plot data by site, combining best-fit lines and best-fit planes using the method described in  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ap3.html#linesNplanes}{Essentials Appendix C2.2}.  Try this out on the data from the San Francisco Volcanics, notorious for lightning strikes, published by Tauxe et al., 2003. \nocite{tauxe03b}  These can be downloaded from the MagIC database from \url{http://earthref.org/MAGIC/m000629dt20061213090720/} and unpacked with 
 \href{#download_magic.py}{download\_magic.py}.   
@@ -2627,7 +2490,7 @@ s[a]ve plot, [q]uit, <return> to continue:
 \customlink{lowrie.py}
 \subsection{lowrie.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch8.html#lowrie}{[Essentials Chapter 8]}
-\href{http://earthref.org/PmagPy/pmagpydocs/lowrie-module.html}{[lowrie docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/lowrie.py}{[lowrie docs]}
 
 Someone (Saiko Sugisaki) subjected a number of specimens from IODP Expedition 318 Hole U1359A specimens to a 3-D IRM experiment and saved the data in the \href{#sio_magic.py}{SIO} format.   
 Use {\bf lowrie.py} to make plots of blocking temperature for the three  coercivity fractions.  
@@ -2649,7 +2512,7 @@ which produces plots like this:
 \customlink{lowrie_magic.py}
 \subsection{lowrie\_magic.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch8.html#lowrie}{[Essentials Chapter 8]} and \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/lowrie_magic-module.html}{[lowrie\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/lowrie_magic.py}{[lowrie\_magic docs]}
 
 This program works exactly like \href{#lowrie.py}{lowrie.py}, but works on {\it magic\_measurements.txt} formatted files.  Use \href{#sio_magic.py}{sio\_magic.py} to import the {\it lowrie\_example.dat} data file into the MagIC format.  Then use {\bf lowrie\_magic.py} to plot the data:
 
@@ -2734,10 +2597,10 @@ After you have imported your various datafiles, you can process them using the t
 The plots that are available to you now are:  Demagnetization data, Thellier-type experimental data, and Hysteresis data. 
 You may change the selection criteria from the defaults if you wish.    
 
-When you are finished looking at and perhaps re-interpreting the data, you are ready to prepare the data for the MagIC Console: the gateway to the MagIC database.  This is a three step process under the \href{#PrepareMagicConsole}{Prepare for MagIC Console} menu:
+When you are finished looking at and perhaps re-interpreting the data, you are ready to prepare the data for the MagIC  database.  This is a three step process under the \href{#PrepareMagic}{Prepare for MagIC } menu:
 :  Assemble specimens, Assemble results and Prepare upload file.  \begin{itemize}
-		\item \href{#PrepareMagicConsole}{Assemble specimens}:  Just choose this and watch the console for errors.  
-		\item	\href{#PrepareMagicConsole}{Assemble results}:  Fill in the following: 
+		\item \href{#PrepareMagic}{Assemble specimens}:  Just choose this and watch the console for errors.  
+		\item	\href{#PrepareMagic}{Assemble results}:  Fill in the following: 
 		\begin{itemize}
 			\item Choose the default selection criteria (unless you changed them, in which case you can select the customized option  -exc).  
 			\item Age Range: These samples ranged from zero to five million years, so fill in '0', '5' and choose 'Ma' under the 
@@ -2745,32 +2608,32 @@ When you are finished looking at and perhaps re-interpreting the data, you are r
 	         \item Coordinate system:  Choose the geographic coordinate system.
 	         \item If you want to look at the data on a site by site basis, select the -p option.
 		\end{itemize}
-		\item Prepare upload txt file:  The \href{#Uploading}{MagIC Console} will import a specially formatted ascii file, parsing all the tables into their correct tabs and allowing you to proceed to the final steps of file preparation for uploading into the database.   It will create an {\it er\_locations.txt} file for you based on what is in the {\it er\_sites.txt} file.  It will ask you for the missing required information.   In this case, the location type was 'Outcrop'.  Then the GUI prepares a file called {\it upload\_dos.txt} which can be directly imported into the MagIC console.   
+		\item Prepare upload txt file:  The \href{#Uploading}{MagIC } will import a specially formatted ascii file, parsing all the tables into their correct tabs and allowing you to proceed to the final steps of file preparation for uploading into the database.   It will create an {\it er\_locations.txt} file for you based on what is in the {\it er\_sites.txt} file.  It will ask you for the missing required information.   In this case, the location type was 'Outcrop'.  Then the GUI prepares a file called {\it upload\_dos.txt} which can be directly imported into the MagIC console.   
 \end{itemize}
 
   After you have assembled the results some additional equal area projections  and utilities will be available to you, if you wish to try these out.    
   
-  \subsubsection{Using the MagIC Console}
- 
-  To obtain the MagIC Console software, go to:
-  
-   \url{http://earthref.org/MAGIC}
-   
-   \noindent and select `MagIC Software v2.4'.  Click on the `CONSOLE SOFTWARE' and  'CONTROLLED VOCABULARIES' links.  Unzip the Console software and put the Controlled vocabularies file into it (copying over whatever was there).  As of this writing the Console works on both Macs and PCs, but is extremely slow on the Mac OS operating system.  Having been warned,  open Excel and then select the 'MagIC.v24.console' file.  This will open the console.  Under 'Operations', select 'new smartbook' and type the name 'Tutorial' in the File name text box.  
-  
-  The 'wizard' will guide you in choosing the necessary columns for the smartbook:
-  
-  \includegraphics[width=15cm]{EPSFiles/wizard.eps}
-  
-\noindent  Click on the 'Use predefined settings...' choose 	 `Classical Directional and Intensity Study' and click 'OK'.  Then add 'Measurement data' and 	`Rock Magnetics' and click on the 'Next$>>$' button.  Check the boxes for 'Anisotropy' and 'Hysteresis' data and click on the  'Finish' button.  Your smartbook is now ready for populating.  
-  
-  Under the 'Operations' menu, select `Import data files' and choose the 'upload\_dos.txt' file in your MagIC project directory.  
- This reads it in and parses it out to the right tables.  Any error logs generated will be in the directory with the upload\_dos file.  When you have satisfied your curiosity about the contents of the smartbook, click on the 'Prepare for uploading' option under the 'Operations' menu.  After you indicate that you really want to do this, the console goes through some extensive checking.   If errors are encountered, you will be given the opportunity to correct them.  When the console  is finished,  it exports an Excel file (in this case Tutorial.v24.xls) and a text file (in this case Tutorial.v24.txt).  If this were a real study, you would upload these into the MagIC database by going to:
-\url{  http://earthref.org/MAGIC }
-  and selecting 'Upload a new contribution'.  
-  Do NOT upload this file to the database, as all uploaded datasets must be associated with publications.  This was just a Tutorial.
-  
-
+%  \subsubsection{Using the MagIC Console}
+% 
+%  To obtain the MagIC Console software, go to:
+%  
+%   \url{http://earthref.org/MAGIC}
+%   
+%   \noindent and select `MagIC Software v2.4'.  Click on the `CONSOLE SOFTWARE' and  'CONTROLLED VOCABULARIES' links.  Unzip the Console software and put the Controlled vocabularies file into it (copying over whatever was there).  As of this writing the Console works on both Macs and PCs, but is extremely slow on the Mac OS operating system.  Having been warned,  open Excel and then select the 'MagIC.v24.console' file.  This will open the console.  Under 'Operations', select 'new smartbook' and type the name 'Tutorial' in the File name text box.  
+%  
+%  The 'wizard' will guide you in choosing the necessary columns for the smartbook:
+%  
+%  \includegraphics[width=15cm]{EPSFiles/wizard.eps}
+%  
+%\noindent  Click on the 'Use predefined settings...' choose 	 `Classical Directional and Intensity Study' and click 'OK'.  Then add 'Measurement data' and 	`Rock Magnetics' and click on the 'Next$>>$' button.  Check the boxes for 'Anisotropy' and 'Hysteresis' data and click on the  'Finish' button.  Your smartbook is now ready for populating.  
+%  
+%  Under the 'Operations' menu, select `Import data files' and choose the 'upload\_dos.txt' file in your MagIC project directory.  
+% This reads it in and parses it out to the right tables.  Any error logs generated will be in the directory with the upload\_dos file.  When you have satisfied your curiosity about the contents of the smartbook, click on the 'Prepare for uploading' option under the 'Operations' menu.  After you indicate that you really want to do this, the console goes through some extensive checking.   If errors are encountered, you will be given the opportunity to correct them.  When the console  is finished,  it exports an Excel file (in this case Tutorial.v24.xls) and a text file (in this case Tutorial.v24.txt).  If this were a real study, you would upload these into the MagIC database by going to:
+%\url{  http://earthref.org/MAGIC }
+%  and selecting 'Upload a new contribution'.  
+%  Do NOT upload this file to the database, as all uploaded datasets must be associated with publications.  This was just a Tutorial.
+%  
+%
 %
 
 
@@ -2778,7 +2641,7 @@ When you are finished looking at and perhaps re-interpreting the data, you are r
 \customlink{magic_select.py}
 \subsection{magic\_select.py}
 \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/magic_select-module.html}{[magic\_select docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/magic_select.py}{[magic\_select docs]}
 
 
 This program takes any \href{#MagIC}{MagIC} formatted file and selects lines that match the search criteria and saves the output as a new MagIC formatted file of the same type.  Selection criteria match whole or partial strings, avoid whole or partial strings or evaluate minimum or maximum values.    The syntax is to specify the input file with the -f option, the key you wish to search on with -key, followed by the string you wish to use as a criterion, followed with a 'T' for match exactly, 'F' avoid entirely, 'has' for matching partially and 'not for avoiding any partial match, and min, max and eval for evaluating the numerical value.  The -F option sets the output file.  
@@ -2798,7 +2661,7 @@ This program takes any \href{#MagIC}{MagIC} formatted file and selects lines tha
 \customlink{make_magic_plots.py}
 \subsection{make\_magic\_plots.py}
 \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/make_magic_plots-module.html}{[make\_magic\_plots docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/make_magic_plots.py}{[make\_magic\_plots docs]}
 
 This program will inspect the files in the current directory and autogenerate some standard plots.  
 
@@ -2812,7 +2675,7 @@ This program imports the binary format generated by the 2G proprietary software.
 
 \customlink{AGM_magic.py}
 \subsubsection {AGM\_magic.py} \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch5.html#ch5}{[Essentials Chapter 5]} \& \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/AGM_magic-module.html}{[AGM\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/AGM_magic.py}{[AGM\_magic docs]}
 
 
 This program imports Micromag  hysteresis files into magic\_measurements formatted files.   
@@ -2933,7 +2796,7 @@ mk118	07R-08340	5/10/2007	7:58	A	80	353.8	38.8	353.8	38.8	6.77E-05
 \customlink{LDEO_magic.py}
 \subsubsection{LDEO\_magic.py}
 \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/LDEO_magic-module.html}{[LDEO\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/LDEO_magic.py}{[LDEO\_magic docs]}
 
 
 This program works in much the same fashion as \href{#sio_magic.py}{sio\_magic.py} but the file formats are different.  Here is a typical example: 
@@ -3037,7 +2900,7 @@ After you finish importing all the data, combine the individual files together w
 
 \customlink{sio_magic.py}
 \subsubsection {sio\_magic.py}
-\href{http://earthref.org/PmagPy/pmagpydocs/sio_magic-module.html}{[sio\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/sio_magic.py}{[sio\_magic docs]}
 
 
 The program {\bf sio\_magic.py} allows conversion of the SIO format magnetometer files to the MagIC common measurements format.    It allows various experiment types so read the help message.    The SIO format is a space delimited file:
@@ -3122,7 +2985,7 @@ Note that there are more examples of data file formats and import schemes in the
 \subsubsection{SUFAR4-asc\_magic.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]}; 
 \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/SUFAR4-asc_magic-module.html}{[SUFAR4-asc\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/SUFAR4-asc_magic.py}{[SUFAR4-asc\_magic docs]}
 
 
 The Agico Kappabridge instrument comes with the SUFAR program which makes the measurements and saves the data in a txt file like that in {\it SUFAR4-asc\_magic\_example.txt} in the {\it SUFAR4-asc\_magic} directory.  These data were measured on a KLY4S instrument with a spinning mode.    Import them into the MagIC format:
@@ -3144,7 +3007,7 @@ site info put in  ./er_sites.txt
 \customlink{TDT_magic.py}
 \subsubsection{TDT\_magic.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#ch10}{ [Essentials Chapter 10]} and \href{#MagIC}{[MagIC}]
-\href{http://earthref.org/PmagPy/pmagpydocs/TDT_magic-module.html}{[TDT\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/TDT_magic.py}{[TDT\_magic docs]}
 
 This program imports the default data format for the ThellierTool Program of Leonhardt et al. (2004). \nocite{leonhardt04}  After importing, the data can be viewed with \href{#thellier_magic.py}{\bf thellier\_magic.py}.  
 
@@ -3178,7 +3041,7 @@ results put in  magic_measurements.txt
 \customlink{measurements_normalize.py}
 \subsection{measurements\_normalize.py}
 \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/measurements_normalize-module.html}{[measurements\_normalize docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/measurements_normalize.py}{[measurements\_normalize docs]}
 
 This program takes specimen weights or volumes from an {\it er\_specimen.txt} formatted file and normalizes the magnetic moment data to make  magnetizations.  Weights must be in kilograms and volumes in m$^3$.  
 
@@ -3196,7 +3059,7 @@ Data saved in  ./irm_norm_measurements.txt
 \customlink{mk_redo.py}
 \subsection{mk\_redo.py} 
 \href{#MagIC}{MagIC}
-\href{http://earthref.org/PmagPy/pmagpydocs/mk_redo-module.html}{[mk\_redo docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/mk_redo.py}{[mk\_redo docs]}
 
 The programs \href{#zeq_magic.py}{zeq\_magic.py} and \href{#thellier_magic.py}{thellier\_magic.py} make {\it pmag\_specimen} formatted files which can be used for further data reduction either by plotting or contributing to site means, etc.  Sometimes it is useful to redo the calculation, using anisotropy corrections or a change in coordinate systems, etc.  The re-doing of these specimen level calculations is handled by, for example \href{#zeq_magic_redo.py}{zeq\_magic\_redo.py} or \href{#thellier_magic_redo.py}{ thellier\_magic\_redo.py}.  These programs use {\it magic\_measurements} formatted files and perform calculations as dictated by a ``redo'' file which has the specimen name, bounds for calculation and, in the case of the demagnetization data interpretation, the type of calculation desired (best-fit lines with \href{http://earthref.org/cgi-bin/magic-s1-methods.cgi?database_name=magic\qquad &search_start=methods\qquad &category=Direction%20Estimation}{directional estimation magic method code}:{DE-BFL}, best-fit planes with those with  magic method code DE-BFP, etc.). 
 
@@ -3228,7 +3091,7 @@ sr01d1 373 823
 \customlink{nrm_specimens_magic.py}
 \subsection{nrm\_specimens\_magic.py} 
 \href{#MagIC}{MagIC}
-\href{http://earthref.org/PmagPy/pmagpydocs/nrm_specimens_magic-module.html}{[nrm\_specimens\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/nrm_specimens_magic.py}{[nrm\_specimens\_magic docs]}
 
 After making NRM measurements, it is frequently useful to look at the directions in equal area projection to get a ``quick look'' at the results before proceeding to step wise demagnetization.  The data in the magic\_measurements files are usually in specimen coordinates - not geographic, so we need a way to rotate the data into geographic and or stratigraphic coordinates and save them in a pmag\_specimens formatted file for plotting with {\bf eqarea\_magic.py}.   The program {\bf nrm\_specimens\_magic.py} will do this for you.  
 
@@ -3261,7 +3124,7 @@ sr01e2 SO-SUN   333.7    67.0
 \customlink{orientation_magic.py}
  \subsection{orientation\_magic.py}
  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]} and \href{#field_info}{[Preparing for MagIC]}
- \href{http://earthref.org/PmagPy/pmagpydocs/orientation_magic-module.html}{[orientation\_magic docs]}
+ \href{https://github.com/ltauxe/PmagPy/blob/master/orientation_magic.py}{[orientation\_magic docs]}
  
      
   Try to import the file {\it orientation\_example.txt} into the {\it er\_samples.txt} and {\it er\_sites.txt} files using {\bf orientation\_magic.py}.  See Section~\ref{sect:field_info} for details about the {\it orient.txt} file format.  It has field information for a few sites.  The samples were oriented with a Pomeroy orientation device  (the default) and it is desirable to calculate the magnetic declination from the IGRF at the time of sampling (also the default).  Sample names follow the rule that the sample is designated by a letter at the end of the site name (convention \#1 - which is the default).  So we do this by:
@@ -3297,7 +3160,7 @@ The program appears a bit flustered because you have no {\it er\_sites.txt} file
 \customlink{pca.py}
 \subsection{pca.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter 11]}
-\href{http://earthref.org/PmagPy/pmagpydocs/pca-module.html}{[pca docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/pca.py}{[pca docs]}
 
 This program calculates best-fit lines, planes or Fisher averages through selected treatment steps.  The file format is 
 a simple space delimited file with specimen name, treatment step,  intensity, declination and inclination.  Calculate the best-fit 
@@ -3323,13 +3186,13 @@ eba24a DE-BFL 10    2.50  70.00    8.8   334.9    51.5
   
   \customlink{plotXY.py}
   \subsection{plotXY.py}
-  \href{http://earthref.org/PmagPy/pmagpydocs/plotXY-module.html}{[plotXY docs]}
+  \href{https://github.com/ltauxe/PmagPy/blob/master/plotXY.py}{[plotXY docs]}
   
 This program makes a simple XY plot from any arbitrary input file.  You can specify which columns are X and Y, bounds on the columns, symbol color and size, axis labels and other options.  See \href{#igrf.py}{igrf.py} for an example.     
   
   \customlink{plot_cdf.py}
   \subsection{plot\_cdf.py}
-  \href{http://earthref.org/PmagPy/pmagpydocs/plot_cdf-module.html}{[plot\_cdf docs]}
+  \href{https://github.com/ltauxe/PmagPy/blob/master/plot_cdf.py}{[plot\_cdf docs]}
   
 This program plots cumulative distribution functions of a single column of input data.  Use as an example, a normally distributed set of 1000 data points generated by \href{#gaussian.py}{gaussian.py}.  Use the defaults of zero mean with a standard deviation of 1.    
 
@@ -3355,14 +3218,14 @@ which should have generated a plot something like this:
   \customlink{plot_magic_keys.py}
   \subsection{plot\_magic\_keys.py}
   \href{#MagIC}{MagIC}
-  \href{http://earthref.org/PmagPy/pmagpydocs/plot_magic_keys-module.html}{[plot\_magic\_keys docs]}
+  \href{https://github.com/ltauxe/PmagPy/blob/master/plot_magic_keys.py}{[plot\_magic\_keys docs]}
   
   This program will plot any column in a specified MagIC formatted file against any other column in the same file.  
   
   \customlink{plot_mapPTS.py}
   \subsection{plot\_mapPTS.py}
   \href{http://earthref.org/PmagPy/hires.html}{high resolution instructions}
-  \href{http://earthref.org/PmagPy/pmagpydocs/plot_mapPTS-module.html}{[plot\_mapPTS docs]}
+  \href{https://github.com/ltauxe/PmagPy/blob/master/plot_mapPTS.py}{[plot\_mapPTS docs]}
 
 NOTE:  This program only works if you have installed basemap (full version of Enthought Python as opposed to the free version.)  It will not work with the free version of Enthought Python.  {\bf plot\_mapPTS.py} will generate a simple map of the data points in a file (lon lat) on the desired projection.    
 If you want to use high resolution or the etopo20 meshgrid (-etp option), you must install the high resolution continental outlines as described on the  \href{http://earthref.org/PmagPy/hires.html}{high resolution instructions} website.  There are many options, so check the documentation (-h option) for details.  
@@ -3387,7 +3250,7 @@ which should produce a plot similar to this:
   \customlink{plotdi_a.py}
 \subsection{plotdi\_a.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter 11]}
-\href{http://earthref.org/PmagPy/pmagpydocs/plotdi_a-module.html}{[plotdi\_a docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/plotdi_a.py}{[plotdi\_a docs]}
 
 Place the following declination, inclination $\alpha_{95}$ data in a space delimited file called \newline {\it plotdi\_a\_example.dat}. 
 
@@ -3417,7 +3280,7 @@ Make a plot of these data using {\bf plotdi\_a.py}:
 \customlink{pmag_results_extract.py}
 \subsection{pmag\_results\_extract.py} 
 \href{#MagiC}{[:MagIC}]
-\href{http://earthref.org/PmagPy/pmagpydocs/pmag_results_extract-module.html}{[pmag\_results\_extract docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/pmag_results_extract.py}{[pmag\_results\_extract docs]}
 
 This program extracts a tab delimited txt file from a {\it pmag\_results} formatted file.   This allows you to publish data tables that have identical data to the data uploaded into the MagIC database.    Try this out in the directory created for the {\bf download\_magic.py} example:
 
@@ -3437,7 +3300,7 @@ This creates tab delimited files that can be incorporated into a paper, for exam
 \customlink{pt_rot.py}
 \subsection{pt\_rot.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch16.html#ch16}{[Essentials Chapter 16]}
-\href{http://earthref.org/PmagPy/pmagpydocs/pt_rot-module.html}{[pt\_rot docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/pt_rot.py}{[pt\_rot docs]}
 
 This program reads in a file with location, age and destination plate and rotates the data into the destination plate coordinates using the rotations and methods in \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ap1.html#polerot}{Essentials Appendix A.3.5}.  Alternatively, you can supply your own rotation parameters with the -ff option.     
 
@@ -3495,7 +3358,7 @@ These plots should look like this:
 
 \customlink{qqplot.py}
 \subsection{qqlot.py} \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ap2.html#quantile_quantile_plots}{[Essentials Appendix B.1.5]}
-\href{http://earthref.org/PmagPy/pmagpydocs/qqplot-module.html}{[qqplot docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/qqplot.py}{[qqplot docs]}
 
 
 Makes a quantile-quantile plot  of the input data file against a normal distribution.  
@@ -3522,7 +3385,7 @@ mean,sigma, d, Dc
 \customlink{quick_hyst.py}
 \subsection{quick\_hyst.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch5.html#ch5}{[Essentials Chapter 5]} and \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/quick_hyst-module.html}{[quick\_hyst docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/quick_hyst.py}{[quick\_hyst docs]}
 
 \href{#hysteresis_magic.py}{hysteresis\_magic.py} makes plots of hysteresis loops and calculates the main hysteresis parameters.  For a quick look with no interpretation, you can use {\bf quick\_hyst.py}.   Try it out on the data file {\it hysteresis\_magic\_example.dat} in the {\it hysteresis\_magic} directory.   
 
@@ -3547,7 +3410,7 @@ which makes a plot like this:
 \customlink{revtest.py}
 \subsection{revtest.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch12.html#ch12}{[Essentials Chapter 12]}
-\href{http://earthref.org/PmagPy/pmagpydocs/revtest-module.html}{[revtest docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/revtest.py}{[revtest docs]}
 
 Use {\bf revtest.py} to test whether the two modes in the data set {\it revtest\_example.txt} are antipodal or not:
 
@@ -3573,7 +3436,7 @@ Because the 95\% confidence bounds for each component overlap each other, the tw
 \customlink{revtest_magic.py}
 \subsection{revtest\_magic.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch12.html#ch12}{ [Essentials Chapter 12]} and \href{#MagIC}{MagIC}
-\href{http://earthref.org/PmagPy/pmagpydocs/revtest_magic-module.html}{[revtest\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/revtest_magic.py}{[revtest\_magic docs]}
 
 Same as \href{#revtest.py}{revtest.py} but for {\it pmag\_sites} MagIC formatted files.   Try it out on the data file {\it revtest\_sites.txt}.  Then try using \href{#customize_criteria.py}{customize\_criteria.py} to change or create a {\it pmag\_criteria.txt} file that fits your needs and redo the reversals test using only the selected sites.   
 
@@ -3625,7 +3488,7 @@ As with \href{#WatsonsV.py}{WatsonsV.py}, this program produces a plot that disp
 \customlink{s_eigs.py}
 \subsection{s\_eigs.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]}
-\href{http://earthref.org/PmagPy/pmagpydocs/s_eigs-module.html}{[s\_eigs docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/s_eigs.py}{[s\_eigs docs]}
 
 Convert the .s format data in {\it s\_eigs\_example.dat} to eigenvalues and eigenvectors:
 
@@ -3640,7 +3503,7 @@ Convert the .s format data in {\it s\_eigs\_example.dat} to eigenvalues and eige
 \customlink{s_geo.py}
 \subsection{s\_geo.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]}
-\href{http://earthref.org/PmagPy/pmagpydocs/s_geo-module.html}{[s\_geo docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/s_geo.py}{[s\_geo docs]}
 
 Rotate the .s data into geographic coordinates using {\bf s\_geo.py}.  The input format is the 6 tensor elements of s, followed by the azimuth and plunge of the X axis.   
 
@@ -3655,7 +3518,7 @@ Rotate the .s data into geographic coordinates using {\bf s\_geo.py}.  The input
 \customlink{s_hext.py}
 \subsection{s\_hext.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]}
-\href{http://earthref.org/PmagPy/pmagpydocs/s_hext-module.html}{[s\_hext docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/s_hext.py}{[s\_hext docs]}
 
 
 Take the output from the {\bf s\_geo.py} example and calculate Hext statistics:
@@ -3673,7 +3536,7 @@ N =  8  sigma =  0.000641809950
 \customlink{s_tilt.py}
 \subsection{s\_tilt.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]}
-\href{http://earthref.org/PmagPy/pmagpydocs/s_tilt-module.html}{[s\_tilt docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/s_tilt.py}{[s\_tilt docs]}
 
 Rotate the .s data saved in {\it s\_tilt\_example.dat} into stratigraphic coordinates:
 
@@ -3690,7 +3553,7 @@ Rotate the .s data saved in {\it s\_tilt\_example.dat} into stratigraphic coordi
 \customlink{s_magic.py}
 \subsection{s\_magic.py} [MagIC]
 \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/s_magic-module.html}{[s\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/s_magic.py}{[s\_magic docs]}
 
 Import .s format file output from the {\bf s\_tilt.py} example into an {\it rmag\_anisotropy} formatted file.  Files of the {\it rmag\_anisotropy} format can be plotted  with {\bf aniso\_magic.py}.   To see how this works,  use the program {\bf s\_magic.py} as follows:
 
@@ -3706,7 +3569,7 @@ This creates the output file {\it rmag\_anisotropy.txt}  by default, which can b
 \customlink{scalc.py}
 \subsection{scalc.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch14.html#ch14}{[Essentials Chapter 14]}
-\href{http://earthref.org/PmagPy/pmagpydocs/scalc-module.html}{[scalc docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/scalc.py}{[scalc docs]}
 
 
 Calculate the $S$ scatter statistic for a set of VGPs saved in {\it scalc\_example.txt}.  Repeat using a Vandamme (Vandamme et al., 1994) \nocite{vandamme94} variable cutoff.  Then get the bootstrap bounds on the calculation.  
@@ -3725,7 +3588,7 @@ Using no cutoff, the VGP scatter was 19.5$^{\circ}$.  The Vandamme co-latitude c
 \customlink{scalc_magic.py}
 \subsection{scalc\_magic.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch14.html#ch14}{[Essentials Chapter 14]}
-\href{http://earthref.org/PmagPy/pmagpydocs/scalc_magic-module.html}{[scalc\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/scalc_magic.py}{[scalc\_magic docs]}
 
 This is the same as {\bf scalc.py} but works on {\it pmag\_results} formatted files.   Try it out on the {\it pmag\_results.txt} file in the directory created for the {\bf download\_magic.py} example. Use a VGP co-latitude cutoff of 30$^{\circ}$.  
 
@@ -3737,7 +3600,7 @@ This is the same as {\bf scalc.py} but works on {\it pmag\_results} formatted fi
 
 \customlink{site_edit_magic.py}
 \subsection{site\_edit\_magic.py}
-\href{http://earthref.org/PmagPy/pmagpydocs/site_edit_magic-module.html}{[site\_edit\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/site_edit_magic.py}{[site\_edit\_magic docs]}
 
 There are frequently outlier directions when looking at data at the site level.  Some paleomagnetists throw out the entire site, while some arbitrarily discard individual samples, assuming that the orientations were `bad'.  Lawrence et al. (2009) \nocite{lawrence09} suggested a different approach in which common causes of misorientation are specifically tested.  For example, if the arrow indicating drill direction (see \href{#orientiation\_magic.py}{orientation conventions}) was drawn the wrong way on the sample in the field, the direction would be off in a predictable way.  Similarly (and more commonly) extraneous marks on the sample were used instead of the correct brass mark, the directions will fall along a small circle which passes through the correct direction.  The program {\bf site\_edit\_magic.py} plots data by site on an equal area projection, allows the user to select a particular specimen direction and plots the various pathological behaviors expected from common misorientations.  If the stray directions can reasonably be assigned to a particular cause, then that sample orientation can be marked as `bad' with a note as to the reason for exclusion and the directions from that sample can be excluded from the site mean, and the reason can be documented in the MagIC database.    
 
@@ -3806,7 +3669,7 @@ Compare behaviors for sr11, sample sr11XXX and sr20, sample sr20i:
 \customlink{specimens_results_magic.py}
 \subsection{specimens\_results\_magic.py} 
 \href{#MagIC}{MagIC}
-\href{http://earthref.org/PmagPy/pmagpydocs/specimens_results_magic-module.html}{[specimens\_results\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/specimens_results_magic.py}{[specimens\_results\_magic docs]}
 
 Starting from the magnetometer output files, paleomagnetists interpret the data in terms of vectors, using software like \href{#zeq_magic.py}{zeq\_magic.py} or \href{thellier_magic.py}{thellier\_magic.py}.  The interpretations from these programs are stored in pmag\_specimen formatted files.   
 Once a pmag\_specimens format file has been created, the data are usually  averaged by sample and/or by site and converted into \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#Virtual_dipole_moment}{V[A]DMs} and/or 
@@ -3840,7 +3703,7 @@ Note that this procedure is more or less automated in the \href{#MagIC.py}{MagIC
 \customlink{stats.py}
 \subsection{stats.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter 11]}
-\href{http://earthref.org/PmagPy/pmagpydocs/stats-module.html}{[stats docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/stats.py}{[stats docs]}
 
 Calculates gaussian statistics for sets of data.  
 Calculate the mean of the data generated in the \href{#gaussian.py}{gaussian.py} example and saved in {\it gauss.out}:    
@@ -3895,7 +3758,7 @@ The last command made this plot:
 \customlink{sundec.py}
 \subsection{sundec.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]}
-\href{http://earthref.org/PmagPy/pmagpydocs/sundec-module.html}{[sundec docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/sundec.py}{[sundec docs]}
 
 Use the program {\bf sundec.py} to calculate 
 azimuth of the direction of drill. You are located at 35$^{\circ}$ N and 33$^{\circ}$ E.  The local
@@ -3952,15 +3815,15 @@ In any case, the declination is 154.2$^{\circ}$.
 \customlink{thellier_GUI.py}
 \subsection{thellier\_GUI.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#ch10}{[Essentials Chapter 10]} and \href{#MagIC}{[MagIC}]
-\href{http://earthref.org/PmagPy/pmagpydocs/Thellier_GUI_tutorial.pdf}{[Thellier\_GUI\_tutorial.pdf]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/Thellier_GUI_tutorial.pdf}{[Thellier\_GUI\_tutorial.pdf]}
 
 The program {\bf thellier\_gui.py}  combines functions from \href{#thellier_magic.py}{thellier\_magic.py} and new tools described by  \href{http://magician.ucsd.edu/~ltauxe/CV/open/shaar12.pdf}{Shaar and Tauxe (2012)} in a user-friendly graphical user interface (GUI).  It can also be called from within \href{#MagIC.py}{MagIC.py}, using files already prepared in the MagIC Project Directory and the interpretations from {\bf thellier\_gui.py} can be imported into the {\bf MagIC.py} Project Directory after exiting the program.   This section is a brief introduction on how to use {\bf thellier\_gui.py} as a stand alone application.  For complete documentation, see:
 
- \url{http://earthref.org/PmagPy/pmagpydocs/Thellier_GUI_tutorial.pdf}
+ \url{https://github.com/ltauxe/PmagPy/blob/master/Thellier_GUI_tutorial.pdf}
  
 \noindent  A complete list of the definitions for paleointensity statistics used by Thellier\_GUI.py is available here:
  
-  \url{http://earthref.org/PmagPy/pmagpydocs/Thellier_GUI_Paleointensity_Statistics_Definitions.pdf}
+  \url{https://github.com/ltauxe/PmagPy/blob/master/Thellier_GUI_Paleointensity_Statistics_Definitions.pdf}
 
 
 \subsubsection{Starting the GUI}
@@ -3980,7 +3843,7 @@ A ``choose project directory'' dialog window will appear as soon as the GUI is s
 
 \subsubsection{Reading and compiling measurements data}
 When the MagIC project directory is selected, the program  reads all the measurement data, checks them, processes them and sorts them. If Non-linear-TRM (NLT) data exist in {\it magic\_measurement.txt}  then the program tries to process the data using Equations (1)-(3) in \citet{shaar10}.  The program reads {\it magic\_measurement.txt}, and processes the measurements for presentation as Arai  and Zijderveld plots. 
-We recommend that you check all the warnings and errors in {\it Thellier\_GUI.log} before starting to interpret the data.  For details about warnings and error messages during these steps, consult the tutorial document:  \href{http://earthref.org/PmagPy/pmagpydocs/Thellier_GUI_tutorial.pdf}{Thellier\_GUI\_tutorial.pdf}.  Also, consult the Preferences to change certain plotting options. 
+We recommend that you check all the warnings and errors in {\it Thellier\_GUI.log} before starting to interpret the data.  For details about warnings and error messages during these steps, consult the tutorial document:  \href{https://github.com/ltauxe/PmagPy/blob/master/Thellier_GUI_tutorial.pdf}{Thellier\_GUI\_tutorial.pdf}.  Also, consult the Preferences to change certain plotting options. 
 
 \subsubsection{Main panel}
 
@@ -4100,7 +3963,7 @@ click on the "Choose optimizer group file" button. A file dialog window will app
 \customlink{thellier_magic.py}
 \subsection{thellier\_magic.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#ch10}{ [Essentials Chapter 10]} and \href{#MagIC}{[MagIC}]
-\href{http://earthref.org/PmagPy/pmagpydocs/thellier_magic-module.html}{[thellier\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/thellier_magic.py}{[thellier\_magic docs]}
 
 To see how this works, download the text file from a recent paper by Shaar et al. (2011) from the MagIC database:
 
@@ -4215,7 +4078,7 @@ When you exit the program, you will have modified the {\it thellier\_specimens.t
 \customlink{thellier_magic_redo.py}
 \subsection{thellier\_magic\_redo.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#ch10}{[Essentials Chapter 10]} and \href{#MagIC}{[MagIC}]
-\href{http://earthref.org/PmagPy/pmagpydocs/thellier_magic_redo-module.html}{[thellier\_magic\_redo docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/thellier_magic_redo.py}{[thellier\_magic\_redo docs]}
 
 This program allows the recalculation of paleointensity experimental data derived from Thellier type experiments.  It allows correction for remanence  anisotropy from AARM or ATRM ellipsoids (stored in {\it rmag\_anisotropy} format files (see \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]} and the \href{#aarm_magic.py}{aarm\_magic.py} and \href{#atrm_magic.py}{atrm\_magic.py}) and \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#non-linear_TRM}{non-linear TRM} corrections, if TRM aquisition data are available (see also \href{#trmaq_magic.py}{trmaq\_magic.py}).   
 
@@ -4239,7 +4102,7 @@ All records stored in  ./pmag_specimens.txt
 \customlink{tk03.py}
 \subsection{tk03.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch16.html/#ch16}{[Essentials Chapter 16]}
-\href{http://earthref.org/PmagPy/pmagpydocs/tk03-module.html}{[tk03 docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/tk03.py}{[tk03 docs]}
 
 Sometimes it is useful to generate a distribution of synthetic geomagnetic field vectors that you might expect to find from paleosecular variation of the geomagnetic field.  The program {\bf tk03.py} generates distributions of field vectors from the PSV model of Tauxe and Kent (2004).  \nocite{tauxe04}    Use this program to generate a set of vectors  for a latitude of 30$^{\circ}$ and plot them with \href{#eqarea.py}{eqarea.py}.  
 
@@ -4255,7 +4118,7 @@ which should give you a plot something like this:
 
 \customlink{uniform.py}
 \subsection{uniform.py}
-\href{http://earthref.org/PmagPy/pmagpydocs/uniform-module.html}{[uniform docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/uniform.py}{[uniform docs]}
 
 It is at times handy to be able to generate a uniformly distributed set of directions (or geographic locations).  This is done using a technique described by Fisher et al. (1987).  
 
@@ -4274,7 +4137,7 @@ which should yield a plot something (but not exactly) like this:
 \customlink{update_measurements.py}
 \subsection{update\_measurements.py}
 \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/update_measurements-module.html}{[update\_measurements docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/update_measurements.py}{[update\_measurements docs]}
 
 In the SIO laboratory, our default specimen naming scheme has a logical relationship to the sample and site names.  
 Sometimes there is no simple relationship and the MagIC import procedure can't parse the sample name into a site name, or the original concept of a site gets changed, for example if several lava flows turn out to be the same one.  In any case, there must be a way to change the way data get averaged after the measurement data get converted to a magic\_measurments formatted file.  To do this, the sample, site relationship can be established in the {\it er\_sample.txt} file for example via the procedure described in \href{#orientation_magic.py}{orientation\_magic.py} docuementation.  After the correct relationships are in the {\it er\_samples.txt} file, these must be propagated throughout the rest of the MagIC tables, starting with the {\it magic\_measurements.txt} file.  The program {\bf update\_measurements.py} will do this at the measurements level.  \href{#specimens_results_magic.py}{specimens\_results\_magic.py} will then propagate the changes through to the {\it pmag\_results.txt} file.  
@@ -4283,7 +4146,7 @@ Sometimes there is no simple relationship and the MagIC import procedure can't p
 \customlink{upload_magic.py}
 \subsection{upload\_magic.py}
 \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/upload_magic-module.html}{[upload\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/upload_magic.py}{[upload\_magic docs]}
 
 This program takes all the MagIC formatted files and puts them into a file which can be imported into the MagIC console software for uploading into the \href{http://earthref.org/MagIC}{MagIC database}. 
 As an example, we can ``repackage'' the file used file downloaded in the \href{#download_magic.py}{download\_magic.py} example.  You could re-interpret that data or fix records with errors, then re-upload the corrected file.  
@@ -4331,7 +4194,7 @@ Finished preparing upload file
 \customlink{vdm_b.py}
 \subsection{vdm\_b.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#ch2}{[Essentials Chapter 2]}
-\href{http://earthref.org/PmagPy/pmagpydocs/vdm_b-module.html}{[vdm\_b docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/vdm_b.py}{[vdm\_b docs]}
 
 
 Use this program to try to recover the original field intensity $b$ from a Virtual Dipole Moment of  71.59 ZAm$^2$ for the latitude 22$^{\circ}$.  
@@ -4351,7 +4214,7 @@ Compare this answer with the original in \href{#b_vdm.py}{b\_vdm.py}, noting tha
 \customlink{vector_mean.py}
 \subsection{vector\_mean.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#ch2}{[Essentials Chapter 2]}
-\href{http://earthref.org/PmagPy/pmagpydocs/vector_mean-module.html}{[vector\_mean docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/vector_mean.py}{[vector\_mean docs]}
 
 Create a set of vector data with \href{#tk03.py}{tk03.py} for a latitude of 30$^{\circ}$N.  Calculate the vector mean of these data.
 
@@ -4364,7 +4227,7 @@ Create a set of vector data with \href{#tk03.py}{tk03.py} for a latitude of 30$^
 \customlink{vgp_di.py}
 \subsection{vgp\_di.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#ch2}{[Essentials Chapter 2]}
-\href{http://earthref.org/PmagPy/pmagpydocs/vgp_di-module.html}{[vgp\_di docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/vgp_di.py}{[vgp\_di docs]}
 
 Use the program {\bf vgp\_di.py} to convert the
 following:  
@@ -4391,7 +4254,7 @@ Just for good measure, you could try it out on the data in the \href{#di_vgp.py}
 \customlink{vgpmap_magic.py}
 \subsection{vgpmap\_magic.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#ch2}{[Essentials Chapter 2]},  \href{#MagIC}{[MagIC]} and   \href{http://earthref.org/PmagPy/hires.html}{high resolution instructions}
-\href{http://earthref.org/PmagPy/pmagpydocs/vgpmap_magic-module.html}{[vgpmap\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/vgpmap_magic.py}{[vgpmap\_magic docs]}
 
 Make a plot of the VGPs calculated for the dataset downloaded in the \href{#download_magic.py}{download\_magic.py} example.  Use the  \href{http://earthref.org/PmagPy/hires.html}{high resolution}
  topography (ETOPO 20) dataset and plot the data on an orthographic projection with the viewpoint at 60$^{\circ}$N and the Greenwich Meridian (longitude = 0).  Make the points black dots with a size of 10pts.   Save the file in png format
@@ -4414,7 +4277,7 @@ To use this program, you need to have basemap, which is not part of the free EPD
 \customlink{watsonsF.py}
 \subsection{watsonsF.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter 11]}
-\href{http://earthref.org/PmagPy/pmagpydocs/watsonsF-module.html}{[watsonsF docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/watsonsF.py}{[watsonsF docs]}
 
 First generate two data files with {\bf fishrot.py} with $\kappa$ = 15, $N=10$ and $I$ = 42, with $D$ = 10. for the first and 20 for the second:
 
@@ -4435,7 +4298,7 @@ The first number is Watson's  $F$ statistic for these two files (see \href{http:
 \customlink{watsonsV.py}
 \subsection{watsonsV.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter 11]}
-\href{http://earthref.org/PmagPy/pmagpydocs/watsonsV-module.html}{[watsonsV docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/watsonsV.py}{[watsonsV docs]}
 
 
 Use the two data files generated in the example for {\bf watsonsF.py} and repeat the test using Watson's $V_w$ statistic.
@@ -4467,7 +4330,7 @@ Watson's V,  Vcrit:
 \customlink{zeq.py}
 \subsection{zeq.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]}
-\href{http://earthref.org/PmagPy/pmagpydocs/zeq-module.html}{[zeq docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/zeq.py}{[zeq docs]}
 
 Use the program {\bf zeq.py} to 1) plot a Zijderveld diagram of the data in \newline {\it zeq\_example.txt}.  b) Calculate a best-fit line from 15 to 90 mT.  c) Rotate the data such that the best-fit line is projected onto the horizontal axis (instead of the default, North).   d) Calcualte a best-fit plane from 5 to 80 mT.  Save these plots. 
 
@@ -4494,7 +4357,7 @@ The equal area projection has the X direction (usually North in geographic coord
 \customlink{zeq_magic.py}
 \subsection{zeq\_magic.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]}  \& \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/zeq_magic-module.html}{[zeq\_magic docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/zeq_magic.py}{[zeq\_magic docs]}
 
 
 Plot the AF demagnetization data available in the file you got in the {\bf download\_magic.py} example using {\bf zeq\_magic.py}.    Use geographic coordinates, where orientations are available.  
@@ -4537,7 +4400,7 @@ The plots will look similar to the \href{#zeq.py}{zeq.py} example, but the defau
 \customlink{zeq_magic_redo.py}
 \subsection{zeq\_magic\_redo.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]}  \& \href{#MagIC}{[MagIC]}
-\href{http://earthref.org/PmagPy/pmagpydocs/zeq_magic_redo-module.html}{[zeq\_magic\_redo docs]}
+\href{https://github.com/ltauxe/PmagPy/blob/master/zeq_magic_redo.py}{[zeq\_magic\_redo docs]}
 
 In the {\it zeq\_magic} directory, use the program {\bf zeq\_magic\_redo.py} to create a {\it pmag\_specimens} formatted file with data in geographic coordinates from the sample coordinate file {\it zeq\_specimens.txt}.  
 Assuming that sample orientations are in a file called {\it er\_samples.txt}, use \href{#mk_redo.py}{mk\_redo.py} first to create file called {\it zeq\_redo}.  Then use 
@@ -4561,6 +4424,156 @@ Recalculated specimen data stored in  ./zeq_specimens_g.txt
 \section{Complaints department}
 
 The best way to raise issues with any of the software or its documentation is to post to the issues page of the Github project: \url{https://github.com/ltauxe/PmagPy/issues}. Given that most of the software as well as this documentation were written by Lisa Tauxe (\href{mailto:ltauxe@ucsd.edu}{ltauxe@usd.edu}), she can also be contacted by email with bug reports, suggestions and requests. 
+
+\customlink{survival_skills}
+\chapter{Survival computer skills}
+\label{ex:unix}
+
+The `Py' part of  `PmagPy' stands for Python, the language in which all the code is written.   It is not essential, but it is helpful to understand a bit about computer operating systems and the Python language when using PmagPy because no one should be using programs as black boxes without understanding what they are doing. As all the programs are open source, you have the opportunity to look into them.  If you understand a bit  about how computers work yourself, you will be able to follow along what they are doing and even modify them to work better for you.   So in this chapter you will find a brief introduction to the computer skills necessary for using the programs properly.   I have tried very hard to make this tutorial operating system independent.  All the examples should work equally well on Mac OS, Windows and Unix-type operating systems.  For an introduction to programming in Python, see Chapter~\ref{chap:python}. For now, we're just interested in getting started with \href{#PmagPy}{PmagPy}.   
+
+
+\customlink{command_line}
+\section{Finding your command line}
+If you are not using a Unix-like computer (*NIX), you may never have encountered a command line. While the \href{#MagIC.py}{MagIC.py} Graphical User Interface (GUI) is an attempt to make life as easy for you by constructing commands for you, you still need to find the command line to start it up.  Under the MacOS X operating system look for the Terminal application in the Utilities folder within the Applications folder:
+
+  \includegraphics[width=15cm]{EPSfiles/terminal.eps}
+
+Under the Windows operating system, find the program called: Command Prompt in the Start menu:
+
+  \includegraphics[width=15cm]{EPSfiles/cmd.eps}
+  
+  Note that the location of this program varies on different computers, so you may have to hunt around a little to find yours. Also, the actual "prompt" will vary for different machines. The MacOS (C-shell) and Windows command line windows look like these:
+  
+    \includegraphics[width=15cm]{EPSfiles/terminals.eps}
+    
+The Unix (and Mac OS) Bash shell has a \$ sign as a prompt.   I will use the \% prompt in the examples here, but any of these command line prompts will work.    
+  
+  
+\section{File systems}
+\label{sect:file_systems}
+    When you open one of these terminal windows,  you are in your  ``home'' directory.   
+Fundamental to all  operating systems is the concept of
+directories and files.  On windows-based operating systems (MacOS or Windows), directories are depicted
+as ``folders'' and moving about is accomplished by clicking on the different icons.
+In the world of terminal windows, the directories have names and are arranged in a hierarchical sequence with
+the top directory being the ``root'' directory, known as  ``/'' (or C:'backslash' in Windows) and the file system looks something like this:
+
+
+  \includegraphics[width=15cm]{EPSfiles/filesys.eps}
+
+ Within the root directory, there are subdirectories
+(e.g. {\bf Applications} and {\bf Users} in bold face).  In any directory, there can also be ``files''
+(e.g. {\it dir\_cart\_example.dat} in italics).   To
+refer to directories,  the operating system relies on what is called a ``pathname''. Every object
+has an ``absolute'' pathname which is valid from anywhere on the computer.  The
+absolute pathname in *NIX always begins from the root directory {\bf /} and in DOS (the operating system working in the Windows command line window), it is C:'backslash'. 
+
+The absolute pathname to the home directory {\bf lisa} in the figure is {\bf /Users/lisa}.  
+Similarly, the absolute pathname to the directory containing {\bf PmagPy}  
+scripts  would be  {\bf /Users/ltauxe/PmagPy}.  There is also a ``relative'' pathname,
+which is in reference to the  current directory (the one you are `sitting' in).  If user ``lisa'' is sitting in 
+her home directory, the relative pathname for the file {\it dir\_cart\_example.dat} in the directory
+{\bf Datafiles\_2.0} would be {\it Datafiles\_2.0/dir\_cart/dir\_cart\_example.dat}.  When using relative
+pathnames, it is useful to remember that {\bf ./} refers to the current
+directory and {\bf ../} refers to the directory  ``above''.     Also, lisa's home directory would be $\sim$lisa, or if you are logged in as lisa yourself, then it is just $\sim$. 
+
+\section{Moving around in the file system}
+
+Now that you have found your command line and are comfortable in your home directory, you can view the contents of your directory with the Unix command {\bf ls} or the DOS command {\bf dir}.  
+\customlink{mkdir}
+You can make a new directory with the command 
+\begin{verbatim}
+%mkdir NEW_DIRECTORY_NAME 
+\end{verbatim}
+This works in both Unix and DOS environments) and you can move into your new directory with the command 
+\begin{verbatim}
+% cd NEW_DIRECTORY_NAME
+\end{verbatim}
+   To move back up into the home directory, just type {\bf cd ..} remembering that .. refers to the directory above.  Also, {\bf cd} by itself will transport you home from where ever you are (there's no place like home....).     You can also change to any arbitrary directory by specifying the full path of the destination directory. 
+
+
+\section {Wildcards}
+
+Unix and DOS have the ability to refer to a number of files and/or directories using
+``wildcards''.  The  wildcard for a  single character is ``?'' and for any number of
+characters is ``*''.  For example, to refer to all the files with ``.py'' in their name in the PmagPy directory in my home directory, 
+I would type:
+
+\begin{verbatim}
+% ls PmagPy/*.py
+apwp.py bootams.py fishrot.py.....
+\end{verbatim}
+
+
+
+\section {Redirecting input and output}
+
+Programs that operate at the command line level print  output to the screen and read input
+from the keyboard. This is
+\customlink{standard_IO}
+known as ``standard input and output'' or ``standard I/O''.
+One of the nicest things about working at the command line level is the ability to redirect input and output.
+For example, instead of typing input to a program with the keyboard, it can
+be read from a file using the symbol {\bf $<$}.   Output can either be printed to the screen (standard output), redirected into a 
+file using the symbol {\bf $>$}, appended to the end of a file with {\bf $>>$} or 
+used as input to another program with the pipe operator ({\bf$ |$}).
+
+
+
+\section{Text editors}
+
+Text editing is a blessing and a curse.  You either love it or
+hate it and in the beginning, and if you are used to programs like Word, you will certainly hate it. (And if you are used to a decent text editor, you will hate Word!).   There are many ways of
+editing text and the subject is beyond the scope of this documentation.   But you can't use Word because the output is in a weird format that no scripting languages read easily.  So you have to use an editor that will produce a plain (ascii) file, like Notepad or TextWrangler.   The latter is freeware available for Macs and the former comes standard in the Windows operating system.   Fortunately, Enthought Python's Canopy programming environment comes with its own text editor, so I recommend that you just use that.   
+%
+%\customlink{installing_python}
+%\section{Installing Python and PmagPy}
+%\label{sect:python}
+%
+%
+%
+%Python can  be painful to install (but so can  all other programming environments).  There are  a few recipes that work for Mac OS (at least for 10.4 and later) and for Windows.  These recipes and ingredients are available through the website: 
+%
+%\url{http://earthref.org/PmagPy}.
+%
+%
+%
+%Once Python is installed, \href{#command_line}{find your command line} with its prompt.    After the command prompt, type:  {\bf python} to start the interactive python shell.  To get back out again,   hold down the control key while typing the letter ``d''.  On Windows machines, you may have to substitute a letter ``c'' to achieve the same effect. This action will be referred to with  `ctrl-D' here. 
+%
+% Everyone should now have the $>>>$ Python prompt.  Here is a transcript of a python interpreter session which should make a simple graph:  
+% 
+% \begin{verbatim}
+% python
+%Enthought Python Distribution -- www.enthought.com
+%Version: 7.1-2 (32-bit)
+%
+%Python 2.7.2 |EPD 7.1-2 (32-bit)| (default, Jul 27 2011, 13:29:32) 
+%[GCC 4.0.1 (Apple Inc. build 5493)] on darwin
+%Type "packages", "demo" or "enthought" for more information.
+%>>> import matplotlib
+%>>> matplotlib.use("TkAgg")
+%>>> import pylab
+%>>> pylab.plot([1,2,3,4])
+%[<matplotlib.lines.Line2D object at 0x64eb270>]
+%>>> pylab.show()
+%
+%\end{verbatim}
+%
+%which produces the fascinating graph:
+%
+%  \includegraphics[width=15cm]{EPSfiles/matplotlib.eps}
+%
+%
+%To kill the interpreter, close the plot window (red button) and type ctrl-D.  
+%
+%
+%If you don't get something about Enthought Python, you are probably using the standard Mac Os version, which has none of the whistles and bells we want (plotting, numerical packages, etc.), and you'll need to set your path properly. Look for hints at:
+%\url{http://earthref.org/PmagPy}.     For more on how to program in Python, see Chapter~\ref{chap:python}.
+
+
+
+
+
 \customlink{Python}
 \chapter{Introduction to Python Programming}
 \label{chap:python}

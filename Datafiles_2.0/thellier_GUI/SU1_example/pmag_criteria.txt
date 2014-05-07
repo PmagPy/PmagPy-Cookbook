@@ -1,3 +1,0 @@
-tab	pmag_criteria
-pmag_criteria_code	sample_int_sigma_uT	sample_int_sigma_perc	sample_int_n	sample_int_n_outlier_check	sample_int_stdev_opt	specimen_n	specimen_int_ptrm_n	specimen_fvds	specimen_frac	specimen_gap_max	specimen_b_beta	specimen_drats	specimen_int_mad	specimen_g	specimen_scat
-IE-SPEC:IE-SAMP	5.000000	6.000000	3.000000	6.000000	True	3.000000	2.000000	0.000000	0.790000	0.600000	0.100000	100000.000000	5.000000	0.000000	True

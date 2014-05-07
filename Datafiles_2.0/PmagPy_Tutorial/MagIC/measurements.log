@@ -1,1 +1,0 @@
-mc_af.mag.magic | sio_magic.py  -F /Users/ltauxe/Documents/writing_stuff/Cookbook/Datafiles_2.0/PmagPy_Tutorial/MagIC/mc_af.mag.magic -f /Users/ltauxe/Documents/writing_stuff/Cookbook/Datafiles_2.0/PmagPy_Tutorial/MagIC/mc_af.mag -LP AF -spc 1 -loc "McMurdo" -ncn 1

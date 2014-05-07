@@ -1,5 +1,7 @@
 # uncomment the customlinks import and all the \customlink lines
 # then run: 
-htlatex PmagPy "html,1,sections+"
-#cp PmagPy.html /Volumes/Magician/Library/WebServer/Documents/Software/PmagPy/Docs/
-#cp PmagPy*png /Volumes/Magician/Library/WebServer/Documents/Software/PmagPy/Docs/
+#htlatex PmagPy "html,1,sections+"
+git checkout gh-pages
+git merge master
+git push origin gh-pages
+git checkout master
