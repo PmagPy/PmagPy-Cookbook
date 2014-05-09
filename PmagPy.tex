@@ -58,7 +58,7 @@
 \chapter{MagIC Quick Start}
 \customlink{quick_start}
 
- To skip all the details and just start using MagIC.py to upload data into the \href{#MagIC}{MagIC database}, you follow these steps:
+ To skip all the details and just start using MagIC.py to upload data into the \href{#MagICDatabase}{MagIC database}, you follow these steps:
  
  \begin{enumerate}
  \item Download and install the Enthought Canopy distribution of Python \url{https://www.enthought.com/products/canopy/}. Canopy Express (the free version) contains everything you need, but if you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license} that gives you access to additional features and bundled packages.
@@ -88,143 +88,23 @@
 %\tableofcontents
 
 
+Where do you want to go from here?   
 
-\customlink{MagIC}
-\chapter{The MagIC database and file formats}
-
-A number of the programs in {\bf PmagPy} were  developed to take advantage of the MagIC database and aid getting data in and out of it.   So, we need some basic understanding of what MagIC is and how it is structured.  
-MagIC  is an Oracle  database that is part of the EarthRef.org collection of databases and digital reference material.  
-Anyone interested in the MagIC database should first become a registered EarthRef.org user.  To do this, go to \url{http://earthref.org} and click on the {\bf Register} link in the {\bf Topmenu}.   Registration is not required for access to data or browsing around, but is required for uploading of data into the MagIC database, something which we sincerely hope you will have a chance to do.  By registering, you will also be kept informed of our progress through bi-monthly newsletters and other email alerts.    After you register, go to \url{http://earthref.org/MAGIC}.
-
-
-\section {Perusing the existing data}
-
-The MagIC database is designed to have two web portals, one for paleomagnetic data (PMAG) and one for rock magnetic data (RMAG).  If you click on the PMAG PORTAL link,  you will be taken  to the main MagIC search engine.  You can look for data from a particular reference by typing in the author's name in the ``Reference Text Search'' box, or search by any column with a little magnifying glass icon.   If you click on the   You can show or hide columns  and look at data at various levels (location, site, sample, and so on to retrieve the data you want.  
-  Once the data you want have been identified, you can download the data by clicking on the `Save Results' button.     
-  
-    \includegraphics[width=15cm]{EPSfiles/MagIC_search.eps}
-  
-  
-       After downloading, the data can be unpacked and examined using various tools in the {\bf PmagPy}  programs described later.   
-
-\customlink{Uploading}
-\section{Uploading data to the database}
-
-Paleomagnetic and rock magnetic data are collected and analyzed in a wide variety of ways with different objectives.  Data sets can be extremely large or can be the barest boned data summaries published in legacy data tables.   The goal of MagIC has been to have the flexibility to allow a whole range of data including legacy data from publications or other databases to new studies which include all the measurements, field photos, methodology, and so on.  The general procedure for the future will be to archive the data at the same time that they are published.    So, to smooth the path, it is advisable to put your data into the MagIC format as early in the process as possible.  All data that enters the database must be converted to the standard MagIC format either as a set of MagIC tables, or as one combined text file.    These can then be uploaded into the MagIC database.   Here,  we illustrate the use of  a number of programs (the \href{#PmagPy}{PmagPy}  package in Python) to facilitate the `behind the scenes' process of making MagIC formatted tables.     
-
-\customlink{DataTables}
-\section{Structure of the database tables}  
-
-The MagIC database is organized around a series of data tables.  The complete data model can be found here: 
-\url{http://earthref.org/MAGIC/metadata.htm}.   
-
-  Each MagIC table has  a one line header of the form:   
+\begin{itemize}
+\item \href{#QuickMagIC.py}{Analyze my demagnetization and/or paleointensity measurement data. }
+\item \href{#MagIC.py}{Analyze both rock and paleomagnetic data.} 
+\item \href{#MagICDatabase}{Learn about the MagIC Database.}
+\end{itemize}
 
 
-tab\hskip 2em{\bf table\_name}
+\customlink{QuickMagIC.py}
+\chapter{QuickMagIC.py}
+\label{chap:QuickMagIC}\href{#QuickMagic}{[QuickMagIC]}
 
-\noindent
-``tab'' (or ``tab delimited'') means that the table is tab delimited.  In theory other delimiters are possible, but {\bf PmagPy}  only  uses tab delimited formats.  The {\bf table\_name} is one of the table names. The tables are of four general types:  EarthRef tables ({\bf er\_}) shared in common with other EarthRef databases,  MagIC tables ({\bf magic\_})  common to both rock magnetic and paleomagnetic studies, Paleomagnetic tables ({\bf pmag\_}), data reduction useful in paleomagnetic studies, Rock magnetic tables ({\bf rmag\_}), data reduction useful for rock magnetic studies.    Most studies use only some of these tables.     Here are some useful tables for a typical paleomagnetic study (starred are required in all cases):
-
-\begin{tabular}{ll}
-\hline
-table\qquad &Brief description\\
-\hline
-{\bf er\_locations*}\qquad & geographic information about the location(s) of the study\\
- {\bf er\_sites}\qquad & locations, lithologic information, etc. for the sampling sites\\
- {\bf er\_samples}\qquad & orientation, sampling methods, etc. for samples\\
-  {\bf er\_specimens}\qquad &specimen weights, volumes\\
-    {\bf er\_ages}\qquad &age information.\\
-    {\bf er\_images}\qquad & images associated with the study (field shots, sample\\ 
-    \qquad &photos, photomicrographs, SEM images, etc.\\
-   {\bf er\_citations*}\qquad &citation information\\
-   {\bf er\_mailinglist}\qquad &contact information for people involved in the study\\
-   \hline
-   {\bf magic\_measurements} \qquad & \hskip 1em measurement data used in the study\\
-    {\bf magic\_methods*}\qquad & methods used in the study\\
-    {\bf magic\_instruments}\qquad & instruments used in the study\\
-       \hline
-    {\bf pmag\_specimens}\qquad & interpretations of best-fit lines, planes, paleointensity, etc. \\
-{\bf pmag\_samples}\qquad &sample averages of specimen data\\
-{\bf pmag\_sites}\qquad & site averages of sample data\\
-{\bf pmag\_results}\qquad & averages, VGP/V[A]DM calculations, stability tests, etc.\\
-{\bf pmag\_criteria}\qquad &criteria used in study for data selection\\
-   \hline
-   {\bf rmag\_susceptibility}\qquad &experiment for susceptibility parameters\\
-{\bf rmag\_anisotropy}\qquad & summary of anisotropy parameters\\
-{\bf rmag\_hysteresis}\qquad & summary of hysteresis parameters\\
-{\bf rmag\_remanence}\qquad &summary of remanence parameters\\
-{\bf rmag\_results}\qquad &summary results and highly derived data \\
-\qquad &products (critical temperatures, etc.)\\
-{\bf rmag\_criteria}\qquad &criteria used in study for data selection\\
-\hline
-\end{tabular}
+{\bf QuickMagIC.py} is a blah blah.    
 
 
 
-The second line of every file contains the column headers (meta-data) describing the included data.   For example, an {\bf er\_sites} table might look like this:
-
-{\hoffset -1in
-\begin{tabular}{llllll}
-\hline
-tab\hskip 2em{\bf er\_sites}\\
-er\_site\_name \qquad & er\_location\_name \qquad &  site\_lithology \qquad & site\_type \qquad &  site\_lat \qquad & site\_lon\\
-AZ01\qquad &Azores \qquad & basalt \qquad &lava flow \qquad & 37.80\qquad &-25.80\\
-...\\
-\hline
-\end{tabular}
-}
-
-Although data can be entered directly into Excel spreadsheets by hand, it is easier to generate the necessary tables as a by-product of ordinary data processing without having to know details of the meta-data and method codes. 
-Section~\ref{chap:MagIC} describes how to use the {\bf PmagPy} software for  data analysis and generate the MagIC data tables automatically for the most common paleomagnetic studies involving directions and/or paleointensities.    
- 
-  
-\customlink{method_codes}
-  \section{A word about  method codes}
-  
-  The MagIC database tags records with ``method codes'' which are short codes that describe various methods associated with a particular data record.  The complete list is available here:  \url{http://earthref.org/MAGIC/methods.htm}.      Most of the time, you do not need to know what these are (there are over a hundred!), but it is helpful to know something about them.  These are divided into several general categories like `geochronology methods' and  `field sampling methods'.   Method codes start with a few letters which designate the category (e.g., GM or FS  for geochronogy and field sampling respectively).   Then there is a second part and possibly also a third part to describe methods with lesser or greater detail.   
-The current (version 2.4) method codes that describe various lab treatment methods to give you a flavor for how they work are listed in this table:    
-
-   \begin{tabular}{lll} 
-  \hline
-  LT-AF-D \qquad & Lab Treatment \qquad & Alternating field: Double demagnetization\\
-  \qquad &\qquad & with AF along X,Y,Z measurement \\
- \qquad &\qquad & followed by AF along -X,-Y,-Z measurement\\
-LT-AF-G \qquad & Lab Treatment \qquad & Alternating field: Triple demagnetization\\ 
-\qquad &\qquad & with AF along Y,Z,X measurement\\
-\qquad &\qquad & followed by AF along Y and AF along Z measurement\\
-LT-AF-I \qquad & Lab Treatment \qquad & Alternating field: In laboratory field\\
-LT-AF-Z \qquad & Lab Treatment \qquad & Alternating field: In zero field\\
-LT-CHEM \qquad & Lab Treatment \qquad & Cleaning of porous rocks by chemical leaching with HCl\\
-LT-FC \qquad & Lab Treatment \qquad & Specimen cooled with laboratory field on\\
-LT-HT-I \qquad & Lab Treatment \qquad & High temperature treatment: In laboratory field\\
-LT-HT-Z \qquad & Lab Treatment \qquad & High temperature treatment: In zero field\\
-LT-IRM \qquad & Lab Treatment \qquad & IRM imparted to specimen prior to measurement\\
-LT-LT-I \qquad & Lab Treatment \qquad & Low temperature treatment: In laboratory field\\
-LT-LT-Z \qquad & Lab Treatment \qquad & Low temperature treatment: In zero field\\
-LT-M-I \qquad & Lab Treatment \qquad & Using microwave radiation: In laboratory field\\
-LT-M-Z \qquad & Lab Treatment \qquad & Using microwave radiation: In zero field\\
-LT-NO \qquad & Lab Treatment \qquad & No treatments applied before measurement\\
-LT-NRM-APAR \qquad & Lab Treatment \qquad & Specimen heating and cooling: Laboratory \\
-\qquad &\qquad &field anti-parallel to the NRM vector\\
-LT-NRM-PAR \qquad & Lab Treatment \qquad & Specimen heating and cooling: Laboratory \\
-\qquad &\qquad &field parallel to the NRM vector\\
-LT-NRM-PERP \qquad & Lab Treatment \qquad & Specimen heating and cooling: \\
-\qquad &\qquad &Laboratory field perpendicular to the NRM vector\\
-LT-PTRM-I \qquad & Lab Treatment \qquad & pTRM tail check: After zero field step, \\
-\qquad &\qquad &perform an in field cooling\\
-LT-PTRM-MD \qquad & Lab Treatment \qquad & pTRM tail check: After in laboratory field step, \\
-\qquad &\qquad &perform a zero field cooling at same temperature\\
-LT-PTRM-Z \qquad & Lab Treatment \qquad & pTRM tail check: After in laboratory field step,\\
-\qquad &\qquad & perform a zero field cooling at a lower temperature\\
-LT-T-I \qquad & Lab Treatment \qquad & Specimen cooling: In laboratory field\\
-LT-T-Z \qquad & Lab Treatment \qquad & Specimen cooling: In zero field\\
-LT-VD \qquad & Lab Treatment \qquad & Viscous demagnetization by applying MU-metal screening\\
-LP-X \qquad & Lab Treatment \qquad & Susceptibility\\
-LT-ZF-C \qquad & Lab Treatment \qquad & Zero field cooled, low temperature IRM imparted\\
-LT-ZF-CI \qquad & Lab Treatment \qquad & Zero field cooled, induced M measured on warming\\
-\hline
-\end{tabular}
 
   
 \customlink{MagIC.py}
@@ -731,7 +611,7 @@ Download the package containing example data files  from:
 \customlink{aarm_magic.py}
 \subsection{aarm\_magic.py}
  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]} 
-\href{#MagIC}{[MagIC]}
+\href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/aarm_magic.py}{[aarm\_magic docs]}
 %LJ
 
@@ -818,7 +698,7 @@ Good bye
 \customlink{ANI_depthplot.py}
 \subsection{ANI\_depthplot.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]}; 
-\href{#MagIC}{[MagIC]}
+\href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/ANI_depthplot.py}{[ANIi\_depthplot docs]}
 
 Anisotropy data can be plotted versus depth.  The program {\bf ANI\_depthplot.py} uses MagIC formatted data tables of the {\it rmag\_anisotropy.txt} and {\it er\_samples.txt} types.  {\it rmag\_anisotropy.txt} stores the tensor elements and measurement meta-data while {\it er\_samples.txt} stores the depths, location and other information.  Bulk susceptibility measurements can also be plotted if they are available in a {\it magic\_measurements.txt} formatted file.  
@@ -846,7 +726,7 @@ Unpack the data using the program \href{#download_magic.py}{download\_magic.py}.
 \customlink{aniso_magic.py}
 \subsection{aniso\_magic.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]}; 
-\href{#MagIC}{[MagIC]}
+\href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/aniso_magic.py}{[aniso\_magic docs]}
 
 Samples were collected from the eastern margin a dike  oriented  with a bedding pole declination of 110$^{\circ}$ and dip of 2$^{\circ}$.      The data have been imported into a rmag\_anisotropy formatted file named {\it dike\_anisotropy.txt}.    
@@ -942,7 +822,7 @@ Note that as with many {\bf PmagPy}  programs, the input information can be read
 \customlink{atrm_magic.py}
 \subsection{atrm\_magic.py}
 { \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]} 
-\href{#MagIC}{[MagIC]}
+\href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/atrm_magic.py}{[atrm\_magic docs]}
 
 Anisotropy of thermal  remanence (ATRM) is similar to anisotropy of anhysteretic remanence (AARM) and the procedure for obtaining the tensor is also similar.  Therefore, the program {\bf atrm\_magic.py} is quite similar to \href{#aarm_magic.py}{aarm\_magic.py}.  However, the SIO lab procedures for the two experiments are somewhat different.  In the ATRM experiment, there is a single, zero field step at the chosen temperature which is used as a baseline.  We use only six positions (as opposed to nine for AARM) because of the additional risk of alteration at each temperature step.  The positions are also different:  
@@ -971,7 +851,7 @@ specimen statistics and eigenparameters stored in  ./atrm_results.txt
 
 \customlink{azdip_magic.py}
 \subsection {azdip\_magic.py}
- \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]} and \href{#MagIC}{[MagIC]}% 
+ \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]} and \href{#MagICDatabase}{[MagIC Database]}% 
  \href{https://github.com/ltauxe/PmagPy/blob/master/azdip_magic.py}{[azdip\_magic docs]}
 
 Many paleomagnetists save orientation information in files in this format:
@@ -1007,7 +887,7 @@ Use the program {\bf b\_vdm} to convert an estimated paleofield value of 33 $\mu
 \customlink{basemap_magic.py}
 \subsection{basemap\_magic.py}
 \label{ex:basemap_magic}
-\href{#MagIC}{[MagIC]} and   \href{http://earthref.org/PmagPy/hires.html}{high resolution instructions}
+\href{#MagICDatabase}{[MagIC Database]} and   \href{http://earthref.org/PmagPy/hires.html}{high resolution instructions}
 \href{https://github.com/ltauxe/PmagPy/blob/master/basemap_magic.py}{[basemap\_magic docs]}
 
 Python has a complete map plotting package and PmagPy has a utility for making simple base maps for projects.  Site location data imported for example using \href{#orientation_magic.py}{orientation\_magic.py} into an {\it er\_sites} formatted text file can be plotted using {\bf basemap\_magic.py}.  There are many options, so check the help message for more details.   Note that if you want to use  \href{http://earthref.org/PmagPy/hires.html}{high resolution datafiles}
@@ -1034,7 +914,7 @@ As an example, use the program {\bf basemap\_magic.py} to make  a simple basemap
 \subsection{biplot\_magic.py} 
 \label{ex:biplot_magic}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch8.html#ch8}{
-[Essentials Chapter 8]} and \href{#MagIC}{[MagIC]}
+[Essentials Chapter 8]} and \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/biplot_magic.py}{[biplot\_magic docs]}
 
 It is often useful to plot measurements from one experiement against another.  For example, rock magnetic studies of sediments often plot the IRM against the ARM or magnetic susceptibility.  All of these types of measurements can be imported into a single {\it magic\_measurements} formatted file, using magic method codes and other clues (lab fields, etc.) to differentiate one from another.  
@@ -1199,7 +1079,7 @@ infield steps.  The designations `Z', `I', 'T', 'and 'P'  are for zero-field, in
 
 \customlink{chi_magic.py}
 \subsection{chi\_magic.py} 
-\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch8.html#ch8}{[Essentials Chapter 8]} \& \href{#MagIC}{[MagIC]}\label{ex:chi_magic}
+\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch8.html#ch8}{[Essentials Chapter 8]} \& \href{#MagICDatabase}{[MagIC Database]}\label{ex:chi_magic}
 \href{https://github.com/ltauxe/PmagPy/blob/master/chi_magic.py}{[chi\_magic docs]}
 
 It is sometimes useful to measure susceptibility as a function of temperature, applied field and frequency.   Here we use a data set that came from the Tiva Canyon Tuff sequence (see Carter-Stiglitz,  2006).  \nocite{carterstiglitz06}    Use the program {\bf chi\_magic.py} to plot the data in the magic\_measurements formatted file: {\it chi\_magic\_example.dat}.   
@@ -1222,7 +1102,7 @@ enter s[a]ve to save files,  [return] to quit
 You can see the dependence on temperature, frequency and applied field.  These data support the suggestion that there is a strong superparamagnetic component in these specimens.   
 
 \customlink{combine_magic}
-\subsection {combine\_magic.py} \href{#MagIC}{[MagIC]}
+\subsection {combine\_magic.py} \href{#MagICDatabase}{[MagIC Database]}
 \label{ex:combine_magic}
 \href{https://github.com/ltauxe/PmagPy/blob/master/combine_magic.py}{[combine\_magic docs]}
 
@@ -1318,7 +1198,7 @@ This is a handy little script that turns Windows or Mac file formatted files (no
 
 \customlink{convert_samples.py}
 \subsection{convert\_samples.py}
-\href{#MagIC}{[MagIC]}
+\href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/convert_samples.py}{[convert\_samples docs]}
 
 If one of the MagIC related programs in PmagPy created a very lean looking {\it er\_samples.txt} file (for example using \href{#azdip_magic.py}{azdip\_magic.py}) and you need to add more information (say, latitude, longitude, lithology, etc.), you can convert the {\it er\_samples.txt} file into an \href{#orientation_magic.py}{orient.txt} file format, edit it in, for example Excel, and then re-import it back into the {\it er\_samples.txt} file format.  Try this on the {\it er\_samples} formatted file in the {\it convert\_samples} directory, {\it convert\_samples\_example.dat}.
@@ -1372,7 +1252,7 @@ second deriative maximum is at T=552
 
 \customlink{customize_criteria.py}
 \subsection{customize\_criteria.py} 
-\href{#MagIC}{[MagIC]}
+\href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/customize_criteria.py}{[customize\_criteria docs]}
 
 The MagIC database allows documentation of which criteria were used in selecting data on a specimen, sample or site level and to easily apply those criteria (and re-apply them as they change) in preparing the different tables.  These choices are stored in the {\it pmag\_criteria} table in each MagIC project directory (see \href{#MagIC.py}{MagIC.py} documentation).
@@ -1676,7 +1556,7 @@ Declination: [cntrl-D  to quit] ^D
 % 
 \customlink{dmag_magic.py}
  \subsection{dmag\_magic.py}
-  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]} and \href{#MagIC}{[MagIC]}
+  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]} and \href{#MagICDatabase}{[MagIC Database]}
   \href{https://github.com/ltauxe/PmagPy/blob/master/dmag_magic.py}{[dmag\_magic docs]}
  
 Use {\bf dmag\_magic.py} to plot out the decay of all alternating field demagnetization experiments in the magic\_measurements 
@@ -1865,7 +1745,7 @@ which produces a plot like this:
 Other ellipses are Kent, Fisher and bootstrapped ellipses.  Check the documentation for details.
 
 \customlink{eqarea_magic.py}
-\subsection{eqarea\_magic.py} \href{#MagIC}{[MagIC]}
+\subsection{eqarea\_magic.py} \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/eqarea_magic.py}{[eqarea\_magic docs]}
 
 Follow the instructions for downloading and unpacking a data file from the MagIC database or use the file in the {\it download\_magic} directory already downloaded from the  \href{http://earthref.org/MagIC/search}{MagIC} website.    Plot the directional data for the study from the {\it pmag\_results.txt} file along with the bootstrapped 
@@ -2105,7 +1985,7 @@ S[a]ve all figures, <Return> to quit   a
 % 
 % 
 \customlink{foldtest_magic.py}
-\subsection{foldtest\_magic.py} \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch12.html#ch12}{[Essentials Chapter 12]} and \href{#MagIC}{[MagIC]}
+\subsection{foldtest\_magic.py} \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch12.html#ch12}{[Essentials Chapter 12]} and \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/foldtest_magic.py}{[foldtest\_magic docs]}
 
 This program performs the same test as \href{#foldtest.py}{foldtest.py}.  The only difference is that it reads MagIC formatted input files and allows the application of selection criteria as specified in the {\it pmag\_criteria.txt} formatted file.   
@@ -2192,10 +2072,10 @@ Draw a set of 20 data points  from a TK03.GAD distibution predicted for a latitu
 
 \customlink{grab_magic_key.py}
 \subsection{grab\_magic\_key.py}
-\href{#MagIC}{[MagIC]}
+\href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/grab_magic_key.py}{[grab\_magic\_key docs]}
 
-{\bf grab\_magic\_key.py} is  a utility that will print out any column (-key option) from any \href{#MagIC}{[MagIC]} formatted file.  For example, we could print out all the site latitudes from the  {\it er\_sites.txt} file down loaded in the \href{#download_magic.py}{download\_magic.py} example:
+{\bf grab\_magic\_key.py} is  a utility that will print out any column (-key option) from any \href{#MagICDatabase}{[MagIC Database]} formatted file.  For example, we could print out all the site latitudes from the  {\it er\_sites.txt} file down loaded in the \href{#download_magic.py}{download\_magic.py} example:
 
 \begin{verbatim}
 % grab_magic_key.py -f er_sites.txt -key site_lat
@@ -2236,7 +2116,7 @@ Make a histogram of the data generated with the {\bf gaussian.py} program.
 
 \customlink{hysteresis_magic.py}
 \subsection{hysteresis\_magic.py} 
-\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch5.html#ch5}{[Essentials Chapters 5]}, \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch7.html#ch7}{[Essentials Chapter 7], }  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ap3.html#hysteresis_parameters}{[Essentials Appendix C.1]} \& \href{#MagIC}{[MagIC]}
+\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch5.html#ch5}{[Essentials Chapters 5]}, \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch7.html#ch7}{[Essentials Chapter 7], }  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ap3.html#hysteresis_parameters}{[Essentials Appendix C.1]} \& \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/hysteresis_magic.py}{[hysteresis\_magic docs]}
 
 Plot the data in {\it hysteresis\_magic\_example.txt}, (from  Ben-Yosef et al., 2008) \nocite{benyosef08} which were imported into MagIC using  \href{#AGM_magic.py}{AGM\_magic.py}.   Use the program  {\bf hysteresis\_magic.py} to plot the data.   
@@ -2351,7 +2231,7 @@ which produces the plot:
 \customlink{k15_magic.py}
 \subsection{k15\_magic.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]}; 
-\href{#MagIC}{[MagIC]}
+\href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/k15_magic.py}{[k15\_magic docs]}
 
 
@@ -2395,7 +2275,7 @@ You can plot the output of this example (default file {\it rmag\_anisotropy.txt}
 \customlink{k15_s.py}
 \subsection{k15\_s.py}  
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]}; 
-\href{#MagIC}{[MagIC]}
+\href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/k15_s.py}{[k15\_s docs]}
 
 %
@@ -2424,7 +2304,7 @@ Use {\bf k15\_s.py} to calculate the best-fit tensor elements and residual error
 
 \customlink{KLY4S_magic.py} 
 \subsection{KLY4S\_magic.py}  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]}; 
-\href{#MagIC}{[MagIC]}
+\href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/KLY4S_magic.py}{[KLY4S\_magic docs]}
 
 The program {\bf AMSSpin} available for downloading from \url{http://earthref.org/ERDA/940/}  generates data for the Kappabridge KLY4S spinning magnetic susceptibility instrument as described by Gee et al. (2008).  \nocite{gee08}  
@@ -2456,7 +2336,7 @@ This command will create the files needed by the MagIC database and the data can
 
 \customlink{lnp_magic.py}
 \subsection{lnp\_magic.py}
-\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{ [Essentials Chapter 11]},  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ap3.html#linesNplanes}{[Essentials Appendix C2.2]} \& \href{#MagIC}{[MagIC]}
+\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{ [Essentials Chapter 11]},  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ap3.html#linesNplanes}{[Essentials Appendix C2.2]} \& \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/lnp_magic.py}{[lnp\_magic docs]}
 
 This program will take {\it pmag\_specimen} formatted MagIC files (for example, generated by \href{#zeq_magic.py}{zeq\_magic.py}) and plot data by site, combining best-fit lines and best-fit planes using the method described in  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ap3.html#linesNplanes}{Essentials Appendix C2.2}.  Try this out on the data from the San Francisco Volcanics, notorious for lightning strikes, published by Tauxe et al., 2003. \nocite{tauxe03b}  These can be downloaded from the MagIC database from \url{http://earthref.org/MAGIC/m000629dt20061213090720/} and unpacked with 
@@ -2511,7 +2391,7 @@ which produces plots like this:
 
 \customlink{lowrie_magic.py}
 \subsection{lowrie\_magic.py}
-\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch8.html#lowrie}{[Essentials Chapter 8]} and \href{#MagIC}{[MagIC]}
+\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch8.html#lowrie}{[Essentials Chapter 8]} and \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/lowrie_magic.py}{[lowrie\_magic docs]}
 
 This program works exactly like \href{#lowrie.py}{lowrie.py}, but works on {\it magic\_measurements.txt} formatted files.  Use \href{#sio_magic.py}{sio\_magic.py} to import the {\it lowrie\_example.dat} data file into the MagIC format.  Then use {\bf lowrie\_magic.py} to plot the data:
@@ -2640,7 +2520,7 @@ When you are finished looking at and perhaps re-interpreting the data, you are r
 %
 \customlink{magic_select.py}
 \subsection{magic\_select.py}
-\href{#MagIC}{[MagIC]}
+\href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/magic_select.py}{[magic\_select docs]}
 
 
@@ -2660,7 +2540,7 @@ This program takes any \href{#MagIC}{MagIC} formatted file and selects lines tha
 
 \customlink{make_magic_plots.py}
 \subsection{make\_magic\_plots.py}
-\href{#MagIC}{[MagIC]}
+\href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/make_magic_plots.py}{[make\_magic\_plots docs]}
 
 This program will inspect the files in the current directory and autogenerate some standard plots.  
@@ -2674,7 +2554,7 @@ This program imports the binary format generated by the 2G proprietary software.
 
 
 \customlink{AGM_magic.py}
-\subsubsection {AGM\_magic.py} \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch5.html#ch5}{[Essentials Chapter 5]} \& \href{#MagIC}{[MagIC]}
+\subsubsection {AGM\_magic.py} \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch5.html#ch5}{[Essentials Chapter 5]} \& \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/AGM_magic.py}{[AGM\_magic docs]}
 
 
@@ -2795,7 +2675,7 @@ mk118	07R-08340	5/10/2007	7:58	A	80	353.8	38.8	353.8	38.8	6.77E-05
 
 \customlink{LDEO_magic.py}
 \subsubsection{LDEO\_magic.py}
-\href{#MagIC}{[MagIC]}
+\href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/LDEO_magic.py}{[LDEO\_magic docs]}
 
 
@@ -2984,7 +2864,7 @@ Note that there are more examples of data file formats and import schemes in the
 \customlink{SUFAR4-asc_magic.py}
 \subsubsection{SUFAR4-asc\_magic.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]}; 
-\href{#MagIC}{[MagIC]}
+\href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/SUFAR4-asc_magic.py}{[SUFAR4-asc\_magic docs]}
 
 
@@ -3040,7 +2920,7 @@ results put in  magic_measurements.txt
 
 \customlink{measurements_normalize.py}
 \subsection{measurements\_normalize.py}
-\href{#MagIC}{[MagIC]}
+\href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/measurements_normalize.py}{[measurements\_normalize docs]}
 
 This program takes specimen weights or volumes from an {\it er\_specimen.txt} formatted file and normalizes the magnetic moment data to make  magnetizations.  Weights must be in kilograms and volumes in m$^3$.  
@@ -3384,7 +3264,7 @@ mean,sigma, d, Dc
 %
 \customlink{quick_hyst.py}
 \subsection{quick\_hyst.py}
-\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch5.html#ch5}{[Essentials Chapter 5]} and \href{#MagIC}{[MagIC]}
+\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch5.html#ch5}{[Essentials Chapter 5]} and \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/quick_hyst.py}{[quick\_hyst docs]}
 
 \href{#hysteresis_magic.py}{hysteresis\_magic.py} makes plots of hysteresis loops and calculates the main hysteresis parameters.  For a quick look with no interpretation, you can use {\bf quick\_hyst.py}.   Try it out on the data file {\it hysteresis\_magic\_example.dat} in the {\it hysteresis\_magic} directory.   
@@ -3552,7 +3432,7 @@ Rotate the .s data saved in {\it s\_tilt\_example.dat} into stratigraphic coordi
 
 \customlink{s_magic.py}
 \subsection{s\_magic.py} [MagIC]
-\href{#MagIC}{[MagIC]}
+\href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/s_magic.py}{[s\_magic docs]}
 
 Import .s format file output from the {\bf s\_tilt.py} example into an {\it rmag\_anisotropy} formatted file.  Files of the {\it rmag\_anisotropy} format can be plotted  with {\bf aniso\_magic.py}.   To see how this works,  use the program {\bf s\_magic.py} as follows:
@@ -4136,7 +4016,7 @@ which should yield a plot something (but not exactly) like this:
 
 \customlink{update_measurements.py}
 \subsection{update\_measurements.py}
-\href{#MagIC}{[MagIC]}
+\href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/update_measurements.py}{[update\_measurements docs]}
 
 In the SIO laboratory, our default specimen naming scheme has a logical relationship to the sample and site names.  
@@ -4145,7 +4025,7 @@ Sometimes there is no simple relationship and the MagIC import procedure can't p
 
 \customlink{upload_magic.py}
 \subsection{upload\_magic.py}
-\href{#MagIC}{[MagIC]}
+\href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/upload_magic.py}{[upload\_magic docs]}
 
 This program takes all the MagIC formatted files and puts them into a file which can be imported into the MagIC console software for uploading into the \href{http://earthref.org/MagIC}{MagIC database}. 
@@ -4253,7 +4133,7 @@ Just for good measure, you could try it out on the data in the \href{#di_vgp.py}
 
 \customlink{vgpmap_magic.py}
 \subsection{vgpmap\_magic.py}
-\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#ch2}{[Essentials Chapter 2]},  \href{#MagIC}{[MagIC]} and   \href{http://earthref.org/PmagPy/hires.html}{high resolution instructions}
+\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#ch2}{[Essentials Chapter 2]},  \href{#MagICDatabase}{[MagIC Database]} and   \href{http://earthref.org/PmagPy/hires.html}{high resolution instructions}
 \href{https://github.com/ltauxe/PmagPy/blob/master/vgpmap_magic.py}{[vgpmap\_magic docs]}
 
 Make a plot of the VGPs calculated for the dataset downloaded in the \href{#download_magic.py}{download\_magic.py} example.  Use the  \href{http://earthref.org/PmagPy/hires.html}{high resolution}
@@ -4356,7 +4236,7 @@ The equal area projection has the X direction (usually North in geographic coord
 
 \customlink{zeq_magic.py}
 \subsection{zeq\_magic.py}
-\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]}  \& \href{#MagIC}{[MagIC]}
+\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]}  \& \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/zeq_magic.py}{[zeq\_magic docs]}
 
 
@@ -4399,7 +4279,7 @@ The plots will look similar to the \href{#zeq.py}{zeq.py} example, but the defau
 
 \customlink{zeq_magic_redo.py}
 \subsection{zeq\_magic\_redo.py}
-\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]}  \& \href{#MagIC}{[MagIC]}
+\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]}  \& \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/zeq_magic_redo.py}{[zeq\_magic\_redo docs]}
 
 In the {\it zeq\_magic} directory, use the program {\bf zeq\_magic\_redo.py} to create a {\it pmag\_specimens} formatted file with data in geographic coordinates from the sample coordinate file {\it zeq\_specimens.txt}.  
@@ -4424,6 +4304,146 @@ Recalculated specimen data stored in  ./zeq_specimens_g.txt
 \section{Complaints department}
 
 The best way to raise issues with any of the software or its documentation is to post to the issues page of the Github project: \url{https://github.com/ltauxe/PmagPy/issues}. Given that most of the software as well as this documentation were written by Lisa Tauxe (\href{mailto:ltauxe@ucsd.edu}{ltauxe@usd.edu}), she can also be contacted by email with bug reports, suggestions and requests. 
+
+\customlink{MagICDatabase}
+\chapter{The MagIC database and file formats}
+
+A number of the programs in {\bf PmagPy} were  developed to take advantage of the MagIC database and aid getting data in and out of it.   So, we need some basic understanding of what MagIC is and how it is structured.  
+MagIC  is an Oracle  database that is part of the EarthRef.org collection of databases and digital reference material.  
+Anyone interested in the MagIC database should first become a registered EarthRef.org user.  To do this, go to \url{http://earthref.org} and click on the {\bf Register} link in the {\bf Topmenu}.   Registration is not required for access to data or browsing around, but is required for uploading of data into the MagIC database, something which we sincerely hope you will have a chance to do.  By registering, you will also be kept informed of our progress through bi-monthly newsletters and other email alerts.    After you register, go to \url{http://earthref.org/MAGIC}.
+
+
+\section {Perusing the existing data}
+
+The MagIC database is designed to have two web portals, one for paleomagnetic data (PMAG) and one for rock magnetic data (RMAG).  If you click on the PMAG PORTAL link,  you will be taken  to the main MagIC search engine.  You can look for data from a particular reference by typing in the author's name in the ``Reference Text Search'' box, or search by any column with a little magnifying glass icon.   If you click on the   You can show or hide columns  and look at data at various levels (location, site, sample, and so on to retrieve the data you want.  
+  Once the data you want have been identified, you can download the data by clicking on the `Save Results' button.     
+  
+    \includegraphics[width=15cm]{EPSfiles/MagIC_search.eps}
+  
+  
+       After downloading, the data can be unpacked and examined using various tools in the {\bf PmagPy}  programs described later.   
+
+\customlink{Uploading}
+\section{Uploading data to the database}
+
+Paleomagnetic and rock magnetic data are collected and analyzed in a wide variety of ways with different objectives.  Data sets can be extremely large or can be the barest boned data summaries published in legacy data tables.   The goal of MagIC has been to have the flexibility to allow a whole range of data including legacy data from publications or other databases to new studies which include all the measurements, field photos, methodology, and so on.  The general procedure for the future will be to archive the data at the same time that they are published.    So, to smooth the path, it is advisable to put your data into the MagIC format as early in the process as possible.  All data that enters the database must be converted to the standard MagIC format either as a set of MagIC tables, or as one combined text file.    These can then be uploaded into the MagIC database.   Here,  we illustrate the use of  a number of programs (the \href{#PmagPy}{PmagPy}  package in Python) to facilitate the `behind the scenes' process of making MagIC formatted tables.     
+
+\customlink{DataTables}
+\section{Structure of the database tables}  
+
+The MagIC database is organized around a series of data tables.  The complete data model can be found here: 
+\url{http://earthref.org/MAGIC/metadata.htm}.   
+
+  Each MagIC table has  a one line header of the form:   
+
+
+tab\hskip 2em{\bf table\_name}
+
+\noindent
+``tab'' (or ``tab delimited'') means that the table is tab delimited.  In theory other delimiters are possible, but {\bf PmagPy}  only  uses tab delimited formats.  The {\bf table\_name} is one of the table names. The tables are of four general types:  EarthRef tables ({\bf er\_}) shared in common with other EarthRef databases,  MagIC tables ({\bf magic\_})  common to both rock magnetic and paleomagnetic studies, Paleomagnetic tables ({\bf pmag\_}), data reduction useful in paleomagnetic studies, Rock magnetic tables ({\bf rmag\_}), data reduction useful for rock magnetic studies.    Most studies use only some of these tables.     Here are some useful tables for a typical paleomagnetic study (starred are required in all cases):
+
+\begin{tabular}{ll}
+\hline
+table\qquad &Brief description\\
+\hline
+{\bf er\_locations*}\qquad & geographic information about the location(s) of the study\\
+ {\bf er\_sites}\qquad & locations, lithologic information, etc. for the sampling sites\\
+ {\bf er\_samples}\qquad & orientation, sampling methods, etc. for samples\\
+  {\bf er\_specimens}\qquad &specimen weights, volumes\\
+    {\bf er\_ages}\qquad &age information.\\
+    {\bf er\_images}\qquad & images associated with the study (field shots, sample\\ 
+    \qquad &photos, photomicrographs, SEM images, etc.\\
+   {\bf er\_citations*}\qquad &citation information\\
+   {\bf er\_mailinglist}\qquad &contact information for people involved in the study\\
+   \hline
+   {\bf magic\_measurements} \qquad & \hskip 1em measurement data used in the study\\
+    {\bf magic\_methods*}\qquad & methods used in the study\\
+    {\bf magic\_instruments}\qquad & instruments used in the study\\
+       \hline
+    {\bf pmag\_specimens}\qquad & interpretations of best-fit lines, planes, paleointensity, etc. \\
+{\bf pmag\_samples}\qquad &sample averages of specimen data\\
+{\bf pmag\_sites}\qquad & site averages of sample data\\
+{\bf pmag\_results}\qquad & averages, VGP/V[A]DM calculations, stability tests, etc.\\
+{\bf pmag\_criteria}\qquad &criteria used in study for data selection\\
+   \hline
+   {\bf rmag\_susceptibility}\qquad &experiment for susceptibility parameters\\
+{\bf rmag\_anisotropy}\qquad & summary of anisotropy parameters\\
+{\bf rmag\_hysteresis}\qquad & summary of hysteresis parameters\\
+{\bf rmag\_remanence}\qquad &summary of remanence parameters\\
+{\bf rmag\_results}\qquad &summary results and highly derived data \\
+\qquad &products (critical temperatures, etc.)\\
+{\bf rmag\_criteria}\qquad &criteria used in study for data selection\\
+\hline
+\end{tabular}
+
+
+
+The second line of every file contains the column headers (meta-data) describing the included data.   For example, an {\bf er\_sites} table might look like this:
+
+{\hoffset -1in
+\begin{tabular}{llllll}
+\hline
+tab\hskip 2em{\bf er\_sites}\\
+er\_site\_name \qquad & er\_location\_name \qquad &  site\_lithology \qquad & site\_type \qquad &  site\_lat \qquad & site\_lon\\
+AZ01\qquad &Azores \qquad & basalt \qquad &lava flow \qquad & 37.80\qquad &-25.80\\
+...\\
+\hline
+\end{tabular}
+}
+
+Although data can be entered directly into Excel spreadsheets by hand, it is easier to generate the necessary tables as a by-product of ordinary data processing without having to know details of the meta-data and method codes. 
+Section~\ref{chap:MagIC} describes how to use the {\bf PmagPy} software for  data analysis and generate the MagIC data tables automatically for the most common paleomagnetic studies involving directions and/or paleointensities.    
+ 
+  
+\customlink{method_codes}
+  \section{A word about  method codes}
+  
+  The MagIC database tags records with ``method codes'' which are short codes that describe various methods associated with a particular data record.  The complete list is available here:  \url{http://earthref.org/MAGIC/methods.htm}.      Most of the time, you do not need to know what these are (there are over a hundred!), but it is helpful to know something about them.  These are divided into several general categories like `geochronology methods' and  `field sampling methods'.   Method codes start with a few letters which designate the category (e.g., GM or FS  for geochronogy and field sampling respectively).   Then there is a second part and possibly also a third part to describe methods with lesser or greater detail.   
+The current (version 2.4) method codes that describe various lab treatment methods to give you a flavor for how they work are listed in this table:    
+
+   \begin{tabular}{lll} 
+  \hline
+  LT-AF-D \qquad & Lab Treatment \qquad & Alternating field: Double demagnetization\\
+  \qquad &\qquad & with AF along X,Y,Z measurement \\
+ \qquad &\qquad & followed by AF along -X,-Y,-Z measurement\\
+LT-AF-G \qquad & Lab Treatment \qquad & Alternating field: Triple demagnetization\\ 
+\qquad &\qquad & with AF along Y,Z,X measurement\\
+\qquad &\qquad & followed by AF along Y and AF along Z measurement\\
+LT-AF-I \qquad & Lab Treatment \qquad & Alternating field: In laboratory field\\
+LT-AF-Z \qquad & Lab Treatment \qquad & Alternating field: In zero field\\
+LT-CHEM \qquad & Lab Treatment \qquad & Cleaning of porous rocks by chemical leaching with HCl\\
+LT-FC \qquad & Lab Treatment \qquad & Specimen cooled with laboratory field on\\
+LT-HT-I \qquad & Lab Treatment \qquad & High temperature treatment: In laboratory field\\
+LT-HT-Z \qquad & Lab Treatment \qquad & High temperature treatment: In zero field\\
+LT-IRM \qquad & Lab Treatment \qquad & IRM imparted to specimen prior to measurement\\
+LT-LT-I \qquad & Lab Treatment \qquad & Low temperature treatment: In laboratory field\\
+LT-LT-Z \qquad & Lab Treatment \qquad & Low temperature treatment: In zero field\\
+LT-M-I \qquad & Lab Treatment \qquad & Using microwave radiation: In laboratory field\\
+LT-M-Z \qquad & Lab Treatment \qquad & Using microwave radiation: In zero field\\
+LT-NO \qquad & Lab Treatment \qquad & No treatments applied before measurement\\
+LT-NRM-APAR \qquad & Lab Treatment \qquad & Specimen heating and cooling: Laboratory \\
+\qquad &\qquad &field anti-parallel to the NRM vector\\
+LT-NRM-PAR \qquad & Lab Treatment \qquad & Specimen heating and cooling: Laboratory \\
+\qquad &\qquad &field parallel to the NRM vector\\
+LT-NRM-PERP \qquad & Lab Treatment \qquad & Specimen heating and cooling: \\
+\qquad &\qquad &Laboratory field perpendicular to the NRM vector\\
+LT-PTRM-I \qquad & Lab Treatment \qquad & pTRM tail check: After zero field step, \\
+\qquad &\qquad &perform an in field cooling\\
+LT-PTRM-MD \qquad & Lab Treatment \qquad & pTRM tail check: After in laboratory field step, \\
+\qquad &\qquad &perform a zero field cooling at same temperature\\
+LT-PTRM-Z \qquad & Lab Treatment \qquad & pTRM tail check: After in laboratory field step,\\
+\qquad &\qquad & perform a zero field cooling at a lower temperature\\
+LT-T-I \qquad & Lab Treatment \qquad & Specimen cooling: In laboratory field\\
+LT-T-Z \qquad & Lab Treatment \qquad & Specimen cooling: In zero field\\
+LT-VD \qquad & Lab Treatment \qquad & Viscous demagnetization by applying MU-metal screening\\
+LP-X \qquad & Lab Treatment \qquad & Susceptibility\\
+LT-ZF-C \qquad & Lab Treatment \qquad & Zero field cooled, low temperature IRM imparted\\
+LT-ZF-CI \qquad & Lab Treatment \qquad & Zero field cooled, induced M measured on warming\\
+\hline
+\end{tabular}
+
+
+
 
 \customlink{survival_skills}
 \chapter{Survival computer skills}
