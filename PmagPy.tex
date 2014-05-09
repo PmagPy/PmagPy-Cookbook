@@ -45,7 +45,7 @@
  
  This documentation is updated from that in the book entitled {\it Essentials of Paleomagnetism} by  Tauxe et al., (2010). \nocite{tauxe10}  This cookbook was designed as a companion website to the  the book \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3.html}{Essentials of Paleomagnetism, 3rd Web Edition}.   Chapter references to this companion book are, for example, ``Essentials Chapter X''.   
  
-  There are many chefs who contributed to this work, in particular,  the MagIC Database Team (Cathy Constable, Anthony Koppers, Rupert Minnett, Nick Jarboe, and Ron Shaar).
+  There are many chefs who contributed to this work, in particular,  the MagIC Database Team (Cathy Constable, Anthony Koppers, Rupert Minnett, Nick Jarboe, Ron Shaar, Nick Swanson-Hysell, and Lori Jonestrask).
  
 {\obeylines 
  Lisa Tauxe
@@ -58,30 +58,26 @@
 \chapter{MagIC Quick Start}
 \customlink{quick_start}
 
- To skip all the details and just start using MagIC.py to upload data into the \href{#MagICDatabase}{MagIC database}, you follow these steps:
+ To skip all the details and just start using {\bf QuickMagIC.py} to upload data into the \href{#MagICDatabase}{MagIC database},  follow these steps:
  
  \begin{enumerate}
- \item Download and install the Enthought Canopy distribution of Python \url{https://www.enthought.com/products/canopy/}. Canopy Express (the free version) contains everything you need, but if you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license} that gives you access to additional features and bundled packages.
-% \begin{itemize}
-%	\item  \href{http://magician.ucsd.edu/Software/PmagPy/Archive/epd-7.1-2-macosx-i386.dmg}{For MacOS}
-%	\item \href{http://magician.ucsd.edu/Software/PmagPy/Archive/epd-6.2-2-win-x86.msi}{For PCs}
-%	%  Enthought temporarily down
-%% \item Download and install the  \href{http://www.enthought.com/products/getepd.php}{Enthought Python Distribution}:  
-%%  \begin{itemize}
-%% 	\item If you have an academic email address:  scroll down to "Academic versions", provide your academic e-mail and you will be sent a download link. 
-%%  Download the package and install it.
-%%  \item If the academic package is not available or you have no academic e-mail address:  download the EPD Free version.  This has almost everything you need, but does not have basemap (the mapping software), so a few of the PmagPy programs will not work.   
-%  \customlink{hires}
-%  \item If you have installed the full version and want the high resolution data files, follow the instructions \href{http://magician.ucsd.edu/Software/PmagPy/hires.html}{here}.
-%  \end{itemize}
- \item Download the \href{https://github.com/ltauxe/PmagPy}{PmagPy} software package: unzip the zip file, extract all the files to a file on your desktop (or wherever)  and double click on the {\it install\_MacOS} or {\it install\_Windows} file depending on your operating system.  (If you are a Linux user, just copy the files to some directory and put it in your path - you know what to do.)
- \item For example data files, download the \href{#Datafiles}{Datafiles\_2.0} directory and unzip it.
-  \item Create a \href{#Project_Directory}{MagIC Project Directory}.
-  \item Find your \href{#command_line}{command line} and type {\bf MagIC.py}. [Windows users must have already created the MagIC directory before starting {\bf MagIC.py}.]  
+ \item Download and install the Enthought Canopy distribution of Python \url{https://www.enthought.com/products/canopy/}. Canopy Express (the free version) contains everything you need (except the mapping utilities). If  you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license} that gives you access to additional features and bundled packages, including the basemap package. Launch Canopy to complete to complete the installation process.  In the lower right hand corner of the Canopy launch page, you will find the Version number (currently 1.4.0.1938).  Please include this in any correspondence with the PmagPy team.  
+ \item Download the \href{https://github.com/ltauxe/PmagPy}{PmagPy} software package: unzip the zip file, extract all the files to a file on your desktop (or wherever)  and double click on the {\it install\_MacOS} or {\it install\_Windows} file depending on your operating system.  (If you are a Linux user, just copy the files to some directory and put it in your path - you know what to do.)   Find your \href{#command_line}{command line} and type {\bf eqarea.py -h} and hit return.  If you do not see the help message, please send the error message and  Canopy version number to ltauxe@ucsd.edu.  
+\customlink{hires}
+\item optional: If you have installed the full version of Canopy and want to use the mapping programs (e.g., \href{#basemap_magic.py}{basemap\_magic.py}),  
+\customlink{HighRes}
+click on  the `Package Manager' button on the Canopy welcome page, and then on `Available Packages'.  install both basemap packages (one has high resolution datafiles in it). 
+ \item Download the example data files folder:
+ 
+  \href{#Datafiles}{Datafiles\_2.0} directory (\url{https://github.com/ltauxe/PmagPy-Cookbook/blob/master/Datafiles_2.0.zip}) 
+  and unzip it.
+  \item Create a \href{#Project_Directory}{MagIC Project Directory} (see Section~\ref{sect:ProjectDirectory}).
+  \item Find your \href{#command_line}{command line} and type {\bf QuickMagIC.py} or {\bf MagIC.py}. [Certain operating systems require that you already created the MagIC directory before starting these.]  
   \item Select your MagIC Project Directory as your working directory.  
- \item \href{#ImportMenu}{Import} your data files and \href{#Combining_measurement_files}{combine your measurements}.
- \item Use one of the \href{#AnalysisPlotsMenu}{plotting and analysis} tools (demagnetization data, Thellier-type experiments, etc.).
- \item Assemble your results into file for importing into  the \href{http://earthref.org/MAGIC}{MagIC database}.   
+\item Convert measurement data to the \href{#MagICDatabase}{MagIC} format.
+\item Fill in the Earth-Ref data tables (coordinates, class, type, lithology, etc.)
+\item optional: interpret data.
+\item Upload the data and/or interpretations to the MagIC database.
  \end{enumerate}
 
 %\setcounter{tocdepth}{1}
@@ -91,17 +87,142 @@
 Where do you want to go from here?   
 
 \begin{itemize}
-\item \href{#QuickMagIC.py}{Analyze my demagnetization and/or paleointensity measurement data. }
+\item \href{#QuickMagIC.py}{Analyze  demagnetization and/or paleointensity measurement data. }
 \item \href{#MagIC.py}{Analyze both rock and paleomagnetic data.} 
+\item \href{#PmagPy}{Learn more about particular programs in the {\bf PmagPy} software package.}
 \item \href{#MagICDatabase}{Learn about the MagIC Database.}
+\item \href{#Python}{Learn how to write your own programs in Python.}
 \end{itemize}
 
 
 \customlink{QuickMagIC.py}
-\chapter{QuickMagIC.py}
-\label{chap:QuickMagIC}\href{#QuickMagic}{[QuickMagIC]}
+\chapter{QuickMagIC.py Tutorial}
+\label{chap:QuickMagIC}
 
-{\bf QuickMagIC.py} is a blah blah.    
+{\bf QuickMagIC.py} is a Graphical User Interface (GUI) written by Lori Jonestrask and Ron Shaar  that provides a quick path to the main {\bf PmagPy} programs. The work flow is illustrated schematically here:
+
+\includegraphics[width=15cm]{EPSfiles/FigQkMagicFlow.eps}
+
+\begin{enumerate}
+\item Follow the steps in the \href{#quick_start}{Quick Start} section.
+ \item \textbf{copy example files:} Copy the four files that are located in Datafiles\_2.0 (\url{https://github.com/ltauxe/PmagPy-Cookbook/blob/master/Datafiles_2.0.zip}) in a folder named QuickMagIC to your {\it MyFiles} directory within the \href{#Project_Directory}{Project Directory} {\it ThisProject}.  
+ \item Type {\bf QuickMagIC.py} on your \href{#command_line}{command line} and choose your {\it MagIC} directory in your {\it ThisProject} directory.  
+ \end{enumerate}
+
+\section{Converting magnetometer files to MagIC format}
+\begin{itemize}
+\item In the {\it MyFiles} folder there are  files containing AF, Thermal, and Thellier measurement data of samples from location Snake River (lava flow site). All samples are from site sr01. The measurement data are arranged in a generic format. An example for a generic file format is shown here:
+
+\includegraphics[width=15cm]{EPSfiles/FigGenericFormat.eps}
+
+To learn what all the column headers mean look at the documentation for \href{#generic_magic.py}{generic\_magic.py}.  
+
+\item Press the [Convert magnetometer files to MagIC format] button. A dialog window will appear with different file formats:
+
+\includegraphics[width=15cm]{EPSfiles/FigChooseFile.eps}
+
+\item  Choose ‘generic format’ and press [import file] button.  A new dialog box will appear. You can see  details about the generic file format by clicking  on the [help] button, and scrolling down to `INPUT'. In this dialog box fill all the required information as shown here for AF or thermal demagnetization data:
+
+\includegraphics[width=15cm]{EPSfiles/FigConvertGenericA.eps}
+
+or paleointensity data:
+
+\includegraphics[width=15cm]{EPSfiles/FigConvertGenericB.eps}
+
+\begin{enumerate}
+\item Click on the [Add] button and choose one of the measurements files.
+\item  optional: Insert your earthref user name.
+\item Choose experiment from the dropdown list.
+\item Paleintensity data only: insert the lab field in micro tesla and orientation relative to sample's X direction: 40  0 90.
+\item Choose specimen-sample naming convention (no. of terminal characters = 1 ).
+\item Choose sample-site naming convention (no. of terminal characters = 1).
+\item  Fill in the \href{#MagICDatabase}{EarthRef Location Name}  for this project .  For this project, it is ``Snake River''.
+\item Press OK to create a new MagIC measurement file, which is saved in MagIC Project Directory.
+\end{enumerate}
+
+\item Repeat the previous step for all the three files in your MyFiles.
+\item After converting all three files to MagIC, press the [Next Step] Button. Press the [add all files with ‘.magic’ suffix] . You should see a list of the three magic files:
+
+\includegraphics[width=15cm]{EPSfiles/FigCombineMagic.eps}
+
+\item Click the OK button. The three files will be combined to a single file,  named {\it magic\_measurements.txt} and also stored  in the MagIC Project Directory.
+\end{itemize}
+
+\section{Optional: Calculate geographic / tilt-corrected direction}
+\begin{itemize}
+\item {\bf QuickMagIC.py}  provides an optional tool for calculating geographic and tilt-corrected directions. To use this tool click on the button labeled `calculate geographic/tilt-corrected directions'. 
+
+\item An empty template of a file named ‘demag\_orient.txt’ was created in the MagIC Project Directory. This file is displayed in a Python window. You can fill in  this file manually using the Python window or with Excel (recommended). The empty template has now only the sample names derived from your measurement files, using the naming rules that you chose.
+\item To see an example of a filled in one, pull down the menu bar [file] $\rightarrow$  [open orientation file] and  choose the file SrExample\_orient.txt from {\it MyFiles} folder.   
+\item Choose from the menu bar [file] $\rightarrow$ [Save orientation file].
+\item Choose from the menu bar [file] $\rightarrow$ [Calculate sample orientation].
+\item Fill in the dialog box like this:   
+
+\includegraphics[width=15cm]{EPSfiles/FigDemagOrient.eps}
+
+\begin{itemize}
+\item Orientation convention :Pomeroy.
+\item Declination correction: Use the IGRF.
+\item  Orientation priority: \#1.
+\item Put in the number of hours to SUBTRACT from the local time to get to Greenwich Mean Time: -6. [Local time was 6 hours behind GMT for this example.]  
+\item press the OK button.
+\end{itemize}
+\item In the next dialog window add the additional information: 
+\end{itemize}. 
+
+\includegraphics[width=15cm]{EPSfiles/FigOrientMagicCodes.eps}
+
+\section{Filling in the EarthRef data}
+
+Filling in the Earth Ref data is a critical part of building a MagIC Project Directory. The Earth-Ref data relevant to this example are arranged in five er\_* tables: er\_specimens, er\_samples, er\_sites, er\_locations, er\_ages. To complete the  ER data, click the button, and follow the directions in the help window in order:
+
+
+ \includegraphics[width=15cm]{EPSfiles/FigErBuilder.eps}
+ 
+ \section{Demag GUI tool}
+ \customlink{#DemagGUI}
+ \label{sect:demag_gui}
+ 
+This is  the main panel of Demag GUI:
+
+\includegraphics[width=15cm]{EPSfiles/FigDemagGui.eps}
+
+
+To analyze the data in the example follow these steps for each specimen:
+\begin{itemize}
+\item From the `coordinate system' dropdown menu choose `geographic'.
+\item Choose the  temperature/AF bounds by double clicking on the required measurement line, or by choosing from the `bounds' dropdown menu.
+\item Click `save' so the program remembers the interpretations (the interpretation is not saved to a file yet!).
+\item Click the `next' button to analyze the next specimen.
+\item To calculate  Fisher mean for the site: choose from the `higher level mean' dropdown menus: show=specimens; mean=Fisher.
+After all specimens interpretations are saved in memory, choose from the menubar [File] $\rightarrow$ [Save MagIC pmag tables]. This save all the interpretations in MagIC formatted pmag\_* files in you MagIC Project Directory.
+\item Click OK on the message dialog box.
+\item Click OK on the MagIC results table dialog box.
+\item Click OK on the message dialog box.
+\item  Close the Demag GUI. 
+\end{itemize}
+
+Now, all directional interpretations are saved in MagIc Project Directory. 
+
+\section{Thellier GUI tool}
+This is main panel of \href{#thellier_gui}{Thellier GUI}:
+
+\includegraphics[width=15cm]{EPSfiles/FigThellierGui.eps}
+
+ To analyze the data in the example follow these steps for each specimen:
+ \begin{itemize}
+\item Choose temperature bounds from the temperatures dropdown menus.
+\item  Click `save' so the program remembers the interpretations (the interpretation is not saved to a file yet!).
+\item  Click the `next' button to analyze the next specimen.
+\item The default of the program is to calculate sample means. To change it to site level mean, choose from the menubar: [Analysis $\rightarrow$ [Acceptance criteria] $\rightarrow$  [Change acceptance criteria]. Find the `average by sample/site' dropdown menu in the third row and change it to [site]. Click OK. The site mean will appear in the sample/site results box (top right).
+\item  After all specimen interpretations are saved in memory, choose from the menubar [File] $\rightarrow$ [Save MagIC pmag tables]. This save all the interpretations in MagIC formatted pmag\_* files in the MagIC Project Directory.
+\item  Close the Thellier GUI. 
+\end{itemize}
+
+\section{Upload to the database }
+
+For this, you just click the green {\it prepare upload txt file} button on the main page of the GUI. A file name `upload\_dos.txt' will be created in MagIC Project Directory. Drag and drop this file in the \href{http://earthref.org/MAGIC/search-beta}{MagIC search interface}. 
+Congratulations. Your data are now in the database.
 
 
 
@@ -109,12 +230,14 @@ Where do you want to go from here?
   
 \customlink{MagIC.py}
 \chapter{MagIC.py}
-\label{chap:MagIC} \href{#MagIC}{[MagIC}]
+\label{chap:MagIC} \href{#MagICDatabase}{[MagIC}]
 
- {\bf MagIC.py}  is an umbrella program that links many MagIC related functions of the \href{#PmagPy}{PmagPy} Software Package in a user-friendly  graphical user interface (GUI).  While it is invoked with a command line call, this  can be done from any directory (with no spaces in the path).  It generates calls to the programs described in Chapter~\ref{chap:PmagPy} so you don't have to.    It allows importing of many lab and instrument formats, plotting of a variety of data and doing the data processing and book-keeping required to create files ready for uploading into the MagIC Console software.  
-
-\section{Preparing for MagIC}
+While {\bf QuickMagIC.py} provides a bare bones interface for importing, interpreting and uploading most demagnetization and paleointensity experimental data in to the MagIC database, {\bf MagIC.py} is a more complete (and complicated) program.  
+It is an umbrella program that links many MagIC related functions of the \href{#PmagPy}{PmagPy} Software Package in a user-friendly  graphical user interface (GUI).  While it is invoked with a command line call, this  can be done from any directory (with no spaces in the path).  It generates calls to the programs described in Chapter~\ref{chap:PmagPy} so you don't have to.    It allows importing of many lab and instrument formats, plotting of a variety of data and doing the data processing and book-keeping required to create files ready for uploading into the MagIC Console software.  
+ 
+ \section{Preparing for MagIC}
 \subsection{Project Directory}
+\label{sect:ProjectDirectory}
 \customlink{Project_Directory}
 
  When you invoke {\bf MagIC.py}, the first step is to choose a `Project Directory'. For each study, create a directory with a name that relates to that study. Here I will call it {\it ThisProject}.  This is where you will collect  and process all the rock and paleomagnetic data for a given study, usually a publication.   The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path. Under certain Windows versions, this means you should not use your home directory, but create a directory called for example: D:$\backslash$MyPmagProjects and put {\it ThisProject} there.
@@ -124,6 +247,10 @@ Inside the  {\it ThisProject} directory, create two additional directories: {\it
 Your Directory tree might look like this now:
 
 \includegraphics[width=15cm]{EPSfiles/ProjectDirectory.eps}
+
+
+
+
 
 \subsection{What goes in {\it MyFiles}}
 
@@ -534,7 +661,7 @@ Once all your data have been imported and interpreted using one of the interpret
 		\item Check sample orientations:  This program calls the program \href{#site_edit_magic.py}{site\_edit\_magic.py}.  It steps through the data site by site and allows you to evaluate orientation information, testing outliers against specific, common field mistakes (arrow wrong direction, wrong scratch mark, etc.) 
 		\item Extract Results to table for publication:  After assembling your results, you can extract information from the {\it pmag\_results.txt} file as an tab delimited (excel ready) file or as a (my favorite) LaTex formatted table.  That way, the data in your publication will be identical to the data in the MagIC database (what a concept!).  This option allows you to do that using the program \href{#pmag_results_extract.py}{pmag\_results\_extract.py}.  It will create two files:  {\it Intensities.txt} and {\it Directions.txt}.  
 		\item Map of VGPs:  makes plots using \href{#vgpmap_magic.py}{vgpmap\_magic.py}, which reads from the {\it pmag\_results.txt} file (where VGPs are stored).  To get VGPs, you need to \href{#AssembleResults}{assemble} your results first.   If you \href{#ImportMenu}{imported} orientation data, you can select the coordinate system.  You can also choose whether or not to `flip' the reverse VGPs and the location of the 'eye' in the orthographic plot.  
-		\item Map of site locations: makes plots using \href{#basemap_magic.py}{basemap\_magic.py} which reads from the {\it er\_sites.txt} file.  Choosing high resolution requires that the    \href{http://earthref.org/PmagPy/hires.html}{high resolution} datafile be installed.  There are many more options available if you use the program on the command line - this is just for a `quick look'.
+		\item Map of site locations: makes plots using \href{#basemap_magic.py}{basemap\_magic.py} which reads from the {\it er\_sites.txt} file.  Choosing high resolution requires that the  \href{#HighRes}{high resolution} datafiles be installed.  There are many more options available if you use the program on the command line - this is just for a `quick look'.
 
 \item Make IZZI exp. chart: The IZZI paleointensity experiment (Tauxe and Staudigel, 2004) \nocite{tauxe04} is a complicated protocol which requires some concentration to get the order of heating steps in the right order.  This utility calls \href{#chartmaker.py}{chartmaker.py} to make a chart to facilitate the laboratory procedure.  
 \item Expected directions/paleolatitudes:  calls \href{#apwp.py}{apwp.py} to calculate paleodirectiions and paleolatitudes for a give location at a specified time, after assigning it a tectonic plate.  
@@ -887,7 +1014,7 @@ Use the program {\bf b\_vdm} to convert an estimated paleofield value of 33 $\mu
 \customlink{basemap_magic.py}
 \subsection{basemap\_magic.py}
 \label{ex:basemap_magic}
-\href{#MagICDatabase}{[MagIC Database]} and   \href{http://earthref.org/PmagPy/hires.html}{high resolution instructions}
+\href{#MagICDatabase}{[MagIC Database]} and   \href{#HighRes}{high resolution instructions}
 \href{https://github.com/ltauxe/PmagPy/blob/master/basemap_magic.py}{[basemap\_magic docs]}
 
 Python has a complete map plotting package and PmagPy has a utility for making simple base maps for projects.  Site location data imported for example using \href{#orientation_magic.py}{orientation\_magic.py} into an {\it er\_sites} formatted text file can be plotted using {\bf basemap\_magic.py}.  There are many options, so check the help message for more details.   Note that if you want to use  \href{http://earthref.org/PmagPy/hires.html}{high resolution datafiles}
@@ -2649,6 +2776,13 @@ data stored in  ./magic_measurements.txt
 \end{verbatim}
 
 These data can now be viewed and interpreted using, for example \href{#zeq_magic.py}{zeq\_magic.py}.  
+
+\customlink{generic_magic.py}
+\subsubsection{generic\_magic.py}
+
+COMING SOON.    
+
+
 
 \customlink{HUJI_magic.py}
 \subsubsection{HUJI\_magic.py}
