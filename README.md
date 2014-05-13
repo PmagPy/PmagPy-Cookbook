@@ -1,7 +1,7 @@
 PmagPy-Cookbook
 ===============
 
-This repository contains the cookbook for installing and using PmagPy. The cookbook can be viewed as a webpage at: http://ltauxe.github.io/PmagPy-Cookbook/PmagPy.html. PmagPy is a software package written in Python that contains programs and function libraries used for the analysis and plotting of paleomagnetic and rock magnetic data. The PmagPy code is hosted here: https://github.com/ltauxe/PmagPy 
+This repository contains the cookbook for installing and using PmagPy. The cookbook can be viewed as a webpage at: http://ltauxe.github.io/PmagPy-Cookbook/PmagPy.html or at http://earthref.org/PmagPy/cookbook/ where it is nicely presented in the earthref.org format. PmagPy is a software package written in Python that contains programs and function libraries used for the analysis and plotting of paleomagnetic and rock magnetic data. The PmagPy code is hosted here: https://github.com/ltauxe/PmagPy 
 
 Project Information
 ---------------
