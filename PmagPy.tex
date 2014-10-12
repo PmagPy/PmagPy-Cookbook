@@ -176,8 +176,42 @@ or paleointensity data:
 
 Filling in the Earth Ref data is a critical part of building a MagIC Project Directory. The Earth-Ref data relevant to this example are arranged in five er\_* tables: er\_specimens, er\_samples, er\_sites, er\_locations, er\_ages. To complete the  ER data, click the button, and follow the directions in the help window in order:
 
+\begin{itemize}
+\item Step 0: choose the appropriate headers for each of your er_* tables.  Required headers (or headers already present in your er_* tables) show up in the top box, optional headers in the bottom.  Once you have added all needed headers, click the OK button to proceed to the next step.
 
- \includegraphics[width=15cm]{EPSfiles/FigErBuilder.eps}
+\item \includegraphics[width=30cm]{EPSfiles/FigErMagicStep0.eps}
+
+ \item The next 6 steps contain editable grids.  For many columns, you can edit using drop-down menus that provide controlled vocabularies.  For others, you must manually enter data into the cell.  A single left click will bring up a drop-down menu; a double-left click will call up the cell editor.  With both types of data entry, it is possible to select a single value for the entire column. Simply click on the column label.  If that column has a drop-down menu, the menu will pop up, and the value you select will be applied to every cell in the column.  Otherwise, a text entry dialog will pop up, and the value you provide will be applied to the column.
+ 
+ \item Step 1: update the relationship between specimens and samples.  You may not rename specimens, but you may reassign them to a different sample.  It is also possible to add additional samples, using the 'Add new sample' button.  Note that specimen_type, specimen_lithology, and specimen_class columns do not show up.  They will propagate down when you select sample_type, sample_lithology, and sample_class in step 4.
+ 
+\item \includegraphics[width=30cm] {EPSfiles/FigErMagicStep1.eps}
+
+\item Step 2:  update the relationship between samples and sites.  You may rename samples, or you can reassign them to a different site.  You can also add additional sites using the "Add a new site" button.  You will be able to update other columns in the er_samples file in step 4.
+
+\item \includegraphics[width=16cm] {EPSfiles/FigErMagicStep2.eps}
+
+\item Step 3: update the relationship between sites and locations.  You may rename sites, or you can reassign them to a different location.  You can add additional locations using the "Add a new location" button.  If you select a value in these categories: class, lithology, type, longitude, or latitude, the values will propagate to the samples table.
+
+\includegraphics[width=32cm] {EPSfiles/FigErMagicStep3.eps}
+
+\item Step 4: some data from sites in step 3 has propagated into the samples table.  You may update and fill in all columns in the samples table here.  
+
+\includegraphics[width=32cm] {EPSfiles/FigErMagicStep4.eps}
+
+\item Step 5: fill in information for locations.  If you have provided site latitudes and longitudes, the columns for beginning and ending latitudes and longitudes should be filled in already.
+
+\includegraphics[width=32cm] {EPSfiles/FigErMagicStep5.eps}
+
+\item Step 6: fill in columns with any necessary information.  This is the last step.
+
+\includegraphics[width=32cm] {EPSfiles/FigErMagicStep6.eps}
+
+\item Note that if you re-run this sequence, certain values may be changed or overwritten.  For example, if you set sample_lithology to be something different from site_lithology, re-running ErMagic will cause sample_lithology to revert back to being the same as site_lithology.
+\item You are now ready to move on to making some interpretations!
+
+
+\end{itemize}
  
  \section{Demag GUI tool}
  \customlink{#DemagGUI}
