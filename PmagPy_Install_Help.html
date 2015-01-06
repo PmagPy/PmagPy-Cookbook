@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title></title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html,1,sections+ --> 
+<meta name="src" content="PmagPy_Install_Help.tex"> 
+<meta name="date" content="2015-01-06 14:29:00"> 
+<link rel="stylesheet" type="text/css" href="PmagPy_Install_Help.css"> 
+</head><body 
+>
+     <ol  class="enumerate1" >
+     <li 
+  class="enumerate" id="x1-3x1">Nothing works as advertised!
+          <ul class="itemize1">
+          <li class="itemize">First,  please  test  that  you  have  successfully  installed  the
+          appropriate Python distribution.
+          </li>
+          <li class="itemize">For  Mac  users,  find  your  command  line  (Terminal)  and  type
+          &#8220;python&#8221;. You should see something like this:
+                                                                     
+
+                                                                     
+          <div class="verbatim" id="verbatim-1">
+          $&#x00A0;python
+          &#x00A0;<br />Enthought&#x00A0;Canopy&#x00A0;Python&#x00A0;2.7.6&#x00A0;|&#x00A0;64-bit&#x00A0;|&#x00A0;(default,&#x00A0;Jun&#x00A0;&#x00A0;4&#x00A0;2014,&#x00A0;16:42:26)
+          &#x00A0;<br />[GCC&#x00A0;4.2.1&#x00A0;(Apple&#x00A0;Inc.&#x00A0;build&#x00A0;5666)&#x00A0;(dot&#x00A0;3)]&#x00A0;on&#x00A0;darwin
+          &#x00A0;<br />Type&#x00A0;"help",&#x00A0;"copyright",&#x00A0;"credits"&#x00A0;or&#x00A0;"license"&#x00A0;for&#x00A0;more&#x00A0;information.
+          &#x00A0;<br />&#x003E;&#x003E;&#x003E;
+</div>
+          <!--l. 53--><p class="nopar" >
+          </li>
+          <li class="itemize">For windows users, find your command line (Command Prompt), and
+          type &#8220;python&#8221;. You should see something like this:
+                                                                     
+
+                                                                     
+          <div class="verbatim" id="verbatim-2">
+          $&#x00A0;python
+          &#x00A0;<br />Enthought&#x00A0;Python&#x00A0;Distribution&#x00A0;--&#x00A0;www.enthought.com
+          &#x00A0;<br />Version:&#x00A0;7.3-2&#x00A0;(32-bit)
+          &#x00A0;<br />
+          &#x00A0;<br />Python&#x00A0;2.7.3&#x00A0;|EPD&#x00A0;7.3-2&#x00A0;(32-bit)|&#x00A0;(default,&#x00A0;Apr&#x00A0;12&#x00A0;2012,&#x00A0;11:28:34)
+          &#x00A0;<br />[GCC&#x00A0;4.0.1&#x00A0;(Apple&#x00A0;Inc.&#x00A0;build&#x00A0;5493)]&#x00A0;on&#x00A0;darwin
+          &#x00A0;<br />Type&#x00A0;&#8216;&#8216;credits",&#x00A0;&#8216;&#8216;demo"&#x00A0;or&#x00A0;&#8216;&#8216;enthought"&#x00A0;for&#x00A0;more&#x00A0;information.
+          &#x00A0;<br />&#x003E;&#x003E;&#x003E;
+</div>
+          <!--l. 67--><p class="nopar" >
+          </li>
+          <li class="itemize">If you don&#8217;t see one of the above messages, you have not fully
+          installed the Python distribution. You&#8217;ll need to try again. For
+          Mac users, in order to complete the install you must start
+          Canopy (it will be in Applications) and select &#8220;yes&#8221; to use
+          Canopy Python as your default Python. For Windows users,
+          you should be prompted during the install process to make
+          Enthought Python your default Python, and you need to select
+          yes.
+          </li></ul>
+     </li>
+     <li 
+  class="enumerate" id="x1-5x2">I&#8217;ve installed the proper Python distribution, but PmagPy doesn&#8217;t
+     work
+          <ul class="itemize1">
+          <li class="itemize">For Mac users:
+          <!--l. 81--><p class="noindent" >When you try to run eqarea.py -h to test your installation, you
+          get this error message:
+                                                                     
+
+                                                                     
+          <div class="verbatim" id="verbatim-3">
+          &#x00A0;-bash:&#x00A0;eqarea.py:&#x00A0;command&#x00A0;not&#x00A0;found
+</div>
+          <!--l. 84--><p class="nopar" >
+          <!--l. 86--><p class="noindent" >There are a few possible reasons for this failure, the most common of
+          which is that your path has not been correctly set. To test this, type
+          &#8220;echo $PATH&#8221; in your command line.
+          <!--l. 88--><p class="noindent" >You will see something like this:<br 
+class="newline" />
+          <!--l. 91--><p class="noindent" >/Users/****/Library/Enthought/Canopy_64bit/User/bin:
+          /usr/local/bin: /usr/local/share/npm/bin: /usr/bin: /bin: /usr/sbin:
+          /sbin: /usr/local/bin: /opt/X11/bin: /Users/****/PmagPy:/usr/texbin<br 
+class="newline" />
+          <!--l. 94--><p class="noindent" >Your $PATH may look very different, but as long as you have the
+          complete path to the PmagPy directory in there, you are golden. If the
+          directory is not in your path, you can try re-running the PmagPy
+          install script, which should set your path correctly for you. If that
+          doesn&#8217;t work, go to your home directory (to get there, type &#8220;cd&#8221; in
+          your command line). Use a text editor to open a file called
+          .bash_profile and add this line:
+                                                                     
+
+                                                                     
+          <div class="verbatim" id="verbatim-4">
+          export&#x00A0;PATH=/Users/***/PmagPy:$PATH
+</div>
+          <!--l. 96--><p class="nopar" >
+          <!--l. 98--><p class="noindent" >where *** is your username. Then restart your Terminal. If it still
+          doesn&#8217;t work, see question 3.
+          </li>
+          <li class="itemize">For Windows users:
+                                                                     
+
+                                                                     
+          <div class="verbatim" id="verbatim-5">
+          &#x00A0;"eqarea.py"&#x00A0;is&#x00A0;not&#x00A0;recognized&#x00A0;as&#x00A0;an&#x00A0;internal&#x00A0;or&#x00A0;external&#x00A0;command,
+          &#x00A0;<br />operable&#x00A0;program&#x00A0;or&#x00A0;batch&#x00A0;file.
+</div>
+          <!--l. 105--><p class="nopar" >
+          <!--l. 107--><p class="noindent" >Setting your path should not be an issue in Windows if you are using
+          the PmagPy prompt (created by the install script). PmagPy
+          functionality will be available only in the custom Command Prompt,
+          so make sure you are using it. However, if you do need to set your
+          path for some reason, see:
+          <!--l. 109--><p class="noindent" ><a 
+href="http://www.mathworks.com/matlabcentral/answers/94933-how-do-i-set-my-system-path-under-windows" >Setting your Path in Windows</a>
+          </li></ul>
+     </li>
+     <li 
+  class="enumerate" id="x1-7x3">My path is correctly set, but I still get this error message:
+                                                                     
+
+                                                                     
+     <div class="verbatim" id="verbatim-6">
+     &#x00A0;-bash:&#x00A0;eqarea.py:&#x00A0;command&#x00A0;not&#x00A0;found
+</div>
+     <!--l. 114--><p class="nopar" >
+          <ul class="itemize1">
+          <li class="itemize">For Mac users, it is possible that you need to make the python
+          scripts executable. On the command line in the directory with
+          the scripts, type: chmod a+x *.py</li></ul>
+     </li></ol>
+<!--l. 122--><p class="noindent" >Report a problem not listed above: e-mail <a 
+href="mailto:ltauxe@ucsd.edu" >ltauxe@ucsd.edu</a>. Include the following
+information: 1) the version of PmagPy that you are using, 2) your operating
+system, 3) any error messages that you got, 4) the datafile that is giving trouble,
+if relevant.
+    
+</body></html> 
+
+                                                                     
+
+
