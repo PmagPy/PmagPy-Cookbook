@@ -1,0 +1,125 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage[usenames]{color}
+%\usepackage{stylemydefs}
+%\input epsf
+\usepackage{natbib}
+%\usepackage{appendix}
+\usepackage{bm}
+\usepackage{amssymb}
+%\usepackage{rotating}
+%\usepackage{longtable}
+
+% for book only:
+
+%\usepackage[left=1in,right=1in,bottom=1.25in,top=1.25in]{geometry}
+
+%\usepackage{makeidx}
+%\makeindex
+
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhf{}
+%\fancyfoot[C]{\thepage}
+%\fancyhead[LO]{\bfseries\rightmark} 
+%\fancyhead[RE]{\bfseries\leftmark} 
+% 
+
+
+
+\usepackage{hyperref} 
+
+ \begin{document}
+ 
+\begin{enumerate}
+ 
+
+ 
+ \item Nothing works as advertised!
+
+ 
+  \begin{itemize}
+ 
+ \item First, please test that you have successfully installed the appropriate Python distribution.  
+ 
+ \item For Mac users, find your command line (Terminal) and type ``python".  You should see something like this:
+
+
+\begin{verbatim}$ python
+Enthought Canopy Python 2.7.6 | 64-bit | (default, Jun  4 2014, 16:42:26) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+\end{verbatim}
+
+
+
+\item For windows users, find your command line (Command Prompt), and type ``python''.  You should see something like this:
+
+\begin{verbatim}$ python
+Enthought Python Distribution -- www.enthought.com
+Version: 7.3-2 (32-bit)
+
+Python 2.7.3 |EPD 7.3-2 (32-bit)| (default, Apr 12 2012, 11:28:34) 
+[GCC 4.0.1 (Apple Inc. build 5493)] on darwin
+Type ``credits", ``demo" or ``enthought" for more information.
+>>>
+\end{verbatim}
+
+\item If you don't see one of the above messages, you have not fully installed the Python distribution.  You'll need to try again.  For Mac users, in order to complete the install you must start Canopy (it will be in Applications) and select ``yes'' to use Canopy Python as your default Python.  For Windows users, you should be prompted during the install process to make Enthought Python your default Python, and you need to select yes.  
+
+\end{itemize}
+
+
+\item I've installed the proper Python distribution, but PmagPy doesn't work
+
+\begin{itemize}
+
+\item For Mac users:
+
+
+When you try to run eqarea.py -h to test your installation, you get this error message:
+
+\begin{verbatim} -bash: eqarea.py: command not found
+\end{verbatim}
+
+There are a few possible reasons for this failure, the most common of which is that your path has not been correctly set.  To test this, type ``echo \$PATH" in your command line.  
+
+You will see something like this:\\
+%\begin{verbatim}
+
+/Users/****/Library/Enthought/Canopy\_64bit/User/bin: /usr/local/bin: /usr/local/share/npm/bin: /usr/bin: /bin: /usr/sbin: /sbin: /usr/local/bin: /opt/X11/bin: /Users/****/PmagPy:/usr/texbin\\
+%\end{verbatim}
+
+Your \$PATH may look very different, but as long as you have the complete path to the PmagPy directory in there, you are golden.  If the directory is not in your path, you can try re-running the PmagPy install script, which should set your path correctly  for you.  If that doesn't work, go to your home directory (to get there, type ``cd" in your command line).  Use a text editor to open a file called .bash\_profile and add this line:  
+
+\begin{verbatim}export PATH=/Users/***/PmagPy:$PATH\end{verbatim}
+
+where *** is your username.  Then restart your Terminal.  If it still doesn't work, see question 3.
+
+
+\item For Windows users:
+
+\begin{verbatim} "eqarea.py" is not recognized as an internal or external command, 
+operable program or batch file.
+\end{verbatim}
+
+Setting your path should not be an issue in Windows if you are using the PmagPy prompt (created by the install script).  PmagPy functionality will be available only in the custom Command Prompt, so make sure you are using it.  However, if you do need to set your path for some reason, see:  
+
+ \href{http://www.mathworks.com/matlabcentral/answers/94933-how-do-i-set-my-system-path-under-windows}{Setting your Path in Windows}
+
+\end {itemize}
+
+\item  My path is correctly set, but I still get this error message: \begin{verbatim} -bash: eqarea.py: command not found
+\end{verbatim}
+
+\begin{itemize}
+\item  For Mac users, it is possible that you need to make the python scripts executable. On the command line in the directory with the scripts, type: chmod a+x *.py
+\end{itemize}
+
+\end{enumerate}
+
+Report a problem not listed above: e-mail \href{mailto:ltauxe@ucsd.edu}{ltauxe@ucsd.edu}. Include the following information: 1) the version of PmagPy that you are using, 2) your operating system, 3) any error messages that you got, 4) the datafile that is giving trouble, if relevant.
+
+
+\end{document}
