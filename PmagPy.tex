@@ -219,27 +219,27 @@ Filling in the Earth Ref data is a critical part of building a MagIC Project Dir
  
  \item Step 1: Update the relationship between specimens and samples.  You may not rename specimens, but you may reassign them to a different sample.  It is also possible to add additional samples, using the 'Add new sample' button.  Note that specimen\_type, specimen\_lithology, and specimen\_class columns do not show up.  They will propagate down when you select sample\_type, sample\_lithology, and sample\_class in step 4.
  
- \includegraphics[width=16cm] {EPSfiles/ER_Builder_Step1.png}
+ \includegraphics[width=16cm] {EPSfiles/FigErMagicStep1.eps}
 
-\item Step 2:  Update the relationship between samples and sites.  You may rename samples, or you can reassign them to a different site.  You can also add additional sites using the ``Add a new site`` button.  You will be able to update other columns in the er\_samples file in step 4. You must choose a legal entry from the \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies} for the following headers: ``site\_class'', ``site\_lithology'', ``site\_type''. You may combine more than one controlled vocabulary by making them a colon delimited list. In this example,  site\_class=Extrusive:Igneous; site\_lithology=Basaltic Lava; site\_type=Lava Flow
+\item Step 2:  Update the relationship between samples and sites.  You may rename samples, or you can reassign them to a different site.  You can also add additional sites using the ``Add a new site`` button.  You will be able to update other columns in the er\_samples file in step 4. 
 
- \includegraphics[width=16cm] {EPSfiles/ER_Builder_Step2.png}
+ \includegraphics[width=16cm] {EPSfiles/FigErMagicStep2.eps}
 
-\item Step 3: Update the relationship between sites and locations.  You may rename sites, or you can reassign them to a different location.  You can add additional locations using the ``Add a new location'' button.  If you select a value in these categories: class, lithology, type, longitude, or latitude, the values will propagate to the samples table.
+\item Step 3: Update the relationship between sites and locations.  You may rename sites, or you can reassign them to a different location.  You can add additional locations using the ``Add a new location'' button.  You must choose a legal entry from the \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies} for the following headers: ``site\_class'', ``site\_lithology'', ``site\_type''. You may combine more than one controlled vocabulary by making them a colon delimited list.  If you select a value in these categories: class, lithology, type, longitude, or latitude, the values will propagate to the samples table.  In this example,  site\_class=Extrusive:Igneous; site\_lithology=Basaltic Lava; site\_type=Lava Flow  
 
-\includegraphics[width=32cm] {EPSfiles/ER_Builder_Step3.png}
+\includegraphics[width=32cm] {EPSfiles/FigErMagicStep3.eps}
 
 \item Step 4: Some data from sites in Step 3 has propagated into the samples table.  You may update and fill in all columns in the samples table here.  
 
-\includegraphics[width=32cm] {EPSfiles/ER_Builder_Step4.png}
+\includegraphics[width=32cm] {EPSfiles/FigErMagicStep4.eps}
 
 \item Step 5: Fill in information for locations.  If you have provided site latitudes and longitudes, the columns for beginning and ending latitudes and longitudes should be filled in already. You must choose a legal entry from the \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies} for the  ``location\_type''. In this example: location\_type = outcrop.
 
-\includegraphics[width=32cm] {EPSfiles/ER_Builder_Step5.png}
+\includegraphics[width=32cm] {EPSfiles/FigErMagicStep5.eps}
 
 \item Step 6: Fill in columns with any necessary information.   In this example, age=3.4; age\_sigma=0.03 (not a default header); age\_unit=Ma (from controlled vocabularies), magic\_method\_codes  = GM-ARAR-AP (from \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies}). It means ``40Ar/39Ar age determination: Age plateau.''
 
-\includegraphics[width=32cm] {EPSfiles/ER_Builder_Step6.png}
+\includegraphics[width=32cm] {EPSfiles/FigErMagicStep6.eps}
 
 \item Note that if you re-run this sequence, certain values may be changed or overwritten.  For example, if you set sample\_lithology to be something different from site\_lithology, re-running ErMagic will cause sample\_lithology to revert back to being the same as site\_lithology.
 \item You are now ready to move on to making some interpretations!

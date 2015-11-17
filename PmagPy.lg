@@ -100,6 +100,12 @@ File: PmagPy.tmp
 File: PmagPy.tmp
 File: PmagPy.tmp
 File: PmagPy.tmp
+File: PmagPy.tmp
+File: PmagPy.tmp
+File: PmagPy.tmp
+File: PmagPy.tmp
+File: PmagPy.tmp
+File: PmagPy.tmp
 Css: p.noindent { text-indent: 0em }
 Css: td p.noindent { text-indent: 0em; margin-top:0em; }
 Css: p.nopar { text-indent: 0em; }
@@ -234,12 +240,6 @@ Css: .figure img.graphics {margin-left:10%;}
 --- needs --- PmagPy.idv[16] ==> PmagPy7x.png ---
 --- needs --- PmagPy.idv[18] ==> PmagPy8x.png ---
 --- needs --- PmagPy.idv[20] ==> PmagPy9x.png ---
-File: EPSfiles/ER_Builder_Step1.png
-File: EPSfiles/ER_Builder_Step2.png
-File: EPSfiles/ER_Builder_Step3.png
-File: EPSfiles/ER_Builder_Step4.png
-File: EPSfiles/ER_Builder_Step5.png
-File: EPSfiles/ER_Builder_Step6.png
 --- needs --- PmagPy.idv[22] ==> PmagPy10x.png ---
 --- needs --- PmagPy.idv[24] ==> PmagPy11x.png ---
 --- needs --- PmagPy.idv[26] ==> PmagPy12x.png ---
@@ -249,24 +249,24 @@ File: EPSfiles/ER_Builder_Step6.png
 --- needs --- PmagPy.idv[34] ==> PmagPy16x.png ---
 --- needs --- PmagPy.idv[36] ==> PmagPy17x.png ---
 --- needs --- PmagPy.idv[38] ==> PmagPy18x.png ---
---- needs --- PmagPy.idv[39] ==> PmagPy19x.png ---
---- needs --- PmagPy.idv[41] ==> PmagPy20x.png ---
---- needs --- PmagPy.idv[43] ==> PmagPy21x.png ---
---- needs --- PmagPy.idv[45] ==> PmagPy22x.png ---
---- needs --- PmagPy.idv[47] ==> PmagPy23x.png ---
---- needs --- PmagPy.idv[49] ==> PmagPy24x.png ---
+--- needs --- PmagPy.idv[40] ==> PmagPy19x.png ---
+--- needs --- PmagPy.idv[42] ==> PmagPy20x.png ---
+--- needs --- PmagPy.idv[44] ==> PmagPy21x.png ---
+--- needs --- PmagPy.idv[46] ==> PmagPy22x.png ---
+--- needs --- PmagPy.idv[48] ==> PmagPy23x.png ---
+--- needs --- PmagPy.idv[50] ==> PmagPy24x.png ---
 --- needs --- PmagPy.idv[51] ==> PmagPy25x.png ---
 --- needs --- PmagPy.idv[53] ==> PmagPy26x.png ---
---- needs --- PmagPy.idv[54] ==> PmagPy27x.png ---
---- needs --- PmagPy.idv[56] ==> PmagPy28x.png ---
---- needs --- PmagPy.idv[57] ==> PmagPy29x.png ---
---- needs --- PmagPy.idv[59] ==> PmagPy30x.png ---
---- needs --- PmagPy.idv[60] ==> PmagPy31x.png ---
---- needs --- PmagPy.idv[62] ==> PmagPy32x.png ---
---- needs --- PmagPy.idv[64] ==> PmagPy33x.png ---
---- needs --- PmagPy.idv[66] ==> PmagPy34x.png ---
---- needs --- PmagPy.idv[68] ==> PmagPy35x.png ---
---- needs --- PmagPy.idv[70] ==> PmagPy36x.png ---
+--- needs --- PmagPy.idv[55] ==> PmagPy27x.png ---
+--- needs --- PmagPy.idv[57] ==> PmagPy28x.png ---
+--- needs --- PmagPy.idv[59] ==> PmagPy29x.png ---
+--- needs --- PmagPy.idv[61] ==> PmagPy30x.png ---
+--- needs --- PmagPy.idv[63] ==> PmagPy31x.png ---
+--- needs --- PmagPy.idv[65] ==> PmagPy32x.png ---
+--- needs --- PmagPy.idv[66] ==> PmagPy33x.png ---
+--- needs --- PmagPy.idv[68] ==> PmagPy34x.png ---
+--- needs --- PmagPy.idv[69] ==> PmagPy35x.png ---
+--- needs --- PmagPy.idv[71] ==> PmagPy36x.png ---
 --- needs --- PmagPy.idv[72] ==> PmagPy37x.png ---
 --- needs --- PmagPy.idv[74] ==> PmagPy38x.png ---
 --- needs --- PmagPy.idv[76] ==> PmagPy39x.png ---
@@ -324,6 +324,12 @@ File: EPSfiles/ER_Builder_Step6.png
 --- needs --- PmagPy.idv[180] ==> PmagPy91x.png ---
 --- needs --- PmagPy.idv[182] ==> PmagPy92x.png ---
 --- needs --- PmagPy.idv[184] ==> PmagPy93x.png ---
+--- needs --- PmagPy.idv[186] ==> PmagPy94x.png ---
+--- needs --- PmagPy.idv[188] ==> PmagPy95x.png ---
+--- needs --- PmagPy.idv[190] ==> PmagPy96x.png ---
+--- needs --- PmagPy.idv[192] ==> PmagPy97x.png ---
+--- needs --- PmagPy.idv[194] ==> PmagPy98x.png ---
+--- needs --- PmagPy.idv[196] ==> PmagPy99x.png ---
 File: EPSfiles/notebook.png
 File: EPSfiles/SnakeRiver.png
 --- characters ---
