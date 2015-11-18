@@ -866,9 +866,6 @@ There are many ways of
 editing text and the subject is beyond the scope of this documentation. Text editing is a blessing and a curse.  You either love it or
 hate it and in the beginning, and if you are used to programs like Word, you will certainly hate it. (And if you are used to a decent text editor, you will hate Word!).      But you can't use Word because the output is in a weird format that no scripting languages read easily.  So you have to use an editor that will produce a plain (ascii) file, like Notepad,  TextWrangler or Sublime Text.  \href{http://textwrangler.onfreedownload.com}{TextWrangler}  is freeware available for Macs and the notepad comes standard in the Windows operating system.   Fortunately for Mac users, Enthought Python's Canopy programming environment comes with its own text editor.
 
-
-
-
 \customlink{PmagPy}
 
 \chapter{The {\bf PmagPy} software package}
@@ -878,12 +875,12 @@ The {\bf PmagPy} software package is a comprehensive set of programs for paleoma
 
 When you type something on your \href{#command_line}{command line}, your operating system looks for programs of the same name in special places.  These are special ``paths'' so the directory with your Python scripts has to ``be in your path''.  To inform the operating system of the new directory, you need to ``set your path''.    It should have been set when you installed {\bf PmagPy}.
 
-
-\section{The graphical demagnetization data analysis program (demag_gui.py)}
+\section{Graphical data analysis programs}
+\subsection{demag\_gui.py}
 
 The demag\_gui program enables the display and analysis of paleomagnetic demagnetization data. The software will display specimen level data within the chosen directory as a Zijderveld plot, equal area plot and intensity plot. Interpretations can be made to the data as least-squares line or plane fits. These interpretations can then be exported as MagIC pmag files.
 
-\subsection{Launching}\label{launching}
+\subsubsection{Launching}\label{launching}
 
 The best way to launch the demag\_gui application is through the
 QuickMagIC app. If PmagPy has been added to your PATH you can type QuickMagIC.py at the command line to launch it or you can navigate to the directory containing it and type \texttt{python  ./QuickMagIC.py}. Within the QuickMagIC app, data can be converted from the format of a particular lab into MagIC format so that it can be displayed and analyzed within the demag\_gui. The program can be started by clicking on the demag\_gui button in the QuickMagIC GUI, shown below. If no new window pops up after clicking this button, click on the Python icon  (the little space ship) on your dock.
@@ -896,7 +893,7 @@ Or if PmagPy has been added to your PATH you can simply type
 demag\_gui.py at the command line. \textbf{Note:} on OSX it is
 recommended to launch through the QuickMagIC program as on wxpython 2.9 the drop down boxes behave better when demag\_gui is launched this way.
 
-\subsection{Interpretation of Specimen
+\subsubsection{Interpretation of Specimen
 Data}\label{interpretation-of-specimen-data}
 
 \subsubsection{Adding Interpretations:}\label{adding-interpretations}
@@ -958,7 +955,7 @@ Interpretations}\label{deleting-specimen-interpretations}
 
 If you would like to delete a single interpretation, select the one you wish to delete from the interpretation drop down menu and click delete. Alternatively, if you wish to clear all interpretations you may go into the interpretation editor located under the tools menu, select the fits you wish to delete and click the ``delete selected'' button.\\
 
-\subsection{Higher Level Plots and
+\subsubsection{Higher Level Plots and
 Interpretation}\label{higher-level-plots-and-interpretation}
 
 The set of drop down boxes to the right of the interpretation data are there to determine what level you want to analyze in the higher level analysis options include: site, sample, location, and study. The drop-down below this selects which of the available sites, samples, location, or studies to display.
@@ -972,6 +969,147 @@ The mean statistics for the chosen higher level mean are displayed in the lower 
 In order to more easily view and edit specimen interpretation data there is a specimen interpretation editor which can be launched from the tools menu. This panel details the fits made to the data and their parameters from which you can select which interpretation to view by double clicking on it. In the list, the currently selected interpretation is highlighted blue as shown in the image below. You can mark interpretations as bad which removes them from any Fisher means or other high level means by right clicking on their entry in the list. All interpretations marked bad are colored yellow in the list and marked as an `x' on the plot. The specimen entry associated with this fit will be given a bad (`b') flag within the pmag\_specimens table. Interpretations can be highlighted by clicking on the list and holding the shift or ctrl/command key to select multiple interpretations. Doing so allows you to delete or alter the characteristics of multiple interpretations at once without having to select each one in turn. This mass alteration is allowable using the the Name/Color/Bounds boxes to input the changes and then clicking the ``apply changes to highlighted fits'' button. You can delete highlighted fits using the ``delete highlighted fits'' button. The ``add fit'' button in the interpretation editor adds a fit to the current specimen. In the case of interpreting large data sets, you can reduce the number of items plotted on the equal area at the bottom of the editor and the number of entries in the log by changing the display settings.
 
 \includegraphics[width=15 cm]{EPSfiles/demag_gui_InterpEditor.eps}
+
+\customlink{thellier_GUI.py}
+
+\subsection{thellier\_gui.py}
+\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#ch10}{[Essentials Chapter 10]} and \href{#MagIC}{[MagIC}]
+\href{https://github.com/ltauxe/PmagPy/blob/master/Thellier_GUI_tutorial.pdf}{[Thellier\_GUI\_tutorial.pdf]}
+
+The program {\bf thellier\_gui.py}  combines functions from \href{#thellier_magic.py}{thellier\_magic.py} and new tools described by  \href{http://dx.doi.org/10.1002/ggge.20062}{Shaar and Tauxe (2013)} \nocite{shaar13} in a user-friendly graphical user interface (GUI).  It can also be called from within \href{#QuickMagIC.py}{QuickMagIC.py}, using files already prepared in a  \href{#ThisProject}{This Project} directory and the interpretations from {\bf thellier\_gui.py} are part of the workflow of the  \href{#QuickMagIC.py}{QuickMagIC} GUI.   This section is a brief introduction on how to use {\bf thellier\_gui.py} as a stand alone application.
+
+\noindent  A complete list of the definitions for paleointensity statistics used by Thellier\_GUI.py is available as a supplement to the article by \href{#http://dx.doi.org/10.1002/2013GC005135}{Paterson et al., 2014}  \nocite{paterson14} and available for download here:
+
+  \url{http://onlinelibrary.wiley.com/store/10.1002/2013GC005135/asset/supinfo/ggge20412-sup-0001-suppinfoCORRECTED.pdf?v=1&s=e1c3ab0a86c942d1039f6d2e15496aa172dc86ec}
+
+
+\subsubsection{Starting the GUI}
+The GUI can be opened by typing {\bf thellier\_gui.py}  on the  \href{#command_line}{command line}.
+
+\customlink{choose_directory}
+A ``choose project directory'' dialog window will appear as soon as the GUI is started.
+%
+%	\includegraphics[width=15cm]{EPSFiles/Screenshot_choose_directory.eps}
+%
+%
+Your  \href{#Project_Directory}{ThisProject} directory should include a file named {\it magic\_measurements.txt} (created for example by \href{#QuickMagIC.py}{\bf QuickMagIC.py}.   If a file named {\it rmag\_anisotropy.txt} is in the project directory, then the program reads in the anisotropy data. Reading and processing the measurements files may take several seconds, depending on the number of the specimens.
+
+
+\subsubsection{Reading and compiling measurements data}
+When your \href{#Project_Directory}{ThisProject}  project directory is selected, the program  reads all the measurement data, checks them, processes them and sorts them. If non-linear-TRM (NLT) data exist in {\it magic\_measurement.txt}  then the program tries to process the data using Equations (1)-(3) in \href{#http://dx.doi.org/MAGIC/doi/10.1016/j.epsl.2009.12.022}{Shaar et al., 2010}. \nocite{shaar10}  The program reads {\it magic\_measurement.txt}, and processes the measurements for presentation as Arai  and Zijderveld plots.
+We recommend that you check all the warnings and errors in {\it Thellier\_GUI.log} before starting to interpret the data.  For details about warnings and error messages during these steps, consult the tutorial document in the {\it thellier\_GUI} folder in  \href{#Datafiles}{Datafiles}.  Also, consult the Preferences to change certain plotting options.
+
+\subsubsection{Main panel}
+
+This figure shows a snapshot of the main panel.
+
+	\includegraphics[width=30cm]{EPSFiles/Screenshot_main_panel.eps}
+
+\noindent
+	The top field in the  panel includes the following buttons/controls (from left to right):
+	\begin{itemize}
+\item {\bf Specimen:} a list of the specimens in the project folder sorted by name.
+\item {\bf previous/next:} buttons to move forward and backward in the specimens list.
+\item {\bf T min/T max:} buttons to select temperature bounds.
+\item {\bf save/delete:} save or delete current interpretation. This information will be used later to generate a \href{#mk_redo.py}{redo file}.
+\item {\bf B\_lab:} laboratory field in units of $\mu T$.
+\item {\bf B\_anc:} specimen's paleointensity in units of $\mu T$.
+\item {\bf Aniso Correction:} anisotropy correction factor.
+\item {\bf NLT Correction:} Non-Linear TRM (NLT) correction factor.
+\item {\bf Dec/Inc:} Specimen declination/inclination calculated by PCA of the NRM in the selected temperature bounds.
+\item Sample mean, number of specimens, standard deviation and percent standard deviation.
+\end{itemize}
+
+The center of the main panel has these elements:
+
+\begin{itemize}
+\item {\bf measurements text panel:} Four columns of the measurement data: Step is ``N`` for NRM, ``Z`` for zero field step, ``I`` for infield step, ``P`` for pTRM check, and ``T`` for tail check. The temperature of each step is given in C. Also shown  declination, inclination and moment (in units of $Am^2$)
+\item {\bf Arai plot:}  Arai plot normalized by $NRM_0$. blue circles are zero field steps, red circles are infield steps, triangles are pTRM checks, blue squares are tail checks. Temperatures are displayed near data points. Temperature bounds and best fit line are marked in green. 'SCAT box' is marked with dashed lines (only if SCAT is True).
+\item {\bf Zijderveld plot:}  A Zijderveld plot of the NRM step.  The x axis is rotated to the direction of the NRM, blue is the x-y  projection, and red is x-z projection.
+\item {\bf Equal area plot:}  An equal area projections  of the NRM steps. solid circles are positive inclination. open circles are negative inclinations.
+\item {\bf Moment-temperature plot:}  NRMs are in blue, pTRMs are in red.
+\item {\bf sample data:}  If at least two specimens have a saved interpretation, then their values are displayed on this plot. The mean $\pm$ standard deviation of the mean are marked as  horizontal lines.
+\end{itemize}
+
+The bottom of the main panel include paleointensity statistics. The first line has  the threshold values (empty if N/A). The second line is the specimen's statistics. For details see Appendix A1 in \href{http://dx.doi.org/10.1002/ggge.20062}{Shaar and Tauxe (2013)}. \nocite{shaar13}
+%
+%\subsubsection{ Tutorial by example}
+% If you have not already done so, locate  the example data files for PmagPy in the \href{#Datafiles}{Datafiles} directory bundled with the {\bf PmagPy} software package.   There are two folders located in the{\it thellier\_gui} example foler: SU1\_example and Tauxe\_2006\_example.
+%
+%
+%{Case study 1: SU1\_example:}
+%
+%Find your \href{#command_line}{ command line} and launch the program:
+%\begin{verbatim}
+%thellier_gui.py
+%\end{verbatim}
+%A \href{#choose_directory} {choose directory} dialog window will appear. Select the SU\_1 project directory and click on the ``choose'' button.
+%
+%\begin{itemize}
+%\item{Manual interpretation}
+%Manual interpretation is the conventional approach of selecting temperature bounds for each specimen. Here, as example, we will interpret one sample, su100601,  manually.
+%\customlink{acceptance_criteria}
+%
+%\begin{itemize}
+%\item Set acceptance criteria: From the menu-bar choose  Analysis $\rightarrow$ Acceptance criteria $\rightarrow$ Change acceptance criteria. A criteria dialog box will appear.
+%\item In the first line (specimen's statistics) set the following values: n=3, int\_ptrm\_n=2, SCAT=false (unchecked), gap\_max=0.5, f\_vds=0.75, beta=0.1, MAD=6, DRATS=20. delete the values in the other boxes (empty boxes).
+%\item In the second line (Sample's acceptance criteria) set the following values: int\_n=3. delete the value in the other boxes.
+%\item In the third line (Sample mean calculation method: STDEV-OPT) check the Enable/Disable box, and set the following values: int\_sigma=6, int\_sigma\_perc=10. Delete values in the other boxes. Figure 3 shows how it should look. Click on the OK button. A message dialog will appear telling you the criteria that you chose are saved in a file name pmag\_criteria.txt. The next time you will open the GUI in this project directory, these criteria will automatically be chosen. Click OK on the message box.
+%\item Manual interpretation of sample su100601: choose specimens su100601a from the specimen list. choose temperature bounds from the Tmin/Tmax windows: 200 and 580. B\_anc shows 61.7 in green, which means that this interpretation passes the specimen's acceptance criteria. Now, change Tmax to 530.  B\_anc window change color to red, and also the fvds window (the row on the bottom of the GUI). This is an indication that the interpretation did not meet the criterion for fvds. Change  Tmax to 580 (as before) and press ``save`` button. The interpretation in saved.
+%\item Click on the next button to choose the next specimen (su100601b). Before analyzing this specimen, press on the ``previous`` button, so you can see that your previous interpretation was saved. click on ``next`` to return again to specimen su100601b. Find  temperature bounds that pass the criteria (for example 200,580). Make sure that all colors are green, and click on the ``save`` button. Go over all the other specimens in the sample (su10060a to su100601g). you will find that three specimens can pass: a,c, and g. Look at the Sample data figure (top right) it shows the saved interpretation for all the specimens in the sample, and the mean $\pm$  standard deviation of the mean.
+%\item To save all your interpretation into files, choose from the menubar Analysis $\rightarrow$ Save current interpretation. Three files will be generated in the project directory:
+%\begin{itemize}
+%\item thellier\_GUI.redo (the temperature bounds for each specimen):
+%\begin{verbatim}
+%su100601a 473 853
+%su100601c 473 853
+%su100601g 473 853
+%\end{verbatim}
+%Note that the temperature bounds are in Kelvin.
+%\item {\it thellier\_GUI.specimens.txt}: (the paleointensity statistics for each specimen - according to the headers. It is easy to view the content of this file using Excel):
+%\begin{verbatim}
+%su100601a	su100601	61.7	200	580	40.0	1.07	1.01	15	8	0.77	0.87	0.89	0.14	0.02	N/A	0.63	N/A	5.11	4.14	PASS
+%su100601c	su100601	54.4	200	580	40.0	0.94	N/A	15	8	0.60	0.78	0.79	0.23	0.01	N/A	5.19	N/A	2.51	1.33	PASS
+%su100601g	su100601	58.4	200	580	40.0	1.00	1.01	15	8	0.70	0.83	0.85	0.19	0.02	N/A	2.80	N/A	3.12	1.96	PASS
+%\end{verbatim}
+%\item {\it thellier\_GUI.samples.txt:} (the paleointensity statistics of the samples):
+%\end{itemize}
+%\begin{tabular}{cccccc}
+%\hline
+%er\_sample\_name &sample\_int\_n&sample\_int\_uT&sample\_int\_sigma\_uT&sample\_int\_sigma\_perc\\
+%su100601 &	3&	58.2&	3.0&	5.1\\
+%\hline
+%\end{tabular}
+%
+%
+%\item You can save the Arai plot (or any other plots) from the File menu. Choose  file  $\rightarrow$ Save Plot $\rightarrow$ Save Arai plot. A file dialog window will appear. You can change the format of the figure in the bottom tab (pdf, svg, or png), but you can also save as other format by adding the appropriate suffix to the file name.
+%\item close the GUI: File  $\rightarrow$ Quit.
+%\item Re-open the GUI as before (by writing the command  ``thellier\_gui.py''  in the terminal window) and choose the same working directory (SU1\_example). Notice now that the criteria that you set before are automatically used. To import your previous interpretations and continue working on this dataset choose from the menu bar Analysis $\rightarrow$ import previous interpretation. Choose thellier\_GUI.redo and click on the 'open' button.
+%\end{itemize}
+%
+%\item{Automatic interpretation - \it{thellier\_auto\_interpreter:}}
+%Instead of trying to find manually the most appropriate temperature bounds, the  {\bf thellier\_auto\_interpreter.py} program allows a fast and consistent way to choose the temperature bounds for the specimens. For details see \href{http://magician.ucsd.edu/~ltauxe/CV/open/shaar12.pdf}{Shaar and Tauxe (2012)}.  \nocite{shaar12}
+%\begin{itemize}
+%\item We will use the same \href{#acceptance_criteria }{acceptance criteria}.
+%\item Choose from the menu bar Auto interpreter $\rightarrow$ Run Thellier auto interpreter. The interpreter will run approximately 30 seconds. When its done, a message window will appear saying that the interpreter finished successfully (if not, check for errors in the terminal window, or in a file name {\it thellier\_interpreter.log}  located in a folder named {\it thellier\_interpreter}. If the issue cannot be resolved send an e-mail with the description of the problem to rshaar@ucsd.edu). Click OK in the message window.
+%\item The automatic interpretations are automatically saved, and we can review them on the Arai plots.  Let's look, for example, at the sample we interpreted  manually: su100601. Choose specimen su100601a from the specimens list. At first glance, the choice seems strange because the automatic interpretation chose temperature bounds 0 and 580. A choice between 200 and 580 may seem more reasonable as it provides an nearly straight line. The sample data figure explains this issue. The {\bf thellier\_auto\_interpreter.py} program chooses the interpretations that minimize the standard deviation of the sample's mean. Six specimens from this sample passed the criteria, and the value of su100601a is much higher than the remaining five. So, the thellier\_auto\_interpreter chose the 'acceptable' interpretation with the shallowest  slope. Go over the other specimens in the sample, and review the automatic interpretations. If you want, you can change the automatic interpretation, and save your own ``manual'' interpretation by choosing Analysis $\rightarrow$ Save current interpretation. Note that the output of {\bf thellier\_auto\_interpreter.py} is sensitive to the choice of the acceptance criteria, and different criteria may lead to significantly different final results.
+%\end{itemize}
+%\item{Choosing the optimal criteria - \it{thellier\_optimizer\_2d:}}
+%\href{http://magician.ucsd.edu/~ltauxe/CV/open/shaar12.pdf}{Shaar and Tauxe (2012)} \nocite{shaar12} discuss a method to choose the optimal specimen's acceptance criteria. Here, we follow the example given in this paper. \href{http://magician.ucsd.edu/~ltauxe/CV/open/shaar12.pdf}{Shaar and Tauxe (2012)} suggested using  seven statistics for specimen's acceptance criteria. The choice of four of which is trivial, and the remaining three are MAD, FRAC and $\beta$. The thellier\_optimizer\_2D helps finding the optimal values for FRAC and $\beta$.  The thellier\_optimizer\_2D  required three types of inputs: 'fixed\_criteria``, ``test\_groups``, and ``test\_samples``, as described below:
+%\begin{itemize}
+%\item The test groups are defined in an ``er\_sample`` file. An example for this file is given in working folder SU-1 named  ``optimizer\_test\_groups.txt``. Open this file in Excel to understand its syntax. The first line is a general header. The rest of the file include sample name, group name, and comments.
+%\item To run the optimizer choose from the menu bar Optimizer $\rightarrow$ Run Thellier optimizer. click OK in the  message dialog. The first step is setting the 'fixed\_criteria``. We choose for the specimen's criteria: n=3, int\_ptrm\_n=2,SCAT=checked, gap\_max=0.6, MAD=5.0. We choose for the sample's criteria:int\_n=3, int\_n\_outlier\_check=6, EnableSTDEV-OPT, int\_sigme\_uT=5, int\_sigma\_perc=6. The rest of the boxes should be empty. click OK. click OK on the message window that will appear.
+%\item The thellier\_optimizer\_2D dialog window will appear. The first two rows of controls for choosing the range for $\beta$ and FRAC. choose beta from 0.05 to 0.15 in steps of 0.1 and FRAC from 0.7 to 0.9 in step of 0.02. \\
+%Inert the following functions to the text panel:\\
+%study\_sample\_n\\
+%max\_group\_int\_sigma\_uT\\
+%((max\_group\_int\_sigma\_uT $<$= 5) or (max\_group\_int\_sigma\_perc $<$= 6)) and  int(study\_sample\_n) \\
+%click on the ``Check function syntax`` button. If there are no typos, then the text box below the button should be PASS.\\
+%click on the ``Choose optimizer group file`` button. A file dialog window will appear. choose the file ``optimizer\_test\_groups.txt``. Click the button ``Run Optimizer`` to start. The runtime using these parameter is about 8 minutes. `
+%\item All the output files of the optimizer are saved in a folder named ``optimizer`` (see section 4.4). Compare the figures in the 'pdf' folder with Figure 7 in \href{http://magician.ucsd.edu/~ltauxe/CV/open/shaar12.pdf}{Shaar and Tauxe (2012)}.
+%\item The figure in optimization\_function\_2.pdf suggest using $\beta \leq$0.10 and FRAC  $ \geq $0.79. Set these values as acceptance criteria, and run thellier\_auto\_interpreter.
+%\end{itemize}
+%\end{itemize}
 
 \section{The command line PmagPy programs}
 
@@ -1010,16 +1148,7 @@ The \href{#QuickMagIC.py}{QuickMagIC.py} program generates the desired commands 
 
 A link to these source code/help menu files is provided for each program listed below with the format [program\_name\_docs].
 
-
-\customlink{Examples}
-
-\section{Examples of how to use {\bf PmagPy} programs}
-\label{ex:PmagPyEx}
-
-In all examples, the '\%' prompt stands for whatever command line prompt you have.
-The example datafiles referred to in the following are located in the {\it Datafiles} directory bundled with the {\bf PmagPy} software distribution.
-
-
+Examples of how to use command line {\bf PmagPy} programs are given below. In all examples, the '\%' prompt stands for whatever command line prompt you have. The example datafiles referred to in the following are located in the {\it Datafiles} directory bundled with the {\bf PmagPy} software distribution.
 
 \customlink{aarm_magic.py}
 
@@ -4256,150 +4385,6 @@ Time difference between Greenwich Mean Time (hrs to ADD to
 
 In any case, the declination is 154.2$^{\circ}$.
 
-%
-\customlink{thellier_GUI.py}
-
-\subsection{thellier\_gui.py}
-\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#ch10}{[Essentials Chapter 10]} and \href{#MagIC}{[MagIC}]
-\href{https://github.com/ltauxe/PmagPy/blob/master/Thellier_GUI_tutorial.pdf}{[Thellier\_GUI\_tutorial.pdf]}
-
-The program {\bf thellier\_gui.py}  combines functions from \href{#thellier_magic.py}{thellier\_magic.py} and new tools described by  \href{http://dx.doi.org/10.1002/ggge.20062}{Shaar and Tauxe (2013)} \nocite{shaar13} in a user-friendly graphical user interface (GUI).  It can also be called from within \href{#QuickMagIC.py}{QuickMagIC.py}, using files already prepared in a  \href{#ThisProject}{This Project} directory and the interpretations from {\bf thellier\_gui.py} are part of the workflow of the  \href{#QuickMagIC.py}{QuickMagIC} GUI.   This section is a brief introduction on how to use {\bf thellier\_gui.py} as a stand alone application.
-
-\noindent  A complete list of the definitions for paleointensity statistics used by Thellier\_GUI.py is available as a supplement to the article by \href{#http://dx.doi.org/10.1002/2013GC005135}{Paterson et al., 2014}  \nocite{paterson14} and available for download here:
-
-  \url{http://onlinelibrary.wiley.com/store/10.1002/2013GC005135/asset/supinfo/ggge20412-sup-0001-suppinfoCORRECTED.pdf?v=1&s=e1c3ab0a86c942d1039f6d2e15496aa172dc86ec}
-
-
-\subsubsection{Starting the GUI}
-The GUI can be opened by typing {\bf thellier\_gui.py}  on the  \href{#command_line}{command line}.
-
-\customlink{choose_directory}
-A ``choose project directory'' dialog window will appear as soon as the GUI is started.
-%
-%	\includegraphics[width=15cm]{EPSFiles/Screenshot_choose_directory.eps}
-%
-%
-Your  \href{#Project_Directory}{ThisProject} directory should include a file named {\it magic\_measurements.txt} (created for example by \href{#QuickMagIC.py}{\bf QuickMagIC.py}.   If a file named {\it rmag\_anisotropy.txt} is in the project directory, then the program reads in the anisotropy data. Reading and processing the measurements files may take several seconds, depending on the number of the specimens.
-
-
-\subsubsection{Reading and compiling measurements data}
-When your \href{#Project_Directory}{ThisProject}  project directory is selected, the program  reads all the measurement data, checks them, processes them and sorts them. If non-linear-TRM (NLT) data exist in {\it magic\_measurement.txt}  then the program tries to process the data using Equations (1)-(3) in \href{#http://dx.doi.org/MAGIC/doi/10.1016/j.epsl.2009.12.022}{Shaar et al., 2010}. \nocite{shaar10}  The program reads {\it magic\_measurement.txt}, and processes the measurements for presentation as Arai  and Zijderveld plots.
-We recommend that you check all the warnings and errors in {\it Thellier\_GUI.log} before starting to interpret the data.  For details about warnings and error messages during these steps, consult the tutorial document in the {\it thellier\_GUI} folder in  \href{#Datafiles}{Datafiles}.  Also, consult the Preferences to change certain plotting options.
-
-\subsubsection{Main panel}
-
-This figure shows a snapshot of the main panel.
-
-	\includegraphics[width=30cm]{EPSFiles/Screenshot_main_panel.eps}
-
-\noindent
-	The top field in the  panel includes the following buttons/controls (from left to right):
-	\begin{itemize}
-\item {\bf Specimen:} a list of the specimens in the project folder sorted by name.
-\item {\bf previous/next:} buttons to move forward and backward in the specimens list.
-\item {\bf T min/T max:} buttons to select temperature bounds.
-\item {\bf save/delete:} save or delete current interpretation. This information will be used later to generate a \href{#mk_redo.py}{redo file}.
-\item {\bf B\_lab:} laboratory field in units of $\mu T$.
-\item {\bf B\_anc:} specimen's paleointensity in units of $\mu T$.
-\item {\bf Aniso Correction:} anisotropy correction factor.
-\item {\bf NLT Correction:} Non-Linear TRM (NLT) correction factor.
-\item {\bf Dec/Inc:} Specimen declination/inclination calculated by PCA of the NRM in the selected temperature bounds.
-\item Sample mean, number of specimens, standard deviation and percent standard deviation.
-\end{itemize}
-
-The center of the main panel has these elements:
-
-\begin{itemize}
-\item {\bf measurements text panel:} Four columns of the measurement data: Step is ``N`` for NRM, ``Z`` for zero field step, ``I`` for infield step, ``P`` for pTRM check, and ``T`` for tail check. The temperature of each step is given in C. Also shown  declination, inclination and moment (in units of $Am^2$)
-\item {\bf Arai plot:}  Arai plot normalized by $NRM_0$. blue circles are zero field steps, red circles are infield steps, triangles are pTRM checks, blue squares are tail checks. Temperatures are displayed near data points. Temperature bounds and best fit line are marked in green. 'SCAT box' is marked with dashed lines (only if SCAT is True).
-\item {\bf Zijderveld plot:}  A Zijderveld plot of the NRM step.  The x axis is rotated to the direction of the NRM, blue is the x-y  projection, and red is x-z projection.
-\item {\bf Equal area plot:}  An equal area projections  of the NRM steps. solid circles are positive inclination. open circles are negative inclinations.
-\item {\bf Moment-temperature plot:}  NRMs are in blue, pTRMs are in red.
-\item {\bf sample data:}  If at least two specimens have a saved interpretation, then their values are displayed on this plot. The mean $\pm$ standard deviation of the mean are marked as  horizontal lines.
-\end{itemize}
-
-The bottom of the main panel include paleointensity statistics. The first line has  the threshold values (empty if N/A). The second line is the specimen's statistics. For details see Appendix A1 in \href{http://dx.doi.org/10.1002/ggge.20062}{Shaar and Tauxe (2013)}. \nocite{shaar13}
-%
-%\subsubsection{ Tutorial by example}
-% If you have not already done so, locate  the example data files for PmagPy in the \href{#Datafiles}{Datafiles} directory bundled with the {\bf PmagPy} software package.   There are two folders located in the{\it thellier\_gui} example foler: SU1\_example and Tauxe\_2006\_example.
-%
-%
-%{Case study 1: SU1\_example:}
-%
-%Find your \href{#command_line}{ command line} and launch the program:
-%\begin{verbatim}
-%thellier_gui.py
-%\end{verbatim}
-%A \href{#choose_directory} {choose directory} dialog window will appear. Select the SU\_1 project directory and click on the ``choose'' button.
-%
-%\begin{itemize}
-%\item{Manual interpretation}
-%Manual interpretation is the conventional approach of selecting temperature bounds for each specimen. Here, as example, we will interpret one sample, su100601,  manually.
-%\customlink{acceptance_criteria}
-%
-%\begin{itemize}
-%\item Set acceptance criteria: From the menu-bar choose  Analysis $\rightarrow$ Acceptance criteria $\rightarrow$ Change acceptance criteria. A criteria dialog box will appear.
-%\item In the first line (specimen's statistics) set the following values: n=3, int\_ptrm\_n=2, SCAT=false (unchecked), gap\_max=0.5, f\_vds=0.75, beta=0.1, MAD=6, DRATS=20. delete the values in the other boxes (empty boxes).
-%\item In the second line (Sample's acceptance criteria) set the following values: int\_n=3. delete the value in the other boxes.
-%\item In the third line (Sample mean calculation method: STDEV-OPT) check the Enable/Disable box, and set the following values: int\_sigma=6, int\_sigma\_perc=10. Delete values in the other boxes. Figure 3 shows how it should look. Click on the OK button. A message dialog will appear telling you the criteria that you chose are saved in a file name pmag\_criteria.txt. The next time you will open the GUI in this project directory, these criteria will automatically be chosen. Click OK on the message box.
-%\item Manual interpretation of sample su100601: choose specimens su100601a from the specimen list. choose temperature bounds from the Tmin/Tmax windows: 200 and 580. B\_anc shows 61.7 in green, which means that this interpretation passes the specimen's acceptance criteria. Now, change Tmax to 530.  B\_anc window change color to red, and also the fvds window (the row on the bottom of the GUI). This is an indication that the interpretation did not meet the criterion for fvds. Change  Tmax to 580 (as before) and press ``save`` button. The interpretation in saved.
-%\item Click on the next button to choose the next specimen (su100601b). Before analyzing this specimen, press on the ``previous`` button, so you can see that your previous interpretation was saved. click on ``next`` to return again to specimen su100601b. Find  temperature bounds that pass the criteria (for example 200,580). Make sure that all colors are green, and click on the ``save`` button. Go over all the other specimens in the sample (su10060a to su100601g). you will find that three specimens can pass: a,c, and g. Look at the Sample data figure (top right) it shows the saved interpretation for all the specimens in the sample, and the mean $\pm$  standard deviation of the mean.
-%\item To save all your interpretation into files, choose from the menubar Analysis $\rightarrow$ Save current interpretation. Three files will be generated in the project directory:
-%\begin{itemize}
-%\item thellier\_GUI.redo (the temperature bounds for each specimen):
-%\begin{verbatim}
-%su100601a 473 853
-%su100601c 473 853
-%su100601g 473 853
-%\end{verbatim}
-%Note that the temperature bounds are in Kelvin.
-%\item {\it thellier\_GUI.specimens.txt}: (the paleointensity statistics for each specimen - according to the headers. It is easy to view the content of this file using Excel):
-%\begin{verbatim}
-%su100601a	su100601	61.7	200	580	40.0	1.07	1.01	15	8	0.77	0.87	0.89	0.14	0.02	N/A	0.63	N/A	5.11	4.14	PASS
-%su100601c	su100601	54.4	200	580	40.0	0.94	N/A	15	8	0.60	0.78	0.79	0.23	0.01	N/A	5.19	N/A	2.51	1.33	PASS
-%su100601g	su100601	58.4	200	580	40.0	1.00	1.01	15	8	0.70	0.83	0.85	0.19	0.02	N/A	2.80	N/A	3.12	1.96	PASS
-%\end{verbatim}
-%\item {\it thellier\_GUI.samples.txt:} (the paleointensity statistics of the samples):
-%\end{itemize}
-%\begin{tabular}{cccccc}
-%\hline
-%er\_sample\_name &sample\_int\_n&sample\_int\_uT&sample\_int\_sigma\_uT&sample\_int\_sigma\_perc\\
-%su100601 &	3&	58.2&	3.0&	5.1\\
-%\hline
-%\end{tabular}
-%
-%
-%\item You can save the Arai plot (or any other plots) from the File menu. Choose  file  $\rightarrow$ Save Plot $\rightarrow$ Save Arai plot. A file dialog window will appear. You can change the format of the figure in the bottom tab (pdf, svg, or png), but you can also save as other format by adding the appropriate suffix to the file name.
-%\item close the GUI: File  $\rightarrow$ Quit.
-%\item Re-open the GUI as before (by writing the command  ``thellier\_gui.py''  in the terminal window) and choose the same working directory (SU1\_example). Notice now that the criteria that you set before are automatically used. To import your previous interpretations and continue working on this dataset choose from the menu bar Analysis $\rightarrow$ import previous interpretation. Choose thellier\_GUI.redo and click on the 'open' button.
-%\end{itemize}
-%
-%\item{Automatic interpretation - \it{thellier\_auto\_interpreter:}}
-%Instead of trying to find manually the most appropriate temperature bounds, the  {\bf thellier\_auto\_interpreter.py} program allows a fast and consistent way to choose the temperature bounds for the specimens. For details see \href{http://magician.ucsd.edu/~ltauxe/CV/open/shaar12.pdf}{Shaar and Tauxe (2012)}.  \nocite{shaar12}
-%\begin{itemize}
-%\item We will use the same \href{#acceptance_criteria }{acceptance criteria}.
-%\item Choose from the menu bar Auto interpreter $\rightarrow$ Run Thellier auto interpreter. The interpreter will run approximately 30 seconds. When its done, a message window will appear saying that the interpreter finished successfully (if not, check for errors in the terminal window, or in a file name {\it thellier\_interpreter.log}  located in a folder named {\it thellier\_interpreter}. If the issue cannot be resolved send an e-mail with the description of the problem to rshaar@ucsd.edu). Click OK in the message window.
-%\item The automatic interpretations are automatically saved, and we can review them on the Arai plots.  Let's look, for example, at the sample we interpreted  manually: su100601. Choose specimen su100601a from the specimens list. At first glance, the choice seems strange because the automatic interpretation chose temperature bounds 0 and 580. A choice between 200 and 580 may seem more reasonable as it provides an nearly straight line. The sample data figure explains this issue. The {\bf thellier\_auto\_interpreter.py} program chooses the interpretations that minimize the standard deviation of the sample's mean. Six specimens from this sample passed the criteria, and the value of su100601a is much higher than the remaining five. So, the thellier\_auto\_interpreter chose the 'acceptable' interpretation with the shallowest  slope. Go over the other specimens in the sample, and review the automatic interpretations. If you want, you can change the automatic interpretation, and save your own ``manual'' interpretation by choosing Analysis $\rightarrow$ Save current interpretation. Note that the output of {\bf thellier\_auto\_interpreter.py} is sensitive to the choice of the acceptance criteria, and different criteria may lead to significantly different final results.
-%\end{itemize}
-%\item{Choosing the optimal criteria - \it{thellier\_optimizer\_2d:}}
-%\href{http://magician.ucsd.edu/~ltauxe/CV/open/shaar12.pdf}{Shaar and Tauxe (2012)} \nocite{shaar12} discuss a method to choose the optimal specimen's acceptance criteria. Here, we follow the example given in this paper. \href{http://magician.ucsd.edu/~ltauxe/CV/open/shaar12.pdf}{Shaar and Tauxe (2012)} suggested using  seven statistics for specimen's acceptance criteria. The choice of four of which is trivial, and the remaining three are MAD, FRAC and $\beta$. The thellier\_optimizer\_2D helps finding the optimal values for FRAC and $\beta$.  The thellier\_optimizer\_2D  required three types of inputs: 'fixed\_criteria``, ``test\_groups``, and ``test\_samples``, as described below:
-%\begin{itemize}
-%\item The test groups are defined in an ``er\_sample`` file. An example for this file is given in working folder SU-1 named  ``optimizer\_test\_groups.txt``. Open this file in Excel to understand its syntax. The first line is a general header. The rest of the file include sample name, group name, and comments.
-%\item To run the optimizer choose from the menu bar Optimizer $\rightarrow$ Run Thellier optimizer. click OK in the  message dialog. The first step is setting the 'fixed\_criteria``. We choose for the specimen's criteria: n=3, int\_ptrm\_n=2,SCAT=checked, gap\_max=0.6, MAD=5.0. We choose for the sample's criteria:int\_n=3, int\_n\_outlier\_check=6, EnableSTDEV-OPT, int\_sigme\_uT=5, int\_sigma\_perc=6. The rest of the boxes should be empty. click OK. click OK on the message window that will appear.
-%\item The thellier\_optimizer\_2D dialog window will appear. The first two rows of controls for choosing the range for $\beta$ and FRAC. choose beta from 0.05 to 0.15 in steps of 0.1 and FRAC from 0.7 to 0.9 in step of 0.02. \\
-%Inert the following functions to the text panel:\\
-%study\_sample\_n\\
-%max\_group\_int\_sigma\_uT\\
-%((max\_group\_int\_sigma\_uT $<$= 5) or (max\_group\_int\_sigma\_perc $<$= 6)) and  int(study\_sample\_n) \\
-%click on the ``Check function syntax`` button. If there are no typos, then the text box below the button should be PASS.\\
-%click on the ``Choose optimizer group file`` button. A file dialog window will appear. choose the file ``optimizer\_test\_groups.txt``. Click the button ``Run Optimizer`` to start. The runtime using these parameter is about 8 minutes. `
-%\item All the output files of the optimizer are saved in a folder named ``optimizer`` (see section 4.4). Compare the figures in the 'pdf' folder with Figure 7 in \href{http://magician.ucsd.edu/~ltauxe/CV/open/shaar12.pdf}{Shaar and Tauxe (2012)}.
-%\item The figure in optimization\_function\_2.pdf suggest using $\beta \leq$0.10 and FRAC  $ \geq $0.79. Set these values as acceptance criteria, and run thellier\_auto\_interpreter.
-%\end{itemize}
-%\end{itemize}
-
-
-
 \customlink{thellier_magic.py}
 
 \subsection{thellier\_magic.py}
@@ -4874,7 +4859,7 @@ Recalculated specimen data stored in  ./zeq_specimens_g.txt
 %
 \section{Complaints department}
 
-The best way to raise issues with any of the software or its documentation is to post to the issues page of the Github project: \url{https://github.com/ltauxe/PmagPy/issues}. Given that most of the software as well as this documentation were written by Lisa Tauxe (\href{mailto:ltauxe@ucsd.edu}{ltauxe@usd.edu}), she can also be contacted by email with bug reports, suggestions and requests.
+The best way to raise issues with any of the software or its documentation is to post to the issues page of the Github project: \url{https://github.com/ltauxe/PmagPy/issues}. Lisa Tauxe (\href{mailto:ltauxe@ucsd.edu}{ltauxe@usd.edu}) can also be contacted by email with bug reports, suggestions and requests.
 
 \customlink{MagICDatabase}
 \chapter{The MagIC database and file formats}
