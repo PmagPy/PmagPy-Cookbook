@@ -106,6 +106,8 @@ File: PmagPy.tmp
 File: PmagPy.tmp
 File: PmagPy.tmp
 File: PmagPy.tmp
+File: PmagPy.tmp
+File: PmagPy.tmp
 Css: p.noindent { text-indent: 0em }
 Css: td p.noindent { text-indent: 0em; margin-top:0em; }
 Css: p.nopar { text-indent: 0em; }
@@ -330,8 +332,8 @@ Css: .figure img.graphics {margin-left:10%;}
 --- needs --- PmagPy.idv[192] ==> PmagPy97x.png ---
 --- needs --- PmagPy.idv[194] ==> PmagPy98x.png ---
 --- needs --- PmagPy.idv[196] ==> PmagPy99x.png ---
-File: EPSfiles/notebook.png
-File: EPSfiles/SnakeRiver.png
+--- needs --- PmagPy.idv[198] ==> PmagPy100x.png ---
+--- needs --- PmagPy.idv[200] ==> PmagPy101x.png ---
 --- characters ---
 Font("cmr","10","10","109")
 Font("cmbx","10","10","109")
