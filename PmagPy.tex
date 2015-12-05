@@ -1784,7 +1784,7 @@ Use the program {\bf core\_depthplot.py} to plot various measurement data versus
 We can try this out on some data from DSDP Hole 522, measured by Tauxe and Hartl (1997).  \nocite{tauxe97}  These can be downloaded and unpacked (see \href{#download_magic.py}{download\_magic.py} for details),  or you can try it out on the data files in the directory {\bf core\_depthplot}.   You must specify a lab-protocol (LP) for plotting.  In this example, we will plot the alternating field (AF) data after the 15 mT step.  The magnetizations will be plotted on a log scale and, as this is a record of the Oligocene, we will plot the Oligocene time scale, using the calibration of Gradstein et al. (2004),  \nocite{gradstein04} commonly referred to as ``GTS04'' for the the Oligocene.  We are only interested in the data between 50 and 150 meters (the -d option sets this) and we will suppress the declinations (-D).
 
 \begin{verbatim}
-% core_depthplot.py -LP AF 15 -log -d 50 150 -ts gts04 23 34 -D
+% core_depthplot.py -fsa er_samples.txt -LP AF 15 -log -d 50 150 -ts gts04 23 34 -D
 \end{verbatim}
 
 \noindent  will produce the plot:
