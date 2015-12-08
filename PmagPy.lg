@@ -250,6 +250,17 @@ Css: .figure img.graphics {margin-left:10%;}
 --- needs --- PmagPy.idv[32] ==> PmagPy15x.png ---
 --- needs --- PmagPy.idv[34] ==> PmagPy16x.png ---
 --- needs --- PmagPy.idv[36] ==> PmagPy17x.png ---
+File: EPSfiles/MM_main_frame.png
+File: EPSfiles/MM_location_grid_with_menu.png
+File: EPSfiles/MM_add_location_headers.png
+File: EPSfiles/MM_site_grid_with_edit_all.png
+File: EPSfiles/MM_sample_grid.png
+File: EPSfiles/MM_sample_grid_added_cols.png
+File: EPSfiles/MM_sample_grid_propagated_full.png
+File: EPSfiles/MM_age_grid.png
+File: EPSfiles/MM_result_grid.png
+File: EPSfiles/MM_validation_mainframe.png
+File: EPSfiles/MM_filled_in_result_validation.png
 --- needs --- PmagPy.idv[38] ==> PmagPy18x.png ---
 --- needs --- PmagPy.idv[40] ==> PmagPy19x.png ---
 --- needs --- PmagPy.idv[42] ==> PmagPy20x.png ---
