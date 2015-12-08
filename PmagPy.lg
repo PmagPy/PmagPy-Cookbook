@@ -108,6 +108,17 @@ File: PmagPy.tmp
 File: PmagPy.tmp
 File: PmagPy.tmp
 File: PmagPy.tmp
+File: PmagPy.tmp
+File: PmagPy.tmp
+File: PmagPy.tmp
+File: PmagPy.tmp
+File: PmagPy.tmp
+File: PmagPy.tmp
+File: PmagPy.tmp
+File: PmagPy.tmp
+File: PmagPy.tmp
+File: PmagPy.tmp
+File: PmagPy.tmp
 Css: p.noindent { text-indent: 0em }
 Css: td p.noindent { text-indent: 0em; margin-top:0em; }
 Css: p.nopar { text-indent: 0em; }
@@ -250,17 +261,6 @@ Css: .figure img.graphics {margin-left:10%;}
 --- needs --- PmagPy.idv[32] ==> PmagPy15x.png ---
 --- needs --- PmagPy.idv[34] ==> PmagPy16x.png ---
 --- needs --- PmagPy.idv[36] ==> PmagPy17x.png ---
-File: EPSfiles/MM_main_frame.png
-File: EPSfiles/MM_location_grid_with_menu.png
-File: EPSfiles/MM_add_location_headers.png
-File: EPSfiles/MM_site_grid_with_edit_all.png
-File: EPSfiles/MM_sample_grid.png
-File: EPSfiles/MM_sample_grid_added_cols.png
-File: EPSfiles/MM_sample_grid_propagated_full.png
-File: EPSfiles/MM_age_grid.png
-File: EPSfiles/MM_result_grid.png
-File: EPSfiles/MM_validation_mainframe.png
-File: EPSfiles/MM_filled_in_result_validation.png
 --- needs --- PmagPy.idv[38] ==> PmagPy18x.png ---
 --- needs --- PmagPy.idv[40] ==> PmagPy19x.png ---
 --- needs --- PmagPy.idv[42] ==> PmagPy20x.png ---
@@ -268,29 +268,29 @@ File: EPSfiles/MM_filled_in_result_validation.png
 --- needs --- PmagPy.idv[46] ==> PmagPy22x.png ---
 --- needs --- PmagPy.idv[48] ==> PmagPy23x.png ---
 --- needs --- PmagPy.idv[50] ==> PmagPy24x.png ---
---- needs --- PmagPy.idv[51] ==> PmagPy25x.png ---
---- needs --- PmagPy.idv[53] ==> PmagPy26x.png ---
---- needs --- PmagPy.idv[55] ==> PmagPy27x.png ---
---- needs --- PmagPy.idv[57] ==> PmagPy28x.png ---
---- needs --- PmagPy.idv[59] ==> PmagPy29x.png ---
---- needs --- PmagPy.idv[61] ==> PmagPy30x.png ---
---- needs --- PmagPy.idv[63] ==> PmagPy31x.png ---
---- needs --- PmagPy.idv[65] ==> PmagPy32x.png ---
---- needs --- PmagPy.idv[66] ==> PmagPy33x.png ---
---- needs --- PmagPy.idv[68] ==> PmagPy34x.png ---
---- needs --- PmagPy.idv[69] ==> PmagPy35x.png ---
---- needs --- PmagPy.idv[71] ==> PmagPy36x.png ---
---- needs --- PmagPy.idv[72] ==> PmagPy37x.png ---
---- needs --- PmagPy.idv[74] ==> PmagPy38x.png ---
---- needs --- PmagPy.idv[76] ==> PmagPy39x.png ---
---- needs --- PmagPy.idv[78] ==> PmagPy40x.png ---
---- needs --- PmagPy.idv[80] ==> PmagPy41x.png ---
---- needs --- PmagPy.idv[82] ==> PmagPy42x.png ---
---- needs --- PmagPy.idv[84] ==> PmagPy43x.png ---
---- needs --- PmagPy.idv[86] ==> PmagPy44x.png ---
---- needs --- PmagPy.idv[88] ==> PmagPy45x.png ---
---- needs --- PmagPy.idv[90] ==> PmagPy46x.png ---
---- needs --- PmagPy.idv[92] ==> PmagPy47x.png ---
+--- needs --- PmagPy.idv[52] ==> PmagPy25x.png ---
+--- needs --- PmagPy.idv[54] ==> PmagPy26x.png ---
+--- needs --- PmagPy.idv[56] ==> PmagPy27x.png ---
+--- needs --- PmagPy.idv[58] ==> PmagPy28x.png ---
+--- needs --- PmagPy.idv[60] ==> PmagPy29x.png ---
+--- needs --- PmagPy.idv[62] ==> PmagPy30x.png ---
+--- needs --- PmagPy.idv[64] ==> PmagPy31x.png ---
+--- needs --- PmagPy.idv[66] ==> PmagPy32x.png ---
+--- needs --- PmagPy.idv[68] ==> PmagPy33x.png ---
+--- needs --- PmagPy.idv[70] ==> PmagPy34x.png ---
+--- needs --- PmagPy.idv[72] ==> PmagPy35x.png ---
+--- needs --- PmagPy.idv[73] ==> PmagPy36x.png ---
+--- needs --- PmagPy.idv[75] ==> PmagPy37x.png ---
+--- needs --- PmagPy.idv[77] ==> PmagPy38x.png ---
+--- needs --- PmagPy.idv[79] ==> PmagPy39x.png ---
+--- needs --- PmagPy.idv[81] ==> PmagPy40x.png ---
+--- needs --- PmagPy.idv[83] ==> PmagPy41x.png ---
+--- needs --- PmagPy.idv[85] ==> PmagPy42x.png ---
+--- needs --- PmagPy.idv[87] ==> PmagPy43x.png ---
+--- needs --- PmagPy.idv[88] ==> PmagPy44x.png ---
+--- needs --- PmagPy.idv[90] ==> PmagPy45x.png ---
+--- needs --- PmagPy.idv[91] ==> PmagPy46x.png ---
+--- needs --- PmagPy.idv[93] ==> PmagPy47x.png ---
 --- needs --- PmagPy.idv[94] ==> PmagPy48x.png ---
 --- needs --- PmagPy.idv[96] ==> PmagPy49x.png ---
 --- needs --- PmagPy.idv[98] ==> PmagPy50x.png ---
@@ -345,6 +345,17 @@ File: EPSfiles/MM_filled_in_result_validation.png
 --- needs --- PmagPy.idv[196] ==> PmagPy99x.png ---
 --- needs --- PmagPy.idv[198] ==> PmagPy100x.png ---
 --- needs --- PmagPy.idv[200] ==> PmagPy101x.png ---
+--- needs --- PmagPy.idv[202] ==> PmagPy102x.png ---
+--- needs --- PmagPy.idv[204] ==> PmagPy103x.png ---
+--- needs --- PmagPy.idv[206] ==> PmagPy104x.png ---
+--- needs --- PmagPy.idv[208] ==> PmagPy105x.png ---
+--- needs --- PmagPy.idv[210] ==> PmagPy106x.png ---
+--- needs --- PmagPy.idv[212] ==> PmagPy107x.png ---
+--- needs --- PmagPy.idv[214] ==> PmagPy108x.png ---
+--- needs --- PmagPy.idv[216] ==> PmagPy109x.png ---
+--- needs --- PmagPy.idv[218] ==> PmagPy110x.png ---
+--- needs --- PmagPy.idv[220] ==> PmagPy111x.png ---
+--- needs --- PmagPy.idv[222] ==> PmagPy112x.png ---
 --- characters ---
 Font("cmr","10","10","109")
 Font("cmbx","10","10","109")

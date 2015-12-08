@@ -326,60 +326,60 @@ Start up make\_magic.py.  You'll do this by clicking on the Desktop item or ente
   
 When you first start {\bf make\_magic.py}, you will change directories into a  `Project Directory'. For each study, create a directory with a name that relates to that study. Here we will call it {\it MyProject}.  This is where you will collect  and process all the rock and paleomagnetic data for a given study, usually a publication.   The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path. Under certain Windows versions, this means you should not use your home directory, but create a directory called for example: D:$\backslash$MyPmagProjects and put {\it MyProject} there.
 
-  \includegraphics[width=15cm]{EPSfiles/MM_main_frame.png}
+  \includegraphics{EPSfiles/MM_main_frame.eps}
   
 \section{MakeMagIC example dataset}
 Now we'll walk through a simple data input process, with fake data.
   \begin{itemize}
   \item Start by clicking on `1. add location data'.  Enter location data as seen below. Notice use of the context menu: in most instances, these will provide controlled vocabularies.
-    \includegraphics[width=15cm]{EPSfiles/MM_location_grid_with_menu.png}
+    \includegraphics{EPSfiles/MM_location_grid_with_menu.eps}
   \item You'll notice that some information is not filled in.  First, if you have no outside citations, you can leave `er\_citation\_names' blank and it will be automatically filled in with `This study' after you save this data.  Second, if you will be providing latitude/longitude for sites, then you don't need to provide it at the location level.  The program will extract start and end latitude and longitude from your site data and apply it to each location.  
   \item If you want to provide more than the default required information, you may want to add more columns to your grid.  In our case, we'll add in `Country'.  To do this, just click the button `Add additional columns'.  Choose whatever headers you want to add and select `Ok'.
     
-    \includegraphics[width=15cm]{EPSfiles/MM_add_location_headers.png}
+    \includegraphics{EPSfiles/MM_add_location_headers.eps}
     
   \item Now you'll have a new column with a new controlled vocabulary.  Find and select `U.S.A.'.  When you're done entering location data, click `Save and close grid'.
     
   \item Next, we'll add in sites, so start by opening the site grid.  We will have two sites in this dataset, so click the `Add row(s)' button once.  Then, fill in the grid.  For some of the values, both sites will have the same value.  To provide this data more efficiently, click on the column label to edit all values in that column.  If that column has a menu, you can then click anywhere in that column and make a selection for every cell in the column. Once you're done editing the column, click the header again to exit the multiple-cell-edit mode.
     
-    \includegraphics[width=15cm]{EPSfiles/MM_site_grid_with_edit_all.png}
+    \includegraphics{EPSfiles/MM_site_grid_with_edit_all.eps}
     
   \item Once you're done adding sites, save and close the site grid, then open the sample grid.
     Enter data as you see below:
     
-    \includegraphics[width=15cm]{EPSfiles/MM_sample_grid.png}
+    \includegraphics{EPSfiles/MM_sample_grid.eps}
     
     All other required data will fill in automatically.  If you don't provide latitude and longitude data for a sample, it will propagate down from the site after you save and close the grid.
     
   \item For samples, we will add an additional statistic.  Click 'Add additional columns' and select `sample\_int\_sigma' from the 'Headers for interpretation data' column.  Select 'ok' and have a look at your new grid.  You'll notice that the column you selected has been added, as well as two additional columns: `magic\_instrument\_codes' and `magic\_method\_codes++'.  These two columns are required if you are including any interpretation data at the sample level.  Fill in the added columns.  You'll notice that `magic\_method\_codes++' has a drop-down menu.  If you aren't familiar with the MagIC codes system, click `Show method codes' which provides brief explanations for each possible code.
     
-    \includegraphics[width=15cm]{EPSfiles/MM_sample_grid_added_cols.png}
+    \includegraphics{EPSfiles/MM_sample_grid_added_cols.eps}
     
   \item Save and close the sample grid, then re-open it to see how the data have propagated (re-opening the grid isn't necessary for the program, this is just for you to see what make\_magic.py does automatically).
     
-    \includegraphics[width=15cm]{EPSfiles/MM_sample_grid_propagated_full.png}
+    \includegraphics{EPSfiles/MM_sample_grid_propagated_full.eps}
 
   \item In this example, we won't add data at the specimen level, so we will be skipping step 4.  Adding specimens works just the same as adding samples.
     
   \item Now open the age grid.  You can assign ages at any level, at multiple levels, or at no level.  For this study, we will add ages at the sample level.  Choose sample as the age level.  Next, you'll need to add in the `age' column.  Fill in the grid as below:
 
-    \includegraphics[width=15cm]{EPSfiles/MM_age_grid.png}
+    \includegraphics{EPSfiles/MM_age_grid.eps}
 
   \item You'll notice that you can't add or remove rows in this grid.  If you want to add an additional sample, you would need to go back to the sample grid to do so.
 
   \item The last data step is to put in result information.  You'll need to open the result grid and, for this example, add just one statistic: `vadm'.  Then, fill out the grid:
 
-    \includegraphics[width=15cm]{EPSfiles/MM_result_grid.png}
+    \includegraphics{EPSfiles/MM_result_grid.eps}
 
   \item For each result, you will add one or more items that the result pertains to.  In this example, one result is a site V[A]DM, and the other is an averaged V[A]DM from both sites.  For now, leave magic_method_codes blank for the Averaged V[A]DM result: in a minute we'll see how make\_magic catches this error.  Save and close the result grid.
 
   \item Next, you will create a MagIC format upload file.  Click the final button on the main frame, `prepare upload txt file'.  Depending on the size of your contribution, this can take a minute; with our small example, it should be fairly quick.  After hitting upload, you will see an error message, and the main frame will direct you to the problem.  Validations will check for missing required fields, invalid data, and missing ancestors (for instance, a specimen with no sample). 
 
-    \includegraphics[width=15cm]{EPSfiles/MM_validation_mainframe.png}
+    \includegraphics{EPSfiles/MM_validation_mainframe.eps}
 
     Open the result grid to fix the error.  Click `Show help' for more information about validations.  In this case, it is a simple fix: add method code `LP-PI' to the average V[A]DM result.
 
-    \includegraphics[width=15cm]{EPSfiles/MM_filled_in_result_validation.png}
+    \includegraphics{EPSfiles/MM_filled_in_result_validation.eps}
 
   \item Now that you've fixed your error, try `prepare upload txt file' again.  This time there should be no problems, and you are ready to \href{#magic_upload}{upload your data}!
 
