@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  11 DEC 2015 14:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  11 DEC 2015 15:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1746,37 +1746,25 @@ Chapter 8.
 [417
 
 ]
-
-LaTeX Warning: File `EPSfiles/notebook.eps' not found on input line 6793.
-
 l. 6793 Writing PmagPy.idv[112] (PmagPy111x.png)
-l.6793 --- TeX4ht warning --- File `EPSfiles/notebook.eps' not found ---
-l.6793 --- TeX4ht warning --- Cannot determine size of graphic in EPSfiles/note
-book.eps (no BoundingBox) ---
 File: EPSfiles/notebook.eps Graphic file (type eps)
-<EPSfiles/notebook.eps> [418] [419]
-
-LaTeX Warning: File `EPSfiles/SnakeRiver.eps' not found on input line 6801.
-
+ <EPSfiles/notebook.eps> [418]
 l. 6801 Writing PmagPy.idv[113] (PmagPy112x.png)
-l.6801 --- TeX4ht warning --- File `EPSfiles/SnakeRiver.eps' not found ---
-l.6801 --- TeX4ht warning --- Cannot determine size of graphic in EPSfiles/Snak
-eRiver.eps (no BoundingBox) ---
 File: EPSfiles/SnakeRiver.eps Graphic file (type eps)
-<EPSfiles/SnakeRiver.eps> [420] [421]
+ <EPSfiles/SnakeRiver.eps>
  --- Customlinks says: Custom link named 'trouble': PmagPy.html#trouble 
-[422]
+[419] [420]
 Chapter 9.
  --- Customlinks says: Link to chapter 9: PmagPy.html#ch9
  --- Customlinks says: Link to section 9.1: PmagPy.html#sec9-1
-[423
+[421
 
-] [424] [425] [426] [427] [428] [429] [430
+] [422] [423] [424] [425] [426] [427] [428
 
-] [431] [432] [433] [434]
-[435]
+] [429] [430] [431] [432]
+[433]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7113.
- [436]
+ [434]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 7113.
  (./PmagPy.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7113.
@@ -1801,6 +1789,6 @@ Here is how much of TeX's memory you used:
  13690 multiletter control sequences out of 15000+600000
  15547 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,9n,32p,2067b,2383s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,9n,32p,135874b,2383s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on PmagPy.dvi (445 pages, 1163396 bytes).
+Output written on PmagPy.dvi (443 pages, 1163168 bytes).
