@@ -212,5 +212,7 @@
 \doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2110007.10}{QQ2-1-211}{Multiple figures and more customization}}{409}\relax 
 \doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2120007.10}{QQ2-1-212}{Adding text}}{413}\relax 
 \doTocEntry\tocchapter{8}{\csname a:TocLink\endcsname{1}{x1-2130008}{QQ2-1-213}{Jupyter Notebooks}}{417}\relax 
-\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-2140008}{QQ2-1-214}{Bibliography}}{423}\relax 
+\doTocEntry\tocchapter{9}{\csname a:TocLink\endcsname{1}{x1-2140009}{QQ2-1-214}{Troubleshooting}}{423}\relax 
+\doTocEntry\tocsection{9.1}{\csname a:TocLink\endcsname{1}{x1-2150009.1}{QQ2-1-215}{Problems with installing Python or PmagPy}}{423}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-2160009.1}{QQ2-1-216}{Bibliography}}{431}\relax 
 \par 
