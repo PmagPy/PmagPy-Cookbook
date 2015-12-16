@@ -59,22 +59,41 @@ There are many chefs who contributed to this work, in particular, the MagIC Data
 
 \chapter{Installing {\bf PmagPy}}
 
-To skip all the details and just start using \href{#QuickMagIC.py}{QuickMagIC.py} to upload data into the \href{#MagICDatabase}{MagIC database} or to analyze using \href{#thellier_gui}{thellier GUI} or \href{#demag_gui}{demag gui},  follow these steps:
+To skip all the details and just start using \href{#QuickMagIC.py}{QuickMagIC} or \href{#make_magic.py}{MakeMagIC} to upload data into the \href{#MagICDatabase}{MagIC database}, or to analyze using \href{#thellier_GUI.py}{Thellier GUI} or \href{#DemagGUI}{Demag GUI}, start here. 
+
+\customlink{standalone}
+\section{Standalone GUI download}
+
+If you don't need the full PmagPy functionality, and you only want to use QuickMagIC, MakeMagIC, Thellier GUI, and Demag GUI, there is now a standalone download for you.  You won't need to install Python.
+You can download the \href{https://github.com/moonshoes87/PmagPy-Standalone-OSX/releases/latest}{standalone applications for OSX here}, and \href{https://github.com/moonshoes87/PmagPy-Standalone-Windows/releases/latest}{for Windows here}.
+
+Follow the download instructions in the provided links, and then you can skip the ``Full install'' section and go straight to using \href{#QuickMagIC.py}{QuickMagIC} or \href{#make_magic.py}{MakeMagIC}.  The standalone versions of these applications are still in development; please report problems to the PmagPy team: (\href{mailto:ltauxe@ucsd.edu}{ltauxe@usd.edu}).
+
+\section{Full PmagPy install}
 
  \begin{enumerate}
 
-\item If you are using Mac OSX, download and install the Enthought Canopy distribution of Python \url{https://www.enthought.com/products/canopy/}. Canopy Express (the free version) contains everything you need (except the mapping utilities). If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license} that gives you access to additional features and bundled packages, including the basemap package. Launch Canopy to complete the installation process.  You may need to use control click on the Canopy icon to open it for the first time--try this if you get a message that says ``Canopy can't be opened because it is from an unidentified developer.''  Once you've opened Canopy successfully, select 'yes' to making Canopy your default Python environment.  In the lower right hand corner of the Canopy launch page, you will find the Version number (currently 1.6.1 or higher). Please include this in any correspondence with the PmagPy team. While you might find use for some of the features within the Canopy environment that opens as an application, PmagPy programs are best run or launched at the command line in Terminal.  A last note about Canopy: you should update it regularly!  Open the Canopy application and update the packages at least every few months.
-
-\item  Windows users should install this Enthought Distribution:
- \url{http://magician.ucsd.edu/Software/PmagPy/archive/epd-7.3-2-win-x86.msi}.  If you run into problems, you may need to uninstall any previous Python installations.
-
-\item Download the zip file from the \href{https://github.com/ltauxe/PmagPy/releases/latest} {PmagPy} software package github: unzip the zip file (double click on it), PC users should extract all the files to a folder on your desktop (or wherever)  and double click on the {\it install\_MacOS} or {\it install\_Windows} file depending on your operating system.  (If you are a Linux user, just copy the files to some directory and put it in your path - you know what to do.)   For Windows users, the install process will create a custom ``PmagPy Prompt'' with a shortcut on your desktop.  This prompt is identical to the regular Command Prompt, except that it has all of the PmagPy functionality built in. Whenever the documentation refers to your ``command line'', you should use the PmagPy Prompt. For non-Windows users, find your \href{#command_line}{command line} and type {\bf eqarea.py -h} and hit return.  If you do not see the help message, first try setting your path by hand following the instructions on the  \href{#trouble}{Trouble Shooting} page. If that fails, please send the error message and  Canopy version number to \href{mailto:ltauxe@ucsd.edu?subject=PmagPy Cookbook}{ltauxe@ucsd.edu}.
-  \customlink{hires}
-
-\item Optional: If you have installed the full version of Canopy and want to use the mapping programs (e.g., \href{#basemap_magic.py}{basemap\_magic.py}),
-\customlink{HighRes}
-click on  the `Package Manager' button on the Canopy welcome page, and then on `Available Packages'.  Install both basemap packages (one has high resolution data files in it).  To install the Etopo20 package, see \href{#install_etopo.py}{install\_etopo.py}.
-\customlink{Datafiles}
+ \item Getting Python for Mac users:
+   \begin{itemize}
+   \item Download and install the \href{https://www.enthought.com/products/canopy/}{Enthought Canopy distribution of Python}. Canopy Express (the free version) contains everything you need (except the mapping utilities). If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license} that gives you access to additional features and bundled packages, including the Basemap package.
+   \item Launch Canopy to complete the installation process.  You may need to use control click on the Canopy icon to open it for the first time--try this if you get a message that says ``Canopy can't be opened because it is from an unidentified developer.''  Once you've opened Canopy successfully, select 'yes' to making Canopy your default Python environment.  In the lower right hand corner of the Canopy launch page, you will find the Version number (currently 1.6.1 or higher). Please include this in any correspondence with the PmagPy team. While you might find use for some of the features within the Canopy environment that opens as an application, PmagPy programs are best run or launched at the command line in Terminal.
+   \item A last note about Canopy: you should update it regularly!  Open the Canopy application and update the packages at least every few months.
+   \end{itemize}
+ \item Getting Python for Windows users:
+   \begin{itemize}
+   \item To use the full functionality PmagPy functionality, you will need to download the most recent Enthought Python Distribution (EPD).  If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license}, which gives access to this distribution.  
+   \item Once you have registered and gotten your academic license, you can \href{https://store.enthought.com/repo/epd/installers/epd-7.5-2-win-x86_64.msi}{download EPD here}.  
+   \item Windows users who cannot get an academic license should install this \href{http://magician.ucsd.edu/Software/PmagPy/archive/epd-7.3-2-win-x86.msi}{older Enthought Distribution}.  This version of EPD will not support all PmagPy programs, so if you want to run QuickMagIC or MakeMagIC you should download the \href{#standalone}{standalone versions}.
+   \item If you run into problems with your installation, you may need to uninstall any previous Python installations.
+   \end{itemize}
+ \item Downloading PmagPy
+   \begin{itemize}
+   \item Download the zip file from the \href{https://github.com/ltauxe/PmagPy/releases/latest} {PmagPy} software package github: unzip the zip file (double click on it), PC users should extract all the files to a folder on your desktop (or wherever)  and double click on the {\it install\_MacOS} or {\it install\_Windows} file depending on your operating system.  (If you are a Linux user, just copy the files to some directory and put it in your path - you know what to do.)
+   \item For Windows users, the install process will create a custom ``PmagPy Prompt'' with a shortcut on your desktop.  This prompt is identical to the regular Command Prompt, except that it has all of the PmagPy functionality built in. Whenever the documentation refers to your ``command line'', you should use the PmagPy Prompt.
+   \item For non-Windows users, find your \href{#command_line}{command line} and type {\bf eqarea.py -h} and hit return.  If you do not see the help message, first try setting your path by hand following the instructions on the  \href{#trouble}{Trouble Shooting} page. If that fails, please send the error message and  Canopy version number to \href{mailto:ltauxe@ucsd.edu?subject=PmagPy Cookbook}{ltauxe@ucsd.edu}.\customlink{hires}
+   \item Optional: If you have installed the full version of Canopy and want to use the mapping programs (e.g., \href{#basemap_magic.py}{basemap\_magic.py}), \customlink{HighRes}
+     click on  the `Package Manager' button on the Canopy welcome page, and then on `Available Packages'.  Install both basemap packages (one has high resolution data files in it).  To install the Etopo20 package, see \href{#install_etopo.py}{install\_etopo.py}.\customlink{Datafiles}
+   \end{itemize}
 
 %\item Move the  Datafiles  folder from your {\bf PmagPy} folder and place it somewhere (e.g., your Desktop) with no spaces in the path.
 \item Create a \href{#Project_Directory}{MagIC Project Directory}.
@@ -83,7 +102,7 @@ click on  the `Package Manager' button on the Canopy welcome page, and then on `
 
 %\setcounter{tocdepth}{1}
 %\tableofcontents
-
+\section{Next steps}
 
 Where do you want to go from here?
 
@@ -111,7 +130,7 @@ Where do you want to go from here?
 
 \customlink{Project_Directory}
 
-\item  When you invoke {\bf QuickMagIC.py}, the first step change directories into a  `Project Directory'. For each study, create a directory with a name that relates to that study. Here we will call it {\it ThisProject}.  This is where you will collect and process all the rock and paleomagnetic data for a given study, usually a publication. The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path. Under certain Windows versions, this means you should not use your home directory, but create a directory called for example: D:$\backslash$MyPmagProjects and put {\it ThisProject} there.
+\item  When you invoke {\bf QuickMagIC.py}, the first step is to change directories into a  `Project Directory'. For each study, create a directory with a name that relates to that study. Here we will call it {\it ThisProject}.  This is where you will collect and process all the rock and paleomagnetic data for a given study, usually a publication. The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path. Under certain Windows versions, this means you should not use your home directory, but create a directory called for example: D:$\backslash$MyPmagProjects and put {\it ThisProject} there.
 %
 %Inside the  {\it ThisProject} directory, create two additional directories: {\it MyFiles} and {\it MagIC}. All the files that you want to convert to the MagIC format should be placed in {\it MyFiles}.  The {\it Project Directory} that {\bf QuickMagIC.py} seeks is that {\it MagIC} directory.
 %
@@ -762,16 +781,8 @@ Now you've collected together all the files you need, we can start importing the
 Make\_magic.py allows you to add data at the location, site, sample, and specimen levels.  You can also add results and ages.  Make\_magic.py uses an Excel-like grid interface for entering and editing data.  Useful features include: pop-up menus with controlled vocabularies, multi-cell pasting from external spreadsheets, and built-in validations for MagIC database requirements.  
 
 
-\section{Installing Make\_magic.py}
-
-You have two options for installing Make\_magic.py on your computer.
-\begin{itemize}
-\item You can download the full \href{#quick_start}{PmagPy functionality}.  This comes with a variety of command line programs and several GUIs.  It also requires the Canopy Python installation.
-\item Alternatively, you can download MakeMagIC as a standalone program. (Currently available for OSX, coming soon for windows!)  Download QuickMagIC and MakeMagIC as \href{https://github.com/moonshoes87/PmagPy-Standalone-OSX/releases/latest}{standalone applications here}. 
-\end{itemize}
-
 \section{Starting with MakeMagIC}
-Start up make\_magic.py.  You'll do this by clicking on the Desktop item or entering `make\_magic.py' on your \href{#command_line}{command line}. 
+Start up make\_magic.py.  You'll do this by clicking on the icon (if you downloaded the standalone version) or entering `make\_magic.py' on your \href{#command_line}{command line} (if you downloaded the full PmagPy installation). 
   
 When you first start {\bf make\_magic.py}, you will change directories into a  `Project Directory'. For each study, create a directory with a name that relates to that study. Here we will call it {\it MyProject}.  This is where you will collect  and process all the rock and paleomagnetic data for a given study, usually a publication.   The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path. Under certain Windows versions, this means you should not use your home directory, but create a directory called for example: D:$\backslash$MyPmagProjects and put {\it MyProject} there.
 
