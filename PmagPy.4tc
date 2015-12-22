@@ -4,7 +4,7 @@
 \doTocEntry\tocsection{1.1}{\csname a:TocLink\endcsname{1}{x1-30001.1}{QQ2-1-3}{Standalone GUI download}}{3}\relax 
 \doTocEntry\tocsection{1.2}{\csname a:TocLink\endcsname{1}{x1-40001.2}{QQ2-1-4}{Full PmagPy install}}{3}\relax 
 \doTocEntry\tocsection{1.3}{\csname a:TocLink\endcsname{1}{x1-50001.3}{QQ2-1-5}{Next steps}}{5}\relax 
-\doTocEntry\tocchapter{2}{\csname a:TocLink\endcsname{1}{x1-60002}{QQ2-1-6}{QuickMagIC.py Tutorial}}{7}\relax 
+\doTocEntry\tocchapter{2}{\csname a:TocLink\endcsname{1}{x1-60002}{QQ2-1-6}{Pmag GUI Tutorial}}{7}\relax 
 \doTocEntry\tocsection{2.1}{\csname a:TocLink\endcsname{1}{x1-70002.1}{QQ2-1-7}{Converting magnetometer files to MagIC format}}{8}\relax 
 \doTocEntry\tocsection{2.2}{\csname a:TocLink\endcsname{1}{x1-80002.2}{QQ2-1-8}{Optional: Calculate geographic / tilt-corrected direction}}{15}\relax 
 \doTocEntry\tocsection{2.3}{\csname a:TocLink\endcsname{1}{x1-90002.3}{QQ2-1-9}{Filling in the EarthRef data}}{17}\relax 
@@ -17,9 +17,9 @@
 \doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-160002.8.1}{QQ2-1-16}{Data files downloaded from the IODP (LIMS) database}}{40}\relax 
 \doTocEntry\tocsubsection{2.8.2}{\csname a:TocLink\endcsname{1}{x1-170002.8.2}{QQ2-1-17}{Supported Rock Magnetometer files}}{42}\relax 
 \doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-180002.8.2}{QQ2-1-18}{Hysteresis file formats}}{44}\relax 
-\doTocEntry\tocchapter{3}{\csname a:TocLink\endcsname{1}{x1-190003}{QQ2-1-19}{Make\_magic.py Tutorial}}{45}\relax 
-\doTocEntry\tocsection{3.1}{\csname a:TocLink\endcsname{1}{x1-200003.1}{QQ2-1-20}{Starting with MakeMagIC}}{45}\relax 
-\doTocEntry\tocsection{3.2}{\csname a:TocLink\endcsname{1}{x1-210003.2}{QQ2-1-21}{MakeMagIC example dataset}}{47}\relax 
+\doTocEntry\tocchapter{3}{\csname a:TocLink\endcsname{1}{x1-190003}{QQ2-1-19}{MagIC GUI Tutorial}}{45}\relax 
+\doTocEntry\tocsection{3.1}{\csname a:TocLink\endcsname{1}{x1-200003.1}{QQ2-1-20}{Starting with MagIC GUI}}{45}\relax 
+\doTocEntry\tocsection{3.2}{\csname a:TocLink\endcsname{1}{x1-210003.2}{QQ2-1-21}{MagIC GUI example dataset}}{47}\relax 
 \doTocEntry\tocchapter{4}{\csname a:TocLink\endcsname{1}{x1-220004}{QQ2-1-22}{Survival computer skills}}{63}\relax 
 \doTocEntry\tocsection{4.1}{\csname a:TocLink\endcsname{1}{x1-230004.1}{QQ2-1-23}{Finding your command line}}{63}\relax 
 \doTocEntry\tocsection{4.2}{\csname a:TocLink\endcsname{1}{x1-240004.2}{QQ2-1-24}{File systems}}{65}\relax 
@@ -45,7 +45,7 @@
 \doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-440005.1.2}{QQ2-1-44}{Starting the GUI}}{80}\relax 
 \doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-450005.1.2}{QQ2-1-45}{Reading and compiling measurements data}}{80}\relax 
 \doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-460005.1.2}{QQ2-1-46}{Main panel}}{80}\relax 
-\doTocEntry\tocsubsection{5.1.3}{\csname a:TocLink\endcsname{1}{x1-470005.1.3}{QQ2-1-47}{make\_magic.py}}{83}\relax 
+\doTocEntry\tocsubsection{5.1.3}{\csname a:TocLink\endcsname{1}{x1-470005.1.3}{QQ2-1-47}{MagIC GUI}}{83}\relax 
 \doTocEntry\tocsection{5.2}{\csname a:TocLink\endcsname{1}{x1-480005.2}{QQ2-1-48}{Command line PmagPy programs}}{84}\relax 
 \doTocEntry\tocsubsection{5.2.1}{\csname a:TocLink\endcsname{1}{x1-490005.2.1}{QQ2-1-49}{aarm\_magic.py}}{85}\relax 
 \doTocEntry\tocsubsection{5.2.2}{\csname a:TocLink\endcsname{1}{x1-500005.2.2}{QQ2-1-50}{angle.py }}{87}\relax 

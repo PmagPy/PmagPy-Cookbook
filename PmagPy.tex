@@ -59,15 +59,15 @@ There are many chefs who contributed to this work, in particular, the MagIC Data
 
 \chapter{Installing {\bf PmagPy}}
 
-To skip all the details and just start using \href{#QuickMagIC.py}{QuickMagIC} or \href{#make_magic.py}{MakeMagIC} to upload data into the \href{#MagICDatabase}{MagIC database}, or to analyze using \href{#thellier_GUI.py}{Thellier GUI} or \href{#DemagGUI}{Demag GUI}, start here. 
+To skip all the details and just start using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI} to upload data into the \href{#MagICDatabase}{MagIC database}, or to analyze using \href{#thellier_GUI.py}{Thellier GUI} or \href{#DemagGUI}{Demag GUI}, start here. 
 
 \customlink{standalone}
 \section{Standalone GUI download}
 
-If you don't need the full PmagPy functionality, and you only want to use QuickMagIC, MakeMagIC, Thellier GUI, and Demag GUI, there is now a standalone download for you.  You won't need to install Python.
+If you don't need the full PmagPy functionality, and you only want to use Pmag GUI, MagIC GUI, Thellier GUI, and Demag GUI, there is now a standalone download for you.  You won't need to install Python.
 You can download the \href{https://github.com/moonshoes87/PmagPy-Standalone-OSX/releases/latest}{standalone applications for OSX here}, and \href{https://github.com/moonshoes87/PmagPy-Standalone-Windows/releases/latest}{for Windows here}.
 
-Follow the download instructions in the provided links, and then you can skip the ``Full install'' section and go straight to using \href{#QuickMagIC.py}{QuickMagIC} or \href{#make_magic.py}{MakeMagIC}.  The standalone versions of these applications are still in development; please report problems to the PmagPy team: (\href{mailto:ltauxe@ucsd.edu}{ltauxe@ucsd.edu}).
+Follow the download instructions in the provided links, and then you can skip the ``Full install'' section and go straight to using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI}.  The standalone versions of these applications are still in development; please report problems to the PmagPy team: \href{mailto:ltauxe@ucsd.edu}{ltauxe@ucsd.edu}.
 
 \section{Full PmagPy install}
 
@@ -83,7 +83,7 @@ Follow the download instructions in the provided links, and then you can skip th
    \begin{itemize}
    \item To use the full functionality PmagPy functionality, you will need to download the most recent Enthought Python Distribution (EPD).  If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license}, which gives access to this distribution.  
    \item Once you have registered and gotten your academic license, you can \href{https://store.enthought.com/repo/epd/installers/epd-7.5-2-win-x86_64.msi}{download EPD here}.  
-   \item Windows users who cannot get an academic license should install this \href{http://magician.ucsd.edu/Software/PmagPy/archive/epd-7.3-2-win-x86.msi}{older Enthought Distribution}.  This version of EPD will not support all PmagPy programs, so if you want to run QuickMagIC or MakeMagIC you should download the \href{#standalone}{standalone versions}.
+   \item Windows users who cannot get an academic license should install this \href{http://magician.ucsd.edu/Software/PmagPy/archive/epd-7.3-2-win-x86.msi}{older Enthought Distribution}.  This version of EPD will not support all PmagPy programs, so if you want to run Pmag GUI or MagIC GUI you should download the \href{#standalone}{standalone versions}.
    \item If you run into problems with your installation, you may need to uninstall any previous Python installations.
    \end{itemize}
  \item Downloading PmagPy
@@ -108,7 +108,7 @@ Where do you want to go from here?
 
 \begin{itemize}
 \item \href{#magic_download}{Download data from the {\bf MagIC} database.}
-\item \href{#QuickMagIC.py}{Analyze and/or upload demagnetization and/or paleointensity measurement data to the {\bf MagIC} database. }
+\item \href{#pmag_gui.py}{Analyze and/or upload demagnetization and/or paleointensity measurement data to the {\bf MagIC} database. }
 \item \href{#PmagPy}{Learn more about particular programs in the {\bf PmagPy} software package.}
 \item \href{#MagICDatabase}{Learn about the MagIC Database.}
 \item \href{#Python}{Learn how to write your own programs in Python.}
@@ -116,12 +116,12 @@ Where do you want to go from here?
 \end{itemize}
 
 
-\customlink{QuickMagIC.py}
+\customlink{pmag_gui.py}
 
-\chapter{QuickMagIC.py Tutorial}
-\label{chap:QuickMagIC}
+\chapter{Pmag GUI Tutorial}
+\label{chap:Pmag GUI}
 
-{\bf QuickMagIC.py} is a Graphical User Interface (GUI) written by Lori Jonestrask and Ron Shaar  that provides a quick path to the main {\bf PmagPy} programs. The work flow is illustrated schematically here:
+{\bf Pmag GUI} is a Graphical User Interface (GUI) written by Lori Jonestrask and Ron Shaar  that provides a quick path to the main {\bf PmagPy} programs. The work flow is illustrated schematically here:
 
 \includegraphics[width=15cm]{EPSfiles/FigQkMagicFlow.eps}
 
@@ -130,17 +130,17 @@ Where do you want to go from here?
 
 \customlink{Project_Directory}
 
-\item  When you invoke {\bf QuickMagIC.py}, the first step is to change directories into a  `Project Directory'. For each study, create a directory with a name that relates to that study. Here we will call it {\it ThisProject}.  This is where you will collect and process all the rock and paleomagnetic data for a given study, usually a publication. The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path. Under certain Windows versions, this means you should not use your home directory, but create a directory called for example: D:$\backslash$MyPmagProjects and put {\it ThisProject} there.
+\item  When you invoke {\bf Pmag GUI}, the first step is to change directories into a  `Project Directory'. For each study, create a directory with a name that relates to that study. Here we will call it {\it ThisProject}.  This is where you will collect and process all the rock and paleomagnetic data for a given study, usually a publication. The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path. Under certain Windows versions, this means you should not use your home directory, but create a directory called for example: D:$\backslash$MyPmagProjects and put {\it ThisProject} there.
 %
-%Inside the  {\it ThisProject} directory, create two additional directories: {\it MyFiles} and {\it MagIC}. All the files that you want to convert to the MagIC format should be placed in {\it MyFiles}.  The {\it Project Directory} that {\bf QuickMagIC.py} seeks is that {\it MagIC} directory.
+%Inside the  {\it ThisProject} directory, create two additional directories: {\it MyFiles} and {\it MagIC}. All the files that you want to convert to the MagIC format should be placed in {\it MyFiles}.  The {\it Project Directory} that {\bf Pmag GUI} seeks is that {\it MagIC} directory.
 %
 %Your Directory tree might look like this now:
 %
 %\includegraphics[width=15cm]{EPSfiles/ProjectDirectory.eps}
 
 
- \item \textbf{copy example files:}  In the \href{#Datafiles}{ Datafiles } folder you will find a subfolder named {\it QuickMagIC}. Copy the contents of the  \href{#Project_Directory}{\it ThisProject} directory  into  your  own \href{#Project_Directory}{Project Directory} folder.
- \item Type {\bf QuickMagIC.py} on your \href{#command_line}{command line}.
+ \item \textbf{copy example files:}  In the \href{#Datafiles}{ Datafiles } folder you will find a subfolder named {\it Pmag\_GUI}. Copy the contents of the  \href{#Project_Directory}{\it ThisProject} directory  into  your  own \href{#Project_Directory}{Project Directory} folder.
+ \item Start Pmag GUI either by typing {\bf pmag\_gui.py} on your \href{#command_line}{command line}, or (if you have the \href{#standalone}{standalone}), by double-clicking the Pmag GUI icon on your Desktop.
  \item Change directories by clicking  on the ``change dir'' button and select your own {\it ThisProject} directory.
  \end{enumerate}
 
@@ -148,7 +148,7 @@ Where do you want to go from here?
 
 \section{Converting magnetometer files to MagIC format}
 \begin{itemize}
-\item {\bf QuickMagIC.py} allows for converting many different laboratory formats.  For the complete set of instructions, see the section on \href{#magnetometer_files}{Supported Rock Magnetometer files}.   For this example, we will use a `generic' file format.
+\item {\bf Pmag GUI} allows for converting many different laboratory formats.  For the complete set of instructions, see the section on \href{#magnetometer_files}{Supported Rock Magnetometer files}.   For this example, we will use a `generic' file format.
 %rshaar% In the {\it MyFiles} folder there are  files containing AF, Thermal, and Thellier measurement data of samples from location Snake River (lava flow site). All samples are from site sr01. The measurement data are arranged in the generic format.
 An example for a generic file format is shown here:
 
@@ -156,11 +156,11 @@ An example for a generic file format is shown here:
 
 To learn what all the column headers mean look at the documentation for \href{#generic_magic.py}{generic\_magic.py}.
 
-%\item Locate the {\it MyFiles} folder in  the {\it Datafiles} subdirectory named {\it QuickMagIC} and copy the contents to your own {\it MyFiles} directory.
+%\item Locate the {\it MyFiles} folder in  the {\it Datafiles} subdirectory named {\it Pmag GUI} and copy the contents to your own {\it MyFiles} directory.
 %
 %\includegraphics[width=15cm]{EPSfiles/FigMyFiles.eps}
 
-%\item Run the program: Open up a terminal window (Mac) or command prompt (Windows) and type QuickMagIC.py on the command line. In the QuickMagIC main panel press the Õchange dirÕ button. Select the MagIC directory in ThisProject when prompted.
+%\item Run the program: Open up a terminal window (Mac) or command prompt (Windows) and type pmag_gui.py on the command line. In the Pmag GUI main panel press the Õchange dirÕ button. Select the MagIC directory in ThisProject when prompted.
 
 \item In your  \href{#Project_Directory}{\it ThisProject} directory  there are three files with AF, Thermal, and Thellier measurement data of specimens from site sr01 (a lava flow site) of \cite{tauxe04b}.  There is also a file with sample orientation, location and other metadata typical for a paleomagnetic study.
 \item Press the [Convert magnetometer files to MagIC format] button. If no menu pops up or the window is blank, click on the Python icon  (the little space ship) on your dock. You should see a dialog window will appear with different file formats:
@@ -203,7 +203,7 @@ and like this for the  paleointensity data.  For paleointensity data, you must a
 
 \section{Optional: Calculate geographic / tilt-corrected direction}
 \begin{itemize}
-\item {\bf QuickMagIC.py} provides an optional tool for calculating geographic and tilt-corrected directions if those directions were not part of the original data files. To use this tool click on the button labeled `calculate geographic/tilt-corrected directions'.
+\item {\bf Pmag GUI} provides an optional tool for calculating geographic and tilt-corrected directions if those directions were not part of the original data files. To use this tool click on the button labeled `calculate geographic/tilt-corrected directions'.
 
 \item An empty template of a file named SrExample\_orient.txt was created in the MagIC Project Directory. This file is displayed in a Python window. You can fill in  this file manually using the Python window or \href{#field_info}{with with a spreadsheet program} (recommended). The empty template has now only the sample names derived from your measurement files, using the naming rules that you chose.
 \item To see an example of a filled in one, pull down the menu bar [file] $\rightarrow$  [open orientation file] and  choose the file SrExample\_orient.txt from {\it MyFiles} folder.
@@ -306,7 +306,7 @@ This is main panel of \href{#thellier_gui}{Thellier GUI}:
 
 \section{Upload to the database }
 
-For this, you first click on the green {\it prepare upload txt file} button on the main page of the {\bf QuickMagic} GUI. A file named `upload.txt' will be created in your \href{#Project_Directory}{\it ThisProject} directory.  Now, go to the  \href{http://earthref.org/MAGIC/search}{MagIC search interface}.      Click on the `create' button and find or create your reference.
+For this, you first click on the green {\it prepare upload txt file} button on the main page of {\bf Pmag GUI}. A file named `upload.txt' will be created in your \href{#Project_Directory}{\it ThisProject} directory.  Now, go to the  \href{http://earthref.org/MAGIC/search}{MagIC search interface}.      Click on the `create' button and find or create your reference.
 
 Click on `Upload' in the Actions column and   drag and drop the {\it upload.txt}   file onto the  `Drop a MagIC Text File' window.
 Congratulations. Your data are now in the database.  But, they are not yet activated which you can do by clicking on the `Activate' button in the Actions column.  Once you activate an uploaded dataset (only for published papers), it will be publicly available.
@@ -320,7 +320,7 @@ Data can be downloaded from the {\bf MagIC} database and examined with {\bf Pmag
 \href{http://earthref.org/MAGIC/doi/10.1029/2003GC000661}{http://earthref.org/MAGIC/doi/10.1029/2003GC000661}
 
 \noindent The above DOI will find the data for the paper by \cite{tauxe04b}.  [This may fail in Safari; if so, use an alternative browser like Firefox or Chrome.]     To download the data, simply click on the file icon below the column labeled `data'.  This will save a file to your downloads folder.
- To unpack this file after downloading it from the database click the ``unpack downloaded txt file button`` in the \href{#QuickMagIC.py}{QuickMagIC.py}  panel.
+ To unpack this file after downloading it from the database click the ``unpack downloaded txt file button`` in the \href{#pmag_gui.py}{Pmag GUI}  panel.
 
 
  \section{Preparing for MagIC}
@@ -329,9 +329,9 @@ Data can be downloaded from the {\bf MagIC} database and examined with {\bf Pmag
 
 \subsection{Field and sampling information}
 
- There is an astounding number of different ways that paleomagnetists document data in the field and in the lab. This variety is met with a large number  of method codes that describe sampling and orientation procedures (see \url{http://earthref.org/MAGIC/methods.htm} for a complete description).   The MagIC database expects sample orientations to be the azimuth and plunge of the fiducial arrow used for measurement (see  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#ch2}{[Essentials, Chapter 9]} )  and the orientation of the bedding to be dip direction and downward dip so no matter what your own preference is, it must be translated into the standard MagIC convention for use with the PmagPy programs and with the \href{#QuickMagIC.py}{QuickMagIC.py}  GUI.
+ There is an astounding number of different ways that paleomagnetists document data in the field and in the lab. This variety is met with a large number  of method codes that describe sampling and orientation procedures (see \url{http://earthref.org/MAGIC/methods.htm} for a complete description).   The MagIC database expects sample orientations to be the azimuth and plunge of the fiducial arrow used for measurement (see  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#ch2}{[Essentials, Chapter 9]} )  and the orientation of the bedding to be dip direction and downward dip so no matter what your own preference is, it must be translated into the standard MagIC convention for use with the PmagPy programs and with \href{#pmag_gui.py}{Pmag GUI}.
 
-\href{#QuickMagIC.py}{QuickMagIC.py}  supports two different ways of getting orientation and other sampling related information into a MagIC usable format.  The first way is through \href{#orient}{step 2 on the GUI front panel} and filling in the data from within the GUI.  That way will work for many applications, but it may be desirable to fill the spreadsheet in separately from the GUI by using  a tab delimited file (orient.txt format).   By clicking on  \href{#orient}{step 2 on the GUI front panel}  you create a file named {\it demag\_orient.txt}  which has all of your sample names in it.   Each {\it orient.txt} file should  have all the information for a single location {\it sensu MagIC}.
+\href{#pmag_gui.py}{Pmag GUI}  supports two different ways of getting orientation and other sampling related information into a MagIC usable format.  The first way is through \href{#orient}{step 2 on the GUI front panel} and filling in the data from within the GUI.  That way will work for many applications, but it may be desirable to fill the spreadsheet in separately from the GUI by using  a tab delimited file (orient.txt format).   By clicking on  \href{#orient}{step 2 on the GUI front panel}  you create a file named {\it demag\_orient.txt}  which has all of your sample names in it.   Each {\it orient.txt} file should  have all the information for a single location {\it sensu MagIC}.
 
 
   \includegraphics[width=15cm]{EPSfiles/orient.eps}
@@ -491,7 +491,7 @@ The supported file formats are:
 \customlink{Hysteresis_file_formats}
 
 \subsubsection{Hysteresis file formats}
-{\bf QuickMagIC.py} will import hysteresis data from room temperature  Micromag alternating gradient magnetometers (AGM)  in several different ways.  You can import either hysteresis loops or backfield curves, or you can import whole directories of the same.  In the latter case, the file endings must be either .agm (.AGM) or .irm (.IRM) and the first part of the file must be the specimen name.
+{\bf Pmag GUI} will import hysteresis data from room temperature  Micromag alternating gradient magnetometers (AGM)  in several different ways.  You can import either hysteresis loops or backfield curves, or you can import whole directories of the same.  In the latter case, the file endings must be either .agm (.AGM) or .irm (.IRM) and the first part of the file must be the specimen name.
  See the documentation for  \href{#AGM\_magic.py}{AGM\_magic.py} for examples.
 
 
@@ -500,10 +500,10 @@ The supported file formats are:
 %
 %If you already have a  \href{#mk_redo.py}{PmagPy ``redo''} file, you can import it into the MagIC folder with this option.
 %
-%Many investigators are used to their own data analysis routines (e.g., LSQ and PMM).  These are not supported at this time.  If you have example files and want to see them supported within {\bf QuickMagIC.py}, please send them to me at:  ltauxe@ucsd.edu.
+%Many investigators are used to their own data analysis routines (e.g., LSQ and PMM).  These are not supported at this time.  If you have example files and want to see them supported within {\bf Pmag GUI}, please send them to me at:  ltauxe@ucsd.edu.
 % and some of the outputs of these programs(e.g., \href{#LSQ}{LSQ } and \href{#PMM}{PMM} files) can be imported into the MagIC folder.
 
-Now you've collected together all the files you need, we can start importing them into {\it MagIC} directory with   \href{#convert2magic}{\bf Step 1 in QuickMagIC.py}.
+Now you've collected together all the files you need, we can start importing them into {\it MagIC} directory with   \href{#convert2magic}{\bf Step 1 in Pmag GUI}.
 
 
 %
@@ -572,7 +572,7 @@ Now you've collected together all the files you need, we can start importing the
 %%%%\customlink{SIO}
 %%%
 %%%\begin{itemize}
-%%%\item SIO format:   This option will generate a command line call to the program \href{#sio_magic.py}{sio\_magic.py}.  There are many options for laboratory procedures, naming conventions and so on and the {\bf QuickMagIC.py} GUI attempts to walk you through the process with as little pain as possible.
+%%%\item SIO format:   This option will generate a command line call to the program \href{#sio_magic.py}{sio\_magic.py}.  There are many options for laboratory procedures, naming conventions and so on and the {\bf Pmag GUI} GUI attempts to walk you through the process with as little pain as possible.
 %%%	\begin{itemize}
 %%%	\item Select \href{#naming_schemes}{naming convention}:  Here you explain the relationship between your sample name and the site name.
 %%%	\item Fill in the following information:  Ylou should really really fill in the \href{location_name}{location name} for this file - it will save you time later if you want to upload your data into the MagIC database.  If your specimen/sample relationship is simply to add some characters to te end of your sample name (for example specimen mc144a1 belongs to sample mc144a), fill in the number of characters you use (unless it is '1' as in this case, because that is the default).  If you have some complicated system (for example specimen `\@\#\#\$\%\&\%` belongs to sample `Harry', we can't help you here and you'll have to fill out all the sample names later by hand.  (That should teach you a lesson).
@@ -591,13 +591,13 @@ Now you've collected together all the files you need, we can start importing the
 %%%	\end{itemize}
 %%%	\item 2G format:   This import procedure generates calls to \href{#2G_bin_magic.py}{2G\_bin\_magic.py}.  It  differs from that for \href{#SIO}{SIO} formatted in several ways:
 %%%	\begin{itemize}
-%%%	\item Because 2G  files contain measurements for single specimens, there is usually a directory with many files.  Importing each file individually is painful, so {\bf QuickMagIC.py}  asks for the directory name and imports ALL files with file endings of .dat or .DAT.
+%%%	\item Because 2G  files contain measurements for single specimens, there is usually a directory with many files.  Importing each file individually is painful, so {\bf Pmag GUI}  asks for the directory name and imports ALL files with file endings of .dat or .DAT.
 %%%	\item No lab protocol need be specified.
 %%%	\item You create an {\it er\_samples.txt} file from the magnetometer file.  For that you should specify at least the orientation method used (e.g., magnetic, sun or sighting), otherwise it is assumed that these are unoriented samples.  The {\it er\_sample.txt} file is very minimalist, having no lithology information, required for a MagIC database contribution.  So after importing the files, you should use the \href{#samp2orient}{Convert samples =$>$ orient.txt} option, file in the required information following the instructions \href{#field_info}{here}, then re-import it into your Project Directory.
 %%%	\end{itemize}
 %%%
 %%%\item LDEO format:  This import procedure is identical to that for \href{#SIO}{SIO} formatted files but generates calls for \href{#LDEO_magic.py}{LDEO\_magic.py}.
-%%%\item CIT format:   This format is the `CIT' format used by Craig Jone's {\bf PaleoMag} software package (\url{http://cires.colorado.edu/people/jones.craig/PMag3.html}).   {\bf QuickMagIC.py} generates calls to the program \href{#CIT_magic.py}{CIT\_magic.py}.       The GUI import option behaves in a similar fashion to the \href{#SIO}{SIO format} import, but you don't specify lab protocol and you can specify method codes.  In the absence of method codes, it is assumed the samples were oriented with magnetic compass.
+%%%\item CIT format:   This format is the `CIT' format used by Craig Jone's {\bf PaleoMag} software package (\url{http://cires.colorado.edu/people/jones.craig/PMag3.html}).   {\bf Pmag GUI} generates calls to the program \href{#CIT_magic.py}{CIT\_magic.py}.       The GUI import option behaves in a similar fashion to the \href{#SIO}{SIO format} import, but you don't specify lab protocol and you can specify method codes.  In the absence of method codes, it is assumed the samples were oriented with magnetic compass.
 %%%\item UU format
 %%%\item UB format
 %%%
@@ -651,7 +651,7 @@ Now you've collected together all the files you need, we can start importing the
 %%%
 %%%For importing whole directories:   Your file names must follow the convention described in the section on \href{#Hysteresis_file_formats}{hysteresis file formats}.   Follow the same steps as before, but you will not be asked for a specimen name or whether the data are from backfield experiments as these are supplied by the file names.
 %%%
-%%%When you are finished importing all the measurement data you need, choose ``Next step''  \href{#Combine}{Step 1. of   QuickMagIC GUI}.
+%%%When you are finished importing all the measurement data you need, choose ``Next step''  \href{#Combine}{Step 1. of   Pmag GUI}.
 %%%
 %%%
 %%%
@@ -772,23 +772,23 @@ Now you've collected together all the files you need, we can start importing the
 %%%Takes you to this Cookbook.
 
 
-\customlink{make_magic.py}
+\customlink{magic_gui.py}
 
-\chapter{Make\_magic.py Tutorial}
-\label{chap:make_magic}
+\chapter{MagIC GUI Tutorial}
+\label{chap:MagIC GUI}
 
-{\bf Make\_magic.py} is a Graphical User Interface (GUI) written by Lori Jonestrask.  It is meant for efficiently compiling a contribution for uploading to the MagIC database.  Make\_magic.py is specifically designed for making a contribution without measurement data; if you ARE including measurement data, we recommend that you use \href{#QuickMagIC.py}{QuickMagIC} instead.
-Make\_magic.py allows you to add data at the location, site, sample, and specimen levels.  You can also add results and ages.  Make\_magic.py uses an Excel-like grid interface for entering and editing data.  Useful features include: pop-up menus with controlled vocabularies, multi-cell pasting from external spreadsheets, and built-in validations for MagIC database requirements.  
+{\bf MagIC GUI} is a Graphical User Interface written by Lori Jonestrask.  It is meant for efficiently compiling a contribution for uploading to the MagIC database.  MagIC GUI is specifically designed for making a contribution without measurement data; if you ARE including measurement data, we recommend that you use \href{#pmag_gui.py}{Pmag GUI} instead.
+MagIC GUI allows you to add data at the location, site, sample, and specimen levels.  You can also add results and ages.  The program uses an Excel-like grid interface for entering and editing data.  Useful features include: pop-up menus with controlled vocabularies, multi-cell pasting from external spreadsheets, and built-in validations for MagIC database requirements.  
 
 
-\section{Starting with MakeMagIC}
-Start up make\_magic.py.  You'll do this by clicking on the icon (if you downloaded the standalone version) or entering `make\_magic.py' on your \href{#command_line}{command line} (if you downloaded the full PmagPy installation). 
+\section{Starting with MagIC GUI}
+Start up MagIC GUI.  You'll do this by clicking on the icon (if you downloaded the \href{#standalone}{standalone} version) or entering `magic\_gui.py' on your \href{#command_line}{command line} (if you downloaded the full PmagPy installation). 
   
-When you first start {\bf make\_magic.py}, you will change directories into a  `Project Directory'. For each study, create a directory with a name that relates to that study. Here we will call it {\it MyProject}.  This is where you will collect  and process all the rock and paleomagnetic data for a given study, usually a publication.   The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path. Under certain Windows versions, this means you should not use your home directory, but create a directory called for example: D:$\backslash$MyPmagProjects and put {\it MyProject} there.
+When you first start {\bf magic\_gui.py}, you will change directories into a  `Project Directory'. For each study, create a directory with a name that relates to that study. Here we will call it {\it MyProject}.  This is where you will collect  and process all the rock and paleomagnetic data for a given study, usually a publication.   The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path. Under certain Windows versions, this means you should not use your home directory, but create a directory called for example: D:$\backslash$MyPmagProjects and put {\it MyProject} there.
 
   \includegraphics{EPSfiles/MM_main_frame.eps}
   
-\section{MakeMagIC example dataset}
+\section{MagIC GUI example dataset}
 Now we'll walk through a simple data input process, with fake data.
   \begin{itemize}
   \item Start by clicking on `1. add location data'.  Enter location data as seen below. Notice use of the context menu: in most instances, these will provide controlled vocabularies.
@@ -815,7 +815,7 @@ Now we'll walk through a simple data input process, with fake data.
     
     \includegraphics{EPSfiles/MM_sample_grid_added_cols.eps}
     
-  \item Save and close the sample grid, then re-open it to see how the data have propagated (re-opening the grid isn't necessary for the program, this is just for you to see what make\_magic.py does automatically).
+  \item Save and close the sample grid, then re-open it to see how the data have propagated (re-opening the grid isn't necessary for the program, this is just for you to see what MagIC GUI does automatically).
     
     \includegraphics{EPSfiles/MM_sample_grid_propagated_full.eps}
 
@@ -831,7 +831,7 @@ Now we'll walk through a simple data input process, with fake data.
 
     \includegraphics{EPSfiles/MM_result_grid.eps}
 
-  \item For each result, you will add one or more items that the result pertains to.  In this example, one result is a site V[A]DM, and the other is an averaged V[A]DM from both sites.  For now, leave magic_method_codes blank for the Averaged V[A]DM result: in a minute we'll see how make\_magic catches this error.  Save and close the result grid.
+  \item For each result, you will add one or more items that the result pertains to.  In this example, one result is a site V[A]DM, and the other is an averaged V[A]DM from both sites.  For now, leave magic\_method\_codes blank for the Averaged V[A]DM result: in a minute we'll see how MagIC GUI catches this error.  Save and close the result grid.
 
   \item Next, you will create a MagIC format upload file.  Click the final button on the main frame, `prepare upload txt file'.  Depending on the size of your contribution, this can take a minute; with our small example, it should be fairly quick.  After hitting upload, you will see an error message, and the main frame will direct you to the problem.  Validations will check for missing required fields, invalid data, and missing ancestors (for instance, a specimen with no sample). 
 
@@ -855,7 +855,7 @@ Now we'll walk through a simple data input process, with fake data.
 %\chapter{MagIC.py}
 %\label{chap:MagIC} \href{#MagICDatabase}{[MagIC}]
 %
-%While \href{#QuickMagIC.py}{QuickMagIC.py} provides a bare bones interface for importing, interpreting and uploading most demagnetization and paleointensity experimental data into the MagIC database, {\bf MagIC.py} is a more complete (and complicated) program.
+%While \href{#pmag_gui.py}{Pmag GUI} provides a bare bones interface for importing, interpreting and uploading most demagnetization and paleointensity experimental data into the MagIC database, {\bf MagIC.py} is a more complete (and complicated) program.
 %It is an umbrella program that links many MagIC related functions of the \href{#PmagPy}{PmagPy} Software Package in a user-friendly  graphical user interface (GUI).  While it is invoked with a command line call, this  can be done from any directory (with no spaces in the path).  It generates calls to the programs described in Chapter~\ref{chap:PmagPy} so you don't have to.    It allows importing of many lab and instrument formats, plotting of a variety of data and doing the data processing and book-keeping required to create files ready for uploading into the MagIC Console software.
 
 
@@ -872,7 +872,7 @@ For an introduction to programming in Python, see the  Chapter on \href{#Python}
 
 \customlink{command_line}
 \section{Finding your command line}
-If you are not using a Unix-like computer (*NIX), you may never have encountered a command line. While the \href{#QuickMagIC.py}{QuickMagIC.py} Graphical User Interface (GUI) is an attempt to make life as easy for you by constructing commands for you, you still need to find the command line to start it up.  Under the MacOS X operating system look for the Terminal application in the Utilities folder within the Applications folder. When it is launched, you will get a terminal window as shown below.  The Unix (and Mac OS) Bash shell has a \$ sign as a prompt.  I (LT) use the antiquated `C-shell'  (don't ask) with a \% for a prompt and  will use the \% prompt in the examples here, but any of these command line prompts will work.
+If you are not using a Unix-like computer (*NIX), you may never have encountered a command line. While the \href{#pmag_gui.py}{Pmag GUI} is an attempt to make life as easy for you by constructing commands for you, you still need to find the command line to start it up.  Under the MacOS X operating system look for the Terminal application in the Utilities folder within the Applications folder. When it is launched, you will get a terminal window as shown below.  The Unix (and Mac OS) Bash shell has a \$ sign as a prompt.  I (LT) use the antiquated `C-shell'  (don't ask) with a \% for a prompt and  will use the \% prompt in the examples here, but any of these command line prompts will work.
 
   \includegraphics[width=15cm]{EPSfiles/terminal.eps}
 
@@ -977,16 +977,16 @@ The demag\_gui program enables the display and analysis of paleomagnetic demagne
 
 \subsubsection{Launching}\label{launching}
 
-The best way to launch the demag\_gui application is through the
-QuickMagIC app. If PmagPy has been added to your PATH you can type QuickMagIC.py at the command line to launch it or you can navigate to the directory containing it and type \texttt{python  ./QuickMagIC.py}. Within the QuickMagIC app, data can be converted from the format of a particular lab into MagIC format so that it can be displayed and analyzed within the demag\_gui. The program can be started by clicking on the demag\_gui button in the QuickMagIC GUI, shown below. If no new window pops up after clicking this button, click on the Python icon  (the little space ship) on your dock.
+The best way to launch the Demag GUI application is through the
+Pmag GUI app. If PmagPy has been added to your PATH you can type pmag\_gui.py at the command line to launch it or you can navigate to the directory containing it and type \texttt{python  ./pmag_gui.py}. Within the Pmag GUI app, data can be converted from the format of a particular lab into MagIC format so that it can be displayed and analyzed within the demag\_gui. The program can be started by clicking on the demag\_gui button in the Pmag GUI, shown below. If no new window pops up after clicking this button, click on the Python icon  (the little space ship) on your dock.
 
 \includegraphics[width=10 cm]{EPSfiles/demag_gui_QuickMagicLauncher.eps}
 
-Alternatively, the demag\_gui may be launched through the command line by navigating to the directory containing demag\_gui.py and running it with: \texttt{python ./demag\_gui.py}.
+Alternatively, Demag GUI may be launched through the command line by navigating to the directory containing demag\_gui.py and running it with: \texttt{python ./demag\_gui.py}.
 
 Or if PmagPy has been added to your PATH you can simply type
 demag\_gui.py at the command line. \textbf{Note:} on OSX it is
-recommended to launch through the QuickMagIC program as on wxpython 2.9 the drop down boxes behave better when demag\_gui is launched this way.
+recommended to launch through Pmag GUI as on wxpython 2.9 the drop down boxes behave better when demag\_gui is launched this way.
 
 \subsubsection{Interpretation of Specimen
 Data}\label{interpretation-of-specimen-data}
@@ -1071,7 +1071,7 @@ In order to more easily view and edit specimen interpretation data there is a sp
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#ch10}{[Essentials Chapter 10]} and \href{#MagIC}{[MagIC}]
 \href{https://github.com/ltauxe/PmagPy/blob/master/Thellier_GUI_tutorial.pdf}{[Thellier\_GUI\_tutorial.pdf]}
 
-The program {\bf thellier\_gui.py}  combines functions from \href{#thellier_magic.py}{thellier\_magic.py} and new tools described by  \href{http://dx.doi.org/10.1002/ggge.20062}{Shaar and Tauxe (2013)} \nocite{shaar13} in a user-friendly graphical user interface (GUI).  It can also be called from within \href{#QuickMagIC.py}{QuickMagIC.py}, using files already prepared in a  \href{#ThisProject}{This Project} directory and the interpretations from {\bf thellier\_gui.py} are part of the workflow of the  \href{#QuickMagIC.py}{QuickMagIC} GUI.   This section is a brief introduction on how to use {\bf thellier\_gui.py} as a stand alone application.
+The program {\bf thellier\_gui.py}  combines functions from \href{#thellier_magic.py}{thellier\_magic.py} and new tools described by  \href{http://dx.doi.org/10.1002/ggge.20062}{Shaar and Tauxe (2013)} \nocite{shaar13} in a user-friendly graphical user interface (GUI).  It can also be called from within \href{#pmag_gui.py}{Pmag GUI}, using files already prepared in a  \href{#ThisProject}{This Project} directory and the interpretations from {\bf thellier\_gui.py} are part of the workflow of  \href{#pmag_gui.py}{Pmag GUI}.   This section is a brief introduction on how to use {\bf thellier\_gui.py} as a stand alone application.
 
 \noindent  A complete list of the definitions for paleointensity statistics used by Thellier\_GUI.py is available as a supplement to the article by \href{#http://dx.doi.org/10.1002/2013GC005135}{Paterson et al., 2014}  \nocite{paterson14} and available for download here:
 
@@ -1087,7 +1087,7 @@ A ``choose project directory'' dialog window will appear as soon as the GUI is s
 %	\includegraphics[width=15cm]{EPSFiles/Screenshot_choose_directory.eps}
 %
 %
-Your  \href{#Project_Directory}{ThisProject} directory should include a file named {\it magic\_measurements.txt} (created for example by \href{#QuickMagIC.py}{\bf QuickMagIC.py}.   If a file named {\it rmag\_anisotropy.txt} is in the project directory, then the program reads in the anisotropy data. Reading and processing the measurements files may take several seconds, depending on the number of the specimens.
+Your  \href{#Project_Directory}{ThisProject} directory should include a file named {\it magic\_measurements.txt} (created for example by \href{#pmag_gui.py}{\bf Pmag GUI}.   If a file named {\it rmag\_anisotropy.txt} is in the project directory, then the program reads in the anisotropy data. Reading and processing the measurements files may take several seconds, depending on the number of the specimens.
 
 
 \subsubsection{Reading and compiling measurements data}
@@ -1206,17 +1206,17 @@ The bottom of the main panel include paleointensity statistics. The first line h
 %\end{itemize}
 %\end{itemize}
 
-\subsection{make\_magic.py}
+\subsection{MagIC GUI}
 
-This "Make Magic" application provides a simple interface for transforming data from a paleomagnetic or rock magnetic study into the format necessary for contribution to the MagIC database.
+This application provides a simple interface for transforming data from a paleomagnetic or rock magnetic study into the format necessary for contribution to the MagIC database.
 
 \section{Command line PmagPy programs}
 
 {\bf PmagPy}  scripts work by calling them on a \href{#command_line}{command line}.
  The python scripts must be placed in a directory that is in your ``path''.  To see if this has been properly done, type {\bf dir\_cart.py -h} on the command line and you should get a help message.  If you get a ``command not found'' message, you need to fix your path; check the ``installing python'' page on the software website.   Another possible cause for failure is that somehow, the python scripts are no longer executable.  To fix this, change directories into the directory with the scripts, and type the command:  chmod a+x *.py
 
-For people who hate command line programs and prefer graphical user interfaces with menus, etc., some of the key programs for interpreting paleomagnetic and rock magnetic data are packaged together in a program called {\href{#QuickMagIC.py}{QuickMagIC.py}.  This can be invoked by typing {\bf QuickMagIC.py} on the command line.
-The \href{#QuickMagIC.py}{QuickMagIC.py} program generates the desired commands for you behind the scenes, so you do not have to learn UNIX or how to use the command line (except to call the {\bf QuickMagIC.py} program itself).  Nonetheless, some understanding of what is actually happening is helpful, because the {\bf QuickMagIC.py} program is more limited than  full range of {\bf PmagPy} programs.  So, here is a brief introduction to how the {\bf PmagPy} programs work.
+For people who hate command line programs and prefer graphical user interfaces with menus, etc., some of the key programs for interpreting paleomagnetic and rock magnetic data are packaged together in a program called {\href{#pmag_gui.py}{Pmag GUI}.  This can be invoked by typing {\bf pmag_gui.py} on the command line.
+The \href{#pmag_gui.py}{Pmag GUI} program generates the desired commands for you behind the scenes, so you do not have to learn UNIX or how to use the command line (except to call {\bf Pmag GUI} itself).  Nonetheless, some understanding of what is actually happening is helpful, because {\bf Pmag GUI} is more limited than  full range of {\bf PmagPy} programs.  So, here is a brief introduction to how the {\bf PmagPy} programs work.
 
 All {\bf PmagPy} programs print a help message out if you type: {\bf program\_name.py -h} on the command line.  Many have an ``interactive'' option triggered by typing {\bf program\_name.py -i}.  Many also allow reading from \href{#standard_IO }{standard input and output}.   The help message will explain how each particular program functions.  There are some common features for the command line options:
 
@@ -1915,9 +1915,9 @@ second deriative maximum is at T=552
 \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/customize_criteria.py}{[customize\_criteria docs]}
 
-The MagIC database allows documentation of which criteria were used in selecting data on a specimen, sample or site level and to easily apply those criteria (and re-apply them as they change) in preparing the different tables.  These choices are stored in the {\it pmag\_criteria} table in each MagIC project directory (see \href{#QuickMagIC.py}{QuickMagIC.py} documentation).
+The MagIC database allows documentation of which criteria were used in selecting data on a specimen, sample or site level and to easily apply those criteria (and re-apply them as they change) in preparing the different tables.  These choices are stored in the {\it pmag\_criteria} table in each MagIC project directory (see \href{#pmag_gui.py}{Pmag GUI} documentation).
 
- Certain {\bf PmagPy} programs use the datafile {\it pmag\_criteria.txt} to select data (for example {\bf thellier\_magic.py} and {\bf specimens\_results\_magic.py}).  To customize these criteria for your own data sets, you can use the program {\bf customize\_criteria.py}.  This program is also called by the {\bf QuickMagIC.py} GUI under the Utilities menu.    Try it out on {\it pmag\_criteria.txt}.   This is a ``full vector'' set of criteria - meaning that it has both directions and intensity flags set.  Change the {\it specimen\_alpha95} cutoff to 180. from whatever it is now set to.   Save the output to a new file named {\it new\_criteria.txt}.
+ Certain {\bf PmagPy} programs use the datafile {\it pmag\_criteria.txt} to select data (for example {\bf thellier\_magic.py} and {\bf specimens\_results\_magic.py}).  To customize these criteria for your own data sets, you can use the program {\bf customize\_criteria.py}.  This program is also called by the {\bf Pmag GUI} under the Utilities menu.    Try it out on {\it pmag\_criteria.txt}.   This is a ``full vector'' set of criteria - meaning that it has both directions and intensity flags set.  Change the {\it specimen\_alpha95} cutoff to 180. from whatever it is now set to.   Save the output to a new file named {\it new\_criteria.txt}.
 
 \begin{verbatim}
 % customize_criteria.py -f pmag_criteria.txt -F new_criteria.txt
@@ -1979,7 +1979,7 @@ Note that the default place for the PmagPy programs to look for criteria is in {
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch7.html}{[Essentials Chapter 7]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/demag_gui.py}{[demag\_gui docs]}
 
-The program \href{#DemagGUI}{demag\_gui.py} is used by \href{#QuickMagIC.py}{Quick\_MagIC.py} for interpreting demagnetization experimental data.   See \href{#DemagGUI}{demag\_gui.py} {this link} for guidances.
+The program \href{#DemagGUI}{demag\_gui.py} is used by \href{#pmag_gui.py}{Quick\_MagIC.py} for interpreting demagnetization experimental data.   See \href{#DemagGUI}{demag\_gui.py} {this link} for guidances.
 
 
 \customlink{di_eq.py}
@@ -3403,7 +3403,7 @@ For more options, here is  the help message for {\bf generic\_magic.py }:
                 inclination in tilt-corrected coordinate system (-90 to 90)
  \end{verbatim}
 
- This program is called within \href{#QuickMagIC.py}{QuickMagIC.py} but could be used as a stand alone program if you wish.
+ This program is called within \href{#pmag_gui.py}{Pmag GUI} but could be used as a stand alone program if you wish.
 
 
 
@@ -3490,7 +3490,7 @@ data stored in  ./magic_measurements.txt
 
 This takes a while so be patient....
 
-You can also downloaded the {core summary} data from the \href{#LIMS} {LIMS} database and convert it to the MagIC format using \href{#QuickMagIC.py}{QuickMagIC.py}.
+You can also downloaded the {core summary} data from the \href{#LIMS} {LIMS} database and convert it to the MagIC format using \href{#pmag_gui.py}{Pmag GUI}.
 Now you can plot the data and the core tops using \href{#core_depthplot.py}{core\_depthplot.py}
 
 
@@ -4367,7 +4367,7 @@ Acceptance criteria read in from  pmag_criteria.txt
 data saved in:  ./Directions.txt ./Intensities.txt ./SiteNfo.txt
 \end{verbatim}
 
-Note that this procedure is more or less automated in the \href{#QuickMagIC.py}{QuickMagIC.py} GUI.
+Note that this procedure is more or less automated in \href{#pmag_gui.py}{Pmag GUI}.
 
 
 \customlink{stats.py}
@@ -4977,7 +4977,7 @@ You can \href{#magic_download}{download data} using the \href{http://earthref.or
 %    \includegraphics[width=15cm]{EPSfiles/MagIC_search.eps}
 %
 %
-       After downloading, the data can be unpacked and examined using various tools in the {\bf PmagPy}  package, for example using \href{#QuickMagIC.py}{QuickMagIC.py}.
+       After downloading, the data can be unpacked and examined using various tools in the {\bf PmagPy}  package, for example using \href{#pmag_gui.py}{Pmag GUI}.
 
 \customlink{Uploading}
 %
@@ -5049,7 +5049,7 @@ AZ01\qquad &Azores \qquad & basalt \qquad &lava flow \qquad & 37.80\qquad &-25.8
 }
 
 Although data can be entered directly into Excel spreadsheets by hand, it is easier to generate the necessary tables as a by-product of ordinary data processing without having to know details of the meta-data and method codes.
-The section on \href{#PmagPy}{PmagPy} describes how to use the {\bf PmagPy} software for  data analysis and generate the MagIC data tables automatically for the most common paleomagnetic studies involving directions and/or paleointensities.    See also \href{#QuickMagIC.py}{QuickMagIC.py}.
+The section on \href{#PmagPy}{PmagPy} describes how to use the {\bf PmagPy} software for  data analysis and generate the MagIC data tables automatically for the most common paleomagnetic studies involving directions and/or paleointensities.    See also \href{#pmag_gui.py}{Pmag GUI}.
 
 
 \customlink{method_codes}
@@ -5117,7 +5117,7 @@ This study	 Submarine Basaltic Glass	17r1026	17r1026	Lava Flow	801C	19	156	Igneo
 .
 \end{verbatim}
 
-Correctly formatted MagIC data tables can be assembled into a suitable upload text file by using the program \href{#upload_magic.py}{upload\_magic.py} which reads in all MagIC tables in a given directory and puts them together as in the above example.  You can invoke \href{#upload_magic.py}{upload\_magic.py} on the \href{#command_line}{command line} or call it within  \href{#QuickMagIC.py}{QuickMagIC.py}.     \href{#upload_magic.py}{upload\_magic.py} creates a file called {\it upload\_magic.txt} which can be \href{#magic_upload}{uploaded into the MagIC database}.
+Correctly formatted MagIC data tables can be assembled into a suitable upload text file by using the program \href{#upload_magic.py}{upload\_magic.py} which reads in all MagIC tables in a given directory and puts them together as in the above example.  You can invoke \href{#upload_magic.py}{upload\_magic.py} on the \href{#command_line}{command line} or call it within  \href{#pmag_gui.py}{Pmag GUI}.     \href{#upload_magic.py}{upload\_magic.py} creates a file called {\it upload\_magic.txt} which can be \href{#magic_upload}{uploaded into the MagIC database}.
 
 
 
@@ -6795,7 +6795,7 @@ There are lots of graphing styles possible with {\color{blue}matplotlib}, e.g., 
 
 Data analysis in Python benefits from an increasingly robust ecosystem of packages for scientific computing and plotting. A tool that has gained increasingly widespread use for conducting and presenting data analysis is the Jupyter notebook. The Jupyter notebook builds on the IPython project which began as a way to bring increased interactivity to data analysis in Python \citep{perez07} and has evolved to include an interactive notebook environment that seeks to enable the full trajectory of scientific computing from initial analysis and visualization onwards to collaboration and through to publication. The project has expanded to enable a reproducible interactive computing environment for many other programming languages (such as R and Julia) and the language-agnostic parts of its architecture have recently been rebranded as Project Jupyter (\url{http://jupyter.org}). Jupyter notebooks allow for executable code, results, text and graphical output to coherently coexist in a single document. With these combined components, they are excellent tools both for conducting data analysis and presenting results.
 
-Underlying the {\bf PmagPy}  programs that are accessible through the command line and the GUI interfaces (e.g., {\bf QuickMagIC.py}) are two main function libraries: {\bf pmag.py} and {\bf pmagplotlib.py}. The functions within these modules can  be imported and called upon within a Jupyter notebook running a Python 2.7 kernel. In addition to these functions, Nick Swanson-Hysell created a module called {\bf ipmag.py} that is in active development and contains functions that replicate and extend some of the functionality that is found within the {\bf PmagPy}  command line programs for use in the notebook environment.
+Underlying the {\bf PmagPy}  programs that are accessible through the command line and the GUI interfaces (e.g., {\bf Pmag GUI}) are two main function libraries: {\bf pmag.py} and {\bf pmagplotlib.py}. The functions within these modules can  be imported and called upon within a Jupyter notebook running a Python 2.7 kernel. In addition to these functions, Nick Swanson-Hysell created a module called {\bf ipmag.py} that is in active development and contains functions that replicate and extend some of the functionality that is found within the {\bf PmagPy}  command line programs for use in the notebook environment.
 
 To provide a glimpse of what is possible in terms of data analysis using {\bf PmagPy} in a notebook environment, we have created an example notebook that is available in the {\it IPmag\_notebook} folder in the Datafiles package downloaded as a part of  the {\bf PmagPy} package. This notebook (PmagPy\_notebook.ipynb} imports a data set downloaded from the  MagIC database,  plots them  and conducts some statistical analyses.
 

@@ -7,7 +7,7 @@
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
 <!-- html,1,sections+ --> 
 <meta name="src" content="PmagPy.tex"> 
-<meta name="date" content="2015-12-16 12:58:00"> 
+<meta name="date" content="2015-12-22 11:13:00"> 
 <link rel="stylesheet" type="text/css" href="PmagPy.css"> 
 </head><body 
 >
@@ -25,9 +25,9 @@ href="#x1-1000" id="QQ2-1-1">Contents</a></span>
 href="#x1-20001" id="QQ2-1-2">Installing <span 
 class="cmbx-10x-x-109">PmagPy</span></a></span>
 <br />   <span class="chapterToc" >2 <a 
-href="#x1-60002" id="QQ2-1-6">QuickMagIC.py Tutorial</a></span>
+href="#x1-60002" id="QQ2-1-6">Pmag GUI Tutorial</a></span>
 <br />   <span class="chapterToc" >3 <a 
-href="#x1-190003" id="QQ2-1-19">Make_magic.py Tutorial</a></span>
+href="#x1-190003" id="QQ2-1-19">MagIC GUI Tutorial</a></span>
 <br />   <span class="chapterToc" >4 <a 
 href="#x1-220004" id="QQ2-1-22">Survival computer skills</a></span>
 <br />   <span class="chapterToc" >5 <a 
@@ -56,7 +56,7 @@ href="#x1-40001.2" id="QQ2-1-4">Full PmagPy install</a></span>
 <br />   &#x00A0;<span class="sectionToc" >1.3 <a 
 href="#x1-50001.3" id="QQ2-1-5">Next steps</a></span>
 <br />   <span class="chapterToc" >2 <a 
-href="#x1-60002">QuickMagIC.py Tutorial</a></span>
+href="#x1-60002">Pmag GUI Tutorial</a></span>
 <br />   &#x00A0;<span class="sectionToc" >2.1 <a 
 href="#x1-70002.1" id="QQ2-1-7">Converting magnetometer files to MagIC format</a></span>
 <br />   &#x00A0;<span class="sectionToc" >2.2 <a 
@@ -79,14 +79,14 @@ href="#x1-150002.8.1" id="QQ2-1-15">Field and sampling information</a></span>
 <br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.8.2 <a 
 href="#x1-170002.8.2" id="QQ2-1-17">Supported Rock Magnetometer files</a></span>
 <br />   <span class="chapterToc" >3 <a 
-href="#x1-190003">Make_magic.py Tutorial</a></span>
+href="#x1-190003">MagIC GUI Tutorial</a></span>
 <br />   &#x00A0;<span class="sectionToc" >3.1 <a 
-href="#x1-200003.1" id="QQ2-1-20">Starting with MakeMagIC</a></span>
+href="#x1-200003.1" id="QQ2-1-20">Starting with MagIC GUI</a></span>
                                                                      
 
                                                                      
 <br />   &#x00A0;<span class="sectionToc" >3.2 <a 
-href="#x1-210003.2" id="QQ2-1-21">MakeMagIC example dataset</a></span>
+href="#x1-210003.2" id="QQ2-1-21">MagIC GUI example dataset</a></span>
 <br />   <span class="chapterToc" >4 <a 
 href="#x1-220004">Survival computer skills</a></span>
 <br />   &#x00A0;<span class="sectionToc" >4.1 <a 
@@ -109,7 +109,7 @@ href="#x1-300005.1.1" id="QQ2-1-30">demag_gui.py</a></span>
 <br />   &#x00A0;&#x00A0;<span class="subsectionToc" >5.1.2 <a 
 href="#x1-430005.1.2" id="QQ2-1-43">thellier_gui.py</a></span>
 <br />   &#x00A0;&#x00A0;<span class="subsectionToc" >5.1.3 <a 
-href="#x1-470005.1.3" id="QQ2-1-47">make_magic.py</a></span>
+href="#x1-470005.1.3" id="QQ2-1-47">MagIC GUI</a></span>
 <br />   &#x00A0;<span class="sectionToc" >5.2 <a 
 href="#x1-480005.2" id="QQ2-1-48">Command line PmagPy programs</a></span>
 <br />   &#x00A0;&#x00A0;<span class="subsectionToc" >5.2.1 <a 
@@ -402,7 +402,7 @@ name="PmagPy0x.png" src="EPSfiles/logo.eps"
 <h2 class="titleHead">PmagPy Cookbook</h2>
 <div class="author" ></div><br />
 <div class="date" ><span 
-class="cmr-12">December 16, 2015</span></div>
+class="cmr-12">December 22, 2015</span></div>
                                                                      
 
                                                                      
@@ -425,7 +425,7 @@ Foundation.
    Lisa Tauxe
    <br />Scripps Institution of Oceanography
    <br />La Jolla, CA 92093
-   <br />December 16, 2015
+   <br />December 22, 2015
    <br /><a 
 href="http://magician.ucsd.edu/~ltauxe/" class="url" ><span 
 class="cmtt-10x-x-109">http://magician.ucsd.edu/</span><span 
@@ -439,8 +439,8 @@ class="cmtt-10x-x-109">ltauxe/</span></a></div>
 href="#QQ2-1-2" id="x1-20001">Installing <span 
 class="cmbx-10x-x-109">PmagPy</span></a></h2>
    To skip all the details and just start using <a 
-href="#QuickMagIC.py" >QuickMagIC</a> or <a 
-href="#make_magic.py" >MakeMagIC</a> to
+href="#pmag_gui.py" >Pmag GUI</a> or <a 
+href="#magic_gui.py" >MagIC GUI</a> to
 upload data into the <a 
 href="#MagICDatabase" >MagIC database</a>, or to analyze using <a 
 href="#thellier_GUI.py" >Thellier GUI</a> or
@@ -450,7 +450,7 @@ href="#DemagGUI" >Demag GUI</a>, start here.
 <!--l. 65--><p class="noindent" ><a name='sec1-1'></a><h3 class="sectionHead"><span class="titlemark">1.1   </span> <a 
 href="#QQ2-1-3" id="x1-30001.1">Standalone GUI download</a></h3>
 <!--l. 67--><p class="noindent" >If you don&#8217;t need the full PmagPy functionality, and you only want to use
-QuickMagIC, MakeMagIC, Thellier GUI, and Demag GUI, there is now a
+Pmag GUI, MagIC GUI, Thellier GUI, and Demag GUI, there is now a
 standalone download for you. You won&#8217;t need to install Python. You can
 download the <a 
 href="https://github.com/moonshoes87/PmagPy-Standalone-OSX/releases/latest" >standalone applications for OSX here</a>, and <a 
@@ -458,11 +458,11 @@ href="https://github.com/moonshoes87/PmagPy-Standalone-Windows/releases/latest" 
 here</a>.
 <!--l. 70--><p class="indent" >   Follow the download instructions in the provided links, and then you can skip
 the &#8220;Full install&#8221; section and go straight to using <a 
-href="#QuickMagIC.py" >QuickMagIC</a> or <a 
-href="#make_magic.py" >MakeMagIC</a>.
-The standalone versions of these applications are still in development; please
-report problems to the PmagPy team: (<a 
-href="mailto:ltauxe@ucsd.edu" >ltauxe@ucsd.edu</a>).
+href="#pmag_gui.py" >Pmag GUI</a> or <a 
+href="#magic_gui.py" >MagIC GUI</a>. The
+standalone versions of these applications are still in development; please report
+problems to the PmagPy team: <a 
+href="mailto:ltauxe@ucsd.edu" >ltauxe@ucsd.edu</a>.
 <!--l. 72--><p class="noindent" >
 <!--l. 72--><p class="indent" >   <a name='sec1-2'></a><h3 class="sectionHead"><span class="titlemark">1.2   </span> <a 
 href="#QQ2-1-4" id="x1-40001.2">Full PmagPy install</a></h3>
@@ -517,8 +517,8 @@ href="https://store.enthought.com/repo/epd/installers/epd-7.5-2-win-x86_64.msi" 
           <li class="itemize">Windows users who cannot get an academic license should install
           this <a 
 href="http://magician.ucsd.edu/Software/PmagPy/archive/epd-7.3-2-win-x86.msi" >older Enthought Distribution</a>. This version of EPD will not
-          support all PmagPy programs, so if you want to run QuickMagIC
-          or MakeMagIC you should download the <a 
+          support all PmagPy programs, so if you want to run Pmag GUI
+          or MagIC GUI you should download the <a 
 href="#standalone" >standalone versions</a>.
           </li>
           <li class="itemize">If you run into problems with your installation, you may need to
@@ -590,7 +590,7 @@ class="cmbx-10x-x-109">MagIC </span>database.</a>
                                                                      
      </li>
      <li class="itemize"><a 
-href="#QuickMagIC.py" >Analyze   and/or   upload   demagnetization   and/or   paleointensity
+href="#pmag_gui.py" >Analyze   and/or   upload   demagnetization   and/or   paleointensity
      measurement data to the <span 
 class="cmbx-10x-x-109">MagIC </span>database. </a>
      </li>
@@ -608,17 +608,17 @@ href="#Python" >Learn how to write your own programs in Python.</a>
      <li class="itemize"><a 
 href="#Notebooks" >Learn how to use Jupyter notebooks for managing your data analysis
      workflow.</a></li></ul>
-<!--l. 119--><p class="indent" >   <a name='QuickMagIC.py'></a>
+<!--l. 119--><p class="indent" >   <a name='pmag_gui.py'></a>
                                                                      
 
                                                                      
 <!--l. 121--><p class="indent" >   <a name='ch2'></a><h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;2</span><br /><a 
-href="#QQ2-1-6" id="x1-60002">QuickMagIC.py Tutorial</a></h2>
+href="#QQ2-1-6" id="x1-60002">Pmag GUI Tutorial</a></h2>
    <span 
-class="cmbx-10x-x-109">QuickMagIC.py </span>is a Graphical User Interface (GUI) written by Lori
-Jonestrask and Ron Shaar that provides a quick path to the main <span 
-class="cmbx-10x-x-109">PmagPy</span>
-programs. The work flow is illustrated schematically here:
+class="cmbx-10x-x-109">Pmag GUI </span>is a Graphical User Interface (GUI) written by Lori Jonestrask
+and Ron Shaar that provides a quick path to the main <span 
+class="cmbx-10x-x-109">PmagPy </span>programs. The
+work flow is illustrated schematically here:
 <!--l. 126--><p class="indent" >   <img 
 src="PmagPy1x.png" alt="PIC" class="graphics" width="426.79134pt" height="320.09822pt" ><!--tex4ht:graphics  
 name="PmagPy1x.png" src="EPSfiles/FigQkMagicFlow.eps"  
@@ -630,22 +630,21 @@ href="#quick_start" >Installing PmagPy</a> section.
      <!--l. 131--><p class="noindent" ><a name='Project_Directory'></a>
      </li>
      <li 
-  class="enumerate" id="x1-6004x2">When  you  invoke  <span 
-class="cmbx-10x-x-109">QuickMagIC.py</span>,  the  first  step  is  to  change
-     directories  into  a  &#8216;Project  Directory&#8217;.  For  each  study,  create  a
-     directory with a name that relates to that study. Here we will call it
-     <span 
-class="cmti-10x-x-109">ThisProject</span>. This is where you will collect and process all the rock
-     and paleomagnetic data for a given study, usually a publication. The
-     project directory name should have NO SPACES and be placed on the
+  class="enumerate" id="x1-6004x2">When you invoke <span 
+class="cmbx-10x-x-109">Pmag GUI</span>, the first step is to change directories
+     into a &#8216;Project Directory&#8217;. For each study, create a directory with a
+     name that relates to that study. Here we will call it <span 
+class="cmti-10x-x-109">ThisProject</span>. This is
+     where you will collect and process all the rock and paleomagnetic data
+     for a given study, usually a publication. The project directory name
+     should have NO SPACES and be placed on the hard drive in a place
                                                                      
 
                                                                      
-     hard drive in a place that has NO spaces in the path. Under certain
-     Windows versions, this means you should not use your home directory,
-     but create a directory called for example: D:<span 
-class="cmsy-10x-x-109">\</span>MyPmagProjects and
-     put <span 
+     that has NO spaces in the path. Under certain Windows versions, this
+     means you should not use your home directory, but create a directory
+     called for example: D:<span 
+class="cmsy-10x-x-109">\</span>MyPmagProjects and put <span 
 class="cmti-10x-x-109">ThisProject </span>there.
      </li>
      <li 
@@ -653,16 +652,21 @@ class="cmti-10x-x-109">ThisProject </span>there.
 class="cmbx-10x-x-109">copy example files: </span>In the <a 
 href="#Datafiles" >Datafiles </a> folder you will find a subfolder
      named <span 
-class="cmti-10x-x-109">QuickMagIC</span>. Copy the contents of the <a 
+class="cmti-10x-x-109">Pmag</span><span 
+class="cmti-10x-x-109">_GUI</span>. Copy the contents of the <a 
 href="#Project_Directory" ><span 
-class="cmti-10x-x-109">ThisProject</span></a> directory
-     into your own <a 
+class="cmti-10x-x-109">ThisProject</span></a> directory into
+     your own <a 
 href="#Project_Directory" >Project Directory</a> folder.
      </li>
      <li 
-  class="enumerate" id="x1-6008x4">Type <span 
-class="cmbx-10x-x-109">QuickMagIC.py </span>on your <a 
-href="#command_line" >command line</a>.
+  class="enumerate" id="x1-6008x4">Start Pmag GUI either by typing <span 
+class="cmbx-10x-x-109">pmag</span><span 
+class="cmbx-10x-x-109">_gui.py </span>on your <a 
+href="#command_line" >command
+     line</a>, or (if you have the <a 
+href="#standalone" >standalone</a>), by double-clicking the Pmag GUI
+     icon on your Desktop.
      </li>
      <li 
   class="enumerate" id="x1-6010x5">Change directories by clicking on the &#8220;change dir&#8221; button and select
@@ -673,12 +677,11 @@ class="cmti-10x-x-109">ThisProject </span>directory.</li></ol>
 href="#QQ2-1-7" id="x1-70002.1">Converting magnetometer files to MagIC format</a></h3>
      <ul class="itemize1">
      <li class="itemize"><span 
-class="cmbx-10x-x-109">QuickMagIC.py  </span>allows  for  converting  many  different  laboratory
-     formats.  For  the  complete  set  of  instructions,  see  the  section  on
-     <a 
-href="#magnetometer_files" >Supported Rock Magnetometer files</a>. For this example, we will use a
-     &#8216;generic&#8217; file format. An example for a generic file format is shown
-     here:
+class="cmbx-10x-x-109">Pmag GUI </span>allows for converting many different laboratory formats.
+     For the complete set of instructions, see the section on <a 
+href="#magnetometer_files" >Supported
+     Rock Magnetometer files</a>. For this example, we will use a &#8216;generic&#8217; file
+     format. An example for a generic file format is shown here:
      <!--l. 155--><p class="noindent" ><img 
 src="PmagPy2x.png" alt="PIC" class="graphics" width="426.79134pt" height="46.60796pt" ><!--tex4ht:graphics  
 name="PmagPy2x.png" src="EPSfiles/FigGenericFormat.eps"  
@@ -788,9 +791,9 @@ class="cmti-10x-x-109">ThisProject</span></a>
 href="#QQ2-1-8" id="x1-80002.2">Optional: Calculate geographic / tilt-corrected direction</a></h3>
      <ul class="itemize1">
      <li class="itemize"><span 
-class="cmbx-10x-x-109">QuickMagIC.py </span>provides an optional tool for calculating geographic
-     and tilt-corrected directions if those directions were not part of the
-     original data files. To use this tool click on the button labeled &#8216;calculate
+class="cmbx-10x-x-109">Pmag GUI </span>provides an optional tool for calculating geographic and
+     tilt-corrected directions if those directions were not part of the original
+     data  files.  To  use  this  tool  click  on  the  button  labeled  &#8216;calculate
      geographic/tilt-corrected directions&#8217;.
      </li>
      <li class="itemize">An empty template of a file named SrExample_orient.txt was created
@@ -1064,8 +1067,8 @@ class="cmsy-10x-x-109">&#x2192; </span>[Save MagIC pmag tables]. This save all t
 href="#QQ2-1-12" id="x1-120002.6">Upload to the database </a></h3>
 <!--l. 309--><p class="noindent" >For this, you first click on the green <span 
 class="cmti-10x-x-109">prepare upload txt file </span>button on the main
-page of the <span 
-class="cmbx-10x-x-109">QuickMagic </span>GUI. A file named &#8216;upload.txt&#8217; will be created in your
+page of <span 
+class="cmbx-10x-x-109">Pmag GUI</span>. A file named &#8216;upload.txt&#8217; will be created in your
 <a 
 href="#Project_Directory" ><span 
 class="cmti-10x-x-109">ThisProject</span></a> directory. Now, go to the <a 
@@ -1105,7 +1108,7 @@ download the data, simply click on the file icon below the column labeled &#8216
 This will save a file to your downloads folder. To unpack this file after
 downloading it from the database click the &#8220;unpack downloaded txt file button&#8220;
 in the <a 
-href="#QuickMagIC.py" >QuickMagIC.py</a> panel.
+href="#pmag_gui.py" >Pmag GUI</a> panel.
 <!--l. 326--><p class="noindent" >
 <!--l. 326--><p class="indent" >   <a name='sec2-8'></a><h3 class="sectionHead"><span class="titlemark">2.8   </span> <a 
 href="#QQ2-1-14" id="x1-140002.8">Preparing for MagIC</a></h3>
@@ -1123,15 +1126,15 @@ MagIC database expects sample orientations to be the azimuth and plunge of the
 fiducial arrow used for measurement (see <a 
 href="http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#ch2" >[Essentials, Chapter 9]</a> ) and the
 orientation of the bedding to be dip direction and downward dip so no matter
-what your own preference is, it must be translated into the standard MagIC
-convention for use with the PmagPy programs and with the <a 
-href="#QuickMagIC.py" >QuickMagIC.py</a>
+what your own preference is, it must be translated into the standard
+MagIC convention for use with the PmagPy programs and with <a 
+href="#pmag_gui.py" >Pmag
                                                                      
 
                                                                      
-GUI.
+GUI</a>.
 <!--l. 334--><p class="indent" >   <a 
-href="#QuickMagIC.py" >QuickMagIC.py</a> supports two different ways of getting orientation and other
+href="#pmag_gui.py" >Pmag GUI</a> supports two different ways of getting orientation and other
 sampling related information into a MagIC usable format. The first way is
 through <a 
 href="#orient" >step 2 on the GUI front panel</a> and filling in the data from within the
@@ -1418,7 +1421,7 @@ href="#SUFAR4-asc_magic.py" >SUFAR 4.0 ascii output for Kappabridge</a></li></ul
 <!--l. 493--><p class="indent" >   <a name='subsubsec2-8-2-0'></a><h5 class="subsubsectionHead"><a 
 href="#x1-180002.8.2" id="x1-180002.8.2">Hysteresis file formats</a></h5>
 <!--l. 494--><p class="noindent" ><span 
-class="cmbx-10x-x-109">QuickMagIC.py </span>will import hysteresis data from room temperature Micromag
+class="cmbx-10x-x-109">Pmag GUI </span>will import hysteresis data from room temperature Micromag
 alternating gradient magnetometers (AGM) in several different ways. You can
 import either hysteresis loops or backfield curves, or you can import
 whole directories of the same. In the latter case, the file endings must be
@@ -1430,36 +1433,35 @@ examples.
 them into <span 
 class="cmti-10x-x-109">MagIC </span>directory with <a 
 href="#convert2magic" ><span 
-class="cmbx-10x-x-109">Step 1 in QuickMagIC.py</span></a>.
-<!--l. 775--><p class="indent" >   <a name='make_magic.py'></a>
+class="cmbx-10x-x-109">Step 1 in Pmag GUI</span></a>.
+<!--l. 775--><p class="indent" >   <a name='magic_gui.py'></a>
                                                                      
 
                                                                      
 <!--l. 777--><p class="indent" >   <a name='ch3'></a><h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;3</span><br /><a 
-href="#QQ2-1-19" id="x1-190003">Make_magic.py Tutorial</a></h2>
+href="#QQ2-1-19" id="x1-190003">MagIC GUI Tutorial</a></h2>
    <span 
-class="cmbx-10x-x-109">Make</span><span 
-class="cmbx-10x-x-109">_magic.py </span>is a Graphical User Interface (GUI) written by
-Lori Jonestrask. It is meant for efficiently compiling a contribution for
-uploading to the MagIC database. Make_magic.py is specifically designed for
-making a contribution without measurement data; if you ARE including
-measurement data, we recommend that you use <a 
-href="#QuickMagIC.py" >QuickMagIC</a> instead.
-Make_magic.py allows you to add data at the location, site, sample, and
-specimen levels. You can also add results and ages. Make_magic.py uses an
-Excel-like grid interface for entering and editing data. Useful features
-include: pop-up menus with controlled vocabularies, multi-cell pasting
+class="cmbx-10x-x-109">MagIC GUI </span>is a Graphical User Interface written by Lori Jonestrask. It is
+meant for efficiently compiling a contribution for uploading to the MagIC
+database. MagIC GUI is specifically designed for making a contribution without
+measurement data; if you ARE including measurement data, we recommend that
+you use <a 
+href="#pmag_gui.py" >Pmag GUI</a> instead. MagIC GUI allows you to add data at the location,
+site, sample, and specimen levels. You can also add results and ages. The
+program uses an Excel-like grid interface for entering and editing data. Useful
+features include: pop-up menus with controlled vocabularies, multi-cell pasting
 from external spreadsheets, and built-in validations for MagIC database
 requirements.
 <!--l. 784--><p class="noindent" ><a name='sec3-1'></a><h3 class="sectionHead"><span class="titlemark">3.1   </span> <a 
-href="#QQ2-1-20" id="x1-200003.1">Starting with MakeMagIC</a></h3>
-<!--l. 785--><p class="noindent" >Start up make_magic.py. You&#8217;ll do this by clicking on the icon (if you
-downloaded the standalone version) or entering &#8216;make_magic.py&#8217; on your
-<a 
-href="#command_line" >command line</a> (if you downloaded the full PmagPy installation).
+href="#QQ2-1-20" id="x1-200003.1">Starting with MagIC GUI</a></h3>
+<!--l. 785--><p class="noindent" >Start up MagIC GUI. You&#8217;ll do this by clicking on the icon (if you downloaded
+the <a 
+href="#standalone" >standalone</a> version) or entering &#8216;magic_gui.py&#8217; on your <a 
+href="#command_line" >command line</a> (if you
+downloaded the full PmagPy installation).
 <!--l. 787--><p class="indent" >   When you first start <span 
-class="cmbx-10x-x-109">make</span><span 
-class="cmbx-10x-x-109">_magic.py</span>, you will change directories into a
+class="cmbx-10x-x-109">magic</span><span 
+class="cmbx-10x-x-109">_gui.py</span>, you will change directories into a
 &#8216;Project Directory&#8217;. For each study, create a directory with a name that relates to
 that study. Here we will call it <span 
 class="cmti-10x-x-109">MyProject</span>. This is where you will collect and
@@ -1475,7 +1477,7 @@ there.
 
                                                                      
 <!--l. 789--><p class="indent" >   <img 
-src="PmagPy28x.png" alt="PIC" class="graphics" width="773.89124pt" height="517.935pt" ><!--tex4ht:graphics  
+src="PmagPy28x.png" alt="PIC" class="graphics" width="761.84624pt" height="489.82999pt" ><!--tex4ht:graphics  
 name="PmagPy28x.png" src="EPSfiles/MM_main_frame.eps"  
 -->
                                                                      
@@ -1483,7 +1485,7 @@ name="PmagPy28x.png" src="EPSfiles/MM_main_frame.eps"
                                                                      
 <!--l. 791--><p class="noindent" >
 <!--l. 791--><p class="indent" >   <a name='sec3-2'></a><h3 class="sectionHead"><span class="titlemark">3.2   </span> <a 
-href="#QQ2-1-21" id="x1-210003.2">MakeMagIC example dataset</a></h3>
+href="#QQ2-1-21" id="x1-210003.2">MagIC GUI example dataset</a></h3>
 <!--l. 792--><p class="noindent" >Now we&#8217;ll walk through a simple data input process, with fake data.
      <ul class="itemize1">
      <li class="itemize">Start by clicking on &#8216;1. add location data&#8217;. Enter location data as seen
@@ -1573,7 +1575,7 @@ name="PmagPy33x.png" src="EPSfiles/MM_sample_grid_added_cols.eps"
      </li>
      <li class="itemize">Save and close the sample grid, then re-open it to see how the data
      have propagated (re-opening the grid isn&#8217;t necessary for the program,
-     this is just for you to see what make_magic.py does automatically).
+     this is just for you to see what MagIC GUI does automatically).
      <!--l. 820--><p class="noindent" ><img 
 src="PmagPy34x.png" alt="PIC" class="graphics" width="1752.54749pt" height="400.49625pt" ><!--tex4ht:graphics  
 name="PmagPy34x.png" src="EPSfiles/MM_sample_grid_propagated_full.eps"  
@@ -1613,11 +1615,12 @@ name="PmagPy36x.png" src="EPSfiles/MM_result_grid.eps"
                                                                      
 
                                                                      
-     <li class="itemize">For each result, you will add one or more items that the result pertains
-     to. In this example, one result is a site V[A]DM, and the other is an
-     averaged V[A]DM from both sites. For now, leave magic&#x02D9;method&#x02D9;codes
-     blank for the Averaged V[A]DM result: in a minute we&#8217;ll see how
-     make_magic catches this error. Save and close the result grid.
+     <li class="itemize">For  each  result,  you  will  add  one  or  more  items  that  the  result
+     pertains  to.  In  this  example,  one  result  is  a  site  V[A]DM,  and
+     the  other  is  an  averaged  V[A]DM  from  both  sites.  For  now,  leave
+     magic_method_codes  blank  for  the  Averaged  V[A]DM  result:  in  a
+     minute we&#8217;ll see how MagIC GUI catches this error. Save and close
+     the result grid.
      </li>
      <li class="itemize">Next,  you  will  create  a  MagIC  format  upload  file.  Click  the  final
      button on the main frame, &#8216;prepare upload txt file&#8217;. Depending on
@@ -1630,7 +1633,7 @@ name="PmagPy36x.png" src="EPSfiles/MM_result_grid.eps"
 
                                                                      
      <!--l. 838--><p class="noindent" ><img 
-src="PmagPy37x.png" alt="PIC" class="graphics" width="772.8875pt" height="581.17125pt" ><!--tex4ht:graphics  
+src="PmagPy37x.png" alt="PIC" class="graphics" width="761.84624pt" height="540.01749pt" ><!--tex4ht:graphics  
 name="PmagPy37x.png" src="EPSfiles/MM_validation_mainframe.eps"  
 -->
      <!--l. 840--><p class="noindent" >Open  the  result  grid  to  fix  the  error.  Click  &#8216;Show  help&#8217;  for  more
@@ -1683,14 +1686,14 @@ href="#PmagPy" >PmagPy</a>.
 href="#QQ2-1-23" id="x1-230004.1">Finding your command line</a></h3>
 <!--l. 875--><p class="noindent" >If you are not using a Unix-like computer (*NIX), you may never have
 encountered a command line. While the <a 
-href="#QuickMagIC.py" >QuickMagIC.py</a> Graphical User Interface
-(GUI) is an attempt to make life as easy for you by constructing commands for
-you, you still need to find the command line to start it up. Under the MacOS X
-operating system look for the Terminal application in the Utilities folder within
-the Applications folder. When it is launched, you will get a terminal window as
-shown below. The Unix (and Mac OS) Bash shell has a $ sign as a prompt. I
-(LT) use the antiquated &#8216;C-shell&#8217; (don&#8217;t ask) with a % for a prompt and will use
-the % prompt in the examples here, but any of these command line prompts will
+href="#pmag_gui.py" >Pmag GUI</a> is an attempt to make life as
+easy for you by constructing commands for you, you still need to find the
+command line to start it up. Under the MacOS X operating system look for the
+Terminal application in the Utilities folder within the Applications folder.
+When it is launched, you will get a terminal window as shown below. The
+Unix (and Mac OS) Bash shell has a $ sign as a prompt. I (LT) use the
+antiquated &#8216;C-shell&#8217; (don&#8217;t ask) with a % for a prompt and will use the %
+prompt in the examples here, but any of these command line prompts will
 work.
                                                                      
 
@@ -1878,17 +1881,16 @@ files.
 <!--l. 978--><p class="noindent" >
 <!--l. 978--><p class="indent" >   <a name='subsubsec5-1-1-0'></a><h5 class="subsubsectionHead"><a 
 href="#x1-310005.1.1" id="x1-310005.1.1">Launching</a></h5>
-<!--l. 980--><p class="noindent" >The best way to launch the demag_gui application is through the QuickMagIC
-app. If PmagPy has been added to your PATH you can type QuickMagIC.py at
-the command line to launch it or you can navigate to the directory containing
-it and type <span 
-class="cmtt-10x-x-109">python ./QuickMagIC.py</span>. Within the QuickMagIC app,
-data can be converted from the format of a particular lab into MagIC
-format so that it can be displayed and analyzed within the demag_gui.
-The program can be started by clicking on the demag_gui button in
-the QuickMagIC GUI, shown below. If no new window pops up after
-clicking this button, click on the Python icon (the little space ship) on your
-dock.
+<!--l. 980--><p class="noindent" >The best way to launch the Demag GUI application is through the Pmag GUI
+app. If PmagPy has been added to your PATH you can type pmag_gui.py at the
+command line to launch it or you can navigate to the directory containing it and
+type <span 
+class="cmtt-10x-x-109">python ./pmag_gui.py</span>. Within the Pmag GUI app, data can be converted
+from the format of a particular lab into MagIC format so that it can be displayed
+and analyzed within the demag_gui. The program can be started by clicking on
+the demag_gui button in the Pmag GUI, shown below. If no new window pops
+up after clicking this button, click on the Python icon (the little space ship) on
+your dock.
                                                                      
 
                                                                      
@@ -1896,7 +1898,7 @@ dock.
 src="PmagPy42x.png" alt="PIC" class="graphics" width="284.52756pt" height="198.81404pt" ><!--tex4ht:graphics  
 name="PmagPy42x.png" src="EPSfiles/demag_gui_QuickMagicLauncher.eps"  
 -->
-<!--l. 985--><p class="indent" >   Alternatively, the demag_gui may be launched through the command line by
+<!--l. 985--><p class="indent" >   Alternatively, Demag GUI may be launched through the command line by
 navigating to the directory containing demag_gui.py and running it with: <span 
 class="cmtt-10x-x-109">python</span>
 <span 
@@ -1905,8 +1907,8 @@ class="cmtt-10x-x-109">_gui.py</span>.
 <!--l. 987--><p class="indent" >   Or if PmagPy has been added to your PATH you can simply type
 demag_gui.py at the command line. <span 
 class="cmbx-10x-x-109">Note: </span>on OSX it is recommended to launch
-through the QuickMagIC program as on wxpython 2.9 the drop down boxes
-behave better when demag_gui is launched this way.
+through Pmag GUI as on wxpython 2.9 the drop down boxes behave better when
+demag_gui is launched this way.
 <!--l. 992--><p class="noindent" >
 <!--l. 992--><p class="indent" >   <a name='subsubsec5-1-1-0'></a><h5 class="subsubsectionHead"><a 
 href="#x1-320005.1.1" id="x1-320005.1.1">Interpretation of Specimen Data</a></h5>
@@ -2131,14 +2133,14 @@ href="#thellier_magic.py" >thellier_magic.py</a> and
 new tools described by <a 
 href="http://dx.doi.org/10.1002/ggge.20062" >Shaar and Tauxe (2013)</a> in a user-friendly graphical user
 interface (GUI). It can also be called from within <a 
-href="#QuickMagIC.py" >QuickMagIC.py</a>, using files
+href="#pmag_gui.py" >Pmag GUI</a>, using files
 already prepared in a <a 
 href="#ThisProject" >This Project</a> directory and the interpretations from
 <span 
 class="cmbx-10x-x-109">thellier</span><span 
-class="cmbx-10x-x-109">_gui.py </span>are part of the workflow of the <a 
-href="#QuickMagIC.py" >QuickMagIC</a> GUI. This section
-is a brief introduction on how to use <span 
+class="cmbx-10x-x-109">_gui.py </span>are part of the workflow of <a 
+href="#pmag_gui.py" >Pmag GUI</a>. This section is
+a brief introduction on how to use <span 
 class="cmbx-10x-x-109">thellier</span><span 
 class="cmbx-10x-x-109">_gui.py </span>as a stand alone
 application.
@@ -2166,13 +2168,13 @@ href="#Project_Directory" >ThisProject</a> directory should include a file named
 <span 
 class="cmti-10x-x-109">magic</span><span 
 class="cmti-10x-x-109">_measurements.txt </span>(created for example by <a 
-href="#QuickMagIC.py" ><span 
-class="cmbx-10x-x-109">QuickMagIC.py</span></a>. If a file
-named <span 
+href="#pmag_gui.py" ><span 
+class="cmbx-10x-x-109">Pmag GUI</span></a>. If a file named
+<span 
 class="cmti-10x-x-109">rmag</span><span 
-class="cmti-10x-x-109">_anisotropy.txt </span>is in the project directory, then the program reads in
-the anisotropy data. Reading and processing the measurements files may take
-several seconds, depending on the number of the specimens.
+class="cmti-10x-x-109">_anisotropy.txt </span>is in the project directory, then the program reads in the
+anisotropy data. Reading and processing the measurements files may take several
+seconds, depending on the number of the specimens.
 <!--l. 1093--><p class="noindent" >
 <!--l. 1093--><p class="indent" >   <a name='subsubsec5-1-2-0'></a><h5 class="subsubsectionHead"><a 
 href="#x1-450005.1.2" id="x1-450005.1.2">Reading and compiling measurements data</a></h5>
@@ -2297,10 +2299,10 @@ href="http://dx.doi.org/10.1002/ggge.20062" >Shaar and Tauxe
 (2013)</a>.
 <!--l. 1209--><p class="noindent" >
 <!--l. 1209--><p class="indent" >   <a name='subsec5-1-3'></a><h4 class="subsectionHead"><span class="titlemark">5.1.3   </span> <a 
-href="#QQ2-1-47" id="x1-470005.1.3">make_magic.py</a></h4>
-<!--l. 1211--><p class="noindent" >This &#8221;Make Magic&#8221; application provides a simple interface for transforming data
-from a paleomagnetic or rock magnetic study into the format necessary for
-contribution to the MagIC database.
+href="#QQ2-1-47" id="x1-470005.1.3">MagIC GUI</a></h4>
+<!--l. 1211--><p class="noindent" >This application provides a simple interface for transforming data from a
+paleomagnetic or rock magnetic study into the format necessary for contribution
+to the MagIC database.
                                                                      
 
                                                                      
@@ -2324,20 +2326,19 @@ into the directory with the scripts, and type the command: chmod a+x
 interfaces with menus, etc., some of the key programs for interpreting
 paleomagnetic and rock magnetic data are packaged together in a program called
 <a 
-href="#QuickMagIC.py" >QuickMagIC.py</a>. This can be invoked by typing <span 
-class="cmbx-10x-x-109">QuickMagIC.py </span>on the
-command line. The <a 
-href="#QuickMagIC.py" >QuickMagIC.py</a> program generates the desired commands for
-you behind the scenes, so you do not have to learn UNIX or how to use the
-command line (except to call the <span 
-class="cmbx-10x-x-109">QuickMagIC.py </span>program itself). Nonetheless,
-some understanding of what is actually happening is helpful, because the
+href="#pmag_gui.py" >Pmag GUI</a>. This can be invoked by typing <span 
+class="cmbx-10x-x-109">pmag&#x02D9;gui.py </span>on the command line.
+The <a 
+href="#pmag_gui.py" >Pmag GUI</a> program generates the desired commands for you behind the
+scenes, so you do not have to learn UNIX or how to use the command line
+(except to call <span 
+class="cmbx-10x-x-109">Pmag GUI </span>itself). Nonetheless, some understanding of what is
+actually happening is helpful, because <span 
+class="cmbx-10x-x-109">Pmag GUI </span>is more limited than full
+range of <span 
+class="cmbx-10x-x-109">PmagPy </span>programs. So, here is a brief introduction to how the
 <span 
-class="cmbx-10x-x-109">QuickMagIC.py </span>program is more limited than full range of <span 
-class="cmbx-10x-x-109">PmagPy</span>
-programs. So, here is a brief introduction to how the <span 
-class="cmbx-10x-x-109">PmagPy </span>programs
-work.
+class="cmbx-10x-x-109">PmagPy </span>programs work.
 <!--l. 1221--><p class="indent" >   All <span 
 class="cmbx-10x-x-109">PmagPy </span>programs print a help message out if you type: <span 
 class="cmbx-10x-x-109">program</span><span 
@@ -3564,7 +3565,7 @@ These choices are stored in the <span
 class="cmti-10x-x-109">pmag</span><span 
 class="cmti-10x-x-109">_criteria </span>table in each MagIC project
 directory (see <a 
-href="#QuickMagIC.py" >QuickMagIC.py</a> documentation).
+href="#pmag_gui.py" >Pmag GUI</a> documentation).
 <!--l. 1920--><p class="indent" >   Certain <span 
 class="cmbx-10x-x-109">PmagPy </span>programs use the datafile <span 
 class="cmti-10x-x-109">pmag</span><span 
@@ -3579,15 +3580,15 @@ customize these criteria for your own data sets, you can use the program
 <span 
 class="cmbx-10x-x-109">customize</span><span 
 class="cmbx-10x-x-109">_criteria.py</span>. This program is also called by the <span 
-class="cmbx-10x-x-109">QuickMagIC.py</span>
-GUI under the Utilities menu. Try it out on <span 
+class="cmbx-10x-x-109">Pmag GUI </span>under
+the Utilities menu. Try it out on <span 
 class="cmti-10x-x-109">pmag</span><span 
-class="cmti-10x-x-109">_criteria.txt</span>. This is a &#8220;full
-vector&#8221; set of criteria - meaning that it has both directions and intensity flags
-set. Change the <span 
+class="cmti-10x-x-109">_criteria.txt</span>. This is a &#8220;full vector&#8221; set of
+criteria - meaning that it has both directions and intensity flags set. Change the
+<span 
 class="cmti-10x-x-109">specimen</span><span 
-class="cmti-10x-x-109">_alpha95 </span>cutoff to 180. from whatever it is now set to.
-Save the output to a new file named <span 
+class="cmti-10x-x-109">_alpha95 </span>cutoff to 180. from whatever it is now set to. Save the output
+to a new file named <span 
 class="cmti-10x-x-109">new</span><span 
 class="cmti-10x-x-109">_criteria.txt</span>.
                                                                      
@@ -3666,7 +3667,7 @@ href="http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch7.html" >[Essen
 href="https://github.com/ltauxe/PmagPy/blob/master/demag_gui.py" >[demag_gui docs]</a>
 <!--l. 1982--><p class="indent" >   The program <a 
 href="#DemagGUI" >demag_gui.py</a> is used by <a 
-href="#QuickMagIC.py" >Quick_MagIC.py</a> for interpreting
+href="#pmag_gui.py" >Quick_MagIC.py</a> for interpreting
 demagnetization experimental data. See <a 
 href="#DemagGUI" >demag_gui.py</a> this link for guidances.
 <!--l. 1985--><p class="indent" >   <a name='di_eq.py'></a>
@@ -5744,8 +5745,8 @@ class="cmbx-10x-x-109">_magic.py</span>
 </div>
 <!--l. 3404--><p class="nopar" >
 <!--l. 3406--><p class="indent" >   This program is called within <a 
-href="#QuickMagIC.py" >QuickMagIC.py</a> but could be used as a stand
-alone program if you wish.
+href="#pmag_gui.py" >Pmag GUI</a> but could be used as a stand alone
+program if you wish.
 <!--l. 3411--><p class="indent" >   <a name='HUJI_magic.py'></a>
 <!--l. 3413--><p class="noindent" >
 <!--l. 3413--><p class="indent" >   <a name='subsubsec5-2-66-0'></a><h5 class="subsubsectionHead"><a 
@@ -5870,8 +5871,8 @@ class="cmbx-10x-x-109">_magic.py</span>:
 <!--l. 3493--><p class="indent" >   You can also downloaded the core summary data from the <a 
 href="#LIMS" >LIMS</a> database
 and convert it to the MagIC format using <a 
-href="#QuickMagIC.py" >QuickMagIC.py</a>. Now you can plot the
-data and the core tops using <a 
+href="#pmag_gui.py" >Pmag GUI</a>. Now you can plot the data
+and the core tops using <a 
 href="#core_depthplot.py" >core_depthplot.py</a>
 <!--l. 3497--><p class="indent" >   <a name='PMD_magic.py'></a>
 <!--l. 3499--><p class="noindent" >
@@ -7325,9 +7326,8 @@ href="#pmag_results_extract.py" >pmag_results_extract.py</a>
 &#x00A0;<br />data&#x00A0;saved&#x00A0;in:&#x00A0;&#x00A0;./Directions.txt&#x00A0;./Intensities.txt&#x00A0;./SiteNfo.txt
 </div>
 <!--l. 4368--><p class="nopar" >
-<!--l. 4370--><p class="indent" >   Note that this procedure is more or less automated in the <a 
-href="#QuickMagIC.py" >QuickMagIC.py</a>
-GUI.
+<!--l. 4370--><p class="indent" >   Note that this procedure is more or less automated in <a 
+href="#pmag_gui.py" >Pmag GUI</a>.
 <!--l. 4373--><p class="indent" >   <a name='stats.py'></a>
 <!--l. 4375--><p class="noindent" >
 <!--l. 4375--><p class="indent" >   <a name='subsec5-2-94'></a><h4 class="subsectionHead"><span class="titlemark">5.2.94   </span> <a 
@@ -8279,7 +8279,7 @@ href="http://earthref.org/MAGIC/search" >MagIC search</a> website. After downloa
 the data can be unpacked and examined using various tools in the <span 
 class="cmbx-10x-x-109">PmagPy</span>
 package, for example using <a 
-href="#QuickMagIC.py" >QuickMagIC.py</a>.
+href="#pmag_gui.py" >Pmag GUI</a>.
 <!--l. 4982--><p class="indent" >   <a name='Uploading'></a>
 <!--l. 4986--><p class="indent" >   Paleomagnetic and rock magnetic data are collected and analyzed in a wide
 variety of ways with different objectives. Data sets can be extremely large
@@ -8521,9 +8521,9 @@ The section on <a
 href="#PmagPy" >PmagPy</a> describes how to use the <span 
 class="cmbx-10x-x-109">PmagPy </span>software for data
 analysis and generate the MagIC data tables automatically for the most common
-paleomagnetic studies involving directions and/or paleointensities. See also
-<a 
-href="#QuickMagIC.py" >QuickMagIC.py</a>.
+paleomagnetic studies involving directions and/or paleointensities. See also <a 
+href="#pmag_gui.py" >Pmag
+GUI</a>.
 <!--l. 5055--><p class="indent" >   <a name='method_codes'></a>
                                                                      
 
@@ -8771,17 +8771,17 @@ Lava&#x00A0;Flow 801C 19 156 Igneous:&#x00A0;Extrusive
 <!--l. 5120--><p class="indent" >   Correctly formatted MagIC data tables can be assembled into a suitable
 upload text file by using the program <a 
 href="#upload_magic.py" >upload_magic.py</a> which reads in all MagIC
-tables in a given directory and puts them together as in the above example.
-You can invoke <a 
+tables in a given directory and puts them together as in the above example. You
+can invoke <a 
 href="#upload_magic.py" >upload_magic.py</a> on the <a 
-href="#command_line" >command line</a> or call it within
+href="#command_line" >command line</a> or call it within <a 
+href="#pmag_gui.py" >Pmag GUI</a>.
 <a 
-href="#QuickMagIC.py" >QuickMagIC.py</a>. <a 
 href="#upload_magic.py" >upload_magic.py</a> creates a file called <span 
 class="cmti-10x-x-109">upload</span><span 
-class="cmti-10x-x-109">_magic.txt </span>which can
-be <a 
-href="#magic_upload" >uploaded into the MagIC database</a>.
+class="cmti-10x-x-109">_magic.txt </span>which can be <a 
+href="#magic_upload" >uploaded
+into the MagIC database</a>.
 <!--l. 5172--><p class="indent" >   <a name='Python'></a>
                                                                      
 
@@ -11195,12 +11195,12 @@ results.
 <!--l. 6798--><p class="indent" >   Underlying the <span 
 class="cmbx-10x-x-109">PmagPy </span>programs that are accessible through the command
 line and the GUI interfaces (e.g., <span 
-class="cmbx-10x-x-109">QuickMagIC.py</span>) are two main function
-libraries: <span 
+class="cmbx-10x-x-109">Pmag GUI</span>) are two main function libraries:
+<span 
 class="cmbx-10x-x-109">pmag.py </span>and <span 
-class="cmbx-10x-x-109">pmagplotlib.py</span>. The functions within these modules
-can be imported and called upon within a Jupyter notebook running a Python
-2.7 kernel. In addition to these functions, Nick Swanson-Hysell created a
+class="cmbx-10x-x-109">pmagplotlib.py</span>. The functions within these modules can be
+imported and called upon within a Jupyter notebook running a Python 2.7
+kernel. In addition to these functions, Nick Swanson-Hysell created a
 module called <span 
 class="cmbx-10x-x-109">ipmag.py </span>that is in active development and contains
 functions that replicate and extend some of the functionality that is found

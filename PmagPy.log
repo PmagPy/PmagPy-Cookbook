@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  16 DEC 2015 12:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  22 DEC 2015 11:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -669,8 +669,8 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
  --- Customlinks says: Custom link named 'Datafiles': PmagPy.html#Datafiles 
  --- Customlinks says: Link to section 1.3: PmagPy.html#sec1-3
 [5]
- --- Customlinks says: Custom link named 'QuickMagIC.py': PmagPy.html#QuickMagI
-C.py 
+ --- Customlinks says: Custom link named 'pmag_gui.py': PmagPy.html#pmag_gui.py
+ 
 [6]
 Chapter 2.
  --- Customlinks says: Link to chapter 2: PmagPy.html#ch2
@@ -814,8 +814,8 @@ ropy_files
 #Hysteresis_file_formats 
  --- Customlinks says: Link to subsubsection 2.8.2.0: PmagPy.html#subsubsec2-8-
 2-0
- --- Customlinks says: Custom link named 'make_magic.py': PmagPy.html#make_magi
-c.py 
+ --- Customlinks says: Custom link named 'magic_gui.py': PmagPy.html#magic_gui.
+py 
 [44]
 Chapter 3.
  --- Customlinks says: Link to chapter 3: PmagPy.html#ch3
@@ -1790,11 +1790,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7129.
 ### bottom level 
 Here is how much of TeX's memory you used:
  10521 strings out of 493090
- 147091 string characters out of 6134868
+ 147088 string characters out of 6134868
  343072 words of memory out of 5000000
  13701 multiletter control sequences out of 15000+600000
  15547 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,9n,32p,135870b,2399s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,9n,32p,135870b,2401s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on PmagPy.dvi (441 pages, 1168076 bytes).
+Output written on PmagPy.dvi (441 pages, 1167780 bytes).
