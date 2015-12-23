@@ -6910,6 +6910,16 @@ Setting your path should not be an issue in Windows if you are using the PmagPy 
 \section{Problems updating Canopy}
 If you are using Canopy (not just EPD), you will need to keep it up to date.  Currently, that means the version number should be 1.6.1 or higher.  In general, you can update by opening the Canopy application; it will automatically check for updates.  However, if you haven't updated for a long time, Canopy can get ``stuck'' in an old version where it can no longer update.  If that is the case, you will need to fully uninstall and reinstall canopy, following the directions on the \href{https://support.enthought.com/hc/en-us/articles/204469570-Canopy-shows-no-updates-available-reinstalling-from-the-website}{Enthought website}.
 
+\section{Problems with a specific program}
+\begin{enumerate}
+\item Thellier auto\_interpreter crashes with a Segmentation Fault (on Mac).
+  \begin{itemize}
+  \item This error is caused by a version issue with one of PmagPy's dependencies, matplotlib.  There are two ways to solve this problem.
+  \item Recommended: download and use the \href{#standalone}{standalone Pmag GUI} distribution to access Thellier GUI.
+  \item Alternative: open the Canopy application, and navigate to the Canopy Package Manager.  Go to ``Installed packages'' and find matplotlib.  Click matplotlib's ``more info'' button.  The click ``show'' to see all versions of the package.  Select matplotlib 1.4.3-7 and install.  This will fix the segmentation error, however, it may cause the Thellier GUI menubar to behave oddly.  For this reason, we recommend the first solution (above).
+  \end{itemize}
+\end{enumerate}
+
 \section{Other problems}Report a problem not listed above: e-mail \href{mailto:ltauxe@ucsd.edu}{ltauxe@ucsd.edu}. Include the following information: 1) the version of PmagPy that you are using, 2) your operating system, 3) any error messages that you got, 4) the datafile that is giving trouble, if relevant.
 
 
