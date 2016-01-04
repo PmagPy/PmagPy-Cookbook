@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  24 DEC 2015 19:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  4 JAN 2016 13:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -727,106 +727,107 @@ File: EPSfiles/FigErMagicStep1.eps Graphic file (type eps)
 [20]
 l. 245 Writing PmagPy.idv[12] (PmagPy11x.png)
 File: EPSfiles/FigErMagicStep2.eps Graphic file (type eps)
- <EPSfiles/FigErMagicStep2.eps> [21] [22]
+ <EPSfiles/FigErMagicStep2.eps> [21]
 l. 249 Writing PmagPy.idv[13] (PmagPy12x.png)
 File: EPSfiles/FigErMagicStep3.eps Graphic file (type eps)
  <EPSfiles/FigErMagicStep3.eps>
 l. 253 Writing PmagPy.idv[14] (PmagPy13x.png)
 File: EPSfiles/FigErMagicStep4.eps Graphic file (type eps)
 
-<EPSfiles/FigErMagicStep4.eps> [23]
+<EPSfiles/FigErMagicStep4.eps> [22]
 l. 257 Writing PmagPy.idv[15] (PmagPy14x.png)
 File: EPSfiles/FigErMagicStep5.eps Graphic file (type eps)
- <EPSfiles/FigErMagicStep5.eps> [24]
+ <EPSfiles/FigErMagicStep5.eps> [23]
 l. 261 Writing PmagPy.idv[16] (PmagPy15x.png)
 File: EPSfiles/FigErMagicStep6.eps Graphic file (type eps)
 
-<EPSfiles/FigErMagicStep6.eps> [25]
+<EPSfiles/FigErMagicStep6.eps> [24]
  --- Customlinks says: Custom link named 'DemagGUI': PmagPy.html#DemagGUI 
+[25]
  --- Customlinks says: Link to section 2.4: PmagPy.html#sec2-4
 l. 276 Writing PmagPy.idv[17] (PmagPy16x.png)
 File: EPSfiles/demag_gui.eps Graphic file (type eps)
-<EPSfiles/demag_gui.eps> [26] [27]
+<EPSfiles/demag_gui.eps> [26]
  --- Customlinks says: Custom link named 'ThellierGUI': PmagPy.html#ThellierGUI
  
  --- Customlinks says: Link to section 2.5: PmagPy.html#sec2-5
 l. 295 Writing PmagPy.idv[18] (PmagPy17x.png)
 File: EPSfiles/FigThellierGui.eps Graphic file (type eps)
-<EPSfiles/FigThellierGui.eps> [28] [29]
+<EPSfiles/FigThellierGui.eps> [27] [28]
  --- Customlinks says: Custom link named 'magic_upload': PmagPy.html#magic_uplo
 ad 
  --- Customlinks says: Link to section 2.6: PmagPy.html#sec2-6
-[30]
+[29]
  --- Customlinks says: Custom link named 'magic_download': PmagPy.html#magic_do
 wnload 
  --- Customlinks says: Link to section 2.7: PmagPy.html#sec2-7
  --- Customlinks says: Link to section 2.8: PmagPy.html#sec2-8
  --- Customlinks says: Custom link named 'field_info': PmagPy.html#field_info 
  --- Customlinks says: Link to subsection 2.8.1: PmagPy.html#subsec2-8-1
-[31]
+[30]
 l. 339 Writing PmagPy.idv[19] (PmagPy18x.png)
 File: EPSfiles/orient.eps Graphic file (type eps)
- <EPSfiles/orient.eps> [32]
+ <EPSfiles/orient.eps> [31]
 l. 355 Writing PmagPy.idv[20] (PmagPy19x.png)
 File: EPSfiles/suncomp.eps Graphic file (type eps)
  <EPSfiles/suncomp.eps>
  --- Customlinks says: Custom link named 'orientation_schemes': PmagPy.html#ori
 entation_schemes 
-[33]
+[32]
 l. 373 Writing PmagPy.idv[21] (PmagPy20x.png)
 File: EPSfiles/orcon_1.eps Graphic file (type eps)
  <EPSfiles/orcon_1.eps>
 l. 377 Writing PmagPy.idv[22] (PmagPy21x.png)
 File: EPSfiles/orcon_2.eps Graphic file (type eps)
- <EPSfiles/orcon_2.eps> [34]
+ <EPSfiles/orcon_2.eps> [33]
 l. 381 Writing PmagPy.idv[23] (PmagPy22x.png)
 File: EPSfiles/orcon_3.eps Graphic file (type eps)
  <EPSfiles/orcon_3.eps>
-[35]
+[34]
 l. 385 Writing PmagPy.idv[24] (PmagPy23x.png)
 File: EPSfiles/orcon_4.eps Graphic file (type eps)
- <EPSfiles/orcon_4.eps> [36]
+ <EPSfiles/orcon_4.eps> [35]
 l. 389 Writing PmagPy.idv[25] (PmagPy24x.png)
 File: EPSfiles/orcon_5.eps Graphic file (type eps)
- <EPSfiles/orcon_5.eps> [37]
+ <EPSfiles/orcon_5.eps> [36]
 l. 394 Writing PmagPy.idv[26] (PmagPy25x.png)
 File: EPSfiles/orcon_6.eps Graphic file (type eps)
 
-<EPSfiles/orcon_6.eps> [38]
+<EPSfiles/orcon_6.eps> [37]
  --- Customlinks says: Custom link named 'naming_schemes': PmagPy.html#naming_s
 chemes 
-[39]
+[38]
  --- Customlinks says: Custom link named 'LIMS': PmagPy.html#LIMS 
  --- Customlinks says: Link to subsubsection 2.8.1.0: PmagPy.html#subsubsec2-8-
 1-0
 l. 440 Writing PmagPy.idv[27] (PmagPy26x.png)
 File: EPSfiles/WebTabular_srm.eps Graphic file (type eps)
-<EPSfiles/WebTabular_srm.eps> [40]
+<EPSfiles/WebTabular_srm.eps> [39]
 l. 446 Writing PmagPy.idv[28] (PmagPy27x.png)
 File: EPSfiles/WebTabular_core.eps Graphic file (type eps)
- <EPSfiles/WebTabular_core.eps> [41]
+ <EPSfiles/WebTabular_core.eps> [40]
  --- Customlinks says: Custom link named 'magnetometer_files': PmagPy.html#magn
 etometer_files 
  --- Customlinks says: Link to subsection 2.8.2: PmagPy.html#subsec2-8-2
-[42]
+[41]
  --- Customlinks says: Custom link named 'anisotropy_files': PmagPy.html#anisot
 ropy_files 
-[43]
+[42]
  --- Customlinks says: Custom link named 'Hysteresis_file_formats': PmagPy.html
 #Hysteresis_file_formats 
  --- Customlinks says: Link to subsubsection 2.8.2.0: PmagPy.html#subsubsec2-8-
 2-0
  --- Customlinks says: Custom link named 'magic_gui.py': PmagPy.html#magic_gui.
 py 
-[44]
+[43] [44
+
+]
 Chapter 3.
  --- Customlinks says: Link to chapter 3: PmagPy.html#ch3
  --- Customlinks says: Link to section 3.1: PmagPy.html#sec3-1
 l. 791 Writing PmagPy.idv[29] (PmagPy28x.png)
 File: EPSfiles/MM_main_frame.eps Graphic file (type eps)
-<EPSfiles/MM_main_frame.eps> [45
-
-] [46]
+<EPSfiles/MM_main_frame.eps> [45] [46]
  --- Customlinks says: Link to section 3.2: PmagPy.html#sec3-2
 l. 797 Writing PmagPy.idv[30] (PmagPy29x.png)
 File: EPSfiles/MM_location_grid_with_menu.eps Graphic file (type eps)
@@ -1797,6 +1798,6 @@ Here is how much of TeX's memory you used:
  13702 multiletter control sequences out of 15000+600000
  15547 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,9n,32p,135870b,2397s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,9n,32p,135870b,2399s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on PmagPy.dvi (441 pages, 1169464 bytes).
+Output written on PmagPy.dvi (441 pages, 1169596 bytes).
