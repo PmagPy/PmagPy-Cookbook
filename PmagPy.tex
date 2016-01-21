@@ -92,7 +92,7 @@ Follow the download instructions in the provided links, and then you can skip th
    \item For Windows users, the install process will create a custom ``PmagPy Prompt'' with a shortcut on your desktop.  This prompt is identical to the regular Command Prompt, except that it has all of the PmagPy functionality built in. Whenever the documentation refers to your ``command line'', you should use the PmagPy Prompt.
    \item For non-Windows users, find your \href{#command_line}{command line} and type {\bf eqarea.py -h} and hit return.  If you do not see the help message, first try setting your path by hand following the instructions on the  \href{#trouble}{Trouble Shooting} page. If that fails, please send the error message and  Canopy version number to \href{mailto:ltauxe@ucsd.edu?subject=PmagPy Cookbook}{ltauxe@ucsd.edu}.\customlink{hires}
    \item Optional: If you have installed the full version of Canopy and want to use the mapping programs (e.g., \href{#basemap_magic.py}{basemap\_magic.py}), \customlink{HighRes}
-     click on  the `Package Manager' button on the Canopy welcome page, and then on `Available Packages'.  Install both basemap packages (one has high resolution data files in it).  To install the Etopo20 package, see \href{#install_etopo.py}{install\_etopo.py}.\customlink{Datafiles}
+     click on  the `Package Manager' button on the Canopy welcome page, and then on `Available Packages'.  Install both basemap packages (one has high resolution data files in it).  To install the Etopo20 package, see \href{#install_etopo.py}{install\_etopo.py}.
    \end{itemize}
 
 %\item Move the  Datafiles  folder from your {\bf PmagPy} folder and place it somewhere (e.g., your Desktop) with no spaces in the path.
@@ -139,7 +139,7 @@ Where do you want to go from here?
 %\includegraphics[width=15cm]{EPSfiles/ProjectDirectory.eps}
 
 
- \item \textbf{copy example files:}  In the \href{#Datafiles}{ Datafiles } folder you will find a subfolder named {\it Pmag\_GUI}. Copy the contents of the  \href{#Project_Directory}{\it ThisProject} directory  into  your  own \href{#Project_Directory}{Project Directory} folder.
+ \item \textbf{copy example files:}  In the {\it data\_files } folder you will find a subfolder named {\it Pmag\_GUI}. Copy the contents of the  \href{#Project_Directory}{\it ThisProject} directory  into  your  own \href{#Project_Directory}{Project Directory} folder.
  \item Start Pmag GUI either by typing {\bf pmag\_gui.py} on your \href{#command_line}{command line}, or (if you have the \href{#standalone}{standalone}), by double-clicking the Pmag GUI icon on your Desktop.
  \item Change directories by clicking  on the ``change dir'' button and select your own {\it ThisProject} directory.
  \end{enumerate}
@@ -911,7 +911,7 @@ Similarly, the absolute pathname to the directory containing {\bf PmagPy}
 scripts  would be  {\bf /Users/lisa/PmagPy}.  There is also a ``relative'' pathname,
 which is in reference to the  current directory (the one you are `sitting' in).  If user ``lisa'' is sitting in
 her home directory, the relative pathname for the file {\it dir\_cart\_example.dat} in the directory
-{\bf Datafiles\_2.0} would be {\it Datafiles\_2.0/dir\_cart/dir\_cart\_example.dat}.  When using relative
+{\bf data\_files} would be {\it data\_files/dir\_cart/dir\_cart\_example.dat}.  When using relative
 pathnames, it is useful to remember that {\bf ./} refers to the current
 directory and {\bf ../} refers to the directory  ``above''.     Also, lisa's home directory would be $\sim$lisa, or if you are logged in as lisa yourself, then it is just $\sim$.
 
@@ -1093,7 +1093,7 @@ Your  \href{#Project_Directory}{ThisProject} directory should include a file nam
 
 \subsubsection{Reading and compiling measurements data}
 When your \href{#Project_Directory}{ThisProject}  project directory is selected, the program  reads all the measurement data, checks them, processes them and sorts them. If non-linear-TRM (NLT) data exist in {\it magic\_measurement.txt}  then the program tries to process the data using Equations (1)-(3) in \href{#http://dx.doi.org/MAGIC/doi/10.1016/j.epsl.2009.12.022}{Shaar et al., 2010}. \nocite{shaar10}  The program reads {\it magic\_measurement.txt}, and processes the measurements for presentation as Arai  and Zijderveld plots.
-We recommend that you check all the warnings and errors in {\it Thellier\_GUI.log} before starting to interpret the data.  For details about warnings and error messages during these steps, consult the tutorial document in the {\it thellier\_GUI} folder in  \href{#Datafiles}{Datafiles}.  Also, consult the Preferences to change certain plotting options.
+We recommend that you check all the warnings and errors in {\it Thellier\_GUI.log} before starting to interpret the data.  For details about warnings and error messages during these steps, consult the tutorial document in the {\it thellier\_GUI} folder in  {\it data\_files}.  Also, consult the Preferences to change certain plotting options.
 
 \subsubsection{Main panel}
 
@@ -1248,7 +1248,7 @@ All {\bf PmagPy} programs print a help message out if you type: {\bf program\_na
 
 A link to these source code/help menu files is provided for each program listed below with the format [program\_name\_docs].
 
-Examples of how to use command line {\bf PmagPy} programs are given below. In all examples, the '\%' prompt stands for whatever command line prompt you have. The example datafiles referred to in the following are located in the {\it Datafiles} directory bundled with the {\bf PmagPy} software distribution.
+Examples of how to use command line {\bf PmagPy} programs are given below. In all examples, the '\%' prompt stands for whatever command line prompt you have. The example data files referred to in the following are located in the {\it data\_files} directory bundled with the {\bf PmagPy} software distribution.
 
 \customlink{aarm_magic.py}
 
@@ -1356,7 +1356,7 @@ Download the text file by clicking on the icon under the red arrow in:
 
   \includegraphics[width=15cm]{EPSfiles/tauxe12-magic.eps}
 
-Unpack the data using the program \href{#download_magic.py}{download\_magic.py}.  This will unpack the data into the different holes.  Change directories into Location\_2 (which contains the data for Hole U1359A).  Or, you can use the data in the {\bf ANI\_depthplot} directory of the \href{#Datafiles}{example data files}.
+Unpack the data using the program \href{#download_magic.py}{download\_magic.py}.  This will unpack the data into the different holes.  Change directories into Location\_2 (which contains the data for Hole U1359A).  Or, you can use the data in the {\bf ANI\_depthplot} directory of the example data files.
 
 
 \begin{verbatim}
@@ -2845,7 +2845,7 @@ and get this plot:
 
 \subsection{install\_etopo.py}
 
-Some  mapping utilities use the Etopo package for topography and these data sets do not come standard with the Python installation.  To install these properly, change directories into the etopo20 subdirectory in the Datafiles directory.  Simply type:
+Some  mapping utilities use the Etopo package for topography and these data sets do not come standard with the Python installation.  To install these properly, change directories into the etopo20 subdirectory in the {\it data\_files } directory.  Simply type:
 
 \begin{verbatim}
 % install_etopo.py
@@ -3284,7 +3284,7 @@ TT 400 252.8 -64.2  72.8 -73.8 4.48E-03 001.6 358.8 -68.8 2.923507 12.20715 1.17
 
 There is an optional first line with 'CIT' on it (not shown here).
 
-There must be a file with the suffix `.sam' in the same directory which gives details about the samples and a list of the datafiles in the directory.    The .sam file has the form:
+There must be a file with the suffix `.sam' in the same directory which gives details about the samples and a list of the data files in the directory.    The .sam file has the form:
 
 \begin{verbatim}
 Mamainse Point
@@ -3301,7 +3301,7 @@ The first line is a comment, the second is the latitude and longitude followed b
 
 For detailed description of the file format, check \href{http://cires.colorado.edu/people/jones.craig/PMag3.html}{the PaleoMag} home page.
 
-Use the program {\bf CIT\_magic.py} to import the data files from the example data files in the {\it CIT\_magic} directory of the {\it Measurement\_Import} directory of the \href{#Datafiles}{Datafiles} directory.   The location name was ``Mamainse Point'', the \href{#naming_schemes}{naming convention} was \#2 and they were collected by drilling and with a magnetic compass.
+Use the program {\bf CIT\_magic.py} to import the data files from the example data files in the {\it CIT\_magic} directory of the {\it Measurement\_Import} directory of the {\it data\_files} directory.   The location name was ``Mamainse Point'', the \href{#naming_schemes}{naming convention} was \#2 and they were collected by drilling and with a magnetic compass.
 
 \begin{verbatim}
  CIT_magic.py  -f bMP.sam -loc ``Mamainse Point`` -spc 0 -ncn 2 -mcd 'FS-FD:SO-MAG'
@@ -3523,7 +3523,7 @@ H180 -9.49E-07 -2.94E-07 +1.21E-06 +1.42E-01  67.7  64.8  67.7  64.8  0.5  cryoS
 The first line is a comment line.  The second line has the specimen name, the core azimuth (a=) and plunge (b=) which are assumed to be the lab arrow azimuth and plunge (\href{#orientation_schemes}{Orientation scheme} \#4)D.   The third line is a header explaining the columns in the file.
 
 
-Use {\bf PMD\_magic.py} to convert the file {\it ss0101a.pmd} in the directory 'PMD' in the 'PMD\_magic' folder of the {\it Measurement\_import} directory in the example \href{#Datafiles}{datafiles} directory.  These were taken at a location named 'Summit Springs' and have a naming convention of the type XXXX[YYY], where  YYY is sample designation with Z characters from site XXX, or \customlink{naming_schemes}naming convention \# 4-2.  A single character distinguishes the specimen from the sample (-spc 1).  All samples were oriented with a magnetic compass.
+Use {\bf PMD\_magic.py} to convert the file {\it ss0101a.pmd} in the directory 'PMD' in the 'PMD\_magic' folder of the {\it Measurement\_import} directory in the example {\it data\_files } directory.  These were taken at a location named 'Summit Springs' and have a naming convention of the type XXXX[YYY], where  YYY is sample designation with Z characters from site XXX, or \customlink{naming_schemes}naming convention \# 4-2.  A single character distinguishes the specimen from the sample (-spc 1).  All samples were oriented with a magnetic compass.
 
 \begin{verbatim}
 % PMD_magic.py -f ss0101a.pmd -loc ``Summit Springs`` -ncn 4-2 -spc 1 -mcd SO-MAG -F ss0101a.magic
@@ -4346,7 +4346,7 @@ Starting from the magnetometer output files, paleomagnetists interpret the data 
 Once a pmag\_specimens format file has been created, the data are usually  averaged by sample and/or by site and converted into \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#Virtual_dipole_moment}{V[A]DMs} and/or
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#Virtual_geomagnetic_poles}{VGPs} and put in a pmag\_results formatted file along with the location and age information that are available.  Data must be selected or rejected according to some criteria at each level (for example, the specimen MAD direction must be less than some value or the site $\kappa$ must be greater than some value).   This onerous task can be accomplished using the program {\bf specimens\_results\_magic.py}.          This program has many optional features, so the reader is encouraged just to look at the documentation.
 
-Test it out  by using the datafiles created in the \href{#site_edit_magic.py}{site\_edit\_magic.py} example.  Block the interpretation of some of the samples owing to `bad' orientation.  Change the selection criteria using \href{customize_criteria.py}{customize\_criteria.py}.    Then generate a new {\it pmag\_specimen.txt} file using \href{#mk_redo.py}{mk\_redo.py},  \href{#zeq_magic_redo.py}{zeq\_magic\_redo.py} and \href{#combine_magic.py}{combine\_magic.py}.   Then do the averaging by site with {\bf specimens\_results\_magic.py}.  The age bounds of the data are 0-5 Ma (-age 0 5 Ma).  Use the existing (or modified) criteria (-exc option).   There are some paleointensity data, so use the current site latitude for the VADM  calculation (-lat option).   Calculate the data in the geographic coordinate system (-crd g).    Then extract the data into tab delimited tables using \href{#pmag_results_extract.py}{pmag\_results\_extract.py}
+Test it out  by using the data files created in the \href{#site_edit_magic.py}{site\_edit\_magic.py} example.  Block the interpretation of some of the samples owing to `bad' orientation.  Change the selection criteria using \href{customize_criteria.py}{customize\_criteria.py}.    Then generate a new {\it pmag\_specimen.txt} file using \href{#mk_redo.py}{mk\_redo.py},  \href{#zeq_magic_redo.py}{zeq\_magic\_redo.py} and \href{#combine_magic.py}{combine\_magic.py}.   Then do the averaging by site with {\bf specimens\_results\_magic.py}.  The age bounds of the data are 0-5 Ma (-age 0 5 Ma).  Use the existing (or modified) criteria (-exc option).   There are some paleointensity data, so use the current site latitude for the VADM  calculation (-lat option).   Calculate the data in the geographic coordinate system (-crd g).    Then extract the data into tab delimited tables using \href{#pmag_results_extract.py}{pmag\_results\_extract.py}
 
 \begin{verbatim}
 % mk_redo.py
@@ -4683,7 +4683,7 @@ Sometimes there is no simple relationship and the MagIC import procedure can't p
 This program takes all the MagIC formatted files and puts them into a file which can be imported into the MagIC console software for uploading into the \href{http://earthref.org/MagIC}{MagIC database}.
 As an example, we can ``repackage'' the file used file downloaded in the \href{#download_magic.py}{download\_magic.py} example.  You could re-interpret that data or fix records with errors, then re-upload the corrected file.
 
-In the {\it upload\_magic} directory in the example datafiles directory, someone has entered all the site latitudes as longitudes and vice versa (surprisingly common!).    You can fix this in the {\it er\_sites.txt} file, by swapping the headers sample\_lat/sample\_lon in the {\it er\_samples.txt} file and site\_lat/site\_lon in the {\it er\_sites.txt} file then run \href{#specimens\_results\_magic.py}{specimens\_results\_magic.py} to propogate the changes through to the results table.  Be sure to set the criteria switch (-exc), the latitude switch (-lat), the geographic coordinate switch (-crd g) and the age switch (-age 0 5 Ma).    Then re-package the files for uploading.
+In the {\it upload\_magic} directory in the example {\it data\_files} directory, someone has entered all the site latitudes as longitudes and vice versa (surprisingly common!).    You can fix this in the {\it er\_sites.txt} file, by swapping the headers sample\_lat/sample\_lon in the {\it er\_samples.txt} file and site\_lat/site\_lon in the {\it er\_sites.txt} file then run \href{#specimens\_results\_magic.py}{specimens\_results\_magic.py} to propogate the changes through to the results table.  Be sure to set the criteria switch (-exc), the latitude switch (-lat), the geographic coordinate switch (-crd g) and the age switch (-age 0 5 Ma).    Then re-package the files for uploading.
 
 AFTER fixing the {\it er\_samples.txt} and {\it er\_sites.txt} files, do the following:
 
@@ -6120,7 +6120,7 @@ To open a file we use the command {\color{blue}open()}, one of Python's built-in
 \url{http://docs.python.org/library/functions.html}
 
 \noindent  The  {\color{blue}open()} function returns an object,  complete with methods, like {\color{blue}readlines()} which, yes, reads all the lines.   Suppose you have a file containing the coordinates of some
-seismic stations which you want to plot on a map or something. (In fact, it is in the \href{#Datafiles}{Datafiles/LearningPython} directory.   The file
+seismic stations which you want to plot on a map or something. (In fact, it is in the {\it data\_files/LearningPython} directory.   The file
 is called {\color{blue}   station.list} and its first five lines are:
 
 {\color{blue}\begin{verbatim}
@@ -6798,11 +6798,11 @@ Data analysis in Python benefits from an increasingly robust ecosystem of packag
 
 Underlying the {\bf PmagPy}  programs that are accessible through the command line and the GUI interfaces (e.g., {\bf Pmag GUI}) are two main function libraries: {\bf pmag.py} and {\bf pmagplotlib.py}. The functions within these modules can  be imported and called upon within a Jupyter notebook running a Python 2.7 kernel. In addition to these functions, Nick Swanson-Hysell created a module called {\bf ipmag.py} that is in active development and contains functions that replicate and extend some of the functionality that is found within the {\bf PmagPy}  command line programs for use in the notebook environment.
 
-To provide a glimpse of what is possible in terms of data analysis using {\bf PmagPy} in a notebook environment, we have created an example notebook that is available in the {\it IPmag\_notebook} folder in the Datafiles package downloaded as a part of  the {\bf PmagPy} package. This notebook (PmagPy\_notebook.ipynb} imports a data set downloaded from the  MagIC database,  plots them  and conducts some statistical analyses.
+To provide a glimpse of what is possible in terms of data analysis using {\bf PmagPy} in a notebook environment, we have created an example notebook that is available in the {\it IPmag\_notebook} folder in the {\it data\_files} folder downloaded as a part of  the {\bf PmagPy} package. This notebook (PmagPy\_notebook.ipynb} imports a data set downloaded from the  MagIC database,  plots them  and conducts some statistical analyses.
 
- In the notebook, reversal tests are conducted using both the \cite{mcfadden90}  implementation of the \cite{watson83} $V_w$ statistic test for a common mean and the bootstrap reversal test (\cite{tauxe91} and Section 11.3.4 in the textbook \url{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html}). The notebook can be viewed as a static webpage at this link \url{https://nbviewer.jupyter.org/github/swanson-hysell/2015_Tauxe-et-al_PmagPy_Notebook/blob/master/PmagPy_notebook.ipynb} or downloaded as executable code as detailed below.  The notebook example is also in the PmagPy\_Tutorial folder that you downloaded as the \href{#Datafiles}{Datafiles}  folder (see \href{#quick_start}{Installing PmagPy}).
+ In the notebook, reversal tests are conducted using both the \cite{mcfadden90}  implementation of the \cite{watson83} $V_w$ statistic test for a common mean and the bootstrap reversal test (\cite{tauxe91} and Section 11.3.4 in the textbook \url{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html}). The notebook can be viewed as a static webpage at this link \url{https://nbviewer.jupyter.org/github/swanson-hysell/2015_Tauxe-et-al_PmagPy_Notebook/blob/master/PmagPy_notebook.ipynb} or downloaded as executable code as detailed below.  The notebook example is also in the PmagPy\_Tutorial folder that you downloaded as the {\it data\_files}  folder (see \href{#quick_start}{Installing PmagPy}).
 
-To execute and edit the notebook code yourself,  find it in the Datafiles directory under PmagPy\_Tutorial.  If you installed the Enthought Canopy Python distribution you will have the IPython and Jupyter packages installed. If you have another Python distribution you will want to make sure that you have IPython and Jupyter (installation instructions can currently be found here: \url{http://ipython.org/install.html} and here: \url{http://jupyter.readthedocs.org/en/latest/install.html}). The example notebook was created using IPython version 2.3. To view and edit it,  type {\bf ipython notebook} on the \href{#command_line}{command line}.  This   will open up a local IPython server in your default web browser within which you can use the directory to navigate to the Datafiles folder. Click on it to open and edit. You will see something like this:
+To execute and edit the notebook code yourself,  find it in the {\it data\_files} directory under PmagPy\_Tutorial.  If you installed the Enthought Canopy Python distribution you will have the IPython and Jupyter packages installed. If you have another Python distribution you will want to make sure that you have IPython and Jupyter (installation instructions can currently be found here: \url{http://ipython.org/install.html} and here: \url{http://jupyter.readthedocs.org/en/latest/install.html}). The example notebook was created using IPython version 2.3. To view and edit it,  type {\bf ipython notebook} on the \href{#command_line}{command line}.  This   will open up a local IPython server in your default web browser within which you can use the directory to navigate to the data\_files folder. Click on it to open and edit. You will see something like this:
 
 \includegraphics[width=15cm]{EPSfiles/notebook.eps}
 

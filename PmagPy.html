@@ -7,7 +7,7 @@
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
 <!-- html,1,sections+ --> 
 <meta name="src" content="PmagPy.tex"> 
-<meta name="date" content="2016-01-12 14:31:00"> 
+<meta name="date" content="2016-01-20 16:30:00"> 
 <link rel="stylesheet" type="text/css" href="PmagPy.css"> 
 </head><body 
 >
@@ -401,7 +401,7 @@ name="PmagPy0x.png" src="EPSfiles/logo.eps"
 <h2 class="titleHead">PmagPy Cookbook</h2>
 <div class="author" ></div><br />
 <div class="date" ><span 
-class="cmr-12">January 12, 2016</span></div>
+class="cmr-12">January 20, 2016</span></div>
                                                                      
 
                                                                      
@@ -424,7 +424,7 @@ Foundation.
    Lisa Tauxe
    <br />Scripps Institution of Oceanography
    <br />La Jolla, CA 92093
-   <br />January 12, 2016
+   <br />January 20, 2016
    <br /><a 
 href="http://magician.ucsd.edu/~ltauxe/" class="url" ><span 
 class="cmtt-10x-x-109">http://magician.ucsd.edu/</span><span 
@@ -566,7 +566,7 @@ href="#basemap_magic.py" >basemap_magic.py</a>), <a name='HighRes'></a>
           page, and then on &#8216;Available Packages&#8217;. Install both basemap
           packages (one has high resolution data files in it). To install the
           Etopo20 package, see <a 
-href="#install_etopo.py" >install_etopo.py</a>.<a name='Datafiles'></a></li></ul>
+href="#install_etopo.py" >install_etopo.py</a>.</li></ul>
      </li>
      <li 
   class="enumerate" id="x1-4008x4">Create a <a 
@@ -648,8 +648,9 @@ class="cmti-10x-x-109">ThisProject </span>there.
      </li>
      <li 
   class="enumerate" id="x1-6006x3"><span 
-class="cmbx-10x-x-109">copy example files: </span>In the <a 
-href="#Datafiles" >Datafiles </a> folder you will find a subfolder
+class="cmbx-10x-x-109">copy example files: </span>In the <span 
+class="cmti-10x-x-109">data</span><span 
+class="cmti-10x-x-109">_files  </span>folder you will find a subfolder
      named <span 
 class="cmti-10x-x-109">Pmag</span><span 
 class="cmti-10x-x-109">_GUI</span>. Copy the contents of the <a 
@@ -1760,16 +1761,16 @@ class="cmbx-10x-x-109">/Users/lisa</span>. Similarly, the absolute pathname to t
 class="cmbx-10x-x-109">PmagPy </span>scripts would be <span 
 class="cmbx-10x-x-109">/Users/lisa/PmagPy</span>. There is also a &#8220;relative&#8221;
 pathname, which is in reference to the current directory (the one you are &#8216;sitting&#8217;
-in). If user &#8220;lisa&#8221; is sitting in her home directory, the relative pathname for
-the file <span 
+in). If user &#8220;lisa&#8221; is sitting in her home directory, the relative pathname
+for the file <span 
 class="cmti-10x-x-109">dir</span><span 
 class="cmti-10x-x-109">_cart</span><span 
 class="cmti-10x-x-109">_example.dat </span>in the directory <span 
-class="cmbx-10x-x-109">Datafiles</span><span 
-class="cmbx-10x-x-109">_2.0 </span>would be
+class="cmbx-10x-x-109">data</span><span 
+class="cmbx-10x-x-109">_files </span>would be
 <span 
-class="cmti-10x-x-109">Datafiles</span><span 
-class="cmti-10x-x-109">_2.0/dir</span><span 
+class="cmti-10x-x-109">data</span><span 
+class="cmti-10x-x-109">_files/dir</span><span 
 class="cmti-10x-x-109">_cart/dir</span><span 
 class="cmti-10x-x-109">_cart</span><span 
 class="cmti-10x-x-109">_example.dat</span>. When using relative pathnames, it is
@@ -2197,8 +2198,9 @@ interpret the data. For details about warnings and error messages during
 these steps, consult the tutorial document in the <span 
 class="cmti-10x-x-109">thellier</span><span 
 class="cmti-10x-x-109">_GUI </span>folder
-in <a 
-href="#Datafiles" >Datafiles</a>. Also, consult the Preferences to change certain plotting
+in <span 
+class="cmti-10x-x-109">data</span><span 
+class="cmti-10x-x-109">_files</span>. Also, consult the Preferences to change certain plotting
 options.
 <!--l. 1098--><p class="noindent" >
 <!--l. 1098--><p class="indent" >   <a name='subsubsec5-1-2-0'></a><h5 class="subsubsectionHead"><a 
@@ -2395,9 +2397,10 @@ listed below with the format [program_name_docs].
 <!--l. 1251--><p class="indent" >   Examples of how to use command line <span 
 class="cmbx-10x-x-109">PmagPy </span>programs are given
 below. In all examples, the &#8217;%&#8217; prompt stands for whatever command line
-prompt you have. The example datafiles referred to in the following are
+prompt you have. The example data files referred to in the following are
 located in the <span 
-class="cmti-10x-x-109">Datafiles </span>directory bundled with the <span 
+class="cmti-10x-x-109">data</span><span 
+class="cmti-10x-x-109">_files </span>directory bundled with the <span 
 class="cmbx-10x-x-109">PmagPy </span>software
 distribution.
 <!--l. 1253--><p class="indent" >   <a name='aarm_magic.py'></a>
@@ -2612,8 +2615,7 @@ data into the different holes. Change directories into Location_2 (which contain
 the data for Hole U1359A). Or, you can use the data in the <span 
 class="cmbx-10x-x-109">ANI</span><span 
 class="cmbx-10x-x-109">_depthplot</span>
-directory of the <a 
-href="#Datafiles" >example data files</a>.
+directory of the example data files.
                                                                      
 
                                                                      
@@ -4977,7 +4979,9 @@ do not come standard with the Python installation. To install these properly,
                                                                      
 
                                                                      
-change directories into the etopo20 subdirectory in the Datafiles directory.
+change directories into the etopo20 subdirectory in the <span 
+class="cmti-10x-x-109">data</span><span 
+class="cmti-10x-x-109">_files  </span>directory.
 Simply type:
                                                                      
 
@@ -5534,8 +5538,8 @@ MP&#x00A0;18-1
 <!--l. 3283--><p class="nopar" >
 <!--l. 3285--><p class="indent" >   There is an optional first line with &#8217;CIT&#8217; on it (not shown here).
 <!--l. 3287--><p class="indent" >   There must be a file with the suffix &#8216;.sam&#8217; in the same directory which gives
-details about the samples and a list of the datafiles in the directory. The .sam file
-has the form:
+details about the samples and a list of the data files in the directory. The .sam
+file has the form:
                                                                      
 
                                                                      
@@ -5563,8 +5567,9 @@ class="cmti-10x-x-109">CIT</span><span
 class="cmti-10x-x-109">_magic </span>directory of the <span 
 class="cmti-10x-x-109">Measurement</span><span 
 class="cmti-10x-x-109">_Import </span>directory of the
-<a 
-href="#Datafiles" >Datafiles</a> directory. The location name was &#8220;Mamainse Point&#8221;, the <a 
+<span 
+class="cmti-10x-x-109">data</span><span 
+class="cmti-10x-x-109">_files </span>directory. The location name was &#8220;Mamainse Point&#8221;, the <a 
 href="#naming_schemes" >naming
 convention</a> was #2 and they were collected by drilling and with a magnetic
 compass.
@@ -5923,8 +5928,9 @@ class="cmti-10x-x-109">ss0101a.pmd </span>in the directory
 &#8217;PMD&#8217; in the &#8217;PMD_magic&#8217; folder of the <span 
 class="cmti-10x-x-109">Measurement</span><span 
 class="cmti-10x-x-109">_import </span>directory in
-the example <a 
-href="#Datafiles" >datafiles</a> directory. These were taken at a location named
+the example <span 
+class="cmti-10x-x-109">data</span><span 
+class="cmti-10x-x-109">_files  </span>directory. These were taken at a location named
 &#8217;Summit Springs&#8217; and have a naming convention of the type XXXX[YYY],
 where YYY is sample designation with Z characters from site XXX, or
 <a name='naming_schemes'></a>naming convention # 4-2. A single character distinguishes the specimen
@@ -7282,7 +7288,7 @@ class="cmbx-10x-x-109">_results</span><span
 class="cmbx-10x-x-109">_magic.py</span>. This program has
 many optional features, so the reader is encouraged just to look at the
 documentation.
-<!--l. 4349--><p class="indent" >   Test it out by using the datafiles created in the <a 
+<!--l. 4349--><p class="indent" >   Test it out by using the data files created in the <a 
 href="#site_edit_magic.py" >site_edit_magic.py</a> example.
 Block the interpretation of some of the samples owing to &#8216;bad&#8217; orientation.
 Change the selection criteria using <a 
@@ -7807,8 +7813,10 @@ re-interpret that data or fix records with errors, then re-upload the corrected
 file.
 <!--l. 4686--><p class="indent" >   In the <span 
 class="cmti-10x-x-109">upload</span><span 
-class="cmti-10x-x-109">_magic </span>directory in the example datafiles directory, someone has
-entered all the site latitudes as longitudes and vice versa (surprisingly
+class="cmti-10x-x-109">_magic </span>directory in the example <span 
+class="cmti-10x-x-109">data</span><span 
+class="cmti-10x-x-109">_files </span>directory, someone
+has entered all the site latitudes as longitudes and vice versa (surprisingly
 common!). You can fix this in the <span 
 class="cmti-10x-x-109">er</span><span 
 class="cmti-10x-x-109">_sites.txt </span>file, by swapping the headers
@@ -10222,8 +10230,9 @@ class="cmtt-10x-x-109">http://docs.python.org/library/functions.html</span></a>
 <!--l. 6122--><p class="noindent" >The open() function returns an object, complete with methods, like readlines()
 which, yes, reads all the lines. Suppose you have a file containing the coordinates
 of some seismic stations which you want to plot on a map or something. (In fact,
-it is in the <a 
-href="#Datafiles" >Datafiles/LearningPython</a> directory. The file is called station.list and
+it is in the <span 
+class="cmti-10x-x-109">data</span><span 
+class="cmti-10x-x-109">_files/LearningPython </span>directory. The file is called station.list and
 its first five lines are:
                                                                      
 
@@ -11212,11 +11221,13 @@ environment.
 class="cmbx-10x-x-109">PmagPy </span>in a notebook environment, we have created an example notebook that
 is available in the <span 
 class="cmti-10x-x-109">IPmag</span><span 
-class="cmti-10x-x-109">_notebook </span>folder in the Datafiles package downloaded as
-a part of the <span 
-class="cmbx-10x-x-109">PmagPy </span>package. This notebook (PmagPy_notebook.ipynb
-imports a data set downloaded from the MagIC database, plots them and
-conducts some statistical analyses.
+class="cmti-10x-x-109">_notebook </span>folder in the <span 
+class="cmti-10x-x-109">data</span><span 
+class="cmti-10x-x-109">_files </span>folder downloaded as a
+part of the <span 
+class="cmbx-10x-x-109">PmagPy </span>package. This notebook (PmagPy_notebook.ipynb imports
+a data set downloaded from the MagIC database, plots them and conducts some
+statistical analyses.
 <!--l. 6803--><p class="indent" >   In the notebook, reversal tests are conducted using both the
 <a 
 href="#Xmcfadden90">McFadden &amp; McElhinny</a>&#x00A0;(<a 
@@ -11240,11 +11251,14 @@ or downloaded as executable code as detailed below. The notebook example is
                                                                      
 
                                                                      
-also in the PmagPy_Tutorial folder that you downloaded as the <a 
-href="#Datafiles" >Datafiles</a> folder
+also in the PmagPy_Tutorial folder that you downloaded as the <span 
+class="cmti-10x-x-109">data</span><span 
+class="cmti-10x-x-109">_files </span>folder
 (see <a 
 href="#quick_start" >Installing PmagPy</a>).
-<!--l. 6805--><p class="indent" >   To execute and edit the notebook code yourself, find it in the Datafiles
+<!--l. 6805--><p class="indent" >   To execute and edit the notebook code yourself, find it in the <span 
+class="cmti-10x-x-109">data</span><span 
+class="cmti-10x-x-109">_files</span>
 directory under PmagPy_Tutorial. If you installed the Enthought Canopy
 Python distribution you will have the IPython and Jupyter packages
 installed. If you have another Python distribution you will want to make
@@ -11260,7 +11274,7 @@ notebook was created using IPython version 2.3. To view and edit it, type
 class="cmbx-10x-x-109">ipython notebook </span>on the <a 
 href="#command_line" >command line</a>. This will open up a local IPython
 server in your default web browser within which you can use the directory to
-navigate to the Datafiles folder. Click on it to open and edit. You will see
+navigate to the data_files folder. Click on it to open and edit. You will see
 something like this:
 <!--l. 6807--><p class="indent" >   <img 
 src="PmagPy111x.png" alt="PIC" class="graphics" width="426.79134pt" height="130.44284pt" ><!--tex4ht:graphics  
