@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  28 JAN 2016 05:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  5 FEB 2016 13:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1766,25 +1766,25 @@ Chapter 9.
  --- Customlinks says: Link to section 9.1: PmagPy.html#sec9-1
 [417
 
-] [418] [419] [420] [421] [422]
+] [418] [419] [420] [421] [422] [423] [424]
  --- Customlinks says: Link to section 9.2: PmagPy.html#sec9-2
  --- Customlinks says: Link to section 9.3: PmagPy.html#sec9-3
-[423]
+[425]
  --- Customlinks says: Link to section 9.4: PmagPy.html#sec9-4
-[424] [425
+[426] [427
 
-] [426] [427] [428] [429]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7140.
- [430]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 7140.
+] [428] [429] [430] [431]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7142.
+ [432]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 7142.
  (./PmagPy.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7140.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 7140.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7142.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 7142.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7140.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7142.
  )
 (\end occurred inside a group at level 4)
 
@@ -1802,4 +1802,4 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  37i,9n,32p,135870b,2393s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on PmagPy.dvi (439 pages, 1170452 bytes).
+Output written on PmagPy.dvi (441 pages, 1171212 bytes).

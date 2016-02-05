@@ -6883,9 +6883,11 @@ You will see something like this:\\
 /Users/****/Library/Enthought/Canopy\_64bit/User/bin: /usr/local/bin: /usr/local/share/npm/bin: /usr/bin: /bin: /usr/sbin: /sbin: /usr/local/bin: /opt/X11/bin: /Users/****/PmagPy:/usr/texbin\\
 %\end{verbatim}
 
-Your \$PATH may look very different, but as long as you have the complete path to the PmagPy directory in there, you are golden.  If the directory is not in your path, you can try re-running the PmagPy install script, which should set your path correctly  for you.  If that doesn't work, go to your home directory (to get there, type ``cd" in your command line).  Use a text editor to open a file called .bash\_profile and add this line:  
+Your \$PATH may look very different, but as long as you have the complete path to the PmagPy directory in there, you are golden.  If the directory is not in your path, you can try re-running the PmagPy install script, which should set your path correctly  for you.  If that doesn't work, go to your home directory (to get there, type ``cd" in your command line).  Use a text editor to open a file called .bash\_profile and add these lines:  
 
 \begin{verbatim}export PATH=/Users/***/PmagPy:$PATH\end{verbatim}
+\begin{verbatim}export PATH=/Users/***/PmagPy/programs:$PATH\end{verbatim}
+\begin{verbatim}export PYTHONPATH=$PYTHONPATH:/Users/***/PmagPy/\end{verbatim}
 
 where *** is your username.  Then restart your Terminal.  If it still doesn't work, see question 3.
 

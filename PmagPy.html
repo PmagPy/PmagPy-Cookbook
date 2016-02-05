@@ -7,7 +7,7 @@
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
 <!-- html,1,sections+ --> 
 <meta name="src" content="PmagPy.tex"> 
-<meta name="date" content="2016-01-28 05:14:00"> 
+<meta name="date" content="2016-02-05 13:07:00"> 
 <link rel="stylesheet" type="text/css" href="PmagPy.css"> 
 </head><body 
 >
@@ -401,7 +401,7 @@ name="PmagPy0x.png" src="EPSfiles/logo.eps"
 <h2 class="titleHead">PmagPy Cookbook</h2>
 <div class="author" ></div><br />
 <div class="date" ><span 
-class="cmr-12">January 28, 2016</span></div>
+class="cmr-12">February 5, 2016</span></div>
                                                                      
 
                                                                      
@@ -424,7 +424,7 @@ Foundation.
    Lisa Tauxe
    <br />Scripps Institution of Oceanography
    <br />La Jolla, CA 92093
-   <br />January 28, 2016
+   <br />February 5, 2016
    <br /><a 
 href="http://magician.ucsd.edu/~ltauxe/" class="url" ><span 
 class="cmtt-10x-x-109">http://magician.ucsd.edu/</span><span 
@@ -11417,7 +11417,7 @@ class="newline" />
           install script, which should set your path correctly for you. If that
           doesn&#8217;t work, go to your home directory (to get there, type &#8220;cd&#8221; in
           your command line). Use a text editor to open a file called
-          .bash_profile and add this line:
+          .bash_profile and add these lines:
                                                                      
 
                                                                      
@@ -11425,24 +11425,38 @@ class="newline" />
           export&#x00A0;PATH=/Users/***/PmagPy:$PATH
 </div>
           <!--l. 6888--><p class="nopar" >
-          <!--l. 6890--><p class="noindent" >where *** is your username. Then restart your Terminal. If it still
+                                                                     
+
+                                                                     
+          <div class="verbatim" id="verbatim-253">
+          export&#x00A0;PATH=/Users/***/PmagPy/programs:$PATH
+</div>
+          <!--l. 6889--><p class="nopar" >
+                                                                     
+
+                                                                     
+          <div class="verbatim" id="verbatim-254">
+          export&#x00A0;PYTHONPATH=$PYTHONPATH:/Users/***/PmagPy/
+</div>
+          <!--l. 6890--><p class="nopar" >
+          <!--l. 6892--><p class="noindent" >where *** is your username. Then restart your Terminal. If it still
           doesn&#8217;t work, see question 3.
           </li>
           <li class="itemize">For Windows users:
                                                                      
 
                                                                      
-          <div class="verbatim" id="verbatim-253">
+          <div class="verbatim" id="verbatim-255">
           &#x00A0;"eqarea.py"&#x00A0;is&#x00A0;not&#x00A0;recognized&#x00A0;as&#x00A0;an&#x00A0;internal&#x00A0;or&#x00A0;external&#x00A0;command,
           &#x00A0;<br />operable&#x00A0;program&#x00A0;or&#x00A0;batch&#x00A0;file.
 </div>
-          <!--l. 6897--><p class="nopar" >
-          <!--l. 6899--><p class="noindent" >Setting your path should not be an issue in Windows if you are using
+          <!--l. 6899--><p class="nopar" >
+          <!--l. 6901--><p class="noindent" >Setting your path should not be an issue in Windows if you are using
           the PmagPy prompt (created by the install script). PmagPy
           functionality will be available only in the custom Command Prompt,
           so make sure you are using it. However, if you do need to set your
           path for some reason, see:
-          <!--l. 6901--><p class="noindent" ><a 
+          <!--l. 6903--><p class="noindent" ><a 
 href="http://www.mathworks.com/matlabcentral/answers/94933-how-do-i-set-my-system-path-under-windows" >Setting your Path in Windows</a>
           </li></ul>
      </li>
@@ -11451,19 +11465,19 @@ href="http://www.mathworks.com/matlabcentral/answers/94933-how-do-i-set-my-syste
                                                                      
 
                                                                      
-     <div class="verbatim" id="verbatim-254">
+     <div class="verbatim" id="verbatim-256">
      &#x00A0;-bash:&#x00A0;eqarea.py:&#x00A0;command&#x00A0;not&#x00A0;found
 </div>
-     <!--l. 6906--><p class="nopar" >
+     <!--l. 6908--><p class="nopar" >
           <ul class="itemize1">
           <li class="itemize">For Mac users, it is possible that you need to make the python
           scripts executable. On the command line in the directory with
           the scripts, type: chmod a+x *.py</li></ul>
      </li></ol>
-<!--l. 6914--><p class="noindent" >
-<!--l. 6914--><p class="indent" >   <a name='sec9-2'></a><h3 class="sectionHead"><span class="titlemark">9.2   </span> <a 
+<!--l. 6916--><p class="noindent" >
+<!--l. 6916--><p class="indent" >   <a name='sec9-2'></a><h3 class="sectionHead"><span class="titlemark">9.2   </span> <a 
 href="#QQ2-1-217" id="x1-2170009.2">Problems updating Canopy</a></h3>
-<!--l. 6915--><p class="noindent" >If you are using Canopy (not just EPD), you will need to keep it up to date.
+<!--l. 6917--><p class="noindent" >If you are using Canopy (not just EPD), you will need to keep it up to date.
 Currently, that means the version number should be 1.6.1 or higher. In general,
 you can update by opening the Canopy application; it will automatically check
 for updates. However, if you haven&#8217;t updated for a long time, Canopy can get
@@ -11471,10 +11485,10 @@ for updates. However, if you haven&#8217;t updated for a long time, Canopy can g
 will need to fully uninstall and reinstall canopy, following the directions on the
 <a 
 href="https://support.enthought.com/hc/en-us/articles/204469570-Canopy-shows-no-updates-available-reinstalling-from-the-website" >Enthought website</a>.
-<!--l. 6917--><p class="noindent" >
-<!--l. 6917--><p class="indent" >   <a name='sec9-3'></a><h3 class="sectionHead"><span class="titlemark">9.3   </span> <a 
+<!--l. 6919--><p class="noindent" >
+<!--l. 6919--><p class="indent" >   <a name='sec9-3'></a><h3 class="sectionHead"><span class="titlemark">9.3   </span> <a 
 href="#QQ2-1-218" id="x1-2180009.3">Problems with a specific program</a></h3>
-<!--l. 6918--><p class="noindent" >
+<!--l. 6920--><p class="noindent" >
      <ol  class="enumerate1" >
      <li 
   class="enumerate" id="x1-218002x1">Thellier auto_interpreter crashes with a Segmentation Fault (on
@@ -11499,10 +11513,10 @@ href="#standalone" >standalone  Pmag  GUI</a>
           cause the Thellier GUI menubar to behave oddly. For this reason,
           we recommend the first solution (above).</li></ul>
      </li></ol>
-<!--l. 6927--><p class="noindent" >
-<!--l. 6927--><p class="indent" >   <a name='sec9-4'></a><h3 class="sectionHead"><span class="titlemark">9.4   </span> <a 
+<!--l. 6929--><p class="noindent" >
+<!--l. 6929--><p class="indent" >   <a name='sec9-4'></a><h3 class="sectionHead"><span class="titlemark">9.4   </span> <a 
 href="#QQ2-1-219" id="x1-2190009.4">Other problems</a></h3>
-<!--l. 6927--><p class="noindent" >Report a problem not listed above: e-mail <a 
+<!--l. 6929--><p class="noindent" >Report a problem not listed above: e-mail <a 
 href="mailto:ltauxe@ucsd.edu" >ltauxe@ucsd.edu</a>. Include the following
 information: 1) the version of PmagPy that you are using, 2) your operating
 system, 3) any error messages that you got, 4) the datafile that is giving trouble,
