@@ -8,15 +8,15 @@
 \doTocEntry\tocsection{2.1}{\csname a:TocLink\endcsname{1}{x1-70002.1}{QQ2-1-7}{Converting magnetometer files to MagIC format}}{8}\relax 
 \doTocEntry\tocsection{2.2}{\csname a:TocLink\endcsname{1}{x1-80002.2}{QQ2-1-8}{Optional: Calculate geographic / tilt-corrected direction}}{15}\relax 
 \doTocEntry\tocsection{2.3}{\csname a:TocLink\endcsname{1}{x1-90002.3}{QQ2-1-9}{Filling in the EarthRef data}}{17}\relax 
-\doTocEntry\tocsection{2.4}{\csname a:TocLink\endcsname{1}{x1-100002.4}{QQ2-1-10}{Demag GUI program}}{26}\relax 
-\doTocEntry\tocsection{2.5}{\csname a:TocLink\endcsname{1}{x1-110002.5}{QQ2-1-11}{Thellier GUI program}}{27}\relax 
-\doTocEntry\tocsection{2.6}{\csname a:TocLink\endcsname{1}{x1-120002.6}{QQ2-1-12}{Upload to the database }}{29}\relax 
-\doTocEntry\tocsection{2.7}{\csname a:TocLink\endcsname{1}{x1-130002.7}{QQ2-1-13}{Downloading data from {\bf  MagIC}}}{30}\relax 
-\doTocEntry\tocsection{2.8}{\csname a:TocLink\endcsname{1}{x1-140002.8}{QQ2-1-14}{Preparing for MagIC}}{30}\relax 
-\doTocEntry\tocsubsection{2.8.1}{\csname a:TocLink\endcsname{1}{x1-150002.8.1}{QQ2-1-15}{Field and sampling information}}{30}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-160002.8.1}{QQ2-1-16}{Data files downloaded from the IODP (LIMS) database}}{39}\relax 
-\doTocEntry\tocsubsection{2.8.2}{\csname a:TocLink\endcsname{1}{x1-170002.8.2}{QQ2-1-17}{Supported Rock Magnetometer files}}{41}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-180002.8.2}{QQ2-1-18}{Hysteresis file formats}}{43}\relax 
+\doTocEntry\tocsection{2.4}{\csname a:TocLink\endcsname{1}{x1-100002.4}{QQ2-1-10}{Demag GUI quick start}}{26}\relax 
+\doTocEntry\tocsection{2.5}{\csname a:TocLink\endcsname{1}{x1-110002.5}{QQ2-1-11}{Thellier GUI quick start}}{28}\relax 
+\doTocEntry\tocsection{2.6}{\csname a:TocLink\endcsname{1}{x1-120002.6}{QQ2-1-12}{Upload to the database }}{30}\relax 
+\doTocEntry\tocsection{2.7}{\csname a:TocLink\endcsname{1}{x1-130002.7}{QQ2-1-13}{Downloading data from {\bf  MagIC}}}{31}\relax 
+\doTocEntry\tocsection{2.8}{\csname a:TocLink\endcsname{1}{x1-140002.8}{QQ2-1-14}{Preparing for MagIC}}{31}\relax 
+\doTocEntry\tocsubsection{2.8.1}{\csname a:TocLink\endcsname{1}{x1-150002.8.1}{QQ2-1-15}{Field and sampling information}}{31}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-160002.8.1}{QQ2-1-16}{Data files downloaded from the IODP (LIMS) database}}{40}\relax 
+\doTocEntry\tocsubsection{2.8.2}{\csname a:TocLink\endcsname{1}{x1-170002.8.2}{QQ2-1-17}{Supported Rock Magnetometer files}}{42}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-180002.8.2}{QQ2-1-18}{Hysteresis file formats}}{44}\relax 
 \doTocEntry\tocchapter{3}{\csname a:TocLink\endcsname{1}{x1-190003}{QQ2-1-19}{MagIC GUI Tutorial}}{45}\relax 
 \doTocEntry\tocsection{3.1}{\csname a:TocLink\endcsname{1}{x1-200003.1}{QQ2-1-20}{Starting with MagIC GUI}}{45}\relax 
 \doTocEntry\tocsection{3.2}{\csname a:TocLink\endcsname{1}{x1-210003.2}{QQ2-1-21}{MagIC GUI example dataset}}{46}\relax 

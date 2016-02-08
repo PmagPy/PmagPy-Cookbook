@@ -65,7 +65,7 @@ To skip all the details and just start using \href{#pmag_gui.py}{Pmag GUI} or \h
 \section{Standalone GUI download}
 
 If you don't need the full PmagPy functionality, and you only want to use Pmag GUI, MagIC GUI, Thellier GUI, and Demag GUI, there is now a standalone download for you.  You won't need to install Python.
-You can download the \href{https://github.com/moonshoes87/PmagPy-Standalone-OSX/releases/latest}{standalone applications for OSX here}, and \href{https://github.com/moonshoes87/PmagPy-Standalone-Windows/releases/latest}{for Windows here}.
+You can download the \href{https://github.com/PmagPy/PmagPy-Standalone-OSX/releases/latest}{standalone applications for OSX here}, and \href{https://github.com/PmagPy/PmagPy-Standalone-Windows/releases/latest}{for Windows here}.
 
 Follow the download instructions in the provided links, and then you can skip the ``Full install'' section and go straight to using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI}.  The standalone versions of these applications are still in development; please report problems to the PmagPy team: \href{mailto:ltauxe@ucsd.edu}{ltauxe@ucsd.edu}.
 
@@ -268,12 +268,14 @@ Filling in the Earth Ref data is a critical part of building a MagIC Project Dir
 
 \customlink{DemagGUI}
 
-\section{Demag GUI program}
+\section{Demag GUI quick start}
 \label{sect:demag_gui}
 
-This is the main panel of the demag GUI:
+This image shows the main panel of the demag GUI:
 
 \includegraphics[width=30cm]{EPSfiles/demag_gui.eps}
+
+Use of the Demag GUI is described in more detail in the \href{#demag_gui.py}{Demag GUI} section below. Here are a few instructions that can be used as a quick start for using Demag GUI.
 
 To analyze the data in the example, follow these steps for each specimen:
 \begin{itemize}
@@ -289,12 +291,14 @@ To analyze the data in the example, follow these steps for each specimen:
 
 \customlink{ThellierGUI}
 
-\section{Thellier GUI program}
-This is main panel of \href{#ThellierGUI}{Thellier GUI}:
+\section{Thellier GUI quick start}
+This image shows the main panel of \href{#ThellierGUI}{Thellier GUI}:
 
 \includegraphics[width=30cm]{EPSfiles/FigThellierGui.eps}
 
- To analyze the data in the example, follow these steps for each specimen:
+Use of the Thellier GUI is described in more detail in the \href{#thellier_GUI.py}{Thellier GUI} section below and in this PDF document: \href{https://github.com/PmagPy/PmagPy-Cookbook/raw/gh-pages/thellier_GUI_full_manual_1_0.pdf}{Thellier GUI manual}. Here are a few instructions that can be used as a quick start for using Thellier GUI.
+
+To analyze the data in the example, follow these steps for each specimen:
  \begin{itemize}
 \item Choose temperature bounds from the temperatures dropdown menus.
 \item  Click `save' so the program remembers the interpretations (the interpretation is not saved to a file yet!).
@@ -956,13 +960,10 @@ For example, instead of typing input to a program with the keyboard, it can
 be read from a file using the symbol {\bf $<$}.   Output can either be printed to the screen (standard output), redirected into a file using the symbol {\bf $>$}, appended to the end of a file with {\bf $>>$} or
 used as input to another program with the pipe operator ({\bf$ |$}).
 
-
-
 \section{Text editors}
 
-There are many ways of
-editing text and the subject is beyond the scope of this documentation. Text editing is a blessing and a curse.  You either love it or
-hate it and in the beginning, and if you are used to programs like Word, you will certainly hate it. (And if you are used to a decent text editor, you will hate Word!).      But you can't use Word because the output is in a weird format that no scripting languages read easily.  So you have to use an editor that will produce a plain (ascii) file, like Notepad,  TextWrangler or Sublime Text.  \href{http://textwrangler.onfreedownload.com}{TextWrangler}  is freeware available for Macs and the notepad comes standard in the Windows operating system.   Fortunately for Mac users, Enthought Python's Canopy programming environment comes with its own text editor.
+There are many ways of editing text and the subject is beyond the scope of this documentation. Text editing is a blessing and a curse.  You either love it or
+hate it and in the beginning, and if you are used to programs like Word, you will certainly hate it. (And if you are used to a decent text editor, you will hate Word!).      But you can't use Word because the output is in a weird format that no scripting languages read easily.  So you have to use an editor that will produce a plain (ascii) file, like Notepad, TextWrangler or Sublime Text.  \href{http://textwrangler.onfreedownload.com}{TextWrangler}  is freeware available for Macs and the notepad comes standard in the Windows operating system.   Fortunately for Mac users, Enthought Python's Canopy programming environment comes with its own text editor.
 
 \customlink{PmagPy}
 
