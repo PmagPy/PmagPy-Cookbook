@@ -7,7 +7,7 @@
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
 <!-- html,1,sections+ --> 
 <meta name="src" content="PmagPy.tex"> 
-<meta name="date" content="2016-02-08 12:05:00"> 
+<meta name="date" content="2016-02-08 12:33:00"> 
 <link rel="stylesheet" type="text/css" href="PmagPy.css"> 
 </head><body 
 >
@@ -1886,24 +1886,20 @@ href="#QQ2-1-29" id="x1-290005.1">Graphical data analysis programs</a></h3>
 <!--l. 979--><p class="indent" >   <a name='subsec5-1-1'></a><h4 class="subsectionHead"><span class="titlemark">5.1.1   </span> <a 
 href="#QQ2-1-30" id="x1-300005.1.1">demag_gui.py</a></h4>
 <!--l. 981--><p class="noindent" >The demag_gui program enables the display and analysis of paleomagnetic
-demagnetization data. The software will display specimen level data within
-the chosen directory as a Zijderveld plot, equal area plot and intensity
-plot. Interpretations can be made to the data as least-squares line or
-plane fits. These interpretations can then be exported as MagIC pmag
-files.
+demagnetization data. The software will display specimen level data within the
+chosen directory as a Zijderveld plot, equal area plot and intensity plot.
+Interpretations can be made to the data as least-squares line or plane fits.
+Mean directions can be calculated and displayed for these interpretations.
+These interpretations can be exported as MagIC pmag files from the
+program.
 <!--l. 983--><p class="noindent" >
 <!--l. 983--><p class="indent" >   <a name='subsubsec5-1-1-0'></a><h5 class="subsubsectionHead"><a 
 href="#x1-310005.1.1" id="x1-310005.1.1">Launching</a></h5>
 <!--l. 985--><p class="noindent" >The best way to launch the Demag GUI application is through the Pmag GUI
-app. If PmagPy has been added to your PATH you can type pmag_gui.py at the
-command line to launch it or you can navigate to the directory containing it and
-type <span 
-class="cmtt-10x-x-109">python ./pmag_gui.py</span>. Within the Pmag GUI app, data can be converted
-from the format of a particular lab into MagIC format so that it can be displayed
-and analyzed within the demag_gui. The program can be started by clicking on
-the demag_gui button in the Pmag GUI, shown below. If no new window pops
-up after clicking this button, click on the Python icon (the little space ship) on
-your dock.
+app. Within the Pmag GUI app, data can be converted from the format of a
+particular lab into MagIC format so that it can be displayed and analyzed within
+Demag GUI. The program can be started by clicking on the Demag GUI button
+in the Pmag GUI, shown below.
                                                                      
 
                                                                      
@@ -1925,11 +1921,11 @@ demag_gui is launched this way.
 <!--l. 996--><p class="noindent" >
 <!--l. 996--><p class="indent" >   <a name='subsubsec5-1-1-0'></a><h5 class="subsubsectionHead"><a 
 href="#x1-320005.1.1" id="x1-320005.1.1">Adding Interpretations:</a></h5>
-<!--l. 998--><p class="noindent" >A least-squares fit to the measurement data can be added by clicking the add
-fit button. Additionally, you can select the fit you would like to edit
-or view by using the drop down box under the add fit button. Once
+<!--l. 998--><p class="noindent" >A least-squares fit to the measurement data can be added by clicking the &#8216;add
+fit&#8217; button. Additionally, you can select the fit you would like to edit
+or view by using the drop-down menu under the add fit button. Once
 you have selected a fit, the shape of the end points of the selected fit
-will turn to a diamond shape to distinguish them from the other data
+will turn to diamond shapes to distinguish them from the other data
 points.<br 
 class="newline" /><img 
 src="PmagPy43x.png" alt="PIC" class="graphics" width="284.52756pt" height="280.25258pt" ><!--tex4ht:graphics  
@@ -1944,31 +1940,33 @@ name="PmagPy44x.png" src="EPSfiles/demag_gui_BoundsBox.eps"
 <!--l. 1005--><p class="indent" >   Alternatively, one can double-click the list of measurement steps on the left to
 pick out the bounds for the interpretation. The included steps in the currently
 selected interpretation are shown in highlighted in blue on the measurement list
-and the measurements marked &#8220;bad&#8221; are shown in yellow. <span 
+and the measurements marked &#8220;bad&#8221; are highlighted in red. <span 
 class="cmbx-10x-x-109">Note: </span>in case of
 duplicate measurements the first <span 
 class="cmti-10x-x-109">good </span>measurement with the same treatment is
-used.<br 
+used. All points between the selected bounds that are flagged good (i.e. not
+flagged bad and marked in red), including duplicate measurements, will be
+included in the interpreted fit.<br 
 class="newline" /><img 
 src="PmagPy45x.png" alt="PIC" class="graphics" width="142.26378pt" height="211.72446pt" ><!--tex4ht:graphics  
 name="PmagPy45x.png" src="EPSfiles/demag_gui_DataBox.eps"  
 -->
 <!--l. 1008--><p class="indent" >   When first created, the fit will be given a generic name such as <span 
 class="cmti-10x-x-109">Fit 1</span>. The
-name of the fit can be changed from the default by typing into the drop down
-box containing fit name then pressing enter. The default fit type is a
-least-squares line. You can choose different fits such as a line anchored to the
-origin or a plane by using the drop-down menu under specimen mean type.
-Planes can be plotted as either poles, full planes or partial planes. This display
-option can be changed in the second drop-down menu under specimen mean
-type.
+name of the fit can be changed from the default by typing into the drop-down
+box containing fit name and then pressing enter. The default fit type is a
+least-squares line. You can choose different fits, such as a line anchored to the
+origin or a plane, by using the drop-down menu under the label &#8216;interpretation
+type&#8217;. Plane fits can be plotted as either poles, full planes or partial planes. This
+display option can be changed in the second drop-down menu under specimen
+mean type.
 <!--l. 1011--><p class="indent" >   <img 
 src="PmagPy46x.png" alt="PIC" class="graphics" width="284.52756pt" height="76.4406pt" ><!--tex4ht:graphics  
 name="PmagPy46x.png" src="EPSfiles/demag_gui_SpecimenMeanType.eps"  
 -->
 <!--l. 1013--><p class="indent" >   The choice between coordinate systems (i.e.&#x00A0;specimen, geographic or
-tilt-corrected) is available on the left above the list of steps. The orientation of
-the Zijderveld projection can also be changed here.
+tilt-corrected) is available on the left above the list of steps. The data list and the
+plots will update to reflect the chosen coordinate system.
                                                                      
 
                                                                      
@@ -1977,7 +1975,8 @@ src="PmagPy47x.png" alt="PIC" class="graphics" width="142.26378pt" height="146.3
 name="PmagPy47x.png" src="EPSfiles/demag_gui_ProjectionChoice.eps"  
 -->
 <!--l. 1017--><p class="indent" >   The properties of the currently selected fit to the data can be seen in the
-upper center of the GUI in a box labeled specimen mean statistics.
+upper center of the GUI in a box labeled &#8216;interpretation directions and
+statistics&#8217;.
 <!--l. 1019--><p class="indent" >   <img 
 src="PmagPy48x.png" alt="PIC" class="graphics" width="426.79134pt" height="112.7442pt" ><!--tex4ht:graphics  
 name="PmagPy48x.png" src="EPSfiles/demag_gui_FitData.eps"  
@@ -1986,21 +1985,21 @@ name="PmagPy48x.png" src="EPSfiles/demag_gui_FitData.eps"
 <!--l. 1022--><p class="indent" >   <a name='subsubsec5-1-1-0'></a><h5 class="subsubsectionHead"><a 
 href="#x1-330005.1.1" id="x1-330005.1.1">Flagging Bad Measurement Data</a></h5>
 <!--l. 1024--><p class="noindent" >Due to flux jumps or other such errors, individual measurements should
-sometime be excluded from interpretation. Such a measurements can be flagged
+sometimes be excluded from interpretation. Such a measurements can be flagged
 as &#8220;bad&#8221; by right-clicking them within the measurement list and the
-measurement will then be highlighted in yellow. The measurement_flag in the
+measurement will then be highlighted in red. The measurement_flag in the
 magic_measurements file will be change from &#8220;g&#8221; to &#8220;b&#8221; when a measurement is
 marked as &#8220;bad&#8221; and the step will not be included in fits that are made to the
-data. Any measurement marked as &#8216;bad&#8217; will be colored yellow in the step list
-and will be shown as an empty rather than filled circle on the Zijderveld,
+data. Any measurement marked as &#8216;bad&#8217; will be colored red in the step list and
+will be shown as an empty rather than filled circle on the Zijderveld,
 equal area and M/M_0 plots. To change a &#8216;bad&#8217; measurement back to
-being &#8216;good&#8217; one can right click on it again. Upon doing so, the yellow
+being &#8216;good&#8217;, one can right click on it again. Upon doing so, the red
 highlighting will go away, the data will be shown colored in within the plots
 and any fit that spans that data point will be recalculated to include
-it.
                                                                      
 
                                                                      
+it.
 <!--l. 1026--><p class="indent" >   Acceptance criteria can be set by using Analysis/&#8220;Acceptance
 Criteria&#8221;/&#8220;Change Acceptance Criteria&#8221;. These criteria will be written to a
 pmag_criteria table.
@@ -2010,7 +2009,7 @@ href="#x1-340005.1.1" id="x1-340005.1.1">Plot Interface</a></h5>
 <!--l. 1031--><p class="noindent" >The 4 plots that take up the majority of the center of the GUI are where data
 and their interpretations are displayed. The Zijderveld and the 2 equal area plots
 are by default set to zoom when you left click and drag your left mouse button
-you will zoom to the dragged out rectangle(currently equal area plots do not
+you will zoom to the dragged out rectangle (currently equal area plots do not
 draw this rectangle as you drag your mouse, but still zoom). On the Zijderveld
 plot, it is possible to switch between zoom and pan functionality by right
 clicking. Once in pan mode, the mouse will turn into a hand allowing you then to
@@ -2029,7 +2028,7 @@ interpretation.
 <!--l. 1034--><p class="noindent" >
 <!--l. 1034--><p class="indent" >   <a name='subsubsec5-1-1-0'></a><h5 class="subsubsectionHead"><a 
 href="#x1-350005.1.1" id="x1-350005.1.1">Saving Specimen Interpretations</a></h5>
-<!--l. 1036--><p class="noindent" >Once you have picked out your interpretations, you can save the session data in
+<!--l. 1036--><p class="noindent" >Once you have made interpretations to the data, you can save the session data in
 two different ways: (1) as a .redo file which will allow you to have the fits
 preserved to be view again with demag_gui or (2) as MagIC pmag tables to be
 uploaded to the MagIC database or otherwise processed. In addition, you may
@@ -2040,11 +2039,11 @@ class="cmbx-10x-x-109">The .redo File:</span></a></span>
    You can use Analysis/&#8220;Save current interpretations to a redo file&#8221; to create
 this file type or you can just hit the save button next to add fit. <span 
 class="cmbx-10x-x-109">Note: </span>this file
-type does <span 
-class="cmbx-10x-x-109">NOT </span>load previous interpretations on start up you must go to the
                                                                      
 
                                                                      
+type does <span 
+class="cmbx-10x-x-109">NOT </span>load previous interpretations on start up you must go to the
 menu option Analysis/&#8220;Import previous interpretations from a redo file&#8221; to
 restore your previous session.
 <!--l. 1042--><p class="noindent" ><span class="paragraphHead"><a 
@@ -2056,11 +2055,11 @@ be used by other MagIC programs or uploaded to the MagIC database.
 You can export any or all of the 3 coordinate systems upon selecting
 this option and you may choose to save pmag_samples, pmag_sites, and
 pmag_results tables in addition to the pmag_specimens table that is output. If
-you choose to output additional information you will be prompted by a
-pop up window for additional information. <span 
-class="cmbx-10x-x-109">Note: </span>this save format loads
-on start up of the GUI immediately restoring your session. Selection
-of this option will overwrite your demag_gui.redo file in the working
+you choose to output additional information, you will be prompted by a
+pop-up window for additional information. <span 
+class="cmbx-10x-x-109">Note: </span>this pmag table save
+format loads on start up of the GUI immediately restoring your session.
+Selection of this option will overwrite the demag_gui.redo file in the working
 directory.
 <!--l. 1046--><p class="noindent" ><span class="paragraphHead"><a 
 href="#x1-380005.1.1" id="x1-380005.1.1"><span 
@@ -2074,7 +2073,7 @@ level.
 <!--l. 1051--><p class="indent" >   <a name='subsubsec5-1-1-0'></a><h5 class="subsubsectionHead"><a 
 href="#x1-390005.1.1" id="x1-390005.1.1">Deleting Specimen Interpretations</a></h5>
 <!--l. 1053--><p class="noindent" >If you would like to delete a single interpretation, select the one you wish to
-delete from the interpretation drop down menu and click delete. Alternatively, if
+delete from the interpretation drop-down menu and click delete. Alternatively, if
 you wish to clear all interpretations you may go into the interpretation editor
 located under the tools menu, select the fits you wish to delete and click the
 &#8220;delete selected&#8221; button.<br 
@@ -2085,12 +2084,12 @@ href="#x1-400005.1.1" id="x1-400005.1.1">Higher Level Plots and Interpretation</
                                                                      
 
                                                                      
-<!--l. 1058--><p class="noindent" >The set of drop down boxes to the right of the interpretation data are there to
+<!--l. 1058--><p class="noindent" >The set of drop-down boxes to the right of the interpretation data are there to
 determine what level you want to analyze in the higher level analysis
 options include: site, sample, location, and study. The drop-down below
 this selects which of the available sites, samples, location, or studies to
 display.
-<!--l. 1060--><p class="indent" >   You can then select how to group your data by using the drop down menu
+<!--l. 1060--><p class="indent" >   You can then select how to group your data by using the drop-down menu
 under the show header. You can select what kind of mean to take using the first
 drop down under the mean header. Which interpretations to use for the means
 can be selected under the second drop down menu.
@@ -2100,17 +2099,16 @@ lower right of the GUI.
 <!--l. 1064--><p class="indent" >   <a name='subsubsec5-1-1-0'></a><h5 class="subsubsectionHead"><a 
 href="#x1-410005.1.1" id="x1-410005.1.1">Interpretation Editor</a></h5>
 <!--l. 1066--><p class="noindent" >In order to more easily view and edit specimen interpretation data there is a
-specimen interpretation editor which can be launched from the tools menu. This
-panel details the fits made to the data and their parameters from which
-you can select which interpretation to view by double clicking on it.
-In the list, the currently selected interpretation is highlighted blue as
-shown in the image below. You can mark interpretations as bad which
-removes them from any Fisher means or other high level means by right
-clicking on their entry in the list. All interpretations marked bad are
-colored yellow in the list and marked as an &#8216;x&#8217; on the plot. The specimen
-entry associated with this fit will be given a bad (&#8216;b&#8217;) flag within the
-pmag_specimens table. Interpretations can be highlighted by clicking on
-the list and holding the shift or ctrl/command key to select multiple
+specimen interpretation editor which can be launched from the Tools menu. This
+panel details the fits made to the data and their parameters from which you can
+select which interpretation to view by double-clicking on it. In the list, the
+currently selected interpretation is highlighted blue as shown in the image below.
+You can mark interpretations as bad which removes them from any Fisher means
+or other high level means by right-clicking on their entry in the list. All
+interpretations marked bad are colored red in the list and marked as an &#8216;x&#8217; on the
+plot. The specimen entry associated with this fit will be given a bad (&#8216;b&#8217;) flag
+within the pmag_specimens table. Interpretations can be highlighted by clicking
+on the list and holding the shift or ctrl/command key to select multiple
 interpretations. Doing so allows you to delete or alter the characteristics of
 multiple interpretations at once without having to select each one in turn. This
 mass alteration is allowable using the the Name/Color/Bounds boxes to input

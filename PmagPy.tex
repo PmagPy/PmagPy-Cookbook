@@ -978,12 +978,12 @@ When you type something on your \href{#command_line}{command line}, your operati
 \section{Graphical data analysis programs}
 \subsection{demag\_gui.py}
 
-The demag\_gui program enables the display and analysis of paleomagnetic demagnetization data. The software will display specimen level data within the chosen directory as a Zijderveld plot, equal area plot and intensity plot. Interpretations can be made to the data as least-squares line or plane fits. These interpretations can then be exported as MagIC pmag files.
+The demag\_gui program enables the display and analysis of paleomagnetic demagnetization data. The software will display specimen level data within the chosen directory as a Zijderveld plot, equal area plot and intensity plot. Interpretations can be made to the data as least-squares line or plane fits. Mean directions can be calculated and displayed for these interpretations. These interpretations can be exported as MagIC pmag files from the program.
 
 \subsubsection{Launching}\label{launching}
 
 The best way to launch the Demag GUI application is through the
-Pmag GUI app. If PmagPy has been added to your PATH you can type pmag\_gui.py at the command line to launch it or you can navigate to the directory containing it and type \texttt{python  ./pmag_gui.py}. Within the Pmag GUI app, data can be converted from the format of a particular lab into MagIC format so that it can be displayed and analyzed within the demag\_gui. The program can be started by clicking on the demag\_gui button in the Pmag GUI, shown below. If no new window pops up after clicking this button, click on the Python icon  (the little space ship) on your dock.
+Pmag GUI app. Within the Pmag GUI app, data can be converted from the format of a particular lab into MagIC format so that it can be displayed and analyzed within Demag GUI. The program can be started by clicking on the Demag GUI button in the Pmag GUI, shown below.
 
 \includegraphics[width=10 cm]{EPSfiles/demag_gui_QuickMagicLauncher.eps}
 
@@ -995,45 +995,45 @@ recommended to launch through Pmag GUI as on wxpython 2.9 the drop down boxes be
 
 \subsubsection{Adding Interpretations:}\label{adding-interpretations}
 
-A least-squares fit to the measurement data can be added by clicking the add fit button. Additionally, you can select the fit you would like to edit or view by using the drop down box under the add fit button. Once you have selected a fit, the shape of the end points of the selected fit will turn to a diamond shape to distinguish them from the other data points.\\
+A least-squares fit to the measurement data can be added by clicking the `add fit' button. Additionally, you can select the fit you would like to edit or view by using the drop-down menu under the add fit button. Once you have selected a fit, the shape of the end points of the selected fit will turn to diamond shapes to distinguish them from the other data points.\\
 \includegraphics[width=10 cm]{EPSfiles/demag_gui_Fit.eps}
 
 Once the desired fit is selected, its bounds can be edited using the drop-down boxes under the bounds header.
 
 \includegraphics[width=3 cm]{EPSfiles/demag_gui_BoundsBox.eps}
 
-Alternatively, one can double-click the list of measurement steps on the left to pick out the bounds for the interpretation. The included steps in the currently selected interpretation are shown in highlighted in blue on the measurement list and the measurements marked ``bad'' are shown in yellow. \textbf{Note:} in case of duplicate measurements the first \emph{good} measurement with the same treatment is used.\\
+Alternatively, one can double-click the list of measurement steps on the left to pick out the bounds for the interpretation. The included steps in the currently selected interpretation are shown in highlighted in blue on the measurement list and the measurements marked ``bad'' are highlighted in red. \textbf{Note:} in case of duplicate measurements the first \emph{good} measurement with the same treatment is used. All points between the selected bounds that are flagged good (i.e. not flagged bad and marked in red), including duplicate measurements, will be included in the interpreted fit.\\
 \includegraphics[width=5 cm]{EPSfiles/demag_gui_DataBox.eps}
 
 When first created, the fit will be given a generic name such as
-\emph{Fit 1}. The name of the fit can be changed from the default by typing into the drop down box containing fit name then pressing enter. The default fit type is a least-squares line. You can choose different fits such as a line anchored to the origin or a plane by using the drop-down menu under specimen mean type. Planes can be plotted as either poles, full planes or partial planes. This display option can be changed in the second drop-down menu under specimen mean type.
+\emph{Fit 1}. The name of the fit can be changed from the default by typing into the drop-down box containing fit name and then pressing enter. The default fit type is a least-squares line. You can choose different fits, such as a line anchored to the origin or a plane, by using the drop-down menu under the label `interpretation type'. Plane fits can be plotted as either poles, full planes or partial planes. This display option can be changed in the second drop-down menu under specimen mean type.
 
 \includegraphics[width=10 cm]{EPSfiles/demag_gui_SpecimenMeanType.eps}
 
-The choice between coordinate systems (i.e.~specimen, geographic or tilt-corrected) is available on the left above the list of steps. The orientation of the Zijderveld projection can also be changed here.
+The choice between coordinate systems (i.e.~specimen, geographic or tilt-corrected) is available on the left above the list of steps. The data list and the plots will update to reflect the chosen coordinate system.
 
 \includegraphics[width=5 cm]{EPSfiles/demag_gui_ProjectionChoice.eps}
 
-The properties of the currently selected fit to the data can be seen in the upper center of the GUI in a box labeled specimen mean statistics.
+The properties of the currently selected fit to the data can be seen in the upper center of the GUI in a box labeled `interpretation directions and statistics'.
 
 \includegraphics[width=15 cm]{EPSfiles/demag_gui_FitData.eps}
 
 \subsubsection{Flagging Bad Measurement
 Data}\label{flagging-bad-measurement-data}
 
-Due to flux jumps or other such errors, individual measurements should sometime be excluded from interpretation. Such a measurements can be flagged as ``bad'' by right-clicking them within the measurement list and the measurement will then be highlighted in yellow. The measurement\_flag in the magic\_measurements file will be change from ``g'' to ``b'' when a measurement is marked as ``bad'' and the step will not be included in fits that are made to the data. Any measurement marked as `bad' will be colored yellow in the step list and will be shown as an empty rather than filled circle on the Zijderveld, equal area and M/M\_0 plots. To change a `bad' measurement back to being `good' one can right click on it again. Upon doing so, the yellow highlighting will go away, the data will be shown colored in within the plots and any fit that spans that data point will be recalculated to include it.
+Due to flux jumps or other such errors, individual measurements should sometimes be excluded from interpretation. Such a measurements can be flagged as ``bad'' by right-clicking them within the measurement list and the measurement will then be highlighted in red. The measurement\_flag in the magic\_measurements file will be change from ``g'' to ``b'' when a measurement is marked as ``bad'' and the step will not be included in fits that are made to the data. Any measurement marked as `bad' will be colored red in the step list and will be shown as an empty rather than filled circle on the Zijderveld, equal area and M/M\_0 plots. To change a `bad' measurement back to being `good', one can right click on it again. Upon doing so, the red highlighting will go away, the data will be shown colored in within the plots and any fit that spans that data point will be recalculated to include it.
 
 Acceptance criteria can be set by using Analysis/``Acceptance
 Criteria''/``Change Acceptance Criteria''. These criteria will be written to a pmag\_criteria table.
 
 \subsubsection{Plot Interface}\label{plot-interface}
 
-The 4 plots that take up the majority of the center of the GUI are where data and their interpretations are displayed. The Zijderveld and the 2 equal area plots are by default set to zoom when you left click and drag your left mouse button you will zoom to the dragged out rectangle(currently equal area plots do not draw this rectangle as you drag your mouse, but still zoom). On the Zijderveld plot, it is possible to switch between zoom and pan functionality by right clicking. Once in pan mode, the mouse will turn into a hand allowing you then to click and move around the plot. On both the Zijderveld and equal area plots if you wish to return to the original plot simply click the middle mouse button to return to home position. \textbf{Note:} in the absence of a middle mouse button pressing both right and left mouse buttons at the same time works on most laptops in the case of Macbooks clicking with two fingers should work, and if using Apple's magic mouse we recommend you download the \href{http://magicprefs.com/}{MagicPrefs} program which will allow you to configure your mouse however you prefer. One the equal area plots you can double click on an interpretation to switch the specimen and current interpretation to the clicked interpretation.
+The 4 plots that take up the majority of the center of the GUI are where data and their interpretations are displayed. The Zijderveld and the 2 equal area plots are by default set to zoom when you left click and drag your left mouse button you will zoom to the dragged out rectangle (currently equal area plots do not draw this rectangle as you drag your mouse, but still zoom). On the Zijderveld plot, it is possible to switch between zoom and pan functionality by right clicking. Once in pan mode, the mouse will turn into a hand allowing you then to click and move around the plot. On both the Zijderveld and equal area plots if you wish to return to the original plot simply click the middle mouse button to return to home position. \textbf{Note:} in the absence of a middle mouse button pressing both right and left mouse buttons at the same time works on most laptops in the case of Macbooks clicking with two fingers should work, and if using Apple's magic mouse we recommend you download the \href{http://magicprefs.com/}{MagicPrefs} program which will allow you to configure your mouse however you prefer. One the equal area plots you can double click on an interpretation to switch the specimen and current interpretation to the clicked interpretation.
 
 \subsubsection{Saving Specimen
 Interpretations}\label{saving-specimen-interpretations}
 
-Once you have picked out your interpretations, you can save the session data in two different ways: (1) as a .redo file which will allow you to have the fits preserved to be view again with demag\_gui or (2) as MagIC pmag tables to be uploaded to the MagIC database or otherwise processed. In addition, you may save image files of the plots.
+Once you have made interpretations to the data, you can save the session data in two different ways: (1) as a .redo file which will allow you to have the fits preserved to be view again with demag\_gui or (2) as MagIC pmag tables to be uploaded to the MagIC database or otherwise processed. In addition, you may save image files of the plots.
 
 \paragraph{The .redo File:}\label{the-.redo-file}
 
@@ -1041,7 +1041,7 @@ You can use Analysis/``Save current interpretations to a redo file'' to create t
 
 \paragraph{The Pmag Tables:}\label{the-pmag-tables}
 
-By going to the menu File/``Save MagIC pmag tables'' you can export your interpretations made in Demag GUI to the MagIC pmag tables which can then be used by other MagIC programs or uploaded to the MagIC database. You can export any or all of the 3 coordinate systems upon selecting this option and you may choose to save pmag\_samples, pmag\_sites, and pmag\_results tables in addition to the pmag\_specimens table that is output. If you choose to output additional information you will be prompted by a pop up window for additional information. \textbf{Note:} this save format loads on start up of the GUI immediately restoring your session. Selection of this option will overwrite your demag\_gui.redo file in the working directory.
+By going to the menu File/``Save MagIC pmag tables'' you can export your interpretations made in Demag GUI to the MagIC pmag tables which can then be used by other MagIC programs or uploaded to the MagIC database. You can export any or all of the 3 coordinate systems upon selecting this option and you may choose to save pmag\_samples, pmag\_sites, and pmag\_results tables in addition to the pmag\_specimens table that is output. If you choose to output additional information, you will be prompted by a pop-up window for additional information. \textbf{Note:} this pmag table save format loads on start up of the GUI immediately restoring your session. Selection of this option will overwrite the demag\_gui.redo file in the working directory.
 
 \paragraph{Images of Plots:}\label{images-of-plots}
 
@@ -1050,20 +1050,20 @@ Select the menu option File/``Save plot''/``Save all plots'' to save all plots. 
 \subsubsection{Deleting Specimen
 Interpretations}\label{deleting-specimen-interpretations}
 
-If you would like to delete a single interpretation, select the one you wish to delete from the interpretation drop down menu and click delete. Alternatively, if you wish to clear all interpretations you may go into the interpretation editor located under the tools menu, select the fits you wish to delete and click the ``delete selected'' button.\\
+If you would like to delete a single interpretation, select the one you wish to delete from the interpretation drop-down menu and click delete. Alternatively, if you wish to clear all interpretations you may go into the interpretation editor located under the tools menu, select the fits you wish to delete and click the ``delete selected'' button.\\
 
 \subsubsection{Higher Level Plots and
 Interpretation}\label{higher-level-plots-and-interpretation}
 
-The set of drop down boxes to the right of the interpretation data are there to determine what level you want to analyze in the higher level analysis options include: site, sample, location, and study. The drop-down below this selects which of the available sites, samples, location, or studies to display.
+The set of drop-down boxes to the right of the interpretation data are there to determine what level you want to analyze in the higher level analysis options include: site, sample, location, and study. The drop-down below this selects which of the available sites, samples, location, or studies to display.
 
-You can then select how to group your data by using the drop down menu under the show header. You can select what kind of mean to take using the first drop down under the mean header. Which interpretations to use for the means can be selected under the second drop down menu.
+You can then select how to group your data by using the drop-down menu under the show header. You can select what kind of mean to take using the first drop down under the mean header. Which interpretations to use for the means can be selected under the second drop down menu.
 
 The mean statistics for the chosen higher level mean are displayed in the lower right of the GUI.
 
 \subsubsection{Interpretation Editor}\label{interpretation-editor}
 
-In order to more easily view and edit specimen interpretation data there is a specimen interpretation editor which can be launched from the tools menu. This panel details the fits made to the data and their parameters from which you can select which interpretation to view by double clicking on it. In the list, the currently selected interpretation is highlighted blue as shown in the image below. You can mark interpretations as bad which removes them from any Fisher means or other high level means by right clicking on their entry in the list. All interpretations marked bad are colored yellow in the list and marked as an `x' on the plot. The specimen entry associated with this fit will be given a bad (`b') flag within the pmag\_specimens table. Interpretations can be highlighted by clicking on the list and holding the shift or ctrl/command key to select multiple interpretations. Doing so allows you to delete or alter the characteristics of multiple interpretations at once without having to select each one in turn. This mass alteration is allowable using the the Name/Color/Bounds boxes to input the changes and then clicking the ``apply changes to highlighted fits'' button. You can delete highlighted fits using the ``delete highlighted fits'' button. The ``add fit'' button in the interpretation editor adds a fit to the current specimen. In the case of interpreting large data sets, you can reduce the number of items plotted on the equal area at the bottom of the editor and the number of entries in the log by changing the display settings.
+In order to more easily view and edit specimen interpretation data there is a specimen interpretation editor which can be launched from the Tools menu. This panel details the fits made to the data and their parameters from which you can select which interpretation to view by double-clicking on it. In the list, the currently selected interpretation is highlighted blue as shown in the image below. You can mark interpretations as bad which removes them from any Fisher means or other high level means by right-clicking on their entry in the list. All interpretations marked bad are colored red in the list and marked as an `x' on the plot. The specimen entry associated with this fit will be given a bad (`b') flag within the pmag\_specimens table. Interpretations can be highlighted by clicking on the list and holding the shift or ctrl/command key to select multiple interpretations. Doing so allows you to delete or alter the characteristics of multiple interpretations at once without having to select each one in turn. This mass alteration is allowable using the the Name/Color/Bounds boxes to input the changes and then clicking the ``apply changes to highlighted fits'' button. You can delete highlighted fits using the ``delete highlighted fits'' button. The ``add fit'' button in the interpretation editor adds a fit to the current specimen. In the case of interpreting large data sets, you can reduce the number of items plotted on the equal area at the bottom of the editor and the number of entries in the log by changing the display settings.
 
 \includegraphics[width=15 cm]{EPSfiles/demag_gui_InterpEditor.eps}
 
