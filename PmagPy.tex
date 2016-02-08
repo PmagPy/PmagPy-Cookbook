@@ -279,10 +279,10 @@ Use of the Demag GUI is described in more detail in the \href{#demag_gui.py}{Dem
 
 To analyze the data in the example, follow these steps for each specimen:
 \begin{itemize}
-\item From the `coordinate system' drop down menu you can choose the coordinate system in which you wish to view the data (e.g.  `geographic').
+\item From the `coordinate system' drop-down menu you can choose the coordinate system in which you wish to view the data (e.g.  `geographic').
 \item Click `add a fit' and choose the temperature/AF bounds for the fit by double clicking on the measurement lines or by choosing from the `bounds' dropdown menu.
 \item Click the `next' button to analyze the next specimen.
-\item To calculate  Fisher mean for the site: choose from the `higher level mean' drop down menus: show=specimens; mean=Fisher.
+\item To calculate  Fisher mean for the site: choose from the `higher level mean' drop-down menus: show=specimens; mean=Fisher.
 \item All of the fits can be viewed and modified using the Interpretation Editor which can be selected from the Tools menu in the top menubar.
 \item To save all of the specimen interpretations, choose from the menubar [File] $\rightarrow$ [Save MagIC pmag tables]. This saves all the interpretations in MagIC formatted pmag\_* files in your \href{#Project_Directory}{\it ThisProject} directory. Fits that are saved this way will be loaded into demag\_gui the next time it is launched.
 \item Click through the dialog boxes and fill out choices for the MagIC results table.
@@ -982,8 +982,7 @@ The demag\_gui program enables the display and analysis of paleomagnetic demagne
 
 \subsubsection{Launching}\label{launching}
 
-The best way to launch the Demag GUI application is through the
-Pmag GUI app. Within the Pmag GUI app, data can be converted from the format of a particular lab into MagIC format so that it can be displayed and analyzed within Demag GUI. The program can be started by clicking on the Demag GUI button in the Pmag GUI, shown below.
+The best way to launch the Demag GUI application is through  \href{#pmag_gui.py}{Pmag GUI}. If PmagPy has been added to your PATH you can type pmag\_gui.py at the command line to launch it or you can navigate to the directory containing it and type \texttt{python  ./pmag_gui.py}. Within \href{#pmag_gui.py}{Pmag GUI}, data can be converted from the format of a particular lab into MagIC format so that it can be displayed and analyzed within Demag GUI. The program can be started by clicking on the Demag GUI button in \href{#pmag_gui.py}{Pmag GUI}.
 
 \includegraphics[width=10 cm]{EPSfiles/demag_gui_QuickMagicLauncher.eps}
 
@@ -991,7 +990,7 @@ Alternatively, Demag GUI may be launched through the command line by navigating 
 
 Or if PmagPy has been added to your PATH you can simply type
 demag\_gui.py at the command line. \textbf{Note:} on OSX it is
-recommended to launch through Pmag GUI as on wxpython 2.9 the drop down boxes behave better when demag\_gui is launched this way.
+recommended to launch through Pmag GUI as on wxpython 2.9 the drop-down boxes behave better when demag\_gui is launched this way.
 
 \subsubsection{Adding Interpretations:}\label{adding-interpretations}
 
@@ -1002,7 +1001,7 @@ Once the desired fit is selected, its bounds can be edited using the drop-down b
 
 \includegraphics[width=3 cm]{EPSfiles/demag_gui_BoundsBox.eps}
 
-Alternatively, one can double-click the list of measurement steps on the left to pick out the bounds for the interpretation. The included steps in the currently selected interpretation are shown in highlighted in blue on the measurement list and the measurements marked ``bad'' are highlighted in red. \textbf{Note:} in case of duplicate measurements the first \emph{good} measurement with the same treatment is used. All points between the selected bounds that are flagged good (i.e. not flagged bad and marked in red), including duplicate measurements, will be included in the interpreted fit.\\
+Alternatively, one can double-click the list of measurement steps on the left to pick out the bounds for the interpretation. The included steps in the currently selected interpretation are shown in highlighted in blue on the measurement list and the measurements marked ``bad'' are shown in highlighted in red. In the case of duplicate measurements, the first \emph{good} measurement with the same treatment is used. All points between the selected bounds that are flagged good (i.e. not flagged bad and marked in red), including duplicate measurements, will be included in the interpreted fit..\\
 \includegraphics[width=5 cm]{EPSfiles/demag_gui_DataBox.eps}
 
 When first created, the fit will be given a generic name such as
@@ -1024,16 +1023,16 @@ Data}\label{flagging-bad-measurement-data}
 Due to flux jumps or other such errors, individual measurements should sometimes be excluded from interpretation. Such a measurements can be flagged as ``bad'' by right-clicking them within the measurement list and the measurement will then be highlighted in red. The measurement\_flag in the magic\_measurements file will be change from ``g'' to ``b'' when a measurement is marked as ``bad'' and the step will not be included in fits that are made to the data. Any measurement marked as `bad' will be colored red in the step list and will be shown as an empty rather than filled circle on the Zijderveld, equal area and M/M\_0 plots. To change a `bad' measurement back to being `good', one can right click on it again. Upon doing so, the red highlighting will go away, the data will be shown colored in within the plots and any fit that spans that data point will be recalculated to include it.
 
 Acceptance criteria can be set by using Analysis/``Acceptance
-Criteria''/``Change Acceptance Criteria''. These criteria will be written to a pmag\_criteria table.
+Criteria''/``Change Acceptance Criteria''. These criteria will be written to a {\it pmag\_criteria.txt}  table.
 
 \subsubsection{Plot Interface}\label{plot-interface}
 
-The 4 plots that take up the majority of the center of the GUI are where data and their interpretations are displayed. The Zijderveld and the 2 equal area plots are by default set to zoom when you left click and drag your left mouse button you will zoom to the dragged out rectangle (currently equal area plots do not draw this rectangle as you drag your mouse, but still zoom). On the Zijderveld plot, it is possible to switch between zoom and pan functionality by right clicking. Once in pan mode, the mouse will turn into a hand allowing you then to click and move around the plot. On both the Zijderveld and equal area plots if you wish to return to the original plot simply click the middle mouse button to return to home position. \textbf{Note:} in the absence of a middle mouse button pressing both right and left mouse buttons at the same time works on most laptops in the case of Macbooks clicking with two fingers should work, and if using Apple's magic mouse we recommend you download the \href{http://magicprefs.com/}{MagicPrefs} program which will allow you to configure your mouse however you prefer. One the equal area plots you can double click on an interpretation to switch the specimen and current interpretation to the clicked interpretation.
+The four plots that take up the majority of the center of the GUI are where data and their interpretations are displayed. The Zijderveld and the two equal area plots are by default set to zoom when you left click and drag your left mouse button you will zoom to the dragged out rectangle(currently equal area plots do not draw this rectangle as you drag your mouse, but still zoom). On the Zijderveld plot, it is possible to switch between zoom and pan functionality by right clicking. Once in pan mode, the mouse will turn into a hand allowing you then to click and move around the plot. On both the Zijderveld and equal area plots if you wish to return to the original plot simply click the middle mouse button to return to home position. \textbf{Note:} in the absence of a middle mouse button pressing both right and left mouse buttons at the same time works on most laptops in the case of Macbooks clicking with two fingers should work, and if using Apple's magic mouse we recommend you download the \href{http://magicprefs.com/}{MagicPrefs} program which will allow you to configure your mouse however you prefer. One the equal area plots you can double click on an interpretation to switch the specimen and current interpretation to the clicked interpretation.
 
 \subsubsection{Saving Specimen
 Interpretations}\label{saving-specimen-interpretations}
 
-Once you have made interpretations to the data, you can save the session data in two different ways: (1) as a .redo file which will allow you to have the fits preserved to be view again with demag\_gui or (2) as MagIC pmag tables to be uploaded to the MagIC database or otherwise processed. In addition, you may save image files of the plots.
+Once you have picked out your interpretations, you can save the session data in two different ways: (1) as a .redo file which will allow you to have the fits preserved to be view again with Demag GUI or (2) as MagIC {\it pmag\_*} tables to be uploaded to the MagIC database or otherwise processed. In addition, you may save image files of the plots.
 
 \paragraph{The .redo File:}\label{the-.redo-file}
 
@@ -1041,50 +1040,50 @@ You can use Analysis/``Save current interpretations to a redo file'' to create t
 
 \paragraph{The Pmag Tables:}\label{the-pmag-tables}
 
-By going to the menu File/``Save MagIC pmag tables'' you can export your interpretations made in Demag GUI to the MagIC pmag tables which can then be used by other MagIC programs or uploaded to the MagIC database. You can export any or all of the 3 coordinate systems upon selecting this option and you may choose to save pmag\_samples, pmag\_sites, and pmag\_results tables in addition to the pmag\_specimens table that is output. If you choose to output additional information, you will be prompted by a pop-up window for additional information. \textbf{Note:} this pmag table save format loads on start up of the GUI immediately restoring your session. Selection of this option will overwrite the demag\_gui.redo file in the working directory.
+By going to the menu File/``Save MagIC pmag tables'' you can export your interpretations made in Demag GUI to the MagIC pmag tables which can then be used by other MagIC programs or uploaded to the MagIC database. You can export any or all of the three coordinate systems upon selecting this option and you may choose to save {\it pmag\_samples, pmag\_sites}, and {\it pmag\_results}  tables in addition to the {\it pmag\_specimens } table that is output. If you choose to output additional information you will be prompted by a pop up window for additional information. \textbf{Note:} this save format loads on start up of the GUI immediately restoring your session. Selection of this option will overwrite your {\it demag\_gui.redo} file in the working directory.
 
 \paragraph{Images of Plots:}\label{images-of-plots}
 
-Select the menu option File/``Save plot''/``Save all plots'' to save all plots. Alternatively, you can save any of the plots individually. If you zoom on any of the plots the zoomed image will be saved not the originally plotted image although the plot will redraw and reset the zoom level.
+Select the menu option File/``Save plot''/``Save all plots'' to save all plots. Or, you can save any of the plots individually. If you zoom on any of the plots the zoomed image will be saved not the originally plotted image although the plot will redraw and reset the zoom level.
 
 \subsubsection{Deleting Specimen
 Interpretations}\label{deleting-specimen-interpretations}
 
-If you would like to delete a single interpretation, select the one you wish to delete from the interpretation drop-down menu and click delete. Alternatively, if you wish to clear all interpretations you may go into the interpretation editor located under the tools menu, select the fits you wish to delete and click the ``delete selected'' button.\\
+If you would like to delete a single interpretation, select the one you wish to delete from the interpretation drop-down menu and click delete. If you wish to clear all interpretations you may go into the interpretation editor located under the tools menu, select the fits you wish to delete and click the ``delete selected'' button.\\
 
 \subsubsection{Higher Level Plots and
 Interpretation}\label{higher-level-plots-and-interpretation}
 
 The set of drop-down boxes to the right of the interpretation data are there to determine what level you want to analyze in the higher level analysis options include: site, sample, location, and study. The drop-down below this selects which of the available sites, samples, location, or studies to display.
 
-You can then select how to group your data by using the drop-down menu under the show header. You can select what kind of mean to take using the first drop down under the mean header. Which interpretations to use for the means can be selected under the second drop down menu.
+You can then select how to group your data by using the drop-down menu under the show header. You can select what kind of mean to take using the first drop-down under the mean header. Which interpretations to use for the means can be selected under the second drop-down menu.
 
 The mean statistics for the chosen higher level mean are displayed in the lower right of the GUI.
 
 \subsubsection{Interpretation Editor}\label{interpretation-editor}
 
-In order to more easily view and edit specimen interpretation data there is a specimen interpretation editor which can be launched from the Tools menu. This panel details the fits made to the data and their parameters from which you can select which interpretation to view by double-clicking on it. In the list, the currently selected interpretation is highlighted blue as shown in the image below. You can mark interpretations as bad which removes them from any Fisher means or other high level means by right-clicking on their entry in the list. All interpretations marked bad are colored red in the list and marked as an `x' on the plot. The specimen entry associated with this fit will be given a bad (`b') flag within the pmag\_specimens table. Interpretations can be highlighted by clicking on the list and holding the shift or ctrl/command key to select multiple interpretations. Doing so allows you to delete or alter the characteristics of multiple interpretations at once without having to select each one in turn. This mass alteration is allowable using the the Name/Color/Bounds boxes to input the changes and then clicking the ``apply changes to highlighted fits'' button. You can delete highlighted fits using the ``delete highlighted fits'' button. The ``add fit'' button in the interpretation editor adds a fit to the current specimen. In the case of interpreting large data sets, you can reduce the number of items plotted on the equal area at the bottom of the editor and the number of entries in the log by changing the display settings.
+In order to more easily view and edit specimen interpretation data there is a specimen interpretation editor which can be launched from the tools menu. This panel details the fits made to the data and their parameters from which you can select which interpretation to view by double clicking on it. In the list, the currently selected interpretation is highlighted blue as shown in the image below. You can mark interpretations as bad which removes them from any Fisher means or other high level means by right clicking on their entry in the list. All interpretations marked bad are colored red in the list and marked as an `x' on the plot. The specimen entry associated with this fit will be given a bad (`b') flag within the pmag\_specimens table. Interpretations can be highlighted by clicking on the list and holding the shift or ctrl/command key to select multiple interpretations. Doing so allows you to delete or alter the characteristics of multiple interpretations at once without having to select each one in turn. This mass alteration is allowable using the the Name/Color/Bounds boxes to input the changes and then clicking the ``apply changes to highlighted fits'' button. You can delete highlighted fits using the ``delete highlighted fits'' button. The ``add fit'' button in the interpretation editor adds a fit to the current specimen. In the case of interpreting large data sets, you can reduce the number of items plotted on the equal area at the bottom of the editor and the number of entries in the log by changing the display settings.
 
 \includegraphics[width=15 cm]{EPSfiles/demag_gui_InterpEditor.eps}
 
 \customlink{thellier_GUI.py}
 
 \subsection{thellier\_gui.py}
-\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#ch10}{[Essentials Chapter 10]} and
-\href{https://github.com/PmagPy/PmagPy-Cookbook/raw/gh-pages/thellier_GUI_full_manual.pdf}{[Thellier GUI full manual pdf]}
+\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#ch10}{[Essentials Chapter 10]} and \href{#MagIC}{[MagIC}]
+\href{https://github.com/PmagPy/Pmag-Cookbook/raw/gh-pages//thellier_GUI_full_manual.pdf}{[Thellier\_GUI\_full_manual.pdf]}
 
-The program {\bf thellier\_gui.py}  combines functions from \href{#thellier_magic.py}{thellier\_magic.py} and new tools described by  \href{http://dx.doi.org/10.1002/ggge.20062}{Shaar and Tauxe (2013)} \nocite{shaar13} in a user-friendly graphical user interface (GUI).  It can also be called from within \href{#pmag_gui.py}{Pmag GUI}, using files already prepared in a  \href{#ThisProject}{This Project} directory and the interpretations from {\bf thellier\_gui.py} are part of the workflow of  \href{#pmag_gui.py}{Pmag GUI}.   This section is a brief introduction on how to use {\bf thellier\_gui.py} as a stand alone application. Much more information is available within this manual: \href{https://github.com/PmagPy/PmagPy-Cookbook/raw/gh-pages/thellier_GUI_full_manual.pdf}{Thellier GUI full manual pdf}.
+The program Thellier GUI ({\bf thellier\_gui.py})  combines functions from \href{#thellier_magic.py}{thellier\_magic.py} and new tools described by  \href{http://dx.doi.org/10.1002/ggge.20062}{Shaar and Tauxe (2013)} \nocite{shaar13} in a user-friendly graphical user interface (GUI).  
 
-\noindent  A complete list of the definitions for paleointensity statistics used by Thellier\_GUI.py is available as a supplement to the article by \href{#http://dx.doi.org/10.1002/2013GC005135}{Paterson et al., 2014}  \nocite{paterson14} and available for download here:
+As with \href{#demag_gui.py}, Thellier GUI can  be called from  the  \href{#command_line}{command line} or from within \href{#pmag_gui.py}{Pmag GUI}.  It loads  files already prepared in a  \href{#ThisProject}{This Project} directory and the interpretations from Thellier GUI are part of the workflow of  \href{#pmag_gui.py}{Pmag GUI}.   This section is a brief introduction on how to use Thellier GUI as a stand alone application. Much more information is available within this manual: \href{https://github.com/PmagPy/Pmag-Cookbook/raw/gh-pages//thellier_GUI_full_manual.pdf}{Thellier GUI full manual}. 
+
+\noindent  A complete list of the definitions for paleointensity statistics used by Thellier GUI is available as a supplement to the article by \href{#http://dx.doi.org/10.1002/2013GC005135}{Paterson et al., 2014}  \nocite{paterson14} and available for download here:
 
   \url{http://onlinelibrary.wiley.com/store/10.1002/2013GC005135/asset/supinfo/ggge20412-sup-0001-suppinfoCORRECTED.pdf?v=1&s=e1c3ab0a86c942d1039f6d2e15496aa172dc86ec}
 
 
-\subsubsection{Starting the GUI}
-The GUI can be opened by typing {\bf thellier\_gui.py}  on the  \href{#command_line}{command line}.
 
 \customlink{choose_directory}
-A ``choose project directory'' dialog window will appear as soon as the GUI is started.
+After launching the program,  a  ``choose project directory'' dialog window will appear as soon as the GUI is started.
 %
 %	\includegraphics[width=15cm]{EPSFiles/Screenshot_choose_directory.eps}
 %
@@ -1979,7 +1978,7 @@ Note that the default place for the PmagPy programs to look for criteria is in {
 
 \subsection{demag\_gui.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch7.html}{[Essentials Chapter 7]}
-\href{https://github.com/PmagPy/PmagPy/blob/master/programs/demag_gui.py}{[demag\_gui docs]}
+\href{https://github.com/PmagPy/PmagPy/blob/master/demag_gui.py}{[demag\_gui docs]}
 
 The program \href{#DemagGUI}{demag\_gui.py} is used by \href{#pmag_gui.py}{Pmag GUI} for interpreting demagnetization experimental data.   See \href{#demag_gui.py}{Demag GUI} for guidance.
 
@@ -4492,7 +4491,7 @@ In any case, the declination is 154.2$^{\circ}$.
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#ch10}{ [Essentials Chapter 10]} and \href{#MagIC}{[MagIC}]
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/thellier_magic.py}{[thellier\_magic docs]}
 
-NB:  This program is no longer maintained.  You should try \href{#thellier_GUI.py}{thellier\_GUI.py} instead.
+NB:  This program is no longer maintained.  You should try \href{#thellier_GUI.py}{thellier\_gui.py} instead.
 
 To see how {\bf thellier\_magic.py}  works, download the text file from a recent paper by Shaar et al. (2011) from the MagIC database:
 
