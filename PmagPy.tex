@@ -975,10 +975,12 @@ The {\bf PmagPy} software package is a comprehensive set of programs for paleoma
 When you type something on your \href{#command_line}{command line}, your operating system looks for programs of the same name in special places.  These are special ``paths'' so the directory with your Python scripts has to ``be in your path''.  To inform the operating system of the new directory, you need to ``set your path''.    It should have been set when you installed {\bf PmagPy}.
 
 \customlink{demag_gui.py}
+
+
 \section{Graphical data analysis programs}
 \subsection{demag\_gui.py}
 
-The demag\_gui program enables the display and analysis of paleomagnetic demagnetization data. The software will display specimen level data within the chosen directory as a Zijderveld plot, equal area plot and intensity plot. Interpretations can be made to the data as least-squares line or plane fits. Mean directions can be calculated and displayed for these interpretations. These interpretations can be exported as MagIC pmag files from the program.
+The  Demag GUI (\bf demag\_gui.py}  program enables the display and analysis of paleomagnetic demagnetization data. The software will display specimen level data within the chosen directory as a Zijderveld plot, equal area plot and intensity plot. Interpretations can be made to the data as least-squares line or plane fits. Mean directions can be calculated and displayed for these interpretations. These interpretations can be exported as MagIC pmag files from the program.
 
 \subsubsection{Launching}\label{launching}
 
@@ -986,11 +988,15 @@ The best way to launch the Demag GUI application is through  \href{#pmag_gui.py}
 
 \includegraphics[width=10 cm]{EPSfiles/demag_gui_QuickMagicLauncher.eps}
 
-Alternatively, Demag GUI may be launched through the command line by navigating to the directory containing demag\_gui.py and running it with: \texttt{python ./demag\_gui.py}.
+{\bf Demag GUI} can also be launched through the command line by navigating to the directory containing {\bf demag\_gui.py}  and running it with:
 
-Or if PmagPy has been added to your PATH you can simply type
+\begin{verbatim}
+% python ./demag_gui.py
+\end{verbatim}
+
+Or if {\bf PmagPy} was properly installed and has been added to your PATH, you can simply type
 demag\_gui.py at the command line. \textbf{Note:} on OSX it is
-recommended to launch through Pmag GUI as on wxpython 2.9 the drop-down boxes behave better when demag\_gui is launched this way.
+recommended to launch through \href{#pmag_gui.py}{Pmag GUI} as on wxpython 2.9 the drop-down boxes behave better when {\bf Demag GUI} is launched this way.
 
 \subsubsection{Adding Interpretations:}\label{adding-interpretations}
 
@@ -1001,7 +1007,7 @@ Once the desired fit is selected, its bounds can be edited using the drop-down b
 
 \includegraphics[width=3 cm]{EPSfiles/demag_gui_BoundsBox.eps}
 
-Alternatively, one can double-click the list of measurement steps on the left to pick out the bounds for the interpretation. The included steps in the currently selected interpretation are shown in highlighted in blue on the measurement list and the measurements marked ``bad'' are shown in highlighted in red. In the case of duplicate measurements, the first \emph{good} measurement with the same treatment is used. All points between the selected bounds that are flagged good (i.e. not flagged bad and marked in red), including duplicate measurements, will be included in the interpreted fit..\\
+Another way to select bounds is to double-click the list of measurement steps on the left to pick out the bounds for the interpretation. The included steps in the currently selected interpretation are shown in highlighted in blue on the measurement list and the measurements marked ``bad'' are shown in highlighted in red. In the case of duplicate measurements, the first \emph{good} measurement with the same treatment is used. All points between the selected bounds that are flagged good (i.e. not flagged bad and marked in red), including duplicate measurements, will be included in the interpreted fit..\\
 \includegraphics[width=5 cm]{EPSfiles/demag_gui_DataBox.eps}
 
 When first created, the fit will be given a generic name such as
@@ -1029,8 +1035,7 @@ Criteria''/``Change Acceptance Criteria''. These criteria will be written to a {
 
 The four plots that take up the majority of the center of the GUI are where data and their interpretations are displayed. The Zijderveld and the two equal area plots are by default set to zoom when you left click and drag your left mouse button you will zoom to the dragged out rectangle(currently equal area plots do not draw this rectangle as you drag your mouse, but still zoom). On the Zijderveld plot, it is possible to switch between zoom and pan functionality by right clicking. Once in pan mode, the mouse will turn into a hand allowing you then to click and move around the plot. On both the Zijderveld and equal area plots if you wish to return to the original plot simply click the middle mouse button to return to home position. \textbf{Note:} in the absence of a middle mouse button pressing both right and left mouse buttons at the same time works on most laptops in the case of Macbooks clicking with two fingers should work, and if using Apple's magic mouse we recommend you download the \href{http://magicprefs.com/}{MagicPrefs} program which will allow you to configure your mouse however you prefer. One the equal area plots you can double click on an interpretation to switch the specimen and current interpretation to the clicked interpretation.
 
-\subsubsection{Saving Specimen
-Interpretations}\label{saving-specimen-interpretations}
+\subsubsection{Saving Specimen Interpretations}\label{saving-specimen-interpretations}
 
 Once you have picked out your interpretations, you can save the session data in two different ways: (1) as a .redo file which will allow you to have the fits preserved to be view again with Demag GUI or (2) as MagIC {\it pmag\_*} tables to be uploaded to the MagIC database or otherwise processed. In addition, you may save image files of the plots.
 
