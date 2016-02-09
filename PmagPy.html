@@ -7,7 +7,7 @@
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
 <!-- html,1,sections+ --> 
 <meta name="src" content="PmagPy.tex"> 
-<meta name="date" content="2016-02-09 12:50:00"> 
+<meta name="date" content="2016-02-09 14:28:00"> 
 <link rel="stylesheet" type="text/css" href="PmagPy.css"> 
 </head><body 
 >
@@ -11244,116 +11244,154 @@ line and the GUI interfaces (e.g., <span
 class="cmbx-10x-x-109">Pmag GUI</span>) are two main function libraries:
 <span 
 class="cmbx-10x-x-109">pmag.py </span>and <span 
-class="cmbx-10x-x-109">pmagplotlib.py</span>. The functions within these modules can be
-imported and called upon within a Jupyter notebook running a Python 2.7
-kernel. In addition to these functions, Nick Swanson-Hysell created a
-module called <span 
-class="cmbx-10x-x-109">ipmag.py </span>that is in active development and contains
-functions that replicate and extend some of the functionality that is found
+class="cmbx-10x-x-109">pmagplotlib.py</span>. The functions within these modules
+can be imported and called upon within a Jupyter notebook running a
+Python 2.7 kernel. In addition to these functions, Nick Swanson-Hysell
+created a module called <span 
+class="cmbx-10x-x-109">ipmag.py </span>that is in active development and
+contains functions that replicate and extend functionality that is found
 within the <span 
 class="cmbx-10x-x-109">PmagPy </span>command line programs for use in the notebook
 environment.
-<!--l. 6806--><p class="indent" >   To provide a glimpse of what is possible in terms of data analysis using
+<!--l. 6806--><p class="indent" >   To show some of what is possible in terms of data analysis using
 <span 
-class="cmbx-10x-x-109">PmagPy </span>in a notebook environment, we have created an example notebook that
-is available in the <span 
-class="cmti-10x-x-109">IPmag</span><span 
-class="cmti-10x-x-109">_notebook </span>folder in the <span 
-class="cmti-10x-x-109">data</span><span 
-class="cmti-10x-x-109">_files </span>folder downloaded as a
-part of the <span 
-class="cmbx-10x-x-109">PmagPy </span>package. This notebook (PmagPy_notebook.ipynb imports
-a data set downloaded from the MagIC database, plots them and conducts some
-statistical analyses.
-<!--l. 6808--><p class="indent" >   In the notebook, reversal tests are conducted using both the
+class="cmbx-10x-x-109">PmagPy </span>in a notebook environment, we have created example
+notebooks that are available for download from this repository:
 <a 
-href="#Xmcfadden90">McFadden &amp; McElhinny</a>&#x00A0;(<a 
-href="#Xmcfadden90">1990</a>) implementation of the <a 
-href="#Xwatson83">Watson</a>&#x00A0;(<a 
-href="#Xwatson83">1983</a>)
-<span 
-class="cmmi-10x-x-109">V</span> <sub><span 
-class="cmmi-8">w</span></sub> statistic test for a common mean and the bootstrap reversal
-test (<a 
-href="#Xtauxe91">Tauxe et&#x00A0;al.</a>&#x00A0;(<a 
-href="#Xtauxe91">1991</a>) and Section 11.3.4 in the textbook
+href="https://github.com/PmagPy/2016_Tauxe-et-al_PmagPy_Notebooks" class="url" ><span 
+class="cmtt-10x-x-109">https://github.com/PmagPy/2016_Tauxe-et-al_PmagPy_Notebooks</span></a>.
+These notebooks can also be viewed as static webpages here:
 <a 
-href="http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html" class="url" ><span 
-class="cmtt-10x-x-109">http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html</span></a>).
-The notebook can be viewed as a static webpage at this link
+href="http://pmagpy.github.io/Example_PmagPy_Notebook.html" class="url" ><span 
+class="cmtt-10x-x-109">http://pmagpy.github.io/Example_PmagPy_Notebook.html</span></a> and
 <a 
-href="https://nbviewer.jupyter.org/github/swanson-hysell/2015_Tauxe-et-al_PmagPy_Notebook/blob/master/PmagPy_notebook.ipynb" class="url" ><span 
-class="cmtt-10x-x-109">https://nbviewer.jupyter.org/github/swanson-hysell/2015_Tauxe-et-al_PmagPy_Notebook/blob/master/PmagPy_notebook.ipynb</span></a>
-or downloaded as executable code as detailed below. The notebook example is
+href="http://pmagpy.github.io/Additional_PmagPy_Examples.html" class="url" ><span 
+class="cmtt-10x-x-109">http://pmagpy.github.io/Additional_PmagPy_Examples.html</span></a>.
+<!--l. 6808--><p class="indent" >   The main example notebook (Example_PmagPy_Notebook.ipynb) combines
+data from two different studies for the sake of developing a mean paleomagnetic
+pole from the upper portion of a sequence of volcanics in the North American
+Midcontinent Rift (<span 
+class="cmbx-10x-x-109">?</span><a 
+href="#Xswansonhysell14"><span 
+class="cmti-10x-x-109">Swanson-Hysell et</span><span 
+class="cmti-10x-x-109">&#x00A0;al.</span></a>,&#x00A0;<a 
+href="#Xswansonhysell14">2014</a>). The two data files used within
+the notebook can be downloaded from the MagIC database. The digital
+object identifier (doi) search option allows for the data files to be readily
+located as <a 
+href="https://earthref.org/MagIC/doi/10.1139/e74-113/" class="url" ><span 
+class="cmtt-10x-x-109">https://earthref.org/MagIC/doi/10.1139/e74-113/</span></a> and
                                                                      
 
                                                                      
-also in the PmagPy_Tutorial folder that you downloaded as the <span 
-class="cmti-10x-x-109">data</span><span 
-class="cmti-10x-x-109">_files </span>folder
-(see <a 
-href="#quick_start" >Installing PmagPy</a>).
-<!--l. 6810--><p class="indent" >   To execute and edit the notebook code yourself, find it in the <span 
-class="cmti-10x-x-109">data</span><span 
-class="cmti-10x-x-109">_files</span>
-directory under PmagPy_Tutorial. If you installed the Enthought Canopy
-Python distribution you will have the IPython and Jupyter packages
-installed. If you have another Python distribution you will want to make
-sure that you have IPython and Jupyter (installation instructions can
-currently be found here: <a 
-href="http://ipython.org/install.html" class="url" ><span 
-class="cmtt-10x-x-109">http://ipython.org/install.html</span></a> and here:
 <a 
+href="https://earthref.org/MagIC/doi/10.1002/2013GC005180/" class="url" ><span 
+class="cmtt-10x-x-109">https://earthref.org/MagIC/doi/10.1002/2013GC005180/</span></a>. Downloading
+these data files from the database and putting them into folders within a local
+&#8216;Project Directory&#8217; allows them to be accessed within the Jupyter notebook.
+Within the notebook, these data are unpacked into their respective MagIC
+formatted tab delimited data files. The data are then loaded into dataframes and
+filtered using several different criteria (stratigraphic height and polarity). Several
+functions from the <span 
+class="cmbx-10x-x-109">ipmag </span>module are used for making equal area projections and
+calculating statistics. In addition to combining the data sets to calculate the
+mean pole, the code in the notebook conducts a bootstrap fold test on the data
+using the approach of <a 
+href="#Xtauxe94">Tauxe &amp; Watson</a>&#x00A0;(<a 
+href="#Xtauxe94">1994</a>) as well as a common mean
+test. The data recombinations and calculations done in this notebook
+are examples of portions of the data analysis workflow which are often
+difficult to document and reproduce. The examples illustrate a small
+sliver of the potential for the use of notebooks for data manipulation
+and analysis of paleomagnetic data. Additional functionality available
+within PmagPy is demonstrated within the additional <span 
+class="cmbx-10x-x-109">PmagPy </span>examples
+notebook (Additional_PmagPy_Examples.ipynb) as small vignettes of
+example code. Functions related to paleomagnetic and rock magnetic data
+analysis are shown as examples. The notebook also illustrates some of
+the interactivity that can be built into the notebook utilizing IPython
+widgets.
+<!--l. 6810--><p class="indent" >   To execute and edit notebook code yourself, you can clone or download this
+repository: <a 
+href="https://github.com/PmagPy/2016_Tauxe-et-al_PmagPy_Notebooks" class="url" ><span 
+class="cmtt-10x-x-109">https://github.com/PmagPy/2016_Tauxe-et-al_PmagPy_Notebooks</span></a>. If
+you installed the Enthought Canopy or Anaconda Python distribution you will have
+the IPython and Jupyter packages installed. If you have another Python distribution
+you will want to make sure that you have IPython and Jupyter (installation
+instructions can currently be found here: <a 
+href="http://ipython.org/install.html" class="url" ><span 
+class="cmtt-10x-x-109">http://ipython.org/install.html</span></a>
+and here: <a 
 href="http://jupyter.readthedocs.org/en/latest/install.html" class="url" ><span 
-class="cmtt-10x-x-109">http://jupyter.readthedocs.org/en/latest/install.html</span></a>). The example
-notebook was created using IPython version 2.3. To view and edit it, type
-<span 
-class="cmbx-10x-x-109">ipython notebook </span>on the <a 
-href="#command_line" >command line</a>. This will open up a local IPython
-server in your default web browser within which you can use the directory to
-navigate to the data_files folder. Click on it to open and edit. You will see
-something like this:
+class="cmtt-10x-x-109">http://jupyter.readthedocs.org/en/latest/install.html</span></a>). To
+view and edit the notebooks, type <span 
+class="cmbx-10x-x-109">ipython notebook </span>or <span 
+class="cmbx-10x-x-109">jupyter notebook </span>on
+the <a 
+href="#command_line" >command line</a>. This command will open up a local IPython server in your
+default web browser within which you can use the directory to navigate to the
+data_files folder. Click on it to open and edit. You will see something like
+this:
+                                                                     
+
+                                                                     
 <!--l. 6812--><p class="indent" >   <img 
 src="PmagPy111x.png" alt="PIC" class="graphics" width="426.79134pt" height="130.44284pt" ><!--tex4ht:graphics  
 name="PmagPy111x.png" src="EPSfiles/notebook.eps"  
 -->
-<!--l. 6814--><p class="indent" >   Notebooks are constructed as a series of &#8216;cells&#8217; which can be text or code
-among other things. To view the &#8216;source&#8217; of a text cell, just click on it. To render
-it, click on the &#8216;run&#8217; button (sideways triangle on the toolbar). Similarly, to run
-the code in a code cell, click on the cell and then the &#8216;run&#8217; button. To
-execute the entire notebook, click on the &#8216;Cell&#8217; button and choose &#8217;Run
+<!--l. 6814--><p class="indent" >   Notebooks are constructed as a series of &#8216;cells&#8217; which can be text or code. To
+view the &#8216;source&#8217; of a text cell, just click on it. To render it, click on the &#8216;run&#8217;
+button (sideways triangle on the toolbar). Similarly, to run the code in a code
+cell, click on the cell and then the &#8216;run&#8217; button (or use the shift+enter short cut).
+To execute the entire notebook, click on the &#8216;Cell&#8217; button and choose &#8217;Run
 All&#8217;.
-<!--l. 6816--><p class="indent" >   The first step to using the notebook is to let it know where you put all the
-<span 
-class="cmbx-10x-x-109">PmagPy </span>code. The default location for this on MacOS is in a folder called
-<span 
-class="cmti-10x-x-109">PmagPy </span>in your home directory (e.g., /Users/YOUR_NAME_HERE/PmagPy)
-and on Windows is in the Documents folder (e.g., &#8217;C:<br 
-class="newline" />Users<br 
-class="newline" />YOUR_NAME_HERE<br 
-class="newline" />Documents<br 
-class="newline" />PmagPy&#8217;. You must modify the line &#8216;sys.path.insert(0, &#8216;/Users/......&#8217;) to reflect
-your own path. After that is set, run the first code block. Now the <span 
-class="cmbx-10x-x-109">PmagPy</span>
+<!--l. 6816--><p class="indent" >   To use <span 
+class="cmbx-10x-x-109">PmagPy </span>within the notebook, the <span 
+class="cmbx-10x-x-109">PmagPy </span>function modules need
+to be in your Python path. This . There are two ways to do this. One
+way is to have your .profile or .bash&#x02D9;profile have a line in it that reads
+:
                                                                      
 
                                                                      
-modules are available to use within the notebook. The next code block imports
-several Python modules useful for scientific computing (numpy), data
-manipulation (pandas) and plotting (matplotlib). Run this code block to make
-these functions available to the notebook.
-<!--l. 6818--><p class="indent" >   Now you are ready to look at some data. In the code block under the heading
+   <div class="verbatim" id="verbatim-250">
+PYTHONPATH=$PYTHONPATH:~/PmagPy
+</div>
+<!--l. 6820--><p class="nopar" >
+<!--l. 6822--><p class="indent" >   Another way is to set the path to the location of your PmagPy folder within
+the notebook itself. The default location on MacOS is in a folder called <span 
+class="cmti-10x-x-109">PmagPy</span>
+in your home directory (e.g., /Users/YOUR_NAME_HERE/PmagPy) and on
+Windows is in the Documents folder (e.g., &#8217;C:<br 
+class="newline" />Users<br 
+class="newline" />YOUR_NAME_HERE<br 
+class="newline" />Documents<br 
+class="newline" />PmagPy<br 
+class="newline" />PmagPy&#8217;. To do this you must <span 
+class="cmtt-10x-x-109">import os </span>and then have a line that reads
+<span 
+class="cmtt-10x-x-109">sys.path.insert(0, &#8216;/Users/......&#8217;) </span>where the path reflects your own path.
+If PmagPy is in your path you should be able to run the first code block which
+imports the <span 
+class="cmbx-10x-x-109">PmagPy </span>modules and makes them availible available to use within
+the notebook. The notebooks also import several other Python modules useful
+for scientific computing (numpy), data manipulation (pandas) and plotting
+(matplotlib).
+<!--l. 6824--><p class="indent" >   Now you are ready to look at some data. In the code block under the heading
 &#8216;Reading data from MagIC format results files&#8217;, data are read in from a file
 <a 
 href="#magic_download" >downloaded</a> and unpacked from the MagIC database. The notebook shows how
 to read in the data into a <a 
 href="#pandas" >pandas DataFrame</a>, and plot the directions on an equal
 area projection:
-<!--l. 6820--><p class="indent" >   <img 
+                                                                     
+
+                                                                     
+<!--l. 6826--><p class="indent" >   <img 
 src="PmagPy112x.png" alt="PIC" class="graphics" width="426.79134pt" height="279.79002pt" ><!--tex4ht:graphics  
 name="PmagPy112x.png" src="EPSfiles/SnakeRiver.eps"  
 -->
-<!--l. 6822--><p class="indent" >   There are several other tricks shown off in the notebook, which should be
+<!--l. 6828--><p class="indent" >   There are several other tricks shown off in the notebook, which should be
 enough to get you started using <span 
 class="cmbx-10x-x-109">ipmag </span>in a Python notebook environment.
 Conducting data analysis using <span 
@@ -11361,22 +11399,23 @@ class="cmbx-10x-x-109">PmagPy </span>in a notebook allows for the
 underlying code of statistical tests to be available and for the decisions
 made in the specific implementation of such tests to be transparently
 presented.
-<!--l. 6824--><p class="indent" >   Although there is much much more to do in Python, this documentation
+<!--l. 6830--><p class="indent" >   Although there is much much more to do in Python, this documentation
 is aimed at getting and using <span 
 class="cmbx-10x-x-109">PmagPy</span>, so that&#8217;s it for this chapter.
 Congratulations if you made it to the end!
+<!--l. 6832--><p class="indent" >   <a name='trouble'></a>
                                                                      
 
                                                                      
-<!--l. 6826--><p class="indent" >   <a name='trouble'></a>
+<!--l. 6834--><p class="indent" >
                                                                      
 
                                                                      
-<!--l. 6828--><p class="indent" >   <a name='ch9'></a><h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;9</span><br /><a 
+<!--l. 6834--><p class="indent" >   <a name='ch9'></a><h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;9</span><br /><a 
 href="#QQ2-1-214" id="x1-2140009">Troubleshooting</a></h2>
-<!--l. 6831--><p class="noindent" ><a name='sec9-1'></a><h3 class="sectionHead"><span class="titlemark">9.1   </span> <a 
+<!--l. 6837--><p class="noindent" ><a name='sec9-1'></a><h3 class="sectionHead"><span class="titlemark">9.1   </span> <a 
 href="#QQ2-1-215" id="x1-2150009.1">Problems with installing Python or PmagPy</a></h3>
-<!--l. 6833--><p class="noindent" >
+<!--l. 6839--><p class="noindent" >
      <ol  class="enumerate1" >
      <li 
   class="enumerate" id="x1-215002x1">Nothing works as advertised!
@@ -11389,21 +11428,21 @@ href="#QQ2-1-215" id="x1-2150009.1">Problems with installing Python or PmagPy</a
                                                                      
 
                                                                      
-          <div class="verbatim" id="verbatim-250">
+          <div class="verbatim" id="verbatim-251">
           $&#x00A0;python
           &#x00A0;<br />Enthought&#x00A0;Canopy&#x00A0;Python&#x00A0;2.7.6&#x00A0;|&#x00A0;64-bit&#x00A0;|&#x00A0;(default,&#x00A0;Jun&#x00A0;&#x00A0;4&#x00A0;2014,&#x00A0;16:42:26)
           &#x00A0;<br />[GCC&#x00A0;4.2.1&#x00A0;(Apple&#x00A0;Inc.&#x00A0;build&#x00A0;5666)&#x00A0;(dot&#x00A0;3)]&#x00A0;on&#x00A0;darwin
           &#x00A0;<br />Type&#x00A0;"help",&#x00A0;"copyright",&#x00A0;"credits"&#x00A0;or&#x00A0;"license"&#x00A0;for&#x00A0;more&#x00A0;information.
           &#x00A0;<br />&#x003E;&#x003E;&#x003E;
 </div>
-          <!--l. 6850--><p class="nopar" >
+          <!--l. 6856--><p class="nopar" >
           </li>
           <li class="itemize">For windows users, find your command line (Command Prompt), and
           type &#8220;python&#8221;. You should see something like this:
                                                                      
 
                                                                      
-          <div class="verbatim" id="verbatim-251">
+          <div class="verbatim" id="verbatim-252">
           $&#x00A0;python
           &#x00A0;<br />Enthought&#x00A0;Python&#x00A0;Distribution&#x00A0;--&#x00A0;www.enthought.com
           &#x00A0;<br />Version:&#x00A0;7.3-2&#x00A0;(32-bit)
@@ -11413,7 +11452,7 @@ href="#QQ2-1-215" id="x1-2150009.1">Problems with installing Python or PmagPy</a
           &#x00A0;<br />Type&#x00A0;&#8216;&#8216;credits",&#x00A0;&#8216;&#8216;demo"&#x00A0;or&#x00A0;&#8216;&#8216;enthought"&#x00A0;for&#x00A0;more&#x00A0;information.
           &#x00A0;<br />&#x003E;&#x003E;&#x003E;
 </div>
-          <!--l. 6864--><p class="nopar" >
+          <!--l. 6870--><p class="nopar" >
           </li>
           <li class="itemize">If you don&#8217;t see one of the above messages, you have not fully
           installed the Python distribution. You&#8217;ll need to try again. For
@@ -11430,25 +11469,25 @@ href="#QQ2-1-215" id="x1-2150009.1">Problems with installing Python or PmagPy</a
      work
           <ul class="itemize1">
           <li class="itemize">For Mac users:
-          <!--l. 6878--><p class="noindent" >When you try to run eqarea.py -h to test your installation, you
+          <!--l. 6884--><p class="noindent" >When you try to run eqarea.py -h to test your installation, you
           get this error message:
                                                                      
 
                                                                      
-          <div class="verbatim" id="verbatim-252">
+          <div class="verbatim" id="verbatim-253">
           &#x00A0;-bash:&#x00A0;eqarea.py:&#x00A0;command&#x00A0;not&#x00A0;found
 </div>
-          <!--l. 6881--><p class="nopar" >
-          <!--l. 6883--><p class="noindent" >There are a few possible reasons for this failure, the most common of
+          <!--l. 6887--><p class="nopar" >
+          <!--l. 6889--><p class="noindent" >There are a few possible reasons for this failure, the most common of
           which is that your path has not been correctly set. To test this, type
           &#8220;echo $PATH&#8221; in your command line.
-          <!--l. 6885--><p class="noindent" >You will see something like this:<br 
+          <!--l. 6891--><p class="noindent" >You will see something like this:<br 
 class="newline" />
-          <!--l. 6888--><p class="noindent" >/Users/****/Library/Enthought/Canopy_64bit/User/bin:
+          <!--l. 6894--><p class="noindent" >/Users/****/Library/Enthought/Canopy_64bit/User/bin:
           /usr/local/bin: /usr/local/share/npm/bin: /usr/bin: /bin: /usr/sbin:
           /sbin: /usr/local/bin: /opt/X11/bin: /Users/****/PmagPy:/usr/texbin<br 
 class="newline" />
-          <!--l. 6891--><p class="noindent" >Your $PATH may look very different, but as long as you have the
+          <!--l. 6897--><p class="noindent" >Your $PATH may look very different, but as long as you have the
           complete path to the PmagPy directory in there, you are golden. If the
           directory is not in your path, you can try re-running the PmagPy
           install script, which should set your path correctly for you. If that
@@ -11458,42 +11497,42 @@ class="newline" />
                                                                      
 
                                                                      
-          <div class="verbatim" id="verbatim-253">
+          <div class="verbatim" id="verbatim-254">
           export&#x00A0;PATH=/Users/***/PmagPy:$PATH
 </div>
-          <!--l. 6893--><p class="nopar" >
-                                                                     
-
-                                                                     
-          <div class="verbatim" id="verbatim-254">
-          export&#x00A0;PATH=/Users/***/PmagPy/programs:$PATH
-</div>
-          <!--l. 6894--><p class="nopar" >
+          <!--l. 6899--><p class="nopar" >
                                                                      
 
                                                                      
           <div class="verbatim" id="verbatim-255">
+          export&#x00A0;PATH=/Users/***/PmagPy/programs:$PATH
+</div>
+          <!--l. 6900--><p class="nopar" >
+                                                                     
+
+                                                                     
+          <div class="verbatim" id="verbatim-256">
           export&#x00A0;PYTHONPATH=$PYTHONPATH:/Users/***/PmagPy/
 </div>
-          <!--l. 6895--><p class="nopar" >
-          <!--l. 6897--><p class="noindent" >where *** is your username. Then restart your Terminal. If it still
+          <!--l. 6901--><p class="nopar" >
+          <!--l. 6903--><p class="noindent" >where *** is your username. Then restart your Terminal. If it still
           doesn&#8217;t work, see question 3.
           </li>
           <li class="itemize">For Windows users:
                                                                      
 
                                                                      
-          <div class="verbatim" id="verbatim-256">
+          <div class="verbatim" id="verbatim-257">
           &#x00A0;"eqarea.py"&#x00A0;is&#x00A0;not&#x00A0;recognized&#x00A0;as&#x00A0;an&#x00A0;internal&#x00A0;or&#x00A0;external&#x00A0;command,
           &#x00A0;<br />operable&#x00A0;program&#x00A0;or&#x00A0;batch&#x00A0;file.
 </div>
-          <!--l. 6904--><p class="nopar" >
-          <!--l. 6906--><p class="noindent" >Setting your path should not be an issue in Windows if you are using
+          <!--l. 6910--><p class="nopar" >
+          <!--l. 6912--><p class="noindent" >Setting your path should not be an issue in Windows if you are using
           the PmagPy prompt (created by the install script). PmagPy
           functionality will be available only in the custom Command Prompt,
           so make sure you are using it. However, if you do need to set your
           path for some reason, see:
-          <!--l. 6908--><p class="noindent" ><a 
+          <!--l. 6914--><p class="noindent" ><a 
 href="http://www.mathworks.com/matlabcentral/answers/94933-how-do-i-set-my-system-path-under-windows" >Setting your Path in Windows</a>
           </li></ul>
      </li>
@@ -11502,19 +11541,19 @@ href="http://www.mathworks.com/matlabcentral/answers/94933-how-do-i-set-my-syste
                                                                      
 
                                                                      
-     <div class="verbatim" id="verbatim-257">
+     <div class="verbatim" id="verbatim-258">
      &#x00A0;-bash:&#x00A0;eqarea.py:&#x00A0;command&#x00A0;not&#x00A0;found
 </div>
-     <!--l. 6913--><p class="nopar" >
+     <!--l. 6919--><p class="nopar" >
           <ul class="itemize1">
           <li class="itemize">For Mac users, it is possible that you need to make the python
           scripts executable. On the command line in the directory with
           the scripts, type: chmod a+x *.py</li></ul>
      </li></ol>
-<!--l. 6921--><p class="noindent" >
-<!--l. 6921--><p class="indent" >   <a name='sec9-2'></a><h3 class="sectionHead"><span class="titlemark">9.2   </span> <a 
+<!--l. 6927--><p class="noindent" >
+<!--l. 6927--><p class="indent" >   <a name='sec9-2'></a><h3 class="sectionHead"><span class="titlemark">9.2   </span> <a 
 href="#QQ2-1-216" id="x1-2160009.2">Problems updating Canopy</a></h3>
-<!--l. 6922--><p class="noindent" >If you are using Canopy (not just EPD), you will need to keep it up to date.
+<!--l. 6928--><p class="noindent" >If you are using Canopy (not just EPD), you will need to keep it up to date.
 Currently, that means the version number should be 1.6.1 or higher. In general,
 you can update by opening the Canopy application; it will automatically check
 for updates. However, if you haven&#8217;t updated for a long time, Canopy can get
@@ -11522,10 +11561,10 @@ for updates. However, if you haven&#8217;t updated for a long time, Canopy can g
 will need to fully uninstall and reinstall canopy, following the directions on the
 <a 
 href="https://support.enthought.com/hc/en-us/articles/204469570-Canopy-shows-no-updates-available-reinstalling-from-the-website" >Enthought website</a>.
-<!--l. 6924--><p class="noindent" >
-<!--l. 6924--><p class="indent" >   <a name='sec9-3'></a><h3 class="sectionHead"><span class="titlemark">9.3   </span> <a 
+<!--l. 6930--><p class="noindent" >
+<!--l. 6930--><p class="indent" >   <a name='sec9-3'></a><h3 class="sectionHead"><span class="titlemark">9.3   </span> <a 
 href="#QQ2-1-217" id="x1-2170009.3">Problems with a specific program</a></h3>
-<!--l. 6925--><p class="noindent" >
+<!--l. 6931--><p class="noindent" >
      <ol  class="enumerate1" >
      <li 
   class="enumerate" id="x1-217002x1">Thellier auto_interpreter crashes with a Segmentation Fault (on
@@ -11550,10 +11589,10 @@ href="#standalone" >standalone  Pmag  GUI</a>
           cause the Thellier GUI menubar to behave oddly. For this reason,
           we recommend the first solution (above).</li></ul>
      </li></ol>
-<!--l. 6934--><p class="noindent" >
-<!--l. 6934--><p class="indent" >   <a name='sec9-4'></a><h3 class="sectionHead"><span class="titlemark">9.4   </span> <a 
+<!--l. 6940--><p class="noindent" >
+<!--l. 6940--><p class="indent" >   <a name='sec9-4'></a><h3 class="sectionHead"><span class="titlemark">9.4   </span> <a 
 href="#QQ2-1-218" id="x1-2180009.4">Other problems</a></h3>
-<!--l. 6934--><p class="noindent" >Report a problem not listed above: e-mail <a 
+<!--l. 6940--><p class="noindent" >Report a problem not listed above: e-mail <a 
 href="mailto:ltauxe@ucsd.edu" >ltauxe@ucsd.edu</a>. Include the following
 information: 1) the version of PmagPy that you are using, 2) your operating
 system, 3) any error messages that you got, 4) the datafile that is giving trouble,
@@ -11727,6 +11766,14 @@ class="cmti-10x-x-109">Nature Geoscience</span>, 2, 713&#8211;717.
   </p>
   <p class="bibitem" ><span class="biblabel">
 <a 
+ id="Xswansonhysell14"></a><span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span>Swanson-Hysell, N.&#x00A0;L., A.&#x00A0;A. Vaughan, M.&#x00A0;R. Mustain, and K.&#x00A0;E. Asp,
+  Confirmation of progressive plate motion during the Midcontinent Rift&#8217;s
+  early magmatic stage from the Osler Volcanic Group, Ontario, Canada.
+  <span 
+class="cmti-10x-x-109">Geochem., Geophys., Geosyst.</span>, 15, 2039&#8211;2047, 2014.
+  </p>
+  <p class="bibitem" ><span class="biblabel">
+<a 
  id="Xtauxe98"></a><span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span> Tauxe, L. (1998).  <span 
 class="cmti-10x-x-109">Paleomagnetic Principles and Practice</span>.  Dordrecht:
   Kluwer Academic Publishers.
@@ -11758,6 +11805,9 @@ class="cmti-10x-x-109">Geochem.,  Geophys.,  Geosyst.</span>,  (pp.&#x00A0;DOI
   field behaviour. <span 
 class="cmti-10x-x-109">Geophys. J. Int.</span>, 128, 217&#8211;229.
   </p>
+                                                                     
+
+                                                                     
   <p class="bibitem" ><span class="biblabel">
 <a 
  id="Xtauxe04d"></a><span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span> Tauxe, L. &amp; Kent, D.&#x00A0;V. (2004).   <span 
@@ -11768,9 +11818,6 @@ class="cmti-10x-x-109">the geomagnetic field and the detection of shallow bias i
 class="cmti-10x-x-109">inclinations:  Was  the  ancient  magnetic  field  dipolar?</span>,  volume  145,
   (pp.&#x00A0;101&#8211;116). American Geophysical Union: Washington, D.C.
   </p>
-                                                                     
-
-                                                                     
   <p class="bibitem" ><span class="biblabel">
 <a 
  id="Xtauxe91"></a><span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span> Tauxe, L., Kylstra, N., &amp; Constable, C. (1991). Bootstrap statistics for
@@ -11811,6 +11858,9 @@ class="cmti-10x-x-109">Paleoceanography</span>, 27,
  id="Xtauxe94"></a><span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span> Tauxe, L. &amp; Watson, G.&#x00A0;S. (1994).  The fold test: an eigen analysis
   approach. <span 
 class="cmti-10x-x-109">Earth Planet. Sci. Lett.</span>, 122, 331&#8211;341.
+                                                                     
+
+                                                                     
   </p>
   <p class="bibitem" ><span class="biblabel">
 <a 
@@ -11820,9 +11870,6 @@ class="cmti-10x-x-109">Rev.</span>
   <span 
 class="cmti-10x-x-109">Geohys.</span>, 46, RG3004, doi:10.1029/2007RG000227.
   </p>
-                                                                     
-
-                                                                     
   <p class="bibitem" ><span class="biblabel">
 <a 
  id="Xvandamme94"></a><span class="bibsp">&#x00A0;&#x00A0;&#x00A0;</span></span>  Vandamme,  D.  (1994).   A  new  method  to  determine  paleosecular

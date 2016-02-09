@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  9 FEB 2016 12:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  9 FEB 2016 14:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1749,55 +1749,63 @@ File: EPSfiles/matplotlib4.eps Graphic file (type eps)
 [414]
 Chapter 8.
  --- Customlinks says: Link to chapter 8: PmagPy.html#ch8
+
+Package natbib Warning: Citation `halls74' on page 415 undefined on input line 
+6808.
+
 [415
 
 ]
 l. 6812 Writing PmagPy.idv[112] (PmagPy111x.png)
 File: EPSfiles/notebook.eps Graphic file (type eps)
- <EPSfiles/notebook.eps> [416]
-l. 6820 Writing PmagPy.idv[113] (PmagPy112x.png)
+ <EPSfiles/notebook.eps> [416] [417]
+l. 6826 Writing PmagPy.idv[113] (PmagPy112x.png)
 File: EPSfiles/SnakeRiver.eps Graphic file (type eps)
- <EPSfiles/SnakeRiver.eps>
+ <EPSfiles/SnakeRiver.eps> [418]
  --- Customlinks says: Custom link named 'trouble': PmagPy.html#trouble 
-[417] [418]
+[419] [420
+
+]
 Chapter 9.
  --- Customlinks says: Link to chapter 9: PmagPy.html#ch9
  --- Customlinks says: Link to section 9.1: PmagPy.html#sec9-1
-[419
-
-] [420] [421] [422] [423] [424] [425] [426]
+[421] [422] [423] [424] [425] [426] [427] [428]
  --- Customlinks says: Link to section 9.2: PmagPy.html#sec9-2
  --- Customlinks says: Link to section 9.3: PmagPy.html#sec9-3
-[427]
+[429]
  --- Customlinks says: Link to section 9.4: PmagPy.html#sec9-4
-[428] [429
+[430] [431
 
-] [430] [431] [432] [433]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7147.
- [434]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 7147.
+] [432] [433] [434] [435]
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7160.
+[436]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 7160.
  (./PmagPy.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7147.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 7147.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7160.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 7160.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7147.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7160.
  )
-(\end occurred inside a group at level 3)
+(\end occurred inside a group at level 4)
 
+### simple group (level 4) entered at line 6758 ({)
 ### simple group (level 3) entered at line 6724 ({)
 ### simple group (level 2) entered at line 5457 ({)
 ### simple group (level 1) entered at line 1224 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10520 strings out of 493090
- 147047 string characters out of 6134868
- 343075 words of memory out of 5000000
- 13700 multiletter control sequences out of 15000+600000
+ 10525 strings out of 493090
+ 147146 string characters out of 6134868
+ 343078 words of memory out of 5000000
+ 13705 multiletter control sequences out of 15000+600000
  15547 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,9n,32p,135870b,1901s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on PmagPy.dvi (443 pages, 1173172 bytes).
+Output written on PmagPy.dvi (445 pages, 1176652 bytes).

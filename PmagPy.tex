@@ -59,7 +59,7 @@ There are many chefs who contributed to this work, in particular, the MagIC Data
 
 \chapter{Installing {\bf PmagPy}}
 
-To skip all the details and just start using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI} to upload data into the \href{#MagICDatabase}{MagIC database}, or to analyze using \href{#thellier_GUI.py}{Thellier GUI} or \href{#DemagGUI}{Demag GUI}, start here. 
+To skip all the details and just start using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI} to upload data into the \href{#MagICDatabase}{MagIC database}, or to analyze using \href{#thellier_GUI.py}{Thellier GUI} or \href{#DemagGUI}{Demag GUI}, start here.
 
 \customlink{standalone}
 \section{Standalone GUI download}
@@ -81,8 +81,8 @@ Follow the download instructions in the provided links, and then you can skip th
    \end{itemize}
  \item Getting Python for Windows users:
    \begin{itemize}
-   \item To use the full functionality PmagPy functionality, you will need to download the most recent Enthought Python Distribution (EPD).  If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license}, which gives access to this distribution.  
-   \item Once you have registered and gotten your academic license, you can \href{https://store.enthought.com/repo/epd/installers/epd-7.5-2-win-x86_64.msi}{download EPD here}.  
+   \item To use the full functionality PmagPy functionality, you will need to download the most recent Enthought Python Distribution (EPD).  If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license}, which gives access to this distribution.
+   \item Once you have registered and gotten your academic license, you can \href{https://store.enthought.com/repo/epd/installers/epd-7.5-2-win-x86_64.msi}{download EPD here}.
    \item Windows users who cannot get an academic license should install this \href{http://magician.ucsd.edu/Software/PmagPy/archive/epd-7.3-2-win-x86.msi}{older Enthought Distribution}.  This version of EPD will not support all PmagPy programs, so if you want to run Pmag GUI or MagIC GUI you should download the \href{#standalone}{standalone versions}.
    \item If you run into problems with your installation, you may need to uninstall any previous Python installations.
    \end{itemize}
@@ -784,50 +784,50 @@ Now you've collected together all the files you need, we can start importing the
 \label{chap:MagIC GUI}
 
 {\bf MagIC GUI} is a Graphical User Interface written by Lori Jonestrask.  It is meant for efficiently compiling a contribution for uploading to the MagIC database.  MagIC GUI is specifically designed for making a contribution without measurement data; if you ARE including measurement data, we recommend that you use \href{#pmag_gui.py}{Pmag GUI} instead.
-MagIC GUI allows you to add data at the location, site, sample, and specimen levels.  You can also add results and ages.  The program uses an Excel-like grid interface for entering and editing data.  Useful features include: pop-up menus with controlled vocabularies, multi-cell pasting from external spreadsheets, and built-in validations for MagIC database requirements.  
+MagIC GUI allows you to add data at the location, site, sample, and specimen levels.  You can also add results and ages.  The program uses an Excel-like grid interface for entering and editing data.  Useful features include: pop-up menus with controlled vocabularies, multi-cell pasting from external spreadsheets, and built-in validations for MagIC database requirements.
 
 
 \section{Starting with MagIC GUI}
-Start up MagIC GUI.  You'll do this by clicking on the icon (if you downloaded the \href{#standalone}{standalone} version) or entering `magic\_gui.py' on your \href{#command_line}{command line} (if you downloaded the full PmagPy installation). 
-  
+Start up MagIC GUI.  You'll do this by clicking on the icon (if you downloaded the \href{#standalone}{standalone} version) or entering `magic\_gui.py' on your \href{#command_line}{command line} (if you downloaded the full PmagPy installation).
+
 When you first start {\bf magic\_gui.py}, you will change directories into a  `Project Directory'. For each study, create a directory with a name that relates to that study. Here we will call it {\it MyProject}.  This is where you will collect  and process all the rock and paleomagnetic data for a given study, usually a publication.   The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path. Under certain Windows versions, this means you should not use your home directory, but create a directory called for example: D:$\backslash$MyPmagProjects and put {\it MyProject} there.
 
   \includegraphics[width=25cm]{EPSfiles/MM_main_frame.eps}
-  
+
 \section{MagIC GUI example dataset}
 Now we'll walk through a simple data input process, with fake data.
   \begin{itemize}
   \item Start by clicking on `1. add location data'.  Enter location data as seen below. Notice use of the context menu: in most instances, these will provide controlled vocabularies.
     \includegraphics[width=40cm]{EPSfiles/MM_location_grid_with_menu.eps}
-  \item You'll notice that some information is not filled in.  First, if you have no outside citations, you can leave `er\_citation\_names' blank and it will be automatically filled in with `This study' after you save this data.  Second, if you will be providing latitude/longitude for sites, then you don't need to provide it at the location level.  The program will extract start and end latitude and longitude from your site data and apply it to each location.  
+  \item You'll notice that some information is not filled in.  First, if you have no outside citations, you can leave `er\_citation\_names' blank and it will be automatically filled in with `This study' after you save this data.  Second, if you will be providing latitude/longitude for sites, then you don't need to provide it at the location level.  The program will extract start and end latitude and longitude from your site data and apply it to each location.
   \item If you want to provide more than the default required information, you may want to add more columns to your grid.  In our case, we'll add in `Country'.  To do this, just click the button `Add additional columns'.  Choose whatever headers you want to add and select `Ok'.
-    
+
     \includegraphics[width=15cm]{EPSfiles/MM_add_location_headers.eps}
-    
+
   \item Now you'll have a new column with a new controlled vocabulary.  Find and select `U.S.A.'.  When you're done entering location data, click `Save and close grid'.
-    
+
   \item Next, we'll add in sites, so start by opening the site grid.  We will have two sites in this dataset, so click the `Add row(s)' button once.  Then, fill in the grid.  For some of the values, both sites will have the same value.  To provide this data more efficiently, click on the column label to edit all values in that column.  If that column has a menu, you can then click anywhere in that column and make a selection for every cell in the column. Once you're done editing the column, click the header again to exit the multiple-cell-edit mode.
   \item For controlled vocabulary columns, like `site\_type', it is possible that you might not be able to find an appropriate value, or you might not know the appropriate value.  In that case, most controlled vocabularies provide a `Not Specified' option, which we will use here.
-    
+
     \includegraphics[width=40cm]{EPSfiles/MM_site_grid_with_edit_all.eps}
-    
+
   \item Once you're done adding sites, save and close the site grid, then open the sample grid.
     Enter data as you see below:
-    
+
     \includegraphics[width=40cm]{EPSfiles/MM_sample_grid.eps}
-    
+
     All other required data will fill in automatically.  If you don't provide latitude and longitude data for a sample, it will propagate down from the site after you save and close the grid.
-    
+
   \item For samples, we will add an additional statistic.  Click 'Add additional columns' and select `sample\_int\_sigma' from the 'Headers for interpretation data' column.  Select 'ok' and have a look at your new grid.  You'll notice that the column you selected has been added, as well as two additional columns: `magic\_instrument\_codes' and `magic\_method\_codes++'.  These two columns are required if you are including any interpretation data at the sample level.  Fill in the added columns.  You'll notice that `magic\_method\_codes++' has a drop-down menu.  If you aren't familiar with the MagIC codes system, click `Show method codes' which provides brief explanations for each possible code.
-    
+
     \includegraphics[width=50cm]{EPSfiles/MM_sample_grid_added_cols.eps}
-    
+
   \item Save and close the sample grid, then re-open it to see how the data have propagated (re-opening the grid isn't necessary for the program, this is just for you to see what MagIC GUI does automatically).
-    
+
     \includegraphics[width=50cm]{EPSfiles/MM_sample_grid_propagated_full.eps}
 
   \item In this example, we won't add data at the specimen level, so we will be skipping step 4.  Adding specimens works just the same as adding samples.
-    
+
   \item Now open the age grid.  You can assign ages at any level, at multiple levels, or at no level.  For this study, we will add ages at the sample level.  Choose sample as the age level.  Next, you'll need to add in the `age' column.  Fill in the grid as below:
 
     \includegraphics[width=25cm]{EPSfiles/MM_age_grid.eps}
@@ -840,7 +840,7 @@ Now we'll walk through a simple data input process, with fake data.
 
   \item For each result, you will add one or more items that the result pertains to.  In this example, one result is a site V[A]DM, and the other is an averaged V[A]DM from both sites.  For now, leave magic\_method\_codes blank for the Averaged V[A]DM result: in a minute we'll see how MagIC GUI catches this error.  Save and close the result grid.
 
-  \item Next, you will create a MagIC format upload file.  Click the final button on the main frame, `prepare upload txt file'.  Depending on the size of your contribution, this can take a minute; with our small example, it should be fairly quick.  After hitting upload, you will see an error message, and the main frame will direct you to the problem.  Validations will check for missing required fields, invalid data, and missing ancestors (for instance, a specimen with no sample). 
+  \item Next, you will create a MagIC format upload file.  Click the final button on the main frame, `prepare upload txt file'.  Depending on the size of your contribution, this can take a minute; with our small example, it should be fairly quick.  After hitting upload, you will see an error message, and the main frame will direct you to the problem.  Validations will check for missing required fields, invalid data, and missing ancestors (for instance, a specimen with no sample).
 
     \includegraphics[width=25cm]{EPSfiles/MM_validation_mainframe.eps}
 
@@ -851,7 +851,7 @@ Now we'll walk through a simple data input process, with fake data.
   \item Now that you've fixed your error, try `prepare upload txt file' again.  This time there should be no problems, and you are ready to \href{#magic_upload}{upload your data}!
 
 \end{itemize}
-  
+
 
 
 
@@ -1077,9 +1077,9 @@ In order to more easily view and edit specimen interpretation data there is a sp
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#ch10}{[Essentials Chapter 10]} and \href{#MagIC}{[MagIC}]
 \href{https://github.com/PmagPy/Pmag-Cookbook/raw/gh-pages//thellier_GUI_full_manual.pdf}{[Thellier\_GUI\_full_manual.pdf]}
 
-The program Thellier GUI ({\bf thellier\_gui.py})  combines functions from \href{#thellier_magic.py}{thellier\_magic.py} and new tools described by  \href{http://dx.doi.org/10.1002/ggge.20062}{Shaar and Tauxe (2013)} \nocite{shaar13} in a user-friendly graphical user interface (GUI).  
+The program Thellier GUI ({\bf thellier\_gui.py})  combines functions from \href{#thellier_magic.py}{thellier\_magic.py} and new tools described by  \href{http://dx.doi.org/10.1002/ggge.20062}{Shaar and Tauxe (2013)} \nocite{shaar13} in a user-friendly graphical user interface (GUI).
 
-As with \href{#demag_gui.py}, Thellier GUI can  be called from  the  \href{#command_line}{command line} or from within \href{#pmag_gui.py}{Pmag GUI}.  It loads  files already prepared in a  \href{#ThisProject}{This Project} directory and the interpretations from Thellier GUI are part of the workflow of  \href{#pmag_gui.py}{Pmag GUI}.   This section is a brief introduction on how to use Thellier GUI as a stand alone application. Much more information is available within this manual: \href{https://github.com/PmagPy/Pmag-Cookbook/raw/gh-pages//thellier_GUI_full_manual.pdf}{Thellier GUI full manual}. 
+As with \href{#demag_gui.py}, Thellier GUI can  be called from  the  \href{#command_line}{command line} or from within \href{#pmag_gui.py}{Pmag GUI}.  It loads  files already prepared in a  \href{#ThisProject}{This Project} directory and the interpretations from Thellier GUI are part of the workflow of  \href{#pmag_gui.py}{Pmag GUI}.   This section is a brief introduction on how to use Thellier GUI as a stand alone application. Much more information is available within this manual: \href{https://github.com/PmagPy/Pmag-Cookbook/raw/gh-pages//thellier_GUI_full_manual.pdf}{Thellier GUI full manual}.
 
 \noindent  A complete list of the definitions for paleointensity statistics used by Thellier GUI is available as a supplement to the article by \href{#http://dx.doi.org/10.1002/2013GC005135}{Paterson et al., 2014}  \nocite{paterson14} and available for download here:
 
@@ -1390,9 +1390,9 @@ These things  are done in this session:
 Doing bootstrap - be patient
 Boostrap Statistics:
  tau_i, V_i_D, V_i_I, V_i_zeta, V_i_zeta_D, V_i_zeta_I, V_i_eta, V_i_eta_D, V_i_eta_I
-0.34040287    29.6    14.5     6.9    168.4     67.4     32.7    295.9     14.2 
-0.33536589   166.3    70.5    10.3     26.1     13.0     23.9    293.3     12.1 
-0.32423124   296.2    12.8     5.2    180.5     62.4     10.4     32.0     24.0 
+0.34040287    29.6    14.5     6.9    168.4     67.4     32.7    295.9     14.2
+0.33536589   166.3    70.5    10.3     26.1     13.0     23.9    293.3     12.1
+0.32423124   296.2    12.8     5.2    180.5     62.4     10.4     32.0     24.0
 compare with [d]irection
  plot [g]reat circle,  change [c]oord. system, change [e]llipse calculation,
      s[a]ve plots, [q]uit
@@ -1418,9 +1418,9 @@ The following session illustrates how this is done, using the data in the test f
 Doing bootstrap - be patient
 Boostrap Statistics:
  tau_i, V_i_D, V_i_I, V_i_zeta, V_i_zeta_D, V_i_zeta_I, V_i_eta, V_i_eta_D, V_i_eta_I
-0.33673453   359.5     7.9     9.8    156.0     81.6      3.2    269.3      3.3 
-0.33546972    89.5     0.0    37.5     11.5     53.7     80.3    178.0     35.5 
-0.32779574   179.6    82.1     4.1      4.7      7.6      3.2    274.6      1.2 
+0.33673453   359.5     7.9     9.8    156.0     81.6      3.2    269.3      3.3
+0.33546972    89.5     0.0    37.5     11.5     53.7     80.3    178.0     35.5
+0.32779574   179.6    82.1     4.1      4.7      7.6      3.2    274.6      1.2
 compare with [d]irection
  plot [g]reat circle,  change [c]oord. system, change [e]llipse calculation,
       s[a]ve plots, [q]uit
@@ -6801,19 +6801,25 @@ There are lots of graphing styles possible with {\color{blue}matplotlib}, e.g., 
 
 Data analysis in Python benefits from an increasingly robust ecosystem of packages for scientific computing and plotting. A tool that has gained increasingly widespread use for conducting and presenting data analysis is the Jupyter notebook. The Jupyter notebook builds on the IPython project which began as a way to bring increased interactivity to data analysis in Python \citep{perez07} and has evolved to include an interactive notebook environment that seeks to enable the full trajectory of scientific computing from initial analysis and visualization onwards to collaboration and through to publication. The project has expanded to enable a reproducible interactive computing environment for many other programming languages (such as R and Julia) and the language-agnostic parts of its architecture have recently been rebranded as Project Jupyter (\url{http://jupyter.org}). Jupyter notebooks allow for executable code, results, text and graphical output to coherently coexist in a single document. With these combined components, they are excellent tools both for conducting data analysis and presenting results.
 
-Underlying the {\bf PmagPy}  programs that are accessible through the command line and the GUI interfaces (e.g., {\bf Pmag GUI}) are two main function libraries: {\bf pmag.py} and {\bf pmagplotlib.py}. The functions within these modules can  be imported and called upon within a Jupyter notebook running a Python 2.7 kernel. In addition to these functions, Nick Swanson-Hysell created a module called {\bf ipmag.py} that is in active development and contains functions that replicate and extend some of the functionality that is found within the {\bf PmagPy}  command line programs for use in the notebook environment.
+Underlying the {\bf PmagPy}  programs that are accessible through the command line and the GUI interfaces (e.g., {\bf Pmag GUI}) are two main function libraries: {\bf pmag.py} and {\bf pmagplotlib.py}. The functions within these modules can  be imported and called upon within a Jupyter notebook running a Python 2.7 kernel. In addition to these functions, Nick Swanson-Hysell created a module called {\bf ipmag.py} that is in active development and contains functions that replicate and extend functionality that is found within the {\bf PmagPy}  command line programs for use in the notebook environment.
 
-To provide a glimpse of what is possible in terms of data analysis using {\bf PmagPy} in a notebook environment, we have created an example notebook that is available in the {\it IPmag\_notebook} folder in the {\it data\_files} folder downloaded as a part of  the {\bf PmagPy} package. This notebook (PmagPy\_notebook.ipynb} imports a data set downloaded from the  MagIC database,  plots them  and conducts some statistical analyses.
+To show some of what is possible in terms of data analysis using {\bf PmagPy} in a notebook environment, we have created example notebooks that are available for download from this repository: \url{https://github.com/PmagPy/2016_Tauxe-et-al_PmagPy_Notebooks}. These notebooks can also be viewed as static webpages here: \url{http://pmagpy.github.io/Example_PmagPy_Notebook.html} and \url{http://pmagpy.github.io/Additional_PmagPy_Examples.html}.
 
- In the notebook, reversal tests are conducted using both the \cite{mcfadden90}  implementation of the \cite{watson83} $V_w$ statistic test for a common mean and the bootstrap reversal test (\cite{tauxe91} and Section 11.3.4 in the textbook \url{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html}). The notebook can be viewed as a static webpage at this link \url{https://nbviewer.jupyter.org/github/swanson-hysell/2015_Tauxe-et-al_PmagPy_Notebook/blob/master/PmagPy_notebook.ipynb} or downloaded as executable code as detailed below.  The notebook example is also in the PmagPy\_Tutorial folder that you downloaded as the {\it data\_files}  folder (see \href{#quick_start}{Installing PmagPy}).
+The main example notebook (Example\_PmagPy\_Notebook.ipynb) combines data from two different studies for the sake of developing a mean paleomagnetic pole from the upper portion of a sequence of volcanics in the North American Midcontinent Rift \citep{halls74, swansonhysell14}.  The two data files used within the notebook can be downloaded from the MagIC database. The digital object identifier (doi) search option allows for the data files to be readily located as  \url{https://earthref.org/MagIC/doi/10.1139/e74-113/} and \url{https://earthref.org/MagIC/doi/10.1002/2013GC005180/}. Downloading these data files from the database and putting them into folders within a local `Project Directory' allows them to be accessed within the Jupyter notebook. Within the notebook, these data are unpacked into their respective MagIC formatted tab delimited data files. The data are then loaded into dataframes and filtered using several different criteria (stratigraphic height and polarity).  Several functions from the {\bf ipmag} module are used for making equal area projections and calculating statistics. In addition to combining the data sets to calculate the mean pole, the code in the notebook conducts a bootstrap fold test on the data using the approach of \cite{tauxe94} as well as a common mean test. The data recombinations and calculations done in this notebook are examples of portions of the data analysis workflow which are often difficult to document and reproduce. The examples illustrate a small sliver of the potential for the use of notebooks for data manipulation and analysis of paleomagnetic data. Additional functionality available within PmagPy is demonstrated within the additional {\bf PmagPy} examples notebook (Additional\_PmagPy\_Examples.ipynb) as small vignettes of example code. Functions related to paleomagnetic and rock magnetic data analysis are shown as examples. The notebook also illustrates some of the interactivity that can be built into the notebook utilizing IPython widgets.
 
-To execute and edit the notebook code yourself,  find it in the {\it data\_files} directory under PmagPy\_Tutorial.  If you installed the Enthought Canopy Python distribution you will have the IPython and Jupyter packages installed. If you have another Python distribution you will want to make sure that you have IPython and Jupyter (installation instructions can currently be found here: \url{http://ipython.org/install.html} and here: \url{http://jupyter.readthedocs.org/en/latest/install.html}). The example notebook was created using IPython version 2.3. To view and edit it,  type {\bf ipython notebook} on the \href{#command_line}{command line}.  This   will open up a local IPython server in your default web browser within which you can use the directory to navigate to the data\_files folder. Click on it to open and edit. You will see something like this:
+To execute and edit notebook code yourself, you can clone or download this repository: \url{https://github.com/PmagPy/2016_Tauxe-et-al_PmagPy_Notebooks}.  If you installed the Enthought Canopy or Anaconda Python distribution you will have the IPython and Jupyter packages installed. If you have another Python distribution you will want to make sure that you have IPython and Jupyter (installation instructions can currently be found here: \url{http://ipython.org/install.html} and here: \url{http://jupyter.readthedocs.org/en/latest/install.html}). To view and edit the notebooks,  type {\bf ipython notebook} or {\bf jupyter notebook} on the \href{#command_line}{command line}.  This command will open up a local IPython server in your default web browser within which you can use the directory to navigate to the data\_files folder. Click on it to open and edit. You will see something like this:
 
 \includegraphics[width=15cm]{EPSfiles/notebook.eps}
 
-Notebooks are constructed as a series of `cells' which can be text or code among other things.  To view the `source' of a text cell, just click on it.  To render it, click on the `run' button (sideways triangle on the toolbar).  Similarly, to run the code in a code cell, click on the cell and then the `run' button.   To execute the entire notebook, click on the `Cell' button and choose 'Run All'.
+Notebooks are constructed as a series of `cells' which can be text or code.  To view the `source' of a text cell, just click on it.  To render it, click on the `run' button (sideways triangle on the toolbar).  Similarly, to run the code in a code cell, click on the cell and then the `run' button (or use the shift+enter short cut).   To execute the entire notebook, click on the `Cell' button and choose 'Run All'.
 
- The first step  to using the notebook is to let it  know where you put all the {\bf PmagPy} code. The default location for this on  MacOS is in a folder called {\it PmagPy} in your home directory (e.g., /Users/YOUR\_NAME\_HERE/PmagPy) and on Windows is in the Documents folder (e.g., 'C:\\Users\\YOUR\_NAME\_HERE\\Documents\\PmagPy'. You must modify the line `sys.path.insert(0, `/Users/......') to reflect your own path.   After that is set, run the first code block.   Now the {\bf PmagPy} modules are available to use within the notebook.  The next  code block  imports several  Python modules useful for scientific computing (numpy),  data manipulation (pandas) and plotting (matplotlib).  Run this code block to make these functions available to the notebook.
+To use {\bf PmagPy} within the notebook, the {\bf PmagPy} function modules need to be in your Python path. This . There are two ways to do this. One way is to have your .profile or .bash_profile have a line in it that reads :
+
+\begin{verbatim}
+PYTHONPATH=$PYTHONPATH:~/PmagPy
+\end{verbatim}
+
+Another way is to set the path to the location of your PmagPy folder within the notebook itself. The default location on  MacOS is in a folder called {\it PmagPy} in your home directory (e.g., /Users/YOUR\_NAME\_HERE/PmagPy) and on Windows is in the Documents folder (e.g., 'C:\\Users\\YOUR\_NAME\_HERE\\Documents\\PmagPy\\PmagPy'. To do this you must \texttt{import os} and then have a line that reads \texttt{sys.path.insert(0, `/Users/......')} where the path reflects your own path.   If PmagPy is in your path you should be able to run the first code block which imports the {\bf PmagPy} modules and makes them availible available to use within the notebook.  The notebooks also import several other Python modules useful for scientific computing (numpy),  data manipulation (pandas) and plotting (matplotlib).
 
  Now you are ready to look at some data.  In the code block under the heading `Reading data from MagIC format results files',  data are read in from a file \href{#magic_download}{downloaded} and unpacked from the MagIC database.   The notebook shows how to read in the data into a \href{#pandas}{pandas DataFrame}, and plot the directions on an equal area projection:
 
@@ -6831,19 +6837,19 @@ Although there is much much more to do in Python, this documentation is aimed at
 \section{Problems with installing Python or PmagPy}
 
 \begin{enumerate}
-  
+
  \item Nothing works as advertised!
 
- 
+
   \begin{itemize}
- 
- \item First, please test that you have successfully installed the appropriate Python distribution.  
- 
+
+ \item First, please test that you have successfully installed the appropriate Python distribution.
+
  \item For Mac users, find your command line (Terminal) and type ``python".  You should see something like this:
 
 
 \begin{verbatim}$ python
-Enthought Canopy Python 2.7.6 | 64-bit | (default, Jun  4 2014, 16:42:26) 
+Enthought Canopy Python 2.7.6 | 64-bit | (default, Jun  4 2014, 16:42:26)
 [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
@@ -6857,13 +6863,13 @@ Type "help", "copyright", "credits" or "license" for more information.
 Enthought Python Distribution -- www.enthought.com
 Version: 7.3-2 (32-bit)
 
-Python 2.7.3 |EPD 7.3-2 (32-bit)| (default, Apr 12 2012, 11:28:34) 
+Python 2.7.3 |EPD 7.3-2 (32-bit)| (default, Apr 12 2012, 11:28:34)
 [GCC 4.0.1 (Apple Inc. build 5493)] on darwin
 Type ``credits", ``demo" or ``enthought" for more information.
 >>>
 \end{verbatim}
 
-\item If you don't see one of the above messages, you have not fully installed the Python distribution.  You'll need to try again.  For Mac users, in order to complete the install you must start Canopy (it will be in Applications) and select ``yes'' to use Canopy Python as your default Python.  For Windows users, you should be prompted during the install process to make Enthought Python your default Python, and you need to select yes.  
+\item If you don't see one of the above messages, you have not fully installed the Python distribution.  You'll need to try again.  For Mac users, in order to complete the install you must start Canopy (it will be in Applications) and select ``yes'' to use Canopy Python as your default Python.  For Windows users, you should be prompted during the install process to make Enthought Python your default Python, and you need to select yes.
 
 \end{itemize}
 
@@ -6880,7 +6886,7 @@ When you try to run eqarea.py -h to test your installation, you get this error m
 \begin{verbatim} -bash: eqarea.py: command not found
 \end{verbatim}
 
-There are a few possible reasons for this failure, the most common of which is that your path has not been correctly set.  To test this, type ``echo \$PATH" in your command line.  
+There are a few possible reasons for this failure, the most common of which is that your path has not been correctly set.  To test this, type ``echo \$PATH" in your command line.
 
 You will see something like this:\\
 %\begin{verbatim}
@@ -6888,7 +6894,7 @@ You will see something like this:\\
 /Users/****/Library/Enthought/Canopy\_64bit/User/bin: /usr/local/bin: /usr/local/share/npm/bin: /usr/bin: /bin: /usr/sbin: /sbin: /usr/local/bin: /opt/X11/bin: /Users/****/PmagPy:/usr/texbin\\
 %\end{verbatim}
 
-Your \$PATH may look very different, but as long as you have the complete path to the PmagPy directory in there, you are golden.  If the directory is not in your path, you can try re-running the PmagPy install script, which should set your path correctly  for you.  If that doesn't work, go to your home directory (to get there, type ``cd" in your command line).  Use a text editor to open a file called .bash\_profile and add these lines:  
+Your \$PATH may look very different, but as long as you have the complete path to the PmagPy directory in there, you are golden.  If the directory is not in your path, you can try re-running the PmagPy install script, which should set your path correctly  for you.  If that doesn't work, go to your home directory (to get there, type ``cd" in your command line).  Use a text editor to open a file called .bash\_profile and add these lines:
 
 \begin{verbatim}export PATH=/Users/***/PmagPy:$PATH\end{verbatim}
 \begin{verbatim}export PATH=/Users/***/PmagPy/programs:$PATH\end{verbatim}
@@ -6899,11 +6905,11 @@ where *** is your username.  Then restart your Terminal.  If it still doesn't wo
 
 \item For Windows users:
 
-\begin{verbatim} "eqarea.py" is not recognized as an internal or external command, 
+\begin{verbatim} "eqarea.py" is not recognized as an internal or external command,
 operable program or batch file.
 \end{verbatim}
 
-Setting your path should not be an issue in Windows if you are using the PmagPy prompt (created by the install script).  PmagPy functionality will be available only in the custom Command Prompt, so make sure you are using it.  However, if you do need to set your path for some reason, see:  
+Setting your path should not be an issue in Windows if you are using the PmagPy prompt (created by the install script).  PmagPy functionality will be available only in the custom Command Prompt, so make sure you are using it.  However, if you do need to set your path for some reason, see:
 
  \href{http://www.mathworks.com/matlabcentral/answers/94933-how-do-i-set-my-system-path-under-windows}{Setting your Path in Windows}
 
@@ -7054,6 +7060,13 @@ Swanson-Hysell, N., Maloof, A.~C., Weiss, B.~P., \& Evans, D. (2009).
 \newblock No asymmetry in geomagnetic reversals recorded by
   1.1-billion-year-old keweenawan basalts.
 \newblock {\em Nature Geoscience}, 2, 713--717.
+
+\bibitem[{{\it Swanson-Hysell et~al.\/}(2014){\it Swanson-Hysell, Vaughan,
+  Mustain, and Asp\/}}]{swansonhysell14}
+Swanson-Hysell, N.~L., A.~A. Vaughan, M.~R. Mustain, and K.~E. Asp,
+\newblock Confirmation of progressive plate motion during the Midcontinent Rift's early
+  magmatic stage from the Osler Volcanic Group, Ontario, Canada.
+  \newblock {\em Geochem., Geophys., Geosyst.}, 15, 2039--2047, 2014.
 
 \bibitem[Tauxe, 1998]{tauxe98}
 Tauxe, L. (1998).
