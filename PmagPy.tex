@@ -501,281 +501,8 @@ The supported file formats are:
  See the documentation for  \href{#AGM\_magic.py}{AGM\_magic.py} for examples.
 
 
-%
-%\subsubsection{Prior interpretations}
-%
-%If you already have a  \href{#mk_redo.py}{PmagPy ``redo''} file, you can import it into the MagIC folder with this option.
-%
-%Many investigators are used to their own data analysis routines (e.g., LSQ and PMM).  These are not supported at this time.  If you have example files and want to see them supported within {\bf Pmag GUI}, please send them to me at:  ltauxe@ucsd.edu.
-% and some of the outputs of these programs(e.g., \href{#LSQ}{LSQ } and \href{#PMM}{PMM} files) can be imported into the MagIC folder.
-
 Now you've collected together all the files you need, we can start importing them into {\it MagIC} directory with   \href{#convert2magic}{\bf Step 1 in Pmag GUI}.
 
-
-%
-%
-%\subsubsection{Import MagIC formatted file}
-%
-%There are a number of other datafiles necessary for uploading into the MagIC database, such as the {\it er\_locations.txt, er\_ages.txt, er\_citations.txt}, etc. files.  These tab delimited text files can be created with Excel (or other program) and imported into your MagIC folder with this option.
-%
-%\section{Using the MagIC.py GUI}
-%The MagIC.py graphical user interface is a Python program that facilitates importing of measurement data and sample information (location, orientation, etc.) into the MagIC format and interpretation thereof. It will help prepare all the files into a text format that can be imported directly into a \href{http://earthref.org/cgi-bin/help.cgi?lib=magic\qquad &id=140}{MagIC smartbook}. MagIC.py copies files to be uploaded into a special project MagIC directory, translates them into the MagIC format and keeps track of things in various log files.  Note that when it does this, it  will translate them into a Unix file format (from MacOS and Windows file formats) so you don't have to.  Once the \href{#Project_Directory} {MagIC project directory} has been created, you should just leave it alone.  Assuming you have placed all the needed files (orient.txt formatted files for each location and the measurement data files) in the {\it MyFiles} directory, open up a \href{#command_line }{terminal window} and type MagIC.py on the command line. Select the MagIC directory in your \href{#Project_Directory}{Project Directory} when prompted.
-%
-%
-%\subsection{The File menu}
-%Different operating systems will have a different look, but all versions will put up a Welcome window when you have fired up the program MagIC.py. When you pull down the ``File`` menu, you will see these options either on the top of your Desktop (Mac OS) or on the top of the window itself (Windows version):
-%
-%\includegraphics[width=15cm]{EPSfiles/FileMenu.eps}
-%
-%\begin{itemize}
-%\item  Change Project MagIC Directory: Allows you to switch the Project Directory that you are working in without exiting the program.
-%\item Clear Project MagIC Directory: Erases all files in the current directory - be careful with this one!
-%\item Unpack Downloaded txt file: After downloading a text file from the MagIC website, you can unpack the contents into a MagIC project directory and work on it using the PmagPy software using this option. This link calls the program \href{#download\_magic.py}{download\_magic.py}.
-% \item    Exit: Quits the MagIC.py program.
-% \end{itemize}
-%
-% %\customlink{ImportMenu}
-%
-% \subsection{The Import Menu}
-% When you pull down the ``Import'' menu, you will see these options:
-%
-% \includegraphics[width=15cm]{EPSfiles/ImportMenu.eps}
-%
-% \subsubsection{Importing field and sampling information}
-% Under the `Orientation/location/stratigraphic files' menu, you will find:
-%
-%   %\customlink{ImportOrient}
-%
-% \begin{itemize}
-% \item orient.txt format: imports \href{#field\_info}{orient.txt} files by calling the program \href{#orientation_magic.py}{orientation\_magic.py}. The GUI first copies your file into the MagIC Project Directory, presents you with a few forms to fill out and then generates the correct switches for the command line call.
-% 	\begin{itemize}
-%	\item 	Select orientation file:  choose your orient.txt file from MyFiles
-%	\item Select naming convention:  Here you explain the relationship between your sample name and the site name. (see \href{#naming_schemes}{supported naming schemes} for more info).
-%	\item Select orientation convention...:  Choose the transformation of your \href{#orientation_schemes}{field convention} to the Lab arrow (the direction of the 'X' arrow used in measurements.  Also, choose whether you want to use the IGRF value calculated by PmagPy for the site latitude, longitude and date,  or you want to supply your own blanket correction to all data in the file.  You can also supply the correct azimuth in the file and perform no further corrections (DEC=0 option).  If the GUI finds sun compass information, it will ask you how many hours to ADD to the time given in the file to get to Greenwich Mean Time (GMT).
-%	\item  Select method codes: Choose which \href{#method_codes}{method codes} should be attached to ALL samples.  For example, if they were all drilled in the field, then check 'FS-FD'.
-%	\item Update and append...:  If the GUI detects an existing {\it er\_samples.txt} file from a previous import, it will ask if you want to overwrite it (select no) or append to it - note that sample names used before will be overwritten in any case.
-%	\end{itemize}
-%	The GUI will then generate a call with the appropriate switches and your orientation data will be imported.  NOTE: If you have already combined your measurements files into the master {\it magic\_measurements.txt} file AND you have changed site designations using the site\_name option in the {\it orient.txt} file, you should select ``Update measurements'' to change the site names in that file (these get propagated all the way down the line, so it is important to do this step correctly.
-% \item AzDip format:  imports \href{#AZDIP}{AzDip} format files with the \href{#azdip_magic.py}{azdip\_magic.py} program.  Select \href{naming_schemes}{naming convention} and  \href{#method_codes}{method codes} as before.  The orientation is assumed to be the azimuth and plunge of the samples Z direction.  This procedure will only update the {\it er\_samples.txt} file and will not have any location information, so you should convert the er\_samples.txt file created into an {\it orient.txt} file using  the method outlined \href{#samp2orient}{below}, file in the required fields and re-import that into the MagIC directory (be sure to \href{#updatemeas}{update} your measurements file.
-%
-% %\customlink{IODP_core_summary}
-%
-%  \item IODP Core Summary csv file: Imports the \href{#LIMS}{IODP} core summary files downloaded from the \href{http://web.iodp.tamu.edu/WTR/html/}{LIMS} database website.
-% \item IODP Sample Summary csv file: Imports the \href{#LIMS}{IODP} sample summary file downloaded from the \href{http://web.iodp.tamu.edu/WTR/html/}{LIMS} database website.   This will append to an existing data file, keeping only unique sample names.
-% \item Import model latitude data file:  A `model latitude' is a latitude inferred from either inclination data, or some plate tectonic reconstruction.  This file can be used to calculate for example, virtual axial dipole moments (VADMs), or, with the model longitude, a VGP.  Use this option to copy a file with the format:
-% er\_site\_name   model\_lat   model\_lon, where the model\_lat is the model latitude and the (optional) model\_lon is the model longitude.  This will be copied into the project directory under the name {\it model\_lat.txt}.
-%\end{itemize}
-%
-%%%
-%%% \subsection{Importing magnetometer data}
-%%%
-%%%When you click on `convert magnetometer files',  you will find a variety of  file formats described in the section on
-%%%\href{#magnetometer_files}{magnetometer files}.
-%%%\includegraphics[width=15cm]{EPSfiles/ImportMagnetometer.eps}
-%%%Each of these has an idiosyncratic interface.  Some allow importing of entire directories at once, while others import data file by file.   Be sure to \href{#combine_measurements}{combine your measurements} after you finish importing all your measurements, before proceeding to data analysis.
-%%%
-%%%
-%%%%\customlink{SIO}
-%%%
-%%%\begin{itemize}
-%%%\item SIO format:   This option will generate a command line call to the program \href{#sio_magic.py}{sio\_magic.py}.  There are many options for laboratory procedures, naming conventions and so on and the {\bf Pmag GUI} GUI attempts to walk you through the process with as little pain as possible.
-%%%	\begin{itemize}
-%%%	\item Select \href{#naming_schemes}{naming convention}:  Here you explain the relationship between your sample name and the site name.
-%%%	\item Fill in the following information:  Ylou should really really fill in the \href{location_name}{location name} for this file - it will save you time later if you want to upload your data into the MagIC database.  If your specimen/sample relationship is simply to add some characters to te end of your sample name (for example specimen mc144a1 belongs to sample mc144a), fill in the number of characters you use (unless it is '1' as in this case, because that is the default).  If you have some complicated system (for example specimen `\@\#\#\$\%\&\%` belongs to sample `Harry', we can't help you here and you'll have to fill out all the sample names later by hand.  (That should teach you a lesson).
-%%%
-%%%		\includegraphics[width=15cm]{EPSfiles/make_sio.eps}
-%%%
-%%%		You should also check one of the lab protocols you used.
-%%%		\begin{itemize}
-%%%		\item  If these data were ARMs,  check the AF box and fill in the peak AF and dc field values to the right.  If the lab field direction was not along -Z, then fill in what it was.
-%%%		\item  If the data included TRMs from a Thellier or TRM anisotropy experiment, fill in the DC field and orientation (but not the peak AF field.)
-%%%		\item If the data were for a TRM acquisition experiment, check the TRM box (but not the 'T' box).
-%%%		\item  If these data were part of an anisotropy experiment, check the 'ANI' box and the appropriate AF, T, I box for the type of remanence anisotropy experiment it was.
-%%%		\item If the data were IRMs check that box.  If the treatment values were in volts on an ASC impulse coil, give the coil number (1,2, or 3) in the appropriate box.
-%%%		\item If the data were part of a Lowrie 3D-IRM experiment (Lowrie, 1990),  \nocite{lowrie90} then check that box.
-%%%		\end{itemize}
-%%%	\end{itemize}
-%%%	\item 2G format:   This import procedure generates calls to \href{#2G_bin_magic.py}{2G\_bin\_magic.py}.  It  differs from that for \href{#SIO}{SIO} formatted in several ways:
-%%%	\begin{itemize}
-%%%	\item Because 2G  files contain measurements for single specimens, there is usually a directory with many files.  Importing each file individually is painful, so {\bf Pmag GUI}  asks for the directory name and imports ALL files with file endings of .dat or .DAT.
-%%%	\item No lab protocol need be specified.
-%%%	\item You create an {\it er\_samples.txt} file from the magnetometer file.  For that you should specify at least the orientation method used (e.g., magnetic, sun or sighting), otherwise it is assumed that these are unoriented samples.  The {\it er\_sample.txt} file is very minimalist, having no lithology information, required for a MagIC database contribution.  So after importing the files, you should use the \href{#samp2orient}{Convert samples =$>$ orient.txt} option, file in the required information following the instructions \href{#field_info}{here}, then re-import it into your Project Directory.
-%%%	\end{itemize}
-%%%
-%%%\item LDEO format:  This import procedure is identical to that for \href{#SIO}{SIO} formatted files but generates calls for \href{#LDEO_magic.py}{LDEO\_magic.py}.
-%%%\item CIT format:   This format is the `CIT' format used by Craig Jone's {\bf PaleoMag} software package (\url{http://cires.colorado.edu/people/jones.craig/PMag3.html}).   {\bf Pmag GUI} generates calls to the program \href{#CIT_magic.py}{CIT\_magic.py}.       The GUI import option behaves in a similar fashion to the \href{#SIO}{SIO format} import, but you don't specify lab protocol and you can specify method codes.  In the absence of method codes, it is assumed the samples were oriented with magnetic compass.
-%%%\item UU format
-%%%\item UB format
-%%%
-%%%\item UCSC formats
-%%%\item LIV-MW format
-%%%\item HUJI format:  This import procedure is identical to that for \href{#SIO}{SIO} formatted files  but generates calls for \href{#HUJI_magic.py}{HUJI\_magic.py}.
-%%%\item IODP format:    This is a pretty simple operation.  Select the file downloaded from the  \href{#LIMS} {LIMS} database and choose whether you want to average replicate measurements or not.  This makes a call to \href{#IODP_csv_magic.py}{IODP\_csv\_magic.py} to do the dirty work.
-%%%
-%%%\item PMD (Enkin) format:  This import procedure is identical to that for \href{#2G-bin}{2G binary files} except it makes calls to \href{#PMD_magic.py}{PMD\_magic.py}.
-%%%
-%%%\item UMICH (Gee) format
-%%%\item TDT format:  This import procedure is similar to that for \href{#SIO}{SIO} formatted files, generating calls to \href{#TDT_magic.py}{TDT\_magic.py}.  Obviously, you would check the box labelled T and none of the others!   If you want to specify the lab field direction (which may not be parallel to -Z as in the SIO lab, you also have to specify the lab field strength in $\mu$T, even though it is in the file.
-%%%\item JR6 format
-%%%
-%%%\end{itemize}
-%%%
-%%%
-%%%\section{Import menu option}
-%%%
-%%%Under the Import menu  on the top menu bar, you will find the option of  importing several different kinds of anisotropy data files and hysteresis data.
-%%%
-%%%%\customlink{ImportAnisotropy}
-%%%
-%%%\subsection{Importing Anisotropy of magnetic susceptibility data}
-%%%
-%%%
-%%%
-%%%
-%%%\begin{itemize}
-%%%\item \href{#s_magic.py}{The 6 tensor element format (.s)}
-%%%\item \href{#KLY4S_magic.py}{LabView program} of Gee et al. 2008: \nocite{gee08}
-%%%You first select the KLY4S format input file then the  \href{#naming_schemes}{naming convention}.  After that, input your \href{#location_name}{location name} (strongly encouraged), the measurer (optional), the number of characters to distinguish specimen from sample and the instrument used (optional).    \href{#Combining_measurement_files}{Combine} your measurement files when your are through, to plot versus depth  file or as equal area projections (suitable sample \href{#ImportOrient}{orientation} required).
-%%%\item \href{#k15\_magic.py}{15 measurement file format of Tauxe 1998: \nocite{tauxe98}} This import procedure is the same as for the KLY4S file format.
-%%%\item \href{#susar4-asc\_magic.py}{SUSAR 4.0 ascii output for Kappabridge}
-%%%\item \href{#SUFAR4-asc\_magic.py}{SUFAR 4.0 ascii output for Kappabridge}: This import procedure is the same as for the KLY4S file format.
-%%%
-%%%\end{itemize}
-%%%
-%%%%\customlink{ImportHysteresis}
-%%%
-%%%\subsection{Importing hysteresis data}
-%%%
-%%%
-%%%There are two different modes for importing hysteresis/backfield data:  by file or by directory.  For the former:
-%%%\begin{enumerate}
-%%%\item Select the file.
-%%%\item Select the  \href{#naming_schemes}{naming convention}.
-%%%\item Enter the location name, optional measurer, and instrument name, and the specimen name and number of characters to delineate the specimen from the sample.
-%%%\item Indicate whether the file is in cgs or SI units and whether this was an IRM backfield experiment
-%%%\end{enumerate}
-%%%
-%%%For importing whole directories:   Your file names must follow the convention described in the section on \href{#Hysteresis_file_formats}{hysteresis file formats}.   Follow the same steps as before, but you will not be asked for a specimen name or whether the data are from backfield experiments as these are supplied by the file names.
-%%%
-%%%When you are finished importing all the measurement data you need, choose ``Next step''  \href{#Combine}{Step 1. of   Pmag GUI}.
-%%%
-%%%
-%%%
-%%%%\customlink{Combining_measurement_files}
-%%%
-%%%\subsubsection{Combining measurement files}
-%%%Each time you import a measurement file, you create a MagIC version of the imported data file with the same name, but a .magic appended to the end.  These filenames are stored in the file {\it measurements.log}.  After you have completed importing all your measurement files, you must combine them together into a single {\it magic\_measurements.txt} file in order to use the other functions in MagIC.py.  Just select this option and everything will be done for you.
-%%%
-%%%
-%%%%\customlink{samp2orient}
-%%%
-%%%\subsubsection{Creating an orient.txt file from er\_samples}
-%%%
-%%%
-%%%This option makes a call to \href{#convert_samples.txt}{convert\_samples.txt} to convert the {\it er\_samples.txt} file created by some import procedures into an {\it orient.txt} file which can be filled in as desired.  It can be re-imported by \href{#ImportOrient}{importing orientation} information.   After re-importing the orient.txt file, you should update your measurements.
-%%%
-%%%%\customlink{updatemeas}
-%%%
-%%%\subsubsection{Update measurements:}
-%%%
-%%%Update your {\it magic\_measurements.txt} file with new site/location information by calling the program \href{#update_measurements.py}{update\_measurements.py}.  This should be done after \href{#ImportOrient}{importing a new {\it orient.txt} file}.
-%%%
-%%%
-%%%\subsubsection{Importing prior interpretations}
-%%%Many people prefer to use the software package that they are familiar with (e.g., \href{#PMD_magic.py}{PaleoMac software of Cogn\'e, 2003)}, \nocite{cogne03}  \href{#CIT_magic.py}{Craig Jones' {\bf PaleoMag} software},  or even previously processed Pmag (Tauxe, 1998) or PmagPy (Tauxe et al., 2010) softare and have generated files containing favorite interpretations of the paleomagnetic data.  MagIC.py can import these interpretation files, allowing the user to skip re-analysis and proceed directly to preparation of files for uploading, or re-interpretation of data files using PmagPy starting with the prior interpretations as a basis.    In any case, the following interpretation files are supported (or could be):
-%%%
-%%%%\customlink{import_redo}
-%%%
-%%%\begin{itemize}
-%%%\item {PmagPy redo file}:   This option copies the files used by \href{#zeq_redo.py}{zeq\_magic\_redo.py}, \href{#thellier_gui.py}{thellier\_gui.py}  and \href{#thellier_magic_redo.py}{thellier\_magic\_redo.py} and then runs them (see documentation in \href{#mk_redo.py}{mk\_redo.py} for file formats.  This will overwrite any existing interpretation files ({\it zeq\_specimen.txt} or {\it thellier\_specimens.txt}) files you may have created already, so be careful!  Also, this is the main way that the  \href{#thellier_gui.py}{thellier\_gui.py} shares information with the MagIC.py GUI, so import the redo file generated by the auto-interpreter (e.g., {\it thellier\_interpreter\_STDEV-OPT\_redo}  with this option and you will be able to use them within the MagIC.py GUI.
-%%%\item DIR:  Not supported at this time $=>$ if desired send example file to {ltauxe@ucsd.edu}
-%%%\item LSQ:  Not supported at this time $=>$ if desired send example file to {ltauxe@ucsd.edu}{ltauxe@ucsd.edu}
-%%%\item PMM: Not supported at this time  $=>$if desired send example file to {ltauxe@ucsd.edu}
-%%%
-%%%\end{itemize}
-%%%
-%%%
-%%%%\customlink{ImportMagIC}
-%%%
-%%%\subsubsection{Copying over your MagIC formatted files}
-%%%If you have already some MagIC tables ready,  you can import them into your MagIC folder with this option.  For example, you might have a previous set of specimen interpretations in a {\it pmag\_specimen.txt} file, or age information (in an {\it er\_ages.txt} file.  All age information specific to a give sample or site can be documented in an {\it er\_ages.txt} file (see \url{http://earthref.org/MAGIC/metadata.htm}).  These will be assembled with the respective site/samples in the results table when you \href{#PrepareMagicConsole}{assemble your results}. Other examples might be a location table ({\it er\_locations.txt}) or a citation table ({\it er\_citations.txt}).
-%%%
-%%% This option will copy your \href{#DataTables}{MagIC} formatted file into the MagIC Project Directory.  Be sure to use the standard file names or the MagIC GUI will ignore them.
-%%%
-%%%%\customlink{AnalysisPlotsMenu}
-%%%
-%%%\subsection{Analysis and Plots Menu}
-%%%
-%%%After you have imported your various datafiles, you can process them using the tools in the \href{#AnalysisPlotsMenu}{Analysis and Plots menu}.    All of these options generate and execute command line calls for various \href{#PmagPy}{PmagPy} programs.  The {\bf MagIC.py} GUI uses default options because it ``knows'' the names of the files it has created, saving you from having to figure that out.   Many of these options require you to type things in on the command line, such as 'a' to s[a]ve plots, 'q' to quit, or simply return to increment the specimen name.  Follow the instructions for the specific program that are printed  in the terminal window   (see also the documentation in the section on \href{#PmagPy}{PmagPy} programs). Once the program has exited, control will be returned to the MagIC.py GUI.
-%%%
-%%%%\customlink{customize_criteria}
-%%%
-%%%\begin{itemize}
-%%%\item Customize Criteria: here you can change your criteria for acceptance or rejection of data.
-%%%		\item Demagnetization Data:  allows you to call  the programs \href{#zeq_magic.py}{zeq\_magic.py} or \href{#demag_gui.py}.  These reads in the {\it magic\_measurements.txt} file created when you \href{#Combining_measurement_files}{combine} your imported  measurement files.  If you have \href{#ImportOrient }{imported orientation} information, it will make the plots using the geographic coordinate system.
-%%%		\item Thellier-type experiments:  There are two options here.  The first calls the program \href{#thellier_magic.py}{thellier\_magic.py} and the second calls \href{#thellier_gui.py}{thellier\_gui.py}.  Both  read in the {\it magic\_measurements.txt} file created when you \href{#Combining_measurement_files}{combine} your imported  measurement files.   The {\bf thellier\_gui.py} program works a little differently than the other {\bf PmagPy} programs in that the output interpretations are   not immediately  available to {\bf MagIC.py} when you quit {\bf thellier\_gui.py}.  To use the interpretations, for example from  the auto-interpreter function, you must \href{#import_redo}  import the redo file as described under the Import menu.  You will find the auto-interpreter redo file in the  with the {\it thellier\_interpreter} folder.
-%%%		 %\item Microwave experiments
-%%%                  \item Equal area:
-%%%		\begin{itemize}
-%%%			\item Quick look - NRM directions:  This option first fishes out all the NRM measurements from the {\it magic\_measurements.txt} file and stores them in a file called {\it nrm\_measurments.txt}.  The measurement format is then converted to the {\it pmag\_specimen.txt} format using \href{#nrm_specimens_magic.py}{nrm\_specimens\_magic.py}, which also looks for an {\it er\_samples.txt} file and  performs geographic and stratigraphic rotations as available. The GUI will ask for desired coordinate system and level of plotting (by location, site, sample, etc. and then  call the program \href{#eqarea_magic.py}{eqarea\_magic.py} to plot the NRM directions.
-%%%			\item General remanence directions:  You are given a choice of tables from {\it pmag\_specimens.txt} up to {\it pmag\_results.txt}, depending on the desired level. You may also choose from among the available coordinate systems and scope of the plot(s) (e.g., location, site, sample).   There are several methods available for estimated confidence bounds for the data set including Fisher, Bingham, Kent or bootstrap.  Plots are made with \href{#eqarea_magic.py}{eqarea\_magic.py}.
-%%%			\item Anisotropy data - equal area plots: makes plots with the \href{#aniso_magic.py}{aniso\_magic.py} program.  You can choose the scope of the plot and the method for estimating confidence intervals.
-%%%
-%%%		\item Hysteresis data:   calls \href{#hysteresis_magic.py}{hysteresis\_magic.py} to plot the data that you  \href{#ImportHysteresis}{imported} and \href{#Combining_measurement_files}{combined} into a {\it magic\_measurements.txt} file.  It generates a file {\it rmag\_hysteresis.txt} with all the hysteresis parameters calculated by the program.  These can be plotted using the 'Hysteresis ratio plots' command.
-%%%		\item Hysteresis ratio plots: This calls \href{#dayplot_magic.py}{dayplot\_magic.py} to make plots of hysteresis ratios and the like in the {\it rmag\_hysteresis.txt} file created by \href{#hysteresis_magic.py}{hysteresis\_magic.py}.
-%%%		\item IRM acquisition: This calls \href{#irmaq_magic.py}{irmaq\_magic.py} to make plots of IRM acquisition and back field curves.  It uses the {\it magic\_measurements.txt} file created when you \href{#Combining_measurement_files}{combine} your imported  IRM data.
-%%%		\item 3D-IRM experiment:   makes plots of the \nocite{lowrie90} 3D-IRM experiment of Lowrie (1990),  \nocite{lowrie90} using the program \href{#lowrie_magic.py}{lowrie\_magic.py}.   It uses the {\it magic\_measurements.txt} file created when you \href{#Combining_measurement_files}{combine} your imported  3D-IRM data and allows the option to normalize the intensity data by the NRM.
-%%%		\item Remanence versus depth/height:   makes plots using a call to \href{#core_depthplot.py}{core\_depthplot.py}.  The GUI allows customization of the plot with choice of data type (inclination, declination, etc.), time scale, depth scale, and customization of plot symbols.  If you have imported a \href{#IODP_core_summary}{core summary file}, you can plot the core tops as well.  There is a choice of depth scales with a common depth scale (mcd) as an option.
-%%%		\item Anisotropy data versus depth/height:  makes plots using a call to \href{#ANI_depthplot.py}{ANI\_depthplot.py}, reading the {\it rmag\_anisotropy.txt} and {\it magic\_measurements.txt} files in the Project Directory.
-%%%		\end{itemize}
-%%%		\item Reversals test: performs a bootstrap reversals test with the \href{#revtest_magic.py}{revtest\_magic.py} program.  You can choose coordinate system and selection criteria.
-%%%		\item Fold test: performs a fold test with \href{#foldtest_magic.py}{foldtest\_magic.py} and allows choice of selection critieria.  Note - it takes a while so be patient and you need to have \href{#ImportMenu}{imported} structural corrections.
-%%%
-%%%\end{itemize}
-%%%
-%%%%\customlink{PrepareMagic}
-%%%
-%%%\subsection{Prepare for MagIC}
-%%%Once all your data have been imported and interpreted using one of the interpretation tools outlined in the section on \href{#AnalysisPlotsMenu}{Analysis and Plots}, you can assemble the results into the various \href{#DataTables}{tables} expected by MagIC, e.g., the {\it pmag\_specimens, pmag\_samples, pmag\_sites} and {\it pmag\_results} tables (also various rock magnetic tables, if available).
-%%%\begin{itemize}
-%%%		\item Assemble specimens: The various programs for interpreting measurement data like \href{#zeq_magic.py}{zeq\_magic.py} or \href{#thellier_magic.py}{thellier\_magic.py} produce {\it pmag\_specimens.txt} formatted files with names like {\it zeq\_specimens.txt} or {\it thellier\_specimens.txt}.  The directional data should be recalculated for various coordinate systems and the intensity data corrected for anisotropy corrections and the like.  All of these data need to be assembled into a single {\it pmag\_specimens.txt} file, which is what this option does.
-%%%
-%%%		%\customlink{AssembleResults}
-%%%
-%%%		\item Assemble results:   After assembling the specimen data into a single {\it pmag\_specimens.txt} file, data must be averaged by sample and/or by site and stored in {\it pmag\_sample.txt} and {\it pmag\_site.txt} tables.  The directional data can be converted to VGPs and intensities into V[A]DMs, which are kept in the {\it pmag\_results.txt} table. Study level averages such as paleomagnetic pole positions can be calculated.  All of these operations are carried out by the program \href{#specimens_results_magic.py}{specimens\_results\_magic.py}.
-%%%		\begin{itemize}
-%%%			\item You have a choice of selection criteria (default, existing (created with the \href{#customize_criteria}{customize criteria} option, and none).
-%%%			\item For many applications, data are normally averaged first by sample, then by site and this is the default.  But and argument could be made that in certain circumstances (e.g.,  with intensity data in which each specimen is independent of the other), site averages could be made using all the specimen data together and not averaging by sample.  Choose  -aD to average directions by site and not by sample and -aI to average intensities by site and not by sample. Also, choose -sam to calculate sample level VGPs and VADMs if desired. Otherwise, the program will do this for site level data onlly.
-%%%			\item For calculating VDMs, you need oriented inclinations and for VADMs, you need a latitude.  The latitude can be the present latitude or a reconstructed paleolatitude (model latitude).  To choose the present latitude, select '-lat' or \href{#ImportMenu}{import} a model latitude file and choose that option.
-%%%			\item  The -p option lets you  look at the data site by site to check if there are terrible errors.  If you want to reconsider some of the sample orientations, for example, you should use the option in the \href{#Utitlities}{Utitlities menu} to check the sample orientations for common mistakes.
-%%%			\item You can just skip the directional (-xD) or intensity (-xI) calculations if they are not relevant (this speeds things up a bit).
-%%%			\item If you want to calculate normal and reverse means for the study, select -pol.
-%%%			\item You can choose which coordinate systems you want to include in the MagIC tables. The GUI sniffs through the options and presents them to you.
-%%%			\item The MagIC database wants all non-synthetic data to have ages associated with them.  Site/sample specific ages are entered using the {\it er\_ages.txt} table (imported in the {Import er\_ages option} in the \href{#er_ages}{Import Menu}, but age bounds for the study must be entered so that \href{#specimens_results_magic.py}{specimens\_results\_magic.py} can assign age bounds for every result.   The GUI therefore asks for these age bounds.   Age units are a controlled vocabulary, so choose from this list:  [Ga, ka, Ma, years AD (+/-), Years BP, Years Cal AD (+/-) Years Cal BP].   If you enter nothing, the default age bounds will be 0 to 4.5 Ga.
-%%%		\end{itemize}
-%%%		\item Prepare upload txt file:  The \href{http:earthref.org/MAGIC/search-beta}{MagIC Website} will import a specially formatted ascii file, parsing all the tables into their niches.  Choosing this option will create an {\it er\_locations.txt} file for you based on what is in the {\it er\_sites.txt} file.  It will ask you for the missing required information.  Then the GUI prepares a file called {\it upload.txt} which can be directly imported into the MagIC database and attached to the associated reference.
-%%%\end{itemize}
-%%%
-%%%
-%%%
-%%%
-%%%%\customlink{Utilities}
-%%%
-%%%\subsection{Utilities Menu}
-%%%
-%%%\begin{itemize}
-%%%		\item Check sample orientations:  This program calls the program \href{#site_edit_magic.py}{site\_edit\_magic.py}.  It steps through the data site by site and allows you to evaluate orientation information, testing outliers against specific, common field mistakes (arrow wrong direction, wrong scratch mark, etc.)
-%%%		\item Extract Results to table for publication:  After assembling your results, you can extract information from the {\it pmag\_results.txt} file as an tab delimited (excel ready) file or as a (my favorite) LaTex formatted table.  That way, the data in your publication will be identical to the data in the MagIC database (what a concept!).  This option allows you to do that using the program \href{#pmag_results_extract.py}{pmag\_results\_extract.py}.  It will create two files:  {\it Intensities.txt} and {\it Directions.txt}.
-%%%		\item Map of VGPs:  makes plots using \href{#vgpmap_magic.py}{vgpmap\_magic.py}, which reads from the {\it pmag\_results.txt} file (where VGPs are stored).  To get VGPs, you need to \href{#AssembleResults}{assemble} your results first.   If you \href{#ImportMenu}{imported} orientation data, you can select the coordinate system.  You can also choose whether or not to `flip' the reverse VGPs and the location of the 'eye' in the orthographic plot.
-%%%		\item Map of site locations: makes plots using \href{#basemap_magic.py}{basemap\_magic.py} which reads from the {\it er\_sites.txt} file.  Choosing high resolution requires that the  \href{#HighRes}{high resolution} datafiles be installed.  There are many more options available if you use the program on the command line - this is just for a `quick look'.
-%%%
-%%%\item Make IZZI exp. chart: The IZZI paleointensity experiment (Tauxe and Staudigel, 2004) \nocite{tauxe04} is a complicated protocol which requires some concentration to get the order of heating steps in the right order.  This utility calls \href{#chartmaker.py}{chartmaker.py} to make a chart to facilitate the laboratory procedure.
-%%%\item Expected directions/paleolatitudes:  calls \href{#apwp.py}{apwp.py} to calculate paleodirectiions and paleolatitudes for a give location at a specified time, after assigning it a tectonic plate.
-%%%\end{itemize}
-%%%
-%%%\subsection{Help Menu}
-%%%
-%%%Takes you to this Cookbook.
 
 
 \customlink{magic_gui.py}
@@ -1249,11 +976,11 @@ All {\bf PmagPy} programs print a help message out if you type: {\bf program\_na
 
  \customlink{github}
 
- \url{https://github.com/lPmagPy/PmagPy}
+ \url{https://github.com/PmagPy/PmagPy}
 
 A link to these source code/help menu files is provided for each program listed below with the format [program\_name\_docs].
 
-Examples of how to use command line {\bf PmagPy} programs are given below. In all examples, the '\%' prompt stands for whatever command line prompt you have. The example data files referred to in the following are located in the {\it data\_files} directory bundled with the {\bf PmagPy} software distribution.
+Examples of how to use command line {\bf PmagPy} programs are given below. In all examples, the '\$' prompt stands for whatever command line prompt you have. The example data files referred to in the following are located in the {\it data\_files} directory bundled with the {\bf PmagPy} software distribution.
 
 \customlink{aarm_magic.py}
 
@@ -1279,13 +1006,13 @@ Then use the program \href{#aarm_magic.py}{aarm\_magic.py}  to calculate the bes
 Here is a transcript of a session that works.   Note that the {\bf  sio\_magic.py}  command is all on one line (which is what the terminal backslash means).
 
 \begin{verbatim}
-% sio_magic.py -f arm_magic_example.dat -loc Bushveld -LP AF:ANI -F aarm_measurements.txt \
+$ sio_magic.py -f arm_magic_example.dat -loc Bushveld -LP AF:ANI -F aarm_measurements.txt \
       -ncn 3 -ac 180 -dc 50 -1 -1
 
 results put in  aarm_measurements.txt
 
 
-% aarm_magic.py
+$ aarm_magic.py
 specimen tensor elements stored in  ./arm_anisotropy.txt
 specimen statistics and eigenparameters stored in  ./aarm_results.txt
 
@@ -1301,7 +1028,7 @@ specimen statistics and eigenparameters stored in  ./aarm_results.txt
  Use the program {\bf angle.py} to calculate the angle ($\alpha$) between two directions $D=350.2, I=26.8; D=98.6, I=67.3$.
 
 \begin{verbatim}
-% angle.py -i
+$ angle.py -i
 Declination 1: [cntrl-D  to quit] 350.2
 Inclination 1: 26.8
 Declination 2: 98.6
@@ -1315,7 +1042,7 @@ Good bye
  You can also use this program by reading in a filename using the '-f' option or from \href{#standard_IO}{standard input }(with $<$).  Try this out with the test file in the {\it angle} directory ({\it angle.dat}).  First examine the contents of the input file using {\bf ``cat''} (or `` type'' on a DOS prompt).  Then use {\bf angle.py} to calculate the angles.  You can also save your output in a file {\it angle.out} with the '-F' option:
 
  \begin{verbatim}
- % cat angle.dat
+ $ cat angle.dat
     11.2    32.9 	    6.4   -42.9
    11.5    63.7 	   10.5   -55.4
    11.9    31.4 	  358.1   -71.8
@@ -1328,7 +1055,7 @@ Good bye
   341.2    53.8 	   25.1   -61.1
 ....
 
- % angle.py -f angle.dat
+ $ angle.py -f angle.dat
     75.9
   119.1
   103.7
@@ -1365,7 +1092,7 @@ Unpack the data using the program \href{#download_magic.py}{download\_magic.py}.
 
 
 \begin{verbatim}
-% ANI_depthplot.py
+$ ANI_depthplot.py
 \end{verbatim}
 
 \noindent will create the plot:
@@ -1386,7 +1113,7 @@ Make a plot of the data using {\bf aniso\_magic.py}.  Use the site parametric bo
 These things  are done in this session:
 
 \begin{verbatim}
-% aniso_magic.py -f dike_anisotropy.txt -gtc 110 2 -par -v -crd g
+$ aniso_magic.py -f dike_anisotropy.txt -gtc 110 2 -par -v -crd g
 Doing bootstrap - be patient
 Boostrap Statistics:
  tau_i, V_i_D, V_i_I, V_i_zeta, V_i_zeta_D, V_i_zeta_I, V_i_eta, V_i_eta_D, V_i_eta_I
@@ -1413,7 +1140,7 @@ There are more options to {\bf aniso\_magic.py} that come in handy.   In particu
 The following session illustrates how this is done, using the data in the test file {\it sed\_anisotropy.txt} in the aniso\_magic directory.
 
 \begin{verbatim}
-%aniso_magic.py -f sed_anisotropy.txt -d 3 0 90 -v -crd g
+$ aniso_magic.py -f sed_anisotropy.txt -d 3 0 90 -v -crd g
 
 Doing bootstrap - be patient
 Boostrap Statistics:
@@ -1444,7 +1171,7 @@ The program {\bf apwp.py} calculates paleolatitude, declination, inclination fro
 Use it  to calculate the expected direction for 100 million year old rocks at a locality in La Jolla Cove (Latitude: 33N, Longitude 117W).    Assume that we are on the North American Plate!  (Note that there IS no option for the Pacific plate in the program {\bf apwp.py}, and that La Jolla was on the North American plate until a few million years ago (6?).
 
 \begin{verbatim}
-% apwp.py -i
+$ apwp.py -i
 
  Welcome to paleolatitude calculator - CTRL-D to quit
 
@@ -1466,7 +1193,7 @@ Age  Paleolat.  Dec.  Inc.  Pole_lat.  Pole_Long.
 Note that as with many {\bf PmagPy}  programs, the input information can be read from a file and the output can be put in a file.   For example, we put the same information into a file, {\it apwp\_example.dat} and use this syntax:
 
 \begin{verbatim}
-% apwp.py -f apwp_example.dat
+$  apwp.py -f apwp_example.dat
    100.0    38.8   352.4    58.1    81.5   198.3
 \end{verbatim}
 
@@ -1489,13 +1216,13 @@ Then use the program {\bf atrm\_magic.py} to calculate the best-fit tensor and w
 Here is an example transcript:
 
 \begin{verbatim}
-% sio_magic.py -f atrm_magic_example.dat -loc Africa -LP T:ANI -F atrm_measurements.txt
+$  sio_magic.py -f atrm_magic_example.dat -loc Africa -LP T:ANI -F atrm_measurements.txt
       -ncn 1  -dc 40 -1 -1
 
 results put in  atrm_measurements.txt
 
 
-% atrm_magic.py
+$  atrm_magic.py
 
 specimen tensor elements stored in  ./trm_anisotropy.txt
 specimen statistics and eigenparameters stored in  ./atrm_results.txt
@@ -1504,7 +1231,7 @@ specimen statistics and eigenparameters stored in  ./atrm_results.txt
 \customlink{azdip_magic.py}
 
 \subsection {azdip\_magic.py}
- \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]} and \href{#MagICDatabase}{[MagIC Database]}%
+ \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]} and \href{#MagICDatabase}{[MagIC Database]} 
  \href{https://github.com/PmagPy/PmagPy/blob/master/programs/azdip_magic.py}{[azdip\_magic docs]}
 
 Many paleomagnetists save orientation information in files in this format:
@@ -1512,7 +1239,7 @@ Sample  Azimuth Plunge  Strike  Dip (AZDIP format),  where the Azimuth and Plung
 use the direction of the $X$ coordinate of the specimen measurement system.  To convert an  {\it AzDip} formatted file ({\it example.az}) for samples taken from a location name ``Northern Iceland''  into the MagIC format and save the information in the MagIC {\it er\_samples.txt}  file format, use the program {\bf azdip\_magic.py}:
 
 \begin{verbatim}
-% azdip_magic.py -f azdip_magic_example.dat -ncn 1 -mcd FS-FD:SO-POM
+$  azdip_magic.py -f azdip_magic_example.dat -ncn 1 -mcd FS-FD:SO-POM
       -loc ``Northern Iceland``
 
 Data saved in  er_samples.txt
@@ -1531,10 +1258,10 @@ Another way to do this is to use the \href{#orientation_magic.py}{orientation\_m
 Use the program {\bf b\_vdm} to convert an estimated paleofield value of 33 $\mu$T obtained from a lava flow at 22$^{\circ}$ N latitude to the equivalent Virtual Dipole Moment (VDM) in Am$^2$.   Put the input information into a file called {\it vdm\_input.dat}  and read from it using  \href{#standard_IO}{standard input }:
 
 \begin{verbatim}
-% cat > b_vdm_example.dat
+$  cat > b_vdm_example.dat
 33 22
 ^D
-% b_vdm.py < b_vdm_example.dat
+$  b_vdm.py < b_vdm_example.dat
  7.159e+22
 \end{verbatim}
 
@@ -1545,19 +1272,17 @@ Use the program {\bf b\_vdm} to convert an estimated paleofield value of 33 $\mu
 \href{#MagICDatabase}{[MagIC Database]} and   \href{#HighRes}{high resolution instructions}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/basemap_magic.py}{[basemap\_magic docs]}
 
+NB:  this program no longer maintained - use plot_mapPTS.py for greater functionality.
+
 Python has a complete map plotting package and PmagPy has a utility for making simple base maps for projects.  Site location data imported for example using \href{#orientation_magic.py}{orientation\_magic.py} into an {\it er\_sites} formatted text file can be plotted using {\bf basemap\_magic.py}.  There are many options, so check the help message for more details.   Note that if you want to use  \href{#hires}{high resolution datafiles}
  or the etopo20 meshgrid (-etp option), you must install the high resolution continental outlines.  You can use \href{#install_etopo.py}{install\_etopo.py}  for that.
 As an example, use the program {\bf basemap\_magic.py} to make  a simple base map  with site locations in a MagIC {\it er\_sites.txt}  formatted file named {\it basemap\_example.txt}.
 
 \begin{verbatim}
-% basemap_magic.py -f basemap_example.txt
+$  basemap_magic.py -f basemap_example.txt
 \end{verbatim}
 
 \noindent which makes this plot:
-
-
-
-%\epsfxsize 9cm
 
 \includegraphics[width=15cm]{EPSfiles/basemap.eps}
 
@@ -1580,7 +1305,7 @@ Use the program {\bf biplot\_magic.py} to make a biplot of  magnetic susceptibil
 First, to find out which data are available, run the program like this:
 
 \begin{verbatim}
-% biplot_magic.py -f biplot_magic_example.txt
+$  biplot_magic.py -f biplot_magic_example.txt
    which responds with this:
    ['LT-AF-Z', 'LT-AF-I', 'LT-IRM', 'LP-X']
    \end{verbatim}
@@ -1590,7 +1315,7 @@ susceptibility against ARM, we would run the program again:
 
 
 \begin{verbatim}
-% biplot_magic.py -f biplot_magic_example.txt -x LP-X -y LT-AF-I
+$  biplot_magic.py -f biplot_magic_example.txt -x LP-X -y LT-AF-I
 LP-X  selected for X axis
 LT-AF-I  selected for Y axis
 All
@@ -1623,7 +1348,7 @@ It has an optional parametric bootstrap whereby the $\sigma$ for the data set as
 Use this to calculate the bootstrapped error statistics for the data in file {\it  bootams\_examples.data}:
 
 \begin{verbatim}
-% bootams.py -par -f bootams_example.dat
+$  bootams.py -par -f bootams_example.dat
 Doing bootstrap - be patient
 
 tau tau_sigma V_dec V_inc V_eta V_eta_dec V_eta_inc V_zeta V_zeta_dec V_zeta_inc
@@ -1636,7 +1361,7 @@ tau tau_sigma V_dec V_inc V_eta V_eta_dec V_eta_inc V_zeta V_zeta_dec V_zeta_inc
 
 Note that every time bootams gets called, the output will be slightly different because this depends on calls to random number generators.  If the answers are different by a lot, then the number of bootstrap calculations is too low.  The number of bootstraps can be changed with the -nb option.
 
-%
+
 \customlink{cart_dir.py}
 
 \subsection {cart\_dir.py}
@@ -1660,7 +1385,7 @@ coordinates to geomagnetic elements:
 To use the interactive option:
 
 \begin{verbatim}
-% cart_dir.py -i
+$ cart_dir.py -i
 X: [cntrl-D  to quit] 0.3971
 Y: -0.1445
 Z: 0.9063
@@ -1674,7 +1399,7 @@ Z: -0.8192
 To read from a file:
 
 \begin{verbatim}
-% cart_dir.py -f cart_dir_example.dat
+$ cart_dir.py -f cart_dir_example.dat
   340.0    65.0  1.000e+00
   176.0   -55.0  1.000e+00
 \end{verbatim}
@@ -1689,7 +1414,7 @@ To read from a file:
 Paleointensity experiments are quite complex and it is easy to make a mistake in the laboratory.  The SIO lab uses a simple chart that helps the experimenter keep track of in-field and zero field steps and makes sure that the field gets verified before each run.   You can make a chart for an infield-zerofield, zerofield-infield (IZZI) experiment using the program {\bf chartmaker.py}.   Make such a chart using 50$^{\circ}$C steps up to 500$^{\circ}$C  followed by 10$^{\circ}$C steps up to 600$^{\circ}$C.
 
 \begin{verbatim}
-% chartmaker.py
+$ chartmaker.py
     Welcome to the thellier-thellier experiment automatic chart maker.
     Please select desired step interval and upper bound for which it is valid.
     e.g.,
@@ -1745,7 +1470,7 @@ infield steps.  The designations `Z', `I', 'T', 'and 'P'  are for zero-field, in
 It is sometimes useful to measure susceptibility as a function of temperature, applied field and frequency.   Here we use a data set that came from the Tiva Canyon Tuff sequence (see Carter-Stiglitz,  2006).  \nocite{carterstiglitz06}    Use the program {\bf chi\_magic.py} to plot the data in the magic\_measurements formatted file: {\it chi\_magic\_example.dat}.
 
 \begin{verbatim}
-% chi_magic.py -f chi_magic_example.dat
+$ chi_magic.py -f chi_magic_example.dat
 IRM-Kappa-2352 1 out of  2
 IRM-OldBlue-1892 2 out of  2
 Skipping susceptibitily - AC field plot as a function of temperature
@@ -1784,23 +1509,22 @@ use the program {\bf common\_mean.py} for a bootstrap test for common mean to ch
 
 The session:
 \begin{verbatim}
-% eqarea.py -f common_mean_ex_file1.dat -p
+$ eqarea.py -f common_mean_ex_file1.dat -sav
 1  saved in  common_mean_ex_file1.dat.svg
 
-%  eqarea.py -f common_mean_ex_file2.dat -p
+$  eqarea.py -f common_mean_ex_file2.dat -sav
 1  saved in  common_mean_ex_file2.dat.svg
 \end{verbatim}
 
 \noindent generates two .svg formatted files that look like these:
 
-{%\epsfxsize 5cm
-%\epsffile{EPSfiles/common-mean-eq.eps}
-  \includegraphics[width=15cm]{EPSfiles/common-mean-eq.eps}}
+
+  \includegraphics[width=15cm]{EPSfiles/common-mean-eq.eps}
 
 Now let's look at the common mean problem using {\bf common\_mean.py}.
 
 \begin{verbatim}
-% common_mean.py -f common_mean_ex_file1.dat -f2 common_mean_ex_file2.dat
+$ common_mean.py -f common_mean_ex_file1.dat -f2 common_mean_ex_file2.dat
 Doing first set of directions, please be patient..
 Doing second set of directions, please be patient..
 S[a]ve plots, <Return> to quit
@@ -1819,7 +1543,7 @@ Now compare the data in  {\it common\_mean\_ex\_file1.dat }  with the expected d
 To do this,  follow this transcript:
 
 \begin{verbatim}
-% common_mean.py -f common_mean_ex_file1.dat -dir 0 9.9
+$ common_mean.py -f common_mean_ex_file1.dat -dir 0 9.9
 Doing first set of directions, please be patient..
 S[a]ve plots, <Return> to quit
 \end{verbatim}
@@ -1840,11 +1564,11 @@ Apparently the data (cumulative distribution functions) are entirely consistent 
 Use the program {\bf cont\_rot.py} to make an orthographic projection with latitude = -20$^{\circ}$ and longitude = 0$^{\circ}$ at the center of the African and South American  continents reconstructed to 180 Ma using the Torsvik et al. (2008) poles of finite rotation.  \nocite{torsvik08} Do this by first holding Africa fixed.  Move the output plot to {\it fixed\_africa.svg}.  Then make the plot for Africa adjusted  to the paleomagnetic reference frame.  Make the continental outlines in black lines and set the resolution to 'low'.
 
 \begin{verbatim}
-% cont_rot.py -con af:sam -prj ortho -eye -20 0 -sym k-  1 -age 180 -res l
+$ cont_rot.py -con af:sam -prj ortho -eye -20 0 -sym k-  1 -age 180 -res l
  S[a]ve to save plot, Return to quit:  a
 1  saved in  Cont_rot.pdf
-% mv Cont_rot.pdf fixed_africa.pdf
-% cont_rot.py -con af:sam -prj ortho -eye -20 0 -sym  k- 1 -age 180 \
+$ mv Cont_rot.pdf fixed_africa.pdf
+$ cont_rot.py -con af:sam -prj ortho -eye -20 0 -sym  k- 1 -age 180 \
      -res l -sac
  S[a]ve to save plot, Return to quit:  a
 1  saved in  Cont_rot.pdf
@@ -1870,7 +1594,7 @@ This is a handy little script that turns Windows or Mac file formatted files (no
 If one of the MagIC related programs in PmagPy created a very lean looking {\it er\_samples.txt} file (for example using \href{#azdip_magic.py}{azdip\_magic.py}) and you need to add more information (say, latitude, longitude, lithology, etc.), you can convert the {\it er\_samples.txt} file into an \href{#orientation_magic.py}{orient.txt} file format, edit it in, for example Excel, and then re-import it back into the {\it er\_samples.txt} file format.  Try this on the {\it er\_samples} formatted file in the {\it convert\_samples} directory, {\it convert\_samples\_example.dat}.
 
 \begin{verbatim}
-% convert_samples.py -f convert_samples_example.dat
+$ convert_samples.py -f convert_samples_example.dat
 Data saved in:  orient_Northern_Iceland.txt
 \end{verbatim}
 
@@ -1886,7 +1610,7 @@ Use the program {\bf core\_depthplot.py} to plot various measurement data versus
 We can try this out on some data from DSDP Hole 522, measured by Tauxe and Hartl (1997).  \nocite{tauxe97}  These can be downloaded and unpacked (see \href{#download_magic.py}{download\_magic.py} for details),  or you can try it out on the data files in the directory {\bf core\_depthplot}.   You must specify a lab-protocol (LP) for plotting.  In this example, we will plot the alternating field (AF) data after the 15 mT step.  The magnetizations will be plotted on a log scale and, as this is a record of the Oligocene, we will plot the Oligocene time scale, using the calibration of Gradstein et al. (2004),  \nocite{gradstein04} commonly referred to as ``GTS04'' for the the Oligocene.  We are only interested in the data between 50 and 150 meters (the -d option sets this) and we will suppress the declinations (-D).
 
 \begin{verbatim}
-% core_depthplot.py -fsa er_samples.txt -LP AF 15 -log -d 50 150 -ts gts04 23 34 -D
+$ core_depthplot.py -fsa er_samples.txt -LP AF 15 -log -d 50 150 -ts gts04 23 34 -D
 \end{verbatim}
 
 \noindent  will produce the plot:
@@ -1905,7 +1629,7 @@ Use the program {\bf curie.py} to interpret curie temperature data in the exampl
 
 
 \begin{verbatim}
-%curie.py -f curie_example.txt -w 10
+%curie.py -f curie_example.dat -w 10
 second deriative maximum is at T=552
 \end{verbatim}
 
@@ -1917,16 +1641,20 @@ second deriative maximum is at T=552
 
 
 \customlink{customize_criteria.py}
+
+
 \subsection{customize\_criteria.py}
 \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/customize_criteria.py}{[customize\_criteria docs]}
+
+NB:  The best place to customize your selection criteria is within \href{#demag_gui.py}{Demag GUI} or \href{#thellier_gui.py}{Thellier GUI}.  But if you want to do it on the command line, then here's how.  
 
 The MagIC database allows documentation of which criteria were used in selecting data on a specimen, sample or site level and to easily apply those criteria (and re-apply them as they change) in preparing the different tables.  These choices are stored in the {\it pmag\_criteria} table in each MagIC project directory (see \href{#pmag_gui.py}{Pmag GUI} documentation).
 
  Certain {\bf PmagPy} programs use the datafile {\it pmag\_criteria.txt} to select data (for example {\bf thellier\_magic.py} and {\bf specimens\_results\_magic.py}).  To customize these criteria for your own data sets, you can use the program {\bf customize\_criteria.py}.  This program is also called by the {\bf Pmag GUI} under the Utilities menu.    Try it out on {\it pmag\_criteria.txt}.   This is a ``full vector'' set of criteria - meaning that it has both directions and intensity flags set.  Change the {\it specimen\_alpha95} cutoff to 180. from whatever it is now set to.   Save the output to a new file named {\it new\_criteria.txt}.
 
 \begin{verbatim}
-% customize_criteria.py -f pmag_criteria.txt -F new_criteria.txt
+$ customize_criteria.py -f pmag_criteria.txt -F new_criteria.txt
 Acceptance criteria read in from  pmag_criteria.txt
  [0] Use no acceptance criteria?
  [1] Use default criteria
@@ -1966,7 +1694,7 @@ Note that the default place for the PmagPy programs to look for criteria is in {
  The session:
 
   \begin{verbatim}
-  % dayplot_magic.py -f dayplot_magic_example.dat
+  $ dayplot_magic.py -f dayplot_magic_example.dat
 
  S[a]ve to save plots, return to quit:
 \end{verbatim}
@@ -1996,7 +1724,7 @@ The program \href{#DemagGUI}{demag\_gui.py} is used by \href{#pmag_gui.py}{Pmag 
 Paleomagnetic data are frequently plotted in equal area projection.  PmagPy has several plotting programs which do this (e.g., \href{#eqarea.py}{eqarea.py}, but occasionally it is handy to be able to convert the directions to X,Y coordinates directly, without plotting them at all.  The program {\bf di\_eq.py} does this.  Here is an example transcript of a session using the datafile {\it di\_eq\_example.dat}:
 
 \begin{verbatim}
-% di_eq.py -f di_eq_example.dat
+$ di_eq.py -f di_eq_example.dat
 -0.239410 -0.893491
 0.436413 0.712161
 0.063844 0.760300
@@ -2021,7 +1749,7 @@ plunge = 27.
 {\bf di\_geo.py} works in the usual three ways (interactive data entry, command line file specification or from  \href{#standard_IO}{standard input }.  So for a quickie answer for a single specimen, you can use the interactive mode:
 
 \begin{verbatim}
-% di_geo.py -i
+$ di_geo.py -i
 Declination: <cntrl-D> to quit  81
 Inclination: 45.2
 Azimuth: 347
@@ -2033,7 +1761,7 @@ Plunge: 27
 For more data, it is handy to use the file entry options. There are a bunch of declination, inclination, azimuth and plunge data in the file {\it di\_geo\_example.dat} in the {\it di\_geo} directory.  First look at the data in specimen coordinates in equal area projection, using the program \href{#eqarea.py}{eqarea.py}.  Note that this program only pays attention to the first two columns so it will ignore the orientation information.
 
 \begin{verbatim}
-% eqarea.py -f di_geo_example.dat
+$ eqarea.py -f di_geo_example.dat
 \end{verbatim}
 which should look like this:
 
@@ -2064,12 +1792,12 @@ di_geo.py -f di_geo_example.dat >di_geo.out;  eqarea.py -f di_geo.out
 Generate a Fisher distributed set of data from a population with a mean direction of $D=0, I=42$ using the program {\bf fishrot.py}.  Calculate the mean direction of the data set using {\bf gofish.py}.  Now use the program \href{#di_rot.py}{di\_rot.py} to rotate the set of directions to the mean direction.  Look at the data before and after rotation using \href{#eqarea.py}{eqarea.py}.
 
 \begin{verbatim}
-% fishrot.py -I 42 >fishrot.out
-% gofish.py <fishrot.out
+$ fishrot.py -I 42 >fishrot.out
+$ gofish.py <fishrot.out
     1.7    42.4    100    95.3720     21.4     3.1
-% di_rot.py -f fishrot.out -F dirot.out -D 1.7 -I 42.4
-% eqarea.py -f fishrot.out
- % eqarea.py -f dirot.out
+$ di_rot.py -f fishrot.out -F dirot.out -D 1.7 -I 42.4
+$ eqarea.py -f fishrot.out
+ $ eqarea.py -f dirot.out
 \end{verbatim}
 
 \noindent  which generates plots like these:
@@ -2094,7 +1822,7 @@ this strike.
 Here is  a session with {\bf di\_tilt.py} using the interactive option:
 
 \begin{verbatim}
-% di_tilt.py -i
+$ di_tilt.py -i
 Declination: <cntl-D> to quit 5.3
 Inclination: 71.6
 Dip direction: 225
@@ -2130,7 +1858,7 @@ $D$ \qquad & $I$ \qquad & $\lambda_s$ (N) \qquad & $\phi_s$ (E)\cr
 Here is a transcript of a typical session using the command line option for file name entry:
 
 \begin{verbatim}
-% di_vgp.py -f di_vgp_example.dat
+$ di_vgp.py -f di_vgp_example.dat
   154.7    77.3
     6.6   -69.6
 \end{verbatim}
@@ -2143,7 +1871,7 @@ Here is a transcript of a typical session using the command line option for file
 Calculate the expected inclination at a paleolatitude of 24$^{\circ}$S.
 
 \begin{verbatim}
-% dipole_pinc.py -i
+$ dipole_pinc.py -i
 Paleolat for converting to inclination: <cntl-D> to quit -24
   -41.7
 Paleolat for converting to inclination: <cntl-D> to quit ^D
@@ -2160,7 +1888,7 @@ Paleolat for converting to inclination: <cntl-D> to quit ^D
 Calculate the paleolatitude for an average inclination of 23$^{\circ}$.
 
 \begin{verbatim}
-% dipole_plat.py -i
+$ dipole_plat.py -i
 Inclination for converting to paleolatitude: <cntl-D> to quit 23
    12.0
 Inclination for converting to paleolatitude: <cntl-D> to quit ^D
@@ -2188,11 +1916,11 @@ $D$ \qquad & $I$ \qquad &  $M$ ($\mu \hbox{Am}^2$)\cr
 You can enter $D,I,M$ data into data file, then running the program by typing what is after the prompts (\%) [ the other stuff is computer responses] :
 
 \begin{verbatim}
-% cat > dir_cart_example.dat
+$ cat > dir_cart_example.dat
  20 46 1.3
 175 -24 4.2
 ^D
-% dir_cart.py <dir_cart_example.dat
+$ dir_cart.py <dir_cart_example.dat
 8.4859e-01 3.0886e-01 9.3514e-01
 -3.8223e+00 3.3441e-01 -1.7083e+00
 \end{verbatim}
@@ -2200,12 +1928,12 @@ You can enter $D,I,M$ data into data file, then running the program by typing wh
  Or you could use {\bf dir\_cart.py} interactively as in:
 
  \begin{verbatim}
- % dir_cart.py -i
+ $ dir_cart.py -i
 
 Declination: [cntrl-D  to quit]
  Good-bye
 
-% dir_cart.py -i
+$ dir_cart.py -i
 Declination: [cntrl-D  to quit] 20
 Inclination: 46
 Intensity [return for unity]: 1.3
@@ -2231,17 +1959,17 @@ formatted file in {\it dmag\_magic\_example.dat}.   These are from Lawrence et a
 Here is a transcript of a session:
 
 \begin{verbatim}
-%  dmag_magic.py -f dmag_magic_example.dat -LT AF
+$  dmag_magic.py -f dmag_magic_example.dat -LT AF
 5921  records read from  dmag_magic_example.dat
 McMurdo plotting by:  er_location_name
  S[a]ve to save plot, [q]uit,  Return to continue:  a
 1  saved in  McMurdo_LT-AF-Z.svg
-% dmag_magic.py -f dmag_magic_example.dat -LT T -XLP PI
+$ dmag_magic.py -f dmag_magic_example.dat -LT T -XLP PI
 5921  records read from  dmag_magic_example.dat
 McMurdo plotting by:  er_location_name
  S[a]ve to save plot, [q]uit,  Return to continue:  a
 1  saved in  McMurdo_LT-T-Z.svg
-% dmag_magic.py -f dmag_magic_example.dat -LT AF -obj sit
+$ dmag_magic.py -f dmag_magic_example.dat -LT AF -obj sit
 5921  records read from  dmag_magic_example.dat
 mc20 plotting by:  er_site_name
  S[a]ve to save plot, [q]uit,  Return to continue:
@@ -2264,10 +1992,10 @@ mc200 plotting by:  er_site_name
  This program unpacks .txt files downloaded from the MagIC database into individual directories for each location into which the individual files for each table (e.g., {\it er\_locations.txt, magic\_measurements.txt, pmag\_results.txt} and so on) get placed.   As an example, go to the MagIC data base at \url{http://earthref.org/MAGIC/search}.  Enter ``Tauxe and 2004'' into the Reference Text Search field will show you several references.   Look for the one for Tauxe, L., Luskin, C., Selkin, P., Gans, P. and Calvert, A. (2004). \nocite{tauxe04b}  Download the  text file under the ``Contribution SmartBook'' column and save it to your desktop.   Make a   folder into which  you should put the downloaded txt file called MagIC\_download and move the file into it.  Now use the program {\bf download\_magic.py} to unpack the .txt file ({\it zmab0083201tmp03.txt}).
 
  \begin{verbatim}
-% mkdir MagIC_download
-% cd MagIC_download
-% download_magic.py -f zmab0083201tmp03.txt
-% download_magic.py -f zmab0083201tmp03.txt
+$ mkdir MagIC_download
+$ cd MagIC_download
+$ download_magic.py -f zmab0083201tmp03.txt
+$ download_magic.py -f zmab0083201tmp03.txt
 working on:  'er_locations'
 er_locations  data put in  ./er_locations.txt
 working on:  'er_sites'
@@ -2310,11 +2038,11 @@ This session uses the unix utility {\bf cat} to print the data.  [You could use 
 form {\bf type} in a Windows command line window.]    Then, it prints the tensor data to the screen.
 
 \begin{verbatim}
-% cat eigs_s_example.dat
+$ cat eigs_s_example.dat
 0.33127  239.53   44.70 0.33351  126.62   21.47 0.33521  19.03   37.54
 0.33177  281.12    6.18 0.33218  169.79   73.43 0.33603   12.82   15.32
 ...
-% eigs_s.py -f eigs_s_example.dat
+$ eigs_s.py -f eigs_s_example.dat
 0.33416328 0.33280227 0.33303446 -0.00016631 0.00123163 0.00135521
 0.33555713 0.33197427 0.33246869 0.00085685 0.00025266 0.00098151
 0.33585301 0.33140355 0.33274350 0.00132308 0.00117787 0.00000455
@@ -2346,8 +2074,8 @@ You should only work on one hemisphere at a time (upper or lower) and save each 
 Try out {\bf eq\_di.py} on your datafile, or use {\it eq\_di\_example.dat} which are the digitized data from the lower hemisphere and check your work with {\bf eqarea.py}.  You should retrieve the lower hemisphere points from the {\bf eqarea.py} example.
 
 \begin{verbatim}
-% eq_di.py -f eq_di_example.dat >tmp
-% eqarea.py -f tmp
+$ eq_di.py -f eq_di_example.dat >tmp
+$ eqarea.py -f tmp
 \end{verbatim}
 
 NB: To indicate that your data are UPPER hemisphere (negative inclinations), use the -up switch.
@@ -2367,8 +2095,8 @@ Use the program \href{#fishrot.py}{fishrot.py} to generate a Fisher distiributed
 plot an equal area projection of the data.
 
 \begin{verbatim}
-%fishrot.py -D 42 -I 60 > fishrot.out
-% eqarea.py -f fishrot.out
+$  fishrot.py -D 42 -I 60 > fishrot.out
+$ eqarea.py -f fishrot.out
 \end{verbatim}
 
 \noindent
@@ -2389,8 +2117,8 @@ Bingham ellipses.
 
 
 \begin{verbatim}
-% tk03.py -lat 42 -rev >tk03.out
-% eqarea_ell.py -f tk03.out -ell B
+$ tk03.py -lat 42 -rev >tk03.out
+$ eqarea_ell.py -f tk03.out -ell B
      Zdec    21.0
      Edec   105.7
      Eta     4.5
@@ -2418,7 +2146,7 @@ Follow the instructions for downloading and unpacking a data file from the MagIC
  confidence ellipse.
 
 \begin{verbatim}
-% eqarea_magic.py -obj loc -crd g -f pmag_results.txt -ell Be
+$ eqarea_magic.py -obj loc -crd g -f pmag_results.txt -ell Be
 24  records read from  ./pmag_results.txt
 All
 sr01 GM-ARAR-AP:LP-DC5:LP-DIR-AF:LP-DIR-T:LP-PI-ALT-PTRM:LP-PI-TRM-ZI   330.1    64.9
@@ -2472,8 +2200,8 @@ Some data are study averages and some are individual sites.
  Use \href{#magic_select.py}{magic\_select.py} to select only the individual site data.  Try the
 
  \begin{verbatim}
- % magic_select.py -f pmag_results.txt -key data_type i 'T' -F site_results.txt
-% eqarea_magic.py -f site_results.txt -ell Bv
+ $ magic_select.py -f pmag_results.txt -key data_type i 'T' -F site_results.txt
+$ eqarea_magic.py -f site_results.txt -ell Bv
 21  records read from  ./site_results.txt
 All
 sr01 GM-ARAR-AP:LP-DC5:LP-DIR-AF:LP-DIR-T:LP-PI-ALT-PTRM:LP-PI-TRM-ZI   330.1    64.9
@@ -2512,7 +2240,7 @@ which produces plots like:
 A data file was prepared using \href{#tk03}{tk03.py} to simulate directions at a latitude of 42$^{\circ}$.   Use the program \href{#dipole_pinc.py}{dipole\_pinc.py} to find what the expected inclination at this latitude is!
 
 \begin{verbatim}
-% dipole_pinc.py -i
+$ dipole_pinc.py -i
 Paleolat for converting to inclination: <cntl-D> to quit 42
    61.0
 ^D
@@ -2526,7 +2254,7 @@ Use the program {\bf find\_EI.py} to find the optimum flattening factor $f$ whic
 
 
 \begin{verbatim}
-%  find_EI.py -f find_EI_example.dat
+$  find_EI.py -f find_EI_example.dat
 Bootstrapping.... be patient
 25  out of  1000
 50  out of  1000
@@ -2564,7 +2292,7 @@ In this example, the original expected inclination at paleolatitude of 42 (61$^{
 Draw a set of 10 directions from a Fisher distribution with a $\kappa$ of 30 using {\bf fisher.py}:
 
 \begin{verbatim}
-% fisher.py -k 30 -n 10
+$ fisher.py -k 30 -n 10
   233.7    81.4
   357.0    76.4
   272.5    62.8
@@ -2586,8 +2314,8 @@ Draw a set of 10 directions from a Fisher distribution with a $\kappa$ of 30 usi
 Test whether a set of 100 data points generated with \href{#fisher.py}{fisher.py} are in fact Fisher distributed by using a Quantile-Quantile plot:
 
 \begin{verbatim}
-% fisher.py -k 30 -n 100 >fishqq_example.txt
-% fishqq.py -f fishqq_example.txt
+$ fisher.py -k 30 -n 100 >fishqq_example.txt
+$ fishqq.py -f fishqq_example.txt
 \end{verbatim}
 
 \noindent produces these plots:
@@ -2608,7 +2336,7 @@ Test whether a set of 100 data points generated with \href{#fisher.py}{fisher.py
 Draw a set of 5 directions drawn  from a Fisher distribution with a true mean declination of 33, a true mean inclination of 41, and a $\kappa$ of  50:
 
 \begin{verbatim}
-% fishrot.py -n 5 -D 33 -I 41 -k 50
+$ fishrot.py -n 5 -D 33 -I 41 -k 50
    35.8    32.8
    36.2    30.2
    37.5    41.8
@@ -2624,7 +2352,7 @@ Draw a set of 5 directions drawn  from a Fisher distribution with a true mean de
  Use {\bf foldtest.py} to perform the Tauxe and Watson (1994) \nocite{tauxe94}  foldtest on the data in {\it foldtest\_example.dat}.
 
  \begin{verbatim}
-% foldtest.py -f foldtest_example.dat
+$ foldtest.py -f foldtest_example.dat
 doing  1000  iterations...please be patient.....
 0
 50
@@ -2666,7 +2394,7 @@ This program performs the same test as \href{#foldtest.py}{foldtest.py}.  The on
 Use {\bf gaussian.py} to generate a set of 100 normally distributed data points drawn from a population with a mean of 10.0  and   standard deviation of 30.  Save it to a file named {\bf gauss.out}.
 
 \begin{verbatim}
-% gaussian.py -s 3 -n 100 -m 10. -F gauss.out
+$ gaussian.py -s 3 -n 100 -m 10. -F gauss.out
 \end{verbatim}
 
 You can check the sample mean and standard deviation with \href{#stats.py}{stats.py} or make a histogram of the data with \href{#hisplot.py}{histplot.py}
@@ -2682,7 +2410,7 @@ You can check the sample mean and standard deviation with \href{#stats.py}{stats
 Use the dataset generated in the \href{#eqarea_ell.py}{eqarea\_ell.py} example.   Calculate Bingham parameters using {\bf gobing.py}  instead of within the plotting program:
 
 \begin{verbatim}
-% gobing.py -f tk03.out
+$ gobing.py -f tk03.out
   357.8    60.3     4.5   105.7    10.0     4.5    21.0   -27.6 20
 \end{verbatim}
 
@@ -2699,8 +2427,8 @@ mean dec, mean inc, Eta, Deta, Ieta, Zeta, Zdec, Zinc, N
  Draw a set of 10 directions drawn  from a Fisher distribution with a true mean declination of 15, a true mean inclination of 41, and a $\kappa$ of  50 and save it to a file, then use {\bf gofish.py} to calculate the Fisher parameters:
 
 \begin{verbatim}
-%  fishrot.py -n 10 -D 15 -I 41 -k 50 >fishrot.out
-% gofish.py -f  fishrot.out
+$  fishrot.py -n 10 -D 15 -I 41 -k 50 >fishrot.out
+$ gofish.py -f  fishrot.out
    10.8    39.6    10     9.8484     59.4     6.3    10.5
 \end{verbatim}
 
@@ -2716,7 +2444,7 @@ mean dec, mean inc, Eta, Deta, Ieta, Zeta, Zdec, Zinc, N
 Draw a set of 20 data points  from a TK03.GAD distribution predicted for a latitude of 42$^{\circ}$N (see  14), without  reversals.  Calculate kent parameters using {\bf gokent.py}
 
 \begin{verbatim}
-% tk03.py -n 20 -lat 42 >tk03.out; gokent.py -f  tk03.out
+$ tk03.py -n 20 -lat 42 >tk03.out; gokent.py -f  tk03.out
    359.2    55.0     9.3   147.7    30.8     7.8   246.8    14.9 20
 \end{verbatim}
 
@@ -2729,7 +2457,7 @@ Draw a set of 20 data points  from a TK03.GAD distribution predicted for a latit
 Draw a set of 20 data points  from a TK03.GAD distibution predicted for a latitude of 42$^{\circ}$N (see  14), including reversals.  Calculate the eigenparameters of the orientation matrix (the principal components)  using {\bf goprinc.py}
 
 \begin{verbatim}
-% tk03.py -n 20 -lat 42 -rev >tk03.out; goprinc.py -f tk03.out
+$ tk03.py -n 20 -lat 42 -rev >tk03.out; goprinc.py -f tk03.out
 0.93863    11.0    58.6 0.04258   226.4    26.5 0.01879   128.3    15.6 20
 \end{verbatim}
 
@@ -2743,7 +2471,7 @@ Draw a set of 20 data points  from a TK03.GAD distibution predicted for a latitu
 {\bf grab\_magic\_key.py} is  a utility that will print out any column (-key option) from any \href{#MagICDatabase}{[MagIC Database]} formatted file.  For example, we could print out all the site latitudes from the  {\it er\_sites.txt} file down loaded in the \href{#download_magic.py}{download\_magic.py} example:
 
 \begin{verbatim}
-% grab_magic_key.py -f er_sites.txt -key site_lat
+$ grab_magic_key.py -f er_sites.txt -key site_lat
 42.60264
 42.60264
 42.60352
@@ -2754,8 +2482,8 @@ Draw a set of 20 data points  from a TK03.GAD distibution predicted for a latitu
 You could save the data in a file with the output redirect function ($>$ ) and plot them with, say \href{#plot_cdf.py}{plot\_cdf.py}.
 
 \begin{verbatim}
-% grab_magic_key.py -f er_sites.txt -key site_lat > lats
-% plot_cdf.py -f lats
+$ grab_magic_key.py -f er_sites.txt -key site_lat > lats
+$ plot_cdf.py -f lats
 \end{verbatim}
 
 which produces  the fascinating (NOT!) plot:
@@ -2772,7 +2500,7 @@ Make a histogram of the data generated with the {\bf gaussian.py} program.
 
 
 \begin{verbatim}
-% histplot.py -f gauss.out
+$ histplot.py -f gauss.out
 \end{verbatim}
 
 \noindent  which makes a plot similar to:
@@ -2787,7 +2515,7 @@ Make a histogram of the data generated with the {\bf gaussian.py} program.
 Plot the data in {\it hysteresis\_magic\_example.txt}, (from  Ben-Yosef et al., 2008) \nocite{benyosef08} which were imported into MagIC using  \href{#AGM_magic.py}{AGM\_magic.py}.   Use the program  {\bf hysteresis\_magic.py} to plot the data.
 
 \begin{verbatim}
-% hysteresis_magic.py -f hysteresis_magic_example.dat
+$ hysteresis_magic.py -f hysteresis_magic_example.dat
 
 IS06a-1 1 out of  8
 S[a]ve plots, [s]pecimen name, [q]uit, <return> to continue
@@ -2815,7 +2543,7 @@ Use the program {\bf igrf.py } to estimate the
 field on June 1, 1995 in Amsterdam, The Netherlands (52.5$^{\circ}$ N, 5$^{\circ}$E).
 
 \begin{verbatim}
-% igrf.py -i
+$ igrf.py -i
 Decimal year: <cntrl-D to quit> 1995.5
 Elevation in km [0]
 Latitude (positive north) 52.5
@@ -2831,13 +2559,13 @@ Now read from the file {\it igrf\_example.dat} which requests field information 
 \url{http://earthref.org/ERDA/1403/}
 
 \begin{verbatim}
-% igrf.py -f igrf_example.dat -F igrf.out
+$ igrf.py -f igrf_example.dat -F igrf.out
 \end{verbatim}
 
 You can also make a plot of secular variation of field elements by specifying the age range and location on the command line.  Try this for the location of San Diego for the age range: -3000 1925 in increments of 50 years:
 
 \begin{verbatim}
-% igrf.py -ages -3000 1950 50 -loc 33 -117 -plt
+$ igrf.py -ages -3000 1950 50 -loc 33 -117 -plt
      S[a]ve to save figure, <Return>  to quit
 \end{verbatim}
 
@@ -2853,7 +2581,7 @@ and get this plot:
 Some  mapping utilities use the Etopo package for topography and these data sets do not come standard with the Python installation.  To install these properly, change directories into the etopo20 subdirectory in the {\it data\_files } directory.  Simply type:
 
 \begin{verbatim}
-% install_etopo.py
+$ install_etopo.py
 \end{verbatim}
 
 
@@ -2872,11 +2600,11 @@ simulated by fishrot.py for an average inclination of 60$^{\circ}$.   If you sav
 pairs, you can compare the {\bf incfish.py} answer with the Fisher mean.    The datafile {\it incfish\_example\_di.dat} has the declination, inclination pairs and {\it incfish\_example\_inc.dat} has just the inclinations.
 
 \begin{verbatim}
-% fishrot.py -I 60 -k 10 > incfish_example_di.dat
-% awk '{print $2}' incfish_example_di.dat > incfish_example_inc.dat
-% incfish.py -f incfish_example_inc.dat
+$ fishrot.py -I 60 -k 10 > incfish_example_di.dat
+$ awk '{print $2}' incfish_example_di.dat > incfish_example_inc.dat
+$ incfish.py -f incfish_example_inc.dat
    57.1    61.0  100     92.9    13.9     1.0
-% gofish.py -f incfish_example_di.dat
+$ gofish.py -f incfish_example_di.dat
     1.8    62.9    100    91.2727     11.3     4.4    24.0
 \end{verbatim}
 
@@ -2890,13 +2618,13 @@ The output for {\bf incfish.py} is:  [gaussian] mean inc, Fisher inc, $N, R, k, 
 Someone (Saiko Sugisaki) measured a number of samples from IODP Expedition 318 Hole U1359A for IRM acquisition curves.  She used the ASC impulse magnetizer's coils \# 2 and 3 and saved the data in the \href{#sio_magic.py}{SIO format}.   Convert these to the \href{#MagIC}{MagIC} measurements  format, combine them in a  single {\it magic\_measurements.txt} file with \href{#combine_magic.py}{combine\_magic.py} and plot the data with {\bf irmaq\_magic.py}.
 
 \begin{verbatim}
-% sio_magic.py -f U1359A_IRM_coil2.txt -LP I -V 2 -F U1359A_IRM_coil2.magic \
+$ sio_magic.py -f U1359A_IRM_coil2.txt -LP I -V 2 -F U1359A_IRM_coil2.magic \
    -loc U1359A -spc 0 -ncn 5
-% sio_magic.py -f U1359A_IRM_coil3.txt -LP I -V 3 -F U1359A_IRM_coil3.magic \
+$ sio_magic.py -f U1359A_IRM_coil3.txt -LP I -V 3 -F U1359A_IRM_coil3.magic \
     -loc U1359A -spc 0 -ncn 5
-% combine_magic.py -F magic_measurements.txt -f U1359A_IRM_coil2.magic \
+$ combine_magic.py -F magic_measurements.txt -f U1359A_IRM_coil2.magic \
     U1359A_IRM_coil3.magic
-% irmaq_magic.py
+$ irmaq_magic.py
 559  records read from  magic_measurements.txt
 U1359A
  S[a]ve to save plot, [q]uit,  Return to continue:  a
@@ -2946,7 +2674,7 @@ tr245i1    68.00   -26.0 204 25
   The 15 measurements for each specimen, along with orientation information and the specimen name were saved in the file {\it k15\_example.dat}.    Convert these to the MagIC format using the program {\bf k15\_magic.py}:
 
 \begin{verbatim}
-% k15_magic.py -spc 0 -f k15_example.dat -loc ``Troodos Ophiolite``
+$ k15_magic.py -spc 0 -f k15_example.dat -loc ``Troodos Ophiolite``
 Data saved to:  ./er_samples.txt ./rmag_anisotropy.txt ./rmag_results.txt ./k15_measurements.txt
  \end{verbatim}
 
@@ -2962,17 +2690,17 @@ You can plot the output of this example (default file {\it rmag\_anisotropy.txt}
 Use {\bf k15\_s.py} to calculate the best-fit tensor elements and residual error for the data in the file {\it k15\_example.dat} (same file as for \href{#k15_magic.py}{k15\_magic.py}.  These are: the specimen name, azimuth and plunge and the strike and dip, followed by the 15 measurements made using the Jelinek 1977 \nocite{jelinek77} scheme shown in the \href{#k15_magic.py}{k15\_magic.py} example.  Calculate the .s data in specimen, geographic  and tilt adjusted coordinates:
 
 \begin{verbatim}
-% k15_s.py -f k15_example.dat
+$ k15_s.py -f k15_example.dat
 0.33146986 0.33413991 0.33439023 0.00075095 -0.00083439 -0.00016688 0.00008618
 0.33335925 0.33335925 0.33328149 -0.00155521 -0.00132193 0.00116641 0.00017193
 0.33097634 0.33573565 0.33328801 0.00163177 0.00013598 0.00000000 0.00018131
 ...
-% k15_s.py -f k15_example.dat -crd g
+$ k15_s.py -f k15_example.dat -crd g
 0.33412680 0.33282733 0.33304587 -0.00015289 0.00124840 0.00135721 0.00008618
 0.33556300 0.33198264 0.33245432 0.00087259 0.00024141 0.00096166 0.00017193
 0.33584908 0.33140627 0.33274469 0.00131844 0.00118816 0.00002987 0.00018131
 ...
-% k15_s.py -f k15_example.dat -crd t
+$ k15_s.py -f k15_example.dat -crd t
 0.33455712 0.33192658 0.33351630 -0.00043563 0.00092770 0.00105006 0.00008618
 0.33585501 0.33191562 0.33222935 0.00055960 -0.00005314 0.00064730 0.00017193
 0.33586666 0.33084926 0.33328408 0.00142269 0.00013235 0.00009201 0.00018131
@@ -3024,7 +2752,7 @@ This program will take {\it pmag\_specimen} formatted MagIC files (for example, 
 
 
 \begin{verbatim}
-% download_magic.py -f zmab0001193tmp02.txt
+$ download_magic.py -f zmab0001193tmp02.txt
 working on:  'er_locations'
 er_locations  data put in  ./er_locations.txt
 working on:  'er_sites'
@@ -3032,11 +2760,11 @@ er_sites  data put in  ./er_sites.txt
 working on:  'er_samples'
 er_samples  data put in  ./er_samples.txt
 ...
-% lnp_magic.py -f pmag_specimens.txt -crd g
+$ lnp_magic.py -f pmag_specimens.txt -crd g
 sv01
 Site lines planes  kappa   a95   dec   inc
 sv01 0  5     286      6.6    179.0    -54.3  4.9948
-% tilt correction:  0
+$ tilt correction:  0
 s[a]ve plot, [q]uit, <return> to continue:
  a
 1  saved in  sv01_g_eqarea.svg
@@ -3057,7 +2785,7 @@ Use {\bf lowrie.py} to make plots of blocking temperature for the three  coerciv
 
 \begin{verbatim}
 
-% lowrie.py -f lowrie_example.dat
+$ lowrie.py -f lowrie_example.dat
 318-U1359A-002H-1-W-109
 S[a]ve figure? [q]uit, <return> to continue   a
 1  saved in  lowrie:_318-U1359A-002H-1-W-109_.svg
@@ -3077,7 +2805,7 @@ which produces plots like this:
 This program works exactly like \href{#lowrie.py}{lowrie.py}, but works on {\it magic\_measurements.txt} formatted files.  Use \href{#sio_magic.py}{sio\_magic.py} to import the {\it lowrie\_example.dat} data file into the MagIC format.  Then use {\bf lowrie\_magic.py} to plot the data:
 
 \begin{verbatim}
-% sio_magic.py -f lowrie_example.dat -LP I3d -loc U1359A -F lowrie_magic_example.dat
+$ sio_magic.py -f lowrie_example.dat -LP I3d -loc U1359A -F lowrie_magic_example.dat
 averaging: records  11 12
 318-U1359A-004H-2-W-18 started with  15  ending with  14
 Averaged replicate measurements
@@ -3088,7 +2816,7 @@ averaging: records  14 16
 318-U1359A-012H-5-W-70 started with  16  ending with  14
 Averaged replicate measurements
 averaging: records  14 15
-% lowrie_magic.py -f lowrie_magic_example.dat
+$ lowrie_magic.py -f lowrie_magic_example.dat
 318-U1359A-002H-1-W-109
 S[a]ve figure? [q]uit, <return> to continue
 \end{verbatim}
@@ -3212,9 +2940,9 @@ This program takes any \href{#MagIC}{MagIC} formatted file and selects lines tha
   Use {\bf magic\_select.py} to pick out all the best-fit lines based on AF demagnetization data from the {\it pmag\_specimens.txt} file unpacked from the MagIC database in the \href{#download_magic.py}{download\_magic.py} example.
 
   \begin{verbatim}
-% magic_select.py -f pmag_specimens.txt -key magic_method_codes LP-DIR-AF has -F AF_specimens.txt
+$ magic_select.py -f pmag_specimens.txt -key magic_method_codes LP-DIR-AF has -F AF_specimens.txt
 76  records written to  ./AF_specimens.txt
-  % magic_select.py -f AF_specimens.txt -key magic_method_codes DE-BFL has -F AF_BFL_specimens.txt
+  $ magic_select.py -f AF_specimens.txt -key magic_method_codes DE-BFL has -F AF_BFL_specimens.txt
 69  records written to  ./AF_BFL_specimens.txt
 
  \end{verbatim}
@@ -3249,13 +2977,13 @@ Because this program imports data into the MagIC database, specimens need also t
 Someone named Lima Tango has measured a  synthetic specimen named {\it myspec}  for hysteresis and saved the data in a file named {\it agm\_magic\_example.agm}.   The backfield IRM curve for the same specimen was saved in {\it agm\_magic\_example.irm}.  Use the program {\bf AGM\_magic.py} to import the data into a magic\_measurements formatted output file.  These were measured using cgs units, so be sure to set the units switch properly.   Combine the two output files together using \href{#combine_magic.py}{combine\_magic.py}.    [This can be plotted using {\bf hysteresis\_magic.py} or {\bf quick\_hyst.py}.]    {\bf hysteresis\_magic.py} will calculate various hysteresis parameters and put them in the relevant magic tables for you.  ]
 s
 \begin{verbatim}
-% AGM_magic.py -spn myspec --usr ``Lima Tango`` -f agm_magic_example.agm -u cgs
+$ AGM_magic.py -spn myspec --usr ``Lima Tango`` -f agm_magic_example.agm -u cgs
 
 results put in  ./agm_measurements.txt
-% AGM_magic.py -spn myspec --usr ``Lima Tango`` -f agm_magic_example.irm -u cgs  -bak
+$ AGM_magic.py -spn myspec --usr ``Lima Tango`` -f agm_magic_example.irm -u cgs  -bak
 
 results put in  ./irm_measurements.txt
-% combine_magic.py -F magic_measurements.txt -f agm_measurements.txt irm_measurements.txt
+$ combine_magic.py -F magic_measurements.txt -f agm_measurements.txt irm_measurements.txt
 
 \end{verbatim}
 
@@ -3475,7 +3203,7 @@ The first line is the file name and the second has the latitude and longitude in
 Use the program to import the file {\it ldeo\_magic\_example.dat} into the MagIC format.  It was an AF demagnetization experiment.
 
 \begin{verbatim}
-% LDEO_magic.py -f ldeo_magic_example.dat -LP AF
+$ LDEO_magic.py -f ldeo_magic_example.dat -LP AF
 results put in  magic_measurements.txt
 \end{verbatim}
 
@@ -3485,7 +3213,7 @@ results put in  magic_measurements.txt
 Just for fun, download the whole core data from IODP expedition 318, Site U1359, Hole A. (Section Half set to 'A') from the \href{#LIMS}{IODP LIMS database} using WebTabular.    These data were used in \href{http://dx.doi.org/10.1029/2012PA002308}{Tauxe et al. (2012)} \nocite{tauxe12} after some editing (removal core ends and disturbed intervals).   Convert them into the MagIC format using {\bf ODP\_csv\_magic.py}:
 
 \begin{verbatim}
-% IODP_csv_magic.py -f SRM_318_U1359_A_A.csv
+$ IODP_csv_magic.py -f SRM_318_U1359_A_A.csv
 processing:  SRM_318_U1359_A_A.csv
 specimens stored in  ./er_specimens.txt
 samples stored in  ./er_samples.txt
@@ -3531,7 +3259,7 @@ The first line is a comment line.  The second line has the specimen name, the co
 Use {\bf PMD\_magic.py} to convert the file {\it ss0101a.pmd} in the directory 'PMD' in the 'PMD\_magic' folder of the {\it Measurement\_import} directory in the example {\it data\_files } directory.  These were taken at a location named 'Summit Springs' and have a naming convention of the type XXXX[YYY], where  YYY is sample designation with Z characters from site XXX, or \customlink{naming_schemes}naming convention \# 4-2.  A single character distinguishes the specimen from the sample (-spc 1).  All samples were oriented with a magnetic compass.
 
 \begin{verbatim}
-% PMD_magic.py -f ss0101a.pmd -loc ``Summit Springs`` -ncn 4-2 -spc 1 -mcd SO-MAG -F ss0101a.magic
+$ PMD_magic.py -f ss0101a.pmd -loc ``Summit Springs`` -ncn 4-2 -spc 1 -mcd SO-MAG -F ss0101a.magic
  results put in  ./magic_measurements.txt
 sample orientations put in  ./er_samples.txt
 \end{verbatim}
@@ -3539,7 +3267,7 @@ sample orientations put in  ./er_samples.txt
 Because each file must be imported separately, you should use a different name for the output file for each input file (otherwise you will overwrite the default each time) and set the switch  for sample file to append for subsequent imports:
 
 \begin{verbatim}
-% PMD_magic.py -f ss0102a.pmd -loc ``Summit Springs`` -ncn 4-2 -spc 1 -mcd SO-MAG -F ss0102a.magic-Fsa er_samples.txt
+$ PMD_magic.py -f ss0102a.pmd -loc ``Summit Springs`` -ncn 4-2 -spc 1 -mcd SO-MAG -F ss0102a.magic-Fsa er_samples.txt
 sample information will be appended to  ./er_samples.txt
 results put in  ./magic_measurements.txt
 sample orientations put in  ./er_samples.txt
@@ -3589,7 +3317,7 @@ As an example, we use data from Sbarbori et al. (2009) \nocite{sbarbori09} done 
 
 Note:  all of these should actually be on ONE line:
 
-% sio_magic.py -f sio_af_example.dat -F af_measurements.txt
+$ sio_magic.py -f sio_af_example.dat -F af_measurements.txt
     -LP AF -spc 1 -loc Socorro
 
 averaging: records  11 13
@@ -3601,7 +3329,7 @@ Averaged replicate measurements
 results put in  af_measurements.txt
 
 
-    % sio_magic.py -f sio_thermal_example.dat -F thermal_measurements.txt  \
+    $ sio_magic.py -f sio_thermal_example.dat -F thermal_measurements.txt  \
     -LP T -spc 1 -loc Socorro
 averaging: records  6 7
 sc12b2 started with  23  ending with  22
@@ -3609,7 +3337,7 @@ Averaged replicate measurements
 results put in  thermal_measurements.txt
 
 
-% sio_magic.py -f sio_thellier_example.dat -F  thellier_measurements.txt  \
+$ sio_magic.py -f sio_thellier_example.dat -F  thellier_measurements.txt  \
       -LP T -spc 1 -loc Socorro -dc 25 0 90
 averaging: records  10 11
 sc12b2 started with  56  ending with  55
@@ -3617,7 +3345,7 @@ Averaged replicate measurements
 results put in  thellier_measurements.txt
 
 
-% combine_magic.py -F magic_measurements.txt -f  thellier_measurements.txt   \
+$ combine_magic.py -F magic_measurements.txt -f  thellier_measurements.txt   \
        thermal_measurements.txt  af_measurements.txt
 
 File  ./thermal_measurements.txt  read in with  22  records
@@ -3685,7 +3413,7 @@ the intensity is the magnetization in 10$^{-3}$ A/m.   The treatment is of the f
 Use the program {\bf TDT\_magic.py} to import the ThellierTool tdt formatted file  {\it TDT\_magic\_example.dat} into the MagIC format.   The field was 52.12 $\mu$T applied along the 0,0 direction.
 
 \begin{verbatim}
-% TDT_magic.py -f tdt_magic_example.dat -loc TEST -dc 50.12 0 0
+$ TDT_magic.py -f tdt_magic_example.dat -loc TEST -dc 50.12 0 0
 results put in  magic_measurements.txt
 \end{verbatim}
 
@@ -3700,10 +3428,10 @@ This program takes specimen weights or volumes from an {\it er\_specimen.txt} fo
 Use the program {\bf measurements\_normalize.py} to generate weight normalized magnetizations for the data in the file {\it magic\_measurements.txt} in the {|it measurements\_normalize} directory.  Use the specimen weights in the file {\it specimen\_weights.txt}.
 
 \begin{verbatim}
-% magic_select.py -f magic_measurements.txt \
+$ magic_select.py -f magic_measurements.txt \
      -key magic_method_codes LP-IRM has -F irm_measurements.txt
 205  records written to  ./irm_measurements.txt
-% measurements_normalize.py -f irm_measurements.txt \
+$ measurements_normalize.py -f irm_measurements.txt \
       -fsp specimen_weights.txt -F irm_norm_measurements.txt
 Data saved in  ./irm_norm_measurements.txt
 \end{verbatim}
@@ -3718,14 +3446,14 @@ The programs \href{#zeq_magic.py}{zeq\_magic.py} and \href{#thellier_magic.py}{t
  Make ``redo'' files from the existing  {\it pmag\_specimen} formatted file in the data files downloaded from the MagIC website as in {\bf download\_magic.py} and examine them as follows:
 
 \begin{verbatim}
-% mk_redo.py
-% cat zeq_redo
+$ mk_redo.py
+$ cat zeq_redo
 sr01a1 DE-BFL 473 823 A
 sr01a2 DE-BFL 473 848 A
 sr01c2 DE-BFL 473 823 A
 sr01d1 DE-BFL 373 798 A
 .......
-% cat thellier_redo
+$ cat thellier_redo
 sr01a1 573 823
 sr01a2 573 848
 sr01c2 673 823
@@ -3751,11 +3479,11 @@ Get into the directory you made for tshe {\bf download\_magic.py} example.   \ne
 
 
  \begin{verbatim}
-% nrm_specimens_magic.py -crd g
+$ nrm_specimens_magic.py -crd g
 er_samples.txt  read in with  271  records
 Data saved in  nrm_specimens.txt
 
-% eqarea_magic.py -f nrm_specimens.txt
+$ eqarea_magic.py -f nrm_specimens.txt
 177  records read from  ./nrm_specimens.txt
 All
 sr01a1 SO-SUN   324.1    66.0
@@ -3798,7 +3526,7 @@ This program reads in the {\it magic\_measurements.txt} file and creates an {\it
 Try this out on the {\it magic\_measurements.txt} file created in the \href{#irmaq_magic.py}{irmaq\_magic.py} example.  Pretend you have a bunch of specimen weights you want to use to normalize the NRM with the program \href{#measurements_normalize.py}{measurements\_normalize.py}.
 
 \begin{verbatim}
-% parse_measurements.py
+$ parse_measurements.py
 site record in er_sites table not found for:  318-U1359A-002H-1-W-109
 site record in er_sites table not found for:  318-U1359A-002H-2-W-135
 site record in er_sites table not found for:  318-U1359A-002H-3-W-45
@@ -3820,7 +3548,7 @@ a simple space delimited file with specimen name, treatment step,  intensity, de
 line through the first ten treatment steps in data file {\it zeq\_example.txt}:
 
  \begin{verbatim}
- % pca.py -dir L 1 10 -f zeq_example.dat
+ $ pca.py -dir L 1 10 -f zeq_example.dat
 eba24a DE-BFL
 0 0.00 339.9 57.9 9.2830e-05
 1 2.50 325.7 49.1 7.5820e-05
@@ -3852,8 +3580,8 @@ This program makes a simple XY plot from any arbitrary input file.  You can spec
 This program plots cumulative distribution functions of a single column of input data.  Use as an example, a normally distributed set of 1000 data points generated by \href{#gaussian.py}{gaussian.py}.  Use the defaults of zero mean with a standard deviation of 1.
 
 \begin{verbatim}
-% gaussian.py -n 1000 > gaussian.out
-  % plot_cdf.py -f gaussian.out
+$ gaussian.py -n 1000 > gaussian.out
+  $ plot_cdf.py -f gaussian.out
 S[a]ve  plot, <Return> to quit a
 1  saved in  CDF_.svg
 \end{verbatim}
@@ -3891,8 +3619,8 @@ If you want to use high resolution or the etopo20 meshgrid (-etp option), You mu
 Draw a set of 200 uniformly distributed points on the globe with the program \href{#uniform.py}{uniform.py}.  Plot these on an orthographic projection with the viewing point at a longitude of 0 and a latitude of 30$^{\circ}$N.  If you have installed the high resolution data sets, use the -etp option to plot the topographic mesh.  Plot the points as large (size = 10) white dots.  Also note that for some reason the .svg output does not place nicely with illustrator.
 
 \begin{verbatim}
-% uniform.py -n 200 >uniform.out
-% plot_mapPTS.py -f uniform.out -prj ortho -eye 30 0 -etp -sym wo 10
+$ uniform.py -n 200 >uniform.out
+$ plot_mapPTS.py -f uniform.out -prj ortho -eye 30 0 -etp -sym wo 10
 please wait to draw points
  S[a]ve to save plot, Return to quit:  a
 1  saved in  Map_PTS.pdf
@@ -3927,7 +3655,7 @@ Dec\qquad &Inc\qquad &$\alpha_{95}$\\
 Make a plot of these data using {\bf plotdi\_a.py}:
 
 \begin{verbatim}
-% plotdi_a.py -f plotdi_a_example.dat
+$ plotdi_a.py -f plotdi_a_example.dat
  S[a]ve to save plot, [q]uit, Return to continue:  a
 1  saved in  eq.svg
 \end{verbatim}
@@ -3945,7 +3673,7 @@ Make a plot of these data using {\bf plotdi\_a.py}:
 This program extracts a tab delimited txt file from a {\it pmag\_results} formatted file.   This allows you to publish data tables that have identical data to the data uploaded into the MagIC database.    Try this out in the directory created for the {\bf download\_magic.py} example:
 
 \begin{verbatim}
-% pmag_results_extract.py -f pmag_results.txt
+$ pmag_results_extract.py -f pmag_results.txt
 data saved in:  ./Directions.txt ./Intensities.txt ./SiteNfo.txt
 \end{verbatim}
 
@@ -3968,14 +3696,14 @@ This program reads in a file with location, age and destination plate and rotate
 First, save  the location of Cincinnati (39.1 latitude, -84.7 longitude) in a file called {\it pt\_rot.input} using either the UNIX {\bf cat} function or your favorite text editor.  Save the data as a lon/lat pair separated by a space.  Then use the program {\bf pt\_rot.py} to rotate Cincinnati to (Northwest) African coordinates at 80 Ma.  Plot both points using \href{#plot_mapPTS.py}{plot\_mapPTS.py}.   You should save the lon, lat, plate, age, destination\_plate information in a file called {\it pt\_rot\_example.dat} in the following:
 
 \begin{verbatim}
-% plot_mapPTS.py -f pt_rot.input -sym g^ 10
+$ plot_mapPTS.py -f pt_rot.input -sym g^ 10
 please wait to draw points
  S[a]ve to save plot, Return to quit:  a
 1  saved in  Map_PTS.pdf
-% pt_rot.py -f pt_rot_example.dat
+$ pt_rot.py -f pt_rot_example.dat
 299.763594614 34.6088989286
-% pt_rot.py -f pt_rot_example.dat >pt_rot.out
-% plot_mapPTS.py -f pt_rot.out -sym ro 10
+$ pt_rot.py -f pt_rot_example.dat >pt_rot.out
+$ plot_mapPTS.py -f pt_rot.out -sym ro 10
 please wait to draw points
  S[a]ve to save plot, Return to quit:  a
 1  saved in  Map_PTS.pdf
@@ -3991,12 +3719,12 @@ The two plots will look like these:
 Now, use the program to rotate a selection of North American poles from 180-200 Ma (in the file {\it nam\_180-200.txt} in the {\it pt\_rot} directory) to Pangea A coordinates (finite rotation pole and angle in {\it nam\_panA.frp}.   Note that \href{#plot_mapPTS.py}{plot\_mapPTS.py} reads in longitude/latitude pairs, while {\bf pt\_rot.py} reads in latitude longitude pairs.
 
 \begin{verbatim}
-% plot_mapPTS.py -f nam_180-200.txt -prj ortho -eye 60 90 -sym c^ 10
+$ plot_mapPTS.py -f nam_180-200.txt -prj ortho -eye 60 90 -sym c^ 10
 please wait to draw points
  S[a]ve to save plot, Return to quit:  a
 1  saved in  Map_PTS.pdf
 
-% pt_rot.py -ff nam_180-200.txt nam_panA.frp
+$ pt_rot.py -ff nam_180-200.txt nam_panA.frp
 165.005966833 75.1055653383
 272.368103052 83.1542552681
 281.233199772 63.3738811186
@@ -4006,8 +3734,8 @@ please wait to draw points
 255.371917029 63.4115373574
 204.92422073 71.7944043036
 .....
-% pt_rot.py -ff nam_180-200.txt nam_panA.frp > pt_rot_panA.out
-% plot_mapPTS.py -f pt_rot_panA.out -prj ortho -eye 60 90 -sym ro 10
+$ pt_rot.py -ff nam_180-200.txt nam_panA.frp > pt_rot_panA.out
+$ plot_mapPTS.py -f pt_rot_panA.out -prj ortho -eye 60 90 -sym ro 10
 please wait to draw points
  S[a]ve to save plot, Return to quit:  a
 1  saved in  Map_PTS.pdf
@@ -4029,8 +3757,8 @@ a normal distribution.  Use {\bf qqplot.py} to test whether the data generated w
 (It will be 95\% of the time!).
 
 \begin{verbatim}
-% gaussian.py  -F  gauss.out
-% qqplot.py -f gauss.out
+$ gaussian.py  -F  gauss.out
+$ qqplot.py -f gauss.out
 mean,sigma, d, Dc
 0.02069909 0.849042146783 0.0528626896977 0.0886
  S[a]ve to save plot, [q]uit without saving:  a
@@ -4053,7 +3781,7 @@ mean,sigma, d, Dc
 \href{#hysteresis_magic.py}{hysteresis\_magic.py} makes plots of hysteresis loops and calculates the main hysteresis parameters.  For a quick look with no interpretation, you can use {\bf quick\_hyst.py}.   Try it out on the data file {\it hysteresis\_magic\_example.dat} in the {\it hysteresis\_magic} directory.
 
 \begin{verbatim}
-% quick_hyst.py -f hysteresis_magic_example.dat -fmt svg
+$ quick_hyst.py -f hysteresis_magic_example.dat -fmt svg
 IS06a-1 1 out of  8
 working on t:  273
 S[a]ve plots, [s]pecimen name, [q]uit, <return> to continue
@@ -4079,7 +3807,7 @@ which makes a plot like this:
 Use {\bf revtest.py} to test whether the two modes in the data set {\it revtest\_example.txt} are antipodal or not:
 
 \begin{verbatim}
-% revtest.py -f revtest_example.txt
+$ revtest.py -f revtest_example.txt
 doing first mode, be patient
 doing second mode, be patient
 s[a]ve plots, [q]uit: a
@@ -4110,7 +3838,7 @@ Same as \href{#revtest.py}{revtest.py} but for {\it pmag\_sites} MagIC formatted
 doing first mode, be patient
 doing second mode, be patient
 s[a]ve plots, [q]uit: q
-% revtest_magic.py -f revtest_sites.txt -exc
+$ revtest_magic.py -f revtest_sites.txt -exc
 \end{verbatim}
 
 \customlink{revtest_MM1990.py}
@@ -4122,7 +3850,7 @@ This program tests whether two sets of observations (one with normal and one wit
 Lets plot the combined data set \textit{Ao\textunderscore etal2013\textunderscore combined.txt} using \href{#eqarea.py}{eqarea.py}:
 
 \begin{verbatim}
-% eqarea.py -f Ao_etal2013_combined.txt
+$ eqarea.py -f Ao_etal2013_combined.txt
 \end{verbatim}
 
 \includegraphics[width=8cm]{EPSfiles/Ao2013eq.eps}}
@@ -4130,7 +3858,7 @@ Lets plot the combined data set \textit{Ao\textunderscore etal2013\textunderscor
 Conduct a reversal test between the normal directions \textit{Ao\textunderscore etal2013\textunderscore norm.txt} and reversed directions \textit{Ao\textunderscore etal2013\textunderscore rev.txt}:
 
 \begin{verbatim}
-% MM1990_revtest.py -f Ao_etal2013_norm.txt -f2 Ao_etal2013_rev.txt
+$ MM1990_revtest.py -f Ao_etal2013_norm.txt -f2 Ao_etal2013_rev.txt
 be patient, your computer is doing 5000 simulations...
 
 Results of Watson V test:
@@ -4161,7 +3889,7 @@ As with \href{#WatsonsV.py}{WatsonsV.py}, this program produces a plot that disp
 Convert the .s format data in {\it s\_eigs\_example.dat} to eigenvalues and eigenvectors:
 
 \begin{verbatim}
-% s_eigs.py -f s_eigs_example.dat
+$ s_eigs.py -f s_eigs_example.dat
 0.33127186 239.53  44.70 0.33351338 126.62  21.47 0.33521473  19.03  37.54
 0.33177859 281.12   6.18 0.33218277 169.79  73.43 0.33603862  12.82  15.32
 0.33046979 283.57  27.30 0.33328307 118.37  61.91 0.33624712  16.75   6.13
@@ -4177,7 +3905,7 @@ Convert the .s format data in {\it s\_eigs\_example.dat} to eigenvalues and eige
 Rotate the .s data into geographic coordinates using {\bf s\_geo.py}.  The input format is the 6 tensor elements of s, followed by the azimuth and plunge of the X axis.
 
 \begin{verbatim}
-% s_geo.py -f s_geo_example.dat
+$ s_geo.py -f s_geo_example.dat
 0.33412680 0.33282733 0.33304587 -0.00015289 0.00124843 0.00135721
 0.33556300 0.33198264 0.33245432 0.00087259 0.00024141 0.00096166
 0.33584908 0.33140627 0.33274469 0.00131845 0.00118816 0.00002986
@@ -4194,7 +3922,7 @@ Rotate the .s data into geographic coordinates using {\bf s\_geo.py}.  The input
 Take the output from the {\bf s\_geo.py} example and calculate Hext statistics:
 
 \begin{verbatim}
-% s_geo.py -f s_geo_example.dat | s_hext.py
+$ s_geo.py -f s_geo_example.dat | s_hext.py
 F =  5.79 F12 =  3.55 F23 =  3.66
 N =  8  sigma =  0.000641809950
 0.33505     5.3    14.7    25.5   124.5    61.7    13.3   268.8    23.6
@@ -4212,7 +3940,7 @@ N =  8  sigma =  0.000641809950
 Rotate the .s data saved in {\it s\_tilt\_example.dat} into stratigraphic coordinates:
 
 \begin{verbatim}
-% s_tilt.py -f s_tilt_example.dat
+$ s_tilt.py -f s_tilt_example.dat
 0.33455709 0.33192658 0.33351630 -0.00043562 0.00092778 0.00105006
 0.33585501 0.33191565 0.33222935 0.00055959 -0.00005316 0.00064731
 0.33586669 0.33084923 0.33328408 0.00142267 0.00013233 0.00009202
@@ -4230,8 +3958,8 @@ Rotate the .s data saved in {\it s\_tilt\_example.dat} into stratigraphic coordi
 Import .s format file output from the {\bf s\_tilt.py} example into an {\it rmag\_anisotropy} formatted file.  Files of the {\it rmag\_anisotropy} format can be plotted  with {\bf aniso\_magic.py}.   To see how this works,  use the program {\bf s\_magic.py} as follows:
 
 \begin{verbatim}
-% s_tilt.py -f s_tilt_example.dat >s_magic_example.dat
-% s_magic.py -f s_magic_example.dat
+$ s_tilt.py -f s_tilt_example.dat >s_magic_example.dat
+$ s_magic.py -f s_magic_example.dat
 data saved in  ./rmag_anisotropy.txt
 \end{verbatim}
 
@@ -4248,11 +3976,11 @@ This creates the output file {\it rmag\_anisotropy.txt}  by default, which can b
 Calculate the $S$ scatter statistic for a set of VGPs saved in {\it scalc\_example.txt}.  Repeat using a Vandamme (Vandamme et al., 1994) \nocite{vandamme94} variable cutoff.  Then get the bootstrap bounds on the calculation.
 
 \begin{verbatim}
-% scalc.py -f scalc_example.txt
+$ scalc.py -f scalc_example.txt
 99    19.5     90.0
-% scalc.py -f scalc_example.txt -v
+$ scalc.py -f scalc_example.txt -v
 89    15.2     32.3
-% scalc.py -f scalc_example.txt -v -b
+$ scalc.py -f scalc_example.txt -v -b
 89    15.2    13.3     16.8    32.3
 \end{verbatim}
 
@@ -4267,7 +3995,7 @@ Using no cutoff, the VGP scatter was 19.5$^{\circ}$.  The Vandamme co-latitude c
 This is the same as {\bf scalc.py} but works on {\it pmag\_results} formatted files.   Try it out on the {\it pmag\_results.txt} file in the directory created for the {\bf download\_magic.py} example. Use a VGP co-latitude cutoff of 30$^{\circ}$.
 
 \begin{verbatim}
-% scalc_magic.py -f pmag_results.txt  -c 30
+$ scalc_magic.py -f pmag_results.txt  -c 30
 13    17.8     30.0
 
 \end{verbatim}
@@ -4282,7 +4010,7 @@ There are frequently outlier directions when looking at data at the site level. 
 Try this out using the data downloaded  in the \href{#download_magic.py}{download\_magic.py} example.
 
 \begin{verbatim}
-% site_edit_magic.py
+$ site_edit_magic.py
 ....
 sr11
 specimen, dec, inc, n_meas/MAD,| method codes
@@ -4354,22 +4082,22 @@ Once a pmag\_specimens format file has been created, the data are usually  avera
 Test it out  by using the data files created in the \href{#site_edit_magic.py}{site\_edit\_magic.py} example.  Block the interpretation of some of the samples owing to `bad' orientation.  Change the selection criteria using \href{customize_criteria.py}{customize\_criteria.py}.    Then generate a new {\it pmag\_specimen.txt} file using \href{#mk_redo.py}{mk\_redo.py},  \href{#zeq_magic_redo.py}{zeq\_magic\_redo.py} and \href{#combine_magic.py}{combine\_magic.py}.   Then do the averaging by site with {\bf specimens\_results\_magic.py}.  The age bounds of the data are 0-5 Ma (-age 0 5 Ma).  Use the existing (or modified) criteria (-exc option).   There are some paleointensity data, so use the current site latitude for the VADM  calculation (-lat option).   Calculate the data in the geographic coordinate system (-crd g).    Then extract the data into tab delimited tables using \href{#pmag_results_extract.py}{pmag\_results\_extract.py}
 
 \begin{verbatim}
-% mk_redo.py
-% zeq_magic_redo.py -crd g
+$ mk_redo.py
+$ zeq_magic_redo.py -crd g
 Processing  173  specimens - please wait
 Recalculated specimen data stored in  ./zeq_specimens.txt
-% combine_magic.py -F pmag_specimens.txt -f zeq_specimens.txt thellier_specimens.txt
+$ combine_magic.py -F pmag_specimens.txt -f zeq_specimens.txt thellier_specimens.txt
 File  ./zeq_specimens.txt  read in with  173  records
 File  ./thellier_specimens.txt  read in with  50  records
 All records stored in  ./pmag_specimens.txt
-% specimens_results_magic.py -age 0 5 Ma -exc -lat -crd g
+$ specimens_results_magic.py -age 0 5 Ma -exc -lat -crd g
 Acceptance criteria read in from  pmag_criteria.txt
 
  Pmag Criteria stored in  pmag_criteria.txt
 
  sites written to  pmag_sites.txt
  results written to  pmag_results.txt
-% pmag_results_extract.py -fa er_ages.txt
+$ pmag_results_extract.py -fa er_ages.txt
 data saved in:  ./Directions.txt ./Intensities.txt ./SiteNfo.txt
 \end{verbatim}
 
@@ -4386,7 +4114,7 @@ Calculates gaussian statistics for sets of data.
 Calculate the mean of the data generated in the \href{#gaussian.py}{gaussian.py} example and saved in {\it gauss.out}:
 
 \begin{verbatim}
-% stats.py -f gauss.out
+$ stats.py -f gauss.out
 100 10.12243251 1012.243251 2.79670530387 27.6287868663
 \end{verbatim}
 
@@ -4408,19 +4136,19 @@ which according to the help message is:
 Follow the instructions for \href{#download_magic.py}{download\_magic.py} but search for Tauxe and Hartl and 1997.  Download the smartbook (text file) and unpack it into a new directory using the {\bf download\_magic.py} command and the file {\it zmab0094214tmp02.txt} as the input file (in the Tauxe and Hartl directory).   First run {\bf strip\_magic.py} to see what is available for plotting, then
 plot the inclination data versus depth (pos).  Then plot the VGP latitudes versus age:
 \begin{verbatim}
-% download_magic.py -f zmab0094214tmp03.txt
+$ download_magic.py -f zmab0094214tmp03.txt
 working on:  'er_locations'
 er_locations  data put in  ./er_locations.txt
 working on:  'er_sites'
 er_sites  data put in  ./er_sites.txt
 working on:  'er_samples'
 ..........
-% strip_magic.py
+$ strip_magic.py
 available objects for plotting:  ['all']
 available X plots:  ['age', 'pos']
 available Y plots:  ['lon', 'int', 'lat']
 available method codes:  ['LP-PI-IRM', 'LP-PI-REL']
-% strip_magic.py -x pos -y int -mcd LP-PI-IRM
+$ strip_magic.py -x pos -y int -mcd LP-PI-IRM
  S[a]ve to save plot, [q]uit without saving:  a
 1  saved in  strat.svg
  %strip_magic.py -x age -y lat
@@ -4458,17 +4186,17 @@ $\Delta_{GMT}$ lat lon year mon day hh mm shadow\_angle
 We can analyze this file with either:
 
 \begin{verbatim}
-% sundec.py -f sundec_example.dat
+$ sundec.py -f sundec_example.dat
   154.2
 \end{verbatim}
 or
 \begin{verbatim}
-% sundec.py < sundec_example.dat
+$ sundec.py < sundec_example.dat
   154.2
 \end{verbatim}
 or by manual input:
 \begin{verbatim}
-% sundec.py -i
+$ sundec.py -i
 Time difference between Greenwich Mean Time (hrs to ADD to
       GMT for local time):
 <cntl-D> to quit 3
@@ -4508,7 +4236,7 @@ Unpack the data with \href{#download_magic.py}{download\_magic.py}.   The origin
 Here is a transcript of a session that does all this:
 
 \begin{verbatim}
-% download_magic.py -f zmab0100159tmp01.txt
+$ download_magic.py -f zmab0100159tmp01.txt
 working on:  'er_locations'
 er_locations  data put in  ./er_locations.txt
 working on:  'er_sites'
@@ -4516,12 +4244,12 @@ er_sites  data put in  ./er_sites.txt
 working on:  'er_samples'
 er_samples  data put in  ./er_samples.txt
 ....
-%mk_redo.py
-% thellier_magic_redo.py
+$ mk_redo.py
+$ thellier_magic_redo.py
 Processing  112  specimens - please wait
 uncorrected thellier data saved in:  ./thellier_specimens.txt
 
-% thellier_magic.py
+$ thellier_magic.py
 .....
 16     550   323.6    -4.9 4.370e-08     4.2
 17     560   322.1    -2.5 3.240e-08     4.9
@@ -4620,13 +4348,13 @@ This program allows the recalculation of paleointensity experimental data derive
 Apply the corrections to the  data you re-interpreted in the \href{#thellier_magic.py}{thellier\_magic.py} example,   and create a new {\it pmag\_specimens.txt} formatted file, use the program {\bf thellier\_magic\_redo.py}.   First, create a ``redo'' file using \href{#mk_redo.py}, then re-do the calculations using {\bf thellier\_magic\_redo.py}, including anisotropy and non-linear TRM corrections.    Combine all the specimen files into one using \href{#combine_magic.py}{combine\_magic.py}.
 
 \begin{verbatim}
-% mk_redo.py -f thellier_specimens.txt
-%% thellier_magic_redo.py -ANI -NLT
+$ mk_redo.py -f thellier_specimens.txt
+$ thellier_magic_redo.py -ANI -NLT
 Processing  112  specimens - please wait
 WARNING: NO FTEST ON ANISOTROPY PERFORMED BECAUSE OF MISSING SIGMA - DOING CORRECTION ANYWAY
 ....
 anisotropy corrected data saved in:  ./AC_specimens.txt
-% combine_magic.py -F pmag_specimens.txt -f thellier_specimens.txt AC_specimens.txt NLT_specimens.txt
+$ combine_magic.py -F pmag_specimens.txt -f thellier_specimens.txt AC_specimens.txt NLT_specimens.txt
 File  ./thellier_specimens.txt  read in with  112  records
 File  ./AC_specimens.txt  read in with  112  records
 non-linear TRM corrected data saved in:  ./NLT_specimens.txt
@@ -4642,8 +4370,8 @@ All records stored in  ./pmag_specimens.txt
 Sometimes it is useful to generate a distribution of synthetic geomagnetic field vectors that you might expect to find from paleosecular variation of the geomagnetic field.  The program {\bf tk03.py} generates distributions of field vectors from the PSV model of Tauxe and Kent (2004).  \nocite{tauxe04}    Use this program to generate a set of vectors  for a latitude of 30$^{\circ}$ and plot them with \href{#eqarea.py}{eqarea.py}.
 
 \begin{verbatim}
-% tk03.py -lat 30 >tk03.out
-% eqarea.py -f tk03.out
+$ tk03.py -lat 30 >tk03.out
+$ eqarea.py -f tk03.out
 \end{verbatim}
 
 which should give you a plot something like this:
@@ -4660,8 +4388,8 @@ It is at times handy to be able to generate a uniformly distributed set of direc
 Draw 50 directions from a uniform distribution and save to a file called {\it uniform.out}.  Then plot the directions with \href{#eqarea.py}{eqarea.py}:
 
 \begin{verbatim}
-%  uniform.py -F uniform.out -n 50
-% eqarea.py -f uniform.out
+$  uniform.py -F uniform.out -n 50
+$ eqarea.py -f uniform.out
 \end{verbatim}
 
 which should yield a plot something (but not exactly) like this:
@@ -4695,7 +4423,7 @@ AFTER fixing the {\it er\_samples.txt} and {\it er\_sites.txt} files, do the fol
 
 
 \begin{verbatim}
-% specimens_results_magic.py -exc -lat -age 0 5 Ma -crd g
+$ specimens_results_magic.py -exc -lat -age 0 5 Ma -crd g
 Acceptance criteria read in from  pmag_criteria.txt
 
  Pmag Criteria stored in  pmag_criteria.txt
@@ -4704,7 +4432,7 @@ Acceptance criteria read in from  pmag_criteria.txt
  results written to  pmag_results.txt
 
 
-% upload_magic.py
+$ upload_magic.py
 Removing:  ['citation_label', 'compilation', 'calculation_type', 'average_n_lines',
  'average_n_planes', 'specimen_grade', 'site_vgp_lat', 'site_vgp_lon', 'direction_type',
  'specimen_Z', 'magic_instrument_codes', 'cooling_rate_corr', 'cooling_rate_mcd']
@@ -4738,10 +4466,10 @@ Finished preparing upload file
 Use this program to try to recover the original field intensity $b$ from a Virtual Dipole Moment of  71.59 ZAm$^2$ for the latitude 22$^{\circ}$.
 
 \begin{verbatim}
-% cat>vdm_b_example.dat
+$ cat>vdm_b_example.dat
 71.59e21 22
 ^D
-% vdm_b.py -f vdm_b_example.dat
+$ vdm_b.py -f vdm_b_example.dat
  3.300e-05
 \end{verbatim}
 
@@ -4758,8 +4486,8 @@ Compare this answer with the original in \href{#b_vdm.py}{b\_vdm.py}, noting tha
 Create a set of vector data with \href{#tk03.py}{tk03.py} for a latitude of 30$^{\circ}$N.  Calculate the vector mean of these data.
 
 \begin{verbatim}
-% tk03.py -lat 30 >vector_mean_example.dat
-% vector_mean.py -f vector_mean_example.dat
+$ tk03.py -lat 30 >vector_mean_example.dat
+$ vector_mean.py -f vector_mean_example.dat
     1.3    49.6    2.289e+06 100
 \end{verbatim}
 
@@ -4785,7 +4513,7 @@ $\lambda_p$\qquad &$\phi_p$ \qquad & $\lambda_s$\qquad & $\phi_s$ \\
 Here is a transcript of one way to use the program which spits out declination, inclination:
 
 \begin{verbatim}
-% vgp_di.py -f vgp_di_example.dat
+$ vgp_di.py -f vgp_di_example.dat
   335.6    62.9
 \end{verbatim}
 
@@ -4823,14 +4551,14 @@ To use this program, you need to have basemap, which is not part of the free EPD
 First generate two data files with {\bf fishrot.py} with $\kappa$ = 15, $N=10$ and $I$ = 42, with $D$ = 10. for the first and 20 for the second:
 
 \begin{verbatim}
-% fishrot.py -k 15 -n 10 -I 42 -D 10 >watsonsF_example_file1.dat
-% fishrot.py -k 15 -n 10 -I 42 -D 20 > watsonsF_example_file2.dat
+$ fishrot.py -k 15 -n 10 -I 42 -D 10 >watsonsF_example_file1.dat
+$ fishrot.py -k 15 -n 10 -I 42 -D 20 > watsonsF_example_file2.dat
 \end{verbatim}
 
 To compare these two files using {\bf watsonsF.py}:
 
 \begin{verbatim}
-% watsonsF.py -f watsonsF_example_file1.dat -f2 watsonsF_example_file2.dat
+$ watsonsF.py -f watsonsF_example_file1.dat -f2 watsonsF_example_file2.dat
 7.74186876032 3.2594 3.2594
 \end{verbatim}
 
@@ -4845,7 +4573,7 @@ The first number is Watson's  $F$ statistic for these two files (see \href{http:
 Use the two data files generated in the example for {\bf watsonsF.py} and repeat the test using Watson's $V_w$ statistic.
 
 \begin{verbatim}
-% watsonsV.py -f watsonsF_example_file1.dat -f2 watsonsF_example_file2.dat
+$ watsonsV.py -f watsonsF_example_file1.dat -f2 watsonsF_example_file2.dat
 Doing  5000  simulations
 50
 100
@@ -4877,7 +4605,7 @@ Use the program {\bf zeq.py} to 1) plot a Zijderveld diagram of the data in \new
 
 
 \begin{verbatim}
-% zeq.py -f zeq_example.dat -u mT
+$ zeq.py -f zeq_example.dat -u mT
 \end{verbatim}
 
  By selecting `b', you can pick the bounds and choose 'l' for best-fit line or  `p' for best-fit plane.  You can rotate the X-Y axes  by selecting `h' and setting the X axis to 312.   Finally, you can save your plots with the 'a' option.   You should have saved something like these plots:
@@ -4904,7 +4632,7 @@ The equal area projection has the X direction (usually North in geographic coord
 Plot the AF demagnetization data available in the file you got in the {\bf download\_magic.py} example using {\bf zeq\_magic.py}.    Use geographic coordinates, where orientations are available.
 
 \begin{verbatim}
-% zeq_magic.py -crd g
+$ zeq_magic.py -crd g
 sr01a1 0 out of  177
     looking up previous interpretations...
 Specimen  N    MAD    DANG  start     end      dec     inc  type  component
@@ -4950,15 +4678,15 @@ Assuming that sample orientations are in a file called {\it er\_samples.txt}, us
 Note that indented lines belong with the line above as a single line.
 
 \begin{verbatim}
-%mk_redo.py
-% zeq_magic_redo.py -F zeq_specimens_s.txt -crd s
+$ mk_redo.py
+$ zeq_magic_redo.py -F zeq_specimens_s.txt -crd s
 Processing  175  specimens - please wait
 Recalculated specimen data stored in  ./zeq_specimens_s.txt
 
-% zeq_magic_redo.py -F zeq_specimens_g.txt -crd g
+$ zeq_magic_redo.py -F zeq_specimens_g.txt -crd g
 Processing  175  specimens - please wait
 Recalculated specimen data stored in  ./zeq_specimens_g.txt
-% combine_magic.py -F pmag_specimens.txt   -f zeq_specimens_s.txt zeq_specimens_g.txt
+$ combine_magic.py -F pmag_specimens.txt   -f zeq_specimens_s.txt zeq_specimens_g.txt
 \end{verbatim}
 
 %
@@ -5757,7 +5485,7 @@ You can type in the same stuff you've been doing interactively into a script fil
 On a Mac or Unix system,  you can put in a header line identifying the script as python (\#!/usr/bin/env python), make  it executable (chmod a+x)  and   run it like this:
 
 { \color{blue} \begin{verbatim}
-% myscript.py
+$ myscript.py
 \end{verbatim}}
 
 On PCs, you can just type the name of the script without the header or the chmod command.   But, because PCs don't come standard with a {\bf cat} command, you have to create the file with Notepad, instead of with {\bf cat} for all the examples using {\bf cat}.
@@ -5765,13 +5493,13 @@ On PCs, you can just type the name of the script without the header or the chmod
 Here is an example that creates a script using the Unix {\bf cat} command, makes it executable and then runs it:
 
 { \color{blue} \begin{verbatim}
-% cat > printmess.py
+$ cat > printmess.py
 #!/usr/bin/env python
 # simple Python test program (printmess.py)
 print 'test message'
 ^-D
-% chmod a+x printmess.py
-% ./printmess.py
+$ chmod a+x printmess.py
+$ ./printmess.py
 test message
 \end{verbatim}}
 
@@ -5802,7 +5530,7 @@ print 'She said ``I know what it\'s like to be dead``'
 produces:
 
 { \color{blue} \begin{verbatim}
-% ./printmess2.py
+$ ./printmess2.py
 The pump don't work 'cuz the vandals took the handles
 She said ``I know what it's like to be dead``
 %
@@ -6146,7 +5874,7 @@ for line  in StationNFO:
 
 If you run this script, you will get this behavior:
 { \color{blue} \begin{verbatim}
-% ReadStations.py
+$ ReadStations.py
    9.02920   38.76560 2442 AAE
 
   42.63900   74.49400 1645 AAK
@@ -6162,7 +5890,7 @@ If you run this script, you will get this behavior:
 If you are curious about the line endings, try typing out the `representation' of the line {\color{blue}repr(line)} in the above script and you get all the  stuff that is normally  invisible like the apostrophes and the line terminations:
 
 { \color{blue} \begin{verbatim}
-% ReadStations.py
+$ ReadStations.py
 '   9.02920   38.76560 2442 AAE \n'
 '  42.63900   74.49400 1645 AAK \n'
 '  37.93040   58.11890  678 ABKT\n'
@@ -6181,7 +5909,7 @@ etc.
 \noindent Putting this into the code results in this behavior:
 
 { \color{blue} \begin{verbatim}
-% ReadStations.py
+$ ReadStations.py
    9.02920   38.76560 2442 AAE
   42.63900   74.49400 1645 AAK
   37.93040   58.11890  678 ABKT
@@ -6227,7 +5955,7 @@ for line  in StationNFO:
 \noindent The program can be invoked with:
 
 {\color{blue}\begin{verbatim}
-% ReadStations.py < station.list
+$ ReadStations.py < station.list
 \end{verbatim}}
 
 We could also use command line switches by reading in arguments from the command line.  In the following example, we use the switch '-f' with the following argument begin the file name:
@@ -6253,7 +5981,7 @@ for line  in StationNFO:
 \noindent This version can be invoked with:
 
 {\color{blue}\begin{verbatim}
-% ReadStations.py -f  station.list
+$ ReadStations.py -f  station.list
 \end{verbatim}}
 
 \subsubsection{Reading numeric files}
@@ -6287,7 +6015,7 @@ for line  in StationNFO:
 which spits out something like this:
 
 { \color{blue} \begin{verbatim}
-% ConvertStations.py
+$ ConvertStations.py
 AAE :  474238.170087 998088.469113 37P
 AAK :  458516.115522 4720850.45385 43T
 ABKT :  598330.712671 4198681.92944 40S
@@ -6349,8 +6077,8 @@ print '%7.1f,%s\t%10.3e'%(x,'hi there',y)
 
 \noindent A session using the script ({\color{blue}ConvertStations2.py} and a peek at the resulting file could look like this:
 { \color{blue} \begin{verbatim}
-% ConvertStations2.py
-% head mynewfile
+$ ConvertStations2.py
+$ head mynewfile
 AAE  474238.170087  998088.469113  37P
 AAK  458516.115522  4720850.45385  43T
 ABKT  598330.712671  4198681.92944  40S
@@ -6505,7 +6233,7 @@ def print_args(*args):
 \noindent We could then just import the module {\color{blue}myfuncs} from within another program, or just interactively. We can use the functions, or just call for help:
 
 { \color{blue} \begin{verbatim}
-% python
+$ python
 >>> import myfuncs
 >>> print myfuncs.gimmepi()
 3.14159265359
