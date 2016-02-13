@@ -1986,15 +1986,14 @@ mc200 plotting by:  er_site_name
 \includegraphics[width=15cm]{EPSfiles/dmag.eps}
 
 \customlink{download_magic.py}
+
  \subsection{download\_magic.py} [\href{http://earthref.org/MagIC}{MagIC}]
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/download_magic.py}{[download\_magic docs]}
 
  This program unpacks .txt files downloaded from the MagIC database into individual directories for each location into which the individual files for each table (e.g., {\it er\_locations.txt, magic\_measurements.txt, pmag\_results.txt} and so on) get placed.   As an example, go to the MagIC data base at \url{http://earthref.org/MAGIC/search}.  Enter ``Tauxe and 2004'' into the Reference Text Search field will show you several references.   Look for the one for Tauxe, L., Luskin, C., Selkin, P., Gans, P. and Calvert, A. (2004). \nocite{tauxe04b}  Download the  text file under the ``Contribution SmartBook'' column and save it to your desktop.   Make a   folder into which  you should put the downloaded txt file called MagIC\_download and move the file into it.  Now use the program {\bf download\_magic.py} to unpack the .txt file ({\it zmab0083201tmp03.txt}).
 
  \begin{verbatim}
-$ mkdir MagIC_download
 $ cd MagIC_download
-$ download_magic.py -f zmab0083201tmp03.txt
 $ download_magic.py -f zmab0083201tmp03.txt
 working on:  'er_locations'
 er_locations  data put in  ./er_locations.txt
@@ -2022,7 +2021,7 @@ unpacking:  ./er_specimens.txt
 .
 \end{verbatim}
 
-You can change directories into each Location directory (in this case only one) and examine the data using the {\bf PmagPy} programs (e.g., \href{#zeq_magic.py}{zeq\_magic.py}).
+You can change directories into each Location directory (in this case only one) and examine the data using the {\bf PmagPy} GUI programs (e.g., \href{#pmag_gui.py}{pmag_gui.py}).
 
 
  %
@@ -2049,18 +2048,6 @@ $ eigs_s.py -f eigs_s_example.dat
 ...
 \end{verbatim}
 
-%\subsection{endnote\_magic.py} [MagIC]
-
-%This handy program converts your EndNote reference data base bibtex formatted output to the MagIC er\_citations table format.    Try it on the file {\it EndNoteExport.txt}:
-
-%\begin{verbatim}
-%% endnote_magic.py
-%Citations saved in  er_citations.txt
-%\end{verbatim}
-
-%You will  have to modify the er\_citation\_name to ``This study'' for the key reference  to the study you are trying to upload.
-
-%
 \customlink{eq_di.py}
 \subsection{eq\_di.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3.html#equal_area}{[Essentials Appendix B]}
@@ -2223,13 +2210,6 @@ which produces plots like:
 
  \includegraphics[width=15cm]{EPSfiles/eqarea_magic_BV.eps}
 
-\customlink{extract_methods.py}
-%\subsection{extract\_methods.py}
-%\href{#MagIC}{MagIC}
-
-%This script reads in any MagIC formatted table and extracts a list of unique method codes.
-
-
 
 
 \customlink{find_EI.py}
@@ -2249,7 +2229,13 @@ Paleolat for converting to inclination: <cntl-D> to quit ^D
 \end{verbatim}
 
 
-The data were ``flattened'' using the formula $ \tan I_o = f \tan I_f$ to simulate inclination error and saved in a data file {\it find\_EI\_example.dat} in the {\it find\_EI} directory.
+The data were ``flattened'' with the program \href{#squish.py}{squish.py} which uses the formula $ \tan I_o = f \tan I_f$ to simulate inclination error and saved in a data file {\it find\_EI\_example.dat} in the {\it find\_EI} directory.
+
+\begin{verbatim}
+$ tk03.py -lat 42 > tk03.out
+$ squish.py -flt .4 -f tk03.out -F find_EI_example.dat
+\end{verbatim}
+
 Use the program {\bf find\_EI.py} to find the optimum flattening factor $f$ which, when used to ``unflatten'' the data  yields inclination   and  elongation (ratio of major and minor eigenvalues of orientation matrix, see the section on  \href{Webbook2.html#orientation_tensor}{eigenvalues} in the textbook)  most consistent with the TK03.GAD paleosecular variation model of Tauxe and Kent (2004). \nocite{tauxe04d}
 
 

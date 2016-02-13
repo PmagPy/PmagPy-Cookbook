@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  11 FEB 2016 18:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  13 FEB 2016 14:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1102,7 +1102,7 @@ ustomize_criteria.py
 t_magic.py 
  --- Customlinks says: Link to subsection 5.2.23: PmagPy.html#subsec5-2-23
 [124] [125]
-l. 1704 Writing PmagPy.idv[66] (PmagPy65x.png)
+l. 1708 Writing PmagPy.idv[66] (PmagPy65x.png)
 File: EPSfiles/dayplot.eps Graphic file (type eps)
  <EPSfiles/dayplot.eps>
  --- Customlinks says: Link to subsection 5.2.24: PmagPy.html#subsec5-2-24
@@ -1112,16 +1112,16 @@ File: EPSfiles/dayplot.eps Graphic file (type eps)
  --- Customlinks says: Custom link named 'di_geo.py': PmagPy.html#di_geo.py 
  --- Customlinks says: Link to subsection 5.2.26: PmagPy.html#subsec5-2-26
 [127] [128]
-l. 1764 Writing PmagPy.idv[67] (PmagPy66x.png)
+l. 1768 Writing PmagPy.idv[67] (PmagPy66x.png)
 File: EPSfiles/di_geo_spc_eq.eps Graphic file (type eps)
  <EPSfiles/di_geo_spc_eq.eps> [129]
-l. 1776 Writing PmagPy.idv[68] (PmagPy67x.png)
+l. 1780 Writing PmagPy.idv[68] (PmagPy67x.png)
 File: EPSfiles/di_geo_geo_eq.eps Graphic file (type eps)
  <EPSfiles/di_geo_geo_eq.eps>
  --- Customlinks says: Custom link named 'di_rot.py': PmagPy.html#di_rot.py 
  --- Customlinks says: Link to subsection 5.2.27: PmagPy.html#subsec5-2-27
 [130] [131]
-l. 1801 Writing PmagPy.idv[69] (PmagPy68x.png)
+l. 1805 Writing PmagPy.idv[69] (PmagPy68x.png)
 File: EPSfiles/dirot.eps Graphic file (type eps)
  <EPSfiles/dirot.eps>
  --- Customlinks says: Custom link named 'di_tilt.py': PmagPy.html#di_tilt.py 
@@ -1146,7 +1146,7 @@ lat.py
 c.py 
  --- Customlinks says: Link to subsection 5.2.33: PmagPy.html#subsec5-2-33
 [139]
-l. 1982 Writing PmagPy.idv[70] (PmagPy69x.png)
+l. 1986 Writing PmagPy.idv[70] (PmagPy69x.png)
 File: EPSfiles/dmag.eps Graphic file (type eps)
  <EPSfiles/dmag.eps>
  --- Customlinks says: Custom link named 'download_magic.py': PmagPy.html#downl
@@ -1162,152 +1162,150 @@ oad_magic.py
  --- Customlinks says: Custom link named 'eqarea.py': PmagPy.html#eqarea.py 
  --- Customlinks says: Link to subsection 5.2.37: PmagPy.html#subsec5-2-37
 [145]
-l. 2102 Writing PmagPy.idv[71] (PmagPy70x.png)
+l. 2093 Writing PmagPy.idv[71] (PmagPy70x.png)
 File: EPSfiles/eqarea.eps Graphic file (type eps)
  <EPSfiles/eqarea.eps>
  --- Customlinks says: Custom link named 'eqarea_ell.py': PmagPy.html#eqarea_el
 l.py 
  --- Customlinks says: Link to subsection 5.2.38: PmagPy.html#subsec5-2-38
 [146] [147]
-l. 2133 Writing PmagPy.idv[72] (PmagPy71x.png)
+l. 2124 Writing PmagPy.idv[72] (PmagPy71x.png)
 File: EPSfiles/eqarea_ell.eps Graphic file (type eps)
  <EPSfiles/eqarea_ell.eps> [148]
  --- Customlinks says: Custom link named 'eqarea_magic.py': PmagPy.html#eqarea_
 magic.py 
  --- Customlinks says: Link to subsection 5.2.39: PmagPy.html#subsec5-2-39
 [149] [150] [151]
-l. 2190 Writing PmagPy.idv[73] (PmagPy72x.png)
+l. 2181 Writing PmagPy.idv[73] (PmagPy72x.png)
 File: EPSfiles/eqarea-magic.eps Graphic file (type eps)
  <EPSfiles/eqarea-magic.eps> [152] [153]
-l. 2220 Writing PmagPy.idv[74] (PmagPy73x.png)
+l. 2211 Writing PmagPy.idv[74] (PmagPy73x.png)
 File: EPSfiles/eqarea_magic_BV.eps Graphic file (type eps)
 
 <EPSfiles/eqarea_magic_BV.eps> [154]
- --- Customlinks says: Custom link named 'extract_methods.py': PmagPy.html#extr
-act_methods.py 
  --- Customlinks says: Custom link named 'find_EI.py': PmagPy.html#find_EI.py 
  --- Customlinks says: Link to subsection 5.2.40: PmagPy.html#subsec5-2-40
-[155] [156]
-l. 2277 Writing PmagPy.idv[75] (PmagPy74x.png)
+[155] [156] [157]
+l. 2267 Writing PmagPy.idv[75] (PmagPy74x.png)
 File: EPSfiles/find_EI.eps Graphic file (type eps)
- <EPSfiles/find_EI.eps> [157]
+ <EPSfiles/find_EI.eps> [158]
  --- Customlinks says: Custom link named 'fisher.py': PmagPy.html#fisher.py 
  --- Customlinks says: Link to subsection 5.2.41: PmagPy.html#subsec5-2-41
-[158] [159]
+[159] [160]
  --- Customlinks says: Custom link named 'fishqq.py': PmagPy.html#fishqq.py 
  --- Customlinks says: Link to subsection 5.2.42: PmagPy.html#subsec5-2-42
-[160]
-l. 2321 Writing PmagPy.idv[76] (PmagPy75x.png)
+[161]
+l. 2311 Writing PmagPy.idv[76] (PmagPy75x.png)
 File: EPSfiles/fishqq-ex.eps Graphic file (type eps)
  <EPSfiles/fishqq-ex.eps>
  --- Customlinks says: Custom link named 'fishrot.py': PmagPy.html#fishrot.py 
  --- Customlinks says: Link to subsection 5.2.43: PmagPy.html#subsec5-2-43
-[161]
+[162]
  --- Customlinks says: Custom link named 'foldtest.py': PmagPy.html#foldtest.py
  
  --- Customlinks says: Link to subsection 5.2.44: PmagPy.html#subsec5-2-44
-[162]
-l. 2372 Writing PmagPy.idv[77] (PmagPy76x.png)
+[163]
+l. 2362 Writing PmagPy.idv[77] (PmagPy76x.png)
 File: EPSfiles/foldtest-ex.eps Graphic file (type eps)
  <EPSfiles/foldtest-ex.eps>
  --- Customlinks says: Custom link named 'foldtest_magic.py': PmagPy.html#foldt
 est_magic.py 
-[163]
+[164]
  --- Customlinks says: Link to subsection 5.2.45: PmagPy.html#subsec5-2-45
  --- Customlinks says: Custom link named 'gaussian.py': PmagPy.html#gaussian.py
  
  --- Customlinks says: Link to subsection 5.2.46: PmagPy.html#subsec5-2-46
-[164]
+[165]
  --- Customlinks says: Custom link named 'gobing.py': PmagPy.html#gobing.py 
  --- Customlinks says: Link to subsection 5.2.47: PmagPy.html#subsec5-2-47
-[165]
+[166]
  --- Customlinks says: Custom link named 'gofish.py': PmagPy.html#gofish.py 
  --- Customlinks says: Link to subsection 5.2.48: PmagPy.html#subsec5-2-48
-[166]
+[167]
  --- Customlinks says: Custom link named 'gokent.py': PmagPy.html#gokent.py 
  --- Customlinks says: Link to subsection 5.2.49: PmagPy.html#subsec5-2-49
-[167]
- --- Customlinks says: Link to subsection 5.2.50: PmagPy.html#subsec5-2-50
 [168]
+ --- Customlinks says: Link to subsection 5.2.50: PmagPy.html#subsec5-2-50
+[169]
  --- Customlinks says: Custom link named 'grab_magic_key.py': PmagPy.html#grab_
 magic_key.py 
  --- Customlinks says: Link to subsection 5.2.51: PmagPy.html#subsec5-2-51
-[169] [170]
-l. 2487 Writing PmagPy.idv[78] (PmagPy77x.png)
+[170] [171]
+l. 2477 Writing PmagPy.idv[78] (PmagPy77x.png)
 File: EPSfiles/grab_magic_key.eps Graphic file (type eps)
- <EPSfiles/grab_magic_key.eps> [171]
+ <EPSfiles/grab_magic_key.eps> [172]
  --- Customlinks says: Custom link named 'histplot.py': PmagPy.html#histplot.py
  
  --- Customlinks says: Link to subsection 5.2.52: PmagPy.html#subsec5-2-52
-[172]
-l. 2504 Writing PmagPy.idv[79] (PmagPy78x.png)
+[173]
+l. 2494 Writing PmagPy.idv[79] (PmagPy78x.png)
 File: EPSfiles/hist.eps Graphic file (type eps)
  <EPSfiles/hist.eps>
  --- Customlinks says: Custom link named 'hysteresis_magic.py': PmagPy.html#hys
 teresis_magic.py 
  --- Customlinks says: Link to subsection 5.2.53: PmagPy.html#subsec5-2-53
-[173] [174]
-l. 2528 Writing PmagPy.idv[80] (PmagPy79x.png)
+[174] [175]
+l. 2518 Writing PmagPy.idv[80] (PmagPy79x.png)
 File: EPSfiles/hysteresis-magic.eps Graphic file (type eps)
- <EPSfiles/hysteresis-magic.eps> [175]
+ <EPSfiles/hysteresis-magic.eps> [176]
  --- Customlinks says: Custom link named 'igrf.py': PmagPy.html#igrf.py 
  --- Customlinks says: Link to subsection 5.2.54: PmagPy.html#subsec5-2-54
-[176] [177] [178] [179]
-l. 2571 Writing PmagPy.idv[81] (PmagPy80x.png)
+[177] [178] [179] [180]
+l. 2561 Writing PmagPy.idv[81] (PmagPy80x.png)
 File: EPSfiles/igrf.eps Graphic file (type eps)
  <EPSfiles/igrf.eps>
  --- Customlinks says: Custom link named 'install_etopo.py': PmagPy.html#instal
 l_etopo.py 
  --- Customlinks says: Link to subsection 5.2.55: PmagPy.html#subsec5-2-55
-[180] [181]
+[181] [182]
  --- Customlinks says: Custom link named 'incfish.py': PmagPy.html#incfish.py 
  --- Customlinks says: Link to subsection 5.2.56: PmagPy.html#subsec5-2-56
-[182]
+[183]
  --- Customlinks says: Custom link named 'irmaq_magic.py': PmagPy.html#irmaq_ma
 gic.py 
  --- Customlinks says: Link to subsection 5.2.57: PmagPy.html#subsec5-2-57
-[183]
-l. 2632 Writing PmagPy.idv[82] (PmagPy81x.png)
+[184]
+l. 2622 Writing PmagPy.idv[82] (PmagPy81x.png)
 File: EPSfiles/irmaq_magic.eps Graphic file (type eps)
- <EPSfiles/irmaq_magic.eps> [184]
+ <EPSfiles/irmaq_magic.eps> [185]
  --- Customlinks says: Custom link named 'k15_magic.py': PmagPy.html#k15_magic.
 py 
  --- Customlinks says: Link to subsection 5.2.58: PmagPy.html#subsec5-2-58
-[185] [186]
-l. 2667 Writing PmagPy.idv[83] (PmagPy82x.png)
+[186] [187]
+l. 2657 Writing PmagPy.idv[83] (PmagPy82x.png)
 File: EPSfiles/meas15.eps Graphic file (type eps)
- <EPSfiles/meas15.eps> [187] [188] [189]
+ <EPSfiles/meas15.eps> [188] [189] [190]
  --- Customlinks says: Custom link named 'k15_s.py': PmagPy.html#k15_s.py 
  --- Customlinks says: Link to subsection 5.2.59: PmagPy.html#subsec5-2-59
-[190]
+[191]
  --- Customlinks says: Custom link named 'KLY4S_magic.py': PmagPy.html#KLY4S_ma
 gic.py 
  --- Customlinks says: Link to subsection 5.2.60: PmagPy.html#subsec5-2-60
-[191] [192]
+[192] [193]
  --- Customlinks says: Custom link named 'lnp_magic.py': PmagPy.html#lnp_magic.
 py 
  --- Customlinks says: Link to subsection 5.2.61: PmagPy.html#subsec5-2-61
-[193]
-l. 2772 Writing PmagPy.idv[84] (PmagPy83x.png)
+[194]
+l. 2762 Writing PmagPy.idv[84] (PmagPy83x.png)
 File: EPSfiles/lnp-ex.eps Graphic file (type eps)
- <EPSfiles/lnp-ex.eps> [194]
+ <EPSfiles/lnp-ex.eps> [195]
  --- Customlinks says: Custom link named 'lowrie.py': PmagPy.html#lowrie.py 
  --- Customlinks says: Link to subsection 5.2.62: PmagPy.html#subsec5-2-62
-[195]
-l. 2794 Writing PmagPy.idv[85] (PmagPy84x.png)
+[196]
+l. 2784 Writing PmagPy.idv[85] (PmagPy84x.png)
 File: EPSfiles/lowrie.eps Graphic file (type eps)
  <EPSfiles/lowrie.eps>
  --- Customlinks says: Custom link named 'lowrie_magic.py': PmagPy.html#lowrie_
 magic.py 
-[196]
- --- Customlinks says: Link to subsection 5.2.63: PmagPy.html#subsec5-2-63
 [197]
+ --- Customlinks says: Link to subsection 5.2.63: PmagPy.html#subsec5-2-63
+[198]
  --- Customlinks says: Custom link named 'MagIC_Tutorial': PmagPy.html#MagIC_Tu
 torial 
  --- Customlinks says: Custom link named 'magic_select.py': PmagPy.html#magic_s
 elect.py 
  --- Customlinks says: Link to subsection 5.2.64: PmagPy.html#subsec5-2-64
-[198] [199]
+[199] [200]
  --- Customlinks says: Custom link named 'make_magic_plots.py': PmagPy.html#mak
 e_magic_plots.py 
  --- Customlinks says: Link to subsection 5.2.65: PmagPy.html#subsec5-2-65
@@ -1322,297 +1320,297 @@ magic.py
 py 
  --- Customlinks says: Link to subsubsection 5.2.66.0: PmagPy.html#subsubsec5-2
 -66-0
-[200] [201]
+[201] [202]
  --- Customlinks says: Custom link named 'CIT_magic.py': PmagPy.html#CIT_magic.
 py 
  --- Customlinks says: Link to subsubsection 5.2.66.0: PmagPy.html#subsubsec5-2
 -66-0
-[202] [203] [204]
+[203] [204] [205]
  --- Customlinks says: Custom link named 'generic_magic.py': PmagPy.html#generi
 c_magic.py 
  --- Customlinks says: Link to subsubsection 5.2.66.0: PmagPy.html#subsubsec5-2
 -66-0
-[205] [206] [207]
+[206] [207] [208]
  --- Customlinks says: Custom link named 'HUJI_magic.py': PmagPy.html#HUJI_magi
 c.py 
  --- Customlinks says: Link to subsubsection 5.2.66.0: PmagPy.html#subsubsec5-2
 -66-0
-[208]
+[209]
  --- Customlinks says: Custom link named 'LDEO_magic.py': PmagPy.html#LDEO_magi
 c.py 
  --- Customlinks says: Link to subsubsection 5.2.66.0: PmagPy.html#subsubsec5-2
 -66-0
-[209] [210] [211]
+[210] [211] [212]
  --- Customlinks says: Custom link named 'IODP_csv_magic.py': PmagPy.html#IODP_
 csv_magic.py 
  --- Customlinks says: Link to subsubsection 5.2.66.0: PmagPy.html#subsubsec5-2
 -66-0
-[212]
+[213]
  --- Customlinks says: Custom link named 'PMD_magic.py': PmagPy.html#PMD_magic.
 py 
  --- Customlinks says: Link to subsubsection 5.2.66.0: PmagPy.html#subsubsec5-2
 -66-0
-[213]
+[214]
  --- Customlinks says: Custom link named 'naming_schemes': PmagPy.html#naming_s
 chemes 
-[214] [215]
+[215] [216]
  --- Customlinks says: Custom link named 'sio_magic.py': PmagPy.html#sio_magic.
 py 
  --- Customlinks says: Link to subsubsection 5.2.66.0: PmagPy.html#subsubsec5-2
 -66-0
-[216]
-l. 3303 Writing PmagPy.idv[86] (PmagPy85x.png)
+[217]
+l. 3293 Writing PmagPy.idv[86] (PmagPy85x.png)
 File: EPSfiles/samples.eps Graphic file (type eps)
- <EPSfiles/samples.eps> [217] [218] [219]
+ <EPSfiles/samples.eps> [218] [219] [220]
  --- Customlinks says: Custom link named 'SUFAR4-asc_magic.py': PmagPy.html#SUF
 AR4-asc_magic.py 
  --- Customlinks says: Link to subsubsection 5.2.66.0: PmagPy.html#subsubsec5-2
 -66-0
-[220]
+[221]
  --- Customlinks says: Custom link named 'TDT_magic.py': PmagPy.html#TDT_magic.
 py 
  --- Customlinks says: Link to subsubsection 5.2.66.0: PmagPy.html#subsubsec5-2
 -66-0
-[221] [222]
+[222] [223]
  --- Customlinks says: Custom link named 'measurements_normalize.py': PmagPy.ht
 ml#measurements_normalize.py 
  --- Customlinks says: Link to subsection 5.2.67: PmagPy.html#subsec5-2-67
-[223]
+[224]
  --- Customlinks says: Custom link named 'mk_redo.py': PmagPy.html#mk_redo.py 
  --- Customlinks says: Link to subsection 5.2.68: PmagPy.html#subsec5-2-68
-[224]
+[225]
  --- Customlinks says: Custom link named 'nrm_specimens_magic.py': PmagPy.html#
 nrm_specimens_magic.py 
  --- Customlinks says: Link to subsection 5.2.69: PmagPy.html#subsec5-2-69
-[225]
-l. 3496 Writing PmagPy.idv[87] (PmagPy86x.png)
+[226]
+l. 3486 Writing PmagPy.idv[87] (PmagPy86x.png)
 File: EPSfiles/nrm-eq.eps Graphic file (type eps)
- <EPSfiles/nrm-eq.eps> [226]
+ <EPSfiles/nrm-eq.eps> [227]
  --- Customlinks says: Custom link named 'orientation_magic.py': PmagPy.html#or
 ientation_magic.py 
  --- Customlinks says: Link to subsection 5.2.70: PmagPy.html#subsec5-2-70
-[227] [228]
+[228] [229]
  --- Customlinks says: Custom link named 'parse_measurements.py': PmagPy.html#p
 arse_measurements.py 
  --- Customlinks says: Link to subsection 5.2.71: PmagPy.html#subsec5-2-71
-[229]
+[230]
  --- Customlinks says: Custom link named 'pca.py': PmagPy.html#pca.py 
  --- Customlinks says: Link to subsection 5.2.72: PmagPy.html#subsec5-2-72
-[230]
+[231]
 
-LaTeX Warning: Reference `app:MagIC' on page 231 undefined on input line 3555.
+LaTeX Warning: Reference `app:MagIC' on page 232 undefined on input line 3545.
 
  --- Customlinks says: Custom link named 'plotXY.py': PmagPy.html#plotXY.py 
  --- Customlinks says: Link to subsection 5.2.73: PmagPy.html#subsec5-2-73
  --- Customlinks says: Custom link named 'plot_cdf.py': PmagPy.html#plot_cdf.py
  
  --- Customlinks says: Link to subsection 5.2.74: PmagPy.html#subsec5-2-74
-[231]
-l. 3588 Writing PmagPy.idv[88] (PmagPy87x.png)
+[232]
+l. 3578 Writing PmagPy.idv[88] (PmagPy87x.png)
 File: EPSfiles/plot_cdf.eps Graphic file (type eps)
  <EPSfiles/plot_cdf.eps>
  --- Customlinks says: Custom link named 'plot_geomagia.py': PmagPy.html#plot_g
 eomagia.py 
  --- Customlinks says: Custom link named 'plot_magic_keys.py': PmagPy.html#plot
 _magic_keys.py 
-[232]
+[233]
  --- Customlinks says: Link to subsection 5.2.75: PmagPy.html#subsec5-2-75
  --- Customlinks says: Custom link named 'plot_mapPTS.py': PmagPy.html#plot_map
 PTS.py 
  --- Customlinks says: Link to subsection 5.2.76: PmagPy.html#subsec5-2-76
-[233]
-l. 3627 Writing PmagPy.idv[89] (PmagPy88x.png)
+[234]
+l. 3617 Writing PmagPy.idv[89] (PmagPy88x.png)
 File: EPSfiles/plot_mapPTS.eps Graphic file (type eps)
  <EPSfiles/plot_mapPTS.eps>
  --- Customlinks says: Custom link named 'plotdi_a.py': PmagPy.html#plotdi_a.py
  
-[234]
- --- Customlinks says: Link to subsection 5.2.77: PmagPy.html#subsec5-2-77
 [235]
-l. 3661 Writing PmagPy.idv[90] (PmagPy89x.png)
+ --- Customlinks says: Link to subsection 5.2.77: PmagPy.html#subsec5-2-77
+[236]
+l. 3651 Writing PmagPy.idv[90] (PmagPy89x.png)
 File: EPSfiles/plotdi-a-example.eps Graphic file (type eps)
  <EPSfiles/plotdi-a-example.eps>
  --- Customlinks says: Custom link named 'pmag_results_extract.py': PmagPy.html
 #pmag_results_extract.py 
  --- Customlinks says: Link to subsection 5.2.78: PmagPy.html#subsec5-2-78
-[236] [237]
+[237] [238]
  --- Customlinks says: Custom link named 'pt_rot.py': PmagPy.html#pt_rot.py 
  --- Customlinks says: Link to subsection 5.2.79: PmagPy.html#subsec5-2-79
-[238]
-l. 3710 Writing PmagPy.idv[91] (PmagPy90x.png)
+[239]
+l. 3700 Writing PmagPy.idv[91] (PmagPy90x.png)
 File: EPSfiles/pt_rot.eps Graphic file (type eps)
- <EPSfiles/pt_rot.eps> [239] [240]
-l. 3742 Writing PmagPy.idv[92] (PmagPy91x.png)
+ <EPSfiles/pt_rot.eps> [240] [241]
+l. 3732 Writing PmagPy.idv[92] (PmagPy91x.png)
 File: EPSfiles/pt_rot_panA.eps Graphic file (type eps)
- <EPSfiles/pt_rot_panA.eps> [241]
+ <EPSfiles/pt_rot_panA.eps> [242]
  --- Customlinks says: Custom link named 'qqplot.py': PmagPy.html#qqplot.py 
  --- Customlinks says: Link to subsection 5.2.80: PmagPy.html#subsec5-2-80
-[242]
-l. 3768 Writing PmagPy.idv[93] (PmagPy92x.png)
+[243]
+l. 3758 Writing PmagPy.idv[93] (PmagPy92x.png)
 File: EPSfiles/qq.eps Graphic file (type eps)
  <EPSfiles/qq.eps>
  --- Customlinks says: Custom link named 'quick_hyst.py': PmagPy.html#quick_hys
 t.py 
-[243]
- --- Customlinks says: Link to subsection 5.2.81: PmagPy.html#subsec5-2-81
 [244]
-l. 3795 Writing PmagPy.idv[94] (PmagPy93x.png)
+ --- Customlinks says: Link to subsection 5.2.81: PmagPy.html#subsec5-2-81
+[245]
+l. 3785 Writing PmagPy.idv[94] (PmagPy93x.png)
 File: EPSfiles/quick_hyst.eps Graphic file (type eps)
- <EPSfiles/quick_hyst.eps> [245]
+ <EPSfiles/quick_hyst.eps> [246]
  --- Customlinks says: Custom link named 'revtest.py': PmagPy.html#revtest.py 
  --- Customlinks says: Link to subsection 5.2.82: PmagPy.html#subsec5-2-82
-[246]
-l. 3820 Writing PmagPy.idv[95] (PmagPy94x.png)
+[247]
+l. 3810 Writing PmagPy.idv[95] (PmagPy94x.png)
 File: EPSfiles/revtest.eps Graphic file (type eps)
  <EPSfiles/revtest.eps>
  --- Customlinks says: Custom link named 'revtest_magic.py': PmagPy.html#revtes
 t_magic.py 
  --- Customlinks says: Link to subsection 5.2.83: PmagPy.html#subsec5-2-83
-[247]
+[248]
  --- Customlinks says: Custom link named 'revtest_MM1990.py': PmagPy.html#revte
 st_MM1990.py 
  --- Customlinks says: Link to subsection 5.2.84: PmagPy.html#subsec5-2-84
-[248]
-l. 3852 Writing PmagPy.idv[96] (PmagPy95x.png)
+[249]
+l. 3842 Writing PmagPy.idv[96] (PmagPy95x.png)
 File: EPSfiles/Ao2013eq.eps Graphic file (type eps)
- <EPSfiles/Ao2013eq.eps> [249]
-l. 3877 Writing PmagPy.idv[97] (PmagPy96x.png)
+ <EPSfiles/Ao2013eq.eps> [250]
+l. 3867 Writing PmagPy.idv[97] (PmagPy96x.png)
 File: EPSfiles/WatsonsV_Ao_etal2013.eps Graphic file (type eps)
  <EPSfiles/WatsonsV_Ao_etal2013.eps>
-[250]
+[251]
  --- Customlinks says: Custom link named 's_eigs.py': PmagPy.html#s_eigs.py 
  --- Customlinks says: Link to subsection 5.2.85: PmagPy.html#subsec5-2-85
-[251]
+[252]
  --- Customlinks says: Custom link named 's_geo.py': PmagPy.html#s_geo.py 
  --- Customlinks says: Link to subsection 5.2.86: PmagPy.html#subsec5-2-86
-[252]
+[253]
  --- Customlinks says: Custom link named 's_hext.py': PmagPy.html#s_hext.py 
  --- Customlinks says: Link to subsection 5.2.87: PmagPy.html#subsec5-2-87
-[253]
+[254]
  --- Customlinks says: Custom link named 's_tilt.py': PmagPy.html#s_tilt.py 
  --- Customlinks says: Link to subsection 5.2.88: PmagPy.html#subsec5-2-88
-[254]
+[255]
  --- Customlinks says: Custom link named 's_magic.py': PmagPy.html#s_magic.py 
  --- Customlinks says: Link to subsection 5.2.89: PmagPy.html#subsec5-2-89
-[255]
+[256]
  --- Customlinks says: Custom link named 'scalc.py': PmagPy.html#scalc.py 
  --- Customlinks says: Link to subsection 5.2.90: PmagPy.html#subsec5-2-90
-[256]
+[257]
  --- Customlinks says: Custom link named 'scalc_magic.py': PmagPy.html#scalc_ma
 gic.py 
  --- Customlinks says: Link to subsection 5.2.91: PmagPy.html#subsec5-2-91
-[257]
+[258]
  --- Customlinks says: Custom link named 'site_edit_magic.py': PmagPy.html#site
 _edit_magic.py 
  --- Customlinks says: Link to subsection 5.2.92: PmagPy.html#subsec5-2-92
-[258] [259]
-l. 4061 Writing PmagPy.idv[98] (PmagPy97x.png)
+[259] [260]
+l. 4051 Writing PmagPy.idv[98] (PmagPy97x.png)
 File: EPSfiles/site_edit_magic.eps Graphic file (type eps)
  <EPSfiles/site_edit_magic.eps>
  --- Customlinks says: Custom link named 'specimens_results_magic.py': PmagPy.h
 tml#specimens_results_magic.py 
-[260]
- --- Customlinks says: Link to subsection 5.2.93: PmagPy.html#subsec5-2-93
 [261]
+ --- Customlinks says: Link to subsection 5.2.93: PmagPy.html#subsec5-2-93
+[262]
  --- Customlinks says: Custom link named 'stats.py': PmagPy.html#stats.py 
  --- Customlinks says: Link to subsection 5.2.94: PmagPy.html#subsec5-2-94
-[262] [263]
+[263] [264]
  --- Customlinks says: Custom link named 'strip_magic.py': PmagPy.html#strip_ma
 gic.py 
  --- Customlinks says: Link to subsection 5.2.95: PmagPy.html#subsec5-2-95
-[264]
-l. 4157 Writing PmagPy.idv[99] (PmagPy98x.png)
+[265]
+l. 4147 Writing PmagPy.idv[99] (PmagPy98x.png)
 File: EPSfiles/latVage.eps Graphic file (type eps)
- <EPSfiles/latVage.eps> [265]
+ <EPSfiles/latVage.eps> [266]
  --- Customlinks says: Custom link named 'sundec.py': PmagPy.html#sundec.py 
  --- Customlinks says: Link to subsection 5.2.96: PmagPy.html#subsec5-2-96
-[266] [267] [268] [269]
+[267] [268] [269] [270]
  --- Customlinks says: Custom link named 'thellier_magic.py': PmagPy.html#thell
 ier_magic.py 
  --- Customlinks says: Link to subsection 5.2.97: PmagPy.html#subsec5-2-97
-[270] [271] [272] [273]
-l. 4328 Writing PmagPy.idv[100] (PmagPy99x.png)
+[271] [272] [273] [274]
+l. 4318 Writing PmagPy.idv[100] (PmagPy99x.png)
 File: EPSfiles/thellier_magic.eps Graphic file (type eps)
- <EPSfiles/thellier_magic.eps> [274]
+ <EPSfiles/thellier_magic.eps> [275]
  --- Customlinks says: Custom link named 'thellier_magic_redo.py': PmagPy.html#
 thellier_magic_redo.py 
  --- Customlinks says: Link to subsection 5.2.98: PmagPy.html#subsec5-2-98
-[275]
+[276]
  --- Customlinks says: Custom link named 'tk03.py': PmagPy.html#tk03.py 
  --- Customlinks says: Link to subsection 5.2.99: PmagPy.html#subsec5-2-99
-[276]
-l. 4375 Writing PmagPy.idv[101] (PmagPy100x.png)
+[277]
+l. 4365 Writing PmagPy.idv[101] (PmagPy100x.png)
 File: EPSfiles/tk03.eps Graphic file (type eps)
  <EPSfiles/tk03.eps>
  --- Customlinks says: Custom link named 'uniform.py': PmagPy.html#uniform.py 
  --- Customlinks says: Link to subsection 5.2.100: PmagPy.html#subsec5-2-100
-[277] [278]
-l. 4393 Writing PmagPy.idv[102] (PmagPy101x.png)
+[278] [279]
+l. 4383 Writing PmagPy.idv[102] (PmagPy101x.png)
 File: EPSfiles/uniform.eps Graphic file (type eps)
  <EPSfiles/uniform.eps>
  --- Customlinks says: Custom link named 'update_measurements.py': PmagPy.html#
 update_measurements.py 
  --- Customlinks says: Link to subsection 5.2.101: PmagPy.html#subsec5-2-101
-[279]
+[280]
  --- Customlinks says: Custom link named 'upload_magic.py': PmagPy.html#upload_
 magic.py 
  --- Customlinks says: Link to subsection 5.2.102: PmagPy.html#subsec5-2-102
-[280]
+[281]
  --- Customlinks says: Custom link named 'Vdiff.py': PmagPy.html#Vdiff.py 
  --- Customlinks says: Custom link named 'vdm_b.py': PmagPy.html#vdm_b.py 
  --- Customlinks says: Link to subsection 5.2.103: PmagPy.html#subsec5-2-103
-[281]
+[282]
  --- Customlinks says: Custom link named 'vector_mean.py': PmagPy.html#vector_m
 ean.py 
  --- Customlinks says: Link to subsection 5.2.104: PmagPy.html#subsec5-2-104
-[282]
+[283]
  --- Customlinks says: Custom link named 'vgp_di.py': PmagPy.html#vgp_di.py 
  --- Customlinks says: Link to subsection 5.2.105: PmagPy.html#subsec5-2-105
-[283]
+[284]
  --- Customlinks says: Custom link named 'vgpmap_magic.py': PmagPy.html#vgpmap_
 magic.py 
  --- Customlinks says: Link to subsection 5.2.106: PmagPy.html#subsec5-2-106
-[284]
-l. 4537 Writing PmagPy.idv[103] (PmagPy102x.png)
+[285]
+l. 4527 Writing PmagPy.idv[103] (PmagPy102x.png)
 File: EPSfiles/VGP_map.eps Graphic file (type eps)
- <EPSfiles/VGP_map.eps> [285]
+ <EPSfiles/VGP_map.eps> [286]
  --- Customlinks says: Custom link named 'watsonsF.py': PmagPy.html#watsonsF.py
  
  --- Customlinks says: Link to subsection 5.2.107: PmagPy.html#subsec5-2-107
-[286] [287]
+[287] [288]
  --- Customlinks says: Custom link named 'watsonsV.py': PmagPy.html#watsonsV.py
  
  --- Customlinks says: Link to subsection 5.2.108: PmagPy.html#subsec5-2-108
-[288]
-l. 4588 Writing PmagPy.idv[104] (PmagPy103x.png)
+[289]
+l. 4578 Writing PmagPy.idv[104] (PmagPy103x.png)
 File: EPSfiles/watsonsV_example.eps Graphic file (type eps)
- <EPSfiles/watsonsV_example.eps> [289]
+ <EPSfiles/watsonsV_example.eps> [290]
  --- Customlinks says: Custom link named 'zeq.py': PmagPy.html#zeq.py 
  --- Customlinks says: Link to subsection 5.2.109: PmagPy.html#subsec5-2-109
-[290] [291]
-l. 4611 Writing PmagPy.idv[105] (PmagPy104x.png)
+[291] [292]
+l. 4601 Writing PmagPy.idv[105] (PmagPy104x.png)
 File: EPSfiles/zeq.eps Graphic file (type eps)
  <EPSfiles/zeq.eps>
  --- Customlinks says: Custom link named 'zeq_magic.py': PmagPy.html#zeq_magic.
 py 
  --- Customlinks says: Link to subsection 5.2.110: PmagPy.html#subsec5-2-110
-[292]
+[293]
  --- Customlinks says: Custom link named 'zeq_magic_redo.py': PmagPy.html#zeq_m
 agic_redo.py 
  --- Customlinks says: Link to subsection 5.2.111: PmagPy.html#subsec5-2-111
-[293] [294]
+[294] [295]
  --- Customlinks says: Link to section 5.3: PmagPy.html#sec5-3
  --- Customlinks says: Custom link named 'MagICDatabase': PmagPy.html#MagICData
 base 
-[295] [296
-
-]
+[296]
 Chapter 6.
  --- Customlinks says: Link to chapter 6: PmagPy.html#ch6
  --- Customlinks says: Custom link named 'Uploading': PmagPy.html#Uploading 
  --- Customlinks says: Custom link named 'DataTables': PmagPy.html#DataTables 
  --- Customlinks says: Link to section 6.1: PmagPy.html#sec6-1
-[297]
+[297
+
+]
  --- Customlinks says: Custom link named 'method_codes': PmagPy.html#method_cod
 es 
 [298]
@@ -1625,7 +1623,7 @@ es
 Chapter 7.
  --- Customlinks says: Link to chapter 7: PmagPy.html#ch7
 [303]
-l. 4927 Writing PmagPy.idv[106] (PmagPy105x.png)
+l. 4917 Writing PmagPy.idv[106] (PmagPy105x.png)
  [304]
  --- Customlinks says: Link to section 7.1: PmagPy.html#sec7-1
 [305] [306] [307] [308] [309] [310]
@@ -1649,7 +1647,7 @@ l. 4927 Writing PmagPy.idv[106] (PmagPy105x.png)
  --- Customlinks says: Link to subsubsection 7.3.0.0: PmagPy.html#subsubsec7-3-
 0-0
 [329] [330] [331]
-l. 5320 Writing PmagPy.idv[107] (PmagPy106x.png)
+l. 5310 Writing PmagPy.idv[107] (PmagPy106x.png)
 File: EPSfiles/ndim.eps Graphic file (type eps)
  <EPSfiles/ndim.eps> [332] [333] [334] [335] [336] [337]
 [338] [339] [340] [341]
@@ -1725,23 +1723,23 @@ File: EPSfiles/ndim.eps Graphic file (type eps)
  --- Customlinks says: Link to subsubsection 7.10.0.0: PmagPy.html#subsubsec7-1
 0-0-0
 [401] [402]
-l. 6375 Writing PmagPy.idv[108] (PmagPy107x.png)
+l. 6365 Writing PmagPy.idv[108] (PmagPy107x.png)
 File: EPSfiles/matplotlib1.eps Graphic file (type eps)
  <EPSfiles/matplotlib1.eps> [403] [404] [405]
-l. 6418 Writing PmagPy.idv[109] (PmagPy108x.png)
+l. 6408 Writing PmagPy.idv[109] (PmagPy108x.png)
 File: EPSfiles/matplotlib2.eps Graphic file (type eps)
 
 <EPSfiles/matplotlib2.eps> [406]
  --- Customlinks says: Link to subsubsection 7.10.0.0: PmagPy.html#subsubsec7-1
 0-0-0
 [407] [408] [409]
-l. 6476 Writing PmagPy.idv[110] (PmagPy109x.png)
+l. 6466 Writing PmagPy.idv[110] (PmagPy109x.png)
 File: EPSfiles/matplotlib3.eps Graphic file (type eps)
  <EPSfiles/matplotlib3.eps> [410]
  --- Customlinks says: Link to subsubsection 7.10.0.0: PmagPy.html#subsubsec7-1
 0-0-0
 [411]
-l. 6510 Writing PmagPy.idv[111] (PmagPy110x.png)
+l. 6500 Writing PmagPy.idv[111] (PmagPy110x.png)
 File: EPSfiles/matplotlib4.eps Graphic file (type eps)
  <EPSfiles/matplotlib4.eps> [412] [413]
  --- Customlinks says: Custom link named 'Notebooks': PmagPy.html#Notebooks 
@@ -1750,15 +1748,15 @@ Chapter 8.
  --- Customlinks says: Link to chapter 8: PmagPy.html#ch8
 
 Package natbib Warning: Citation `halls74' on page 415 undefined on input line 
-6532.
+6522.
 
 [415
 
 ]
-l. 6536 Writing PmagPy.idv[112] (PmagPy111x.png)
+l. 6526 Writing PmagPy.idv[112] (PmagPy111x.png)
 File: EPSfiles/notebook.eps Graphic file (type eps)
  <EPSfiles/notebook.eps> [416] [417]
-l. 6550 Writing PmagPy.idv[113] (PmagPy112x.png)
+l. 6540 Writing PmagPy.idv[113] (PmagPy112x.png)
 File: EPSfiles/SnakeRiver.eps Graphic file (type eps)
  <EPSfiles/SnakeRiver.eps> [418]
  --- Customlinks says: Custom link named 'trouble': PmagPy.html#trouble 
@@ -1779,23 +1777,23 @@ Chapter 9.
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6884.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6874.
 [436]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 6884.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 6874.
  (./PmagPy.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6884.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 6884.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6874.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 6874.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6884.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6874.
  )
 (\end occurred inside a group at level 4)
 
-### simple group (level 4) entered at line 6482 ({)
-### simple group (level 3) entered at line 6448 ({)
-### simple group (level 2) entered at line 5181 ({)
+### simple group (level 4) entered at line 6472 ({)
+### simple group (level 3) entered at line 6438 ({)
+### simple group (level 2) entered at line 5171 ({)
 ### simple group (level 1) entered at line 951 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
@@ -1805,6 +1803,6 @@ Here is how much of TeX's memory you used:
  13705 multiletter control sequences out of 15000+600000
  15547 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,9n,32p,135870b,1901s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,9n,32p,135870b,1909s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on PmagPy.dvi (445 pages, 1177076 bytes).
+Output written on PmagPy.dvi (445 pages, 1177920 bytes).
