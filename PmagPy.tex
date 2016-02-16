@@ -2551,7 +2551,7 @@ $ igrf.py -f igrf_example.dat -F igrf.out
 You can also make a plot of secular variation of field elements by specifying the age range and location on the command line.  Try this for the location of San Diego for the age range: -3000 1925 in increments of 50 years:
 
 \begin{verbatim}
-$ igrf.py -ages -3000 1950 50 -loc 33 -117 -plt
+$ igrf.py -ages -3000 1950 50 -loc 33 -117 -mod pfm9k -plt
      S[a]ve to save figure, <Return>  to quit
 \end{verbatim}
 
@@ -3796,7 +3796,7 @@ which makes a plot like this:
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch12.html#ch12}{[Essentials Chapter 12]}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/revtest.py}{[revtest docs]}
 
-Use {\bf revtest.py} to test whether the two modes in the data set {\it revtest\_example.txt} are antipodal or not:
+Use the Tauxe et al., (2010) reversals test implemented in {\bf revtest.py} to test whether the two modes in the data set {\it revtest\_example.txt} are antipodal or not:
 
 \begin{verbatim}
 $ revtest.py -f revtest_example.txt
@@ -4334,6 +4334,11 @@ When you exit the program, you will have modified the {\it thellier\_specimens.t
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#ch10}{[Essentials Chapter 10]} and \href{#MagIC}{[MagIC}]
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/thellier_magic_redo.py}{[thellier\_magic\_redo docs]}
 
+
+This program is no longer maintained. This function is embedded in  \href{#thellier_GUI.py}{thellier\_gui.py} when you import a specimen file.
+
+
+
 This program allows the recalculation of paleointensity experimental data derived from Thellier type experiments.  It allows correction for remanence  anisotropy from AARM or ATRM ellipsoids (stored in {\it rmag\_anisotropy} format files (see \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]} and the \href{#aarm_magic.py}{aarm\_magic.py} and \href{#atrm_magic.py}{atrm\_magic.py}) and \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#non-linear_TRM}{non-linear TRM} corrections, if TRM aquisition data are available (see also \href{#trmaq_magic.py}{trmaq\_magic.py}).
 
 
@@ -4395,6 +4400,10 @@ which should yield a plot something (but not exactly) like this:
 \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/update_measurements.py}{[update\_measurements docs]}
 
+This program is no longer maintained. This function is embedded in  \href{#pmag_gui.py}{Pmag GUI}.   
+
+
+
 In the SIO laboratory, our default specimen naming scheme has a logical relationship to the sample and site names.
 Sometimes there is no simple relationship and the MagIC import procedure can't parse the sample name into a site name, or the original concept of a site gets changed, for example if several lava flows turn out to be the same one.  In any case, there must be a way to change the way data get averaged after the measurement data get converted to a magic\_measurments formatted file.  To do this, the sample, site relationship can be established in the {\it er\_sample.txt} file for example via the procedure described in \href{#orientation_magic.py}{orientation\_magic.py} docuementation.  After the correct relationships are in the {\it er\_samples.txt} file, these must be propagated throughout the rest of the MagIC tables, starting with the {\it magic\_measurements.txt} file.  The program {\bf update\_measurements.py} will do this at the measurements level.  \href{#specimens_results_magic.py}{specimens\_results\_magic.py} will then propagate the changes through to the {\it pmag\_results.txt} file.
 
@@ -4404,6 +4413,11 @@ Sometimes there is no simple relationship and the MagIC import procedure can't p
 \subsection{upload\_magic.py}
 \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/upload_magic.py}{[upload\_magic docs]}
+
+
+ This function is embedded in  \href{#pmag_gui.py}{Pmag GUI}.   
+
+
 
 This program takes all the MagIC formatted files and puts them into a file which can be imported into the MagIC console software for uploading into the \href{http://earthref.org/MagIC}{MagIC database}.
 As an example, we can ``repackage'' the file used file downloaded in the \href{#download_magic.py}{download\_magic.py} example.  You could re-interpret that data or fix records with errors, then re-upload the corrected file.
@@ -4532,10 +4546,11 @@ You should have a plot like this one:
 
 \includegraphics[width=15cm]{EPSfiles/VGP_map.eps}
 
-To use this program, you need to have basemap, which is not part of the free EPD software distribution.  Also, if you don't have the  \href{#hires}{high resolution}, just leave the -etp switch off to get a plain plot.
+To use this program, you need to have basemap, which is not part of the free Python software distribution.  Also, if you don't have the  \href{#hires}{high resolution} installed by \href{#install_etopo.py}{install_etopo.py}, just leave the -etp switch off to get a plain plot.
 
 
 \customlink{watsonsF.py}
+
 \subsection{watsonsF.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter 11]}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/watsonsF.py}{[watsonsF docs]}
@@ -4616,10 +4631,12 @@ The equal area projection has the X direction (usually North in geographic coord
 
 
 \customlink{zeq_magic.py}
+
 \subsection{zeq\_magic.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]}  \& \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/zeq_magic.py}{[zeq\_magic docs]}
 
+This program is no longer maintained and has been superseded by \href{#demag_gui.py}{Demag GUI}.  
 
 Plot the AF demagnetization data available in the file you got in the {\bf download\_magic.py} example using {\bf zeq\_magic.py}.    Use geographic coordinates, where orientations are available.
 
@@ -4659,9 +4676,13 @@ The plots will look similar to the \href{#zeq.py}{zeq.py} example, but the defau
 
 
 \customlink{zeq_magic_redo.py}
+
 \subsection{zeq\_magic\_redo.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]}  \& \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/zeq_magic_redo.py}{[zeq\_magic\_redo docs]}
+
+The functionality of this program has been incorporated into \href{#demag_gui.py}{Demag GUI} so you should use that.   
+
 
 In the {\it zeq\_magic} directory, use the program {\bf zeq\_magic\_redo.py} to create a {\it pmag\_specimens} formatted file with data in geographic coordinates from the sample coordinate file {\it zeq\_specimens.txt}.
 Assuming that sample orientations are in a file called {\it er\_samples.txt}, use \href{#mk_redo.py}{mk\_redo.py} first to create file called {\it zeq\_redo}.  Then use
