@@ -119,6 +119,7 @@ File: PmagPy.tmp
 File: PmagPy.tmp
 File: PmagPy.tmp
 File: PmagPy.tmp
+File: PmagPy.tmp
 Css: p.noindent { text-indent: 0em }
 Css: td p.noindent { text-indent: 0em; margin-top:0em; }
 Css: p.nopar { text-indent: 0em; }
@@ -356,6 +357,7 @@ Css: .figure img.graphics {margin-left:10%;}
 --- needs --- PmagPy.idv[218] ==> PmagPy110x.png ---
 --- needs --- PmagPy.idv[220] ==> PmagPy111x.png ---
 --- needs --- PmagPy.idv[222] ==> PmagPy112x.png ---
+--- needs --- PmagPy.idv[224] ==> PmagPy113x.png ---
 --- characters ---
 Font("cmr","10","10","109")
 Font("cmbx","10","10","109")

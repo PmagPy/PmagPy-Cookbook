@@ -2365,13 +2365,43 @@ S[a]ve all figures, <Return> to quit   a
 %
 %
 \customlink{foldtest_magic.py}
+
 \subsection{foldtest\_magic.py} \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch12.html#ch12}{[Essentials Chapter 12]} and \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/foldtest_magic.py}{[foldtest\_magic docs]}
 
-This program performs the same test as \href{#foldtest.py}{foldtest.py}.  The only difference is that it reads MagIC formatted input files and allows the application of selection criteria as specified in the {\it pmag\_criteria.txt} formatted file.
+This program performs the same test as \href{#foldtest.py}{foldtest.py}.  The only difference is that it reads MagIC formatted input files and allows the application of selection criteria as specified in the {\it pmag\_criteria.txt} formatted file.  
+
+To begin, download the file from this references:  Halls et al. (1974; doi: 10.1139/e74-113) at \url{https://earthref.org/MagIC/DOI/10.1139/e74-113} and unpack it with  \href{#download_magic.py}{download\_magic.py}. Then run {\bf foldtest\_magic.py} for the fold test.
+
+\begin{verbatim}
+$ download_magic.py -f magic_contribution_11087.txt
+$ foldtest_magic.py -f pmag_sites.txt -fsi er_sites.txt
+doing  1000  iterations...please be patient.....
+0
+50
+....
+900
+950
+96 - 149 Percent Unfolding
+S[a]ve all figures, <Return> to quit  
+ a
+3  saved in  foldtest_ta.svg
+2  saved in  foldtest_st.svg
+1  saved in  foldtest_ge.svg
+
+\end{verbatim} 
+
+\noindent  which gives the plots:
+
+ %\epsfxsize 14cm
+ {%\epsffile{EPSfiles/foldtest-ex.eps}
+   \includegraphics[width=15cm]{EPSfiles/foldtest-magic.eps}}
+
+
 %
 %
 \customlink{gaussian.py}
+
 \subsection{gaussian.py}
  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter 11]}
  \href{https://github.com/PmagPy/PmagPy/blob/master/programs/gaussian.py}{[gaussian docs]}
