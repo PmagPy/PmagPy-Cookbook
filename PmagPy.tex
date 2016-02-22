@@ -69,6 +69,7 @@ You can download the \href{https://github.com/PmagPy/PmagPy-Standalone-OSX/relea
 
 Follow the download instructions in the provided links, and then you can skip the ``Full install'' section and go straight to using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI}.  The standalone versions of these applications are still in development; please report problems to the PmagPy team: \href{mailto:ltauxe@ucsd.edu}{ltauxe@ucsd.edu}.
 
+\customlink{full_install}
 \section{Full PmagPy install}
 
  \begin{enumerate}
@@ -76,7 +77,7 @@ Follow the download instructions in the provided links, and then you can skip th
  \item Getting Python for Mac users:
    \begin{itemize}
    \item Download and install the \href{https://www.enthought.com/products/canopy/}{Enthought Canopy distribution of Python}. Canopy Express (the free version) contains everything you need (except the mapping utilities). If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license} that gives you access to additional features and bundled packages, including the Basemap package.
-   \item Launch Canopy to complete the installation process.  You may need to use control click on the Canopy icon to open it for the first time--try this if you get a message that says ``Canopy can't be opened because it is from an unidentified developer.''  Once you've opened Canopy successfully, select 'yes' to making Canopy your default Python environment.  In the lower right hand corner of the Canopy launch page, you will find the Version number (currently 1.6.1 or higher). Please include this in any correspondence with the PmagPy team. While you might find use for some of the features within the Canopy environment that opens as an application, PmagPy programs are best run or launched at the command line in Terminal.
+   \item Launch Canopy to complete the installation process.  You may need to use control click on the Canopy icon to open it for the first time--try this if you get a message that says ``Canopy can't be opened because it is from an unidentified developer.''  Once you've opened Canopy successfully, select ``yes'' to making Canopy your default Python environment.  In the lower right hand corner of the Canopy launch page, you will find the Version number (currently 1.6.1 or higher). Please include this in any correspondence with the PmagPy team. While you might find use for some of the features within the Canopy environment that opens as an application, PmagPy programs are best run or launched at the command line in Terminal.
    \item A last note about Canopy: you should update it regularly!  Open the Canopy application and update the packages at least every few months.
    \end{itemize}
  \item Getting Python for Windows users:
@@ -86,11 +87,12 @@ Follow the download instructions in the provided links, and then you can skip th
    \item Windows users who cannot get an academic license should install this \href{http://magician.ucsd.edu/Software/PmagPy/archive/epd-7.3-2-win-x86.msi}{older Enthought Distribution}.  This version of EPD will not support all PmagPy programs, so if you want to run Pmag GUI or MagIC GUI you should download the \href{#standalone}{standalone versions}.
    \item If you run into problems with your installation, you may need to uninstall any previous Python installations.
    \end{itemize}
- \item Downloading PmagPy
+ \item Installing PmagPy
    \begin{itemize}
-   \item Download the zip file from the \href{https://github.com/ltauxe/PmagPy/releases/latest} {PmagPy} software package github: unzip the zip file (double click on it), PC users should extract all the files to a folder on your desktop (or wherever)  and double click on the {\it install\_MacOS} or {\it install\_Windows} file depending on your operating system.  (If you are a Linux user, just copy the files to some directory and put it in your path - you know what to do.)
-   \item For Windows users, the install process will create a custom ``PmagPy Prompt'' with a shortcut on your desktop.  This prompt is identical to the regular Command Prompt, except that it has all of the PmagPy functionality built in. Whenever the documentation refers to your ``command line'', you should use the PmagPy Prompt.
-   \item For non-Windows users, find your \href{#command_line}{command line} and type {\bf eqarea.py -h} and hit return.  If you do not see the help message, first try setting your path by hand following the instructions on the  \href{#trouble}{Trouble Shooting} page. If that fails, please send the error message and  Canopy version number to \href{mailto:ltauxe@ucsd.edu?subject=PmagPy Cookbook}{ltauxe@ucsd.edu}.\customlink{hires}
+   \item First, find your \href{#command_line}{command line}. Then, type the command: \begin{verbatim}pip install --upgrade pmagpy \end{verbatim} and press enter, which will make basic PmagPy functionality available to Python.
+   \item Next, download the zip file from the \href{https://github.com/ltauxe/PmagPy/releases/latest} {PmagPy} software package on Github. Unzip the downloaded file by double clicking on it. PC users should extract all the files to a folder on your desktop (or wherever).  Once you have the folder open, double click on the {\it install\_MacOS} or {\it install\_Windows} file depending on your operating system.  (If you are a Linux user, just copy the files to some directory and put both PmagPy and PmagPy/programs into your path.)
+   \item For Windows users, the install process will create a custom ``PmagPy Prompt'' with a shortcut on your desktop.  This prompt is identical to the regular Command Prompt, except that it has all of the PmagPy functionality built in. From here on, whenever the documentation refers to your ``command line'', you should use the PmagPy Prompt.
+   \item Now your installation should be complete.  To make sure everything is working, return to your \href{#command_line}{command line} (or PmagPy Prompt), type {\bf eqarea.py -h}, and hit return.  If you do not see the help message, first try setting your path by hand following the instructions on the  \href{#trouble}{Trouble Shooting} page. If that fails, please send the error message and  Canopy version number to \href{mailto:ltauxe@ucsd.edu?subject=PmagPy Cookbook}{ltauxe@ucsd.edu}.\customlink{hires}
    \item Optional: If you have installed the full version of Canopy and want to use the mapping programs (e.g., \href{#basemap_magic.py}{basemap\_magic.py}), \customlink{HighRes}
      click on  the `Package Manager' button on the Canopy welcome page, and then on `Available Packages'.  Install both basemap packages (one has high resolution data files in it).  To install the Etopo20 package, see \href{#install_etopo.py}{install\_etopo.py}.
    \end{itemize}
@@ -610,7 +612,7 @@ If you are not using a Unix-like computer (*NIX), you may never have encountered
 
   \includegraphics[width=15cm]{EPSfiles/terminal.eps}
 
-Under the Windows operating system, if you followed the instructions in the  \href{#quick_start}{Installing PmagPy} section, you will have a shortcut to the PmagPy command window on your desktop.  Double clicking on that will give you a window in which you can type {\bf PmagPy} commands.
+Under the Windows operating system, you will need to search for and open the ``cmd'' application. You'll use this for the ``pip install'' step of the PmagPy installation. However, after finishing the installation process (see: \href{#quick_start}{Installing PmagPy}), you will have a shortcut to the PmagPy command window on your desktop.  Double clicking on that will give you a window in which you can type {\bf PmagPy} commands.  You will use the PmagPy prompt instead of the Windows command line from there on.
 
   \includegraphics[width=15cm]{EPSfiles/cmd.eps}
 
