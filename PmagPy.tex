@@ -59,7 +59,8 @@ There are many chefs who contributed to this work, in particular, the MagIC Data
 
 \chapter{Installing {\bf PmagPy}}
 
-To skip all the details and just start using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI} to upload data into the \href{#MagICDatabase}{MagIC database}, or to analyze using \href{#thellier_GUI.py}{Thellier GUI} or \href{#DemagGUI}{Demag GUI}, start here.
+%To skip all the details and just start using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI} to upload data into the \href{#MagICDatabase}{MagIC database}, or to analyze using \href{#thellier_GUI.py}{Thellier GUI} or \href{#DemagGUI}{Demag GUI}, start here.
+You have a few options for downloading and using PmagPy.  If you only want to try Pmag/Magic GUI, you can download both of them as a \href{#standalone}{standalone program}.  If you want full access to PmagPy functionality, you have two choices.  1. Download PmagPy from Github and run the install script for your system.  2.  Use the pip utility to download/install pmagpy and pmagpy-cli (beta).  
 
 \customlink{standalone}
 \section{Standalone GUI download}
@@ -69,25 +70,50 @@ You can download the \href{https://github.com/PmagPy/PmagPy-Standalone-OSX/relea
 
 Follow the download instructions in the provided links, and then you can skip the ``Full install'' section and go straight to using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI}.  The standalone versions of these applications are still in development; please report problems to the PmagPy team: \href{mailto:ltauxe@ucsd.edu}{ltauxe@ucsd.edu}.
 
+\subsection{OSX Standalone download}
+
+To get started, download the zip file and put the resulting folder on your desktop. Inside the PmagPy-Standalone folder you will have one folder each for Pmag GUI and MagIC GUI. Open the appropriate folder and double click the icon (depending on your security settings, you may have to right click the icon and then select ``ok'' the first time you open it).
+
+You'll find the \href{https://github.com/PmagPy/PmagPy-Standalone-OSX/releases/latest}{latest stable release here}.
+
+
+\subsection{Windows Standalone download}
+In order to install this software, you’ll need to download and install \href{https://www.microsoft.com/en-us/download/details.aspx?id=29}{Microsoft Visual C++ Redistributable Package}. This provides some backend dependencies that let our software run.
+
+Next, get started by downloading the zip file (see links below) and putting the resulting folder on your desktop. You'll need to ``extract all'' files. Inside the PmagPy-Standalone folder you will find icons for installing Pmag GUI and MagIC GUI. Double click the program you wish to use and you will be guided the the install process.
+
+You'll find the \href{https://github.com/PmagPy/PmagPy-Standalone-Windows/releases/latest}{latest stable release here}.
+
+
 \customlink{full_install}
 \section{Full PmagPy install}
 
- \begin{enumerate}
+To get the full PmagPy, you'll need to perform these five steps:
 
- \item Getting Python for Mac users:
+\begin{itemize}
+  \item 1.  Download and install Python distribution.
+  \item 2.  Download PmagPy from Github and unzip.
+  \item 3.  Run the PmagPy install script for your operating system.
+  \item 4.  Find your command prompt and use pip to install the ``pmagpy'' module that provides all the basic functionality.
+  \item 5.  Test that your install is complete by running ``eqarea.py -h'' in your command prompt.
+\end{itemize}
+
+More details and system-specific instructions are below.
+
+ \subsection{Getting Python for Mac users}
    \begin{itemize}
    \item Download and install the \href{https://www.enthought.com/products/canopy/}{Enthought Canopy distribution of Python}. Canopy Express (the free version) contains everything you need (except the mapping utilities). If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license} that gives you access to additional features and bundled packages, including the Basemap package.
    \item Launch Canopy to complete the installation process.  You may need to use control click on the Canopy icon to open it for the first time--try this if you get a message that says ``Canopy can't be opened because it is from an unidentified developer.''  Once you've opened Canopy successfully, select ``yes'' to making Canopy your default Python environment.  In the lower right hand corner of the Canopy launch page, you will find the Version number (currently 1.6.1 or higher). Please include this in any correspondence with the PmagPy team. While you might find use for some of the features within the Canopy environment that opens as an application, PmagPy programs are best run or launched at the command line in Terminal.
    \item A last note about Canopy: you should update it regularly!  Open the Canopy application and update the packages at least every few months.
    \end{itemize}
- \item Getting Python for Windows users:
+ \subsection{Getting Python for Windows users}
    \begin{itemize}
    \item To use the full functionality PmagPy functionality, you will need to download the most recent Enthought Python Distribution (EPD).  If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license}, which gives access to this distribution.
    \item Once you have registered and gotten your academic license, you can \href{https://store.enthought.com/repo/epd/installers/epd-7.5-2-win-x86_64.msi}{download EPD here}.
    \item Windows users who cannot get an academic license should install this \href{http://magician.ucsd.edu/Software/PmagPy/archive/epd-7.3-2-win-x86.msi}{older Enthought Distribution}.  This version of EPD will not support all PmagPy programs, so if you want to run Pmag GUI or MagIC GUI you should download the \href{#standalone}{standalone versions}.
    \item If you run into problems with your installation, you may need to uninstall any previous Python installations.
    \end{itemize}
- \item Installing PmagPy
+ \subsection{Installing PmagPy}
    \begin{itemize}
    \item First, find your \href{#command_line}{command line}. Then, type the command: \begin{verbatim}pip install --upgrade pmagpy \end{verbatim} and press enter, which will make basic PmagPy functionality available to Python.
    \item Next, download the zip file from the \href{https://github.com/ltauxe/PmagPy/releases/latest} {PmagPy} software package on Github. Unzip the downloaded file by double clicking on it. PC users should extract all the files to a folder on your desktop (or wherever).  Once you have the folder open, double click on the {\it install\_MacOS} or {\it install\_Windows} file depending on your operating system.  (If you are a Linux user, just copy the files to some directory and put both PmagPy and PmagPy/programs into your path.)
@@ -98,10 +124,51 @@ Follow the download instructions in the provided links, and then you can skip th
    \end{itemize}
 
 %\item Move the  Datafiles  folder from your {\bf PmagPy} folder and place it somewhere (e.g., your Desktop) with no spaces in the path.
-\item Create a \href{#Project_Directory}{MagIC Project Directory}.
-\item Find your \href{#command_line}{command line} to launch any {\bf PmagPy} process.
-\end{enumerate}
+%Create a \href{#Project_Directory}{MagIC Project Directory}.
+%Find your \href{#command_line}{command line} to launch any {\bf PmagPy} process.
 
+   \customlink{full_pip}
+ \section{Pip PmagPy install (beta)}
+ We are moving to a build system that uses the ``pip'' utility exclusively.
+
+ \begin{itemize}
+   \item 1.  Download and install Python.
+   \item 2.  Find your command prompt.
+   \item 3.  Run the commands: ``pip install pmagpy --upgrade'' and ``pip install pmagpy-cli --upgrade''.
+   \item 4.  Test that your install is complete by running ``eqarea.py -h'' in your command prompt.
+ \end{itemize} 
+
+ Details below.
+  \subsection{Getting Python}
+  \begin{itemize}
+  \item Download and install the \href{https://www.enthought.com/products/canopy/}{Enthought Canopy distribution of Python}. Canopy Express (the free version) contains everything you need (except the mapping utilities). If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license} that gives you access to additional features and bundled packages, including the Basemap package.
+   \item Launch Canopy to complete the installation process.  You may need to use control click on the Canopy icon to open it for the first time--try this if you get a message that says ``Canopy can't be opened because it is from an unidentified developer.''  Once you've opened Canopy successfully, select ``yes'' to making Canopy your default Python environment.  In the lower right hand corner of the Canopy launch page, you will find the Version number (currently 1.6.1 or higher). Please include this in any correspondence with the PmagPy team. While you might find use for some of the features within the Canopy environment that opens as an application, PmagPy programs are best run or launched in your command prompt (Terminal for Mac users, cmd for Windows users).
+   \item A last note about Canopy: you should update it regularly!  Open the Canopy application and update the packages at least every few months.
+   \end{itemize}
+
+
+   \subsection{Installing PmagPy and PmagPy-cli}
+   \begin{itemize}
+     \item ``pmagpy'' is a package with all the low-level functionality of PmagPy.  ``pmagpy-cli'' provides the PmagPy command-line-interface, with all the packages you need to download/upload, visualize, and manipulate data.  
+     \item ``Pip'' is a package manager that comes standard with any modern Python distribution.  Pip allows you to install and uninstall pmagpy and pmagpy-cli.
+     \item Open your \href{#command_line}{command prompt}
+     \item To install or update pmagpy, use the command: ``pip install pmagpy --upgrade''.
+     \item To install or update pmagpy-cli, use the command: ``pip install pmagpy-cli --upgrade''
+     \item To uninstall, use the command: ``pip uninstall pmagpy'' or ``pip uninstall pmagpy-cli''
+     \item If you run into trouble, use pip to uninstall both pmagpy and pmagpy-cli, then try again to install first pmagpy and then pmagpy-cli
+   \end{itemize}
+   \subsection{Testing your installation}
+   To make sure you have installed everything successfully, try the command: ``eqarea.py -h''.  If you see a help message, your installation is complete!
+   Important note for Windows users: you will need to use ``eqarea -h''.  In fact, you will drop the ``.py'' anytime you are calling a command-line program.  This applies \textit{only} if you've followed the pip install directions.
+   \subsection{Accessing example data files}
+   When you install pmagpy-cli, pip will automatically install a folder of example data files that you may find useful.  However, pip doesn't put those data files in a very accessible location.  You will probably want to add them to your Desktop or another convenient location.
+   To do this, navigate on the command line `to your Desktop folder (for help, see \href{#file_system}{this section}).  Then, use the command: \begin{verbatim}move_data_files.py -d .\end{verbatim}This will copy all of the PmagPy example files to your current directory (represented by ``.'').  
+     
+
+
+ 
+
+ 
 %\setcounter{tocdepth}{1}
 %\tableofcontents
 \section{Next steps}
@@ -612,7 +679,7 @@ If you are not using a Unix-like computer (*NIX), you may never have encountered
 
   \includegraphics[width=15cm]{EPSfiles/terminal.eps}
 
-Under the Windows operating system, you will need to search for and open the ``cmd'' application. You'll use this for the ``pip install'' step of the PmagPy installation. However, after finishing the installation process (see: \href{#quick_start}{Installing PmagPy}), you will have a shortcut to the PmagPy command window on your desktop.  Double clicking on that will give you a window in which you can type {\bf PmagPy} commands.  You will use the PmagPy prompt instead of the Windows command line from there on.
+Under the Windows operating system, you can find your command line by searching for the ``cmd'' application. You'll use this if you are using the \href{#full_pip}{full pip installation of PmagPy}. If you are doing the \href{#full_install}{standard PmagPy install}, you will create a shortcut to the PmagPy command window on your desktop.  Double clicking on that will give you a window in which you can type {\bf PmagPy} commands.  You will use the PmagPy prompt instead of the Windows command line from there on.
 
   \includegraphics[width=15cm]{EPSfiles/cmd.eps}
 
@@ -649,7 +716,7 @@ pathnames, it is useful to remember that {\bf ./} refers to the current
 directory and {\bf ../} refers to the directory  ``above''.     Also, lisa's home directory would be $\sim$lisa, or if you are logged in as lisa yourself, then it is just $\sim$.
 
 
-
+\customlink{file_system}
 \section{Moving around in the file system}
 
 Now that you have found your command line and are comfortable in your home directory, you can view the contents of your directory with the Unix command {\bf ls} or the DOS command {\bf dir}.
