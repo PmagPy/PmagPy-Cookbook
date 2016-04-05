@@ -94,8 +94,9 @@ To get the full PmagPy, you'll need to perform these five steps:
   \item 1.  Download and install Python distribution.
   \item 2.  Download PmagPy from Github and unzip.
   \item 3.  Run the PmagPy install script for your operating system.
-  \item 4.  Find your command prompt and use pip to install the ``pmagpy'' module that provides all the basic functionality.
-  \item 5.  Test that your install is complete by running ``eqarea.py -h'' in your command prompt.
+  \item 4.  Upgrade pip
+  \item 5.  Find your command prompt and use pip to install the ``pmagpy'' module that provides all the basic functionality.
+  \item 6.  Test that your install is complete by running ``eqarea.py -h'' in your command prompt.
 \end{itemize}
 
 More details and system-specific instructions are below.
@@ -114,8 +115,9 @@ More details and system-specific instructions are below.
    \item If you run into problems with your installation, you may need to uninstall any previous Python installations.
    \end{itemize}
  \subsection{Installing PmagPy}
-   \begin{itemize}
-   \item First, find your \href{#command_line}{command line}. Then, type the command: \begin{verbatim}pip install --upgrade pmagpy \end{verbatim} and press enter, which will make basic PmagPy functionality available to Python.
+ \begin{itemize}
+   
+   \item First, find your \href{#command_line}{command line}. Upgrade pip to its most current version with: \begin{verbatim} pip install --upgrade pip \end{verbatim}Then, type the command: \begin{verbatim}pip install --upgrade pmagpy \end{verbatim} and press enter, which will make basic PmagPy functionality available to Python.
    \item Next, download the zip file from the \href{https://github.com/ltauxe/PmagPy/releases/latest} {PmagPy} software package on Github. Unzip the downloaded file by double clicking on it. PC users should extract all the files to a folder on your desktop (or wherever).  Once you have the folder open, double click on the {\it install\_MacOS} or {\it install\_Windows} file depending on your operating system.  (If you are a Linux user, just copy the files to some directory and put both PmagPy and PmagPy/programs into your path.)
    \item For Windows users, the install process will create a custom ``PmagPy Prompt'' with a shortcut on your desktop.  This prompt is identical to the regular Command Prompt, except that it has all of the PmagPy functionality built in. From here on, whenever the documentation refers to your ``command line'', you should use the PmagPy Prompt.
    \item Now your installation should be complete.  To make sure everything is working, return to your \href{#command_line}{command line} (or PmagPy Prompt), type {\bf eqarea.py -h}, and hit return.  If you do not see the help message, first try setting your path by hand following the instructions on the  \href{#trouble}{Trouble Shooting} page. If that fails, please send the error message and  Canopy version number to \href{mailto:ltauxe@ucsd.edu?subject=PmagPy Cookbook}{ltauxe@ucsd.edu}.\customlink{hires}
@@ -134,8 +136,9 @@ More details and system-specific instructions are below.
  \begin{itemize}
    \item 1.  Download and install Python.
    \item 2.  Find your command prompt.
-   \item 3.  Run the commands: \begin{verbatim}pip install pmagpy --upgrade \end{verbatim} and \begin{verbatim}pip install pmagpy-cli --upgrade \end{verbatim}
-   \item 4.  Test that your install is complete by running ``eqarea.py -h'' in your command prompt.
+   \item 3.  Upgrade pip.
+   \item 4.  Install pmagpy and pmagpy-cli.
+   \item 5.  Test that your install is complete.
  \end{itemize} 
 
  Details below.
@@ -147,13 +150,14 @@ More details and system-specific instructions are below.
    \end{itemize}
 
 
-   \subsection{Installing PmagPy and PmagPy-cli}
+   \subsection{Installing Pip, PmagPy and PmagPy-cli}
    \begin{itemize}
      \item ``pmagpy'' is a package with all the low-level functionality of PmagPy.  ``pmagpy-cli'' provides the PmagPy command-line-interface, with all the packages you need to download/upload, visualize, and manipulate data.  
-     \item ``Pip'' is a package manager that comes standard with any modern Python distribution.  Pip allows you to install and uninstall pmagpy and pmagpy-cli.
+     \item ``Pip'' is a package manager that comes standard with any modern Python distribution (you do need to update it, though).  Pip allows you to install and uninstall pmagpy and pmagpy-cli.
      \item Open your \href{#command_line}{command prompt}
-     \item To install or update pmagpy, use the command: \begin{verbatim}pip install pmagpy --upgrade \end{verbatim}
-     \item To install or update pmagpy-cli, use the command: \begin{verbatim}pip install pmagpy-cli --upgrade \end{verbatim}
+     \item To update pip, use the command: \begin{verbatim}pip install --upgrade pip\end{verbatim}
+     \item To install or update pmagpy, use the command: \begin{verbatim}pip install --upgrade pmagpy \end{verbatim}
+     \item To install or update pmagpy-cli, use the command: \begin{verbatim}pip install --upgrade pmagpy-cli \end{verbatim}
      \item To uninstall, use the command: ``pip uninstall pmagpy'' or ``pip uninstall pmagpy-cli''
      \item If you run into trouble, use pip to uninstall both pmagpy and pmagpy-cli, then try again to install first pmagpy and then pmagpy-cli
    \end{itemize}
@@ -162,7 +166,7 @@ More details and system-specific instructions are below.
    Important note for Windows users: you will need to use ``eqarea -h''.  In fact, you will drop the ``.py'' anytime you are calling a command-line program.  This applies \textit{only} if you've followed the pip install directions.
    \subsection{Accessing example data files}
    When you install pmagpy-cli, pip will automatically install a folder of example data files that you may find useful.  However, pip doesn't put those data files in a very accessible location.  You will probably want to add them to your Desktop or another convenient location.
-   To do this, navigate on the command line `to your Desktop folder (for help, see \href{#file_system}{this section}).  Then, use the command: \begin{verbatim}move_data_files.py -d .\end{verbatim}This will copy all of the PmagPy example files to your current directory (represented by ``.'').  
+   To do this, navigate on the command line to your Desktop folder (for help, see \href{#file_system}{this section}).  Then, use the command: \begin{verbatim}move_data_files.py -d .\end{verbatim}This will copy all of the PmagPy example files to your current directory (represented by ``.'').  
      
 
 
