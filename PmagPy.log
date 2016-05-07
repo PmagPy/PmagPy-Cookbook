@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  11 APR 2016 12:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  6 MAY 2016 16:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1596,12 +1596,12 @@ magic.py
 l. 4687 Writing PmagPy.idv[104] (PmagPy103x.png)
 File: EPSfiles/VGP_map.eps Graphic file (type eps)
  <EPSfiles/VGP_map.eps> [294]
- --- Customlinks says: Custom link named 'watsonsF.py': PmagPy.html#watsonsF.py
- 
+ --- Customlinks says: Custom link named 'watsons_f.py': PmagPy.html#watsons_f.
+py 
  --- Customlinks says: Link to subsection 5.2.107: PmagPy.html#subsec5-2-107
 [295] [296]
- --- Customlinks says: Custom link named 'watsonsV.py': PmagPy.html#watsonsV.py
- 
+ --- Customlinks says: Custom link named 'watsons_v.py': PmagPy.html#watsons_v.
+py 
  --- Customlinks says: Link to subsection 5.2.108: PmagPy.html#subsec5-2-108
 [297]
 l. 4739 Writing PmagPy.idv[105] (PmagPy104x.png)
@@ -1829,4 +1829,4 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  37i,9n,32p,135870b,2490s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on PmagPy.dvi (453 pages, 1190888 bytes).
+Output written on PmagPy.dvi (453 pages, 1190988 bytes).

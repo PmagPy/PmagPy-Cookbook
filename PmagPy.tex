@@ -3977,7 +3977,7 @@ $ revtest_magic.py -f revtest_sites.txt -exc
 \subsection{revtest\_MM1990.py}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/revtest_MM1990.py}{[revtest\_MM1990 docs]}
 
-This program tests whether two sets of observations (one with normal and one with reverse polarity) could have been drawn from distributions that are 180$\,^{\circ}$ apart using the McFadden and McElhinny (1990) implementation of the Watson (1983) V statistic test for a common mean. The implementation of the V statistic test in this program is the same as in \href{#WatsonsV.py}{WatsonsV.py}. Use \textbf{revtest\_MM1990.py} to perform a reversal test on data from the Ao et al., 2013 study of Early Pleistocene fluvio-lacustrine sediments of the Nihewan Basin of North China.
+This program tests whether two sets of observations (one with normal and one with reverse polarity) could have been drawn from distributions that are 180$\,^{\circ}$ apart using the McFadden and McElhinny (1990) implementation of the Watson (1983) V statistic test for a common mean. The implementation of the V statistic test in this program is the same as in \href{#Watsons_v.py}{watsons\_v.py}. Use \textbf{revtest\_MM1990.py} to perform a reversal test on data from the Ao et al., 2013 study of Early Pleistocene fluvio-lacustrine sediments of the Nihewan Basin of North China.
 
 Lets plot the combined data set \textit{Ao\textunderscore etal2013\textunderscore combined.txt} using \href{#eqarea.py}{eqarea.py}:
 
@@ -4008,7 +4008,7 @@ Critical angle for M&M1990:   4.3
 The McFadden and McElhinny (1990) classification for this test is: `A'
 \end{verbatim}
 
-As with \href{#WatsonsV.py}{WatsonsV.py}, this program produces a plot that displays the cumulative distribution (CDF) of the Watson V values resulting from the Monte Carlo simulation. In the plot below, the red line is the CDF, the green solid line is the value of the V statistic calculated for the two populations and the dashed blue line is the critical value for the V statistic. In this example, the data are consistent with the two directional groups sharing a common mean as evidenced by V (green solid line) being a lower value than the critical value of V (dashed blue line).
+As with \href{#Watsons_v.py}{watsons\_v.py}, this program produces a plot that displays the cumulative distribution (CDF) of the Watson V values resulting from the Monte Carlo simulation. In the plot below, the red line is the CDF, the green solid line is the value of the V statistic calculated for the two populations and the dashed blue line is the critical value for the V statistic. In this example, the data are consistent with the two directional groups sharing a common mean as evidenced by V (green solid line) being a lower value than the critical value of V (dashed blue line).
 
 \includegraphics[width=8cm]{EPSfiles/WatsonsV_Ao_etal2013.eps}
 
@@ -4689,38 +4689,38 @@ You should have a plot like this one:
 To use this program, you need to have basemap, which is not part of the free Python software distribution.  Also, if you don't have the  \href{#hires}{high resolution} installed by \href{#install_etopo.py}{install\_etopo.py}, just leave the -etp switch off to get a plain plot.
 
 
-\customlink{watsonsF.py}
+\customlink{watsons_f.py}
 
-\subsection{watsonsF.py}
+\subsection{watsons\_f.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter 11]}
-\href{https://github.com/PmagPy/PmagPy/blob/master/programs/watsonsF.py}{[watsonsF docs]}
+\href{https://github.com/PmagPy/PmagPy/blob/master/programs/watsons_f.py}{[watsons\_f docs]}
 
 First generate two data files with {\bf fishrot.py} with $\kappa$ = 15, $N=10$ and $I$ = 42, with $D$ = 10. for the first and 20 for the second:
 
 \begin{verbatim}
-$ fishrot.py -k 15 -n 10 -I 42 -D 10 >watsonsF_example_file1.dat
-$ fishrot.py -k 15 -n 10 -I 42 -D 20 > watsonsF_example_file2.dat
+$ fishrot.py -k 15 -n 10 -I 42 -D 10 >watsons_f_example_file1.dat
+$ fishrot.py -k 15 -n 10 -I 42 -D 20 > watsons_f_example_file2.dat
 \end{verbatim}
 
-To compare these two files using {\bf watsonsF.py}:
+To compare these two files using {\bf watsons\_f.py}:
 
 \begin{verbatim}
-$ watsonsF.py -f watsonsF_example_file1.dat -f2 watsonsF_example_file2.dat
+$ watsons_f.py -f watsons_f_example_file1.dat -f2 watsons_f_example_file2.dat
 7.74186876032 3.2594 3.2594
 \end{verbatim}
 
 The first number is Watson's  $F$ statistic for these two files (see \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{Essentials Chapter 11}) and the second is the number to beat for the two files to be drawn from the same fisher distribution (share a common mean).   In this case  the data fail this test ($F$ is greater than the required number).    Your results may vary!
 
-\customlink{watsonsV.py}
-\subsection{watsonsV.py}
+\customlink{watsons_v.py}
+\subsection{watsons\_v.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter 11]}
-\href{https://github.com/PmagPy/PmagPy/blob/master/programs/watsonsV.py}{[watsonsV docs]}
+\href{https://github.com/PmagPy/PmagPy/blob/master/programs/watsons_v.py}{[watsons_v docs]}
 
 
-Use the two data files generated in the example for {\bf watsonsF.py} and repeat the test using Watson's $V_w$ statistic.
+Use the two data files generated in the example for {\bf watsons\_f.py} and repeat the test using Watson's $V_w$ statistic.
 
 \begin{verbatim}
-$ watsonsV.py -f watsonsF_example_file1.dat -f2 watsonsF_example_file2.dat
+$ watsons_v.py -f watsons_f_example_file1.dat -f2 watsons_f_example_file2.dat
 Doing  5000  simulations
 50
 100
@@ -4730,7 +4730,7 @@ Doing  5000  simulations
 Watson's V,  Vcrit:
          10.5        6.8
  S[a]ve to save plot, [q]uit without saving:  a
-1  saved in  WatsonsV_watsonsF_example_file1.dat_watsonsF_example_file2.dat.svg
+1  saved in  Watsons_v_watsons_v_example_file1.dat_watsons_f_example_file2.dat.svg
        \end{verbatim}
 
 \noindent  which generates the plot:
