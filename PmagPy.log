@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  6 MAY 2016 17:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  6 MAY 2016 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1604,13 +1604,13 @@ py
 py 
  --- Customlinks says: Link to subsection 5.2.108: PmagPy.html#subsec5-2-108
 [297]
-l. 4739 Writing PmagPy.idv[105] (PmagPy104x.png)
+l. 4740 Writing PmagPy.idv[105] (PmagPy104x.png)
 File: EPSfiles/watsonsV_example.eps Graphic file (type eps)
  <EPSfiles/watsonsV_example.eps> [298]
  --- Customlinks says: Custom link named 'zeq.py': PmagPy.html#zeq.py 
  --- Customlinks says: Link to subsection 5.2.109: PmagPy.html#subsec5-2-109
 [299] [300]
-l. 4762 Writing PmagPy.idv[106] (PmagPy105x.png)
+l. 4763 Writing PmagPy.idv[106] (PmagPy105x.png)
 File: EPSfiles/zeq.eps Graphic file (type eps)
  <EPSfiles/zeq.eps>
  --- Customlinks says: Custom link named 'zeq_magic.py': PmagPy.html#zeq_magic.
@@ -1646,7 +1646,7 @@ es
 Chapter 7.
  --- Customlinks says: Link to chapter 7: PmagPy.html#ch7
 [311]
-l. 5084 Writing PmagPy.idv[107] (PmagPy106x.png)
+l. 5085 Writing PmagPy.idv[107] (PmagPy106x.png)
  [312]
  --- Customlinks says: Link to section 7.1: PmagPy.html#sec7-1
 [313] [314] [315] [316] [317] [318]
@@ -1670,7 +1670,7 @@ l. 5084 Writing PmagPy.idv[107] (PmagPy106x.png)
  --- Customlinks says: Link to subsubsection 7.3.0.0: PmagPy.html#subsubsec7-3-
 0-0
 [337] [338] [339]
-l. 5477 Writing PmagPy.idv[108] (PmagPy107x.png)
+l. 5478 Writing PmagPy.idv[108] (PmagPy107x.png)
 File: EPSfiles/ndim.eps Graphic file (type eps)
  <EPSfiles/ndim.eps> [340] [341] [342] [343] [344] [345]
 [346] [347] [348] [349]
@@ -1746,23 +1746,23 @@ File: EPSfiles/ndim.eps Graphic file (type eps)
  --- Customlinks says: Link to subsubsection 7.10.0.0: PmagPy.html#subsubsec7-1
 0-0-0
 [409] [410]
-l. 6532 Writing PmagPy.idv[109] (PmagPy108x.png)
+l. 6533 Writing PmagPy.idv[109] (PmagPy108x.png)
 File: EPSfiles/matplotlib1.eps Graphic file (type eps)
  <EPSfiles/matplotlib1.eps> [411] [412] [413]
-l. 6575 Writing PmagPy.idv[110] (PmagPy109x.png)
+l. 6576 Writing PmagPy.idv[110] (PmagPy109x.png)
 File: EPSfiles/matplotlib2.eps Graphic file (type eps)
 
 <EPSfiles/matplotlib2.eps> [414]
  --- Customlinks says: Link to subsubsection 7.10.0.0: PmagPy.html#subsubsec7-1
 0-0-0
 [415] [416] [417]
-l. 6633 Writing PmagPy.idv[111] (PmagPy110x.png)
+l. 6634 Writing PmagPy.idv[111] (PmagPy110x.png)
 File: EPSfiles/matplotlib3.eps Graphic file (type eps)
  <EPSfiles/matplotlib3.eps> [418]
  --- Customlinks says: Link to subsubsection 7.10.0.0: PmagPy.html#subsubsec7-1
 0-0-0
 [419]
-l. 6667 Writing PmagPy.idv[112] (PmagPy111x.png)
+l. 6668 Writing PmagPy.idv[112] (PmagPy111x.png)
 File: EPSfiles/matplotlib4.eps Graphic file (type eps)
  <EPSfiles/matplotlib4.eps> [420] [421]
  --- Customlinks says: Custom link named 'Notebooks': PmagPy.html#Notebooks 
@@ -1771,15 +1771,15 @@ Chapter 8.
  --- Customlinks says: Link to chapter 8: PmagPy.html#ch8
 
 Package natbib Warning: Citation `halls74' on page 423 undefined on input line 
-6689.
+6690.
 
 [423
 
 ]
-l. 6693 Writing PmagPy.idv[113] (PmagPy112x.png)
+l. 6694 Writing PmagPy.idv[113] (PmagPy112x.png)
 File: EPSfiles/notebook.eps Graphic file (type eps)
  <EPSfiles/notebook.eps> [424] [425]
-l. 6707 Writing PmagPy.idv[114] (PmagPy113x.png)
+l. 6708 Writing PmagPy.idv[114] (PmagPy113x.png)
 File: EPSfiles/SnakeRiver.eps Graphic file (type eps)
  <EPSfiles/SnakeRiver.eps> [426]
  --- Customlinks says: Custom link named 'trouble': PmagPy.html#trouble 
@@ -1800,23 +1800,23 @@ Chapter 9.
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7043.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7044.
 [444]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 7043.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 7044.
  (./PmagPy.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7043.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 7043.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7044.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 7044.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7043.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7044.
  )
 (\end occurred inside a group at level 5)
 
-### simple group (level 5) entered at line 6639 ({)
-### simple group (level 4) entered at line 6605 ({)
-### simple group (level 3) entered at line 5338 ({)
+### simple group (level 5) entered at line 6640 ({)
+### simple group (level 4) entered at line 6606 ({)
+### simple group (level 3) entered at line 5339 ({)
 ### simple group (level 2) entered at line 1313 ({)
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
