@@ -6812,10 +6812,7 @@ If you are using the \href{#full_pip}{pip install} instead of the PmagPy prompt,
 If you are using Canopy (not just EPD), you will need to keep it up to date.  Currently, that means the version number should be 1.6.1 or higher.  In general, you can update by opening the Canopy application; it will automatically check for updates.  However, if you haven't updated for a long time, Canopy can get ``stuck'' in an old version where it can no longer update.  If that is the case, you will need to fully uninstall and reinstall canopy, following the directions on the \href{https://support.enthought.com/hc/en-us/articles/204469570-Canopy-shows-no-updates-available-reinstalling-from-the-website}{Enthought website}.
 
 \section{Error loading dlls (windows only)}
-Some of the modules used in PmagPy have dependencies that are not called directly.  If you are missing one of those dependencies, the programs may fail in odd ways.  In general, it is worthwhile to open Canopy, go into the package manager, and update all packages.  More specifically, if you see an error message like this:
-\begin{verbatim}ImportError: DLL load failed: The specified procedure could not be found  \end{verbatim}
-
-you may be missing the MKL package.  Open Canopy, go to package manager, and select "Available packages".  Scroll down to MKL, and install it.  This should fix the problem!
+Some of the modules used in PmagPy have dependencies that are not called directly.  If you are missing one of those dependencies, the programs may fail in odd ways.  In general, it is worthwhile to open Canopy, go into the package manager, and update all packages.  More specifically, if you see an error message like this: \begin{verbatim}ImportError: DLL load failed: The specified procedure could not be found  \end{verbatim} you may be missing the MKL package.  Open Canopy, go to package manager, and select ``Available packages".  Scroll down to MKL, and install it.  This should fix the problem!  Note that windows users who are having trouble opening one of the GUIs should try this solution whether or not they actually see this error message.
 
 
 \section{Problems with a specific program}

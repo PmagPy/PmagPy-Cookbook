@@ -7,7 +7,7 @@
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
 <!-- html,1,sections+ --> 
 <meta name="src" content="PmagPy.tex"> 
-<meta name="date" content="2016-05-06 18:24:00"> 
+<meta name="date" content="2016-05-31 12:55:00"> 
 <link rel="stylesheet" type="text/css" href="PmagPy.css"> 
 </head><body 
 >
@@ -42,7 +42,7 @@ href="#x1-2170008" id="QQ2-1-217">Jupyter Notebooks</a></span>
 <br />   <span class="chapterToc" >9 <a 
 href="#x1-2180009" id="QQ2-1-218">Troubleshooting</a></span>
 <br />   <span class="likechapterToc" ><a 
-href="#x1-2230009.4" id="QQ2-1-223">Bibliography</a></span>
+href="#x1-2240009.5" id="QQ2-1-224">Bibliography</a></span>
    </div>
    <h2 class="likechapterHead"><a 
 href="#QQ2-1-1" id="x1-1000">Contents</a></h2> <div class="tableofcontents">
@@ -390,9 +390,11 @@ href="#x1-2190009.1" id="QQ2-1-219">Problems with installing Python or PmagPy</a
 <br />   &#x00A0;<span class="sectionToc" >9.2 <a 
 href="#x1-2200009.2" id="QQ2-1-220">Problems updating Canopy</a></span>
 <br />   &#x00A0;<span class="sectionToc" >9.3 <a 
-href="#x1-2210009.3" id="QQ2-1-221">Problems with a specific program</a></span>
+href="#x1-2210009.3" id="QQ2-1-221">Error loading dlls (windows only)</a></span>
 <br />   &#x00A0;<span class="sectionToc" >9.4 <a 
-href="#x1-2220009.4" id="QQ2-1-222">Other problems</a></span>
+href="#x1-2220009.4" id="QQ2-1-222">Problems with a specific program</a></span>
+<br />   &#x00A0;<span class="sectionToc" >9.5 <a 
+href="#x1-2230009.5" id="QQ2-1-223">Other problems</a></span>
    </div>
                                                                      
 
@@ -412,7 +414,7 @@ name="PmagPy0x.png" src="EPSfiles/logo.eps"
 <h2 class="titleHead">PmagPy Cookbook</h2>
 <div class="author" ></div><br />
 <div class="date" ><span 
-class="cmr-12">May 6, 2016</span></div>
+class="cmr-12">May 31, 2016</span></div>
                                                                      
 
                                                                      
@@ -437,7 +439,7 @@ href="https://github.com/PmagPy/PmagPy-Cookbook/raw/gh-pages/PmagPy.pdf" >PmagPy
    Lisa Tauxe
    <br />Scripps Institution of Oceanography
    <br />La Jolla, CA 92093
-   <br />May 6, 2016
+   <br />May 31, 2016
    <br /><a 
 href="http://magician.ucsd.edu/~ltauxe/" class="url" ><span 
 class="cmtt-10x-x-109">http://magician.ucsd.edu/</span><span 
@@ -11718,19 +11720,35 @@ will need to fully uninstall and reinstall canopy, following the directions on t
 href="https://support.enthought.com/hc/en-us/articles/204469570-Canopy-shows-no-updates-available-reinstalling-from-the-website" >Enthought website</a>.
 <!--l. 6814--><p class="noindent" >
 <!--l. 6814--><p class="indent" >   <a name='sec9-3'></a><h3 class="sectionHead"><span class="titlemark">9.3   </span> <a 
-href="#QQ2-1-221" id="x1-2210009.3">Problems with a specific program</a></h3>
-<!--l. 6815--><p class="noindent" >
+href="#QQ2-1-221" id="x1-2210009.3">Error loading dlls (windows only)</a></h3>
+<!--l. 6815--><p class="noindent" >Some of the modules used in PmagPy have dependencies that are not called
+directly. If you are missing one of those dependencies, the programs may fail in
+odd ways. In general, it is worthwhile to open Canopy, go into the package
+manager, and update all packages. More specifically, if you see an error message
+like this:
+                                                                     
+
+                                                                     
+   <div class="verbatim" id="verbatim-266">
+ImportError:&#x00A0;DLL&#x00A0;load&#x00A0;failed:&#x00A0;The&#x00A0;specified&#x00A0;procedure&#x00A0;could&#x00A0;not&#x00A0;be&#x00A0;found&#x00A0;&#x00A0;
+</div>
+<!--l. 6815--><p class="nopar" > you may be missing the MKL package. Open Canopy, go to package manager,
+and select &#8220;Available packages&#8221;. Scroll down to MKL, and install it. This should
+fix the problem! Note that windows users who are having trouble opening one of
+the GUIs should try this solution whether or not they actually see this error
+message.
+<!--l. 6818--><p class="noindent" >
+<!--l. 6818--><p class="indent" >   <a name='sec9-4'></a><h3 class="sectionHead"><span class="titlemark">9.4   </span> <a 
+href="#QQ2-1-222" id="x1-2220009.4">Problems with a specific program</a></h3>
+<!--l. 6819--><p class="noindent" >
      <ol  class="enumerate1" >
      <li 
-  class="enumerate" id="x1-221002x1">Thellier auto_interpreter crashes with a Segmentation Fault (on
+  class="enumerate" id="x1-222002x1">Thellier auto_interpreter crashes with a Segmentation Fault (on
      Mac).
           <ul class="itemize1">
           <li class="itemize">This error is caused by a version issue with one of PmagPy&#8217;s
           dependencies,  matplotlib.  There  are  two  ways  to  solve  this
           problem.
-                                                                     
-
-                                                                     
           </li>
           <li class="itemize">Recommended:  download  and  use  the  <a 
 href="#standalone" >standalone  Pmag  GUI</a>
@@ -11744,10 +11762,13 @@ href="#standalone" >standalone  Pmag  GUI</a>
           cause the Thellier GUI menubar to behave oddly. For this reason,
           we recommend the first solution (above).</li></ul>
      </li></ol>
-<!--l. 6824--><p class="noindent" >
-<!--l. 6824--><p class="indent" >   <a name='sec9-4'></a><h3 class="sectionHead"><span class="titlemark">9.4   </span> <a 
-href="#QQ2-1-222" id="x1-2220009.4">Other problems</a></h3>
-<!--l. 6824--><p class="noindent" >Report a problem not listed above: e-mail <a 
+                                                                     
+
+                                                                     
+<!--l. 6828--><p class="noindent" >
+<!--l. 6828--><p class="indent" >   <a name='sec9-5'></a><h3 class="sectionHead"><span class="titlemark">9.5   </span> <a 
+href="#QQ2-1-223" id="x1-2230009.5">Other problems</a></h3>
+<!--l. 6828--><p class="noindent" >Report a problem not listed above: e-mail <a 
 href="mailto:ltauxe@ucsd.edu" >ltauxe@ucsd.edu</a>. Include the following
 information: 1) the version of PmagPy that you are using, 2) your operating
 system, 3) any error messages that you got, 4) the datafile that is giving trouble,
@@ -11755,8 +11776,12 @@ if relevant.
                                                                      
 
                                                                      
+<!--l. 6833--><p class="indent" >
+                                                                     
+
+                                                                     
    <h2 class="likechapterHead"><a 
-href="#QQ2-1-223" id="x1-2230009.4">Bibliography</a></h2>
+href="#QQ2-1-224" id="x1-2240009.5">Bibliography</a></h2>
   <div class="thebibliography">
   <p class="bibitem" ><span class="biblabel">
 <a 
