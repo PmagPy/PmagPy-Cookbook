@@ -14,4 +14,3 @@ mv PmagPy.pdf Cookbook-Web-Pages
 # git add .
 # git commit
 # git push origin master:gh-pages
-
