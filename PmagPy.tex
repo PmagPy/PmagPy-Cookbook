@@ -49,7 +49,7 @@ There are many chefs who contributed to this work, in particular, the MagIC Data
 
 A pdf version of this cookbook is available for download at:  \href{https://github.com/PmagPy/PmagPy-Cookbook/blob/gh-pages/PmagPy.pdf}{PmagPy.pdf}.
 
-Users of PmagPy should cite the open access article:  
+Users of PmagPy should cite the open access article:
 
   \href{http://dx.doi.org/10.1002/2016GC006307}{Tauxe, L., R. Shaar, L. Jonestrask,
 N. L. Swanson-Hysell, R. Minnett,
@@ -103,7 +103,7 @@ In order to install this software, you will need to download and install \href{h
 
 Next, get started by downloading the zip file (see links below) and putting the resulting folder on your desktop. You'll need to ``extract all'' files. Inside the PmagPy-Standalone folder you will find icons for installing Pmag GUI and MagIC GUI. Double click the program you wish to use and you will be guided the the install process.
 
-You'll find the latest stable release at: 
+You'll find the latest stable release at:
 
 \noindent   \href{https://github.com/PmagPy/PmagPy-Standalone-Windows/releases/latest}{https://github.com/PmagPy/PmagPy-Standalone-Windows/releases/latest}
 
@@ -111,7 +111,7 @@ You'll find the latest stable release at:
 \customlink{full_install}
 \section{Full PmagPy install}
 
-To get the full  use of PmagPy functionality, you will first have to install Python. 
+To get the full  use of PmagPy functionality, you will first have to install Python.
 
 \customlink{getting_python}
    \begin{itemize}
@@ -119,7 +119,7 @@ To get the full  use of PmagPy functionality, you will first have to install Pyt
    \item Launch Canopy to complete the installation process.  You may need to use control click on the Canopy icon to open it for the first time--try this if you get a message that says ``Canopy can't be opened because it is from an unidentified developer.''  Once you've opened Canopy successfully, select ``yes'' to making Canopy your default Python environment.  In the lower right hand corner of the Canopy launch page, you will find the Version number (currently 1.6.1 or higher). Please include this in any correspondence with the PmagPy team. While you might find use for some of the features within the Canopy environment that opens as an application, PmagPy programs are best run or launched on the \href{#command_line}{command line}.
       \item {Optional:   Setting up Basemap for use in making maps with Python}
 Once you have installed the full version of Canopy and want to use the mapping programs (e.g., \href{#basemap_magic.py}{basemap\_magic.py}), \customlink{HighRes}
-     click on  the `Package Manager' button on the Canopy welcome page, and then on `Available Packages'.  Install both basemap packages (one has high resolution data files in it).  
+     click on  the `Package Manager' button on the Canopy welcome page, and then on `Available Packages'.  Install both basemap packages (one has high resolution data files in it).
         \item A last note about Canopy: you should update it regularly!  Open the Canopy application and update the packages at least every few months.
    \end{itemize}
 % \subsection{Getting Python for Windows users}
@@ -129,16 +129,16 @@ Once you have installed the full version of Canopy and want to use the mapping p
 %   \item Windows users who cannot get an academic license should install this \href{http://magician.ucsd.edu/Software/PmagPy/archive/epd-7.3-2-win-x86.msi}{older Enthought Distribution}.  This version of EPD will not support all PmagPy programs, so if you want to run Pmag GUI or MagIC GUI you should download the \href{#standalone}{standalone versions}.
 %   \item If you run into problems with your installation, you may need to uninstall any previous Python installations.
 %   \end{itemize}
-   
- \subsection{Installing PmagPy}
- 
- Here we provide instructions for using pip to install PmagPy from the command line. 
-    \customlink{pip_install}
-       ``Pip'' is a package manager that comes standard with any modern Python distribution (NB: you will have to update it to the most recent version).  Pip allows you to install and uninstall pmagpy, the package with all the low-level functionality of PmagPy and pmagpy-cli which provides the PmagPy command-line-interface and has all the packages you may use to download/upload, visualize, and manipulate data.  
 
-      
-  To install using pip: 
-      
+ \subsection{Installing PmagPy}
+
+ Here we provide instructions for using pip to install PmagPy from the command line.
+    \customlink{pip_install}
+       ``Pip'' is a package manager that comes standard with any modern Python distribution (NB: you will have to update it to the most recent version).  Pip allows you to install and uninstall pmagpy, the package with all the low-level functionality of PmagPy and pmagpy-cli which provides the PmagPy command-line-interface and has all the packages you may use to download/upload, visualize, and manipulate data.
+
+
+  To install using pip:
+
    \begin{itemize}
       \item Find  and open your \href{#command_line}{command line}.
       \item Update pip: type on  the command line: \begin{verbatim}pip install --upgrade pip\end{verbatim}
@@ -147,32 +147,32 @@ Once you have installed the full version of Canopy and want to use the mapping p
      \item To uninstall either, use the command: ``pip uninstall pmagpy'' or ``pip uninstall pmagpy-cli''
      \item If you run into trouble, use pip to uninstall both pmagpy and pmagpy-cli, then try again to install first pmagpy and then pmagpy-cli
    \end{itemize}
-   
-%   
-%   
-%To install from the Github software repository: 
+
+%
+%
+%To install from the Github software repository:
 %
 % \begin{itemize}
 %   \item Download the zip file from the \href{https://github.com/ltauxe/PmagPy/releases/latest} {PmagPy} software package on Github. Unzip the downloaded file by double clicking on it. PC users should extract all the files to a folder on your desktop (or wherever).  Once you have the folder open, double click on the {\it install\_MacOS} or {\it install\_Windows} file depending on your operating system.  (If you are a Linux user, just copy the files to some directory and put both PmagPy and PmagPy/programs into your path.)
 %   \item For Windows users, the install process will create a custom ``PmagPy Prompt'' with a shortcut on your desktop.  This prompt is identical to the regular Command Prompt, except that it has all of the PmagPy functionality built in. From here on, whenever the documentation refers to your ``command line'', you should use the PmagPy Prompt.
 %    \end{itemize}
-%   
-%   
-   
+%
+%
+
    \subsection{Finishing up}
-   
-    Now your installation should be complete.  There are a few more details: 
+
+    Now your installation should be complete.  There are a few more details:
     \begin{itemize}
 \item Testing your installation:
 
-To make sure everything is working, return to your \href{#command_line}{command line} (or PmagPy Prompt), type {\bf eqarea.py -h}.      Important note for Windows users: you will need to use ``eqarea -h''.  In fact, you will drop the ``.py'' anytime you are calling a command-line program.  
+To make sure everything is working, return to your \href{#command_line}{command line} (or PmagPy Prompt), type {\bf eqarea.py -h}.      Important note for Windows users: you will need to use ``eqarea -h''.  In fact, you will drop the ``.py'' anytime you are calling a command-line program.
 
- If you do not see the help message, first try setting your path by hand following the instructions on the  \href{#trouble}{Trouble Shooting} page. If that fails, please send the error message and  Canopy version number to \href{mailto:ltauxe@ucsd.edu?subject=PmagPy Cookbook}{ltauxe@ucsd.edu}  
- 
-\item Accessing example data files: 
+ If you do not see the help message, first try setting your path by hand following the instructions on the  \href{#trouble}{Trouble Shooting} page. If that fails, please send the error message and  Canopy version number to \href{mailto:ltauxe@ucsd.edu?subject=PmagPy Cookbook}{ltauxe@ucsd.edu}
+
+\item Accessing example data files:
 
    There are many data files used in the examples of programs and for use with the textbook  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3.html}{Essentials of Paleomagnetism}.     You may want to copy  the data files to your Desktop or another convenient location.
-   To do this, navigate on the command line to your destination folder (for help, see \href{#file_system}{this section}).  Then, use the command: \begin{verbatim}move_data_files.py -d .\end{verbatim} This will copy all of the PmagPy example files to your current directory (represented by ``.'').  
+   To do this, navigate on the command line to your destination folder (for help, see \href{#file_system}{this section}).  Then, use the command: \begin{verbatim}move_data_files.py -d .\end{verbatim} This will copy all of the PmagPy example files to your current directory (represented by ``.'').
 
 \customlink{hires}
 \item Installing the Etopo20 package for use with Basemap:
@@ -195,7 +195,7 @@ To install the Etopo20 package, see \href{#install_etopo.py}{install\_etopo.py}.
 %   \item 3.  Upgrade pip.
 %   \item 4.  Install pmagpy and pmagpy-cli.
 %   \item 5.  Test that your install is complete.
-% \end{itemize} 
+% \end{itemize}
 %
 %\begin{itemize}
 %  \item 1.  Download and install Python distribution.
@@ -220,9 +220,9 @@ To install the Etopo20 package, see \href{#install_etopo.py}{install\_etopo.py}.
 
 
 
- 
 
- 
+
+
 %\setcounter{tocdepth}{1}
 %\tableofcontents
 \section{Next steps}
@@ -231,7 +231,7 @@ Where do you want to go from here?
 
 \begin{itemize}
 \item \href{#magic_download}{Download data from the {\bf MagIC} database.}
-\item \href{#pmag_gui.py}{Analyze and/or upload demagnetization} and/or paleointensity measurement data to the {\bf MagIC} database. 
+\item \href{#pmag_gui.py}{Analyze and/or upload demagnetization} and/or paleointensity measurement data to the {\bf MagIC} database.
 \item \href{#PmagPy}{Learn more about particular programs in the {\bf PmagPy} software package.}
 \item \href{#MagICDatabase}{Learn about the MagIC Database.}
 \item \href{#Python}{Learn how to write your own programs in Python.}
@@ -954,11 +954,11 @@ We recommend that you check all the warnings and errors in {\it Thellier\_GUI.lo
 
 This figure shows a snapshot of the main panel.
 
-	\includegraphics[width=30cm]{EPSFiles/Screenshot_main_panel.eps}
+  \includegraphics[width=30cm]{EPSFiles/Screenshot_main_panel.eps}
 
 \noindent
-	The top field in the  panel includes the following buttons/controls (from left to right):
-	\begin{itemize}
+  The top field in the  panel includes the following buttons/controls (from left to right):
+  \begin{itemize}
 \item {\bf Specimen:} a list of the specimens in the project folder sorted by name.
 \item {\bf previous/next:} buttons to move forward and backward in the specimens list.
 \item {\bf T min/T max:} buttons to select temperature bounds.
@@ -1166,16 +1166,16 @@ Good bye
 
  \begin{verbatim}
  $ cat angle.dat
-    11.2    32.9 	    6.4   -42.9
-   11.5    63.7 	   10.5   -55.4
-   11.9    31.4 	  358.1   -71.8
-  349.6    36.2 	  356.3   -45.0
-   60.3    63.5 	   58.9   -56.6
-  351.8    37.6 	   55.0   -45.8
-  345.5    53.1 	   44.8   -26.9
-   12.2    20.1 	   13.6   -54.0
-  352.1    37.6 	    5.1   -39.9
-  341.2    53.8 	   25.1   -61.1
+    11.2    32.9      6.4   -42.9
+   11.5    63.7      10.5   -55.4
+   11.9    31.4     358.1   -71.8
+  349.6    36.2     356.3   -45.0
+   60.3    63.5      58.9   -56.6
+  351.8    37.6      55.0   -45.8
+  345.5    53.1      44.8   -26.9
+   12.2    20.1      13.6   -54.0
+  352.1    37.6       5.1   -39.9
+  341.2    53.8      25.1   -61.1
 ....
 
  $ angle.py -f angle.dat
@@ -1354,7 +1354,7 @@ specimen statistics and eigenparameters stored in  ./atrm_results.txt
 \customlink{azdip_magic.py}
 
 \subsection {azdip\_magic.py}
- \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]} and \href{#MagICDatabase}{[MagIC Database]} 
+ \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]} and \href{#MagICDatabase}{[MagIC Database]}
  \href{https://github.com/PmagPy/PmagPy/blob/master/programs/azdip_magic.py}{[azdip\_magic docs]}
 
 Many paleomagnetists save orientation information in files in this format:
@@ -1565,15 +1565,15 @@ file:_________________    field:___________uT
 
                                  date | run# | zone I | zone II | zone III | start | sp | cool |
 ________________________________________________________
-		   0.0	              |           |           |               |                |         |      |         |
+       0.0                |           |           |               |                |         |      |         |
 ________________________________________________________
-	 Z 	 100.0           |           |           |               |                |         |      |         |
+   Z   100.0           |           |           |               |                |         |      |         |
 ________________________________________________________
-	 I 	 100.1           |           |           |               |                |         |      |         |
+   I   100.1           |           |           |               |                |         |      |         |
 ________________________________________________________
-	 T 	 100.3           |           |           |               |                |         |      |         |
+   T   100.3           |           |           |               |                |         |      |         |
 ________________________________________________________
-	 I 	 150.1           |           |           |               |                |         |      |         |
+   I   150.1           |           |           |               |                |         |      |         |
 .
 .
 .
@@ -1770,7 +1770,7 @@ second deriative maximum is at T=552
 \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/customize_criteria.py}{[customize\_criteria docs]}
 
-NB:  The best place to customize your selection criteria is within \href{#demag_gui.py}{Demag GUI} or \href{#thellier_gui.py}{Thellier GUI}.  But if you want to do it on the command line, then here's how.  
+NB:  The best place to customize your selection criteria is within \href{#demag_gui.py}{Demag GUI} or \href{#thellier_gui.py}{Thellier GUI}.  But if you want to do it on the command line, then here's how.
 
 The MagIC database allows documentation of which criteria were used in selecting data on a specimen, sample or site level and to easily apply those criteria (and re-apply them as they change) in preparing the different tables.  These choices are stored in the {\it pmag\_criteria} table in each MagIC project directory (see \href{#pmag_gui.py}{Pmag GUI} documentation).
 
@@ -2492,7 +2492,7 @@ S[a]ve all figures, <Return> to quit   a
 \subsection{foldtest\_magic.py} \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch12.html#ch12}{[Essentials Chapter 12]} and \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/foldtest_magic.py}{[foldtest\_magic docs]}
 
-This program performs the same test as \href{#foldtest.py}{foldtest.py}.  The only difference is that it reads MagIC formatted input files and allows the application of selection criteria as specified in the {\it pmag\_criteria.txt} formatted file.  
+This program performs the same test as \href{#foldtest.py}{foldtest.py}.  The only difference is that it reads MagIC formatted input files and allows the application of selection criteria as specified in the {\it pmag\_criteria.txt} formatted file.
 
 To begin, download the file from this references:  Halls et al. (1974; doi: 10.1139/e74-113) at \url{https://earthref.org/MagIC/DOI/10.1139/e74-113} and unpack it with  \href{#download_magic.py}{download\_magic.py}. Then run {\bf foldtest\_magic.py} for the fold test.
 
@@ -2506,13 +2506,13 @@ doing  1000  iterations...please be patient.....
 900
 950
 96 - 149 Percent Unfolding
-S[a]ve all figures, <Return> to quit  
+S[a]ve all figures, <Return> to quit
  a
 3  saved in  foldtest_ta.svg
 2  saved in  foldtest_st.svg
 1  saved in  foldtest_ge.svg
 
-\end{verbatim} 
+\end{verbatim}
 
 \noindent  which gives the plots:
 
@@ -2980,8 +2980,8 @@ S[a]ve figure? [q]uit, <return> to continue
 %Now import the following:
 %\begin{itemize}
 %	\item  Field and sampling information: \href{#field\_info}{orient.txt}.
-% 	\begin{itemize}
-%		\item 	Select orientation file:  choose your orient.txt file from MyFiles.
+%   \begin{itemize}
+%		\item   Select orientation file:  choose your orient.txt file from MyFiles.
 %		\item Select naming convention:   In this tutorial choose the first naming convention  XXXXY (e.g., sample mc200a is related to site mc200 by a terminal character).
 %		\item Select orientation convention...:  Choose to use the IGRF calculation at the site and enter 13 hours for the hours to add to get from McMurdo time to GMT.  These samples were oriented with a Pomeroy orientation device so the correct orientation method is \#1, the default.
 %		\item  Select method codes: Check 'FS-FD' and 'SO-POM'.   All the site locations were determined with a GPS.
@@ -3032,8 +3032,8 @@ S[a]ve figure? [q]uit, <return> to continue
 %			\item Choose the default selection criteria (unless you changed them, in which case you can select the customized option  -exc).
 %			\item Age Range: These samples ranged from zero to five million years, so fill in '0', '5' and choose 'Ma' under the
 %			\item   Choose the present latitude (-lat option) for calculating VADMs.
-%	         \item Coordinate system:  Choose the geographic coordinate system.
-%	         \item If you want to look at the data on a site by site basis, select the -p option.
+%          \item Coordinate system:  Choose the geographic coordinate system.
+%          \item If you want to look at the data on a site by site basis, select the -p option.
 %		\end{itemize}
 %		\item Prepare upload txt file:  The \href{#Uploading}{MagIC } will import a specially formatted ascii file, parsing all the tables into their correct tabs and allowing you to proceed to the final steps of file preparation for uploading into the database.   It will create an {\it er\_locations.txt} file for you based on what is in the {\it er\_sites.txt} file.  It will ask you for the missing required information.   In this case, the location type was 'Outcrop'.  Then the GUI prepares a file called {\it upload\_dos.txt} which can be directly imported into the MagIC console.
 %\end{itemize}
@@ -3052,7 +3052,7 @@ S[a]ve figure? [q]uit, <return> to continue
 %
 %  \includegraphics[width=15cm]{EPSFiles/wizard.eps}
 %
-%\noindent  Click on the 'Use predefined settings...' choose 	 `Classical Directional and Intensity Study' and click 'OK'.  Then add 'Measurement data' and 	`Rock Magnetics' and click on the 'Next$>>$' button.  Check the boxes for 'Anisotropy' and 'Hysteresis' data and click on the  'Finish' button.  Your smartbook is now ready for populating.
+%\noindent  Click on the 'Use predefined settings...' choose   `Classical Directional and Intensity Study' and click 'OK'.  Then add 'Measurement data' and   `Rock Magnetics' and click on the 'Next$>>$' button.  Check the boxes for 'Anisotropy' and 'Hysteresis' data and click on the  'Finish' button.  Your smartbook is now ready for populating.
 %
 %  Under the 'Operations' menu, select `Import data files' and choose the 'upload\_dos.txt' file in your MagIC project directory.
 % This reads it in and parses it out to the right tables.  Any error logs generated will be in the directory with the upload\_dos file.  When you have satisfied your curiosity about the contents of the smartbook, click on the 'Prepare for uploading' option under the 'Operations' menu.  After you indicate that you really want to do this, the console goes through some extensive checking.   If errors are encountered, you will be given the opportunity to correct them.  When the console  is finished,  it exports an Excel file (in this case Tutorial.v24.xls) and a text file (in this case Tutorial.v24.txt).  If this were a real study, you would upload these into the MagIC database by going to:
@@ -3710,7 +3710,7 @@ eba24a DE-BFL 10    2.50  70.00    8.8   334.9    51.5
   \subsection{plotXY.py}
   \href{https://github.com/PmagPy/PmagPy/blob/master/programs/plotXY.py}{[plotXY docs]}
 
-This program makes a simple XY plot from any arbitrary input file.  You can specify which columns are X and Y, bounds on the columns, symbol color and size, axis labels and other options.  
+This program makes a simple XY plot from any arbitrary input file.  You can specify which columns are X and Y, bounds on the columns, symbol color and size, axis labels and other options.
 
 \begin{verbatim}
 $ plotXY.py -f plotXY_example.txt
@@ -3839,7 +3839,7 @@ This program reads in a file with location, age and destination plate and rotate
 
 First, save  the location of Cincinnati (39.1 latitude, -84.7 longitude) in a file called {\it pt\_rot.input} using either the UNIX {\bf cat} function or your favorite text editor.  Save the data as a lon/lat pair separated by a space.  Then use the program {\bf pt\_rot.py} to rotate Cincinnati to (South) African (saf) coordinates at 80 Ma.  Plot both points using \href{#plot_mapPTS.py}{plot\_mapPTS.py}.   You should save the lon, lat, plate, age, destination\_plate information in a file called {\it pt\_rot\_example.dat} in the following:
 
-\begin{verbatim} 
+\begin{verbatim}
 $ awk '{print $1,$2}' pt_rot.input > lon_lat
 $ -prj moll -f lon_lat -sym g^ 10 -R -B -eye 0 0
 please wait to draw points
@@ -4553,7 +4553,7 @@ which should yield a plot something (but not exactly) like this:
 \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/update_measurements.py}{[update\_measurements docs]}
 
-This program is no longer maintained. This function is embedded in  \href{#pmag_gui.py}{Pmag GUI}.   
+This program is no longer maintained. This function is embedded in  \href{#pmag_gui.py}{Pmag GUI}.
 
 
 
@@ -4568,7 +4568,7 @@ Sometimes there is no simple relationship and the MagIC import procedure can't p
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/upload_magic.py}{[upload\_magic docs]}
 
 
- This function is embedded in  \href{#pmag_gui.py}{Pmag GUI}.   
+ This function is embedded in  \href{#pmag_gui.py}{Pmag GUI}.
 
 
 
@@ -4790,7 +4790,7 @@ The equal area projection has the X direction (usually North in geographic coord
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]}  \& \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/zeq_magic.py}{[zeq\_magic docs]}
 
-This program is no longer maintained and has been superseded by \href{#demag_gui.py}{Demag GUI}.  
+This program is no longer maintained and has been superseded by \href{#demag_gui.py}{Demag GUI}.
 
 Plot the AF demagnetization data available in the file you got in the {\bf download\_magic.py} example using {\bf zeq\_magic.py}.    Use geographic coordinates, where orientations are available.
 
@@ -4835,7 +4835,7 @@ The plots will look similar to the \href{#zeq.py}{zeq.py} example, but the defau
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]}  \& \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/zeq_magic_redo.py}{[zeq\_magic\_redo docs]}
 
-The functionality of this program has been incorporated into \href{#demag_gui.py}{Demag GUI} so you should use that.   
+The functionality of this program has been incorporated into \href{#demag_gui.py}{Demag GUI} so you should use that.
 
 
 In the {\it zeq\_magic} directory, use the program {\bf zeq\_magic\_redo.py} to create a {\it pmag\_specimens} formatted file with data in geographic coordinates from the sample coordinate file {\it zeq\_specimens.txt}.
@@ -5004,15 +5004,15 @@ LT-ZF-CI \qquad & Lab Treatment \qquad & Zero field cooled, induced M measured o
 For uploading to the database, all the individual tables should be assembled into a single file.  Each individual data table is separated from the next by a series of `$>>>>>>>>>>$' symbols, so a typical upload file might look like this:
 
 \begin{verbatim}
-tab 	er_locations
+tab   er_locations
 location_type	er_citation_names	location_end_lat	location_begin_lon	er_location_name	location_begin_lat	location_end_lon
 Drill Site	This study	19.0	156.0	801C	19.0	156.0
 Drill Site	This study	19	156	801	19	156
 >>>>>>>>>>
-tab 	er_samples
+tab   er_samples
 er_citation_names	sample_lithology	er_site_name	er_sample_name	sample_type	er_location_name	sample_lat	sample_lon	sample_class
-This study	 Submarine Basaltic Glass	16r5113	16r5113	Lava Flow	801C	19	156	Igneous: Extrusive
-This study	 Submarine Basaltic Glass	17r1026	17r1026	Lava Flow	801C	19	156	Igneous: Extrusive
+This study   Submarine Basaltic Glass	16r5113	16r5113	Lava Flow	801C	19	156	Igneous: Extrusive
+This study   Submarine Basaltic Glass	17r1026	17r1026	Lava Flow	801C	19	156	Igneous: Extrusive
 .
 .
 .
@@ -6233,7 +6233,7 @@ The write statement uses the syntax:  'format string'\%(list of variables tuple)
 { \color{blue} \begin{verbatim}
 x,y=4.82,2.3e3
 print '%7.1f,%s\t%10.3e'%(x,'hi there',y)
-   4.8,hi there	 2.300e+03
+   4.8,hi there  2.300e+03
 \end{verbatim}}
 \begin{itemize}
 \item In the {\color{blue}ConvertStations2.py} script, the  '$\backslash$n' string puts a UNIX line ending on it.  Without that, the whole file is but a single line (very annoying).
@@ -6475,7 +6475,7 @@ class Circle:
 6.283185307179586
 \end{verbatim}}
 
-\noindent In spite of superficial similarities, classes are not the same as functions.  Although the Shape module is imported just the same as any other, to use it, we first have to create a class ``instance'' ({\color{blue}C=Shapes.Circle(r)}).  {\color{blue}C} is an object with 	``attributes'' (variables) and ``methods''.
+\noindent In spite of superficial similarities, classes are not the same as functions.  Although the Shape module is imported just the same as any other, to use it, we first have to create a class ``instance'' ({\color{blue}C=Shapes.Circle(r)}).  {\color{blue}C} is an object with  ``attributes'' (variables) and ``methods''.
 All methods (parts that start with ``def''),  have an argument list. The first argument has to be a reference to the class instance itself, or ``self'', followed by any variables you want to pass into the method.  So the {\color{blue}\_\_init\_\_} method initializes the instance attributes of an object.  In the above case, it defined the attribute {\color{blue}r}, which gets passed in when the class is first called.
 Asking for any attribute (note the lack of parentheses), retrieves the current value of that attribute.  Attributes can be changed (as in  {\color{blue}C.r=2.0}).
 
@@ -6808,16 +6808,49 @@ Setting your path should not be an issue in Windows if you are using the PmagPy 
 
 \href{http://www.mathworks.com/matlabcentral/answers/94933-how-do-i-set-my-system-path-under-windows}{Setting your Path in Windows}
 
-If you are using the \href{#full_pip}{pip install} instead of the PmagPy prompt, you'll need to use the command ``eqarea -h'', \textbf{not} ``eqarea.py -h''.  This is caused by a strange Windows quirk, but all you need to know is this: anytime the Cookbook gives a command, you'll need to drop the ``.py'' and all will be well.  
+If you are using the \href{#full_pip}{pip install} instead of the PmagPy prompt, you'll need to use the command ``eqarea -h'', \textbf{not} ``eqarea.py -h''.  This is caused by a strange Windows quirk, but all you need to know is this: anytime the Cookbook gives a command, you'll need to drop the ``.py'' and all will be well.
 
 \end {itemize}
 
 \item  My path is correctly set, but I still get this error message: \begin{verbatim} -bash: eqarea.py: command not found
 \end{verbatim}
 
-\begin{itemize}
-\item  For Mac users, it is possible that you need to make the python scripts executable. On the command line in the directory with the scripts, type: chmod a+x *.py
-\end{itemize}
+  \begin{itemize}
+  \item  For Mac users, it is possible that you need to make the python scripts executable. On the command line in the directory with the scripts, type: chmod a+x *.py
+  \end{itemize}
+
+\item
+  If you are using the pip installation of PmagPy and you have any problems, you should start by uninstalling and reinstalling pmagpy and pmagpy-cli.  To do this, use these commands:
+\begin{verbatim}
+
+pip install --upgrade --force-reinstall pmagpy
+pip install --upgrade --force-reinstall pmagpy-cli
+\end{verbatim}
+To test that they have installed properly, you can run the command:
+\begin{verbatim}
+pip list
+\end{verbatim}
+which will show you all of your pip-installed packages.  If you don't see pmagpy and pmagpy-cli, you'll need to install them.
+
+\item
+  If your computer uses multiple languages, or a language other than English, you may get an error message like this:
+  \begin{verbatim}
+
+  File ``/Applications/Canopy.app/appdata/canopy-1.7.4.3348.macosx-x86_64/Canopy.app/Contents/lib/python2.7/contextlib.py'', line 17, in __enter__
+  return self.gen.next()
+  File ``/Users/***/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/matplotlib/__init__.py'', line 1000, in _open_file_or_url
+  encoding = locale.getdefaultlocale()[1]
+  File ``/Applications/Canopy.app/appdata/canopy-1.7.4.3348.macosx-x86_64/Canopy.app/Contents/lib/python2.7/locale.py'', line 543, in getdefaultlocale
+  return _parse_localename(localename)
+  File ``/Applications/Canopy.app/appdata/canopy-1.7.4.3348.macosx-x86_64/Canopy.app/Contents/lib/python2.7/locale.py'', line 475, in _parse_localename
+  raise ValueError, 'unknown locale: %s' % localename
+  ValueError: unknown locale: UTF-8
+  \end{verbatim}
+  You can fix this by opening your .bashrc file and adding these lines:
+  \begin{verbatim}
+  export LC_ALL=en_US.UTF-8
+  export LANG=en_US.UTF-8
+  \end{verbatim}
 
 \end{enumerate}
 
