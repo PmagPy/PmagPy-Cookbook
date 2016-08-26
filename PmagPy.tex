@@ -5086,6 +5086,7 @@ You have just fired up Python and  you are in an interactive mode with the promp
 >>> b=2
 >>> c=a+b
 >>> c
+4
 >>> c+=1
 >>> c
 5
@@ -5096,7 +5097,7 @@ You have just fired up Python and  you are in an interactive mode with the promp
 \end{verbatim}}
 
 To get out of Python interactive mode and back to your beloved command line, type the control key (here-after  {\color{blue}\^{ }}) and  {\color{blue}D} at the same time.
-From your  school experience of Algebra, you will recognize $a, b,$ and $c$ in the above session as {\it variables} and $+$ as an {\it operation}. If you have previous programming experience, you may have been surprised that we didn't declare variables up front (C programmers always have to).  And, the variables above are obviously behaving as integers, not floating point variables (no decimals) but they are not letters between $i$ and $n$.  And there were funny lines that seemed to set three numbers at once:
+From your  school experience with algebra, you will recognize $a, b,$ and $c$ in the above session as {\it variables} and $+$ as an {\it operation}. If you have previous programming experience, you may have been surprised that we didn't declare variables up front (C programmers always have to).  And, the variables above are behaving as integers, not floating point variables (no decimals) but they are not letters between $i$ and $n$.  And there were funny lines that seemed to set three numbers at once:
 
 { \color{blue} \begin{verbatim}
 >>> a=2; b=2; c=a+b; c
@@ -5109,9 +5110,9 @@ Here are some rules governing variables and operations in Python:
 
 \begin{itemize}
 \item Variable names are composed of alphanumeric characters, including `-` and '\_'.
-\item They are case sensitive:  `a' is not the same as 'A'.
-\item They do NOT have to be specified in advance (unlike C)
-\item In fortran, integers are  $i-n$ and floating points are all else - not the case in Python. You can make them whatever you want.
+\item Variable names are case sensitive:  `a' is not the same as 'A'.
+\item Variable names do NOT have to be specified in advance (unlike C)
+\item In Fortran, integers are  $i-n$ and floating points are all else - not the case in Python. You can make them whatever you want.
 \item + adds, - subtracts, * multiplies, / divides, \% gives the remainder, ** raises to the power
 \item These two are fun: {\color{blue}+=} and  {\color{blue}-=}.  They add to and subtract from respectively.
 \item Parentheses determine order of operation (as in any reasonable programming language).
@@ -5121,13 +5122,13 @@ Here are some rules governing variables and operations in Python:
 
 \section{A first look at NumPy}
 
-O.K.  First of all - how do you pronounce `NumPy'.  According to Important People at Enthought (e.g, Robert Kern), it should be pronounced ``Num'' as in ``Number'' and ``Pie'' as in, well, pie, or Python.  Oops.  It is way more fun to say Numpee!
+First of all - how do you pronounce `NumPy'?  According to Important People at Enthought (e.g, Robert Kern) and the SciPy listserv, it should be pronounced ``Num'' as in ``Number'' and ``Pie'' as in, well, pie, or Python.  But it is also pretty fun to say Numpee!
 
-So, that out of the way, what can NumPy do for us?  Turns out, a whole heck of a lot!  But for now we will just scratch the surface.   It can, for example, give us the value of $\pi$ as {\color{blue}numpy.pi}.  Note how the module name comes first, then the name of the function we wish to use.  In this case, the function just returns the value of $\pi$.
+So, that out of the way, what can NumPy do for us?  Turns out, a whole heck of a lot!  For now, we will just scratch the surface.   It can, for example, give us the value of $\pi$ as {\color{blue}numpy.pi}.  Note how the module name comes first, then the name of the function we wish to use.  In this case, the function just returns the value of $\pi$.
 
 To use {\color{blue}NumPy} functions, we must first ``import'' the module with the command {\color{blue}import}.  The first time you do this after installing Python, it may take a while, but after that it should be very quick.
 
-There are four styles of the import command which all do pretty much the same thing but differ in how you have to call the function after importing:
+There are four styles of the import command which all do pretty much the same thing, but differ in how you have to call the function after importing:
 
 { \color{blue} \begin{verbatim}
 >>>  import numpy
@@ -5138,12 +5139,12 @@ There are four styles of the import command which all do pretty much the same th
 This makes all the functions in NumPy available to you, but you have to call them with the {\color{blue}numpy.FUNC} syntax.
 
 { \color{blue} \begin{verbatim}
->>>  import numpy as np  # or anything else!  e.g., some use:  N
->>> np.pi  # or N.pi in the second case.
+>>>  import numpy as np  # or anything else!
+>>> np.pi
 3.1415926535897931
 \end{verbatim}}
 \noindent
-This does the same as the first, but allows you to call NumPy anything you want - to save typing?
+Importing as np does the same import as import numpy, but allows you to call NumPy anything you want for brevity and convenience. It has become a standard convention in scientific Python, including throughout the NumPy and SciPy source code and documentation, to import numpy as np.
 \noindent
 To import all the functions from NumPy and not have to type numpy at all:
 { \color{blue} \begin{verbatim}
@@ -5152,7 +5153,7 @@ To import all the functions from NumPy and not have to type numpy at all:
 3.1415926535897931
 \end{verbatim}}
 \noindent
-This imports all the umpty-ump functions, which is a heavy load on your memory,  but you can also just import a few, like {\color{blue}pi} or {\color{blue}sqrt}:
+This imports all the umpty-ump functions, which is a heavy load on your memory and can lead to namespace collisions (see good housekeeping tip below),  but you can also just import a few, like {\color{blue}pi} or {\color{blue}sqrt}:
 { \color{blue} \begin{verbatim}
 >>> from numpy import pi, sqrt # pi and square root
 >>> pi
@@ -5164,7 +5165,7 @@ This imports all the umpty-ump functions, which is a heavy load on your memory, 
 \noindent
 Did you notice how {\color{blue}sqrt(4)} where 4 was an integer, returned a floating point variable (2.0)?
 
-{\color{magenta}Good housekeeping Tip \#1: We tend to import modules using the first option above.  That way we know what module the functions I'm using are coming from - especially because we don't know off-hand ALL the functions available in any given module and there might be conflicts with my own function names or two different modules could have the same function (like} {\color{blue}math} {\color{magenta}and }{\color{blue}numpy}).
+{\color{magenta}Good housekeeping Tip \#1: We tend to import modules using the two options above.  That way we know what module the functions we are using are come from - especially because we don't know off-hand ALL the functions available in any given module and there might be conflicts with my own function names or two different modules could have the same function (like} {\color{blue}math} {\color{magenta}and }{\color{blue}numpy}). These conflicts are known as namespace collisions and can be avoiding by following the best practice of using syntax like: ``import numpy as np.''
 
 
 Here is a (partial) list of some useful {\color{blue}NumPy} functions:
@@ -5195,17 +5196,17 @@ Note that  in the trigonometric functions,  the argument is in RADIANS!.You can 
 
 
 \noindent
-If you are desperate, you can always use your Python interpreter as a calculator:
+You can always use your Python interpreter as a calculator:
 
 { \color{blue} \begin{verbatim}
->>> import numpy
->>> a=2
->>> b=-12
->>> c=16
->>> quad1 = (-b + numpy.sqrt(b**2-4.*a*c))/(2.*a)
+>>> import numpy as np
+>>> a = 2
+>>> b = -12
+>>> c = 16
+>>> quad1 = (-b + np.sqrt(b**2-4.0*a*c))/(2.0*a)
 >>> quad1
-4
->>> y=numpy.sin(numpy.pi/6.)
+4.0
+>>> y = np.sin(np.pi/6.0)
 >>> y
 0.5
 \end{verbatim}}
@@ -5234,7 +5235,7 @@ The time has come to talk about variable types.  We've been very relaxed up to n
 >>> number+NUMBER  [Gives you an angry error message]
 \end{verbatim}}
 \noindent
- Lesson learned: you can't add a number and a string.  and string addition is different!  But you really have to be careful with this.  If you multiply a float by an integer, it is possible that you will convert the float to an integer when you really wanted all those numbers after the decimal! So, if you want a float, use a float.
+ Lesson learned: you can't add a number and a string.  And string addition is different!  But you really have to be careful with this.  If you multiply a float by an integer, it is possible that you will convert the float to an integer when you really wanted all those numbers after the decimal! So, if you want a float, use a float.
 
 { You can convert from one type to another (if appropriate) with:}
 { \color{blue} \begin{verbatim}
@@ -5251,23 +5252,23 @@ These can be used to control the flow of the program as we shall learn later.
 
 \section{Data Structures}
 
-In previous programming experience, you may have encountered arrays, which are a nice way to group a sequence of numbers that belong together.  In Python  we also have arrays, but we also have more flexible data structures, like lists, tuples, and dictionaries,  that group arbitrary variables together, like strings and integers and floats - whatever you want really. We'll go through some attributes of the various data structures, starting with lists.
+In previous programming experience, you may have encountered arrays, which are a nice way to group a sequence of numbers that belong together.  In Python we also have arrays, but we also have more flexible data structures, like lists, tuples, and dictionaries,  that group arbitrary variables together, like strings and integers and floats - whatever you want really. We'll go through some attributes of the various data structures, starting with lists.
 
 \subsubsection{Lists}
 %%\vskip -.25in
 \begin{itemize}
 \item Lists are denoted with square brackets,  [ ],  and can contain any arbitrary set of items, including other lists!
 \item Items in the list are referred to by an index number, starting with 0.
-\item You can  count from the end to the beginning by starting with -1 (the last item in the list), -2 (second to last), etc.
+\item You can count from the end to the beginning by starting with -1 (the last item in the list), -2 (second to last), etc.
 \item Items can be sorted, deleted, inserted, sliced, counted, concatenated, replaced, added on, etc.
 \end{itemize}
 \noindent
 Examples:
 
 { \color{blue} \begin{verbatim}
->>> mylist=[`a',2.0,`400',`spam',42,[24,2]] # defines a list
+>>> mylist=[$'$a$'$,2.0,$'$400$'$,$'$spam$'$,42,[24,2]] # defines a list
 >>> mylist[2] # refers to the third item
-`400'
+$'$400$'$
 >>> mylist[-1] # refers to the last item
 [24,2]
 >>> mylist[1]=26.3   # replaces the second item
@@ -5281,7 +5282,7 @@ To slice out a chunk of the middle of a list:
 >>> newlist=mylist[1:3]
 \end{verbatim}}
 \noindent
-This takes items 2 and 3 out (note it takes out up to but not including the last item number - don't ask me why).
+This takes items 2 and 3 out (note it takes out up to, but not including, the last item number - don't ask me why).
 Or, we can slice it this way:
 { \color{blue} \begin{verbatim}
 >>> newlist=mylist[3:]
@@ -5293,9 +5294,9 @@ which takes from the fourth item (starting from 0!) to the end.
 To copy a list BEWARE! You can make  a copy - but it isn't an independent copy (like in, e.g.,  Fortran), but it is just another name for the SAME OBJECT, so:
 { \color{blue} \begin{verbatim}
 >>> mycopy=mylist
->>>mylist[2]=`new'
+>>>mylist[2]=$'$new$'$
 >>>mycopy[2]
-`new'
+$'$new$'$
 \end{verbatim}}
 \noindent
 See how mycopy got changed when we changed mylist?
@@ -5309,10 +5310,10 @@ Now try:
 { \color{blue} \begin{verbatim}
 >>>mylist[2]=1003
 >>>mycopy[2]
-`new'
+$'$new$'$
 \end{verbatim}}
 \noindent
-So now {\color{blue}mycopy}  stayed the way it was, even as {\color{blue}mylist } changed.
+So now {\color{blue}mycopy} stayed the way it was, even as {\color{blue}mylist } changed.
 
 
 Python is ``object oriented'', a popular concept in coding circles.  We'll learn more about what that means later, but for right now you can walk around feeling smug that you are learning an object oriented programming language.   O.K., what is an object?  Well,
@@ -5324,10 +5325,10 @@ Objects have ``methods'' which allow you to do things to them.  Methods have the
 Here are two examples:
 
 { \color{blue} \begin{verbatim}
->>> mylist.append(`me too') # appends a string to mylist
+>>> mylist.append($'$me too$'$) # appends a string to mylist
 >>> mylist.sort() # sorts the list alphanumerically
 >>> mylist
-[2.0, 42, [24, 2], '400', 'a', 'me too', 'spam']
+[2.0, 42, [24, 2], $'$400$'$, $'$a$'$, $'$me too$'$, $'$spam$'$]
 \end{verbatim}}
 %%\vskip .25in
 
@@ -5340,7 +5341,7 @@ Here are two examples:
 \subsubsection{More about strings}
 Numbers are numbers. While there are more kinds of numbers (complex, etc.),
 strings can be  more interesting. Unlike in some languages, they can be denoted with single, double or triple quotes:  e.g.,
-`spam',  ``Sam's spam'', or
+$'$spam$'$,  $'$$'$Sam's spam$'$$'$, or
 { \color{blue} \begin{verbatim}
 ``````
 Hi there we can type as
@@ -5348,8 +5349,8 @@ many lines as we want
 ``````
 \end{verbatim}}
 
-Strings can be added together ({\color{blue}newstring = 'spam' + 'alot'}).  They  can be sliced ({\color{blue}newerstring = newstring[0:3]}).
-but they CANNOT be changed in place - you can't do this: {{\color{blue}newstring[0]='b'}.
+Strings can be added together ({\color{blue}newstring = $'$spam$'$ + $'$alot$'$}).  They  can be sliced ({\color{blue}newerstring = newstring[0:3]}).
+but they CANNOT be changed in place - you can't do this: {{\color{blue}newstring[0]=$'$b$'$}.
 To find more of the things you can and cannot do to strings, see:
 
 \url{http://docs.python.org/tutorial/introduction.html#strings}
@@ -5362,9 +5363,9 @@ To find more of the things you can and cannot do to strings, see:
 What?  Tuples?
 Tuples consist of a number of values separated by commas.  They are denoted with parentheses.
 { \color{blue} \begin{verbatim}
->>> t = 1234, 2.0, `hello'
+>>> t = 1234, 2.0, 'hello'
 >>> t
-(1234, 2.0, `hello')
+(1234, 2.0, 'hello')
 >>> t[0]
 1234
 \end{verbatim}}
@@ -5380,7 +5381,7 @@ Tuples consist of a number of values separated by commas.  They are denoted with
 \subsubsection {Dictionaries!}
 
 Dictionaries are denoted by \{\}.  They are also somewhat like lists, but instead of integer indices, they use alphanumeric `keys':
-I love dictionaries.  So here is a bit more about them.
+Dictionaries are awesome.  So here is a bit more about them.
 
 \noindent
 To define one:
@@ -5421,57 +5422,55 @@ One useful one is:
 \noindent
 which returns a list of all the keys.
 
-For a more complete accounting of dictionaries,  see:
+For a more complete introduction to dictionaries and their use,  see:
 
 \url{http://docs.python.org/tutorial/datastructures.html#dictionaries}
 
-
-
 \subsubsection{N-dimensional arrays}
 
-Arrays  in Python  have many similarities  to  lists.
-Unlike lists, however,  arrays have to be all of the same data type (dtype), usually numbers (integers or floats), although there appears to be something called a character array.  Also, the size and shape of an array must be known {\it a priori} and not determined on the fly like lists. For example we can define a list with {\color{blue}L=[]}, then append to it as desired, but not so arrays - they are much pickier and we'll see how to set them up later.
+Arrays in Python  have many similarities  to  lists.
+Unlike lists, however,  arrays have to be all of the same data type (dtype), usually numbers (integers or floats), although there is something called a character array.  Also, the size and shape of an array must be known {\it a priori} and not determined on the fly like lists. For example, we can define a list with {\color{blue}L=[]}, then append to it as desired, but not so with arrays - they are much pickier and we'll see how to set them up later.
 
-Why use arrays when you can use lists?  They are far more efficient than lists particularly for things like matrix math.   But just to make things a little confusing, there are  several different data objects that are loosely called arrays, e.g., arrays, character arrays and matrices.  These are all subclasses of ndarray.  I'm just going to briefly introduce arrays and matrices here.
+Why use arrays when you can use lists?  They are far more efficient than lists particularly for things like matrix math.   But just to make things a little confusing, there are  several different data objects that are loosely called arrays, e.g., arrays, character arrays and matrices.  These are all subclasses of ndarray.  Below is a brief introduction to arrays and matrices using numpy:
 
  Here are a few ways of making arrays:
 %%\vskip -.35in
 { \color{blue} \begin{verbatim}
->>> import numpy
->>> A= numpy.array([[1,2,3],[4,2,0],[1,1,2]])
+>>> import numpy as np
+>>> A = np.array([[1,2,3],[4,2,0],[1,1,2]])
 >>> A
 array([[1, 2, 3],
        [4, 2, 0],
        [1, 1, 2]])
->>> B=numpy.arange(0,10,1).reshape(2,5)
+>>> B = np.arange(0,10,1).reshape(2,5)
 >>> B
 array([[0, 1, 2, 3, 4],
        [5, 6, 7, 8, 9]])
->>> C=numpy.array([[1,2,3],[4,5,6]],numpy.int32)
+>>> C = np.array([[1,2,3],[4,5,6]],np.int32)
 >>> C
 array([[1, 2, 3],
        [4, 5, 6]])
->>> D=numpy.zeros((2,3)) # Notice the zeros and the size is specified by a tuple.
+>>> D = np.zeros((2,3)) # Notice the zeros and the size is specified by a tuple.
 >>> D
 array([[ 0.,  0.,  0.],
        [ 0.,  0.,  0.]])
->>> E=numpy.ones((2,4))
+>>> E = np.ones((2,4))
 >>> E
 array([[ 1.,  1.,  1.,  1.],
        [ 1.,  1.,  1.,  1.]])
->>> F=numpy.linspace(0,10,14)
+>>> F = np.linspace(0,10,14)
 >>> F
 array([  0.        ,   0.76923077,   1.53846154,   2.30769231,
          3.07692308,   3.84615385,   4.61538462,   5.38461538,
          6.15384615,   6.92307692,   7.69230769,   8.46153846,
          9.23076923,  10.        ])
->>> G=numpy.ndarray(shape=(2,2), dtype=float)
->>> G   # note how this is initalized with really low numbers (but not zeros).
+>>> G = np.ndarray(shape=(2,2), dtype=float)
+>>> G   # note how this is initialized with really low numbers (but not zeros).
 array([[  1.90979621e-313,   2.75303490e-308],
        [  1.08539798e-071,   3.05363949e-309]])
 \end{verbatim}}
 
-Note the difference between {\color{blue}linspace(start,stop,N)} and {\color{blue}arange(start,stop,step)}. The function {\color{blue}linspace} creates an array with 14 evenly spaced elements between the start and stop values while  {\color{blue}arange} creates an array with elements at {color{blue}step} intervals between the starting and stopping values.    In some of the online examples you will find the short-cuts for {\color{blue}arange()} and {\color{blue}linspace} as  {\color{blue}r\_(-5,5,20j)} and {\color{blue}r\_(-5,5,1.)} respectively.
+Note the difference between {\color{blue}np.linspace(start,stop,N)} and {\color{blue}np.arange(start,stop,step)}. The function {\color{blue}np.linspace} creates an array with 14 evenly spaced elements between the start and stop values while  {\color{blue}np.arange} creates an array with elements at {color{blue}step} intervals between the starting and stopping values.    In some of the online examples, you will find the short-cuts for {\color{blue}arange()} and {\color{blue}linspace} as  {\color{blue}r\_(-5,5,20j)} and {\color{blue}r\_(-5,5,1.)} respectively.
 
 Python arrays have methods like {\color{blue}dtype},  {\color{blue}ndim}, {\color{blue}shape}, {\color{blue}size}, {\color{blue}reshape()}, {\color{blue}ravel()},  {\color{blue}transpose()} etc.    Did you notice how some of these require parentheses and some don't? The answer is that some of these are functions and some are classes, both of which we will get to later.
 
@@ -5484,16 +5483,14 @@ dtype('float64')
 >>>
 \end{verbatim}}
 
-
-
- And of course  arrays, unlike lists have dimensions and shape.  Dimensions tell us how many axes there are with axes defined as in this illustration:
+Arrays, unlike lists, have dimensions and shape.  Dimensions tell us how many axes there are with axes defined as in this illustration:
 
    \includegraphics[width=15cm]{EPSfiles/ndim.eps}
 
-   As shown above our {\color{blue}A} array has two dimensions (axis 0 and 1).  To get Python to tell us this, we use the {\color{blue}ndim} method:
+As shown above, our {\color{blue}A} array has two dimensions (axis 0 and 1).  To get Python to tell us this, we use the {\color{blue}ndim} method:
 
    { \color{blue} \begin{verbatim}
->>>  A= numpy.array([[1,2,3],[4,2,0],[1,1,2]]) # just to remind you
+>>>  A= np.array([[1,2,3],[4,2,0],[1,1,2]]) # just to remind you
 >>> A.ndim
 2
 \end{verbatim}}
@@ -5511,7 +5508,7 @@ array([[1, 2],
        [5, 6]])
 \end{verbatim}}
 
-And sometimes we just want all the elements lined up along one axis. We could do that with {\color{blue}reshape} of course using a tuple  with the size of the array (the total number of elements). You  can see that this is 6 here. We could even get python to tell us what the size is ({\color{blue}C.size}) and use that in the reshape size tuple.  Alternatively we can use the {\color{blue}ravel()} method which doesn't require us to know the size in advance:
+And sometimes we just want all the elements lined up along one axis. We could do that with {\color{blue}reshape} using a tuple with the size of the array (the total number of elements). You can see that this is 6 here. We could even get python to tell us what the size is ({\color{blue}C.size}) and use that in the reshape size tuple.  Alternatively, we can use the {\color{blue}ravel()} method which doesn't require us to know the size in advance:
 
    { \color{blue} \begin{verbatim}
 >>> C.ravel()
@@ -5536,7 +5533,6 @@ array([[1, 4, 7],
 
 Also, we can concatenate two arrays together with the - you guessed it - {\color{blue}concatenate()} method.   For a lot more tricks with arrays, go to the NumPy Reference website here:  \url{http://docs.scipy.org/doc/numpy/reference/}.
 
-
 To convert the {\color{blue}A} array to a list:   {\color{blue}L=A.tolist()},  from a list or tuple to an array:   {\color{blue}A=numpy.array(L)}, or from a list, a tuple or an array to a NumPy array:   {\color{blue}a=numpy.asarray(L)}
 
 Let's go a bit deeper into slicing of arrays.  First a review of lists.   You will recall that in  python, indexing starts with 0, so for the list {\color{blue} L=[0,2,4,6,8], L[1]} is 2. The index of the last item is -1, so  {\color{blue}L[-1]}=8.  To find out what the index for the number 4 is, for example, we have the {\color{blue}index()} method:  {\color{blue}L.index(4}), which will return the number 2. We actually already used this method when we implemented command line arguments, but it wasn't really explained.   We know that to reassign a given index a new value we use the syntax {\color{blue}L[1]=2.5}.
@@ -5548,9 +5544,9 @@ The basic syntax is the same:  {\color{blue}[start:stop:step]},  or  {\color{blu
 
 
 { \color{blue} \begin{verbatim}
->>> import numpy
->>> A=numpy.linspace(0,29,30)
->>> B=A.reshape(5,6)
+>>> import numpy as np
+>>> A = np.linspace(0,29,30)
+>>> B = A.reshape(5,6)
 array([[  0.,   1.,   2.,   3.,   4.,   5.],
        [  6.,   7.,   8.,   9.,  10.,  11.],
        [ 12.,  13.,  14.,  15.,  16.,  17.],
@@ -5561,7 +5557,7 @@ array([[  6.,   8.,  10.],
        [ 12.,  14.,  16.]])
 \end{verbatim}}
 
-Let's pick about the statement {\color{blue}B[1:3,:-1:2]} to see if we can understand what it does.  The first part alone returns lines 2 and 3:
+Let's pick apart the statement {\color{blue}B[1:3,:-1:2]} to see if we can understand what it does.  The first part alone returns lines 2 and 3:
 { \color{blue} \begin{verbatim}
 >>> B[1:3]
 array([[  6.,   7.,   8.,   9.,  10.,  11.],
@@ -5590,32 +5586,30 @@ array([[  6.,   8.,  10.],
 
 \customlink{pandas}
 
-
-
 \section{Pandas}
 
 Now that you have fallen in love with Python and Numpy, we have a new treat for you:  pandas.  Pandas is a powerful module available with the Python distribution that you should have installed in the \href{#quick_start}{Installing PmagPy} section.  It supports elegant data structures and tools for wrangling the data which allow fast and user-friendly data analysis.  There are two basic data structures:  the Series (a one-dimensional array like object that is a data array with an associated array of indices which can be numbers or text) and the DataFrame (a spreadsheet like data table).
 
-First, invoke pandas by importing it, then create some data Series using several approaches:
+First, invoke pandas by importing it, then create some data Series using several approaches. The common convention, utilized throughout pandas documention, is for pandas to be imported as pd:
 
 { \color{blue} \begin{verbatim}
->>> import pandas
->>> obj = pandas.Series([1,2,3,4]) # create first pandas object with numeric indices
+>>> import pandas as pd
+>>> obj = pd.Series([1,2,3,4]) # create first pandas object with numeric indices
 >>> obj
 0    1
 1    2
 2    3
 3    4
 dtype: int64
->>> obj2=pandas.Series([1,2,3,4],index=['a','b','c','d']) # create second pandas object with text indices
+>>> obj2 = pd.Series([1,2,3,4],index=['a','b','c','d']) # create second pandas object with text indices
 >>> obj2
 a    1
 b    2
 c    3
 d    4
 dtype: int64
->>> Telnos={'lisa':46084,'lab':46531,'jeff':44707} # create a dictionary
->>> obj3=pandas.Series(Telnos) # create a pandas Series from the dictionary.
+>>> Telnos = {'lisa':46084,'lab':46531,'jeff':44707} # create a dictionary
+>>> obj3 = pd.Series(Telnos) # create a pandas Series from the dictionary.
 >>> obj3
 jeff    44707
 lab     46531
@@ -5623,14 +5617,13 @@ lisa    46084
 dtype: int64
 \end{verbatim}}
 
-
-Another very useful pandas object is the DataFrame.  These have both row and column indices and are like a dictionary of Series so are much more flexible than the Numpy array objects.   Here is an example:
+Another very useful pandas object is the DataFrame.  DataFrames have both row and column indices and are like a dictionary of Series so are much more flexible than a NumPy array object.   Here is an example:
 
 { \color{blue} \begin{verbatim}
 >>> data={'telnos':['44707','46531','46084'],
 ...        'names':['jeff','lisa','lab'],
 ...        'rooms':['300D RH','300E RH','1162 SvH']}
->>> frame=pandas.DataFrame(data)
+>>> frame = pd.DataFrame(data)
 >>> frame
   names     rooms telnos
 0  jeff   300D RH  44707
@@ -5638,7 +5631,7 @@ Another very useful pandas object is the DataFrame.  These have both row and col
 2   lab  1162 SvH  46084
  \end{verbatim}}
 
-There are many methods associated with pandas objects which allow searching, massaging and generally fiddling with the data.   You should check out some of the many tutorials on pandas on the web.
+There are many methods associated with pandas objects which allow searching, massaging and generally fiddling with the data. You should check out some of the many \href{tutorials}{http://pandas.pydata.org/pandas-docs/version/0.18.1/tutorials.html} on pandas on the web.
 
 \section{Python Scripts}
 
@@ -5649,7 +5642,7 @@ You can type in the same stuff you've been doing interactively into a script fil
 %python < myscript.py
 \end{verbatim}}
 
-On a Mac or Unix system,  you can put in a header line identifying the script as python (\#!/usr/bin/env python), make  it executable (chmod a+x)  and   run it like this:
+On a Mac or Unix system,  you can put in a header line identifying the script as python (\#!/usr/bin/env python), make it executable (chmod a+x) and run it like this:
 
 { \color{blue} \begin{verbatim}
 $ myscript.py
