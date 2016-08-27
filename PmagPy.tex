@@ -117,7 +117,7 @@ To get the full  use of PmagPy functionality, you will first have to install Pyt
    \begin{itemize}
    \item Download and install the \href{https://www.enthought.com/products/canopy/}{Enthought Canopy distribution of Python}. Canopy Express (the free version) contains everything you need (except the mapping utilities). If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license} that gives you access to additional features and bundled packages, including the Basemap package.
    \item Launch Canopy to complete the installation process.  You may need to use control click on the Canopy icon to open it for the first time--try this if you get a message that says ``Canopy can't be opened because it is from an unidentified developer.''  Once you've opened Canopy successfully, select ``yes'' to making Canopy your default Python environment.  In the lower right hand corner of the Canopy launch page, you will find the Version number (currently 1.6.1 or higher). Please include this in any correspondence with the PmagPy team. While you might find use for some of the features within the Canopy environment that opens as an application, PmagPy programs are best run or launched on the \href{#command_line}{command line}.
-      \item Optional:  setting up Basemap for use in making maps with Python.}
+      \item Optional:  setting up Basemap for use in making maps with Python.
 Once you have installed the full version of Canopy and want to use a mapping programs like the \href{#basemap_magic.py}{basemap\_magic.py}) command line program or a function that plots data on a map projection (e.g. ipmag.plot_pole()), \customlink{HighRes}
      click on  the `Package Manager' button on the Canopy welcome page, and then on `Available Packages'.  Install both basemap packages (one has high resolution data files in it).
         \item A last note about Canopy: you should update it regularly!  Open the Canopy application and update all the packages at least every few months.
@@ -3133,72 +3133,61 @@ $ combine_magic.py -F magic_measurements.txt -f agm_measurements.txt irm_measure
 \subsubsection{CIT\_magic.py}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/CIT_magic.py}{[CIT\_magic.py docs]}
 
- Craig Jones' {\bf PaleoMag} software package (\url{http://cires.colorado.edu/people/jones.craig/PMag3.html}) imports various file formats, including the so-called 'CIT' format developed for the  Cal Tech lab.The documentation for the CIT sample format is here: \url{http://cires.colorado.edu/people/jones.craig/PMag_Formats.html#SAM_format}.
+ Craig Jones' {\bf PaleoMag} software package (\url{http://cires.colorado.edu/people/jones.craig/PMag3.html}) imports various file formats, including the so-called 'CIT' format developed for the Caltech lab and now utilized in software that ships with many 2G magnetometers. The documentation for the CIT sample format is here: \url{http://cires.colorado.edu/people/jones.craig/PMag_Formats.html#SAM_format}.
  Demagnetization data for each specimen is in its own file in a directory with all the data for a study.
-These files are rather strictly formatted with fields determined by the character number in the line.   A typical datafile (hat tip Swanson-Hysell et al. (2009)) \nocite{swansonhysell09} has this format:
+These files are strictly formatted with fields determined by the character number in the line. A datafile generated in the UC Berkeley paleomagnetism lab, for a specimen published in Fairchild et al., (2016) \nocite{fairchild16} and available in the MagIC database (\url{https://earthref.org/MagIC/11292/}) has this format:
 
 \begin{verbatim}
-MP 18-1
- _________169.0  47.0 170.0  42.0   1.0
-NRM    256.8 -60.3  63.7 -77.5 4.36E-03 001.8 351.8 -72.5 3.244495 13.18438 0.620611 lowensta
-TT     254.0 -60.5  70.1 -77.5 4.28E-03 002.3 356.4 -72.5 4.752208 16.68586 1.969320 shoemake
-AF     260.3 -60.5  56.5 -76.8 4.32E-03 000.6 346.6 -71.8 3.370241 2.506036 0.391227 lowensta
-AF  20 256.4 -61.0  65.2 -76.8 4.33E-03 000.5 352.9 -71.8 3.260177 2.374987 0.277467 lowensta
-AF  40 254.1 -61.3  70.0 -76.7 4.34E-03 000.8 356.4 -71.7 3.283688 5.443790 0.216938 lowensta
-TT 100 254.6 -61.6  69.1 -76.4 4.36E-03 002.6 355.8 -71.3 1.512697 20.08180 0.568813 shoemake
-TT 150 259.5 -61.8  59.9 -75.7 4.49E-03 000.6 349.0 -70.6 2.292811 4.155307 0.582492 shoemake
-TT 200 254.2 -62.5  70.2 -75.4 4.57E-03 000.7 356.7 -70.4 3.548058 4.420838 1.117214 shoemake
-TT 250 255.4 -62.5  68.0 -75.4 4.59E-03 000.9 355.1 -70.4 5.709379 4.016543 2.128517 shoemake
-TT 300 254.3 -63.7  70.4 -74.3 4.55E-03 001.3 356.9 -69.2 4.430973 9.541593 1.820396 shoemake
-TT 350 254.9 -64.5  69.6 -73.5 4.49E-03 000.8 356.3 -68.4 2.008315 6.203830 0.690625 shoemake
-TT 400 252.8 -64.2  72.8 -73.8 4.48E-03 001.6 358.8 -68.8 2.923507 12.20715 1.171037 shoemake
+PI47- 9a mag compass orientation (IGRF corrected)
+      0 328.1  21.0  0.0  0.0  1.0                  
+NRM    103.2  66.0 103.2  66.0 8.81E-05 001.7 205.8  48.5 0.074307 0.216786 0.124038 hargrave 2015-09-16 18:32:38
+TT  50 103.2  66.5 103.2  66.5 8.74E-05 001.4 205.5  49.1 0.104540 0.153198 0.116564 hargrave 2015-09-19 18:43:09
+TT  75 106.2  65.9 106.2  65.9 8.53E-05 001.6 207.6  49.0 0.073179 0.193176 0.109758 hargrave 2015-09-21 22:26:07
+TT 100 107.6  64.5 107.6  64.5 8.18E-05 001.9 209.2  47.9 0.050586 0.250049 0.109796 hargrave 2015-09-24 10:00:09
+TT 125 103.9  63.0 103.9  63.0 7.49E-05 001.1 207.9  45.9 0.048136 0.090764 0.100753 hargrave 2015-09-24 15:53:38
+TT 150 107.5  60.3 107.5  60.3 7.01E-05 001.4 211.6  44.1 0.048329 0.118106 0.116416 hargrave 2015-09-25 12:36:42
+TT 175 114.0  57.5 114.0  57.5 6.55E-05 001.4 217.4  42.8 0.094454 0.066698 0.103792 hargrave 2015-09-26 14:01:11
+TT 200 110.5  57.5 110.5  57.5 6.33E-05 001.5 215.0  42.1 0.117744 0.073840 0.087541 hargrave 2015-09-26 19:58:01
+TT 225 114.7  55.8 114.7  55.8 6.05E-05 002.9 218.7  41.4 0.163297 0.240928 0.100647 hargrave 2015-09-28 19:49:38
+TT 250 110.5  56.1 110.5  56.1 5.88E-05 001.3 215.7  40.8 0.085600 0.041973 0.101365 hargrave 2015-10-01 12:08:19
+TT 275 114.0  54.3 114.0  54.3 5.35E-05 002.9 219.0  39.8 0.121358 0.235405 0.081647 hargrave 2015-10-05 19:00:28
+TT 300 113.7  53.9 113.7  53.9 4.88E-05 001.2 219.0  39.4 0.044699 0.063687 0.074005 hargrave 2015-10-06 02:35:35
 \end{verbatim}
 
-There is an optional first line with 'CIT' on it (not shown here).
-
-There must be a file with the suffix `.sam' in the same directory which gives details about the samples and a list of the data files in the directory.    The .sam file has the form:
+There must be a file with the suffix `.sam' in the same directory as the specimen data files which gives details about the samples and a list of the specimen files in the directory. The .sam file has the form:
 
 \begin{verbatim}
-Mamainse Point
- 47.1 275.3  -7.2
-MP18-1
-MP18-2
-MP18-3
-MP18-4
-MP18-5
-MP18-6
+PI47-
+ 48.7 -87.0   0.0
+PI47-1a
+PI47-2a
+PI47-3a
+PI47-4a
+PI47-5a
+PI47-6a
+PI47-7a
+PI47-8a
+PI47-9a
 \end{verbatim}
 
 The first line is a comment, the second is the latitude and longitude followed by a declination correction.
 
 For detailed description of the file format, check \href{http://cires.colorado.edu/people/jones.craig/PMag3.html}{the PaleoMag} home page.
 
-Use the program {\bf CIT\_magic.py} to import the data files from the example data files in the {\it CIT\_magic} directory of the {\it Measurement\_Import} directory of the {\it data\_files} directory.   The location name was ``Mamainse Point'', the \href{#naming_schemes}{naming convention} was \#2 and they were collected by drilling and with a magnetic compass.
+Use the program {\bf CIT\_magic.py} to import the data files from the example data files in the {\it CIT\_magic} directory of the {\it Measurement\_Import} directory of the {\it data\_files} directory.   The location name was ``Slate Islands'', the \href{#naming_schemes}{naming convention} was \#2, the specimen name is specified with 1 character, we don't wish to average replicate measurements and they were collected by drilling and with a magnetic compass.
 
 \begin{verbatim}
- CIT_magic.py  -f bMP.sam -loc ``Mamainse Point`` -spc 0 -ncn 2 -mcd 'FS-FD:SO-MAG'
-Mamainse Point first run (samples collected 10/05, samples run 04/06)
+PI47- Laurentia$ CIT_magic.py  -f PI47-.sam -loc "Slate Islands" -spc 1 -ncn 2 -mcd "FS-FD:SO-MAG" -A
 
+PI47-
+
+9  records written to file  ./er_specimens.txt
 specimens stored in  ./er_specimens.txt
+9  records written to file  ./er_samples.txt
 samples stored in  ./er_samples.txt
-averaging: records  1 3
-MP18-1 started with  23  ending with  21
-Averaged replicate measurements
-averaging: records  1 2
-MP18-2 started with  25  ending with  24
-Averaged replicate measurements
-averaging: records  1 3
-MP18-3 started with  26  ending with  24
-Averaged replicate measurements
-averaging: records  1 2
-MP18-4 started with  25  ending with  24
-Averaged replicate measurements
-averaging: records  1 3
-MP18-5 started with  26  ending with  24
-Averaged replicate measurements
-averaging: records  1 2
-MP18-6 started with  25  ending with  24
-Averaged replicate measurements
+1  records written to file  ./er_sites.txt
+sites stored in  ./er_sites.txt
+266  records written to file  ./magic_measurements.txt
 data stored in  ./magic_measurements.txt
 \end{verbatim}
 
@@ -5122,7 +5111,7 @@ Here are some rules governing variables and operations in Python:
 
 \section{A first look at NumPy}
 
-First of all - how do you pronounce `NumPy'?  According to Important People at Enthought (e.g, Robert Kern) and the SciPy listserv, it should be pronounced ``Num'' as in ``Number'' and ``Pie'' as in, well, pie, or Python.  But it is also pretty fun to say Numpee!
+First of all - how do you pronounce `NumPy'?  According to Important People at Enthought (e.g, Robert Kern) and the SciPy email list, it should be pronounced ``Num'' as in ``Number'' and ``Pie'' as in, well, pie, or Python.  But it is also pretty fun to say Numpee!
 
 So, that out of the way, what can NumPy do for us?  Turns out, a whole heck of a lot!  For now, we will just scratch the surface.   It can, for example, give us the value of $\pi$ as {\color{blue}numpy.pi}.  Note how the module name comes first, then the name of the function we wish to use.  In this case, the function just returns the value of $\pi$.
 
@@ -5131,7 +5120,7 @@ To use {\color{blue}NumPy} functions, we must first ``import'' the module with t
 There are four styles of the import command which all do pretty much the same thing, but differ in how you have to call the function after importing:
 
 { \color{blue} \begin{verbatim}
->>>  import numpy
+>>> import numpy
 >>> numpy.pi
 3.1415926535897931
 \end{verbatim}}
@@ -5139,7 +5128,7 @@ There are four styles of the import command which all do pretty much the same th
 This makes all the functions in NumPy available to you, but you have to call them with the {\color{blue}numpy.FUNC} syntax.
 
 { \color{blue} \begin{verbatim}
->>>  import numpy as np  # or anything else!
+>>> import numpy as np  # or anything else!
 >>> np.pi
 3.1415926535897931
 \end{verbatim}}
@@ -5192,7 +5181,7 @@ tanh(x)    \qquad &   hyperbolic tangent\\
 \end{tabular}
 
 \noindent
-Note that  in the trigonometric functions,  the argument is in RADIANS!.You can convert from degrees to radians by multiplying by:  {\color{blue}numpy.pi/180.}.  Also notice how these functions have parentheses, as opposed to {\color{blue}numpy.pi} which has none.  The difference is that these take arguments, while  {\color{blue}numpy.pi} just returns the value of $\pi$.
+Note that in the trigonometric functions,  the argument is in RADIANS! You can convert from degrees to radians by multiplying by:  {\color{blue}numpy.pi/180.0}.  Also notice how these functions have parentheses, as opposed to {\color{blue}numpy.pi} which has none.  The difference is that these take arguments, while {\color{blue}numpy.pi} just returns the value of $\pi$.
 
 
 \noindent
@@ -5217,10 +5206,10 @@ You can always use your Python interpreter as a calculator:
 The time has come to talk about variable types.  We've been very relaxed up to now, because we don't have to declare them up front and we can often even change them from one type to another on the fly.  But - variable types matter, so here goes. Python has integer, floating point (both long and short), string and complex variable types.  It is pretty clever about figuring out what is required.   Here are some examples:
 
 { \color{blue} \begin{verbatim}
->>> number=1 # an integer
->>> Number=1.0 # a floating point
->>> NUMBER='1' # a string
->>> complex=1j # a complex number with imaginary part 1
+>>> number = 1 # an integer
+>>> Number = 1.0 # a floating point
+>>> NUMBER = "1" # a string
+>>> complex = 1j # a complex number with imaginary part 1
 >>> complex(3,1) # the complex number 3+1i
 \end{verbatim}}
 \noindent
@@ -5266,12 +5255,12 @@ In previous programming experience, you may have encountered arrays, which are a
 Examples:
 
 { \color{blue} \begin{verbatim}
->>> mylist=[$'$a$'$,2.0,$'$400$'$,$'$spam$'$,42,[24,2]] # defines a list
+>>> mylist = ["a",2.0,"400","spam",42,[24,2]] # defines a list
 >>> mylist[2] # refers to the third item
-$'$400$'$
+"400"
 >>> mylist[-1] # refers to the last item
 [24,2]
->>> mylist[1]=26.3   # replaces the second item
+>>> mylist[1] = 26.3   # replaces the second item
 >>> del mylist[3] # deletes the fourth element
 \end{verbatim}}
 
@@ -5279,13 +5268,13 @@ $'$400$'$
 \noindent
 To slice out a chunk of the middle of a list:
 { \color{blue} \begin{verbatim}
->>> newlist=mylist[1:3]
+>>> newlist = mylist[1:3]
 \end{verbatim}}
 \noindent
 This takes items 2 and 3 out (note it takes out up to, but not including, the last item number - don't ask me why).
 Or, we can slice it this way:
 { \color{blue} \begin{verbatim}
->>> newlist=mylist[3:]
+>>> newlist = mylist[3:]
 \end{verbatim}}
 \noindent
 which takes from the fourth item (starting from 0!) to the end.
@@ -5293,24 +5282,24 @@ which takes from the fourth item (starting from 0!) to the end.
 
 To copy a list BEWARE! You can make  a copy - but it isn't an independent copy (like in, e.g.,  Fortran), but it is just another name for the SAME OBJECT, so:
 { \color{blue} \begin{verbatim}
->>> mycopy=mylist
->>>mylist[2]=$'$new$'$
->>>mycopy[2]
-$'$new$'$
+>>> mycopy = mylist
+>>> mylist[2] = "new"
+>>> mycopy[2]
+"new"
 \end{verbatim}}
 \noindent
 See how mycopy got changed when we changed mylist?
 \noindent
 To spawn a new list that is a copy, but an independent entity:
 { \color{blue} \begin{verbatim}
->>>mycopy=mylist[:]
+>>> mycopy = mylist[:]
 \end{verbatim}}
 \noindent
 Now try:
 { \color{blue} \begin{verbatim}
->>>mylist[2]=1003
->>>mycopy[2]
-$'$new$'$
+>>> mylist[2] = 1003
+>>> mycopy[2]
+"new"
 \end{verbatim}}
 \noindent
 So now {\color{blue}mycopy} stayed the way it was, even as {\color{blue}mylist } changed.
@@ -5325,10 +5314,10 @@ Objects have ``methods'' which allow you to do things to them.  Methods have the
 Here are two examples:
 
 { \color{blue} \begin{verbatim}
->>> mylist.append($'$me too$'$) # appends a string to mylist
+>>> mylist.append("me too") # appends a string to mylist
 >>> mylist.sort() # sorts the list alphanumerically
 >>> mylist
-[2.0, 42, [24, 2], $'$400$'$, $'$a$'$, $'$me too$'$, $'$spam$'$]
+[2.0, 42, [24, 2], "400", "a", "me too", "spam"]
 \end{verbatim}}
 %%\vskip .25in
 
@@ -5341,7 +5330,7 @@ Here are two examples:
 \subsubsection{More about strings}
 Numbers are numbers. While there are more kinds of numbers (complex, etc.),
 strings can be  more interesting. Unlike in some languages, they can be denoted with single, double or triple quotes:  e.g.,
-$'$spam$'$,  $'$$'$Sam's spam$'$$'$, or
+'spam',  "Sam's spam", or
 { \color{blue} \begin{verbatim}
 ``````
 Hi there we can type as
@@ -5349,8 +5338,8 @@ many lines as we want
 ``````
 \end{verbatim}}
 
-Strings can be added together ({\color{blue}newstring = $'$spam$'$ + $'$alot$'$}).  They  can be sliced ({\color{blue}newerstring = newstring[0:3]}).
-but they CANNOT be changed in place - you can't do this: {{\color{blue}newstring[0]=$'$b$'$}.
+Strings can be added together ({\color{blue}newstring = "spam" + "alot"}).  They  can be sliced ({\color{blue}newerstring = newstring[0:3]}).
+but they CANNOT be changed in place - you can't do this: {{\color{blue}newstring[0]="b"}.
 To find more of the things you can and cannot do to strings, see:
 
 \url{http://docs.python.org/tutorial/introduction.html#strings}
@@ -5363,9 +5352,9 @@ To find more of the things you can and cannot do to strings, see:
 What?  Tuples?
 Tuples consist of a number of values separated by commas.  They are denoted with parentheses.
 { \color{blue} \begin{verbatim}
->>> t = 1234, 2.0, 'hello'
+>>> t = 1234, 2.0, "hello"
 >>> t
-(1234, 2.0, 'hello')
+(1234, 2.0, "hello")
 >>> t[0]
 1234
 \end{verbatim}}
@@ -5386,13 +5375,13 @@ Dictionaries are awesome.  So here is a bit more about them.
 \noindent
 To define one:
 { \color{blue} \begin{verbatim}
->>> Telnos={`lisa':46084,`lab':46531,`jeff':44707} # defines a dictionary
+>>> Telnos = {"lisa":46084,"lab":46531,"jeff":44707} # defines a dictionary
 \end{verbatim}}
 
 \noindent
 To return the value associated with a specific key:
 { \color{blue} \begin{verbatim}
->>> Telnos[`lisa']
+>>> Telnos["lisa"]
 46084
 \end{verbatim}}
 
@@ -5400,14 +5389,14 @@ To return the value associated with a specific key:
  To change a key value:
 
 { \color{blue} \begin{verbatim}
->>> Telnos['lisa']=46048
+>>> Telnos["lisa"] = 46048
 \end{verbatim}}
 
 
 \noindent
 To add a new key value:
 { \color{blue} \begin{verbatim}
->>> Telnos[`newguy']=48888
+>>> Telnos["newguy"] = 48888
 \end{verbatim}}
 
 
@@ -5416,7 +5405,7 @@ To add a new key value:
 One useful one is:
 { \color{blue} \begin{verbatim}
 >>> Telnos.keys()
-[`lisa',`lab',`jeff',`newguy']
+["lisa","lab","jeff","newguy"]
 \end{verbatim}}
 
 \noindent
@@ -5479,8 +5468,7 @@ First,  arrays made in the above example are of different data types. To find ou
 
 { \color{blue} \begin{verbatim}
 >>> D.dtype
-dtype('float64')
->>>
+dtype("float64")
 \end{verbatim}}
 
 Arrays, unlike lists, have dimensions and shape.  Dimensions tell us how many axes there are with axes defined as in this illustration:
@@ -5490,7 +5478,7 @@ Arrays, unlike lists, have dimensions and shape.  Dimensions tell us how many ax
 As shown above, our {\color{blue}A} array has two dimensions (axis 0 and 1).  To get Python to tell us this, we use the {\color{blue}ndim} method:
 
    { \color{blue} \begin{verbatim}
->>>  A= np.array([[1,2,3],[4,2,0],[1,1,2]]) # just to remind you
+>>> A = np.array([[1,2,3],[4,2,0],[1,1,2]]) # just to remind you
 >>> A.ndim
 2
 \end{verbatim}}
@@ -5518,7 +5506,7 @@ array([1, 2, 3, 4, 5, 6])
 There are other ways to reshape, slice and dice arrays.
 The syntax for slicing of arrays is similar to that for lists:
 { \color{blue} \begin{verbatim}
->>> B=A[0:2] # carve the top two lines off of matrix A from above
+>>> B = A[0:2] # carve the top two lines off of matrix A from above
 array([[1, 2, 3],
        [4, 5, 6]])
 \end{verbatim}}
@@ -5526,9 +5514,9 @@ array([[1, 2, 3],
 Lots of applications in Earth Science require the transpose of an array:
 { \color{blue} \begin{verbatim}
 >>> A.transpose() # this is the same as A.T
-array([[1, 4, 7],
-       [2, 5, 8],
-       [3, 6, 9]])
+array([[1, 4, 1],
+       [2, 2, 1],
+       [3, 0, 2]])
 \end{verbatim}}
 
 Also, we can concatenate two arrays together with the - you guessed it - {\color{blue}concatenate()} method.   For a lot more tricks with arrays, go to the NumPy Reference website here:  \url{http://docs.scipy.org/doc/numpy/reference/}.
@@ -5601,14 +5589,14 @@ First, invoke pandas by importing it, then create some data Series using several
 2    3
 3    4
 dtype: int64
->>> obj2 = pd.Series([1,2,3,4],index=['a','b','c','d']) # create second pandas object with text indices
+>>> obj2 = pd.Series([1,2,3,4],index=["a","b","c","d"]) # create second pandas object with text indices
 >>> obj2
 a    1
 b    2
 c    3
 d    4
 dtype: int64
->>> Telnos = {'lisa':46084,'lab':46531,'jeff':44707} # create a dictionary
+>>> Telnos = {"lisa":46084,"lab":46531,"jeff":44707} # create a dictionary
 >>> obj3 = pd.Series(Telnos) # create a pandas Series from the dictionary.
 >>> obj3
 jeff    44707
@@ -5620,9 +5608,9 @@ dtype: int64
 Another very useful pandas object is the DataFrame.  DataFrames have both row and column indices and are like a dictionary of Series so are much more flexible than a NumPy array object.   Here is an example:
 
 { \color{blue} \begin{verbatim}
->>> data={'telnos':['44707','46531','46084'],
-...        'names':['jeff','lisa','lab'],
-...        'rooms':['300D RH','300E RH','1162 SvH']}
+>>> data={"telnos":["44707","46531","46084"],
+...        "names":["jeff","lisa","lab"],
+...        "rooms":["300D RH","300E RH","1162 SvH"]}
 >>> frame = pd.DataFrame(data)
 >>> frame
   names     rooms telnos
@@ -5656,7 +5644,7 @@ Here is an example that creates a script using the Unix {\bf cat} command, makes
 $ cat > printmess.py
 #!/usr/bin/env python
 # simple Python test program (printmess.py)
-print 'test message'
+print "test message"
 ^-D
 $ chmod a+x printmess.py
 $ ./printmess.py
@@ -5682,8 +5670,8 @@ and quote marks by using single quotes, i.e.,
 { \color{blue} \begin{verbatim}
 #! /usr/bin/env python
 # simple Python test program 2 (printmess2.py)
-print ``The pump don't work 'cuz the vandals took the handles``
-print 'She said ``I know what it\'s like to be dead``'
+print "The pump don't work 'cuz the vandals took the handles"
+print "She said \"I know what it's like to be dead\""
 \end{verbatim}}
 
 \noindent
@@ -5697,7 +5685,7 @@ She said ``I know what it's like to be dead``
 \end{verbatim}}
 
 \noindent
-In the second print statement, the $\backslash$' is necessary to prevent an error (try it).   This is an example of a Python `escape code'.   These are used to escape some special meaning, as in an end-quote for a string in this example. We use the backslash to say that we really really want a quote mark here.   Other escape codes are listed here:
+In the second print statement, $\backslash$" is necessary to prevent an error (try it).   This is an example of a Python `escape code'.   These are used to escape some special meaning, as in an end-quote for a string in this example. We use the backslash to say that we really really want a quote mark here. Other escape codes are listed here:
 
 \url{http://www.python-course.eu/variables.php}
 
@@ -5708,11 +5696,11 @@ Here's another example of a program - this one has an typo in line 4:
 abeg = 2.1
 aend = 3.9
 adif = aend - abge
-print 'adif = ', adif
+print "adif = ", adif
 \end{verbatim}}
 
 \noindent
-You had intended to type 'abeg' but typed 'abge' instead.  When
+You had intended to type "abeg" but typed "abge" instead.  When
 you run the program, you get an error message:
 
 { \color{blue} \begin{verbatim}
@@ -5760,12 +5748,10 @@ program statement
 \item There is a cheat that comes in handy when you are writing a complicated program and want to put in the code blocks but don't want them to DO anything yet:  the command  {\color{blue} pass} does nothing and can be used to stand in for a code block.
 \end{itemize}
 
-{ \color{magenta}Good housekeeping Tip \#2: Always use only spaces or only tabs in your code indentation. We use only spaces because we use {\color{blue}vi} to write my code.  Others use Xcode, the  Python IDLE program, or TextWrangler to write their code and some of these things use tabs by default.  Whatever you do BE CONSISTENT because tabs are not the same as spaces in Python even if you can't tell the difference just by looking at it.}
+{ \color{magenta}Good housekeeping Tip \#2: Always use only spaces or only tabs in your code indentation. Spaces (4 of them together) are the preferred indentation method in Python.  Whatever you do BE CONSISTENT because tabs are not the same as spaces in Python even if you can't tell the difference just by looking at it.}
 
 
-
-
-In the following, I'll show you how Python uses code blocks  to create ``do'' and ``while'' loops, and ``if'' statements.
+In the following, you will be shown how Python uses code blocks  to create ``do'' and ``while'' loops, and ``if'' statements.
 
 \subsubsection{The for loop}
 \subsubsection{Looping through lists}
@@ -5775,13 +5761,13 @@ Here is an example of a simple  ``for loop'':
 
 { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
-mylist=[42,`spam',`ocelot']
+mylist=[42,"spam","ocelot"]
 for i in range(0,len(mylist),1): # note absence of Indices list, start and step
    print mylist[i]
-print 'All done'
+print "All done"
 \end{verbatim}}
 
-This script creates the list mylist with the line {\color{blue}mylist=[42,`spam',`ocelot']}.  The length of mylist is an integer value returned by {\color{blue}len(mylist)}.      The script uses this integer as the `stop' value in the  {\color{blue}range()} function,  which returns a list of integers from 0 to the stop value  MINUS ONE at intervals of one.   [ The minus one convention is hard to get use to  for Fortran programmers, but it is typical of Python syntax (and also of C) so just deal with it.]  Anyway, {\color{blue}range(start,stop,step)} is just like {\color{blue}numpy.arange(start,stop,step)} but returns integers instead of floats.  Also, like {\color{blue}numpy.arange()}, there is a short hand form when the minimum is zero and the interval is one, so we could (and will)  just use the command {\color{blue}range(stop)}.
+This script creates the list mylist with the line {\color{blue}mylist=[42,"spam","ocelot"]}.  The length of mylist is an integer value returned by {\color{blue}len(mylist)}.      The script uses this integer as the `stop' value in the  {\color{blue}range()} function,  which returns a list of integers from 0 to the stop value  MINUS ONE at intervals of one.   [ The minus one convention can be hard to get used to, but it is typical of Python syntax (and also of C) so just deal with it.]  Anyway, {\color{blue}range(start,stop,step)} is just like {\color{blue}numpy.arange(start,stop,step)}, but returns integers instead of floats.  As in {\color{blue}numpy.arange()}, there is a short hand form when the minimum is zero and the interval is one, so we could (and will) just use the command {\color{blue}range(stop)}.
 
    Python makes $i$ step through the list of numbers from 0 to 2, printing the $i^{th}$ element of {\color{blue}mylist}.  Note how the print command is indented - this is the program block that is executed for each $i$.   Note also that the line could have been on the previous line after the colon, because there is only one line in the program block.  But never-mind, this way works too.   When $i$ finishes it's business, the program block terminates.   At that point, the program prints out the 'All done' string.   There is no ``enddo'' statement or equivalent in Python.
 
@@ -5789,10 +5775,10 @@ But, Python is far more fun than the old-school {\color{blue}for i in} syntax in
 
 { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
-mylist=[42,`spam',`ocelot']
+mylist=[42,"spam","ocelot"]
 for item in mylist: # note absence of range statement
     print item
-print 'All done'
+print "All done"
 \end{verbatim}}
 
 \noindent Note that of course we could have used any variable name instead of `item', but it makes sense to use variable names that mean what they do.  It is easier to understand what `item' stands for than just the Fortran style of $i$.
@@ -5807,19 +5793,18 @@ for theta in range(90): # short form of range, returns [0,1,2...89]
    ctheta = np.cos(theta*deg2rad) # define ctheta as cosine of theta
    stheta = np.sin(theta*deg2rad)# define stheta as  sine of theta
    ttheta = np.tan(theta*deg2rad)   # define ttheta as tangent of theta
-   print '%5.1f %8.4f %8.4f %8.4f' %(theta, ctheta, stheta, ttheta)
+   print "%5.1f %8.4f %8.4f %8.4f" %(theta, ctheta, stheta, ttheta)
  \end{verbatim}}
 
- Let's pick this one apart a bit.  First,
-notice the use of the variable {\color{blue}deg2rad} to convert from degrees to radians.  Also notice how deg2rad is defined: {\color{blue}deg2rad = np.pi/180.} using the {\color{blue}NumPy} function for $\pi$ and the decimal point after 180.  While in this case, it makes absolutely no difference (try it!), it is a good practice to use real numbers if you want your variable to stay real.  In fact:
+ Let's pick this program apart a bit.  First,
+notice the use of the variable {\color{blue}deg2rad} to convert from degrees to radians.  Also notice how deg2rad is defined: {\color{blue}deg2rad = np.pi/180.} using the {\color{blue}NumPy} function for $\pi$ and the decimal point after 180.  While in this case, it makes absolutely no difference (try it!), it is a good practice to use floating point numbers unless you want your variable to stay an integer.  In fact:
 
-{\color{magenta}Good housekeeping Tip \#3:  Always use a decimal if you want your variable to be a floating point variable.}
+{\color{magenta}Good housekeeping Tip \#3:  Always use a decimal if you want your variable to be a floating point variable. In the above example, 180. or 180.0 give the same floating point number.}
 
-The expression {\color{blue} ctheta = np.cos(theta*deg2rad)} uses the {\color{blue}numpy} cosine function. Ideally {\color{blue} theta} should be a real variable while in fact it is an integer
-  in this expression, but fortunately Python figures that out and converts it to a real.   Note that we could have also converted theta to a float first with the command {\color{blue}float(theta)}.
+The expression {\color{blue} ctheta = np.cos(theta*deg2rad)} uses the {\color{blue}numpy} cosine function. Ideally, {\color{blue} theta} should be a floating point number while in fact it is an integer in this expression, but fortunately Python figures that out and converts it to a floating point number.   Note that we could have also converted theta to a float first with the command {\color{blue}float(theta)}.
 
 { \color{blue} \begin{verbatim}
-print '%5.1f %8.4f %8.4f %8.4f' %(theta, ctheta, stheta, ttheta)
+print "%5.1f %8.4f %8.4f %8.4f" %(theta, ctheta, stheta, ttheta)
 \end{verbatim}}
 
 \noindent To make the output look nice, we do not use
@@ -5837,13 +5822,13 @@ text there is reproduced exactly in the output, thus to put commas between
 the output numbers, write:
 
 { \color{blue} \begin{verbatim}
-print '%5.1f, %8.4f, %8.4f, %8.4f' %(theta, ctheta, stheta, ttheta)
+print "%5.1f, %8.4f, %8.4f, %8.4f" %(theta, ctheta, stheta, ttheta)
 \end{verbatim}}
 
 \noindent Tabs ($\backslash$t) would be formatted like this:
 
 { \color{blue} \begin{verbatim}
-print '%5.1f '\t' %8.4f'\t'  %8.4f,\t' %8.4f' %(theta, ctheta, stheta, ttheta)
+print "%5.1f '\t' %8.4f'\t'  %8.4f,\t' %8.4f" %(theta, ctheta, stheta, ttheta)
 \end{verbatim}  }
 
  \subsubsection{Looping through arrays}
@@ -5879,11 +5864,9 @@ For more on looping (or iterating), see:
 
 \url{http://docs.scipy.org/doc/numpy/reference/arrays.nditer.html}
 
-
-
 \subsubsection{If and while blocks}
 
-The ``for loop'' is just one way of controlling flow in Python.  There are also {\color{blue}if}  and  {\color{blue}while} code blocks.  These execute code blocks  the same way as for loops (colon terminated top statements, indented text, etc.).  For both of these, the code block is executed if the top statement is  TRUE.  For the ``if'' block, the code is executed once but in a ``while'' block, the code keeps executing as long as the statement remains TRUE.
+The ``for loop'' is just one way of controlling flow in Python.  There are also {\color{blue}if}  and  {\color{blue}while} code blocks.  These execute code blocks  the same way as for loops (colon terminated top statements, indented text, etc.).  For both of these, the code block is executed if the top statement is  TRUE.  For the ``if'' block, the code is executed once, but in a ``while'' block the code keeps executing as long as the statement remains TRUE.
 
 The key to flow control therefore is in the top statement of each code block;  if it is TRUE, then execute, otherwise skip it.  To decide if something is TRUE or not (in the boolean sense), we need to evaluate a statement using comparisons.   Here's a handy table with comparisons (relational operators) in different languages:
 
@@ -5936,24 +5919,24 @@ than is intended!
 The simplest `if' block works just like we have described:
 { \color{blue} \begin{verbatim}
 if (2+2)==4: # note the use of '==' and parentheses in comparison statement
-   print `I can put two and two together!'
+   print "I can put two and two together!"
 \end{verbatim}}
 
-However, as in  any other reasonable programming language, there are whistles and bells to the `if' code blocks.  In Python these are:  {\color{blue}elif} and {\color{blue}else}.
+However, as in any other reasonable programming language, there are whistles and bells to the `if' code blocks.  In Python these are:  {\color{blue}elif} and {\color{blue}else}.
 A code block gets executed if the top {\color{blue}if} statement is FALSE and the  {\color{blue}elif}  statement is TRUE.  If both the top {\color{blue}if} and the {\color{blue}elif}  statements are FALSE but the  {\color{blue}else}  statement is TRUE, then Python will execute the block following the  {\color{blue}else}.  Consider these examples:
 
 { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
-mylist=['jane','doug','denise']
-if 'susie' in mylist:
+mylist=["jane","doug","denise"]
+if "susie" in mylist:
     pass # don't do anything
-if 'susie' not in mylist:
-   print 'call susie and apologize!'
-   mylist.append('susie')
-elif 'george' in mylist: # if first statement is false, try this one
-    print 'susie and george both in list'
+if "susie" not in mylist:
+   print "call susie and apologize!"
+   mylist.append("susie")
+elif "george" in mylist: # if first statement is false, try this one
+    print "susie and george both in list"
 else: # if both statements are false, do this:
-   print ``susie in list but george isn't``
+   print "susie in list but george isn't"
 \end{verbatim}}
 
 \subsubsection{While loops}
@@ -5967,7 +5950,7 @@ a=1
 while a < 10:
     print a
     a+=1
-print ``I'm done counting!``
+print "I'm done counting!"
 \end{verbatim}}
 
 \subsubsection{Code blocks in interactive Python}
@@ -6000,7 +5983,7 @@ If you are using Python interactively or want interactivity in a script,  use th
 
 { \color{blue} \begin{verbatim}
 X=[] # make a list to put the data in
-ans=float(raw_input(``Input numeric value for X:  ``))
+ans=float(raw_input("Input numeric value for X:  "))
 X.append(ans) # append the value to X
 print X[-1] # print the last item in the list
 \end{verbatim}}
@@ -6063,7 +6046,7 @@ etc.
 \noindent Notice how in our first version, printing the line also printed the line feed ($\backslash$n) as an extra line.  To clean this off of each line, we can use the  string {\color{blue}strip()} function:
 
 { \color{blue} \begin{verbatim}
-    print line.strip('\n')
+    print line.strip("\n")
 \end{verbatim}}
 
 \noindent Putting this into the code results in this behavior:
@@ -6083,9 +6066,9 @@ Here is a slightly modified version of {\color{blue}ReadStations.py}, {\color{bl
 { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
 Lats,Lons,StaIDs,StaName=[],[],[] ,[]# creates lists to put things in
-StationNFO=open('station.list').readlines() # combines the open and readlines methods!
+StationNFO=open("station.list").readlines() # combines the open and readlines methods!
 for line  in StationNFO:
-    nfo=line.strip('\n').split() # strips off the line ending and splits on spaces
+    nfo=line.strip("\n").split() # strips off the line ending and splits on spaces
     Lats.append(float(nfo[0])) # puts float of 1st column into Lats
     Lons.append(float(nfo[1]))# puts float of 2nd column into Lons
     StaIDs.append(int(nfo[2])) # puts integer of 3rd column into StaIDs
@@ -6104,7 +6087,7 @@ import sys
 Lats,Lons,StaIDs,StaName=[],[],[] ,[]# creates lists to put things in
 StationNFO=sys.stdin.readlines() # reads from standard input
 for line  in StationNFO:
-    nfo=line.strip('\n').split() # strips off the line ending and splits on spaces
+    nfo=line.strip("\n").split() # strips off the line ending and splits on spaces
     Lats.append(float(nfo[0])) # puts float of 1st column into Lats
     Lons.append(float(nfo[1]))# puts float of 2nd column into Lons
     StaIDs.append(int(nfo[2])) # puts integer of 3rd column into StaIDs
@@ -6130,7 +6113,7 @@ if '-f' in sys.argv:  # look in list of command line arguments
     file=sys.argv[sys.argv.index('-f')+1] # find index of '-f' and increment by one
 StationNFO=open(file,'rU').readlines() # open file
 for line  in StationNFO:
-    nfo=line.strip('\n').split() # strips off the line ending and splits on spaces
+    nfo=line.strip("\n").split() # strips off the line ending and splits on spaces
     Lats.append(float(nfo[0])) # puts float of 1st column into Lats
     Lons.append(float(nfo[1]))# puts float of 2nd column into Lons
     StaIDs.append(int(nfo[2])) # puts integer of 3rd column into StaIDs
@@ -6161,14 +6144,14 @@ Let's say we  have a Python module that will convert latitudes and longitudes to
 #!/usr/bin/env python
 import UTM # imports the UTM module
 Ellipsoid=23-1 # UTMs code for WGS-84
-StationNFO=open('station.list').readlines()
+StationNFO=open("station.list").readlines()
 for line  in StationNFO:
-    nfo=line.strip('\n').split()
+    nfo=line.strip("\n").split()
     lat=float(nfo[0])
     lon=float(nfo[1])
     StaName= nfo[3]
     Zone,Easting, Northing=UTM.LLtoUTM(Ellipsoid,lon,lat)
-    print StaName, ': ', Easting, Northing, Zone
+    print StaName, ": ", Easting, Northing, Zone
  \end{verbatim}}
 
 \noindent
@@ -6195,11 +6178,11 @@ But we yearn for more.  So,  more  elegantly, we can open an output file [for ap
  { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
 import UTM # imports the UTM module
-outfile=open('mynewfile','w') # creates outfile object
+outfile=open("mynewfile","w") # creates outfile object
 Ellipsoid=23-1 # UTMs code for WGS-84
 StationNFO=open('station.list').readlines()
 for line  in StationNFO:
-    nfo=line.strip('\n').split()
+    nfo=line.strip("\n").split()
     lat=float(nfo[0])
     lon=float(nfo[1])
     StaName= nfo[3]
@@ -6263,9 +6246,9 @@ So far you have learned how to use functions from program modules like {\color{b
 #!/usr/bin/env python
 
 def FUNCNAME(in_args):
-    ``````
+    """
     DOC STRING
-    ``````
+    """
     some code that the functions does something
     return out_args
 
@@ -6286,9 +6269,9 @@ FUNCNAME(in_args) # this calls the function
  { \color{blue} \begin{verbatim}
  #!/usr/bin/env python
 def gimmepi():
-    ``````
+    """
     returns pi
-    ``````
+    """
     return 3.141592653589793
 print gimmepi()
 \end{verbatim}}
@@ -6299,11 +6282,11 @@ print gimmepi()
 { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
 def deg2rad(degrees):
-    ``````
+    """
     converts degrees to radians
-    ``````
+    """
     return degrees*3.141592653589793/180.
-print '42 degrees in radians is: ',deg2rad(42.)
+print "42 degrees in radians is: ",deg2rad(42.)
 \end{verbatim}}
 
 \noindent 3) You could have a more flexible need for variables.  You signal this by putting  *args in the in\_args list (along with any formal variables you want):
@@ -6311,13 +6294,13 @@ print '42 degrees in radians is: ',deg2rad(42.)
 { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
 def print_args(*args):
-    ``````
+    """
     prints argument list
-    ``````
-    print 'You sent me these arguments: '
+    """
+    print "You sent me these arguments: "
     for arg in args:
         print arg
-print_args(1,4,'hi there')
+print_args(1,4,"hi there")
 print_args(42)
 \end{verbatim}}
 
@@ -6326,17 +6309,17 @@ print_args(42)
 { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
 def print_kwargs(**kwargs):
-    ``````
+    """
     prints keyworded argument list
-    ``````
+    """
     for key in kwargs:
-        print '%s  %s' %(key, kwargs[key])
+        print "%s  %s" %(key, kwargs[key])
 
-print_kwargs(arg1='one',arg2=42,arg3='ocelot')
+print_kwargs(arg1="one",arg2=42,arg3="ocelot")
 \end{verbatim}}
 
  \subsubsection{Doc String}
- Although you can certainly write functional code without a document string, make a habit of always including one.  Trust me - you'll be glad you did.  This can later be used to remind you of what you thought you were doing years later.  It can be used to print out a help message by the calling program and it also let's others know what you intended.   Notice the use of the triple quotes before and after the documentation string - that means that you can write as many lines as you want.
+ Although you can certainly write functional code without a document string, make a habit of always including one.  Trust me - you'll be glad you did.  This docstring can later be used to remind you of what you thought you were doing years later.  It can be used to print out a help message by the calling program and it also lets others know what you intended.   Notice the use of the triple quotes before and after the documentation string - that means that you can write as many lines as you want.
 
  \subsubsection{Function body}
  This part of the code must be indented, just like in a for loop, or other block of code.
@@ -6351,41 +6334,43 @@ print_kwargs(arg1='one',arg2=42,arg3='ocelot')
 { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
 def print_kwargs(**kwargs):
-    ``````
+    """
     prints keyworded argument list
-    ``````
+    """
     for key in kwargs:
-        print '%s  %s' %(key, kwargs[key])
+        print "%s  %s" %(key, kwargs[key])
 
 def main():
-    ``````
+    """
     calls function print_kwargs
-    ``````
-    print_kwargs(arg1='one',arg2=42,arg3='ocelot')
+    """
+    print_kwargs(arg1="one",arg2=42,arg3="ocelot")
 main()  # runs the main program
 \end{verbatim}}
 
 Notice how in the above examples, all the functions preceded the main function.  This is because Python is an interpreter and not compiled - so it won't know about anything declared below as it goes through the script line by line.   On the other hand, we've been running lots of functions and they were not in the program we used to call them.  The trick here is that
-you can put a bunch of functions in a separate file (in your path) and import it, just like we did with {\color{blue}NumPy}.  Your functions can then be called from within your program  in the same way as for {\color{blue}NumPy}.
+you can put a bunch of functions in a separate file (in your path) and import it as a module, just like we did with {\color{blue}NumPy}.  Your functions can then be called from within your program in the same way as for {\color{blue}NumPy}.
 
 So let's say we put all the above functions in a file called {\color{blue}myfuncs.py}:
 
 { \color{blue} \begin{verbatim}
 def gimmepi():
-    ``````
+    """
     returns pi
-    ``````
+    """
     return 3.141592653589793
+    
 def deg2rad(degrees):
-    ``````
+    """
     converts degrees to radians
-    ``````
+    """
     return degrees*3.141592653589793/180.
+    
 def print_args(*args):
-    ``````
+    """
     prints argument list
-    ``````
-    print 'You sent me these arguments: '
+    """
+    print "You sent me these arguments: "
     for arg in args:
         print arg
 \end{verbatim}}
@@ -6426,23 +6411,22 @@ main()
 
 
 In addition to being able to write your own functions, of course
-Python has LOTS of modules and a gazzillion functions. The enthought distribution that you are using
-Includes plotting, numerical recipes, trig functions, image manipulation, animation,  and many more.
+Python has LOTS of modules and a gazzillion functions. The Enthought distribution that you are using comes with scientific python modules that have functions for plotting, numerical recipes, image manipulation, animation,  and so much more.
 
 
 
 \section{Classes}
 
 Before we go any further, we need to learn some basic concepts about classes. These
- are the basis of  ``object oriented programming'' OOP (that again!).   Class objects lie behind plotting, for example and a rudimentary understanding of what they are and how they work will come in handy when we start doing anything but the simplest plotting exercises.
+ are the basis of  ``object oriented programming'' OOP (that again!).   Class objects lie behind plotting, for example, and a rudimentary understanding of what they are and how they work will come in handy when we start doing anything, but the simplest plotting exercises.
 
-  A class object is   created by a call  to a ``class definition''  which which can be thought of as a blueprint for the class object.  Here is an simple example of a class definition:
+  A class object is created by a call  to a ``class definition''  which which can be thought of as a blueprint for the class object.  Here is an simple example of a class definition:
 
 { \color{blue} \begin{verbatim}
 class Circle:
-    ``````
+    """
     This is simple example of a class
-    ``````
+    """
     pi=3.141592653589793
     def __init__(self,r):
         self.r=r
@@ -6477,7 +6461,7 @@ The other methods ({\color{blue}area} and {\color{blue}circumference}) are defin
 You can make a subclass (child) of the parent class which has all the attributes and methods of the parent, but may have a few attributes and methods of its own.   You do this by setting up another class definition within a class.
 
 So, the bottom line about classes is that they are  in the same category of things as variables, lists, dictionaries, etc. That is, they are  `data structures' - they hold data, and the methods to process that data.
-If you are curious about classes, there's lots more to know about classes that we don't have time to get into, but you can find useful tutorials online:
+If you are curious about classes, there's lots more to know about classes that you can find in useful tutorials online:
 
  (e.g., \url{http://www.sthurlow.com/python/lesson08/})
 
@@ -6486,7 +6470,7 @@ If you are curious about classes, there's lots more to know about classes that w
 \customlink{matplotlib}
 \section{Matplotlib}
 
-So far you have learned the basics of Python, and NumPy.  But Python was sold as a way of visualizing data and we haven't yet seen a single plot (except a stupid one in the beginning). There are many plotting options within the Python umbrella. The most mature and the one we am most familiar with is {\color{blue}matplotlib}, a popular  graphics module of Python.
+So far you have learned the basics of Python, and NumPy.  But Python was sold as a way of visualizing data and we haven't yet seen a single plot (except a stupid one in the beginning). There are many plotting options within the Python umbrella. The most mature of these is {\color{blue}matplotlib}, a popular graphics module of Python.
 Actually  {\color{blue}matplotlib} is a collection of a bunch of other modules, toolkits, methods and  classes.   For a fairly complete and readable tour of matplotlib, check out these links:
 
 \url{http://matplotlib.sourceforge.net/Matplotlib.pdf}
@@ -6501,20 +6485,18 @@ and here:
 
 \subsubsection{A first plot}
 
-Let's start by reviewing the   simple plot script ({\color{blue}matplotlib1.py}):
+Let's start by reviewing the simple plot script ({\color{blue}matplotlib1.py}):
 
 
 { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
 import matplotlib
-matplotlib.use(``TkAgg``) # my favorite backend
+matplotlib.use("TkAgg") # my favorite backend
 import pylab # module with matplotlib
 pylab.plot([1,2,3])  # plot some numbers
-pylab.ylabel('Y') # label the y-axis
+pylab.ylabel("Y") # label the y-axis
 pylab.show() # reveal the plot
 \end{verbatim}}
-
-
 
 The first step should be obvious by now, it imports {\color{blue}matplotlib}.
 Figures are rendered on ``backends'' so they appear on screen.  There are a lot of different back-ends with slightly different looks.  Some work better on different operating systems. We use the very old school backend called  ``TkAgg'' backend because it ``works''.  So step 2  sets the backend: {\color{blue}matplotlib.use(``TkAgg'')}.  The module {\color{blue}matplotlib} itself contains a lot of other modules.  One of these,
@@ -6524,7 +6506,7 @@ In the above example, we call the {\color{blue}plot} method with a list as an ar
 
 { \color{blue}\begin{verbatim}
 >>> import matplotlib
->>> matplotlib.use(``TkAgg``)
+>>> matplotlib.use("TkAgg")
 >>> import pylab
 >>> pylab.plot([1,2,3])
 [<matplotlib.lines.Line2D object at 0x4bd6eb0>]
@@ -6545,15 +6527,15 @@ If you find it annoying to always have to close figures with the little red butt
 { \color{blue}\begin{verbatim}
 #!/usr/bin/env python
 import matplotlib
-matplotlib.use(``TkAgg``)
+matplotlib.use("TkAgg")
 import pylab
 pylab.ion()  # turn on interactivity
 pylab.plot([1,2,3])
-pylab.ylabel('Y')
+pylab.ylabel("Y")
 pylab.draw() # draw  the current plot
 ans=raw_input('press [s] to save figure, any other key to quit: ')
-if ans=='s':
-    pylab.savefig('myfig.eps')
+if ans=="s":
+    pylab.savefig("myfig.eps")
 \end{verbatim}}
 
 \noindent The method {\color{blue}pylab.savefig(FILENAME.FMT)}.  The .FMT can be one of several, e.g., .eps, .svg, .ps, .pdf, .png, .gif, .jpg, etc.).   Some of these (the vector graphics ones like pdf,  ps, eps and svg) can be opened in Adobe Illustrator for modification.
@@ -6567,12 +6549,13 @@ As mentioned earlier, if  you give {\color{blue}plot()} a single sequence of val
 { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
 import matplotlib
-matplotlib.use(``TkAgg``)
-import pylab,numpy
-x=numpy.arange(0,360,10)
-r=x*numpy.pi/180.
-c=numpy.cos(r)
-s=numpy.sin(r)
+matplotlib.use("TkAgg")
+import pylab
+import numpy as np
+x = np.arange(0,360,10)
+r = x*np.pi/180.
+c = np.cos(r)
+s = np.sin(r)
 pylab.plot(x,c,'r--',x,s,'g^')
 pylab.show()
 \end{verbatim}}
@@ -6585,8 +6568,6 @@ pylab.show()
 There are many other attributes that can be controlled: linewidth, dash style, etc. and we invite you to check out the {\color{blue}matplotlib} documentation.
 
 \noindent By now, you should understand enough about classes, keyword argument passing and other pythonalia to be able to figure things out on your own.   But don't panic, I'm going to lead you through a few more examples, which we hope will speed you on your plotting way.
-
-
 
 \subsubsection{Multiple figures and more customization}
 As already mentioned,  {\color{blue}pylab} has the concept of ``current figure'' which subsequent commands refer to.   In the preceding examples, we only had one figure, so we didn't have to name it, but for fancier figures with several plots, we
@@ -6616,18 +6597,19 @@ To illustrate these new concepts, consider the example code, {\color{blue}matplo
 { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
 import matplotlib
-matplotlib.use(``TkAgg``)
-import pylab, numpy
+matplotlib.use("TkAgg")
+import pylab
+import numpy as np
 def f(t):
-    return numpy.exp(-t)*numpy.cos(2.*numpy.pi*t)
-t1= numpy.arange(0.,5.,0.1)
-t2= numpy.arange(0.,5.,0.02)
-fig=pylab.figure(num=1,figsize=(7,5))
+    return np.exp(-t)*np.cos(2.*np.pi*t)
+t1 = np.arange(0.,5.,0.1)
+t2 = np.arange(0.,5.,0.02)
+fig = pylab.figure(num=1,figsize=(7,5))
 fig.add_subplot(211)
 pylab.plot(t1,f(t1),'bo')
 pylab.plot(t1,f(t1),'k-')
 fig.add_subplot(212)
-pylab.plot(t2,numpy.cos(2*numpy.pi*t2),'r--')
+pylab.plot(t2,np.cos(2*np.pi*t2),'r--')
 pylab.xlabel('Time (ms)')
 fig.add_axes([.6,.75,.25,.10])
 pylab.plot([0,1],[0,1],'r-',[0,1],[1,0],'r-')
@@ -6648,24 +6630,21 @@ Let's decorate one of our early examples to show how some of these things work:
 
 { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
-import matplotlib
-matplotlib.use(``TkAgg``)
-import pylab,numpy
-x=numpy.arange(0,360,10)
-r=x*numpy.pi/180.
-c=numpy.cos(r)
-s=numpy.sin(r)
-s2=numpy.sin(r)**2
-pylab.plot(x,c,'r--',x,s,'g^',x,s2,'k-')
-pylab.title('Fun with trig')
-pylab.text(250,-.5,'pithy note')
-pylab.legend(['cos(x)',\
-    'sin(x)',r'$\sin(x^2$)'],'lower left')
-pylab.xlabel(r'$\theta')
-pylab.annotate('triangles!',\
-  xy=(175,0),xytext=(110,-.25),\
-   arrowprops=dict(facecolor='black',\
-   shrink=0.05))
+import matplotlib  
+matplotlib.use("TkAgg")  
+import pylab  
+import numpy as np  
+x = np.arange(0,360,10)  
+r = x*np.pi/180.  
+c = np.cos(r)  
+s = np.sin(r)  
+s2 = np.sin(r)**2  
+pylab.plot(x,c,"r--",x,s,"g^",x,s2,"k-")  
+pylab.title("Fun with trig")  
+pylab.text(250,-.5,"pithy note")  
+pylab.legend(["cos(x)","sin(x)","$\sin(x^2$)"],"lower left")  
+pylab.xlabel(r"$\theta$")  
+pylab.annotate("triangles!", xy=(175,0), xytext=(110,-.25), arrowprops=dict(facecolor="black", shrink=0.05))  
 pylab.show()
 \end{verbatim}}
 
@@ -6676,10 +6655,6 @@ pylab.show()
 The title appears at the top of the plot.
     Text labels get places at the $x$ and $y$ coordinates on the plot and the legend will appear in the upper/lower right/left corner as specified in the string.  The {\color{blue}pylab.text(x,y,string, kwargs)} method also has optional key word arguments, specifying font, size, color and the like.     The legend 'labelist' is a list of labels for each plot element.  So, every line or point style that you want in your legend, append a label to the label list after the relevant plot command. Also note that the legend and xlabel methods use  a special format for strings ({\color{blue}r'LateX String')} which allows embedded LaTeX equation syntax  to make scientific equations look right - so now you have to learn LaTeX!.   Finally, the arrow gets drawn with the {\color{blue}annotate} method, which has a lot of other attributes as well.
 Check the {\color{blue}matplotlib} documentation for details.
-
-
-
-
 
 There are lots of graphing styles possible with {\color{blue}matplotlib}, e.g., histograms, pie charts, contour plots, whisker plots, etc.  I'm just going to show you a few examples.  The best thing to do is to look through the online documentation for a plot that looks like what you need, then modify it.  This is ALWAYS a good approach - start with something that works and fiddle with it until it suits your own particular needs.
 
@@ -6901,6 +6876,11 @@ Day, R., Fuller, M.~D., \& Schmidt, V.~A. (1977).
   dependence.
 \newblock {\em Phys. Earth Planet. Inter.}, 13, 260--266.
 
+\bibitem[Fairchild et~al., 2016]{fairchild16}
+Fairchild, L.M., Swanson-Hysell, N.L., \& Tikoo, S.M. (2016).
+\newblock A matter of minutes: Breccia dike paleomagnetism provides evidence for rapid crater modification.
+\newblock {\em Geology}, 10.1130/G37927.1.
+
 \bibitem[Gee et~al., 2008]{gee08}
 Gee, J.~S., Tauxe, L., \& Constable, C. (2008).
 \newblock Amsspin - a labview program for measuring the anisotropy of magnetic
@@ -6981,12 +6961,6 @@ Shaar, R. \& Tauxe, L. (2013).
 \newblock Thellier\_gui: An integrated tool for analyzing paleointensity data
   from thellier-type experiments.
 \newblock {\em Geochem. Geophys. Geosys.}, 14.
-
-\bibitem[Swanson-Hysell et~al., 2009]{swansonhysell09}
-Swanson-Hysell, N., Maloof, A.~C., Weiss, B.~P., \& Evans, D. (2009).
-\newblock No asymmetry in geomagnetic reversals recorded by
-  1.1-billion-year-old keweenawan basalts.
-\newblock {\em Nature Geoscience}, 2, 713--717.
 
 \bibitem[{{\it Swanson-Hysell et~al.\/}(2014){\it Swanson-Hysell, Vaughan,
   Mustain, and Asp\/}}]{swansonhysell14}
