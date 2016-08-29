@@ -813,7 +813,7 @@ used as input to another program with the pipe operator ({\bf$ |$}).
 \section{Text editors}
 
 There are many ways of editing text and the subject is beyond the scope of this documentation. Text editing is a blessing and a curse.  You either love it or
-hate it and in the beginning, and if you are used to programs like Word, you will certainly hate it. (And if you are used to a decent text editor, you will hate Word!).      But you can't use Word because the output is in a weird format that no scripting languages read easily.  So you have to use text editor that will produce a plain (ascii) file, like Notepad, TextWrangler, Sublime Text or Atom.  \href{http://textwrangler.onfreedownload.com}{TextWrangler} is free software available for Macs, the notepad comes standard in the Windows operating system and the \href{hhttps://atom.io}{Atom} text editor is a free cross-platform option with lots of nice packages availible that extend its functionality. Enthought Python's Canopy programming environment comes with its own text editor.
+hate it and in the beginning, and if you are used to programs like Word, you will certainly hate it. (And if you are used to a decent text editor, you will hate Word!).      But you can't use Word because the output is in a weird format that no scripting languages read easily.  So you have to use text editor that will produce a plain (ascii) file, like Notepad, TextWrangler, Sublime Text or Atom.  \href{http://textwrangler.onfreedownload.com}{TextWrangler} is free software available for Macs, the notepad comes standard in the Windows operating system and the \href{https://atom.io}{Atom} text editor is a free cross-platform option with lots of nice packages available that extend its functionality. Enthought Python's Canopy programming environment comes with its own text editor.
 
 \customlink{PmagPy}
 
@@ -830,7 +830,7 @@ When you type something on your \href{#command_line}{command line}, your operati
 \section{Graphical data analysis programs}
 \subsection{demag\_gui.py}
 
-The  Demag GUI (\bf demag\_gui.py}  program enables the display and analysis of paleomagnetic demagnetization data. The software will display specimen level data within the chosen directory as a Zijderveld plot, equal area plot and intensity plot. Interpretations can be made to the data as least-squares line or plane fits. Mean directions can be calculated and displayed for these interpretations. These interpretations can be exported as MagIC pmag files from the program.
+The  Demag GUI {\bf demag\_gui.py}  program enables the display and analysis of paleomagnetic demagnetization data. The software will display specimen level data within the chosen directory as a Zijderveld plot, equal area plot and intensity plot. Interpretations can be made to the data as least-squares line or plane fits. Mean directions can be calculated and displayed for these interpretations. These interpretations can be exported as MagIC pmag files from the program.
 
 \subsubsection{Launching}\label{launching}
 
@@ -2390,6 +2390,14 @@ S[a]ve plots - <return> to quit:  a
 \includegraphics[width=15cm]{EPSfiles/find_EI.eps}
 
 In this example, the original expected inclination at paleolatitude of 42 (61$^{\circ}$) is recovered within the 95\% confidence bounds.
+
+Note that the correction implemented by {\bf find\_EI.py} is, by default, meant to be a ``study'' level correction in which the distribution of data is determined primarily by secular variation (the TK03.GAD model). Alternatively, if you wish to correct ``flattened'' data to a Fisher distribution (a ``site level'' correction; see section 4.1 of Tauxe and Kent, 2004\nocite{tauxe04d}) you can specify this with the \texttt{-sc} flag like so:
+
+\begin{verbatim}
+$  find_EI.py -f find_EI_example.dat -sc
+\end{verbatim}
+
+Note that many directions ($\sim$100) are needed for this correction-by-site to be reliable.
 
 %
 
