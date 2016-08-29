@@ -3133,9 +3133,7 @@ $ combine_magic.py -F magic_measurements.txt -f agm_measurements.txt irm_measure
 \subsubsection{CIT\_magic.py}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/CIT_magic.py}{[CIT\_magic.py docs]}
 
- Craig Jones' {\bf PaleoMag} software package (\url{http://cires.colorado.edu/people/jones.craig/PMag3.html}) imports various file formats, including the so-called 'CIT' format developed for the Caltech lab and now utilized in software that ships with many 2G magnetometers. The documentation for the CIT sample format is here: \url{http://cires.colorado.edu/people/jones.craig/PMag_Formats.html#SAM_format}.
- Demagnetization data for each specimen is in its own file in a directory with all the data for a study.
-These files are strictly formatted with fields determined by the character number in the line. A datafile generated in the UC Berkeley paleomagnetism lab, for a specimen published in Fairchild et al., (2016) \nocite{fairchild16} and available in the MagIC database (\url{https://earthref.org/MagIC/11292/}) has this format:
+ Craig Jones' {\bf PaleoMag} software package (\url{http://cires.colorado.edu/people/jones.craig/PMag3.html}) imports various file formats, including the 'CIT' format developed for the Caltech lab and now utilized in magnetometer control software that ships with 2G magnetometers that utilized a vertical sample changer system. The documentation for the CIT sample format is here: \url{http://cires.colorado.edu/people/jones.craig/PMag_Formats.html#SAM_format}. Demagnetization data for each specimen are in their own file in a directory with all the data for a site or study. These files are strictly formatted with fields determined by the character number in the line. A datafile generated in the UC Berkeley paleomagnetism lab, for a specimen published in Fairchild et al., (2016) \nocite{fairchild16} (available in the MagIC database: (\url{https://earthref.org/MagIC/11292/}) has this format:
 
 \begin{verbatim}
 PI47- 9a mag compass orientation (IGRF corrected)
@@ -3154,7 +3152,7 @@ TT 275 114.0  54.3 114.0  54.3 5.35E-05 002.9 219.0  39.8 0.121358 0.235405 0.08
 TT 300 113.7  53.9 113.7  53.9 4.88E-05 001.2 219.0  39.4 0.044699 0.063687 0.074005 hargrave 2015-10-06 02:35:35
 \end{verbatim}
 
-There must be a file with the suffix `.sam' in the same directory as the specimen data files which gives details about the samples and a list of the specimen files in the directory. The .sam file has the form:
+There must be a file with the suffix `.sam' in the same directory as the specimen data files which gives details about the specimens and a list of the specimen files in the directory. The .sam file has the form:
 
 \begin{verbatim}
 PI47-
@@ -3170,11 +3168,11 @@ PI47-8a
 PI47-9a
 \end{verbatim}
 
-The first line is a comment, the second is the latitude and longitude followed by a declination correction.
+The first line is a comment (in this case the site name), the second is the latitude and longitude followed by a declination correction. In these data, the declination correction was applied to the specimen orientations so the value of the declination correction is set to be 0.
 
-For detailed description of the file format, check \href{http://cires.colorado.edu/people/jones.craig/PMag3.html}{the PaleoMag} home page.
+For detailed description of the file format, check \href{http://cires.colorado.edu/people/jones.craig/PMag3.html}{the PaleoMag} website.
 
-Use the program {\bf CIT\_magic.py} to import the data files from the example data files in the {\it CIT\_magic} directory of the {\it Measurement\_Import} directory of the {\it data\_files} directory.   The location name was ``Slate Islands'', the \href{#naming_schemes}{naming convention} was \#2, the specimen name is specified with 1 character, we don't wish to average replicate measurements and they were collected by drilling and with a magnetic compass.
+Use the program {\bf CIT\_magic.py} to import the data files from the example data files in the {\it CIT\_magic} directory of the {\it Measurement\_Import} directory of the {\it data\_files} directory.   The location name was ``Slate Islands'', the \href{#naming_schemes}{naming convention} was \#2, the specimen name is specified with 1 character (-spc 1), we don't wish to average replicate measurements (-A) and they were collected by drilling and with a magnetic compass (-mcd "FS-FD:SO-MAG").
 
 \begin{verbatim}
 PI47- Laurentia$ CIT_magic.py  -f PI47-.sam -loc "Slate Islands" -spc 1 -ncn 2 -mcd "FS-FD:SO-MAG" -A
@@ -3275,7 +3273,7 @@ For more options, here is  the help message for {\bf generic\_magic.py }:
 \subsubsection{HUJI\_magic.py}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/HUJI_magic.py}{[HUJI\_magic.py docs]}
 
-This program was developed for the late Prof.  Hagai Ron at the Hebrew Universisty, Jerusalem for files with formats like this:
+This program was developed for the late Prof.  Hagai Ron at the Hebrew University, Jerusalem for files with formats like this:
 
 
 \begin{verbatim}
