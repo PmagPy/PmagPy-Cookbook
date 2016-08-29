@@ -1193,14 +1193,14 @@ Good bye
 .
 \end{verbatim}
 
-\customlink{ANI_depthplot.py}
+\customlink{ani_depthplot.py}
 
-\subsection{ANI\_depthplot.py}
+\subsection{ani\_depthplot.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]};
 \href{#MagICDatabase}{[MagIC Database]}
-\href{https://github.com/PmagPy/PmagPy/blob/master/programs/ANI_depthplot.py}{[ANI\_depthplot docs]}
+\href{https://github.com/PmagPy/PmagPy/blob/master/programs/ani_depthplot.py}{[ani\_depthplot docs]}
 
-Anisotropy data can be plotted versus depth.  The program {\bf ANI\_depthplot.py} uses MagIC formatted data tables of the {\it rmag\_anisotropy.txt} and {\it er\_samples.txt} types.  {\it rmag\_anisotropy.txt} stores the tensor elements and measurement meta-data while {\it er\_samples.txt} stores the depths, location and other information.  Bulk susceptibility measurements can also be plotted if they are available in a {\it magic\_measurements.txt} formatted file.
+Anisotropy data can be plotted versus depth.  The program {\bf ani\_depthplot.py} uses MagIC formatted data tables of the {\it rmag\_anisotropy.txt} and {\it er\_samples.txt} types.  {\it rmag\_anisotropy.txt} stores the tensor elements and measurement meta-data while {\it er\_samples.txt} stores the depths, location and other information.  Bulk susceptibility measurements can also be plotted if they are available in a {\it magic\_measurements.txt} formatted file.
 
 In this example, we will use the data from Tauxe et al. (2012) \nocite{tauxe12} measured on samples obtained during Expedition 318 of the International Ocean Drilling Program.  To get the entire dataset, go to the MagIC data base at:  \url{http://earthref.org/MAGIC/}
 and find the data using the search interface.   As a short-cut, you can use the ``permalink'':
@@ -1211,11 +1211,11 @@ Download the text file by clicking on the icon under the red arrow in:
 
   \includegraphics[width=15cm]{EPSfiles/tauxe12-magic.eps}
 
-Unpack the data using the program \href{#download_magic.py}{download\_magic.py}.  This will unpack the data into the different holes.  Change directories into Location\_2 (which contains the data for Hole U1359A).  Or, you can use the data in the {\bf ANI\_depthplot} directory of the example data files.
+Unpack the data using the program \href{#download_magic.py}{download\_magic.py}.  This will unpack the data into the different holes.  Change directories into Location\_2 (which contains the data for Hole U1359A).  Or, you can use the data in the {\bf ani\_depthplot} directory of the example data files.
 
 
 \begin{verbatim}
-$ ANI_depthplot.py
+$ ani_depthplot.py
 \end{verbatim}
 
 \noindent will create the plot:
@@ -2857,8 +2857,8 @@ $ k15_s.py -f k15_example.dat -crd t
 %
 
 
-\customlink{KLY4S_magic.py}
-\subsection{KLY4S\_magic.py}  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]};
+\customlink{kly4s_magic.py}
+\subsection{kly4s\_magic.py}  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]};
 \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/KLY4S_magic.py}{[KLY4S\_magic docs]}
 
@@ -3700,15 +3700,15 @@ eba24a DE-BFL 10    2.50  70.00    8.8   334.9    51.5
 %
 %  ADD
 
-  \customlink{plotXY.py}
+  \customlink{plotxy.py}
 
-  \subsection{plotXY.py}
-  \href{https://github.com/PmagPy/PmagPy/blob/master/programs/plotXY.py}{[plotXY docs]}
+  \subsection{plotxy.py}
+  \href{https://github.com/PmagPy/PmagPy/blob/master/programs/plotxy.py}{[plotxy docs]}
 
 This program makes a simple XY plot from any arbitrary input file.  You can specify which columns are X and Y, bounds on the columns, symbol color and size, axis labels and other options.
 
 \begin{verbatim}
-$ plotXY.py -f plotXY_example.txt
+$ plotxy.py -f plotXY_example.txt
 \end{verbatim}
 
   \customlink{plot_cdf.py}
@@ -3745,13 +3745,13 @@ which should have generated a plot something like this:
 
   This program will plot any column in a specified MagIC formatted file against any other column in the same file.
 
-  \customlink{plot_mapPTS.py}
+  \customlink{plot_map_pts.py}
 
-  \subsection{plot\_mapPTS.py}
+  \subsection{plot\_map\_pts.py}
   \href{#hires}{high resolution instructions}
-  \href{https://github.com/PmagPy/PmagPy/blob/master/programs/plot_mapPTS.py}{[plot\_mapPTS docs]}
+  \href{https://github.com/PmagPy/PmagPy/blob/master/programs/plot_map_pts.py}{[plot\_map\_pts docs]}
 
-NOTE:  This program only works if you have installed basemap (full version of Canopy Python as opposed to the free version.)  It may not work with  free versions.  {\bf plot\_mapPTS.py} will generate a simple map of the data points in a file (lon lat) on the desired projection.
+NOTE:  This program only works if you have installed basemap (full version of Canopy Python as opposed to the free version.)  It may not work with  free versions.  {\bf plot\_map\_pts.py} will generate a simple map of the data points in a file (lon lat) on the desired projection.
 If you want to use high resolution or the etopo20 meshgrid (-etp option), You must install the etopo20 data files and can use \href{#install_etopo.py}{install\_etopo.py}  for that.
  There are many options, so check the documentation (-h option) for details.
 
@@ -3759,7 +3759,7 @@ Draw a set of 200 uniformly distributed points on the globe with the program \hr
 
 \begin{verbatim}
 $ uniform.py -n 200 >uniform.out
-$ plot_mapPTS.py -f uniform.out -prj ortho -eye 30 0 -etp -sym wo 10
+$ plot_map_pts.py -f uniform.out -prj ortho -eye 30 0 -etp -sym wo 10
 please wait to draw points
  S[a]ve to save plot, Return to quit:  a
 1  saved in  Map_PTS.pdf
@@ -3981,11 +3981,11 @@ s[a]ve plots, [q]uit: q
 $ revtest_magic.py -f revtest_sites.txt -exc
 \end{verbatim}
 
-\customlink{revtest_MM1990.py}
-\subsection{revtest\_MM1990.py}
-\href{https://github.com/PmagPy/PmagPy/blob/master/programs/revtest_MM1990.py}{[revtest\_MM1990 docs]}
+\customlink{revtest_mm1990.py}
+\subsection{revtest\_mm1990.py}
+\href{https://github.com/PmagPy/PmagPy/blob/master/programs/revtest_mm1990.py}{[revtest\_mm1990 docs]}
 
-This program tests whether two sets of observations (one with normal and one with reverse polarity) could have been drawn from distributions that are 180$\,^{\circ}$ apart using the McFadden and McElhinny (1990) implementation of the Watson (1983) V statistic test for a common mean. The implementation of the V statistic test in this program is the same as in \href{#Watsons_v.py}{watsons\_v.py}. Use \textbf{revtest\_MM1990.py} to perform a reversal test on data from the Ao et al., 2013 study of Early Pleistocene fluvio-lacustrine sediments of the Nihewan Basin of North China.
+This program tests whether two sets of observations (one with normal and one with reverse polarity) could have been drawn from distributions that are 180$\,^{\circ}$ apart using the McFadden and McElhinny (1990) implementation of the Watson (1983) V statistic test for a common mean. The implementation of the V statistic test in this program is the same as in \href{#Watsons_v.py}{watsons\_v.py}. Use \textbf{revtest\_mm1990.py} to perform a reversal test on data from the Ao et al., 2013 study of Early Pleistocene fluvio-lacustrine sediments of the Nihewan Basin of North China.
 
 Lets plot the combined data set \textit{Ao\textunderscore etal2013\textunderscore combined.txt} using \href{#eqarea.py}{eqarea.py}:
 
