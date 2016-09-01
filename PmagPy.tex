@@ -6786,6 +6786,21 @@ If you are using the \href{#full_pip}{pip install} instead of the PmagPy prompt,
 
 \end {itemize}
 
+\item I am installing pmagpy into the \href{https://www.continuum.io/downloads}{Anaconda} Python distribution
+
+\begin{itemize}
+\item For Mac users:
+\begin{itemize}
+\item If you only have the core packages installed with the Python 2.7 Anaconda distribution (plus the PmagPy package you just installed), you may get the following ImportError when attempting to execute ``eqarea.py -h'':
+
+ImportError: No module named wx
+
+To correct this error, simply execute at the command line:
+
+conda install wxpython
+\end{itemize}
+\end{itemize}
+
 \item  My path is correctly set, but I still get this error message: \begin{verbatim} -bash: eqarea.py: command not found
 \end{verbatim}
 
