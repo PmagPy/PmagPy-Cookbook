@@ -120,6 +120,11 @@ File: PmagPy.tmp
 File: PmagPy.tmp
 File: PmagPy.tmp
 File: PmagPy.tmp
+File: PmagPy.tmp
+File: PmagPy.tmp
+File: PmagPy.tmp
+File: PmagPy.tmp
+File: PmagPy.tmp
 Css: p.noindent { text-indent: 0em }
 Css: td p.noindent { text-indent: 0em; margin-top:0em; }
 Css: p.nopar { text-indent: 0em; }
@@ -242,7 +247,7 @@ Css:  .likesectionToc , .sectionToc {margin-left:0em;}
 Css:  .likesectionToc ~ .likesubsectionToc, .likesectionToc ~ .subsectionToc, .sectionToc ~ .likesubsectionToc, .sectionToc ~ .subsectionToc {margin-left:2em;}
 Css: .likesectionToc ~ .likesubsectionToc ~ .likesubsubsectionToc, .likesectionToc ~ .likesubsectionToc ~ .subsubsectionToc, .likesectionToc ~ .subsectionToc ~ .likesubsubsectionToc, .likesectionToc ~ .subsectionToc ~ .subsubsectionToc, .sectionToc ~ .likesubsectionToc ~ .likesubsubsectionToc, .sectionToc ~ .likesubsectionToc ~ .subsubsectionToc, .sectionToc ~ .subsectionToc ~ .likesubsubsectionToc, .sectionToc ~ .subsectionToc ~ .subsubsectionToc {margin-left:4em;}
 Css:  .likesubsectionToc, .subsectionToc {margin-left:0em;}
-Css:  .likesubsectionToc ~ .subsubsectionToc, .subsectionToc ~ .subsubsectionToc {margin-left:2em;}
+Css:  .likesubsectionToc ~ .subsubsectionToc, .subsectionToc ~ .subsubsectionToc, {margin-left:2em;}
 Css: .figure img.graphics {margin-left:10%;}
 --- needs --- PmagPy.idv[2] ==> PmagPy0x.png ---
 --- needs --- PmagPy.idv[4] ==> PmagPy1x.png ---
@@ -288,12 +293,12 @@ Css: .figure img.graphics {margin-left:10%;}
 --- needs --- PmagPy.idv[83] ==> PmagPy41x.png ---
 --- needs --- PmagPy.idv[85] ==> PmagPy42x.png ---
 --- needs --- PmagPy.idv[87] ==> PmagPy43x.png ---
---- needs --- PmagPy.idv[89] ==> PmagPy44x.png ---
+--- needs --- PmagPy.idv[88] ==> PmagPy44x.png ---
 --- needs --- PmagPy.idv[90] ==> PmagPy45x.png ---
---- needs --- PmagPy.idv[92] ==> PmagPy46x.png ---
+--- needs --- PmagPy.idv[91] ==> PmagPy46x.png ---
 --- needs --- PmagPy.idv[93] ==> PmagPy47x.png ---
---- needs --- PmagPy.idv[94] ==> PmagPy48x.png ---
---- needs --- PmagPy.idv[96] ==> PmagPy49x.png ---
+--- needs --- PmagPy.idv[95] ==> PmagPy48x.png ---
+--- needs --- PmagPy.idv[97] ==> PmagPy49x.png ---
 --- needs --- PmagPy.idv[98] ==> PmagPy50x.png ---
 --- needs --- PmagPy.idv[100] ==> PmagPy51x.png ---
 --- needs --- PmagPy.idv[102] ==> PmagPy52x.png ---
@@ -358,6 +363,11 @@ Css: .figure img.graphics {margin-left:10%;}
 --- needs --- PmagPy.idv[220] ==> PmagPy111x.png ---
 --- needs --- PmagPy.idv[222] ==> PmagPy112x.png ---
 --- needs --- PmagPy.idv[224] ==> PmagPy113x.png ---
+--- needs --- PmagPy.idv[226] ==> PmagPy114x.png ---
+--- needs --- PmagPy.idv[228] ==> PmagPy115x.png ---
+--- needs --- PmagPy.idv[230] ==> PmagPy116x.png ---
+--- needs --- PmagPy.idv[232] ==> PmagPy117x.png ---
+--- needs --- PmagPy.idv[234] ==> PmagPy118x.png ---
 --- characters ---
 Font("cmr","10","10","109")
 Font("cmbx","10","10","109")

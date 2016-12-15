@@ -33,10 +33,10 @@
  \setcounter{tocdepth}{3}
 \tableofcontents
 
- % comment out the line below for the pdf version and comment out all lines that have the command %\customlink
+ % comment out the line below for the pdf version and comment out all lines that have the command \customlink
 \input{customlinks} % comment
 
-{\hskip 1in \includegraphics[width=10cm]{EPSfiles/logo.eps}
+{\hskip 1in \includegraphics[width=10cm]{EPSFiles/logo.eps}
 
  \title{PmagPy Cookbook}
 
@@ -70,32 +70,41 @@ doi:10.1002/2016GC006307.}
   \url{http://magician.ucsd.edu/:x}
  }
 
- \customlink{quick_start}
+\customlink{quick_start}
 
 
 \chapter{Installing {\bf PmagPy}}
 
 %To skip all the details and just start using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI} to upload data into the \href{#MagICDatabase}{MagIC database}, or to analyze using \href{#thellier_GUI.py}{Thellier GUI} or \href{#DemagGUI}{Demag GUI}, start here.
-You have a few options for downloading and using PmagPy.  If want to use the Pmag and MagIC GUIs, you can download both of them as  \href{#standalone}{standalone programs}. Note: the standalone functionality is only available for Mac users.
+You have a few options for downloading and using PmagPy.  If you only want to use the GUIs, you can download them as  \href{#standalone}{standalone programs}.
   If you want full access to PmagPy functionality, you must first install the recommended version of
    \href{#getting_python}{ Python}.
-   Then  \href{#pip_install}{use the pip utility} to download and install the {PmagPy} function library and the {PmagPy} command line programs.
+   Then  \href{#pip_install}{use the pip utility} to download and install the {PmagPy} function library and the {PmagPy} command line programs or manually install by setting environment variables yourself.
 
 \customlink{standalone}
 \section{Standalone GUI download}
 
-If you do not need the full PmagPy functionality, and you only want to use Pmag GUI, MagIC GUI, Thellier GUI, and Demag GUI, there is now a standalone download for you (available only for Mac users).  You won't need to install Python for this.
-You can download the \href{https://github.com/PmagPy/PmagPy-Standalone-OSX/releases/latest}{standalone applications for OSX here}.
+If you do not need the full PmagPy functionality, and you only want to use Pmag GUI, MagIC GUI, Thellier GUI, and Demag GUI, there is now a standalone download for you.  You won't need to install Python for this.
 
-Follow the download instructions in the provided links, and then you can skip the ``Full install'' section and go straight to using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI}.  The standalone versions of these applications are still in development; please report problems to the PmagPy team: \href{mailto:ltauxe@ucsd.edu}{ltauxe@ucsd.edu}.
+\noindent Follow the download instructions in the provided links, and then you can skip the ``Full install'' section and go straight to using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI}.  The standalone versions of these applications are still in development; please report problems to the PmagPy team: \href{mailto:ltauxe@ucsd.edu}{ltauxe@ucsd.edu}.
 
 \subsection{OSX Standalone download}
 
 To get started, download the zip file and put the resulting folder on your desktop. Inside the PmagPy-Standalone folder you will have one folder each for Pmag GUI and MagIC GUI. Open the appropriate folder and double click the icon (depending on your security settings, you may have to right click the icon and then select ``ok'' the first time you open it).
 
-You'll find the latest stable release at:
+\noindent You will find the latest stable release at: \href{https://github.com/PmagPy/PmagPy-Standalone-OSX/releases/latest}{https://github.com/PmagPy/PmagPy-Standalone-OSX/releases/latest}
 
-\noindent  \href{https://github.com/PmagPy/PmagPy-Standalone-OSX/releases/latest}{https://github.com/PmagPy/PmagPy-Standalone-OSX/releases/latest}
+\subsection{Windows Standalone download}
+
+Get started by downloading the zip file (see links below) and put the resulting folder wherever you wish. You will need to “extract all” files. Inside the PmagPy-Standalone folder you will find icons for installing Pmag GUI and MagIC GUI. Double click the program you wish to use and you will be guided the the install process.
+
+\noindent You will find the latest stable release at: \href{https://github.com/PmagPy/PmagPy-Standalone-Windows/releases/latest}{https://github.com/PmagPy/PmagPy-Standalone-Windows/releases/latest}
+
+\subsection{Linux Standalone download}
+
+This binary has only been tested on a Ubuntu 14.04 (Trusty) distribution and might experience problems on other distributions. You can simply clone the standalone repository or download and unzip. The GUIs should run when you double click the executable, but will take time to start up (anywhere from 5 to 30 seconds) please be patient.
+
+\noindent You will find the latest stable release at: \href{https://github.com/PmagPy/PmagPy-Standalone-Linux}{https://github.com/PmagPy/PmagPy-Standalone-Linux}
 
 
 \customlink{full_install}
@@ -108,7 +117,7 @@ To get the full  use of PmagPy functionality, you will first have to install Pyt
    \item Download and install the \href{https://www.enthought.com/products/canopy/}{Enthought Canopy distribution of Python}. Canopy Express (the free version) contains everything you need (except the mapping utilities). If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license} that gives you access to additional features and bundled packages, including the Basemap package.
    \item Launch Canopy to complete the installation process.  You may need to use control click on the Canopy icon to open it for the first time--try this if you get a message that says ``Canopy can't be opened because it is from an unidentified developer.''  Once you've opened Canopy successfully, select ``yes'' to making Canopy your default Python environment.  In the lower right hand corner of the Canopy launch page, you will find the Version number (currently 1.7.4 or higher). Please include this in any correspondence with the PmagPy team. While you might find use for some of the features within the Canopy environment that opens as an application, PmagPy programs are best run or launched on the \href{#command_line}{command line}.
       \item Optional:  setting up Basemap for use in making maps with Python.
-Once you have installed the full version of Canopy and want to use a mapping programs like the \href{#basemap_magic.py}{basemap\_magic.py}) command line program or a function that plots data on a map projection (e.g. ipmag.plot_pole()), \customlink{HighRes}
+\verb|Once you have installed the full version of Canopy and want to use a mapping programs like the \href{#basemap_magic.py}{basemap\_magic.py}) command line program or a function that plots data on a map projection (e.g. ipmag.plot_pole()), \customlink{HighRes}|
      click on  the `Package Manager' button on the Canopy welcome page, and then on `Available Packages'.  Install both basemap packages (one has high resolution data files in it).
         \item A last note about Canopy: you should update it regularly!  Open the Canopy application and update all the packages at least every few months.
    \end{itemize}
@@ -123,7 +132,7 @@ Once you have installed the full version of Canopy and want to use a mapping pro
  \subsection{Installing PmagPy}
 
  Here we provide instructions for using pip to install PmagPy from the command line.
-    \customlink{pip_install}
+\customlink{pip_install}
        ``Pip'' is a package manager that comes standard with any modern Python distribution (NB: you will have to update it to the most recent version).  Pip allows you to install and uninstall pmagpy, the package with all the low-level functionality of PmagPy and pmagpy-cli which provides the PmagPy command-line-interface and has all the packages you may use to download/upload, visualize, and manipulate data.
 
 
@@ -236,7 +245,7 @@ Where do you want to go from here?
 
 {\bf Pmag GUI} is a Graphical User Interface (GUI) written by Lori Jonestrask and Ron Shaar  that provides a quick path to the main {\bf PmagPy} programs. The work flow is illustrated schematically here:
 
-\includegraphics[width=15cm]{EPSfiles/FigQkMagicFlow.eps}
+\includegraphics[width=15cm]{EPSFiles/FigQkMagicFlow.eps}
 
 \begin{enumerate}
 \item Follow the steps in the \href{#quick_start}{Installing PmagPy} section.
@@ -249,7 +258,7 @@ Where do you want to go from here?
 %
 %Your Directory tree might look like this now:
 %
-%\includegraphics[width=15cm]{EPSfiles/ProjectDirectory.eps}
+%\includegraphics[width=15cm]{EPSFiles/ProjectDirectory.eps}
 
 
  \item \textbf{copy example files:}  In the {\it data\_files } folder you will find a subfolder named {\it Pmag\_GUI}. Copy the contents of the  \href{#Project_Directory}{\it ThisProject} directory  into  your  own \href{#Project_Directory}{Project Directory} folder.
@@ -265,20 +274,20 @@ Where do you want to go from here?
 %rshaar% In the {\it MyFiles} folder there are  files containing AF, Thermal, and Thellier measurement data of samples from location Snake River (lava flow site). All samples are from site sr01. The measurement data are arranged in the generic format.
 An example for a generic file format is shown here:
 
-\includegraphics[width=15cm]{EPSfiles/FigGenericFormat.eps}
+\includegraphics[width=15cm]{EPSFiles/FigGenericFormat.eps}
 
 To learn what all the column headers mean look at the documentation for \href{#generic_magic.py}{generic\_magic.py}.
 
 %\item Locate the {\it MyFiles} folder in  the {\it Datafiles} subdirectory named {\it Pmag GUI} and copy the contents to your own {\it MyFiles} directory.
 %
-%\includegraphics[width=15cm]{EPSfiles/FigMyFiles.eps}
+%\includegraphics[width=15cm]{EPSFiles/FigMyFiles.eps}
 
 %\item Run the program: Open up a terminal window (Mac) or command prompt (Windows) and type pmag_gui.py on the command line. In the Pmag GUI main panel press the Õchange dirÕ button. Select the MagIC directory in ThisProject when prompted.
 
 \item In your  \href{#Project_Directory}{\it ThisProject} directory  there are three files with AF, Thermal, and Thellier measurement data of specimens from site sr01 (a lava flow site) of \cite{tauxe04b}.  There is also a file with sample orientation, location and other metadata typical for a paleomagnetic study.
 \item Press the [Convert magnetometer files to MagIC format] button. If no menu pops up or the window is blank, click on the Python icon  (the little space ship) on your dock. You should see a dialog window will appear with different file formats:
 
-\includegraphics[width=15cm]{EPSfiles/FigChooseFile.eps}
+\includegraphics[width=15cm]{EPSFiles/FigChooseFile.eps}
 
 \item  Click on  `generic format'  and press the  [import file] button.  A new dialog box will appear. For more details click on the [help] button.
 \item  In the dialog box, click on the [Add] button and choose one of the measurements files.
@@ -294,11 +303,11 @@ To learn what all the column headers mean look at the documentation for \href{#g
 
 Your dialog boxes should look like this for the AF and thermal data:
 
-\includegraphics[width=15cm]{EPSfiles/FigConvertGenericA.eps}
+\includegraphics[width=15cm]{EPSFiles/FigConvertGenericA.eps}
 
 and like this for the  paleointensity data.  For paleointensity data, you must also supply the lab field in micro tesla (40) and orientation relative to sample's X direction:  0 90.
 
-\includegraphics[width=15cm]{EPSfiles/FigConvertGenericB.eps}
+\includegraphics[width=15cm]{EPSFiles/FigConvertGenericB.eps}
 
 \item Press OK to create a new MagIC measurement file, which is saved in your \href{#Project_Directory}{\it ThisProject} directory.
 
@@ -307,7 +316,7 @@ and like this for the  paleointensity data.  For paleointensity data, you must a
 
 \item After converting all files to MagIC format, press the [Next Step] button in the `convert magnetometer files' dialog box. All files with the .magic suffix will be added to the list.  [You can edit the list by deleting unwanted files or adding additional MagIC formatted files.]   You should see a list of the three magic files:
 
-\includegraphics[width=15cm]{EPSfiles/FigCombineMagic.eps}
+\includegraphics[width=15cm]{EPSFiles/FigCombineMagic.eps}
 
 \item Click the OK button. The three files will be combined to a single file,  named {\it magic\_measurements.txt} and also stored  in your \href{#Project_Directory}{\it ThisProject} directory.
 \end{itemize}
@@ -324,7 +333,7 @@ and like this for the  paleointensity data.  For paleointensity data, you must a
 \item Choose from the menu bar [file] $\rightarrow$ [Calculate sample orientation].
 \item Fill in the dialog box like this:
 
-\includegraphics[width=15cm]{EPSfiles/FigDemagOrient.eps}
+\includegraphics[width=15cm]{EPSFiles/FigDemagOrient.eps}
 
 \begin{itemize}
 \item Orientation convention :Pomeroy.
@@ -336,7 +345,7 @@ and like this for the  paleointensity data.  For paleointensity data, you must a
 \item In the next dialog window add the additional information:
 \end{itemize}
 
-\includegraphics[width=15cm]{EPSfiles/FigOrientMagicCodes.eps}
+\includegraphics[width=15cm]{EPSFiles/FigOrientMagicCodes.eps}
 
 \section{Filling in the EarthRef data}
 
@@ -345,33 +354,33 @@ Filling in the Earth Ref data is a critical part of building a MagIC Project Dir
 \begin{itemize}
 \item Step 0: Choose the appropriate headers for each of your er\_* tables.  Required headers (or headers already present in your er\_* tables) show up in the top box, optional headers in the bottom.  In our example, the only header you should add is ``age\_sigma'' in the age table.  Once you have added all needed headers, click the OK button to proceed to the next step.
 
- \includegraphics[width=30cm]{EPSfiles/FigErMagicStep0.eps}
+ \includegraphics[width=30cm]{EPSFiles/FigErMagicStep0.eps}
 
  \item The next six steps contain editable grids.  For many columns, you can edit using drop-down menus that provide \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies}.  For others, you must manually enter data into the cell.  A single left click will bring up a drop-down menu; a double-left click will call up the cell editor.  With both types of data entry, it is possible to select a single value for the entire column. Simply click on the column label.  If that column has a drop-down menu, you can then click on any cell in the column, the appropriate menu will pop up, and the value you select will propagate throughout the column.  Edits in that column will continue to be global until you select another column to edit or you de-select the column by clicking on the column label again.  If you select a column that does not have a drop-down menu, a text entry dialog will pop up, and the value you provide will be applied to the column.
 
  \item Step 1: Update the relationship between specimens and samples.  You may not rename specimens, but you may reassign them to a different sample.  It is also possible to add additional samples, using the 'Add new sample' button.  Note that specimen\_type, specimen\_lithology, and specimen\_class columns do not show up.  They will propagate down when you select sample\_type, sample\_lithology, and sample\_class in step 4.
 
- \includegraphics[width=16cm] {EPSfiles/FigErMagicStep1.eps}
+ \includegraphics[width=16cm] {EPSFiles/FigErMagicStep1.eps}
 
 \item Step 2:  Update the relationship between samples and sites.  You may rename samples, or you can reassign them to a different site.  You can also add additional sites using the ``Add a new site`` button.  You will be able to update other columns in the er\_samples file in step 4.
 
- \includegraphics[width=16cm] {EPSfiles/FigErMagicStep2.eps}
+ \includegraphics[width=16cm] {EPSFiles/FigErMagicStep2.eps}
 
 \item Step 3: Update the relationship between sites and locations.  You may rename sites, or you can reassign them to a different location.  You can add additional locations using the ``Add a new location'' button.  You must choose a legal entry from the \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies} for the following headers: ``site\_class'', ``site\_lithology'', ``site\_type''. You may combine more than one controlled vocabulary by making them a colon delimited list.  If you select a value in these categories: class, lithology, type, longitude, or latitude, the values will propagate to the samples table.  In this example,  site\_class=Extrusive:Igneous; site\_lithology=Basaltic Lava; site\_type=Lava Flow
 
-\includegraphics[width=32cm] {EPSfiles/FigErMagicStep3.eps}
+\includegraphics[width=32cm] {EPSFiles/FigErMagicStep3.eps}
 
 \item Step 4: Some data from sites in Step 3 have propagated into the samples table.  You may update and fill in all columns in the samples table here.
 
-\includegraphics[width=32cm] {EPSfiles/FigErMagicStep4.eps}
+\includegraphics[width=32cm] {EPSFiles/FigErMagicStep4.eps}
 
 \item Step 5: Fill in information for locations.  If you have provided site latitudes and longitudes, the columns for beginning and ending latitudes and longitudes should be filled in already. You must choose a legal entry from the \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies} for the  ``location\_type''. In this example: location\_type = outcrop.
 
-\includegraphics[width=32cm] {EPSfiles/FigErMagicStep5.eps}
+\includegraphics[width=32cm] {EPSFiles/FigErMagicStep5.eps}
 
 \item Step 6: Fill in columns with any necessary information.   In this example, age=3.4; age\_sigma=0.03 (not a default header); age\_unit=Ma (from controlled vocabularies), magic\_method\_codes  = GM-ARAR-AP (from \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies}). It means ``40Ar/39Ar age determination: Age plateau.''
 
-\includegraphics[width=32cm] {EPSfiles/FigErMagicStep6.eps}
+\includegraphics[width=32cm] {EPSFiles/FigErMagicStep6.eps}
 
 \item Note that if you re-run this sequence, certain values may be changed or overwritten.  For example, if you set sample\_lithology to be something different from site\_lithology, re-running ErMagic will cause sample\_lithology to revert back to being the same as site\_lithology.
 \item You are now ready to move on to making some interpretations!
@@ -386,18 +395,18 @@ Filling in the Earth Ref data is a critical part of building a MagIC Project Dir
 
 This image shows the main panel of the demag GUI:
 
-\includegraphics[width=30cm]{EPSfiles/demag_gui.eps}
+\includegraphics[width=30cm]{EPSFiles/demag_gui.eps}
 
-Use of the Demag GUI is described in more detail in the \href{#demag_gui.py}{Demag GUI} section below. Here are a few instructions that can be used as a quick start for using Demag GUI.
+Use of the Demag GUI is described in more detail in the \href{#demag_gui.py}{Demag GUI} section below. Here are a few instructions that can be used as a quick start for using Demag GUI. {\bf Note}: If at any point you require help with a particular aspect of Demag GUI clicking on [Help] $\rightarrow$ [Usage and Tips] (hotkey: ctrl-h) then clicking on the item you wish to know more about will provide a pop-up box with information for most all aspects of the GUI and Interpretation Editor, see \hyperref[add-help]{additional help} for details.
 
 To analyze the data in the example, follow these steps for each specimen:
 \begin{itemize}
 \item From the `coordinate system' drop-down menu you can choose the coordinate system in which you wish to view the data (e.g.  `geographic').
-\item Click `add a fit' and choose the temperature/AF bounds for the fit by double clicking on the measurement lines or by choosing from the `bounds' dropdown menu.
-\item Click the `next' button to analyze the next specimen.
-\item To calculate  Fisher mean for the site: choose from the `higher level mean' drop-down menus: show=specimens; mean=Fisher.
-\item All of the fits can be viewed and modified using the Interpretation Editor which can be selected from the Tools menu in the top menubar.
-\item To save all of the specimen interpretations, choose from the menubar [File] $\rightarrow$ [Save MagIC pmag tables]. This saves all the interpretations in MagIC formatted pmag\_* files in your \href{#Project_Directory}{\it ThisProject} directory. Fits that are saved this way will be loaded into demag\_gui the next time it is launched.
+\item Click `add a fit' (hotkey: ctrl-n) and choose the temperature/AF bounds for the fit by double clicking on the measurement lines, by double clicking on the measurement points in the zijderveld plot, or by choosing from the `bounds' dropdown menu.
+\item Click the `next' button to analyze the next specimen (hotkey: ctrl-right).
+\item To calculate  Fisher mean for the site: choose from the `mean options' drop-down menus: component=All; mean=Fisher.
+\item All of the fits can be viewed and modified using the Interpretation Editor which can be selected from the Tools menu in the top menubar. (hotkey: ctrl-e)
+\item To save all of the specimen interpretations, choose from the menubar [File] $\rightarrow$ [Save MagIC pmag tables]. This saves all the interpretations in MagIC formatted pmag\_* files in your \href{#Project_Directory}{\it ThisProject} directory. Fits that are saved this way will be loaded into demag\_gui the next time it is launched. To save temporary analysis data use [File] $\rightarrow$ [Save interpretations to a redo file]. This saves all interpretation data to a redo file which will not load immediately when the GUI starts, but preserves ascetic aspects of interpretations such as color as well as the specimen you were on when you saved to keep your place in analysis and allows rebooting of session without full export of MagIC tables.
 \item Click through the dialog boxes and fill out choices for the MagIC results table.
 \item Close the Demag GUI.
 \end{itemize}
@@ -407,7 +416,7 @@ To analyze the data in the example, follow these steps for each specimen:
 \section{Thellier GUI quick start}
 This image shows the main panel of \href{#ThellierGUI}{Thellier GUI}:
 
-\includegraphics[width=30cm]{EPSfiles/FigThellierGui.eps}
+\includegraphics[width=30cm]{EPSFiles/FigThellierGui.eps}
 
 Use of the Thellier GUI is described in more detail in the \href{#thellier_GUI.py}{Thellier GUI} section below and in this PDF document: \href{https://github.com/PmagPy/PmagPy-Cookbook/blob/gh-pages/thellier_GUI_full_manual.pdf}{Thellier GUI manual}. Here are a few instructions that can be used as a quick start for using Thellier GUI.
 
@@ -453,7 +462,7 @@ Data can be downloaded from the {\bf MagIC} database and examined with {\bf Pmag
 \href{#pmag_gui.py}{Pmag GUI}  supports two different ways of getting orientation and other sampling related information into a MagIC usable format.  The first way is through \href{#orient}{step 2 on the GUI front panel} and filling in the data from within the GUI.  That way will work for many applications, but it may be desirable to fill the spreadsheet in separately from the GUI by using  a tab delimited file (orient.txt format).   By clicking on  \href{#orient}{step 2 on the GUI front panel}  you create a file named {\it demag\_orient.txt}  which has all of your sample names in it.   Each {\it orient.txt} file should  have all the information for a single location {\it sensu MagIC}.
 
 
-  \includegraphics[width=15cm]{EPSfiles/orient.eps}
+  \includegraphics[width=15cm]{EPSFiles/orient.eps}
 
  The next row has the names of the columns.  The required columns are:  sample\_name, mag\_azimuth, field\_dip, date, lat, long, sample\_lithology, sample\_type, sample\_class) but there are a number of other possible columns (e.g., Optional Fields in orient.txt formatted files are: [date, shadow\_angle, hhmm], date, stratigraphic\_height, [bedding\_dip\_direction, bedding\_dip], [image\_name, image\_look, image\_photographer], participants, method\_codes, site\_name, and site\_description, GPS\_Az]).  Column names in brackets must be supplied together and the data for stratigraphic\_height are in meters.  Also note that if these are unoriented samples, just set mag\_azimuth and field\_dip to 0.
 
@@ -469,7 +478,7 @@ Data can be downloaded from the {\bf MagIC} database and examined with {\bf Pmag
 
  For Sun Compass measurements, supply the shadow\_angle, date and time. The date must be in mm/dd/yy format. If you enter the time in local time, be sure you know the offset to Universal Time as you will have to supply that when you import the file. Also, only put data from one time zone in a single file. The shadow angle should follow the convention shown in this figure (from Tauxe et al., 2010): \nocite{tauxe10}
 
-  \includegraphics[width=15cm]{EPSfiles/suncomp.eps}
+  \includegraphics[width=15cm]{EPSFiles/suncomp.eps}
 
   \customlink{orientation_schemes}
 
@@ -487,28 +496,28 @@ Samples are oriented in the field with a ``field arrow`` and measured in the lab
 {\parindent 0pt
 [1] Standard Pomeroy convention of azimuth and hade (degrees from vertical down) of the drill direction (field arrow). sample\_azimuth = mag\_azimuth; sample\_dip =-field\_dip.
 
-  \includegraphics[width=15cm]{EPSfiles/orcon_1.eps}
+  \includegraphics[width=15cm]{EPSFiles/orcon_1.eps}
 
   2] Field arrow is the strike of the plane orthogonal to the drill direction, Field dip is the hade of the drill direction. Lab arrow azimuth = mag\_azimuth-90$^{\circ}$; Lab arrow dip = -field\_dip
 
-    \includegraphics[width=15cm]{EPSfiles/orcon_2.eps}
+    \includegraphics[width=15cm]{EPSFiles/orcon_2.eps}
 
   [3] Lab arrow is the same as the drill direction; hade was measured in the field. Lab arrow azimuth = mag\_azimuth; Lab arrow dip = 90$^{\circ}$-field\_dip.
 
-      \includegraphics[width=15cm]{EPSfiles/orcon_3.eps}
+      \includegraphics[width=15cm]{EPSFiles/orcon_3.eps}
 
   [4] Lab arrow orientation same as mag\_azimuth and field\_dip.
 
-        \includegraphics[width=15cm]{EPSfiles/orcon_4.eps}
+        \includegraphics[width=15cm]{EPSFiles/orcon_4.eps}
 
         [5]  Lab arrow azimuth is  mag\_azimuth and lab arrow dip is the  field\_dip-90$^{\circ}$
 
-               \includegraphics[width=15cm]{EPSfiles/orcon_5.eps}
+               \includegraphics[width=15cm]{EPSFiles/orcon_5.eps}
 
 
  [6] Lab arrow azimuth is mag\_azimuth-90$^{\circ}$, Lab arrow dip is 90$^{\circ}$-field\_dip, i.e., the field arrow was strike and dip of orthogonal face:
 
-                \includegraphics[width=15cm]{EPSfiles/orcon_6.eps}
+                \includegraphics[width=15cm]{EPSFiles/orcon_6.eps}
                 }
 
 {\bf Structural correction conventions:}
@@ -537,13 +546,13 @@ When you are finished with editing the {\it orient.txt} file,  return to  \href{
 
 
 %
-%\customlink{AZDIP}
+\customlink{AZDIP}
 %
 %\subsubsection{AZDIP formatted files}
 %
 %This is a very simple file format with the sample name Azimuth Plunge Strike Dip where the Azimuth and Plunge are of the drill direction (Specimen's Z direction) or orientation convention \#3 above to convert to the MagIC standard. To convert strike to bedding dip direction, we would just add 90$^{\circ}$. Here is an example AzDip file:
 %
-%\includegraphics[width=15cm]{EPSfiles/azdip.eps}
+%\includegraphics[width=15cm]{EPSFiles/azdip.eps}
 
 \customlink{LIMS}
 
@@ -554,13 +563,13 @@ There are two types of files that help in plotting of IODP paleomagnetic data se
 Visiting the IODP science query website at \url{http://web.iodp.tamu.edu/WTR/html/sci-data.html} allows you to
 select 'SRM - Remanence of magnetization' under the Analysis scroll down menu.  By picking the expedition, site, hole, etc. you can download a  .csv format (comma separated values) for the expedition data.  (Be aware that this is the rawest form of the data, including disturbed intervals, bad measurements, core ends, etc. and may not be exactly what ended up getting published!).   First click on the ``Show Report`` button, then, ``Expand Table'', then ``Get File'':
 
-\includegraphics[width=15cm]{EPSfiles/WebTabular_srm.eps}
+\includegraphics[width=15cm]{EPSFiles/WebTabular_srm.eps}
 
 This can take a very long time, so get yourself a cup of tea.
 
 You can also (while you're at it) click on the 'Summaries' tab and download the coring summaries:
 
-\includegraphics[width=15cm]{EPSfiles/WebTabular_core.eps}
+\includegraphics[width=15cm]{EPSFiles/WebTabular_core.eps}
 
 Place both of the downloaded files in your {\it MyFiles} directory.
 
@@ -632,61 +641,61 @@ Start up MagIC GUI.  You'll do this by clicking on the icon (if you downloaded t
 
 When you first start {\bf magic\_gui.py}, you will change directories into a  `Project Directory'. For each study, create a directory with a name that relates to that study. Here we will call it {\it MyProject}.  This is where you will collect  and process all the rock and paleomagnetic data for a given study, usually a publication.   The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path. Under certain Windows versions, this means you should not use your home directory, but create a directory called for example: D:$\backslash$MyPmagProjects and put {\it MyProject} there.
 
-  \includegraphics[width=25cm]{EPSfiles/MM_main_frame.eps}
+  \includegraphics[width=25cm]{EPSFiles/MM_main_frame.eps}
 
 \section{MagIC GUI example dataset}
 Now we'll walk through a simple data input process, with fake data.
   \begin{itemize}
   \item Start by clicking on `1. add location data'.  Enter location data as seen below. Notice use of the context menu: in most instances, these will provide controlled vocabularies.
-    \includegraphics[width=40cm]{EPSfiles/MM_location_grid_with_menu.eps}
+    \includegraphics[width=40cm]{EPSFiles/MM_location_grid_with_menu.eps}
   \item You'll notice that some information is not filled in.  First, if you have no outside citations, you can leave `er\_citation\_names' blank and it will be automatically filled in with `This study' after you save this data.  Second, if you will be providing latitude/longitude for sites, then you don't need to provide it at the location level.  The program will extract start and end latitude and longitude from your site data and apply it to each location.
   \item If you want to provide more than the default required information, you may want to add more columns to your grid.  In our case, we'll add in `Country'.  To do this, just click the button `Add additional columns'.  Choose whatever headers you want to add and select `Ok'.
 
-    \includegraphics[width=15cm]{EPSfiles/MM_add_location_headers.eps}
+    \includegraphics[width=15cm]{EPSFiles/MM_add_location_headers.eps}
 
   \item Now you'll have a new column with a new controlled vocabulary.  Find and select `U.S.A.'.  When you're done entering location data, click `Save and close grid'.
 
   \item Next, we'll add in sites, so start by opening the site grid.  We will have two sites in this dataset, so click the `Add row(s)' button once.  Then, fill in the grid.  For some of the values, both sites will have the same value.  To provide this data more efficiently, click on the column label to edit all values in that column.  If that column has a menu, you can then click anywhere in that column and make a selection for every cell in the column. Once you're done editing the column, click the header again to exit the multiple-cell-edit mode.
   \item For controlled vocabulary columns, like `site\_type', it is possible that you might not be able to find an appropriate value, or you might not know the appropriate value.  In that case, most controlled vocabularies provide a `Not Specified' option, which we will use here.
 
-    \includegraphics[width=40cm]{EPSfiles/MM_site_grid_with_edit_all.eps}
+    \includegraphics[width=40cm]{EPSFiles/MM_site_grid_with_edit_all.eps}
 
   \item Once you're done adding sites, save and close the site grid, then open the sample grid.
     Enter data as you see below:
 
-    \includegraphics[width=40cm]{EPSfiles/MM_sample_grid.eps}
+    \includegraphics[width=40cm]{EPSFiles/MM_sample_grid.eps}
 
     All other required data will fill in automatically.  If you don't provide latitude and longitude data for a sample, it will propagate down from the site after you save and close the grid.
 
   \item For samples, we will add an additional statistic.  Click 'Add additional columns' and select `sample\_int\_sigma' from the 'Headers for interpretation data' column.  Select 'ok' and have a look at your new grid.  You'll notice that the column you selected has been added, as well as two additional columns: `magic\_instrument\_codes' and `magic\_method\_codes++'.  These two columns are required if you are including any interpretation data at the sample level.  Fill in the added columns.  You'll notice that `magic\_method\_codes++' has a drop-down menu.  If you aren't familiar with the MagIC codes system, click `Show method codes' which provides brief explanations for each possible code.
 
-    \includegraphics[width=50cm]{EPSfiles/MM_sample_grid_added_cols.eps}
+    \includegraphics[width=50cm]{EPSFiles/MM_sample_grid_added_cols.eps}
 
   \item Save and close the sample grid, then re-open it to see how the data have propagated (re-opening the grid isn't necessary for the program, this is just for you to see what MagIC GUI does automatically).
 
-    \includegraphics[width=50cm]{EPSfiles/MM_sample_grid_propagated_full.eps}
+    \includegraphics[width=50cm]{EPSFiles/MM_sample_grid_propagated_full.eps}
 
   \item In this example, we won't add data at the specimen level, so we will be skipping step 4.  Adding specimens works just the same as adding samples.
 
   \item Now open the age grid.  You can assign ages at any level, at multiple levels, or at no level.  For this study, we will add ages at the sample level.  Choose sample as the age level.  Next, you'll need to add in the `age' column.  Fill in the grid as below:
 
-    \includegraphics[width=25cm]{EPSfiles/MM_age_grid.eps}
+    \includegraphics[width=25cm]{EPSFiles/MM_age_grid.eps}
 
   \item You'll notice that you can't add or remove rows in this grid.  If you want to add an additional sample, you would need to go back to the sample grid to do so.
 
   \item The last data step is to put in result information.  You'll need to open the result grid and, for this example, add just one statistic: `vadm'.  Then, fill out the grid:
 
-    \includegraphics[width=45cm]{EPSfiles/MM_result_grid.eps}
+    \includegraphics[width=45cm]{EPSFiles/MM_result_grid.eps}
 
   \item For each result, you will add one or more items that the result pertains to.  In this example, one result is a site V[A]DM, and the other is an averaged V[A]DM from both sites.  For now, leave magic\_method\_codes blank for the Averaged V[A]DM result: in a minute we'll see how MagIC GUI catches this error.  Save and close the result grid.
 
   \item Next, you will create a MagIC format upload file.  Click the final button on the main frame, `prepare upload txt file'.  Depending on the size of your contribution, this can take a minute; with our small example, it should be fairly quick.  After hitting upload, you will see an error message, and the main frame will direct you to the problem.  Validations will check for missing required fields, invalid data, and missing ancestors (for instance, a specimen with no sample).
 
-    \includegraphics[width=25cm]{EPSfiles/MM_validation_mainframe.eps}
+    \includegraphics[width=25cm]{EPSFiles/MM_validation_mainframe.eps}
 
     Open the result grid to fix the error.  Click `Show help' for more information about validations.  In this case, it is a simple fix: add method code `LP-PI' to the average V[A]DM result.
 
-    \includegraphics[width=45cm]{EPSfiles/MM_filled_in_result_validation.eps}
+    \includegraphics[width=45cm]{EPSFiles/MM_filled_in_result_validation.eps}
 
   \item Now that you've fixed your error, try `prepare upload txt file' again.  This time there should be no problems, and you are ready to \href{#magic_upload}{upload your data}!
 
@@ -697,7 +706,7 @@ Now we'll walk through a simple data input process, with fake data.
 
 %
 %
-%\customlink{MagIC.py}
+\customlink{MagIC.py}
 %
 %\chapter{MagIC.py}
 %\label{chap:MagIC} \href{#MagICDatabase}{[MagIC}]
@@ -721,11 +730,11 @@ For an introduction to programming in Python, see the \href{#Python}{Python Prog
 \section{Finding your command line}
 If you are not using a Unix-like computer (*NIX), you may never have encountered a command line. Using any of the command line programs requires accessing the command line.  If you are using the MacOS operating system, look for the Terminal application in the Utilities folder within the Applications folder. When the Terminal application is launched, you will get a terminal window. The Unix (and MacOS) Bash shell has a \$ sign as a prompt.  Other shells have other command line prompts, such as the antiquated `C-shell' used by Lisa Tauxe (don't ask) which has a \% prompt which is used in the examples here.
 
-  \includegraphics[width=15cm]{EPSfiles/terminal.eps}
+  \includegraphics[width=15cm]{EPSFiles/terminal.eps}
 
 Under the Windows operating system, you can find your command line by searching for the ``cmd'' application. You'll use this if you are using the \href{#full_pip}{full pip installation of PmagPy}. If you are doing the \href{#full_install}{standard PmagPy install}, you will create a shortcut to the PmagPy command window on your desktop.  Double clicking on that will give you a window in which you can type {\bf PmagPy} commands.  You will use the PmagPy prompt instead of the Windows command line from there on.
 
-  \includegraphics[width=15cm]{EPSfiles/cmd.eps}
+  \includegraphics[width=15cm]{EPSFiles/cmd.eps}
 
   Note that the location of this program varies on different computers, so you may have to hunt around a little to find yours. Also, the actual  ``prompt'' will vary for different machines.
 
@@ -741,7 +750,7 @@ In the world of terminal windows, the directories have names and are arranged in
 the top directory being the ``root'' directory, known as  ``/'' (or C:'backslash' in Windows) and the file system looks something like this:
 
 
-  \includegraphics[width=15cm]{EPSfiles/filesys.eps}
+  \includegraphics[width=15cm]{EPSFiles/filesys.eps}
 
  Within the root directory, there are subdirectories
 (e.g. {\bf Applications} and {\bf Users} in bold face).  In any directory, there can also be ``files''
@@ -810,9 +819,9 @@ hate it and in the beginning, and if you are used to programs like Word, you wil
 \chapter{The {\bf PmagPy} software package}
 \label{chap:PmagPy}
 
-The {\bf PmagPy} software package is a comprehensive set of programs for paleomagnetists and rock magnetists.  For installation,  follow the instructions in the \href{#quick_start}{Installing PmagPy} Chapter in this cookbook.
+The {\bf PmagPy} software package is a comprehensive set of programs for paleomagnetists and rock magnetists.  For installation,  follow the instructions in the \href{#quick_start}{Installing PmagPy} Chapter in this cookbook. \\
 
-When you type something on your \href{#command_line}{command line}, your operating system looks for programs of the same name in special places.  These are special ``paths'' so the directory with your Python scripts has to ``be in your path''.  To inform the operating system of the new directory, you need to ``set your path''.    It should have been set when you installed {\bf PmagPy}.
+\noindent When you type something on your \href{#command_line}{command line}, your operating system looks for programs of the same name in special places.  These are special ``paths'' so the directory with your Python scripts has to ``be in your path''.  To inform the operating system of the new directory, you need to ``set your path''.    It should have been set when you installed {\bf PmagPy}.
 
 \customlink{demag_gui.py}
 
@@ -820,100 +829,147 @@ When you type something on your \href{#command_line}{command line}, your operati
 \section{Graphical data analysis programs}
 \subsection{demag\_gui.py}
 
-The  Demag GUI {\bf demag\_gui.py}  program enables the display and analysis of paleomagnetic demagnetization data. The software will display specimen level data within the chosen directory as a Zijderveld plot, equal area plot and intensity plot. Interpretations can be made to the data as least-squares line or plane fits. Mean directions can be calculated and displayed for these interpretations. These interpretations can be exported as MagIC pmag files from the program.
+The  Demag GUI ({\bf demag\_gui.py}) program enables the display and analysis of paleomagnetic demagnetization data. The software will display specimen level data within the chosen directory as a Zijderveld plot, equal area plot and intensity plot. Interpretations can be made to the data as least-squares line or plane fits. Mean directions can be calculated and displayed for these interpretations. These interpretations can be exported as MagIC pmag files from the program.
 
 \subsubsection{Launching}\label{launching}
 
 The best way to launch the Demag GUI application is through  \href{#pmag_gui.py}{Pmag GUI}. If PmagPy has been added to your PATH you can type pmag\_gui.py at the command line to launch it or you can navigate to the directory containing it and type \texttt{python  ./pmag\_gui.py}. Within \href{#pmag_gui.py}{Pmag GUI}, data can be converted from the format of a particular lab into MagIC format so that it can be displayed and analyzed within Demag GUI. The program can be started by clicking on the Demag GUI button in \href{#pmag_gui.py}{Pmag GUI}.
 
-\includegraphics[width=10 cm]{EPSfiles/demag_gui_QuickMagicLauncher.eps}
+\includegraphics[width=10 cm]{EPSFiles/demag_gui_QuickMagicLauncher.eps}
 
-{\bf Demag GUI} can also be launched through the command line by navigating to the directory containing {\bf demag\_gui.py}  and running it with:
+\noindent {\bf Demag GUI} can also be launched through the command line by navigating to the directory containing {\bf demag\_gui.py}  and running it with:\\
 
 \begin{verbatim}
 % python ./demag_gui.py
 \end{verbatim}
 
-Or if {\bf PmagPy} was properly installed and has been added to your PATH, you can simply type
+\noindent Or if {\bf PmagPy} was properly installed and has been added to your PATH, you can simply type
 demag\_gui.py at the command line. \textbf{Note:} on OSX it is
-recommended to launch through \href{#pmag_gui.py}{Pmag GUI} as on wxpython 2.9 the drop-down boxes behave better when {\bf Demag GUI} is launched this way.
+recommended to launch through \href{#pmag_gui.py}{Pmag GUI} as on wxpython 2.9 the drop-down boxes behave better when {\bf Demag GUI} is launched this way.\\
 
 \begin{verbatim}
 % pythonw ./pmag_gui.py
 \end{verbatim}
 
-\subsubsection{Adding Interpretations:}\label{adding-interpretations}
+\subsubsection{Adding and Editing Specimen Interpretations:}\label{adding-interpretations}
 
-A least-squares fit to the measurement data can be added by clicking the `add fit' button. Additionally, you can select the fit you would like to edit or view by using the drop-down menu under the add fit button. Once you have selected a fit, the shape of the end points of the selected fit will turn to diamond shapes to distinguish them from the other data points.\\
-\includegraphics[width=10 cm]{EPSfiles/demag_gui_Fit.eps}
+A new fit can be added by clicking the `add fit' button or if no fit has yet been created for the current specimen by double clicking on two measurements in the list of measurements to the left or by double clicking on the data points on the zijderveld plot. It is also possible to add interpretations in mass using the \hyperref[interpretation-editor]{interpretation editor} tool described bellow. Additionally, you can select the fit you would like to edit or view by using the drop-down menu under the add fit button. Once you have selected a fit, the shape of the end points of the selected fit will turn to diamond shapes on all plots to distinguish them from the other data points.\\
 
-Once the desired fit is selected, its bounds can be edited using the drop-down boxes under the bounds header.
+\includegraphics[width=10 cm]{EPSFiles/demag_gui_Fit.eps}
 
-\includegraphics[width=3 cm]{EPSfiles/demag_gui_BoundsBox.eps}
+\noindent Once the desired fit is selected, its bounds can be edited using the drop-down boxes under the bounds header.\\
 
-Another way to select bounds is to double-click the list of measurement steps on the left to pick out the bounds for the interpretation. The included steps in the currently selected interpretation are shown in highlighted in blue on the measurement list and the measurements marked ``bad'' are shown in highlighted in red. In the case of duplicate measurements, the first \emph{good} measurement with the same treatment is used. All points between the selected bounds that are flagged good (i.e. not flagged bad and marked in red), including duplicate measurements, will be included in the interpreted fit..\\
-\includegraphics[width=5 cm]{EPSfiles/demag_gui_DataBox.eps}
+\includegraphics[width=3 cm]{EPSFiles/demag_gui_BoundsBox.eps}
 
-When first created, the fit will be given a generic name such as
-\emph{Fit 1}. The name of the fit can be changed from the default by typing into the drop-down box containing fit name and then pressing enter. The default fit type is a least-squares line. You can choose different fits, such as a line anchored to the origin or a plane, by using the drop-down menu under the label `interpretation type'. Plane fits can be plotted as either poles, full planes or partial planes. This display option can be changed in the second drop-down menu under specimen mean type.
+\noindent Another way to select bounds is to double-click the list of measurement steps in the list on the left. The included steps in the currently selected interpretation are shown in highlighted in blue on the measurement list and the measurements marked ``bad'' are shown in highlighted in red. In the case of duplicate measurements, the first \emph{good} measurement with the same treatment is used as a bound. All points between the selected bounds that are flagged good (i.e. not flagged bad and marked in red), including duplicate measurements, will be included in the interpreted fit.\\
 
-\includegraphics[width=10 cm]{EPSfiles/demag_gui_SpecimenMeanType.eps}
+\includegraphics[width=5 cm]{EPSFiles/demag_gui_DataBox.eps}
 
-The choice between coordinate systems (i.e.~specimen, geographic or tilt-corrected) is available on the left above the list of steps. The data list and the plots will update to reflect the chosen coordinate system.
+\noindent Finally, you can select the bounds of an interpretation directly off the Zijderveld plot by hovering your mouse over a measurement (should change to a hand shape) and double clicking.\\
 
-\includegraphics[width=5 cm]{EPSfiles/demag_gui_ProjectionChoice.eps}
+\noindent When first created, the fit will be given a generic name such as
+\emph{Fit 1}. The name of the fit can be changed from the default by typing into the drop-down box containing fit name and then pressing enter. The default fit type is a least-squares line. You can choose different fits, such as a line anchored to the origin or a plane, by using the drop-down menu under the label `interpretation type'. Plane fits can be plotted as either poles, full planes, partial planes, best fit vectors, or best fit vectors and full plane ({\bf Note:} plane poles will be displayed as squares and best fit vectors will display as sideways triangles on \hyperref[higher-level-plots-and-interpretation]{high level mean plot}). This display option can be changed in the second drop-down menu under interpretation type.\\
 
-The properties of the currently selected fit to the data can be seen in the upper center of the GUI in a box labeled `interpretation directions and statistics'.
+\includegraphics[width=10 cm]{EPSFiles/demag_gui_SpecimenMeanType.eps}
 
-\includegraphics[width=15 cm]{EPSfiles/demag_gui_FitData.eps}
+\noindent The properties of the currently selected fit to the data can be seen in the upper center of the GUI in a box labeled `Interpretation Directions and Statistics'.\\
+
+\includegraphics[width=10 cm]{EPSFiles/demag_gui_FitData.eps}
+
+\subsubsection{Deleting Specimen
+Interpretations}\label{deleting-specimen-interpretations}
+
+\noindent If you would like to delete a single interpretation, select the one you wish to delete from the interpretation drop-down menu and click delete. If you wish to clear all interpretations you may go into the \hyperref[interpretation-editor]{interpretation editor} located under the tools menu, select the fits you wish to delete and click the ``delete selected'' button.\\
+
+\subsubsection{Changing Specimen, Coordinate System, and Zijderveld Direction:}\label{change-specimen-coord-zijd}
+
+You can switch current specimen by clicking the next or previous button under the specimen box in the side bar (hotkey: ctrl-right and ctrl-left respectively). You can also select specimen from the drop-down menu or type the name of the specimen directly into the specimen box and hit enter to go directly to that specimen. Finally, you can double click on any of the points on the higher level means plot to switch directly to that specimen and interpretation.
+
+\noindent The choice between coordinate systems (i.e.~specimen, geographic or tilt-corrected) is available on the left above the list of steps. The data list and the plots will update to reflect the chosen coordinate system.
+
+\noindent You can alter the X axis of the Zijderveld plot using the Zijderveld plot interactions box to set X=North, East, or NRM dec.
+
+\includegraphics[width=5 cm]{EPSFiles/demag_gui_ProjectionChoice.eps}
 
 \subsubsection{Flagging Bad Measurement
 Data}\label{flagging-bad-measurement-data}
 
-Due to flux jumps or other such errors, individual measurements should sometimes be excluded from interpretation. Such a measurements can be flagged as ``bad'' by right-clicking them within the measurement list and the measurement will then be highlighted in red. The measurement\_flag in the magic\_measurements file will be change from ``g'' to ``b'' when a measurement is marked as ``bad'' and the step will not be included in fits that are made to the data. Any measurement marked as `bad' will be colored red in the step list and will be shown as an empty rather than filled circle on the Zijderveld, equal area and M/M\_0 plots. To change a `bad' measurement back to being `good', one can right click on it again. Upon doing so, the red highlighting will go away, the data will be shown colored in within the plots and any fit that spans that data point will be recalculated to include it.
+Due to flux jumps or other such errors, individual measurements should sometimes be excluded from interpretation. Such measurements can be flagged as ``bad'' by right clicking them within the measurement list and the measurement will then be highlighted in red. Additionally, you can double right click on the point you want to make bad in the Zijderveld plot to toggle it bad. The measurement\_flag in the magic\_measurements file will be change from ``g'' to ``b'' when a measurement is marked as bad the step will not be included in fits that are made to the data. Any measurement marked as bad will be colored red in the step list and will be shown as an empty rather than filled circle on the Zijderveld, equal area and M/M\_0 plots. To change a bad measurement back to being good, one can right click on it again. Upon doing so, the red highlighting will go away, the data will be shown colored in within the plots and any fit that spans that data point will be recalculated to include it.
 
-Acceptance criteria can be set by using Analysis/``Acceptance
-Criteria''/``Change Acceptance Criteria''. These criteria will be written to a {\it pmag\_criteria.txt}  table.
+\noindent Acceptance criteria can be set by using the menu option [Analysis] $\rightarrow$ [Acceptance
+Criteria] $\rightarrow$ [Change Acceptance Criteria]. These criteria will be written to a {\it pmag\_criteria.txt}  table. These criteria can then be used to exclude interpretations that fail checks against this criteria during export.
 
 \subsubsection{Plot Interface}\label{plot-interface}
 
-The four plots that take up the majority of the center of the GUI are where data and their interpretations are displayed. The Zijderveld and the two equal area plots are by default set to zoom when you left click and drag your left mouse button you will zoom to the dragged out rectangle(currently equal area plots do not draw this rectangle as you drag your mouse, but still zoom). On the Zijderveld plot, it is possible to switch between zoom and pan functionality by right clicking. Once in pan mode, the mouse will turn into a hand allowing you then to click and move around the plot. On both the Zijderveld and equal area plots if you wish to return to the original plot simply click the middle mouse button to return to home position. \textbf{Note:} in the absence of a middle mouse button pressing both right and left mouse buttons at the same time works on most laptops in the case of Macbooks clicking with two fingers should work, and if using Apple's magic mouse we recommend you download the \href{http://magicprefs.com/}{MagicPrefs} program which will allow you to configure your mouse however you prefer. One the equal area plots you can double click on an interpretation to switch the specimen and current interpretation to the clicked interpretation.
+The four plots that take up the majority of the center of the GUI are where data and their interpretations are displayed. All plots are initially set to zoom mode and this is signified by a cross shaped cursor when you mouse over them. To zoom simply click and drag the rectangle to the desired area. You can switch to pan mode by right clicking on any one of the graphs and then clicking and dragging will pan around the plot. Finally, to return to the original plot zoom level and position simply click the middle mouse button to return home. \textbf{Note:} In the absence of a middle mouse button pressing both right and left mouse buttons at the same time works on most laptops in the case of Macbooks clicking with two fingers should work, and if using Apple's magic mouse we recommend you download the \href{http://magicprefs.com/}{MagicPrefs} program which will allow you to configure your mouse however you prefer.
+
+\noindent On the Zijderveld plot you have the additional option to select the current interpretation's bounds by double clicking on a measurement point. You can also double right click on a measurement point in the zijderveld plot to mark it bad.
+
+\noindent On the equal area plots, both the specimen and high level means, you can double click on any interpretation to switch to that specimen and interpretation immediately.
 
 \subsubsection{Saving Specimen Interpretations}\label{saving-specimen-interpretations}
 
 Once you have picked out your interpretations, you can save the session data in two different ways: (1) as a .redo file which will allow you to have the fits preserved to be view again with Demag GUI or (2) as MagIC {\it pmag\_*} tables to be uploaded to the MagIC database or otherwise processed. In addition, you may save image files of the plots.
 
-\paragraph{The .redo File:}\label{the-.redo-file}
+\paragraph{The .redo File:}\label{the-.redo-file} You can use the menu option [File] $\rightarrow$ [Save current interpretations to a redo file] to create this file type, you can just click the save button next to add fit, or you can use the hotkey ctrl-s. The advantage of the .redo file type being that it is designed to save your place when analysing a large dataset. Loading a redo file will reload all interpretations previously created any special colors assigned to them and take you to the specimen you saved the redo file on allowing you to pick up where you left off. \textbf{Note:} This file type does \textbf{NOT} load previous interpretations on start up you must go to the menu option [File] $\rightarrow$ [Import previous interpretations from a redo file] (hotkey: ctrl-r) to restore your previous session.
 
-You can use Analysis/``Save current interpretations to a redo file'' to create this file type or you can just hit the save button next to add fit. \textbf{Note:} this file type does \textbf{NOT} load previous interpretations on start up you must go to the menu option Analysis/``Import previous interpretations from a redo file'' to restore your previous session.
+\paragraph{The Pmag Tables:}\label{the-pmag-tables} By going to the menu [File] $\rightarrow$ [Save MagIC pmag tables] you can export your interpretations made in Demag GUI to the MagIC pmag tables which can then be used by other MagIC programs or uploaded to the MagIC database. You can export any or all of the three coordinate systems upon selecting this option and you may choose to save {\it pmag\_samples, pmag\_sites}, and {\it pmag\_results}  tables in addition to the {\it pmag\_specimens } table that is output. If you choose to output additional information you will be prompted by a pop up window for additional information. \textbf{Note:} This save format loads on start up of the GUI immediately restoring your interpretations. Selection of this option will overwrite your {\it demag\_gui.redo} file in the working directory.
 
-\paragraph{The Pmag Tables:}\label{the-pmag-tables}
+\paragraph{Images of Plots:}\label{images-of-plots} Select the menu option [File] $\rightarrow$ [Save plot] $\rightarrow$ [Save all plots] to save all plots, or you can save any of the plots individually. If you zoom or pan any of the plots the shifted image will be saved not the originally plotted image although the plot will redraw and reset to the original image in the GUI.
 
-By going to the menu File/``Save MagIC pmag tables'' you can export your interpretations made in Demag GUI to the MagIC pmag tables which can then be used by other MagIC programs or uploaded to the MagIC database. You can export any or all of the three coordinate systems upon selecting this option and you may choose to save {\it pmag\_samples, pmag\_sites}, and {\it pmag\_results}  tables in addition to the {\it pmag\_specimens } table that is output. If you choose to output additional information you will be prompted by a pop up window for additional information. \textbf{Note:} this save format loads on start up of the GUI immediately restoring your session. Selection of this option will overwrite your {\it demag\_gui.redo} file in the working directory.
+\subsubsection{Flag Specimen Interpretations Good or Bad}\label{flag-spec-interps}
 
-\paragraph{Images of Plots:}\label{images-of-plots}
+You can flag the current specimen interpretation (marked by large diamonds on all plots) good or bad by using the menu option [Analysis] $\rightarrow$ [Flag Interpretations]. The list of interpretations in the \hyperref[interpretation-editor]{interpretation editor} tool of Demag GUI can also be used to toggle interpretations good or bad in the same way that measurements can be marked good or bad in the measurement list, by right clicking on the entry you want toggled. This will change the shape of the interpretation to a small diamond on all plots, remove it from use in any higher level means, and mark the entry specimen_flag in the pmag tables b instead of g to signify this.
 
-Select the menu option File/``Save plot''/``Save all plots'' to save all plots. Or, you can save any of the plots individually. If you zoom on any of the plots the zoomed image will be saved not the originally plotted image although the plot will redraw and reset the zoom level.
+\subsubsection{Sample Orientation}\label{sample-orient}
 
-\subsubsection{Deleting Specimen
-Interpretations}\label{deleting-specimen-interpretations}
+You can check sample orientation by using the menu option [Analysis] $\rightarrow$ [Sample Orientation] $\rightarrow$ [Check Sample Orientations] (hotkey: ctrl-o). This function will set your mean options to fisher of all components at the current site level and display the wrong arrow (up triangle), wrong compass (down triangle), and rotated sample for declanation incraments of 5 degrees (dotted circle). This allows you to check if the sample orientation is correct and thus can be used in analysis. If you determine the current sample orientation to be bad you can mark it as such using the menu option [Analysis] $\rightarrow$ [Sample Orientation] $\rightarrow$ [Mark Sample Bad] (hotkey: ctrl-.). This will change the sample_orientation_flag in the er_samples file to b not g and will prevent you from marking the specimen interpretations good in that sample so you do not use the improperly oriented data in your final results. If you later realize this was a mistake you can mark the sample orientation good again using [Analysis] $\rightarrow$ [Sample Orientation] $\rightarrow$ [Mark Sample Good] (hotkey: ctrl-,). Finally, to turn off the check sample orientations data simply select the [Check Sample Orientations] option again and it will be removed. \textbf{Note:} The current sample is specified as the sample of the current specimen.
 
-If you would like to delete a single interpretation, select the one you wish to delete from the interpretation drop-down menu and click delete. If you wish to clear all interpretations you may go into the interpretation editor located under the tools menu, select the fits you wish to delete and click the ``delete selected'' button.\\
+\includegraphics[width=10 cm]{EPSFiles/demag_gui_CheckSampleOrient.eps}
 
-\subsubsection{Higher Level Plots and
-Interpretation}\label{higher-level-plots-and-interpretation}
+\subsubsection{High Level Means Plot and
+Statistics}\label{higher-level-plots-and-interpretation}
 
-The set of drop-down boxes to the right of the interpretation data are there to determine what level you want to analyze in the higher level analysis options include: site, sample, location, and study. The drop-down below this selects which of the available sites, samples, location, or studies to display.
+The set of drop-down boxes to the right of the interpretation data are there to determine what level you want to analyse in the high level means plot and are grouped into the Display Level and Mean Options boxes.
 
-You can then select how to group your data by using the drop-down menu under the show header. You can select what kind of mean to take using the first drop-down under the mean header. Which interpretations to use for the means can be selected under the second drop-down menu.
+\includegraphics[width=8 cm]{EPSFiles/demag_gui_HighLevel.eps}
 
-The mean statistics for the chosen higher level mean are displayed in the lower right of the GUI.
+\noindent The Display Level boxes consist of the upper drop-down menu which allows you to select the level at which interpretations are displayed options being all interpretations in the current: sample, site, location, or study. The lower drop-down menu lets you select what the current sample, site, location, or study is.
 
-\subsubsection{Interpretation Editor}\label{interpretation-editor}
+\noindent The top drop-down menu in the Mean Options box lets you chose what kind of mean you would like to take of the specimen components currently displayed. The lower drop-down menu lets you pick which specimen components to display allowing you to display All components, No components, or any single component.
 
-In order to more easily view and edit specimen interpretation data there is a specimen interpretation editor which can be launched from the tools menu. This panel details the fits made to the data and their parameters from which you can select which interpretation to view by double clicking on it. In the list, the currently selected interpretation is highlighted blue as shown in the image below. You can mark interpretations as bad which removes them from any Fisher means or other high level means by right clicking on their entry in the list. All interpretations marked bad are colored red in the list and marked as an `x' on the plot. The specimen entry associated with this fit will be given a bad (`b') flag within the pmag\_specimens table. Interpretations can be highlighted by clicking on the list and holding the shift or ctrl/command key to select multiple interpretations. Doing so allows you to delete or alter the characteristics of multiple interpretations at once without having to select each one in turn. This mass alteration is allowable using the the Name/Color/Bounds boxes to input the changes and then clicking the ``apply changes to highlighted fits'' button. You can delete highlighted fits using the ``delete highlighted fits'' button. The ``add fit'' button in the interpretation editor adds a fit to the current specimen. In the case of interpreting large data sets, you can reduce the number of items plotted on the equal area at the bottom of the editor and the number of entries in the log by changing the display settings.
+\noindent The mean statistics for the chosen high level mean are displayed in the lower right of the GUI and can be cycled through using the arrow buttons next to the statistics boxes in the case of multiple high level means.
 
-\includegraphics[width=15 cm]{EPSfiles/demag_gui_InterpEditor.eps}
+\noindent It is possible to toggle on and off displaying any one of the means in the high level plot which can be useful in the case of a cluttered graph of all components. This can be done by going to the menu option [Analysis] $\rightarrow$ [Toggle Mean Display] and selecting the name of the component you would like to toggle.
+
+\noindent All interpretations marked bad will appear as small diamonds regardless of type on the high level mean plot. The below gives examples for a number of plane display options of bad interpretations (the symbols off to the side), best fit vectors to the means (sideways triangles), plane poles (squares), and the planes themselves.
+
+\includegraphics[width=30 cm]{EPSFiles/demag_gui_HLMTypes.eps}
+
+\subsubsection{Interpretation Editor}\label{interpretation-editor} %Make this a lot larger
+
+In order to more easily view and edit specimen interpretation data there is a specimen interpretation editor which can be launched using the menu option [Tools] $\rightarrow$ [Interpretation Editor] (hotkey: ctrl-e). \textbf{Note:} If you would like more help than provided here the interpretation editor has in context help same as the main GUI, see \hyperref[add-help]{additional help} for details.
+\paragraph{List of Interpretations:}\label{IE-list} This panel contains a list which details the fits made to the data and their parameters from which you can select which interpretation to view by double clicking it. In the list, the currently selected interpretation is highlighted blue as shown in the image below. You can mark interpretations as bad which removes them from any Fisher means or other high level means by right clicking on their entry in the list. All interpretations marked bad are colored red in the list and marked as a small diamond on the plot. The specimen entry associated with this fit will be given a bad (`b') flag within the pmag\_specimens table. You can search through interpretations by using the search bar above the list. Finally, interpretations can be highlighted by clicking on the list and holding the shift or ctrl/command key to select multiple interpretations. 
+\paragraph{Buttons and Boxes:}\label{IE-buttons} Highlighting entries allows you to delete or alter the characteristics of multiple interpretations at once without having to select each one in turn. This mass alteration is allowable using the the Name/Color/Bounds boxes to input the changes and then clicking the ``apply changes to highlighted fits'' button. You can delete highlighted fits using the ``delete highlighted fits'' button. The ``add fit to highlighted specimens'' button in the interpretation editor adds a fit to all highlighted specimens in the list on the left. You can use the ``add new fit to all specimens`` as a convenient option to add a new interpretation with all the attributes described in the above Name/Color/Bounds boxes to every specimen with measurement data. This is a useful method for quickly analysing a new dataset by checking for components between common unblocking steps like giving every specimen a general magnetite interpretation inferring about where that should be (e.g. bounds=300C to 580C, name=MAG, color=violet).
+\paragraph{Additional High Level Means Options:}\label{IE-HLM-options} The interpretation editor also allows the displaying of site and sample means as the primary points on the high level mean plot by changing the bottom left display options drop-down box. Though it does not yet allow taking fisher means of sample means or site means so the mean type box will be forced to read ''None'' if this option is changed from specimens.
+
+\includegraphics[width=15 cm]{EPSFiles/demag_gui_InterpEditor.eps}
+
+\subsubsection{VGP Viewer}\label{vgp-view}
+
+Another tool offered by Demag GUI is the VGP (Virtual Geomagnetic Pole) Viewer which allows you to view your VGPs before exporting to MagIC tables. This tool can be opened by using the menu option [Tools] $\rightarrow$ [View VGPs] (hotkey: ctrl-shift-v). The VGP viewer requires latitude and longitude data for sites and locations in order to calculate all VGPs from specimen interpretations, if this data is not already contained in the MagIC tables imported when the GUI started then it will be asked for during calculation so have it ready. The VGP viewer allows you to select viewing samples, sites, or location VGPs from the drop-down menu at the top. Plot interactions are the same here as in the main GUI and can be zoomed, panned, and points selected in the same manner. The list on the left shows all the data for the currently displayed VGPs.
+
+\includegraphics[width=15 cm]{EPSFiles/demag_gui_VGPViewer.eps}
+
+\subsubsection{Current Warnings Box}\label{warn-box}
+
+The white box in the far top right of the GUI is there to provide relevant warnings about aspects of the current specimen and interpretation such as missing data or duplicate data and can be useful in debugging and analysis.
+
+\subsubsection{Additional Help}\label{add-help}
+
+Finally, if you need more help working with Demag GUI it offers in context assistance with the menu option [Help] $\rightarrow$ [Usage and Tips] (hotkey: ctrl-h) which will change your cursor and then let you click on whichever aspect of the GUI you want help with. Once you have clicked a yellow pop-up box with information should appear in most cases, not all features have information but most should.
+
+\includegraphics[width=10 cm]{EPSFiles/demag_gui_ContextHelp.eps}
 
 \customlink{thellier_GUI.py}
 
@@ -993,7 +1049,7 @@ The bottom of the main panel include paleointensity statistics. The first line h
 %\begin{itemize}
 %\item{Manual interpretation}
 %Manual interpretation is the conventional approach of selecting temperature bounds for each specimen. Here, as example, we will interpret one sample, su100601,  manually.
-%%\customlink{acceptance_criteria}
+%\customlink{acceptance_criteria}
 %
 %\begin{itemize}
 %\item Set acceptance criteria: From the menu-bar choose  Analysis $\rightarrow$ Acceptance criteria $\rightarrow$ Change acceptance criteria. A criteria dialog box will appear.
@@ -1203,7 +1259,7 @@ and find the data using the search interface.   As a short-cut, you can use the 
 
 Download the text file by clicking on the icon under the red arrow in:
 
-  \includegraphics[width=15cm]{EPSfiles/tauxe12-magic.eps}
+  \includegraphics[width=15cm]{EPSFiles/tauxe12-magic.eps}
 
 Unpack the data using the program \href{#download_magic.py}{download\_magic.py}.  This will unpack the data into the different holes.  Change directories into Location\_2 (which contains the data for Hole U1359A).  Or, you can use the data in the {\bf ani\_depthplot} directory of the example data files.
 
@@ -1214,7 +1270,7 @@ $ ani_depthplot.py
 
 \noindent will create the plot:
 
-\includegraphics[width=15cm]{EPSfiles/ani-depthplot.eps}
+\includegraphics[width=15cm]{EPSFiles/ani-depthplot.eps}
 
 \customlink{aniso_magic.py}
 
@@ -1247,7 +1303,7 @@ compare with [d]irection
 
 %\epsfxsize 14.5cm
 
-  \includegraphics[width=15cm]{EPSfiles/dike.eps}
+  \includegraphics[width=15cm]{EPSFiles/dike.eps}
 
 The specimen eigenvectors are plotted in the left-hand diagram with the usual convention that squares are the $V_1$ directions, triangles are the $V_2$ directions and circles are the $V_3$ directions.  All directions are plotted on the lower hemisphere.     The bootstrapped eigenvectors are shownin the middle diagram.   Cumulative distributions of the bootstrapped eigenvalues are shown to the right with the 95\% confidence bounds plotted as vertical lines.
 It appears that the magma was moving in the northern and slightly up direction along the dike.
@@ -1272,7 +1328,7 @@ compare with [d]irection
 
  which makes these plots:
 
-   \includegraphics[width=15cm]{EPSfiles/sed-aniso.eps}
+   \includegraphics[width=15cm]{EPSFiles/sed-aniso.eps}
 
    The top three plots are as in the dike example before, showing a clear triaxial fabric (all three eigenvalues and associated eigenvectors are distinct from one another.  In the lower three plots we have the distributions of the three components of the chosen axis,  $V_3$, their 95\% confidence bounds (dash lines) and the components of the designated direction (solid line).  This direction is also shown in the equal area projection above as a red pentagon.  The minimum eigenvector is not vertical in this case.
 
@@ -1323,7 +1379,7 @@ $  apwp.py -f apwp_example.dat
 
 Anisotropy of thermal  remanence (ATRM) is similar to anisotropy of anhysteretic remanence (AARM) and the procedure for obtaining the tensor is also similar.  Therefore, the program {\bf atrm\_magic.py} is quite similar to \href{#aarm_magic.py}{aarm\_magic.py}.  However, the SIO lab procedures for the two experiments are somewhat different.  In the ATRM experiment, there is a single, zero field step at the chosen temperature which is used as a baseline.  We use only six positions (as opposed to nine for AARM) because of the additional risk of alteration at each temperature step.  The positions are also different:
 
-\includegraphics[width=15cm]{EPSfiles/atrm_meas.eps}
+\includegraphics[width=15cm]{EPSFiles/atrm_meas.eps}
 
 The file {\it atrm\_magic\_example.dat} in the {\it atrm\_magic} directory is an SIO formatred data file containing ATRM measurement data done in a temperature of 520$^{\circ}$C.   Note the special format of these files - the treatment column (column \#2) has the temperature in centigrade followed by either a ``00'' for the obligatory zero field baseline step or a ``10'' for the first postion, and so on.  These could also be `0` and `1', etc..
 
@@ -1401,7 +1457,7 @@ $  basemap_magic.py -f basemap_example.txt
 
 \noindent which makes this plot:
 
-\includegraphics[width=15cm]{EPSfiles/basemap.eps}
+\includegraphics[width=15cm]{EPSFiles/basemap.eps}
 
   Use the buttons at the bottom of the plot to resize or save the plot in the desired format.
 
@@ -1445,8 +1501,8 @@ S[a]ve plots, [q]uit,  Return for next plot
 \noindent which makes the plot:
 
 %\epsfxsize 10cm
-%\epsffile{EPSfiles/arm-x.eps}
-  \includegraphics[width=15cm]{EPSfiles/arm-x.eps}
+%\epsffile{EPSFiles/arm-x.eps}
+  \includegraphics[width=15cm]{EPSFiles/arm-x.eps}
 
 
 \customlink{bootams.py}
@@ -1599,7 +1655,7 @@ enter s[a]ve to save files,  [return] to quit
 \noindent produced this plot:
 
 
-  \includegraphics[width=15cm]{EPSfiles/chi-magic.eps}
+  \includegraphics[width=15cm]{EPSFiles/chi-magic.eps}
 
 You can see the dependence on temperature, frequency and applied field.  These data support the suggestion that there is a strong superparamagnetic component in these specimens.
 
@@ -1636,7 +1692,7 @@ $  eqarea.py -f common_mean_ex_file2.dat -sav
 \noindent generates two .svg formatted files that look like these:
 
 
-  \includegraphics[width=15cm]{EPSfiles/common-mean-eq.eps}
+  \includegraphics[width=15cm]{EPSFiles/common-mean-eq.eps}
 
 Now let's look at the common mean problem using {\bf common\_mean.py}.
 
@@ -1650,8 +1706,8 @@ S[a]ve plots, <Return> to quit
 \noindent The three plots are:
 
 %\epsfxsize 14.5cm
-{ %\epsffile{EPSfiles/common-mean.eps}
-  \includegraphics[width=15cm]{EPSfiles/common-mean.eps}}
+{ %\epsffile{EPSFiles/common-mean.eps}
+  \includegraphics[width=15cm]{EPSFiles/common-mean.eps}}
 
 These suggest that  the two data sets share a common mean.
 
@@ -1666,8 +1722,8 @@ S[a]ve plots, <Return> to quit
 \end{verbatim}
 
 %\epsfxsize 14.5cm
-{% \epsffile{EPSfiles/common-mean-EX.eps}
-  \includegraphics[width=15cm]{EPSfiles/common-mean-EX.eps}}
+{% \epsffile{EPSFiles/common-mean-EX.eps}
+  \includegraphics[width=15cm]{EPSFiles/common-mean-EX.eps}}
 
 Apparently the data (cumulative distribution functions) are entirely consistent with the expected direction (dashed lines are the cartesian coordinates of that).
 
@@ -1694,8 +1750,8 @@ $ cont_rot.py -con af:sam -prj ortho -eye -20 0 -sym  k- 1 -age 180 \
 These commands generated the following plots (first on left, second on right):
 
 {%\epsfxsize 12cm
-\hskip 1cm %\epsffile{EPSfiles/controt.eps}
-\includegraphics[width=15cm]{EPSfiles/controt.eps}}
+\hskip 1cm %\epsffile{EPSFiles/controt.eps}
+\includegraphics[width=15cm]{EPSFiles/controt.eps}}
 
 \customlink{convert2unix.py}
 \subsection{convert2unix.py}
@@ -1732,7 +1788,7 @@ $ core_depthplot.py -fsa er_samples.txt -LP AF 15 -log -d 50 150 -ts gts04 23 34
 
 \noindent  will produce the plot:
 
-\includegraphics[width=15cm]{EPSfiles/core-depthplot.eps}
+\includegraphics[width=15cm]{EPSFiles/core-depthplot.eps}
 
 
 \customlink{curie.py}
@@ -1753,8 +1809,8 @@ second deriative maximum is at T=552
 \noindent which generates these plots:
 
 %\epsfxsize 14.5cm
-{%\epsffile{EPSfiles/curie-ex.eps}
-  \includegraphics[width=14.5 cm]{EPSfiles/curie-ex.eps}}
+{%\epsffile{EPSFiles/curie-ex.eps}
+  \includegraphics[width=14.5 cm]{EPSFiles/curie-ex.eps}}
 
 
 \customlink{customize_criteria.py}
@@ -1821,8 +1877,8 @@ Note that the default place for the PmagPy programs to look for criteria is in {
 \noindent gives the plots:
 
 %\epsfxsize 14.5cm
-{%\epsffile{EPSfiles/dayplot.eps}
-  \includegraphics[width=15cm]{EPSfiles/dayplot.eps}}
+{%\epsffile{EPSFiles/dayplot.eps}
+  \includegraphics[width=15cm]{EPSFiles/dayplot.eps}}
 
 
 
@@ -1882,7 +1938,7 @@ $ eqarea.py -f di_geo_example.dat
 \end{verbatim}
 which should look like this:
 
-  \includegraphics[width=12 cm]{EPSfiles/di_geo_spc_eq.eps}
+  \includegraphics[width=12 cm]{EPSFiles/di_geo_spc_eq.eps}
 
 
 
@@ -1894,7 +1950,7 @@ di_geo.py -f di_geo_example.dat >di_geo.out;  eqarea.py -f di_geo.out
 
 \noindent which looks like this:
 
-  \includegraphics[width=12 cm]{EPSfiles/di_geo_geo_eq.eps}
+  \includegraphics[width=12 cm]{EPSFiles/di_geo_geo_eq.eps}
 
   \noindent These data are clearly much better grouped.
 
@@ -1919,7 +1975,7 @@ $ eqarea.py -f fishrot.out
 
 \noindent  which generates plots like these:
 
-\includegraphics[width=15cm]{EPSfiles/dirot.eps}
+\includegraphics[width=15cm]{EPSFiles/dirot.eps}
 
 Note that every instance of {\bf fisher.py} will draw a different sample from a Fisher distribution and your exact plot and average values will be different in detail every time you try this (and that's part of the fun of statistical simulation.)
 
@@ -2099,8 +2155,8 @@ mc200 plotting by:  er_site_name
 \noindent which produced these plots:
 
 %\epsfxsize 12cm
-%\epsffile{EPSfiles/dmag.eps}
-\includegraphics[width=15cm]{EPSfiles/dmag.eps}
+%\epsffile{EPSFiles/dmag.eps}
+\includegraphics[width=15cm]{EPSFiles/dmag.eps}
 
 \customlink{download_magic.py}
 
@@ -2142,7 +2198,7 @@ You can change directories into each Location directory (in this case only one) 
 
 
  %
- \customlink{eigs_s.py}
+\customlink{eigs_s.py}
 \subsection{eigs\_s.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{ [Essentials Chapter 13]}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/eigs_s.py}{[eigs\_s docs]}
@@ -2206,8 +2262,8 @@ $ eqarea.py -f fishrot.out
 \noindent
 which produces the plot:
 
- %\epsffile{EPSfiles/eqarea.eps}
-\includegraphics[width=12 cm]{EPSfiles/eqarea.eps}
+ %\epsffile{EPSFiles/eqarea.eps}
+\includegraphics[width=12 cm]{EPSFiles/eqarea.eps}
 
 \customlink{eqarea_ell.py}
 \subsection{eqarea\_ell.py}
@@ -2238,7 +2294,7 @@ $ eqarea_ell.py -f tk03.out -ell B
 
 which produces a plot like this:
 
-\includegraphics[width=12 cm]{EPSfiles/eqarea_ell.eps}
+\includegraphics[width=12 cm]{EPSFiles/eqarea_ell.eps}
 
 Other ellipses are Kent, Fisher and bootstrapped ellipses.  Check the documentation for details.
 
@@ -2294,8 +2350,8 @@ mode  2
 \noindent makes this plot:
 
 %\epsfxsize 7cm
-{%\epsffile{EPSfiles/eqarea-magic.eps}
- \includegraphics[width=12 cm]{EPSfiles/eqarea-magic.eps}}
+{%\epsffile{EPSFiles/eqarea-magic.eps}
+ \includegraphics[width=12 cm]{EPSFiles/eqarea-magic.eps}}
 
 The information printed to the window is the pmag\_result\_name in the data table, the method codes (here the geochronology method, the type of demagnetization code and the types of demagnetization experiments), and each site mean declination  inclination.    The information following ``mode 1'' are the bootstrapped ellipse parameters.
 
@@ -2325,7 +2381,7 @@ sr40 GM-ARAR-AP:LP-DC5:LP-DIR-AF:LP-DIR-T   192.9   -60.7
 
 which produces plots like:
 
- \includegraphics[width=15cm]{EPSfiles/eqarea_magic_BV.eps}
+ \includegraphics[width=15cm]{EPSFiles/eqarea_magic_BV.eps}
 
 
 
@@ -2381,7 +2437,7 @@ S[a]ve plots - <return> to quit:  a
 
 
 
-\includegraphics[width=15cm]{EPSfiles/find_EI.eps}
+\includegraphics[width=15cm]{EPSFiles/find_EI.eps}
 
 In this example, the original expected inclination at paleolatitude of 42 (61$^{\circ}$) is recovered within the 95\% confidence bounds.
 
@@ -2433,7 +2489,7 @@ $ fishqq.py -f fishqq_example.txt
 
 
 
-\includegraphics[width=15cm]{EPSfiles/fishqq-ex.eps}
+\includegraphics[width=15cm]{EPSFiles/fishqq-ex.eps}
 
 \noindent which support a Fisher distribution for these data.
 
@@ -2483,8 +2539,8 @@ S[a]ve all figures, <Return> to quit   a
 \noindent  which gives the plots:
 
  %\epsfxsize 14cm
- {%\epsffile{EPSfiles/foldtest-ex.eps}
-   \includegraphics[width=15cm]{EPSfiles/foldtest-ex.eps}}
+ {%\epsffile{EPSFiles/foldtest-ex.eps}
+   \includegraphics[width=15cm]{EPSFiles/foldtest-ex.eps}}
 
  Apparently these directions were acquired prior to folding because the 95\% confidence bounds on the degree of untilting required for maximizing concentration of the data (maximum in principle eigenvalue) $\tau_1$ of orientation matrix (see the section on  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ap1.html#orientation_tensor}{eigenvalues} in the textbook) includes 100\%.
 %
@@ -2519,8 +2575,8 @@ S[a]ve all figures, <Return> to quit
 \noindent  which gives the plots:
 
  %\epsfxsize 14cm
- {%\epsffile{EPSfiles/foldtest-ex.eps}
-   \includegraphics[width=15cm]{EPSfiles/foldtest_magic.eps}
+ {%\epsffile{EPSFiles/foldtest-ex.eps}
+   \includegraphics[width=15cm]{EPSFiles/foldtest_magic.eps}
 
 
 %
@@ -2629,7 +2685,7 @@ $ plot_cdf.py -f lats
 
 which produces  the fascinating (NOT!) plot:
 
-\includegraphics[width=15cm]{EPSfiles/grab_magic_key.eps}
+\includegraphics[width=15cm]{EPSFiles/grab_magic_key.eps}
 
 
 \customlink{histplot.py}
@@ -2646,7 +2702,7 @@ $ histplot.py -f gauss.out
 
 \noindent  which makes a plot similar to:
 
-  \includegraphics[width=15cm]{EPSfiles/hist.eps}
+  \includegraphics[width=15cm]{EPSFiles/hist.eps}
 
 \customlink{hysteresis_magic.py}
 \subsection{hysteresis\_magic.py}
@@ -2670,7 +2726,7 @@ S[a]ve plots, [s]pecimen name, [q]uit, <return> to continue
 \noindent which makes the plots:
 
 
-  \includegraphics[width=15cm]{EPSfiles/hysteresis-magic.eps}
+  \includegraphics[width=15cm]{EPSFiles/hysteresis-magic.eps}
 
 
 
@@ -2713,7 +2769,7 @@ $ igrf.py -ages -3000 1950 50 -loc 33 -117 -mod pfm9k -plt
 and get this plot:
 
 
-  \includegraphics[width=15cm]{EPSfiles/igrf.eps}
+  \includegraphics[width=15cm]{EPSFiles/igrf.eps}
 
 \customlink{install_etopo.py}
 
@@ -2774,7 +2830,7 @@ U1359A
 
 which produces the plot:
 
-\includegraphics[width=15cm]{EPSfiles/irmaq_magic.eps}
+\includegraphics[width=15cm]{EPSFiles/irmaq_magic.eps}
 
 %
 \customlink{k15_magic.py}
@@ -2809,7 +2865,7 @@ tr245i1    68.00   -26.0 204 25
   the next three lines are sets of five measurements in the 15 positions
  recommended by Jelinek (1977):  \nocite{jelinek77}
 
-  \includegraphics[width=15cm]{EPSfiles/meas15.eps}
+  \includegraphics[width=15cm]{EPSFiles/meas15.eps}
 
 
   The 15 measurements for each specimen, along with orientation information and the specimen name were saved in the file {\it k15\_example.dat}.    Convert these to the MagIC format using the program {\bf k15\_magic.py}:
@@ -2883,6 +2939,7 @@ This command will create the files needed by the MagIC database and the data can
 
 
 
+%\\
 \customlink{lnp_magic.py}
 \subsection{lnp\_magic.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{ [Essentials Chapter 11]},  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ap3.html#linesNplanes}{[Essentials Appendix C2.2]} \& \href{#MagICDatabase}{[MagIC Database]}
@@ -2914,7 +2971,7 @@ s[a]ve plot, [q]uit, <return> to continue:
 
 \noindent which generated this figure:
 
-\includegraphics[width=12 cm]{EPSfiles/lnp-ex.eps}
+\includegraphics[width=12 cm]{EPSFiles/lnp-ex.eps}
 
 \customlink{lowrie.py}
 \subsection{lowrie.py}
@@ -2936,7 +2993,7 @@ S[a]ve figure? [q]uit, <return> to continue   q
 
 which produces plots like this:
 
-\includegraphics[width=12cm]{EPSfiles/lowrie.eps}
+\includegraphics[width=12cm]{EPSFiles/lowrie.eps}
 
 \customlink{lowrie_magic.py}
 \subsection{lowrie\_magic.py}
@@ -2996,17 +3053,17 @@ S[a]ve figure? [q]uit, <return> to continue
 %		\item Check the appropriate  protocols for each file.
 %		\begin{itemize}
 %			\item For the AF file ({\it mc\_af.mag}), check the AF box:
-%			\includegraphics[width=15cm]{EPSfiles/make_sio_tut_af.eps}
+%			\includegraphics[width=15cm]{EPSFiles/make_sio_tut_af.eps}
 %			\item For the Thellier experimental data ({\it mc\_thel.mag}), check the 'T' box and fill in the DC field value (30 $mu$T):
-%\includegraphics[width=15cm]{EPSfiles/make_sio_tut_af.eps}
+%\includegraphics[width=15cm]{EPSFiles/make_sio_tut_af.eps}
 %			\item  For the AARM data, check the 'ANI' box and the 'AF' box and fill in the peak AF (180 mT) and dc field values (50 $\mu$T) to the right:
-%\includegraphics[width=15cm]{EPSfiles/make_sio_tut_aarm.eps}
+%\includegraphics[width=15cm]{EPSFiles/make_sio_tut_aarm.eps}
 %		\end{itemize}
 %	\end{itemize}
 %	\item{Importing hysteresis data}
 %There are two different modes for importing hysteresis/backfield data:  by file or by directory.  As there are only two in this example, we will use the former:
 %
-%\includegraphics[width=15cm]{EPSfiles/hysteresis.eps}
+%\includegraphics[width=15cm]{EPSFiles/hysteresis.eps}
 %
 %	\begin{itemize}
 %		\item Select the file.
@@ -3384,7 +3441,7 @@ H180 -9.49E-07 -2.94E-07 +1.21E-06 +1.42E-01  67.7  64.8  67.7  64.8  0.5  cryoS
 The first line is a comment line.  The second line has the specimen name, the core azimuth (a=) and plunge (b=) which are assumed to be the lab arrow azimuth and plunge (\href{#orientation_schemes}{Orientation scheme} \#4)D.   The third line is a header explaining the columns in the file.
 
 
-Use {\bf pmd\_magic.py} to convert the file {\it ss0101a.pmd} in the directory 'PMD' in the 'PMD\_magic' folder of the {\it Measurement\_import} directory in the example {\it data\_files } directory.  These were taken at a location named 'Summit Springs' and have a naming convention of the type XXXX[YYY], where  YYY is sample designation with Z characters from site XXX, or \customlink{naming_schemes}naming convention \# 4-2.  A single character distinguishes the specimen from the sample (-spc 1).  All samples were oriented with a magnetic compass.
+Use {\bf pmd\_magic.py} to convert the file {\it ss0101a.pmd} in the directory 'PMD' in the 'PMD\_magic' folder of the {\it Measurement\_import} directory in the example {\it data\_files } directory.  These were taken at a location named 'Summit Springs' and have a naming convention of the type XXXX[YYY], where  YYY is sample designation with Z characters from site XXX, or\iffalse \customlink{naming_schemes}\fi naming convention \# 4-2.  A single character distinguishes the specimen from the sample (-spc 1).  All samples were oriented with a magnetic compass.
 
 \begin{verbatim}
 $ pmd_magic.py -f ss0101a.pmd -loc ``Summit Springs`` -ncn 4-2 -spc 1 -mcd SO-MAG -F ss0101a.magic
@@ -3432,7 +3489,7 @@ Specimen    treatment   intensity   declination   inclination   optional\_string
 
 The treatment field is the temperature (in centigrade), the AF field (in mT), the impulse field  strength, etc.  For special experiments like IRM acquisition, the  coil number of the popular ASC impulse magnetizer can be specified if the treatment steps are in volts.  The \href{#k15_magic.py}{position} for anisotropy experiments or whether the treatment is ``in-field'' or in zero field also require special formatting.  The units of the intensity field are in cgs and the directions are relative to the `lab arrow' on the specimen.  Here are some examples of commonly used specimens and conversions from field arrow to lab arrow.
 
-\includegraphics[width=15cm]{EPSfiles/samples.eps}
+\includegraphics[width=15cm]{EPSFiles/samples.eps}
 
 
 
@@ -3626,7 +3683,7 @@ sr01e2 SO-SUN   333.7    67.0
 
  The first command created a file {\it nrm\_specimens.txt} and the second created an equal area projection of the NRM directions in geographic coordinates which should look like this:
 
-\includegraphics[width=12 cm]{EPSfiles/nrm-eq.eps}
+\includegraphics[width=12 cm]{EPSFiles/nrm-eq.eps}
 %
 
 
@@ -3689,12 +3746,12 @@ eba24a DE-BFL 10    2.50  70.00    8.8   334.9    51.5
 
 
 %
-%  \customlink{pick_AC_specimens.py}
+\customlink{pick_AC_specimens.py}
 %  \subsection{pick\_AC\_specimens.py}
 %
 %  ADD
 
-  \customlink{plotxy.py}
+\customlink{plotxy.py}
 
   \subsection{plotxy.py}
   \href{https://github.com/PmagPy/PmagPy/blob/master/programs/plotxy.py}{[plotxy docs]}
@@ -3705,7 +3762,7 @@ This program makes a simple XY plot from any arbitrary input file.  You can spec
 $ plotxy.py -f plotXY_example.txt
 \end{verbatim}
 
-  \customlink{plot_cdf.py}
+\customlink{plot_cdf.py}
 
   \subsection{plot\_cdf.py}
   \href{https://github.com/PmagPy/PmagPy/blob/master/programs/plot_cdf.py}{[plot\_cdf docs]}
@@ -3722,7 +3779,7 @@ S[a]ve  plot, <Return> to quit a
 which should have generated a plot something like this:
 
 
-\includegraphics[width=12 cm]{EPSfiles/plot_cdf.eps}
+\includegraphics[width=12 cm]{EPSFiles/plot_cdf.eps}
 
 
 \customlink{plot_geomagia.py}
@@ -3731,7 +3788,7 @@ which should have generated a plot something like this:
 %ADD
 
 
-  \customlink{plot_magic_keys.py}
+\customlink{plot_magic_keys.py}
 
   \subsection{plot\_magic\_keys.py}
   \href{#MagIC}{MagIC}
@@ -3739,7 +3796,7 @@ which should have generated a plot something like this:
 
   This program will plot any column in a specified MagIC formatted file against any other column in the same file.
 
-  \customlink{plot_map_pts.py}
+\customlink{plot_map_pts.py}
 
   \subsection{plot\_map\_pts.py}
   \href{#hires}{high resolution instructions}
@@ -3761,12 +3818,12 @@ please wait to draw points
 
 which should produce a plot similar to this:
 
-\includegraphics[width=12cm]{EPSfiles/plot_mapPTS.eps}
+\includegraphics[width=12cm]{EPSFiles/plot_mapPTS.eps}
 
 
 
 
-  \customlink{plotdi_a.py}
+\customlink{plotdi_a.py}
 
 \subsection{plotdi\_a.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter 11]}
@@ -3795,7 +3852,7 @@ $ plotdi_a.py -f plotdi_a_example.dat
 \noindent  which makes the plot:
 
 
-  \includegraphics[width=12 cm]{EPSfiles/plotdi-a-example.eps}
+  \includegraphics[width=12 cm]{EPSFiles/plotdi-a-example.eps}
 
 \customlink{pmag_results_extract.py}
 
@@ -3813,7 +3870,7 @@ data saved in:  ./Directions.txt ./Intensities.txt ./SiteNfo.txt
 This creates tab delimited files that can be incorporated into a paper, for example.   You can also export the information in LaTeX format if you prefer.
 
 
-%\customlink{PMM_redo.py}
+\customlink{PMM_redo.py}
 %\subsection{PMM\_redo.py}
 
 %ADD
@@ -3845,7 +3902,7 @@ please wait to draw points
 
 The two plots will look like these:
 
-\includegraphics[width=15cm]{EPSfiles/pt_rot.eps}
+\includegraphics[width=15cm]{EPSFiles/pt_rot.eps}
 
 
 
@@ -3877,7 +3934,7 @@ please wait to draw points
 
 These plots should look like this:
 
-\includegraphics[width=15cm]{EPSfiles/pt_rot_panA.eps}
+\includegraphics[width=15cm]{EPSFiles/pt_rot_panA.eps}
 
 \customlink{qqplot.py}
 
@@ -3902,8 +3959,8 @@ mean,sigma, d, Dc
 \noindent which generates this plot:
 
 %\epsfxsize 7cm
-{%\epsffile{EPSfiles/qq.eps}
-\includegraphics[width=12 cm]{EPSfiles/qq.eps}}
+{%\epsffile{EPSFiles/qq.eps}
+\includegraphics[width=12 cm]{EPSFiles/qq.eps}}
 
 %
 \customlink{quick_hyst.py}
@@ -3930,7 +3987,7 @@ Good bye
 
 which makes a plot like this:
 
-\includegraphics[width=12 cm]{EPSfiles/quick_hyst.eps}
+\includegraphics[width=12 cm]{EPSFiles/quick_hyst.eps}
 
 \customlink{revtest.py}
 
@@ -3954,8 +4011,8 @@ s[a]ve plots, [q]uit: a
 \noindent which produces these plots:
 
 %\epsfxsize 15cm
-{ %\epsffile{EPSfiles/revtest.eps}
-\includegraphics[width=15cm]{EPSfiles/revtest.eps}}
+{ %\epsffile{EPSFiles/revtest.eps}
+\includegraphics[width=15cm]{EPSFiles/revtest.eps}}
 
 Because the 95\% confidence bounds for each component overlap each other, the two directions are not significantly different.
 
@@ -3987,7 +4044,7 @@ Lets plot the combined data set \textit{Ao\textunderscore etal2013\textunderscor
 $ eqarea.py -f Ao_etal2013_combined.txt
 \end{verbatim}
 
-\includegraphics[width=8cm]{EPSfiles/Ao2013eq.eps}}
+\includegraphics[width=8cm]{EPSFiles/Ao2013eq.eps}}
 
 Conduct a reversal test between the normal directions \textit{Ao\textunderscore etal2013\textunderscore norm.txt} and reversed directions \textit{Ao\textunderscore etal2013\textunderscore rev.txt}:
 
@@ -4012,7 +4069,7 @@ The McFadden and McElhinny (1990) classification for this test is: `A'
 
 As with \href{#Watsons_v.py}{watsons\_v.py}, this program produces a plot that displays the cumulative distribution (CDF) of the Watson V values resulting from the Monte Carlo simulation. In the plot below, the red line is the CDF, the green solid line is the value of the V statistic calculated for the two populations and the dashed blue line is the critical value for the V statistic. In this example, the data are consistent with the two directional groups sharing a common mean as evidenced by V (green solid line) being a lower value than the critical value of V (dashed blue line).
 
-\includegraphics[width=8cm]{EPSfiles/WatsonsV_Ao_etal2013.eps}
+\includegraphics[width=8cm]{EPSFiles/WatsonsV_Ao_etal2013.eps}
 
 \customlink{s_eigs.py}
 
@@ -4030,6 +4087,7 @@ $ s_eigs.py -f s_eigs_example.dat
 ...
 \end{verbatim}
 
+%\\
 \customlink{s_geo.py}
 
 \subsection{s\_geo.py}
@@ -4196,7 +4254,7 @@ Mark another sample, this site? y/[n]  n
 
 Compare behaviors for sr11, sample sr11XXX and sr20, sample sr20i:
 
-\includegraphics[width=15cm]{EPSfiles/site_edit_magic.eps}
+\includegraphics[width=15cm]{EPSFiles/site_edit_magic.eps}
 
   The latter plausibly fits the ``wrong mark'' hypothesis, while the former does not fit any of the common pathologies.  The sample orientation in the {\it er\_samples.txt} file has a note that it is `bad' and will be ignored by the PmagPy programs when calculating site means.
 
@@ -4292,7 +4350,7 @@ $ strip_magic.py -x pos -y int -mcd LP-PI-IRM
 The last command made this plot:
 
 
-\includegraphics[width=15cm]{EPSfiles/latVage.eps}
+\includegraphics[width=15cm]{EPSFiles/latVage.eps}
 
 
 \customlink{sundec.py}
@@ -4463,7 +4521,7 @@ q
 
 You should have gotten plots that look like these:
 
-\includegraphics[width=15cm]{EPSfiles/thellier_magic.eps}
+\includegraphics[width=15cm]{EPSFiles/thellier_magic.eps}
 
 
 
@@ -4515,7 +4573,7 @@ $ eqarea.py -f tk03.out
 
 which should give you a plot something like this:
 
-\includegraphics[width=12cm]{EPSfiles/tk03.eps}
+\includegraphics[width=12cm]{EPSFiles/tk03.eps}
 
 
 \customlink{uniform.py}
@@ -4533,7 +4591,7 @@ $ eqarea.py -f uniform.out
 
 which should yield a plot something (but not exactly) like this:
 
-\includegraphics[width=12cm]{EPSfiles/uniform.eps}
+\includegraphics[width=12cm]{EPSFiles/uniform.eps}
 
 
 \customlink{update_measurements.py}
@@ -4686,7 +4744,7 @@ and plot the data on an orthographic projection with the viewpoint at 60$^{\circ
 
 You should have a plot like this one:
 
-\includegraphics[width=15cm]{EPSfiles/VGP_map.eps}
+\includegraphics[width=15cm]{EPSFiles/VGP_map.eps}
 
 To use this program, you need to have basemap, which is not part of the free Python software distribution.  Also, if you don't have the  \href{#hires}{high resolution} installed by \href{#install_etopo.py}{install\_etopo.py}, just leave the -etp switch off to get a plain plot.
 
@@ -4717,7 +4775,7 @@ The first number is Watson's  $F$ statistic for these two files (see \href{http:
 \customlink{watsons_v.py}
 \subsection{watsons\_v.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter 11]}
-\href{https://github.com/PmagPy/PmagPy/blob/master/programs/watsons_v.py}{[watsons_v docs]}
+\href{https://github.com/PmagPy/PmagPy/blob/master/programs/watsons\_v.py}{[watsons\_v docs]}
 
 
 Use the two data files generated in the example for {\bf watsons\_f.py} and repeat the test using Watson's $V_w$ statistic.
@@ -4739,7 +4797,7 @@ Watson's V,  Vcrit:
 \noindent  which generates the plot:
 
 
-\includegraphics[width=12cm]{EPSfiles/watsonsV_example.eps}
+\includegraphics[width=12cm]{EPSFiles/watsonsV_example.eps}
 
  The two files are significantly different because Watson's V (10.5 in this example) is greater than the $V_{crit}$ value estimated using Monte Carlo simulation (6.8).
 
@@ -4761,8 +4819,8 @@ $ zeq.py -f zeq_example.dat -u mT
  By selecting `b', you can pick the bounds and choose 'l' for best-fit line or  `p' for best-fit plane.  You can rotate the X-Y axes  by selecting `h' and setting the X axis to 312.   Finally, you can save your plots with the 'a' option.   You should have saved something like these plots:
 
 %\epsfxsize 14.5cm
-{ %\epsffile{EPSfiles/zeq.eps}
-\includegraphics[width=15cm]{EPSfiles/zeq.eps}}
+{ %\epsffile{EPSFiles/zeq.eps}
+\includegraphics[width=15cm]{EPSFiles/zeq.eps}}
 
 The equal area projection has the X direction (usually North in geographic coordinates)
           to the top.  The red line is the X axis of the Zijderveld diagram.  Solid symbols are lower hemisphere.
@@ -4864,7 +4922,7 @@ You can \href{#magic_download}{download data} using the \href{http://earthref.or
 %Data from a particular reference can be found by typing the digital by typing in the author's name in the ``Reference Text Search'' box, or search by any column with a little magnifying glass icon.   If you click on the   You can show or hide columns  and look at data at various levels (location, site, sample, and so on to retrieve the data you want.
 %  Once the data you want have been identified, you can download the data by clicking on the `Save Results' button.
 %
-%    \includegraphics[width=15cm]{EPSfiles/MagIC_search.eps}
+%    \includegraphics[width=15cm]{EPSFiles/MagIC_search.eps}
 %
 %
        After downloading, the data can be unpacked and examined using various tools in the {\bf PmagPy}  package, for example using \href{#pmag_gui.py}{Pmag GUI}.
@@ -5046,7 +5104,7 @@ Correctly formatted MagIC data tables can be assembled into a suitable upload te
 %
 %which produces the fascinating graph:
 %
-%  \includegraphics[width=15cm]{EPSfiles/matplotlib.eps}
+%  \includegraphics[width=15cm]{EPSFiles/matplotlib.eps}
 %
 %
 %To kill the interpreter, close the plot window (red button) and type ctrl-D.
@@ -5473,7 +5531,7 @@ dtype("float64")
 
 Arrays, unlike lists, have dimensions and shape.  Dimensions tell us how many axes there are with axes defined as in this illustration:
 
-   \includegraphics[width=15cm]{EPSfiles/ndim.eps}
+   \includegraphics[width=15cm]{EPSFiles/ndim.eps}
 
 As shown above, our {\color{blue}A} array has two dimensions (axis 0 and 1).  To get Python to tell us this, we use the {\color{blue}ndim} method:
 
@@ -6518,7 +6576,7 @@ Attributes of the {\color{blue}pylab} class, such as the Y axis label can be cha
 
 When we are done customizing the plot instance, we can view it with the {\color{blue}show} method.  When that gets executed, we will get a plot something like this:
 
-   \includegraphics[width=15cm]{EPSfiles/matplotlib1.eps}
+   \includegraphics[width=15cm]{EPSFiles/matplotlib1.eps}
 
    \noindent Once that happens, we won't be able to change the plot any more and in fact, we won't get our terminal back until the little plot window is closed.   You can save your plot with the little disk icon in a variety of formats.  Adobe Illustrator likes .svg, or .eps while Microsoft products like .png file formats.
 
@@ -6562,7 +6620,7 @@ pylab.show()
 
 \noindent which produces the plot:
 
-\includegraphics[width=15cm]{EPSfiles/matplotlib2.eps}
+\includegraphics[width=15cm]{EPSFiles/matplotlib2.eps}
 
 \noindent   From the code, you can probably figure out that a line style of 'r--' is a red dashed line,  and 'g\verb|^|'  are green triangles.
 There are many other attributes that can be controlled: linewidth, dash style, etc. and we invite you to check out the {\color{blue}matplotlib} documentation.
@@ -6619,7 +6677,7 @@ pylab.show()
 
 \noindent which produces:
 
-{\includegraphics[width=15cm]{EPSfiles/matplotlib3.eps}}
+{\includegraphics[width=15cm]{EPSFiles/matplotlib3.eps}}
 
 \noindent By now, you should be able to figure out what everything in that script does by yourself!
 
@@ -6650,7 +6708,7 @@ pylab.show()
 
 \noindent which produces this plot:
 
-\includegraphics[width=15cm]{EPSfiles/matplotlib4.eps}
+\includegraphics[width=15cm]{EPSFiles/matplotlib4.eps}
 
 The title appears at the top of the plot.
     Text labels get places at the $x$ and $y$ coordinates on the plot and the legend will appear in the upper/lower right/left corner as specified in the string.  The {\color{blue}pylab.text(x,y,string, kwargs)} method also has optional key word arguments, specifying font, size, color and the like.     The legend 'labelist' is a list of labels for each plot element.  So, every line or point style that you want in your legend, append a label to the label list after the relevant plot command. Also note that the legend and xlabel methods use  a special format for strings ({\color{blue}r'LateX String')} which allows embedded LaTeX equation syntax  to make scientific equations look right - so now you have to learn LaTeX!.   Finally, the arrow gets drawn with the {\color{blue}annotate} method, which has a lot of other attributes as well.
@@ -6672,7 +6730,7 @@ The main example notebook (Example\_PmagPy\_Notebook.ipynb) combines data from t
 
 To execute and edit notebook code yourself, you can clone or download this repository: \url{https://github.com/PmagPy/2016_Tauxe-et-al_PmagPy_Notebooks}.  If you installed the Enthought Canopy or Anaconda Python distribution you will have the IPython and Jupyter packages installed. If you have another Python distribution you will want to make sure that you have IPython and Jupyter (installation instructions can currently be found here: \url{http://ipython.org/install.html} and here: \url{http://jupyter.readthedocs.org/en/latest/install.html}). To view and edit the notebooks,  type {\bf ipython notebook} or {\bf jupyter notebook} on the \href{#command_line}{command line}.  This command will open up a local IPython server in your default web browser within which you can use the directory to navigate to the data\_files folder. Click on it to open and edit. You will see something like this:
 
-\includegraphics[width=15cm]{EPSfiles/notebook.eps}
+\includegraphics[width=15cm]{EPSFiles/notebook.eps}
 
 Notebooks are constructed as a series of `cells' which can be text or code.  To view the `source' of a text cell, just click on it.  To render it, click on the `run' button (sideways triangle on the toolbar).  Similarly, to run the code in a code cell, click on the cell and then the `run' button (or use the shift+enter short cut).   To execute the entire notebook, click on the `Cell' button and choose 'Run All'.
 
@@ -6686,7 +6744,7 @@ Another way is to set the path to the location of your PmagPy folder within the 
 
  Now you are ready to look at some data.  In the code block under the heading `Reading data from MagIC format results files',  data are read in from a file \href{#magic_download}{downloaded} and unpacked from the MagIC database.   The notebook shows how to read in the data into a \href{#pandas}{pandas DataFrame}, and plot the directions on an equal area projection:
 
-\includegraphics[width=15cm]{EPSfiles/SnakeRiver.eps}
+\includegraphics[width=15cm]{EPSFiles/SnakeRiver.eps}
 
 There are several other tricks shown off in the notebook, which should be enough to get you started using {\bf ipmag} in a Python notebook environment.  Conducting data analysis  using {\bf PmagPy} in a notebook allows for the underlying code of statistical tests to be available and for the decisions made in the specific implementation of such tests to be transparently presented.
 

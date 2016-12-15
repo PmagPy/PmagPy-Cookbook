@@ -2,6 +2,7 @@
 \contentsline {section}{\numberline {1.1}Standalone GUI download}{3}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}OSX Standalone download}{3}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Windows Standalone download}{4}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Linux Standalone download}{4}{subsection.1.1.3}
 \contentsline {section}{\numberline {1.2}Full PmagPy install}{4}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Installing PmagPy}{5}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}Finishing up}{6}{subsection.1.2.2}
@@ -49,7 +50,7 @@
 \contentsline {section}{\numberline {5.2}Command line PmagPy programs}{76}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}aarm\_magic.py}{78}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}angle.py }{79}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}ANI\_depthplot.py}{80}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.3}ani\_depthplot.py}{80}{subsection.5.2.3}
 \contentsline {subsection}{\numberline {5.2.4}aniso\_magic.py}{82}{subsection.5.2.4}
 \contentsline {subsection}{\numberline {5.2.5}apwp.py }{85}{subsection.5.2.5}
 \contentsline {subsection}{\numberline {5.2.6}atrm\_magic.py}{86}{subsection.5.2.6}
@@ -106,34 +107,34 @@
 \contentsline {subsection}{\numberline {5.2.57}irmaq\_magic.py}{133}{subsection.5.2.57}
 \contentsline {subsection}{\numberline {5.2.58}k15\_magic.py}{135}{subsection.5.2.58}
 \contentsline {subsection}{\numberline {5.2.59}k15\_s.py}{138}{subsection.5.2.59}
-\contentsline {subsection}{\numberline {5.2.60}KLY4S\_magic.py}{138}{subsection.5.2.60}
+\contentsline {subsection}{\numberline {5.2.60}kly4s\_magic.py}{138}{subsection.5.2.60}
 \contentsline {subsection}{\numberline {5.2.61}lnp\_magic.py}{139}{subsection.5.2.61}
 \contentsline {subsection}{\numberline {5.2.62}lowrie.py}{141}{subsection.5.2.62}
 \contentsline {subsection}{\numberline {5.2.63}lowrie\_magic.py}{142}{subsection.5.2.63}
 \contentsline {subsection}{\numberline {5.2.64}magic\_select.py}{143}{subsection.5.2.64}
 \contentsline {subsection}{\numberline {5.2.65}make\_magic\_plots.py}{144}{subsection.5.2.65}
 \contentsline {subsection}{\numberline {5.2.66}Measurement Import Scripts}{144}{subsection.5.2.66}
-\contentsline {subsubsection}{2G\_bin\_magic.py}{144}{section*.17}
-\contentsline {subsubsection}{AGM\_magic.py}{144}{section*.18}
-\contentsline {subsubsection}{CIT\_magic.py}{145}{section*.19}
-\contentsline {subsubsection}{generic\_magic.py}{147}{section*.20}
-\contentsline {subsubsection}{HUJI\_magic.py}{148}{section*.21}
-\contentsline {subsubsection}{LDEO\_magic.py}{149}{section*.22}
-\contentsline {subsubsection}{IODP\_csv\_magic.py}{150}{section*.23}
-\contentsline {subsubsection}{PMD\_magic.py}{150}{section*.24}
+\contentsline {subsubsection}{\_2g\_bin\_magic.py}{144}{section*.17}
+\contentsline {subsubsection}{Aagm\_magic.py}{144}{section*.18}
+\contentsline {subsubsection}{cit\_magic.py}{145}{section*.19}
+\contentsline {subsubsection}{generic\_magic.py}{146}{section*.20}
+\contentsline {subsubsection}{huji\_magic.py}{148}{section*.21}
+\contentsline {subsubsection}{ldeo\_magic.py}{149}{section*.22}
+\contentsline {subsubsection}{iodp\_csv\_magic.py}{150}{section*.23}
+\contentsline {subsubsection}{pmd\_magic.py}{150}{section*.24}
 \contentsline {subsubsection}{sio\_magic.py}{151}{section*.25}
-\contentsline {subsubsection}{SUFAR4-asc\_magic.py}{154}{section*.26}
-\contentsline {subsubsection}{TDT\_magic.py}{154}{section*.27}
+\contentsline {subsubsection}{sufar4\_asc\_magic.py}{154}{section*.26}
+\contentsline {subsubsection}{tdt\_magic.py}{154}{section*.27}
 \contentsline {subsection}{\numberline {5.2.67}measurements\_normalize.py}{155}{subsection.5.2.67}
 \contentsline {subsection}{\numberline {5.2.68}mk\_redo.py}{155}{subsection.5.2.68}
 \contentsline {subsection}{\numberline {5.2.69}nrm\_specimens\_magic.py}{156}{subsection.5.2.69}
 \contentsline {subsection}{\numberline {5.2.70}orientation\_magic.py}{158}{subsection.5.2.70}
 \contentsline {subsection}{\numberline {5.2.71}parse\_measurements.py}{159}{subsection.5.2.71}
 \contentsline {subsection}{\numberline {5.2.72}pca.py}{159}{subsection.5.2.72}
-\contentsline {subsection}{\numberline {5.2.73}plotXY.py}{160}{subsection.5.2.73}
+\contentsline {subsection}{\numberline {5.2.73}plotxy.py}{160}{subsection.5.2.73}
 \contentsline {subsection}{\numberline {5.2.74}plot\_cdf.py}{160}{subsection.5.2.74}
 \contentsline {subsection}{\numberline {5.2.75}plot\_magic\_keys.py}{161}{subsection.5.2.75}
-\contentsline {subsection}{\numberline {5.2.76}plot\_mapPTS.py}{161}{subsection.5.2.76}
+\contentsline {subsection}{\numberline {5.2.76}plot\_map\_pts.py}{161}{subsection.5.2.76}
 \contentsline {subsection}{\numberline {5.2.77}plotdi\_a.py}{163}{subsection.5.2.77}
 \contentsline {subsection}{\numberline {5.2.78}pmag\_results\_extract.py}{164}{subsection.5.2.78}
 \contentsline {subsection}{\numberline {5.2.79}pt\_rot.py}{165}{subsection.5.2.79}
@@ -141,7 +142,7 @@
 \contentsline {subsection}{\numberline {5.2.81}quick\_hyst.py}{168}{subsection.5.2.81}
 \contentsline {subsection}{\numberline {5.2.82}revtest.py}{169}{subsection.5.2.82}
 \contentsline {subsection}{\numberline {5.2.83}revtest\_magic.py}{170}{subsection.5.2.83}
-\contentsline {subsection}{\numberline {5.2.84}revtest\_MM1990.py}{170}{subsection.5.2.84}
+\contentsline {subsection}{\numberline {5.2.84}revtest\_mm1990.py}{170}{subsection.5.2.84}
 \contentsline {subsection}{\numberline {5.2.85}s\_eigs.py}{172}{subsection.5.2.85}
 \contentsline {subsection}{\numberline {5.2.86}s\_geo.py}{173}{subsection.5.2.86}
 \contentsline {subsection}{\numberline {5.2.87}s\_hext.py}{173}{subsection.5.2.87}
@@ -164,8 +165,8 @@
 \contentsline {subsection}{\numberline {5.2.104}vector\_mean.py}{189}{subsection.5.2.104}
 \contentsline {subsection}{\numberline {5.2.105}vgp\_di.py}{189}{subsection.5.2.105}
 \contentsline {subsection}{\numberline {5.2.106}vgpmap\_magic.py}{190}{subsection.5.2.106}
-\contentsline {subsection}{\numberline {5.2.107}watsonsF.py}{191}{subsection.5.2.107}
-\contentsline {subsection}{\numberline {5.2.108}watsonsV.py}{192}{subsection.5.2.108}
+\contentsline {subsection}{\numberline {5.2.107}watsons\_f.py}{191}{subsection.5.2.107}
+\contentsline {subsection}{\numberline {5.2.108}watsons\_v.py}{192}{subsection.5.2.108}
 \contentsline {subsection}{\numberline {5.2.109}zeq.py}{193}{subsection.5.2.109}
 \contentsline {subsection}{\numberline {5.2.110}zeq\_magic.py}{194}{subsection.5.2.110}
 \contentsline {subsection}{\numberline {5.2.111}zeq\_magic\_redo.py}{195}{subsection.5.2.111}
@@ -178,7 +179,7 @@
 \contentsline {section}{\numberline {7.2}Variable types}{207}{section.7.2}
 \contentsline {section}{\numberline {7.3}Data Structures}{208}{section.7.3}
 \contentsline {subsubsection}{Lists}{208}{section*.28}
-\contentsline {subsubsection}{More about strings}{209}{section*.29}
+\contentsline {subsubsection}{More about strings}{210}{section*.29}
 \contentsline {subsubsection}{Data structures as objects}{210}{section*.30}
 \contentsline {subsubsection}{Tuples}{210}{section*.31}
 \contentsline {subsubsection}{Dictionaries!}{210}{section*.32}
@@ -186,13 +187,13 @@
 \contentsline {section}{\numberline {7.4}Pandas}{216}{section.7.4}
 \contentsline {section}{\numberline {7.5}Python Scripts}{217}{section.7.5}
 \contentsline {section}{\numberline {7.6}Code blocks}{219}{section.7.6}
-\contentsline {subsubsection}{The for loop}{220}{section*.34}
-\contentsline {subsubsection}{Looping through lists}{220}{section*.35}
+\contentsline {subsubsection}{The for loop}{221}{section*.34}
+\contentsline {subsubsection}{Looping through lists}{221}{section*.35}
 \contentsline {subsubsection}{Looping through arrays}{223}{section*.36}
-\contentsline {subsubsection}{If and while blocks}{223}{section*.37}
-\contentsline {subsubsection}{Finer points of `if' blocks}{224}{section*.38}
+\contentsline {subsubsection}{If and while blocks}{224}{section*.37}
+\contentsline {subsubsection}{Finer points of `if' blocks}{225}{section*.38}
 \contentsline {subsubsection}{While loops}{225}{section*.39}
-\contentsline {subsubsection}{Code blocks in interactive Python}{225}{section*.40}
+\contentsline {subsubsection}{Code blocks in interactive Python}{226}{section*.40}
 \contentsline {section}{\numberline {7.7}File I/O in Python}{226}{section.7.7}
 \contentsline {subsubsection}{Reading data in}{226}{section*.41}
 \contentsline {subsubsection}{From a file}{226}{section*.42}
@@ -201,21 +202,22 @@
 \contentsline {subsubsection}{Reading numeric files}{230}{section*.45}
 \contentsline {subsubsection}{Writing data out}{230}{section*.46}
 \contentsline {section}{\numberline {7.8}Functions}{233}{section.7.8}
-\contentsline {subsubsection}{Line by line analysis}{233}{section*.47}
-\contentsline {subsubsection}{def FUNCNAME(in\_args):}{233}{section*.48}
+\contentsline {subsubsection}{Line by line analysis}{234}{section*.47}
+\contentsline {subsubsection}{def FUNCNAME(in\_args):}{234}{section*.48}
 \contentsline {subsubsection}{Doc String}{235}{section*.49}
 \contentsline {subsubsection}{Function body}{235}{section*.50}
 \contentsline {subsubsection}{Return statement}{235}{section*.51}
 \contentsline {subsubsection}{Main program as function}{235}{section*.52}
 \contentsline {subsubsection}{Scope of variables}{237}{section*.53}
-\contentsline {section}{\numberline {7.9}Classes}{237}{section.7.9}
+\contentsline {section}{\numberline {7.9}Classes}{238}{section.7.9}
 \contentsline {section}{\numberline {7.10}Matplotlib}{239}{section.7.10}
-\contentsline {subsubsection}{A first plot}{239}{section*.54}
+\contentsline {subsubsection}{A first plot}{240}{section*.54}
 \contentsline {subsubsection}{Multiple figures and more customization}{243}{section*.55}
 \contentsline {subsubsection}{Adding text}{245}{section*.56}
 \contentsline {chapter}{\numberline {8}Jupyter Notebooks}{249}{chapter.8}
 \contentsline {chapter}{\numberline {9}Troubleshooting}{253}{chapter.9}
 \contentsline {section}{\numberline {9.1}Problems with installing Python or PmagPy}{253}{section.9.1}
-\contentsline {section}{\numberline {9.2}Problems updating Canopy}{255}{section.9.2}
-\contentsline {section}{\numberline {9.3}Problems with a specific program}{255}{section.9.3}
-\contentsline {section}{\numberline {9.4}Other problems}{256}{section.9.4}
+\contentsline {section}{\numberline {9.2}Problems updating Canopy}{256}{section.9.2}
+\contentsline {section}{\numberline {9.3}Error loading dlls (windows only)}{257}{section.9.3}
+\contentsline {section}{\numberline {9.4}Problems with a specific program}{257}{section.9.4}
+\contentsline {section}{\numberline {9.5}Other problems}{257}{section.9.5}
