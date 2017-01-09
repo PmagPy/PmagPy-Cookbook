@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  9 JAN 2017 14:44
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  13 JAN 2017 18:54
+>>>>>>> fix some typos etc.
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,7 +12,11 @@ de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
 documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
  tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{
 \HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode html,1,sections+.a.b.c.\inp
+<<<<<<< HEAD
 ut  PmagPy
+=======
+ut  PmagPy.tex
+>>>>>>> fix some typos etc.
 (./PmagPy.tex (/usr/local/texlive/2015/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/bk11.clo
@@ -1873,6 +1881,10 @@ Here is how much of TeX's memory you used:
  13772 multiletter control sequences out of 15000+600000
  15547 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
+<<<<<<< HEAD
  37i,9n,32p,135870b,3159s stack positions out of 5000i,500n,10000p,200000b,80000s
+=======
+ 37i,9n,32p,135874b,3159s stack positions out of 5000i,500n,10000p,200000b,80000s
+>>>>>>> fix some typos etc.
 
 Output written on PmagPy.dvi (471 pages, 1230184 bytes).
