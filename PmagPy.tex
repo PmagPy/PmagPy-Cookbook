@@ -96,7 +96,7 @@ To get started, download the zip file and put the resulting folder on your deskt
 
 \subsection{Windows Standalone download}
 
-Get started by downloading the zip file (see links below) and put the resulting folder wherever you wish. You will need to “extract all” files. Inside the PmagPy-Standalone folder you will find icons for installing Pmag GUI and MagIC GUI. Double click the program you wish to use and you will be guided the the install process.
+Get started by downloading the zip file (see links below) and put the resulting folder wherever you wish. You will need to “extract all” files. Inside the PmagPy-Standalone folder you will find icons for Pmag GUI and MagIC GUI. Double click the program you wish to use and you should be able to get started.
 
 \noindent You will find the latest stable release at: \href{https://github.com/PmagPy/PmagPy-Standalone-Windows/releases/latest}{https://github.com/PmagPy/PmagPy-Standalone-Windows/releases/latest}
 
@@ -114,6 +114,7 @@ To get the full  use of PmagPy functionality, you will first have to install Pyt
 
 \customlink{getting_python}
    \begin{itemize}
+   \item If you have already installed Canopy Python or Anaconda Python, you can skip this section and go straight to \href{#pip_install}{installing PmagPy}.  If you have an Apple computer, be aware that they come with a version of Python already installed; but this pre-installed version does NOT have everything you will need to run PmagPy.  If in doubt, go ahead and install Canopy Python.
    \item Download and install the \href{https://www.enthought.com/products/canopy/}{Enthought Canopy distribution of Python}. Canopy Express (the free version) contains everything you need (except the mapping utilities). If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license} that gives you access to additional features and bundled packages, including the Basemap package.
    \item Launch Canopy to complete the installation process.  You may need to use control click on the Canopy icon to open it for the first time--try this if you get a message that says ``Canopy can't be opened because it is from an unidentified developer.''  Once you've opened Canopy successfully, select ``yes'' to making Canopy your default Python environment.  In the lower right hand corner of the Canopy launch page, you will find the Version number (currently 1.7.4 or higher). Please include this in any correspondence with the PmagPy team. While you might find use for some of the features within the Canopy environment that opens as an application, PmagPy programs are best run or launched on the \href{#command_line}{command line}.
       \item Optional:  setting up Basemap for use in making maps with Python.
@@ -180,47 +181,29 @@ To install the Etopo20 package, see \href{#install_etopo.py}{install\_etopo.py}.
 
    \end{itemize}
 
-%\item Move the  Datafiles  folder from your {\bf PmagPy} folder and place it somewhere (e.g., your Desktop) with no spaces in the path.
-%Create a \href{#Project_Directory}{MagIC Project Directory}.
-%Find your \href{#command_line}{command line} to launch any {\bf PmagPy} process.
 
-%
-% \section{Pip PmagPy install (beta)}
-% We are moving to a build system that uses the ``pip'' utility exclusively, see details below.
-%
-% \begin{itemize}
-%   \item 1.  Download and install Python.
-%   \item 2.  Find your command prompt.
-%   \item 3.  Upgrade pip.
-%   \item 4.  Install pmagpy and pmagpy-cli.
-%   \item 5.  Test that your install is complete.
-% \end{itemize}
-%
-%\begin{itemize}
-%  \item 1.  Download and install Python distribution.
-%  \item 2.  Download PmagPy from Github and unzip.
-%  \item 3.  Run the PmagPy install script for your operating system.
-%  \item 4.  Upgrade pip
-%  \item 5.  Find your command prompt and use pip to install the ``pmagpy'' module that provides all the basic functionality.
-%  \item 6.  Test that your install is complete by running ``eqarea.py -h'' in your command prompt.
-%\end{itemize}
-%
-%More details and system-specific instructions are below.
-%
-%
-%
-%  \subsection{Getting Python}
-%  \begin{itemize}
-%  \item Download and install the \href{https://www.enthought.com/products/canopy/}{Enthought Canopy distribution of Python}. Canopy Express (the free version) contains everything you need (except the mapping utilities). If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license} that gives you access to additional features and bundled packages, including the Basemap package.
-%   \item Launch Canopy to complete the installation process.  You may need to use control click on the Canopy icon to open it for the first time--try this if you get a message that says ``Canopy can't be opened because it is from an unidentified developer.''  Once you've opened Canopy successfully, select ``yes'' to making Canopy your default Python environment.  In the lower right hand corner of the Canopy launch page, you will find the Version number (currently 1.6.1 or higher). Please include this in any correspondence with the PmagPy team. While you might find use for some of the features within the Canopy environment that opens as an application, PmagPy programs are best run or launched in your command prompt (Terminal for Mac users, cmd for Windows users).
-%   \item A last note about Canopy: you should update it regularly!  Open the Canopy application and update the packages at least every few months.
-%   \end{itemize}
+    \subsection {For Anaconda users}
+    We have attempted to support both Canopy and Anaconda Python.  However, there are some differences in the way Anaconda Python interacts with the screen. Because of this, Anaconda users will need to use a different command to access the PmagPy GUIs.  All four GUIs -- Pmag GUI, MagIC GUI, Demag GUI, and Thellier GUI -- can be invoked with Anaconda python.  However, instead of calling them in the standard way on the command line:
 
+\begin{verbatim}
+pmag_gui.py
+\end{verbatim}
 
+You will use:
 
+\begin{verbatim}
+pmag_gui_anaconda
+\end{verbatim}
 
+If you try to use the first syntax, you will see an error message like this:
 
+\begin{verbatim}
+This program needs access to the screen.
+Please run with a Framework build of python, and only when you are
+logged in on the main display of your Mac.
+\end{verbatim}
 
+\noindent Also, Anaconda users may need to \href{#anaconda_troubleshooting}{install wxPython}.
 
 %\setcounter{tocdepth}{1}
 %\tableofcontents
@@ -637,7 +620,7 @@ MagIC GUI allows you to add data at the location, site, sample, and specimen lev
 
 
 \section{Starting with MagIC GUI}
-Start up MagIC GUI.  You'll do this by clicking on the icon (if you downloaded the \href{#standalone}{standalone} version) or entering `magic\_gui.py' on your \href{#command_line}{command line} (if you downloaded the full PmagPy installation).
+Start up MagIC GUI.  You'll do this by clicking on the icon (if you downloaded the \href{#standalone}{standalone} version) or entering `magic\_gui.py' on your \href{#command_line}{command line} (if you downloaded the full PmagPy installation).  If you are using Anaconda Python, you will type `magic\_gui\_anaconda' on your \href{#command_line}{command line} instead.
 
 When you first start {\bf magic\_gui.py}, you will change directories into a  `Project Directory'. For each study, create a directory with a name that relates to that study. Here we will call it {\it MyProject}.  This is where you will collect  and process all the rock and paleomagnetic data for a given study, usually a publication.   The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path. Under certain Windows versions, this means you should not use your home directory, but create a directory called for example: D:$\backslash$MyPmagProjects and put {\it MyProject} there.
 
@@ -833,7 +816,15 @@ The  Demag GUI ({\bf demag\_gui.py}) program enables the display and analysis of
 
 \subsubsection{Launching}\label{launching}
 
-The best way to launch the Demag GUI application is through  \href{#pmag_gui.py}{Pmag GUI}. If PmagPy has been added to your PATH you can type pmag\_gui.py at the command line to launch it or you can navigate to the directory containing it and type \texttt{python  ./pmag\_gui.py}. Within \href{#pmag_gui.py}{Pmag GUI}, data can be converted from the format of a particular lab into MagIC format so that it can be displayed and analyzed within Demag GUI. The program can be started by clicking on the Demag GUI button in \href{#pmag_gui.py}{Pmag GUI}.
+The best way to launch the Demag GUI application is through  \href{#pmag_gui.py}{Pmag GUI}. If you have installed PmagPy using pip, (or if PmagPy has been added to your PATH), you can type pmag\_gui.py at the command line to launch it.  Anaconda users will instead type `pmag\_gui\_anaconda'.
+
+\noindent Alternatively, you can navigate to the PmagPy home directory  and type \texttt{python  ./pmag\_gui.py}. Within \href{#pmag_gui.py}{Pmag GUI}, data can be converted from the format of a particular lab into MagIC format so that it can be displayed and analyzed within Demag GUI. The program can be started by clicking on the Demag GUI button in \href{#pmag_gui.py}{Pmag GUI}.
+
+
+\noindent If you want to launch {\bf Demag GUI} directly, (assuming {\bf PmagPy} was properly installed using pip or has been added to your PATH), you can simply type
+demag\_gui.py at the command line. Anaconda users will type `demag\_gui\_anaconda' instead.  \textbf{Note:} on OSX it is
+recommended to launch through \href{#pmag_gui.py}{Pmag GUI} as on wxpython 2.9 the drop-down boxes behave better when {\bf Demag GUI} is launched this way.\\
+
 
 \includegraphics[width=10 cm]{EPSFiles/demag_gui_QuickMagicLauncher.eps}
 
@@ -843,13 +834,10 @@ The best way to launch the Demag GUI application is through  \href{#pmag_gui.py}
 % python ./demag_gui.py
 \end{verbatim}
 
-\noindent Or if {\bf PmagPy} was properly installed and has been added to your PATH, you can simply type
-demag\_gui.py at the command line. \textbf{Note:} on OSX it is
-recommended to launch through \href{#pmag_gui.py}{Pmag GUI} as on wxpython 2.9 the drop-down boxes behave better when {\bf Demag GUI} is launched this way.\\
 
-\begin{verbatim}
+%\begin{verbatim}
 % pythonw ./pmag_gui.py
-\end{verbatim}
+%\end{verbatim}
 
 \subsubsection{Adding and Editing Specimen Interpretations:}\label{adding-interpretations}
 
@@ -949,7 +937,7 @@ The set of drop-down boxes to the right of the interpretation data are there to 
 \subsubsection{Interpretation Editor}\label{interpretation-editor} %Make this a lot larger
 
 In order to more easily view and edit specimen interpretation data there is a specimen interpretation editor which can be launched using the menu option [Tools] $\rightarrow$ [Interpretation Editor] (hotkey: ctrl-e). \textbf{Note:} If you would like more help than provided here the interpretation editor has in context help same as the main GUI, see \hyperref[add-help]{additional help} for details.
-\paragraph{List of Interpretations:}\label{IE-list} This panel contains a list which details the fits made to the data and their parameters from which you can select which interpretation to view by double clicking it. In the list, the currently selected interpretation is highlighted blue as shown in the image below. You can mark interpretations as bad which removes them from any Fisher means or other high level means by right clicking on their entry in the list. All interpretations marked bad are colored red in the list and marked as a small diamond on the plot. The specimen entry associated with this fit will be given a bad (`b') flag within the pmag\_specimens table. You can search through interpretations by using the search bar above the list. Finally, interpretations can be highlighted by clicking on the list and holding the shift or ctrl/command key to select multiple interpretations. 
+\paragraph{List of Interpretations:}\label{IE-list} This panel contains a list which details the fits made to the data and their parameters from which you can select which interpretation to view by double clicking it. In the list, the currently selected interpretation is highlighted blue as shown in the image below. You can mark interpretations as bad which removes them from any Fisher means or other high level means by right clicking on their entry in the list. All interpretations marked bad are colored red in the list and marked as a small diamond on the plot. The specimen entry associated with this fit will be given a bad (`b') flag within the pmag\_specimens table. You can search through interpretations by using the search bar above the list. Finally, interpretations can be highlighted by clicking on the list and holding the shift or ctrl/command key to select multiple interpretations.
 \paragraph{Buttons and Boxes:}\label{IE-buttons} Highlighting entries allows you to delete or alter the characteristics of multiple interpretations at once without having to select each one in turn. This mass alteration is allowable using the the Name/Color/Bounds boxes to input the changes and then clicking the ``apply changes to highlighted fits'' button. You can delete highlighted fits using the ``delete highlighted fits'' button. The ``add fit to highlighted specimens'' button in the interpretation editor adds a fit to all highlighted specimens in the list on the left. You can use the ``add new fit to all specimens`` as a convenient option to add a new interpretation with all the attributes described in the above Name/Color/Bounds boxes to every specimen with measurement data. This is a useful method for quickly analysing a new dataset by checking for components between common unblocking steps like giving every specimen a general magnetite interpretation inferring about where that should be (e.g. bounds=300C to 580C, name=MAG, color=violet).
 \paragraph{Additional High Level Means Options:}\label{IE-HLM-options} The interpretation editor also allows the displaying of site and sample means as the primary points on the high level mean plot by changing the bottom left display options drop-down box. Though it does not yet allow taking fisher means of sample means or site means so the mean type box will be forced to read ''None'' if this option is changed from specimens.
 
@@ -979,13 +967,25 @@ Finally, if you need more help working with Demag GUI it offers in context assis
 
 The program Thellier GUI ({\bf thellier\_gui.py})  combines functions from \href{#thellier_magic.py}{thellier\_magic.py} and new tools described by  \href{http://dx.doi.org/10.1002/ggge.20062}{Shaar and Tauxe (2013)} \nocite{shaar13} in a user-friendly graphical user interface (GUI).
 
-As with \href{#demag_gui.py}, Thellier GUI can  be called from  the  \href{#command_line}{command line} or from within \href{#pmag_gui.py}{Pmag GUI}.  It loads  files already prepared in a  \href{#ThisProject}{This Project} directory and the interpretations from Thellier GUI are part of the workflow of  \href{#pmag_gui.py}{Pmag GUI}.   This section is a brief introduction on how to use Thellier GUI as a stand alone application. Much more information is available within this manual: \href{https://github.com/PmagPy/Pmag-Cookbook/raw/gh-pages//thellier_GUI_full_manual.pdf}{Thellier GUI full manual}.
+As with \href{#demag_gui.py}{Demag GUI}, Thellier GUI can  be called from  the  \href{#command_line}{command line} or from within \href{#pmag_gui.py}{Pmag GUI}.
+
+To launch Thellier GUI independently, find your command line and enter:
+
+\begin{verbatim}
+thellier_gui.py
+\end{verbatim}
+
+If using Anaconda Python, you will instead use:
+
+\begin{verbatim}
+thellier_gui_anaconda
+\end{verbatim}
+
+Once open, Thellier GUI loads  files already prepared in a  \href{#ThisProject}{This Project} directory and the interpretations from Thellier GUI are part of the workflow of  \href{#pmag_gui.py}{Pmag GUI}.   This section is a brief introduction on how to use Thellier GUI as a stand alone application. Much more information is available within this manual: \href{https://github.com/PmagPy/Pmag-Cookbook/raw/gh-pages//thellier_GUI_full_manual.pdf}{Thellier GUI full manual}.
 
 \noindent  A complete list of the definitions for paleointensity statistics used by Thellier GUI is available as a supplement to the article by \href{#http://dx.doi.org/10.1002/2013GC005135}{Paterson et al., 2014}  \nocite{paterson14} and available for download here:
 
   \url{http://onlinelibrary.wiley.com/store/10.1002/2013GC005135/asset/supinfo/ggge20412-sup-0001-suppinfoCORRECTED.pdf?v=1&s=e1c3ab0a86c942d1039f6d2e15496aa172dc86ec}
-
-
 
 \customlink{choose_directory}
 After launching the program,  a  ``choose project directory'' dialog window will appear as soon as the GUI is started.
@@ -6790,7 +6790,7 @@ Type ``credits", ``demo" or ``enthought" for more information.
 >>>
 \end{verbatim}
 
-\item If you don't see one of the above messages, you have not fully installed the Python distribution.  You'll need to try again.  For Mac users, in order to complete the install you must start Canopy (it will be in Applications) and select ``yes'' to use Canopy Python as your default Python.  For Windows users, you should be prompted during the install process to make Enthought Python your default Python, and you need to select yes.
+\item If you don't see one of the above messages, you have not fully installed the Python distribution.  You'll need to try again.  In order to complete the install you must open Canopy (it will be your Applications folder) and select ``yes'' to use Canopy Python as your default Python.
 
 \end{itemize}
 
@@ -6807,21 +6807,41 @@ When you try to run eqarea.py -h to test your installation, you get this error m
 \begin{verbatim} -bash: eqarea.py: command not found
 \end{verbatim}
 
-There are a few possible reasons for this failure, the most common of which is that your path has not been correctly set.  To test this, type ``echo \$PATH" in your command line.
+This probably means that you have not correctly installed PmagPy.  On your command line, try:
 
-You will see something like this:\\
+\begin{verbatim}
+pip list
+\end{verbatim}
+
+You should see both pmagpy-(version_number) and pmagpy-cli-(version_number) on that list.  If you don't see them, go ahead and reinstall:
+
+\begin{verbatim}
+pip install --upgrade --force-reinstall --no-deps pmagpy
+pip install --upgrade --force-reinstall --no-deps pmagpy-cli
+\end{verbatim}
+
+
+%There are a few possible reasons for this failure, the most common of which is that your path has not been correctly set.  To test this, type ``echo \$PATH" in your command line.
+
+%You will see something like this:\\
 %\begin{verbatim}
 
-/Users/****/Library/Enthought/Canopy\_64bit/User/bin: /usr/local/bin: /usr/local/share/npm/bin: /usr/bin: /bin: /usr/sbin: /sbin: /usr/local/bin: /opt/X11/bin: /Users/****/PmagPy:/usr/texbin\\
+%/Users/****/Library/Enthought/Canopy\_64bit/User/bin: /usr/local/bin: /usr/local/share/npm/bin: /usr/bin: /bin: /usr/sbin: /sbin: /usr/local/bin: /opt/X11/bin: /Users/****/PmagPy:/usr/texbin\\
 %\end{verbatim}
 
-Your \$PATH may look very different, but as long as you have the complete path to the PmagPy directory in there, you are golden.  If the directory is not in your path, you can try re-running the PmagPy install script, which should set your path correctly  for you.  If that doesn't work, go to your home directory (to get there, type ``cd" in your command line).  Use a text editor to open a file called .bash\_profile and add these lines:
+%Your \$PATH may look very different, but as long as you have the complete path to the PmagPy directory in there, you are golden.  If the directory is not in your path, you can try re-running the PmagPy install script, which should set your path correctly  for you.  If that doesn't work, go to your home directory (to get there, type ``cd" in your command line).  Use a text editor to open a file called .bash\_profile and add these lines:
+
+If you are a developer, and wish to download PmagPy from the \href{https://github.com/PmagPy/PmagPy}{Github repository}, you may want to add PmagPy directly to your path instead of installing via pip.
+
+In that case, download the zipfile from the \href{https://github.com/PmagPy/PmagPy}{Github repository}, unzip it, then use a text editor to open a file called .bash\_profile and add these lines:
 
 \begin{verbatim}export PATH=/Users/***/PmagPy:$PATH\end{verbatim}
 \begin{verbatim}export PATH=/Users/***/PmagPy/programs:$PATH\end{verbatim}
 \begin{verbatim}export PYTHONPATH=$PYTHONPATH:/Users/***/PmagPy/\end{verbatim}
 
-where *** is your username.  Then restart your Terminal.  If it still doesn't work, see question 3.
+where *** is your username.  Then restart your Terminal.
+
+Note that this solution -- download PmagPy from Github, then add it to your $PATH and $PYTHONPATH -- can also be used if for some reason you are unable to install using pip.
 
 
 \item For Windows users:
@@ -6830,14 +6850,15 @@ where *** is your username.  Then restart your Terminal.  If it still doesn't wo
 operable program or batch file.
 \end{verbatim}
 
-Setting your path should not be an issue in Windows if you are using the PmagPy prompt (created by the install script).  PmagPy functionality will be available only in the custom Command Prompt, so make sure you are using it.  However, if you do need to set your path for some reason, see:
+Setting your path should not be an issue in Windows if you are using the PmagPy prompt (created by the install script).  PmagPy functionality will be available if you have installed pmagpy and pmagpy-cli using pip.  However, if you do need to set your path for some reason, see:
 
 \href{http://www.mathworks.com/matlabcentral/answers/94933-how-do-i-set-my-system-path-under-windows}{Setting your Path in Windows}
 
-If you are using the \href{#full_pip}{pip install} instead of the PmagPy prompt, you'll need to use the command ``eqarea -h'', \textbf{not} ``eqarea.py -h''.  This is caused by a strange Windows quirk, but all you need to know is this: anytime the Cookbook gives a command, you'll need to drop the ``.py'' and all will be well.
+If you are using the \href{#full_pip}{pip install}, you'll need to use the command ``eqarea -h'', \textbf{not} ``eqarea.py -h''.  This is caused by a strange Windows quirk, but all you need to know is this: anytime the Cookbook gives a command, you'll need to drop the ``.py'' and all will be well.
 
 \end {itemize}
 
+\customlink{anaconda_troubleshooting}
 \item I am installing pmagpy into the \href{https://www.continuum.io/downloads}{Anaconda} Python distribution
 
 \begin{itemize}
@@ -6845,7 +6866,9 @@ If you are using the \href{#full_pip}{pip install} instead of the PmagPy prompt,
 \begin{itemize}
 \item If you only have the core packages installed with the Python 2.7 Anaconda distribution (plus the PmagPy package you just installed), you may get the following ImportError when attempting to execute ``eqarea.py -h'':
 
+\begin{verbatim}
 ImportError: No module named wx
+\end{verbatim}
 
 To correct this error, simply execute at the command line:
 
@@ -6896,7 +6919,7 @@ which will show you all of your pip-installed packages.  If you don't see pmagpy
 \end{enumerate}
 
 \section{Problems updating Canopy}
-If you are using Canopy (not just EPD), you will need to keep it up to date.  Currently, that means the version number should be 1.6.1 or higher.  In general, you can update by opening the Canopy application; it will automatically check for updates.  However, if you haven't updated for a long time, Canopy can get ``stuck'' in an old version where it can no longer update.  If that is the case, you will need to fully uninstall and reinstall canopy, following the directions on the \href{https://support.enthought.com/hc/en-us/articles/204469570-Canopy-shows-no-updates-available-reinstalling-from-the-website}{Enthought website}.
+If you are using Canopy, you will need to keep it up to date.  Currently, that means the version number should be 1.6.1 or higher.  In general, you can update by opening the Canopy application; it will automatically check for updates.  However, if you haven't updated for a long time, Canopy can get ``stuck'' in an old version where it can no longer update.  If that is the case, you will need to fully uninstall and reinstall canopy, following the directions on the \href{https://support.enthought.com/hc/en-us/articles/204469570-Canopy-shows-no-updates-available-reinstalling-from-the-website}{Enthought website}.
 
 \section{Error loading dlls (windows only)}
 Some of the modules used in PmagPy have dependencies that are not called directly.  If you are missing one of those dependencies, the programs may fail in odd ways.  In general, it is worthwhile to open Canopy, go into the package manager, and update all packages.  More specifically, if you see an error message like this: \begin{verbatim}ImportError: DLL load failed: The specified procedure could not be found  \end{verbatim} you may be missing the MKL package.  Open Canopy, go to package manager, and select ``Available packages".  Scroll down to MKL, and install it.  This should fix the problem!  Note that windows users who are having trouble opening one of the GUIs should try this solution whether or not they actually see this error message.
