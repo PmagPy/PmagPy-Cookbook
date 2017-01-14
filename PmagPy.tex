@@ -118,7 +118,7 @@ To get the full  use of PmagPy functionality, you will first have to install Pyt
    \item Download and install the \href{https://www.enthought.com/products/canopy/}{Enthought Canopy distribution of Python}. Canopy Express (the free version) contains everything you need (except the mapping utilities). If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license} that gives you access to additional features and bundled packages, including the Basemap package.
    \item Launch Canopy to complete the installation process.  You may need to use control click on the Canopy icon to open it for the first time--try this if you get a message that says ``Canopy can't be opened because it is from an unidentified developer.''  Once you've opened Canopy successfully, select ``yes'' to making Canopy your default Python environment.  In the lower right hand corner of the Canopy launch page, you will find the Version number (currently 1.7.4 or higher). Please include this in any correspondence with the PmagPy team. While you might find use for some of the features within the Canopy environment that opens as an application, PmagPy programs are best run or launched on the \href{#command_line}{command line}.
       \item Optional:  setting up Basemap for use in making maps with Python.
-\verb|Once you have installed the full version of Canopy and want to use a mapping programs like the \href{#basemap_magic.py}{basemap\_magic.py}) command line program or a function that plots data on a map projection (e.g. ipmag.plot_pole()), \customlink{HighRes}|
+Once you have installed the full version of Canopy and want to use a mapping programs like the \href{#basemap_magic.py}{basemap\_magic.py}) command line program or a function that plots data on a map projection (e.g. ipmag.plot\_pole), \customlink{HighRes}
      click on  the `Package Manager' button on the Canopy welcome page, and then on `Available Packages'.  Install both basemap packages (one has high resolution data files in it).
         \item A last note about Canopy: you should update it regularly!  Open the Canopy application and update all the packages at least every few months.
    \end{itemize}
@@ -6734,7 +6734,9 @@ To execute and edit notebook code yourself, you can clone or download this repos
 
 Notebooks are constructed as a series of `cells' which can be text or code.  To view the `source' of a text cell, just click on it.  To render it, click on the `run' button (sideways triangle on the toolbar).  Similarly, to run the code in a code cell, click on the cell and then the `run' button (or use the shift+enter short cut).   To execute the entire notebook, click on the `Cell' button and choose 'Run All'.
 
-To use {\bf PmagPy} within the notebook, the {\bf PmagPy} function modules need to be in your Python path. This . There are two ways to do this. One way is to have your .profile or .bash\_profile have a line in it that reads :
+The easiest way to access {\bf PmagPy} functionality in the notebook is to follow the regular install instructions using \href{#pip_install}{pip}.  This automatically adds all of the pmagpy module into your Python path.  You can go straight to \href{#notebook_start}{looking at the data}!
+
+If for some reason you don't install using pip (for instance, if you are a developer), you have two other options.  You still will need to have the {\bf PmagPy} function modules in your Python path. There are two ways to do this. One way is to have your .profile or .bash\_profile have a line in it that reads :
 
 \begin{verbatim}
 PYTHONPATH=$PYTHONPATH:~/PmagPy
@@ -6742,6 +6744,7 @@ PYTHONPATH=$PYTHONPATH:~/PmagPy
 
 Another way is to set the path to the location of your PmagPy folder within the notebook itself. The default location on  MacOS is in a folder called {\it PmagPy} in your home directory (e.g., /Users/YOUR\_NAME\_HERE/PmagPy) and on Windows is in the Documents folder (e.g., 'C:\\Users\\YOUR\_NAME\_HERE\\Documents\\PmagPy\\PmagPy'. To do this you must \texttt{import os} and then have a line that reads \texttt{sys.path.insert(0, `/Users/......')} where the path reflects your own path.   If PmagPy is in your path you should be able to run the first code block which imports the {\bf PmagPy} modules and makes them availible available to use within the notebook.  The notebooks also import several other Python modules useful for scientific computing (numpy),  data manipulation (pandas) and plotting (matplotlib).
 
+\customlink{notebook_start}
  Now you are ready to look at some data.  In the code block under the heading `Reading data from MagIC format results files',  data are read in from a file \href{#magic_download}{downloaded} and unpacked from the MagIC database.   The notebook shows how to read in the data into a \href{#pandas}{pandas DataFrame}, and plot the directions on an equal area projection:
 
 \includegraphics[width=15cm]{EPSFiles/SnakeRiver.eps}
