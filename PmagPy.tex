@@ -212,11 +212,15 @@ logged in on the main display of your Mac.
 
 If you are a developer, and wish to download PmagPy from the \href{https://github.com/PmagPy/PmagPy}{Github repository}, you may want to add PmagPy directly to your path instead of installing via pip.
 
-If you want to contribute to PmagPy or modify PmagPy programs for your own use, you should do a developer install.
+If you're wondering whether you should do a \href{#pip_install}{pip install} or a developer install, it depends on what you're hoping to do with {\bf PmagPy}.  The benefit of a regular pip installation is that you will get a tested, stable version of {\bf PmagPy}.  You can install everything you need quickly and easily, and you'll be able to use the full functionality.  The benefit of a developer installation is that you will be able to stay up-to-date with what other developers are working on.  You will also be able to make changes and use those changes immediately.  The downside is that the developer install may be buggier and requires you to make edits in your bash\_profile.
+
+If you want to contribute to PmagPy or modify PmagPy programs for your own use, you should do a developer install, otherwise go with the regular \href{#pip_install}{pip install}.  The developer install follows these steps:
+
+
 \begin{enumerate}
 \item (Optional) Install git on your computer and sign up for a \href{https://github.com}{Github account} if you don't already have one.
 \item Fork the PmagPy repo (if you have set up with git/Github as in step 1), or simply download the zipfile from the \href{https://github.com/PmagPy/PmagPy}{Github repository}.
-\item Add PmagPy to your \$PATH by putting these lines to your .bashrc or .bash_profile:
+\item Add PmagPy to your \$PATH by putting these lines to your .bashrc or .bash\_profile:
 \begin{verbatim}
 export PATH=/Users/***/PmagPy:$PATH
 export PATH=/Users/***/PmagPy/programs:$PATH
@@ -6767,9 +6771,9 @@ Notebooks are constructed as a series of `cells' which can be text or code.  To 
 
 The easiest way to access {\bf PmagPy} functionality in the notebook is to follow the regular install instructions using \href{#pip_install}{pip}.  This automatically adds all of the pmagpy module into your Python path.  You can go straight to \href{#notebook_start}{looking at the data}!
 
-If for some reason you don't install using pip, you can do a \href{#developer_install}{developer install}.
+If you didn't install using pip, you can also do a \href{#developer_install}{developer install}.
 
-Another way is to set the path to the location of your PmagPy folder within the notebook itself. The default location on  MacOS is in a folder called {\it PmagPy} in your home directory (e.g., /Users/YOUR\_NAME\_HERE/PmagPy) and on Windows is in the Documents folder (e.g., 'C:\\Users\\YOUR\_NAME\_HERE\\Documents\\PmagPy\\PmagPy'. To do this you must \texttt{import os} and then have a line that reads \texttt{sys.path.insert(0, `/Users/......')} where the path reflects your own path.   If PmagPy is in your path you should be able to run the first code block which imports the {\bf PmagPy} modules and makes them availible available to use within the notebook.  The notebooks also import several other Python modules useful for scientific computing (numpy),  data manipulation (pandas) and plotting (matplotlib).
+A third way to acces {\bf PmagPy} inside a notebook is to set the path to the location of your downloaded PmagPy folder within the notebook itself. The default location on  MacOS is in a folder called {\it PmagPy} in your home directory (e.g., /Users/YOUR\_NAME\_HERE/PmagPy) and on Windows is in the Documents folder (e.g., 'C:\\Users\\YOUR\_NAME\_HERE\\Documents\\PmagPy\\PmagPy'. To do this you must \texttt{import os} and then have a line that reads \texttt{sys.path.insert(0, `/Users/......')} where the path reflects your own path.   If PmagPy is in your path you should be able to run the first code block which imports the {\bf PmagPy} modules and makes them availible available to use within the notebook.  The notebooks also import several other Python modules useful for scientific computing (numpy),  data manipulation (pandas) and plotting (matplotlib).
 
 \customlink{notebook_start}
  Now you are ready to look at some data.  In the code block under the heading `Reading data from MagIC format results files',  data are read in from a file \href{#magic_download}{downloaded} and unpacked from the MagIC database.   The notebook shows how to read in the data into a \href{#pandas}{pandas DataFrame}, and plot the directions on an equal area projection:
