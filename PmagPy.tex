@@ -76,10 +76,12 @@ doi:10.1002/2016GC006307.}
 \chapter{Installing {\bf PmagPy}}
 
 %To skip all the details and just start using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI} to upload data into the \href{#MagICDatabase}{MagIC database}, or to analyze using \href{#thellier_GUI.py}{Thellier GUI} or \href{#DemagGUI}{Demag GUI}, start here.
-You have a few options for downloading and using PmagPy.  If you only want to use the GUIs, you can download them as  \href{#standalone}{standalone programs}.
-  If you want full access to PmagPy functionality, you must first install the recommended version of
+You have three options for downloading and using PmagPy.  If you only want to use the GUIs, you can download them as  \href{#standalone}{standalone programs}.  The standalone install doesn't require that you have Python, but is more limited that the full PmagPy install.
+  If you want access to all of PmagPy's functionality, you must first install the recommended version of
    \href{#getting_python}{ Python}.
-   Then  \href{#pip_install}{use the pip utility} to download and install the {PmagPy} function library and the {PmagPy} command line programs or manually download and install by setting environment variables yourself.
+   Then  \href{#pip_install}{use the pip utility} to download and install the {\bf PmagPy} function library and the {PmagPy} command line programs or manually download and install by setting environment variables yourself.
+
+   If you want to actively participate in developing and modifying PmagPy, you should do a \href{#developer_install}{developer install}.
 
 \customlink{standalone}
 \section{Standalone GUI download}
@@ -148,10 +150,9 @@ Once you have installed the full version of Canopy and want to use a mapping pro
      \item If you run into trouble, use pip to uninstall both pmagpy and pmagpy-cli, then try again to install first pmagpy and then pmagpy-cli
    \end{itemize}
 
-%
-%
-%To install from the Github software repository:
-%
+   %
+
+
 % \begin{itemize}
 %   \item Download the zip file from the \href{https://github.com/ltauxe/PmagPy/releases/latest} {PmagPy} software package on Github. Unzip the downloaded file by double clicking on it. PC users should extract all the files to a folder on your desktop (or wherever).  Once you have the folder open, double click on the {\it install\_MacOS} or {\it install\_Windows} file depending on your operating system.  (If you are a Linux user, just copy the files to some directory and put both PmagPy and PmagPy/programs into your path.)
 %   \item For Windows users, the install process will create a custom ``PmagPy Prompt'' with a shortcut on your desktop.  This prompt is identical to the regular Command Prompt, except that it has all of the PmagPy functionality built in. From here on, whenever the documentation refers to your ``command line'', you should use the PmagPy Prompt.
@@ -165,7 +166,7 @@ Once you have installed the full version of Canopy and want to use a mapping pro
     \begin{itemize}
 \item Testing your installation:
 
-To make sure everything is working, return to your \href{#command_line}{command line} (or PmagPy Prompt), type {\bf eqarea.py -h}.      Important note for Windows users: you will need to use ``eqarea -h''.  In fact, you will drop the ``.py'' anytime you are calling a command-line program.
+To make sure everything is working, return to your \href{#command_line}{command line}, type {\bf eqarea.py -h}.      Important note for Windows users: you will need to use ``eqarea -h''.  In fact, you will drop the ``.py'' anytime you are calling a command-line program.
 
  If you do not see the help message, first try setting your path by hand following the instructions on the  \href{#trouble}{Trouble Shooting} page. If that fails, please send the error message and  Canopy version number to \href{mailto:ltauxe@ucsd.edu?subject=PmagPy Cookbook}{ltauxe@ucsd.edu}
 
@@ -205,6 +206,27 @@ logged in on the main display of your Mac.
 
 \noindent Also, Anaconda users may need to \href{#anaconda_troubleshooting}{install wxPython}.
 
+
+\customlink{developer_install}
+\section{Developer install of PmagPy}
+
+If you are a developer, and wish to download PmagPy from the \href{https://github.com/PmagPy/PmagPy}{Github repository}, you may want to add PmagPy directly to your path instead of installing via pip.
+
+If you want to contribute to PmagPy or modify PmagPy programs for your own use, you should do a developer install.
+
+   1. Install git on your computer and sign up for a \href{https://github.com}{Github account} if you don't already have one.
+   2. Fork the PmagPy repo, or simply download the zipfile from the \href{https://github.com/PmagPy/PmagPy}{Github repository}.
+   3. Add PmagPy to your $PATH by putting these lines to your .bashrc or .bash_profile:
+\begin{verbatim}
+export PATH=/Users/***/PmagPy:$PATH
+export PATH=/Users/***/PmagPy/programs:$PATH
+export PYTHONPATH=$PYTHONPATH:/Users/***/PmagPy/
+\end{verbatim}
+
+where *** is your username.  Then restart your Terminal.
+
+4.  Check out our guidelines on \href{https://github.com/PmagPy/PmagPy/blob/master/CONTRIBUTING.md}{how to contribute to PmagPy} for guidelines of all sorts, including how to raise issues, request features, and make pull requests.
+
 %\setcounter{tocdepth}{1}
 %\tableofcontents
 \section{Next steps}
@@ -230,8 +252,14 @@ Where do you want to go from here?
 
 \includegraphics[width=15cm]{EPSFiles/FigQkMagicFlow.eps}
 
+Note: {\bf Pmag GUI} is available for use with both 3.0 and 2.5 data.  All new contributions should be built up using 3.0, but 2.5 may be used for legacy data sets and then later upgraded using on the \href{https://beta.earthref.org/MagIC/upgrade}{MagIC site}.  You may specify which data model you want to use on the command-line using the switch ``-DM'', or in the window that pops up when you first open {\bf Pmag GUI}.
+
+\includegraphics[width=15cm]{EPSFiles/PmagGUI_choose_data_model.eps}
+
+The current tutorial is for the 2.5 format, but the usage is very similar.  We will update with new, 3.0 pictures soon!
+
 \begin{enumerate}
-\item Follow the steps in the \href{#quick_start}{Installing PmagPy} section.
+\item Make sure you have followed all of the steps in the \href{#quick_start}{Installing PmagPy} section.
 
 \customlink{Project_Directory}
 
@@ -617,6 +645,7 @@ Now you've collected together all the files you need, we can start importing the
 
 {\bf MagIC GUI} is a Graphical User Interface written by Lori Jonestrask.  It is meant for efficiently compiling a contribution for uploading to the MagIC database.  MagIC GUI is specifically designed for making a contribution without measurement data; if you ARE including measurement data, we recommend that you use \href{#pmag_gui.py}{Pmag GUI} instead.
 MagIC GUI allows you to add data at the location, site, sample, and specimen levels.  You can also add results and ages.  The program uses an Excel-like grid interface for entering and editing data.  Useful features include: pop-up menus with controlled vocabularies, multi-cell pasting from external spreadsheets, and built-in validations for MagIC database requirements.
+Note: {\bf magic\_gui.py} uses the current MagIC data model, 3.0.  For working with legacy data in the 2.5 format, you should instead use {\bf magic\_gui2.py}.
 
 
 \section{Starting with MagIC GUI}
@@ -639,7 +668,7 @@ Now we'll walk through a simple data input process, with fake data.
   \item Now you'll have a new column with a new controlled vocabulary.  Find and select `U.S.A.'.  When you're done entering location data, click `Save and close grid'.
 
   \item Next, we'll add in sites, so start by opening the site grid.  We will have two sites in this dataset, so click the `Add row(s)' button once.  Then, fill in the grid.  For some of the values, both sites will have the same value.  To provide this data more efficiently, click on the column label to edit all values in that column.  If that column has a menu, you can then click anywhere in that column and make a selection for every cell in the column. Once you're done editing the column, click the header again to exit the multiple-cell-edit mode.
-  \item For controlled vocabulary columns, like `site\_type', it is possible that you might not be able to find an appropriate value, or you might not know the appropriate value.  In that case, most controlled vocabularies provide a `Not Specified' option, which we will use here.
+  \item For controlled vocabulary columns, like `type', it is possible that you might not be able to find an appropriate value, or you might not know the appropriate value.  In that case, most controlled vocabularies provide a `Not Specified' option, which we will use here.
 
     \includegraphics[width=40cm]{EPSFiles/MM_site_grid_with_edit_all.eps}
 
@@ -6736,11 +6765,7 @@ Notebooks are constructed as a series of `cells' which can be text or code.  To 
 
 The easiest way to access {\bf PmagPy} functionality in the notebook is to follow the regular install instructions using \href{#pip_install}{pip}.  This automatically adds all of the pmagpy module into your Python path.  You can go straight to \href{#notebook_start}{looking at the data}!
 
-If for some reason you don't install using pip (for instance, if you are a developer), you have two other options.  You still will need to have the {\bf PmagPy} function modules in your Python path. There are two ways to do this. One way is to have your .profile or .bash\_profile have a line in it that reads :
-
-\begin{verbatim}
-PYTHONPATH=$PYTHONPATH:~/PmagPy
-\end{verbatim}
+If for some reason you don't install using pip, you can do a \href{#developer_install}{developer install}.
 
 Another way is to set the path to the location of your PmagPy folder within the notebook itself. The default location on  MacOS is in a folder called {\it PmagPy} in your home directory (e.g., /Users/YOUR\_NAME\_HERE/PmagPy) and on Windows is in the Documents folder (e.g., 'C:\\Users\\YOUR\_NAME\_HERE\\Documents\\PmagPy\\PmagPy'. To do this you must \texttt{import os} and then have a line that reads \texttt{sys.path.insert(0, `/Users/......')} where the path reflects your own path.   If PmagPy is in your path you should be able to run the first code block which imports the {\bf PmagPy} modules and makes them availible available to use within the notebook.  The notebooks also import several other Python modules useful for scientific computing (numpy),  data manipulation (pandas) and plotting (matplotlib).
 
@@ -6834,18 +6859,6 @@ pip install --upgrade --force-reinstall --no-deps pmagpy-cli
 
 %Your \$PATH may look very different, but as long as you have the complete path to the PmagPy directory in there, you are golden.  If the directory is not in your path, you can try re-running the PmagPy install script, which should set your path correctly  for you.  If that doesn't work, go to your home directory (to get there, type ``cd" in your command line).  Use a text editor to open a file called .bash\_profile and add these lines:
 
-If you are a developer, and wish to download PmagPy from the \href{https://github.com/PmagPy/PmagPy}{Github repository}, you may want to add PmagPy directly to your path instead of installing via pip.
-
-In that case, download the zipfile from the \href{https://github.com/PmagPy/PmagPy}{Github repository}, unzip it, then use a text editor to open a file called .bash\_profile and add these lines:
-
-\begin{verbatim}export PATH=/Users/***/PmagPy:$PATH\end{verbatim}
-\begin{verbatim}export PATH=/Users/***/PmagPy/programs:$PATH\end{verbatim}
-\begin{verbatim}export PYTHONPATH=$PYTHONPATH:/Users/***/PmagPy/\end{verbatim}
-
-where *** is your username.  Then restart your Terminal.
-
-Note that this solution -- download PmagPy from Github, then add it to your $PATH and $PYTHONPATH -- can also be used if for some reason you are unable to install using pip.
-
 
 \item For Windows users:
 
@@ -6922,7 +6935,7 @@ which will show you all of your pip-installed packages.  If you don't see pmagpy
 \end{enumerate}
 
 \section{Problems updating Canopy}
-If you are using Canopy, you will need to keep it up to date.  Currently, that means the version number should be 1.6.1 or higher.  In general, you can update by opening the Canopy application; it will automatically check for updates.  However, if you haven't updated for a long time, Canopy can get ``stuck'' in an old version where it can no longer update.  If that is the case, you will need to fully uninstall and reinstall canopy, following the directions on the \href{https://support.enthought.com/hc/en-us/articles/204469570-Canopy-shows-no-updates-available-reinstalling-from-the-website}{Enthought website}.
+If you are using Canopy, you will need to keep it up to date.  Currently, that means the version number should be 1.6.1 or higher.  In general, you can update by opening the Canopy application; it will automatically check for updates.  However, if you haven't updated for a long time, Canopy can get ``stuck'' in an old version where it can no longer update.  If that is the case, you will need to fully uninstall and reinstall canopy, following the directions on the Enthought site.  For a full explanation, see \href{this support article}{https://support.enthought.com/hc/en-us/articles/204469570-Canopy-shows-no-updates-available-reinstalling-from-the-website}{Enthought website}.  For the full uninstall instructions, see \href{these directions}{https://support.enthought.com/hc/en-us/articles/204469700-Uninstalling-and-resetting-Canopy}.
 
 \section{Error loading dlls (windows only)}
 Some of the modules used in PmagPy have dependencies that are not called directly.  If you are missing one of those dependencies, the programs may fail in odd ways.  In general, it is worthwhile to open Canopy, go into the package manager, and update all packages.  More specifically, if you see an error message like this: \begin{verbatim}ImportError: DLL load failed: The specified procedure could not be found  \end{verbatim} you may be missing the MKL package.  Open Canopy, go to package manager, and select ``Available packages".  Scroll down to MKL, and install it.  This should fix the problem!  Note that windows users who are having trouble opening one of the GUIs should try this solution whether or not they actually see this error message.
