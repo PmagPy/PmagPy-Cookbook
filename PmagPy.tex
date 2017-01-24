@@ -213,19 +213,21 @@ logged in on the main display of your Mac.
 If you are a developer, and wish to download PmagPy from the \href{https://github.com/PmagPy/PmagPy}{Github repository}, you may want to add PmagPy directly to your path instead of installing via pip.
 
 If you want to contribute to PmagPy or modify PmagPy programs for your own use, you should do a developer install.
-
-   1. Install git on your computer and sign up for a \href{https://github.com}{Github account} if you don't already have one.
-   2. Fork the PmagPy repo, or simply download the zipfile from the \href{https://github.com/PmagPy/PmagPy}{Github repository}.
-   3. Add PmagPy to your $PATH by putting these lines to your .bashrc or .bash_profile:
+\begin{enumerate}
+\item (Optional) Install git on your computer and sign up for a \href{https://github.com}{Github account} if you don't already have one.
+\item Fork the PmagPy repo (if you have set up with git/Github as in step 1), or simply download the zipfile from the \href{https://github.com/PmagPy/PmagPy}{Github repository}.
+\item Add PmagPy to your \$PATH by putting these lines to your .bashrc or .bash_profile:
 \begin{verbatim}
 export PATH=/Users/***/PmagPy:$PATH
 export PATH=/Users/***/PmagPy/programs:$PATH
 export PYTHONPATH=$PYTHONPATH:/Users/***/PmagPy/
 \end{verbatim}
 
-where *** is your username.  Then restart your Terminal.
+where *** is your username.  Then restart your Terminal.  At this point you should be able to use all PmagPy functionality as if you had done a full \href{#pip_install}{pip install}.  The only difference is that you will be able to stay up-to-date with PmagPy development and make edits in PmagPy code which will be immediately available in your system.
 
-4.  Check out our guidelines on \href{https://github.com/PmagPy/PmagPy/blob/master/CONTRIBUTING.md}{how to contribute to PmagPy} for guidelines of all sorts, including how to raise issues, request features, and make pull requests.
+\item Check out our guidelines on \href{https://github.com/PmagPy/PmagPy/blob/master/CONTRIBUTING.md}{how to contribute to PmagPy} for guidelines of all sorts, including how to raise issues, request features, and make pull requests.
+
+\end{enumerate}
 
 %\setcounter{tocdepth}{1}
 %\tableofcontents
@@ -645,7 +647,7 @@ Now you've collected together all the files you need, we can start importing the
 
 {\bf MagIC GUI} is a Graphical User Interface written by Lori Jonestrask.  It is meant for efficiently compiling a contribution for uploading to the MagIC database.  MagIC GUI is specifically designed for making a contribution without measurement data; if you ARE including measurement data, we recommend that you use \href{#pmag_gui.py}{Pmag GUI} instead.
 MagIC GUI allows you to add data at the location, site, sample, and specimen levels.  You can also add results and ages.  The program uses an Excel-like grid interface for entering and editing data.  Useful features include: pop-up menus with controlled vocabularies, multi-cell pasting from external spreadsheets, and built-in validations for MagIC database requirements.
-Note: {\bf magic\_gui.py} uses the current MagIC data model, 3.0.  For working with legacy data in the 2.5 format, you should instead use {\bf magic\_gui2.py}.
+Note: {\bf magic\_gui.py} uses the current MagIC data model, 3.0.  For working with legacy data in the 2.5 format, you should instead use {\bf magic\_gui2.py}.  The tutorial below was written specifically for the older  {\bf magic\_gui2.py} but will soon be updated with illustrations and instructions from {\bf magic\_gui.py}. The two programs do work almost identically, so the tutorial should still point you in the right direction even if you are working with 3.0 data.
 
 
 \section{Starting with MagIC GUI}
