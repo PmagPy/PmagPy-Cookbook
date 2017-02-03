@@ -1,15 +1,15 @@
 # uncomment the customlinks import and all the \customlink lines
 # then run: 
 htlatex PmagPy "html,1,sections+"
-htlatex PmagPy_Install_Help.tex "html,1,sections+"
-mv *.png Cookbook-Web-Pages
-mv *.html Cookbook-Web-Pages
-mv PmagPy.pdf Cookbook-Web-Pages
+#mv *.png Cookbook-Web-Pages
+#mv *.html Cookbook-Web-Pages
+#mv PmagPy.pdf Cookbook-Web-Pages
 
-# git add .
-# git commit
-# git push origin master
+ git add .
+ git commit
+ git push origin master
 
+opsol
 # cd Cookbook-Web-Pages
 # git add .
 # git commit
