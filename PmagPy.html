@@ -7,7 +7,7 @@
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
 <!-- html,1,sections+ --> 
 <meta name="src" content="PmagPy.tex"> 
-<meta name="date" content="2017-01-25 12:12:00"> 
+<meta name="date" content="2017-04-14 13:40:00"> 
 <link rel="stylesheet" type="text/css" href="PmagPy.css"> 
 </head><body 
 >
@@ -420,7 +420,7 @@ name="PmagPy0x.png" src="EPSFiles/logo.eps"
 <h2 class="titleHead">PmagPy Cookbook</h2>
 <div class="author" ></div><br />
 <div class="date" ><span 
-class="cmr-12">January 25, 2017</span></div>
+class="cmr-12">April 14, 2017</span></div>
                                                                      
 
                                                                      
@@ -450,10 +450,10 @@ Geosyst., 17, doi:10.1002/2016GC006307.</a>
    Lisa Tauxe
    <br />Scripps Institution of Oceanography
    <br />La Jolla, CA 92093
-   <br />January 25, 2017
+   <br />April 14, 2017
    <br /><a 
 href="http://magician.ucsd.edu/" class="url" ><span 
-class="cmtt-10x-x-109">http://magician.ucsd.edu/:x</span></a></div>
+class="cmtt-10x-x-109">http://magician.ucsd.edu/</span></a></div>
 <!--l. 73--><p class="indent" >   <a name='quick_start'></a>
                                                                      
 
@@ -754,18 +754,26 @@ href="https://github.com/PmagPy/PmagPy" >Github repository</a>.
 
                                                                      
      <div class="verbatim" id="verbatim-8">
-     export&#x00A0;PATH=/Users/***/PmagPy:$PATH
-     &#x00A0;<br />export&#x00A0;PATH=/Users/***/PmagPy/programs:$PATH
+     export&#x00A0;PATH=/Users/***/PmagPy/programs:$PATH
+     &#x00A0;<br />export&#x00A0;PATH=/Users/***/PmagPy/programs/conversion_scripts:$PATH
      &#x00A0;<br />export&#x00A0;PYTHONPATH=$PYTHONPATH:/Users/***/PmagPy/
 </div>
      <!--l. 228--><p class="nopar" >
-     <!--l. 230--><p class="noindent" >where *** is your username. Then restart your Terminal. At this
-     point you should be able to use all PmagPy functionality as if you
-     had done a full <a 
-href="#pip_install" >pip install</a>. The only difference is that you will
-     be able to stay up-to-date with PmagPy development and make
-     edits in PmagPy code which will be immediately available in your
-     system.
+     <!--l. 230--><p class="noindent" >where *** is your username. (Of course, these lines will depend on exactly
+     where you have put your PmagPy folder &#8211; if it lives on your Desktop, you
+     will need to point your PATH there:
+                                                                     
+
+                                                                     
+     <div class="verbatim" id="verbatim-9">
+     export&#x00A0;PATH=/Users/***/Desktop/PmagPy/programs
+</div>
+     <!--l. 230--><p class="nopar" >, and so on.) Next, restart your Terminal. At this point you should be able
+     to use all PmagPy functionality as if you had done a full <a 
+href="#pip_install" >pip install</a>. The
+     only difference is that you will be able to stay up-to-date with PmagPy
+     development and make edits in PmagPy code which will be immediately
+     available in your system.
      </li>
      <li 
   class="enumerate" id="x1-11008x4">Check out our guidelines on <a 
@@ -791,20 +799,24 @@ class="cmbx-10x-x-109">MagIC </span>database.
 href="#PmagPy" >Learn  more  about  particular  programs  in  the  <span 
 class="cmbx-10x-x-109">PmagPy  </span>software
      package.</a>
-                                                                     
-
-                                                                     
      </li>
      <li class="itemize"><a 
 href="#MagICDatabase" >Learn about the MagIC Database.</a>
      </li>
      <li class="itemize"><a 
 href="#Python" >Learn how to write your own programs in Python.</a>
+                                                                     
+
+                                                                     
      </li>
      <li class="itemize"><a 
 href="#Notebooks" >Learn how to use Jupyter notebooks for managing your data analysis
      workflow.</a></li></ul>
 <!--l. 252--><p class="indent" >   <a name='pmag_gui.py'></a>
+                                                                     
+
+                                                                     
+<!--l. 254--><p class="indent" >
                                                                      
 
                                                                      
@@ -883,8 +895,8 @@ href="#standalone" >standalone</a>), by double-clicking the Pmag GUI
      icon on your Desktop.
      </li>
      <li 
-  class="enumerate" id="x1-13010x5">Change directories by clicking on the &#8220;change dir&#8221; button and select
-     your own <span 
+  class="enumerate" id="x1-13010x5">Change directories by clicking on the &#8220;change directory&#8221; button and
+     select your own <span 
 class="cmti-10x-x-109">ThisProject </span>directory.</li></ol>
 <!--l. 286--><p class="indent" >   <a name='convert2magic'></a>
                                                                      
@@ -1027,11 +1039,11 @@ class="cmsy-10x-x-109">&#x2192;</span>
      <span 
 class="cmti-10x-x-109">MyFiles </span>folder.
      </li>
-     <li class="itemize">Choose from the menu bar [file] <span 
+     <li class="itemize">Click the button <span 
 class="cmsy-10x-x-109">&#x2192; </span>[Save orientation file].
      </li>
-     <li class="itemize">Choose from the menu bar [file] <span 
-class="cmsy-10x-x-109">&#x2192; </span>[Calculate sample orientation].
+     <li class="itemize">Click the button <span 
+class="cmsy-10x-x-109">&#x2192; </span>[Calculate sample orientations].
      </li>
      <li class="itemize">Fill in the dialog box like this:
                                                                      
@@ -1539,7 +1551,7 @@ class="cmbx-10x-x-109">Supported sample naming schemes:</span>
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-9">
+   <div class="verbatim" id="verbatim-10">
 &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;[1]&#x00A0;XXXXY:&#x00A0;where&#x00A0;XXXX&#x00A0;is&#x00A0;an&#x00A0;arbitrary&#x00A0;length&#x00A0;site&#x00A0;designation&#x00A0;and&#x00A0;Y
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;is&#x00A0;the&#x00A0;single&#x00A0;character&#x00A0;sample&#x00A0;designation.&#x00A0;&#x00A0;e.g.,&#x00A0;TG001a&#x00A0;is&#x00A0;the
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;first&#x00A0;sample&#x00A0;from&#x00A0;site&#x00A0;TG001.&#x00A0;&#x00A0;&#x00A0;&#x00A0;[default]
@@ -2062,7 +2074,7 @@ command
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-10">
+   <div class="verbatim" id="verbatim-11">
 %&#x00A0;mkdir&#x00A0;NEW_DIRECTORY_NAME
 </div>
 <!--l. 798--><p class="nopar" > This command works in both Unix and DOS environments) and you can move
@@ -2070,7 +2082,7 @@ into your new directory with the command
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-11">
+   <div class="verbatim" id="verbatim-12">
 %&#x00A0;cd&#x00A0;NEW_DIRECTORY_NAME
 </div>
 <!--l. 802--><p class="nopar" > To move back up into the home directory, just type <span 
@@ -2203,7 +2215,7 @@ class="newline" />
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-12">
+   <div class="verbatim" id="verbatim-13">
 %&#x00A0;python&#x00A0;./demag_gui.py
 </div>
 <!--l. 870--><p class="nopar" >
@@ -2662,7 +2674,7 @@ enter:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-13">
+   <div class="verbatim" id="verbatim-14">
 thellier_gui.py
 </div>
 <!--l. 1011--><p class="nopar" >
@@ -2670,7 +2682,7 @@ thellier_gui.py
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-14">
+   <div class="verbatim" id="verbatim-15">
 thellier_gui_anaconda
 </div>
 <!--l. 1017--><p class="nopar" >
@@ -3006,7 +3018,7 @@ command is all on one line (which is what the terminal backslash means).
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-15">
+   <div class="verbatim" id="verbatim-16">
 $&#x00A0;sio_magic.py&#x00A0;-f&#x00A0;arm_magic_example.dat&#x00A0;-loc&#x00A0;Bushveld&#x00A0;-LP&#x00A0;AF:ANI&#x00A0;-F&#x00A0;aarm_measurements.txt&#x00A0;\
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;-ncn&#x00A0;3&#x00A0;-ac&#x00A0;180&#x00A0;-dc&#x00A0;50&#x00A0;-1&#x00A0;-1
 &#x00A0;<br />
@@ -3040,7 +3052,7 @@ class="cmmi-10x-x-109">.</span>3.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-16">
+   <div class="verbatim" id="verbatim-17">
 $&#x00A0;angle.py&#x00A0;-i
 &#x00A0;<br />Declination&#x00A0;1:&#x00A0;[cntrl-D&#x00A0;&#x00A0;to&#x00A0;quit]&#x00A0;350.2
 &#x00A0;<br />Inclination&#x00A0;1:&#x00A0;26.8
@@ -3067,7 +3079,7 @@ option:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-17">
+   <div class="verbatim" id="verbatim-18">
 &#x00A0;$&#x00A0;cat&#x00A0;angle.dat
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;11.2&#x00A0;&#x00A0;&#x00A0;&#x00A0;32.9&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;6.4&#x00A0;&#x00A0;&#x00A0;-42.9
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;11.5&#x00A0;&#x00A0;&#x00A0;&#x00A0;63.7&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;10.5&#x00A0;&#x00A0;&#x00A0;-55.4
@@ -3151,7 +3163,7 @@ directory of the example data files.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-18">
+   <div class="verbatim" id="verbatim-19">
 $&#x00A0;ani_depthplot.py
 </div>
 <!--l. 1304--><p class="nopar" >
@@ -3187,7 +3199,7 @@ of the dike.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-19">
+   <div class="verbatim" id="verbatim-20">
 $&#x00A0;aniso_magic.py&#x00A0;-f&#x00A0;dike_anisotropy.txt&#x00A0;-gtc&#x00A0;110&#x00A0;2&#x00A0;-par&#x00A0;-v&#x00A0;-crd&#x00A0;g
 &#x00A0;<br />Doing&#x00A0;bootstrap&#x00A0;-&#x00A0;be&#x00A0;patient
 &#x00A0;<br />Boostrap&#x00A0;Statistics:
@@ -3240,7 +3252,7 @@ class="cmti-10x-x-109">_anisotropy.txt </span>in the aniso_magic directory.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-20">
+   <div class="verbatim" id="verbatim-21">
 $&#x00A0;aniso_magic.py&#x00A0;-f&#x00A0;sed_anisotropy.txt&#x00A0;-d&#x00A0;3&#x00A0;0&#x00A0;90&#x00A0;-v&#x00A0;-crd&#x00A0;g
 &#x00A0;<br />
 &#x00A0;<br />Doing&#x00A0;bootstrap&#x00A0;-&#x00A0;be&#x00A0;patient
@@ -3293,7 +3305,7 @@ La Jolla was on the North American plate until a few million years ago
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-21">
+   <div class="verbatim" id="verbatim-22">
 $&#x00A0;apwp.py&#x00A0;-i
 &#x00A0;<br />
 &#x00A0;<br />&#x00A0;Welcome&#x00A0;to&#x00A0;paleolatitude&#x00A0;calculator&#x00A0;-&#x00A0;CTRL-D&#x00A0;to&#x00A0;quit
@@ -3323,7 +3335,7 @@ syntax:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-22">
+   <div class="verbatim" id="verbatim-23">
 $&#x00A0;&#x00A0;apwp.py&#x00A0;-f&#x00A0;apwp_example.dat
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;100.0&#x00A0;&#x00A0;&#x00A0;&#x00A0;38.8&#x00A0;&#x00A0;&#x00A0;352.4&#x00A0;&#x00A0;&#x00A0;&#x00A0;58.1&#x00A0;&#x00A0;&#x00A0;&#x00A0;81.5&#x00A0;&#x00A0;&#x00A0;198.3
 </div>
@@ -3389,7 +3401,7 @@ href="#thellier_magic.py" >thellier_magic_redo.py</a>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-23">
+   <div class="verbatim" id="verbatim-24">
 $&#x00A0;&#x00A0;sio_magic.py&#x00A0;-f&#x00A0;atrm_magic_example.dat&#x00A0;-loc&#x00A0;Africa&#x00A0;-LP&#x00A0;T:ANI&#x00A0;-F&#x00A0;atrm_measurements.txt
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;-ncn&#x00A0;1&#x00A0;&#x00A0;-dc&#x00A0;40&#x00A0;-1&#x00A0;-1
 &#x00A0;<br />
@@ -3430,7 +3442,7 @@ class="cmbx-10x-x-109">_magic.py</span>:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-24">
+   <div class="verbatim" id="verbatim-25">
 $&#x00A0;&#x00A0;azdip_magic.py&#x00A0;-f&#x00A0;azdip_magic_example.dat&#x00A0;-ncn&#x00A0;1&#x00A0;-mcd&#x00A0;FS-FD:SO-POM
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;-loc&#x00A0;&#8216;&#8216;Northern&#x00A0;Iceland&#8216;&#8216;
 &#x00A0;<br />
@@ -3469,7 +3481,7 @@ href="#standard_IO" >standard input </a>:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-25">
+   <div class="verbatim" id="verbatim-26">
 $&#x00A0;&#x00A0;cat&#x00A0;&#x003E;&#x00A0;b_vdm_example.dat
 &#x00A0;<br />33&#x00A0;22
 &#x00A0;<br />^D
@@ -3513,7 +3525,7 @@ class="cmti-10x-x-109">_example.txt</span>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-26">
+   <div class="verbatim" id="verbatim-27">
 $&#x00A0;&#x00A0;basemap_magic.py&#x00A0;-f&#x00A0;basemap_example.txt
 </div>
 <!--l. 1491--><p class="nopar" >
@@ -3560,7 +3572,7 @@ demagnetization, in a field), and LP-X for magnetic susceptibility.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-27">
+   <div class="verbatim" id="verbatim-28">
 $&#x00A0;&#x00A0;biplot_magic.py&#x00A0;-f&#x00A0;biplot_magic_example.txt
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;which&#x00A0;responds&#x00A0;with&#x00A0;this:
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;[&#8217;LT-AF-Z&#8217;,&#x00A0;&#8217;LT-AF-I&#8217;,&#x00A0;&#8217;LT-IRM&#8217;,&#x00A0;&#8217;LP-X&#8217;]
@@ -3573,7 +3585,7 @@ against ARM, we would run the program again:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-28">
+   <div class="verbatim" id="verbatim-29">
 $&#x00A0;&#x00A0;biplot_magic.py&#x00A0;-f&#x00A0;biplot_magic_example.txt&#x00A0;-x&#x00A0;LP-X&#x00A0;-y&#x00A0;LT-AF-I
 &#x00A0;<br />LP-X&#x00A0;&#x00A0;selected&#x00A0;for&#x00A0;X&#x00A0;axis
 &#x00A0;<br />LT-AF-I&#x00A0;&#x00A0;selected&#x00A0;for&#x00A0;Y&#x00A0;axis
@@ -3617,7 +3629,7 @@ class="cmti-10x-x-109">_examples.data</span>:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-29">
+   <div class="verbatim" id="verbatim-30">
 $&#x00A0;&#x00A0;bootams.py&#x00A0;-par&#x00A0;-f&#x00A0;bootams_example.dat
 &#x00A0;<br />Doing&#x00A0;bootstrap&#x00A0;-&#x00A0;be&#x00A0;patient
 &#x00A0;<br />
@@ -3679,7 +3691,7 @@ class="td11">       </td> </tr></table></div>
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-30">
+   <div class="verbatim" id="verbatim-31">
 $&#x00A0;cart_dir.py&#x00A0;-i
 &#x00A0;<br />X:&#x00A0;[cntrl-D&#x00A0;&#x00A0;to&#x00A0;quit]&#x00A0;0.3971
 &#x00A0;<br />Y:&#x00A0;-0.1445
@@ -3695,7 +3707,7 @@ $&#x00A0;cart_dir.py&#x00A0;-i
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-31">
+   <div class="verbatim" id="verbatim-32">
 $&#x00A0;cart_dir.py&#x00A0;-f&#x00A0;cart_dir_example.dat
 &#x00A0;<br />&#x00A0;&#x00A0;340.0&#x00A0;&#x00A0;&#x00A0;&#x00A0;65.0&#x00A0;&#x00A0;1.000e+00
 &#x00A0;<br />&#x00A0;&#x00A0;176.0&#x00A0;&#x00A0;&#x00A0;-55.0&#x00A0;&#x00A0;1.000e+00
@@ -3723,7 +3735,7 @@ class="cmsy-8">&#x2218;</span></sup>C.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-32">
+   <div class="verbatim" id="verbatim-33">
 $&#x00A0;chartmaker.py
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;Welcome&#x00A0;to&#x00A0;the&#x00A0;thellier-thellier&#x00A0;experiment&#x00A0;automatic&#x00A0;chart&#x00A0;maker.
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;Please&#x00A0;select&#x00A0;desired&#x00A0;step&#x00A0;interval&#x00A0;and&#x00A0;upper&#x00A0;bound&#x00A0;for&#x00A0;which&#x00A0;it&#x00A0;is&#x00A0;valid.
@@ -3801,7 +3813,7 @@ class="cmti-10x-x-109">_example.dat</span>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-33">
+   <div class="verbatim" id="verbatim-34">
 $&#x00A0;chi_magic.py&#x00A0;-f&#x00A0;chi_magic_example.dat
 &#x00A0;<br />IRM-Kappa-2352&#x00A0;1&#x00A0;out&#x00A0;of&#x00A0;&#x00A0;2
 &#x00A0;<br />IRM-OldBlue-1892&#x00A0;2&#x00A0;out&#x00A0;of&#x00A0;&#x00A0;2
@@ -3873,7 +3885,7 @@ href="#eqarea.py" >eqarea.py</a>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-34">
+   <div class="verbatim" id="verbatim-35">
 $&#x00A0;eqarea.py&#x00A0;-f&#x00A0;common_mean_ex_file1.dat&#x00A0;-sav
 &#x00A0;<br />1&#x00A0;&#x00A0;saved&#x00A0;in&#x00A0;&#x00A0;common_mean_ex_file1.dat.svg
 &#x00A0;<br />
@@ -3892,7 +3904,7 @@ class="cmbx-10x-x-109">_mean.py</span>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-35">
+   <div class="verbatim" id="verbatim-36">
 $&#x00A0;common_mean.py&#x00A0;-f&#x00A0;common_mean_ex_file1.dat&#x00A0;-f2&#x00A0;common_mean_ex_file2.dat
 &#x00A0;<br />Doing&#x00A0;first&#x00A0;set&#x00A0;of&#x00A0;directions,&#x00A0;please&#x00A0;be&#x00A0;patient..
 &#x00A0;<br />Doing&#x00A0;second&#x00A0;set&#x00A0;of&#x00A0;directions,&#x00A0;please&#x00A0;be&#x00A0;patient..
@@ -3917,7 +3929,7 @@ Inc=9.9).
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-36">
+   <div class="verbatim" id="verbatim-37">
 $&#x00A0;common_mean.py&#x00A0;-f&#x00A0;common_mean_ex_file1.dat&#x00A0;-dir&#x00A0;0&#x00A0;9.9
 &#x00A0;<br />Doing&#x00A0;first&#x00A0;set&#x00A0;of&#x00A0;directions,&#x00A0;please&#x00A0;be&#x00A0;patient..
 &#x00A0;<br />S[a]ve&#x00A0;plots,&#x00A0;&#x003C;Return&#x003E;&#x00A0;to&#x00A0;quit
@@ -3954,7 +3966,7 @@ set the resolution to &#8217;low&#8217;.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-37">
+   <div class="verbatim" id="verbatim-38">
 $&#x00A0;cont_rot.py&#x00A0;-con&#x00A0;af:sam&#x00A0;-prj&#x00A0;ortho&#x00A0;-eye&#x00A0;-20&#x00A0;0&#x00A0;-sym&#x00A0;k-&#x00A0;&#x00A0;1&#x00A0;-age&#x00A0;180&#x00A0;-res&#x00A0;l
 &#x00A0;<br />&#x00A0;S[a]ve&#x00A0;to&#x00A0;save&#x00A0;plot,&#x00A0;Return&#x00A0;to&#x00A0;quit:&#x00A0;&#x00A0;a
 &#x00A0;<br />1&#x00A0;&#x00A0;saved&#x00A0;in&#x00A0;&#x00A0;Cont_rot.pdf
@@ -4013,7 +4025,7 @@ class="cmti-10x-x-109">_example.dat</span>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-38">
+   <div class="verbatim" id="verbatim-39">
 $&#x00A0;convert_samples.py&#x00A0;-f&#x00A0;convert_samples_example.dat
 &#x00A0;<br />Data&#x00A0;saved&#x00A0;in:&#x00A0;&#x00A0;orient_Northern_Iceland.txt
 </div>
@@ -4048,7 +4060,7 @@ meters (the -d option sets this) and we will suppress the declinations
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-39">
+   <div class="verbatim" id="verbatim-40">
 $&#x00A0;core_depthplot.py&#x00A0;-fsa&#x00A0;er_samples.txt&#x00A0;-LP&#x00A0;AF&#x00A0;15&#x00A0;-log&#x00A0;-d&#x00A0;50&#x00A0;150&#x00A0;-ts&#x00A0;gts04&#x00A0;23&#x00A0;34&#x00A0;-D
 </div>
 <!--l. 1822--><p class="nopar" >
@@ -4075,7 +4087,7 @@ class="cmsy-8">&#x2218;</span></sup>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-40">
+   <div class="verbatim" id="verbatim-41">
 %curie.py&#x00A0;-f&#x00A0;curie_example.dat&#x00A0;-w&#x00A0;10
 &#x00A0;<br />second&#x00A0;deriative&#x00A0;maximum&#x00A0;is&#x00A0;at&#x00A0;T=552
 </div>
@@ -4136,7 +4148,7 @@ class="cmti-10x-x-109">_criteria.txt</span>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-41">
+   <div class="verbatim" id="verbatim-42">
 $&#x00A0;customize_criteria.py&#x00A0;-f&#x00A0;pmag_criteria.txt&#x00A0;-F&#x00A0;new_criteria.txt
 &#x00A0;<br />Acceptance&#x00A0;criteria&#x00A0;read&#x00A0;in&#x00A0;from&#x00A0;&#x00A0;pmag_criteria.txt
 &#x00A0;<br />&#x00A0;[0]&#x00A0;Use&#x00A0;no&#x00A0;acceptance&#x00A0;criteria?
@@ -4190,7 +4202,7 @@ class="cmti-10x-x-109">_example.dat.</span>
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-42">
+   <div class="verbatim" id="verbatim-43">
 &#x00A0;&#x00A0;$&#x00A0;dayplot_magic.py&#x00A0;-f&#x00A0;dayplot_magic_example.dat
 &#x00A0;<br />
 &#x00A0;<br />&#x00A0;S[a]ve&#x00A0;to&#x00A0;save&#x00A0;plots,&#x00A0;return&#x00A0;to&#x00A0;quit:
@@ -4233,7 +4245,7 @@ class="cmti-10x-x-109">_example.dat</span>:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-43">
+   <div class="verbatim" id="verbatim-44">
 $&#x00A0;di_eq.py&#x00A0;-f&#x00A0;di_eq_example.dat
 &#x00A0;<br />-0.239410&#x00A0;-0.893491
 &#x00A0;<br />0.436413&#x00A0;0.712161
@@ -4271,7 +4283,7 @@ the interactive mode:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-44">
+   <div class="verbatim" id="verbatim-45">
 $&#x00A0;di_geo.py&#x00A0;-i
 &#x00A0;<br />Declination:&#x00A0;&#x003C;cntrl-D&#x003E;&#x00A0;to&#x00A0;quit&#x00A0;&#x00A0;81
 &#x00A0;<br />Inclination:&#x00A0;45.2
@@ -4295,7 +4307,7 @@ information.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-45">
+   <div class="verbatim" id="verbatim-46">
 $&#x00A0;eqarea.py&#x00A0;-f&#x00A0;di_geo_example.dat
 </div>
 <!--l. 1973--><p class="nopar" > which should look like this:
@@ -4308,7 +4320,7 @@ system looks better! To find out try:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-46">
+   <div class="verbatim" id="verbatim-47">
 di_geo.py&#x00A0;-f&#x00A0;di_geo_example.dat&#x00A0;&#x003E;di_geo.out;&#x00A0;&#x00A0;eqarea.py&#x00A0;-f&#x00A0;di_geo.out
 &#x00A0;<br />
 </div>
@@ -4342,7 +4354,7 @@ href="#eqarea.py" >eqarea.py</a>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-47">
+   <div class="verbatim" id="verbatim-48">
 $&#x00A0;fishrot.py&#x00A0;-I&#x00A0;42&#x00A0;&#x003E;fishrot.out
 &#x00A0;<br />$&#x00A0;gofish.py&#x00A0;&#x003C;fishrot.out
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;1.7&#x00A0;&#x00A0;&#x00A0;&#x00A0;42.4&#x00A0;&#x00A0;&#x00A0;&#x00A0;100&#x00A0;&#x00A0;&#x00A0;&#x00A0;95.3720&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;21.4&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;3.1
@@ -4383,7 +4395,7 @@ class="cmbx-10x-x-109">_tilt.py </span>using the interactive option:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-48">
+   <div class="verbatim" id="verbatim-49">
 $&#x00A0;di_tilt.py&#x00A0;-i
 &#x00A0;<br />Declination:&#x00A0;&#x003C;cntl-D&#x003E;&#x00A0;to&#x00A0;quit&#x00A0;5.3
 &#x00A0;<br />Inclination:&#x00A0;71.6
@@ -4452,7 +4464,7 @@ name entry:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-49">
+   <div class="verbatim" id="verbatim-50">
 $&#x00A0;di_vgp.py&#x00A0;-f&#x00A0;di_vgp_example.dat
 &#x00A0;<br />&#x00A0;&#x00A0;154.7&#x00A0;&#x00A0;&#x00A0;&#x00A0;77.3
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;6.6&#x00A0;&#x00A0;&#x00A0;-69.6
@@ -4469,7 +4481,7 @@ class="cmsy-8">&#x2218;</span></sup>S.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-50">
+   <div class="verbatim" id="verbatim-51">
 $&#x00A0;dipole_pinc.py&#x00A0;-i
 &#x00A0;<br />Paleolat&#x00A0;for&#x00A0;converting&#x00A0;to&#x00A0;inclination:&#x00A0;&#x003C;cntl-D&#x003E;&#x00A0;to&#x00A0;quit&#x00A0;-24
 &#x00A0;<br />&#x00A0;&#x00A0;-41.7
@@ -4489,7 +4501,7 @@ class="cmsy-8">&#x2218;</span></sup>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-51">
+   <div class="verbatim" id="verbatim-52">
 $&#x00A0;dipole_plat.py&#x00A0;-i
 &#x00A0;<br />Inclination&#x00A0;for&#x00A0;converting&#x00A0;to&#x00A0;paleolatitude:&#x00A0;&#x003C;cntl-D&#x003E;&#x00A0;to&#x00A0;quit&#x00A0;23
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;12.0
@@ -4553,7 +4565,7 @@ typing what is after the prompts (%) [ the other stuff is computer responses]
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-52">
+   <div class="verbatim" id="verbatim-53">
 $&#x00A0;cat&#x00A0;&#x003E;&#x00A0;dir_cart_example.dat
 &#x00A0;<br />&#x00A0;20&#x00A0;46&#x00A0;1.3
 &#x00A0;<br />175&#x00A0;-24&#x00A0;4.2
@@ -4569,7 +4581,7 @@ class="cmbx-10x-x-109">_cart.py </span>interactively as in:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-53">
+   <div class="verbatim" id="verbatim-54">
 &#x00A0;$&#x00A0;dir_cart.py&#x00A0;-i
 &#x00A0;<br />
 &#x00A0;<br />Declination:&#x00A0;[cntrl-D&#x00A0;&#x00A0;to&#x00A0;quit]
@@ -4610,7 +4622,7 @@ level.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-54">
+   <div class="verbatim" id="verbatim-55">
 $&#x00A0;&#x00A0;dmag_magic.py&#x00A0;-f&#x00A0;dmag_magic_example.dat&#x00A0;-LT&#x00A0;AF
 &#x00A0;<br />5921&#x00A0;&#x00A0;records&#x00A0;read&#x00A0;from&#x00A0;&#x00A0;dmag_magic_example.dat
 &#x00A0;<br />McMurdo&#x00A0;plotting&#x00A0;by:&#x00A0;&#x00A0;er_location_name
@@ -4669,7 +4681,7 @@ class="cmti-10x-x-109">zmab0083201tmp03.txt</span>).
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-55">
+   <div class="verbatim" id="verbatim-56">
 $&#x00A0;cd&#x00A0;MagIC_download
 &#x00A0;<br />$&#x00A0;download_magic.py&#x00A0;-f&#x00A0;zmab0083201tmp03.txt
 &#x00A0;<br />working&#x00A0;on:&#x00A0;&#x00A0;&#8217;er_locations&#8217;
@@ -4725,7 +4737,7 @@ tensor data to the screen.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-56">
+   <div class="verbatim" id="verbatim-57">
 $&#x00A0;cat&#x00A0;eigs_s_example.dat
 &#x00A0;<br />0.33127&#x00A0;&#x00A0;239.53&#x00A0;&#x00A0;&#x00A0;44.70&#x00A0;0.33351&#x00A0;&#x00A0;126.62&#x00A0;&#x00A0;&#x00A0;21.47&#x00A0;0.33521&#x00A0;&#x00A0;19.03&#x00A0;&#x00A0;&#x00A0;37.54
 &#x00A0;<br />0.33177&#x00A0;&#x00A0;281.12&#x00A0;&#x00A0;&#x00A0;&#x00A0;6.18&#x00A0;0.33218&#x00A0;&#x00A0;169.79&#x00A0;&#x00A0;&#x00A0;73.43&#x00A0;0.33603&#x00A0;&#x00A0;&#x00A0;12.82&#x00A0;&#x00A0;&#x00A0;15.32
@@ -4775,7 +4787,7 @@ example.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-57">
+   <div class="verbatim" id="verbatim-58">
 $&#x00A0;eq_di.py&#x00A0;-f&#x00A0;eq_di_example.dat&#x00A0;&#x003E;tmp
 &#x00A0;<br />$&#x00A0;eqarea.py&#x00A0;-f&#x00A0;tmp
 </div>
@@ -4803,7 +4815,7 @@ projection of the data.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-58">
+   <div class="verbatim" id="verbatim-59">
 $&#x00A0;&#x00A0;fishrot.py&#x00A0;-D&#x00A0;42&#x00A0;-I&#x00A0;60&#x00A0;&#x003E;&#x00A0;fishrot.out
 &#x00A0;<br />$&#x00A0;eqarea.py&#x00A0;-f&#x00A0;fishrot.out
 </div>
@@ -4836,7 +4848,7 @@ Here is an example for Bingham ellipses.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-59">
+   <div class="verbatim" id="verbatim-60">
 $&#x00A0;tk03.py&#x00A0;-lat&#x00A0;42&#x00A0;-rev&#x00A0;&#x003E;tk03.out
 &#x00A0;<br />$&#x00A0;eqarea_ell.py&#x00A0;-f&#x00A0;tk03.out&#x00A0;-ell&#x00A0;B
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Zdec&#x00A0;&#x00A0;&#x00A0;&#x00A0;21.0
@@ -4884,7 +4896,7 @@ ellipse.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-60">
+   <div class="verbatim" id="verbatim-61">
 $&#x00A0;eqarea_magic.py&#x00A0;-obj&#x00A0;loc&#x00A0;-crd&#x00A0;g&#x00A0;-f&#x00A0;pmag_results.txt&#x00A0;-ell&#x00A0;Be
 &#x00A0;<br />24&#x00A0;&#x00A0;records&#x00A0;read&#x00A0;from&#x00A0;&#x00A0;./pmag_results.txt
 &#x00A0;<br />All
@@ -4948,7 +4960,7 @@ href="#magic_select.py" >magic_select.py</a> to select only the individual site 
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-61">
+   <div class="verbatim" id="verbatim-62">
 &#x00A0;$&#x00A0;magic_select.py&#x00A0;-f&#x00A0;pmag_results.txt&#x00A0;-key&#x00A0;data_type&#x00A0;i&#x00A0;&#8217;T&#8217;&#x00A0;-F&#x00A0;site_results.txt
 &#x00A0;<br />$&#x00A0;eqarea_magic.py&#x00A0;-f&#x00A0;site_results.txt&#x00A0;-ell&#x00A0;Bv
 &#x00A0;<br />21&#x00A0;&#x00A0;records&#x00A0;read&#x00A0;from&#x00A0;&#x00A0;./site_results.txt
@@ -4991,7 +5003,7 @@ latitude is!
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-62">
+   <div class="verbatim" id="verbatim-63">
 $&#x00A0;dipole_pinc.py&#x00A0;-i
 &#x00A0;<br />Paleolat&#x00A0;for&#x00A0;converting&#x00A0;to&#x00A0;inclination:&#x00A0;&#x003C;cntl-D&#x003E;&#x00A0;to&#x00A0;quit&#x00A0;42
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;61.0
@@ -5017,7 +5029,7 @@ class="cmti-10x-x-109">_EI </span>directory.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-63">
+   <div class="verbatim" id="verbatim-64">
 $&#x00A0;tk03.py&#x00A0;-lat&#x00A0;42&#x00A0;&#x003E;&#x00A0;tk03.out
 &#x00A0;<br />$&#x00A0;squish.py&#x00A0;-flt&#x00A0;.4&#x00A0;-f&#x00A0;tk03.out&#x00A0;-F&#x00A0;find_EI_example.dat
 </div>
@@ -5034,7 +5046,7 @@ model of Tauxe and Kent (2004).
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-64">
+   <div class="verbatim" id="verbatim-65">
 $&#x00A0;&#x00A0;find_EI.py&#x00A0;-f&#x00A0;find_EI_example.dat
 &#x00A0;<br />Bootstrapping....&#x00A0;be&#x00A0;patient
 &#x00A0;<br />25&#x00A0;&#x00A0;out&#x00A0;of&#x00A0;&#x00A0;1000
@@ -5081,7 +5093,7 @@ so:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-65">
+   <div class="verbatim" id="verbatim-66">
 $&#x00A0;&#x00A0;find_EI.py&#x00A0;-f&#x00A0;find_EI_example.dat&#x00A0;-sc
 </div>
 <!--l. 2483--><p class="nopar" >
@@ -5101,7 +5113,7 @@ class="cmbx-10x-x-109">fisher.py</span>:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-66">
+   <div class="verbatim" id="verbatim-67">
 $&#x00A0;fisher.py&#x00A0;-k&#x00A0;30&#x00A0;-n&#x00A0;10
 &#x00A0;<br />&#x00A0;&#x00A0;233.7&#x00A0;&#x00A0;&#x00A0;&#x00A0;81.4
 &#x00A0;<br />&#x00A0;&#x00A0;357.0&#x00A0;&#x00A0;&#x00A0;&#x00A0;76.4
@@ -5128,7 +5140,7 @@ Fisher distributed by using a Quantile-Quantile plot:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-67">
+   <div class="verbatim" id="verbatim-68">
 $&#x00A0;fisher.py&#x00A0;-k&#x00A0;30&#x00A0;-n&#x00A0;100&#x00A0;&#x003E;fishqq_example.txt
 &#x00A0;<br />$&#x00A0;fishqq.py&#x00A0;-f&#x00A0;fishqq_example.txt
 </div>
@@ -5152,7 +5164,7 @@ class="cmmi-10x-x-109">&#x03BA; </span>of
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-68">
+   <div class="verbatim" id="verbatim-69">
 $&#x00A0;fishrot.py&#x00A0;-n&#x00A0;5&#x00A0;-D&#x00A0;33&#x00A0;-I&#x00A0;41&#x00A0;-k&#x00A0;50
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;35.8&#x00A0;&#x00A0;&#x00A0;&#x00A0;32.8
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;36.2&#x00A0;&#x00A0;&#x00A0;&#x00A0;30.2
@@ -5176,7 +5188,7 @@ class="cmti-10x-x-109">_example.dat</span>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-69">
+   <div class="verbatim" id="verbatim-70">
 $&#x00A0;foldtest.py&#x00A0;-f&#x00A0;foldtest_example.dat
 &#x00A0;<br />doing&#x00A0;&#x00A0;1000&#x00A0;&#x00A0;iterations...please&#x00A0;be&#x00A0;patient.....
 &#x00A0;<br />0
@@ -5236,7 +5248,7 @@ test.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-70">
+   <div class="verbatim" id="verbatim-71">
 $&#x00A0;download_magic.py&#x00A0;-f&#x00A0;magic_contribution_11087.txt
 &#x00A0;<br />$&#x00A0;foldtest_magic.py&#x00A0;-f&#x00A0;pmag_sites.txt&#x00A0;-fsi&#x00A0;er_sites.txt
 &#x00A0;<br />doing&#x00A0;&#x00A0;1000&#x00A0;&#x00A0;iterations...please&#x00A0;be&#x00A0;patient.....
@@ -5277,7 +5289,7 @@ class="cmbx-10x-x-109">gauss.out</span>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-71">
+   <div class="verbatim" id="verbatim-72">
 $&#x00A0;gaussian.py&#x00A0;-s&#x00A0;3&#x00A0;-n&#x00A0;100&#x00A0;-m&#x00A0;10.&#x00A0;-F&#x00A0;gauss.out
 </div>
 <!--l. 2630--><p class="nopar" >
@@ -5299,7 +5311,7 @@ program:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-72">
+   <div class="verbatim" id="verbatim-73">
 $&#x00A0;gobing.py&#x00A0;-f&#x00A0;tk03.out
 &#x00A0;<br />&#x00A0;&#x00A0;357.8&#x00A0;&#x00A0;&#x00A0;&#x00A0;60.3&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;4.5&#x00A0;&#x00A0;&#x00A0;105.7&#x00A0;&#x00A0;&#x00A0;&#x00A0;10.0&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;4.5&#x00A0;&#x00A0;&#x00A0;&#x00A0;21.0&#x00A0;&#x00A0;&#x00A0;-27.6&#x00A0;20
 </div>
@@ -5322,7 +5334,7 @@ parameters:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-73">
+   <div class="verbatim" id="verbatim-74">
 $&#x00A0;&#x00A0;fishrot.py&#x00A0;-n&#x00A0;10&#x00A0;-D&#x00A0;15&#x00A0;-I&#x00A0;41&#x00A0;-k&#x00A0;50&#x00A0;&#x003E;fishrot.out
 &#x00A0;<br />$&#x00A0;gofish.py&#x00A0;-f&#x00A0;&#x00A0;fishrot.out
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;10.8&#x00A0;&#x00A0;&#x00A0;&#x00A0;39.6&#x00A0;&#x00A0;&#x00A0;&#x00A0;10&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;9.8484&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;59.4&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;6.3&#x00A0;&#x00A0;&#x00A0;&#x00A0;10.5
@@ -5347,7 +5359,7 @@ class="cmbx-10x-x-109">gokent.py</span>
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-74">
+   <div class="verbatim" id="verbatim-75">
 $&#x00A0;tk03.py&#x00A0;-n&#x00A0;20&#x00A0;-lat&#x00A0;42&#x00A0;&#x003E;tk03.out;&#x00A0;gokent.py&#x00A0;-f&#x00A0;&#x00A0;tk03.out
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;359.2&#x00A0;&#x00A0;&#x00A0;&#x00A0;55.0&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;9.3&#x00A0;&#x00A0;&#x00A0;147.7&#x00A0;&#x00A0;&#x00A0;&#x00A0;30.8&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;7.8&#x00A0;&#x00A0;&#x00A0;246.8&#x00A0;&#x00A0;&#x00A0;&#x00A0;14.9&#x00A0;20
 </div>
@@ -5369,7 +5381,7 @@ class="cmbx-10x-x-109">goprinc.py</span>
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-75">
+   <div class="verbatim" id="verbatim-76">
 $&#x00A0;tk03.py&#x00A0;-n&#x00A0;20&#x00A0;-lat&#x00A0;42&#x00A0;-rev&#x00A0;&#x003E;tk03.out;&#x00A0;goprinc.py&#x00A0;-f&#x00A0;tk03.out
 &#x00A0;<br />0.93863&#x00A0;&#x00A0;&#x00A0;&#x00A0;11.0&#x00A0;&#x00A0;&#x00A0;&#x00A0;58.6&#x00A0;0.04258&#x00A0;&#x00A0;&#x00A0;226.4&#x00A0;&#x00A0;&#x00A0;&#x00A0;26.5&#x00A0;0.01879&#x00A0;&#x00A0;&#x00A0;128.3&#x00A0;&#x00A0;&#x00A0;&#x00A0;15.6&#x00A0;20
 </div>
@@ -5416,7 +5428,7 @@ example:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-76">
+   <div class="verbatim" id="verbatim-77">
 $&#x00A0;grab_magic_key.py&#x00A0;-f&#x00A0;er_sites.txt&#x00A0;-key&#x00A0;site_lat
 &#x00A0;<br />42.60264
 &#x00A0;<br />42.60264
@@ -5432,7 +5444,7 @@ href="#plot_cdf.py" >plot_cdf.py</a>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-77">
+   <div class="verbatim" id="verbatim-78">
 $&#x00A0;grab_magic_key.py&#x00A0;-f&#x00A0;er_sites.txt&#x00A0;-key&#x00A0;site_lat&#x00A0;&#x003E;&#x00A0;lats
 &#x00A0;<br />$&#x00A0;plot_cdf.py&#x00A0;-f&#x00A0;lats
 </div>
@@ -5452,7 +5464,7 @@ class="cmbx-10x-x-109">gaussian.py </span>program.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-78">
+   <div class="verbatim" id="verbatim-79">
 $&#x00A0;histplot.py&#x00A0;-f&#x00A0;gauss.out
 </div>
 <!--l. 2736--><p class="nopar" >
@@ -5486,7 +5498,7 @@ class="cmbx-10x-x-109">_magic.py </span>to plot the data.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-79">
+   <div class="verbatim" id="verbatim-80">
 $&#x00A0;hysteresis_magic.py&#x00A0;-f&#x00A0;hysteresis_magic_example.dat
 &#x00A0;<br />
 &#x00A0;<br />IS06a-1&#x00A0;1&#x00A0;out&#x00A0;of&#x00A0;&#x00A0;8
@@ -5523,7 +5535,7 @@ class="cmsy-8">&#x2218;</span></sup>E).
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-80">
+   <div class="verbatim" id="verbatim-81">
 $&#x00A0;igrf.py&#x00A0;-i
 &#x00A0;<br />Decimal&#x00A0;year:&#x00A0;&#x003C;cntrl-D&#x00A0;to&#x00A0;quit&#x003E;&#x00A0;1995.5
 &#x00A0;<br />Elevation&#x00A0;in&#x00A0;km&#x00A0;[0]
@@ -5555,7 +5567,7 @@ class="cmtt-10x-x-109">http://earthref.org/ERDA/1403/</span></a>
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-81">
+   <div class="verbatim" id="verbatim-82">
 $&#x00A0;igrf.py&#x00A0;-f&#x00A0;igrf_example.dat&#x00A0;-F&#x00A0;igrf.out
 </div>
 <!--l. 2795--><p class="nopar" >
@@ -5566,7 +5578,7 @@ years:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-82">
+   <div class="verbatim" id="verbatim-83">
 $&#x00A0;igrf.py&#x00A0;-ages&#x00A0;-3000&#x00A0;1950&#x00A0;50&#x00A0;-loc&#x00A0;33&#x00A0;-117&#x00A0;-mod&#x00A0;pfm9k&#x00A0;-plt
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;S[a]ve&#x00A0;to&#x00A0;save&#x00A0;figure,&#x00A0;&#x003C;Return&#x003E;&#x00A0;&#x00A0;to&#x00A0;quit
 </div>
@@ -5592,7 +5604,7 @@ simply type:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-83">
+   <div class="verbatim" id="verbatim-84">
 $&#x00A0;install_etopo.py
 </div>
 <!--l. 2817--><p class="nopar" >
@@ -5621,7 +5633,7 @@ inclinations.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-84">
+   <div class="verbatim" id="verbatim-85">
 $&#x00A0;fishrot.py&#x00A0;-I&#x00A0;60&#x00A0;-k&#x00A0;10&#x00A0;&#x003E;&#x00A0;incfish_example_di.dat
 &#x00A0;<br />$&#x00A0;awk&#x00A0;&#8217;{print&#x00A0;$2}&#8217;&#x00A0;incfish_example_di.dat&#x00A0;&#x003E;&#x00A0;incfish_example_inc.dat
 &#x00A0;<br />$&#x00A0;incfish.py&#x00A0;-f&#x00A0;incfish_example_inc.dat
@@ -5659,7 +5671,7 @@ class="cmbx-10x-x-109">_magic.py</span>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-85">
+   <div class="verbatim" id="verbatim-86">
 $&#x00A0;sio_magic.py&#x00A0;-f&#x00A0;U1359A_IRM_coil2.txt&#x00A0;-LP&#x00A0;I&#x00A0;-V&#x00A0;2&#x00A0;-F&#x00A0;U1359A_IRM_coil2.magic&#x00A0;\
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;-loc&#x00A0;U1359A&#x00A0;-spc&#x00A0;0&#x00A0;-ncn&#x00A0;5
 &#x00A0;<br />$&#x00A0;sio_magic.py&#x00A0;-f&#x00A0;U1359A_IRM_coil3.txt&#x00A0;-LP&#x00A0;I&#x00A0;-V&#x00A0;3&#x00A0;-F&#x00A0;U1359A_IRM_coil3.magic&#x00A0;\
@@ -5697,7 +5709,7 @@ KLY 2.0 instrument in the SIO laboratory:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-86">
+   <div class="verbatim" id="verbatim-87">
 tr245f&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;80.00&#x00A0;&#x00A0;&#x00A0;-46.0&#x00A0;204&#x00A0;25
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;995.&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;999.&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;993.&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;995.&#x00A0;&#x00A0;&#x00A0;&#x00A0;1000.
 &#x00A0;<br />&#x00A0;&#x00A0;1004.&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;999.&#x00A0;&#x00A0;&#x00A0;&#x00A0;1001.&#x00A0;&#x00A0;&#x00A0;&#x00A0;1004.&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;999.
@@ -5737,7 +5749,7 @@ class="cmbx-10x-x-109">_magic.py</span>:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-87">
+   <div class="verbatim" id="verbatim-88">
 $&#x00A0;k15_magic.py&#x00A0;-spc&#x00A0;0&#x00A0;-f&#x00A0;k15_example.dat&#x00A0;-loc&#x00A0;&#8216;&#8216;Troodos&#x00A0;Ophiolite&#8216;&#8216;
 &#x00A0;<br />Data&#x00A0;saved&#x00A0;to:&#x00A0;&#x00A0;./er_samples.txt&#x00A0;./rmag_anisotropy.txt&#x00A0;./rmag_results.txt&#x00A0;./k15_measurements.txt
 &#x00A0;<br />&#x00A0;
@@ -5771,7 +5783,7 @@ coordinates:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-88">
+   <div class="verbatim" id="verbatim-89">
 $&#x00A0;k15_s.py&#x00A0;-f&#x00A0;k15_example.dat
 &#x00A0;<br />0.33146986&#x00A0;0.33413991&#x00A0;0.33439023&#x00A0;0.00075095&#x00A0;-0.00083439&#x00A0;-0.00016688&#x00A0;0.00008618
 &#x00A0;<br />0.33335925&#x00A0;0.33335925&#x00A0;0.33328149&#x00A0;-0.00155521&#x00A0;-0.00132193&#x00A0;0.00116641&#x00A0;0.00017193
@@ -5807,7 +5819,7 @@ spinning magnetic susceptibility instrument as described by Gee et al.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-89">
+   <div class="verbatim" id="verbatim-90">
 318-U1359B-011H-1-W-75&#x00A0;&#x00A0;0.3415264&#x00A0;0.3403534&#x00A0;0.3181202&#x00A0;-0.0006608&#x00A0;0.0000948&#x00A0;0.0023186&#x00A0;&#x00A0;2.284E-4&#x00A0;1.26728E-4&#x00A0;1.31105E-8&#x00A0;-21.81&#x00A0;&#x00A0;&#x00A0;300.0&#x00A0;&#x00A0;&#x00A0;10.00&#x00A0;-5.13E-6&#x00A0;11/04/11&#x00A0;12:54&#x00A0;Saiko
 &#x00A0;<br />318-U1359B-011H-2-W-76&#x00A0;&#x00A0;0.3369955&#x00A0;0.3361130&#x00A0;0.3268916&#x00A0;0.0000845&#x00A0;-0.0005236&#x00A0;0.0003290&#x00A0;&#x00A0;3.500E-4&#x00A0;7.85130E-5&#x00A0;3.16381E-8&#x00A0;-21.81&#x00A0;&#x00A0;&#x00A0;300.0&#x00A0;&#x00A0;&#x00A0;10.00&#x00A0;-4.11E-6&#x00A0;11/04/11&#x00A0;12:57&#x00A0;Saiko
 &#x00A0;<br />318-U1359B-011H-3-W-78&#x00A0;&#x00A0;0.3373485&#x00A0;0.3364144&#x00A0;0.3262371&#x00A0;-0.0002281&#x00A0;0.0005881&#x00A0;-0.0011413&#x00A0;&#x00A0;3.523E-4&#x00A0;1.04700E-4&#x00A0;8.77716E-9&#x00A0;-21.81&#x00A0;&#x00A0;&#x00A0;300.0&#x00A0;&#x00A0;&#x00A0;10.00&#x00A0;-4.11E-6&#x00A0;11/04/11&#x00A0;13:00&#x00A0;Saiko
@@ -5836,7 +5848,7 @@ follows:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-90">
+   <div class="verbatim" id="verbatim-91">
 %KLY4S_magic.py&#x00A0;-f&#x00A0;KLY4S_magic_example.dat&#x00A0;&#x00A0;-spc&#x00A0;0&#x00A0;-ncn&#x00A0;5
 </div>
 <!--l. 2969--><p class="nopar" >
@@ -5876,7 +5888,7 @@ href="#download_magic.py" >download_magic.py</a>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-91">
+   <div class="verbatim" id="verbatim-92">
 $&#x00A0;download_magic.py&#x00A0;-f&#x00A0;zmab0001193tmp02.txt
 &#x00A0;<br />working&#x00A0;on:&#x00A0;&#x00A0;&#8217;er_locations&#8217;
 &#x00A0;<br />er_locations&#x00A0;&#x00A0;data&#x00A0;put&#x00A0;in&#x00A0;&#x00A0;./er_locations.txt
@@ -5919,7 +5931,7 @@ the three coercivity fractions.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-92">
+   <div class="verbatim" id="verbatim-93">
 &#x00A0;<br />$&#x00A0;lowrie.py&#x00A0;-f&#x00A0;lowrie_example.dat
 &#x00A0;<br />318-U1359A-002H-1-W-109
 &#x00A0;<br />S[a]ve&#x00A0;figure?&#x00A0;[q]uit,&#x00A0;&#x003C;return&#x003E;&#x00A0;to&#x00A0;continue&#x00A0;&#x00A0;&#x00A0;a
@@ -5957,7 +5969,7 @@ class="cmbx-10x-x-109">_magic.py </span>to plot the data:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-93">
+   <div class="verbatim" id="verbatim-94">
 $&#x00A0;sio_magic.py&#x00A0;-f&#x00A0;lowrie_example.dat&#x00A0;-LP&#x00A0;I3d&#x00A0;-loc&#x00A0;U1359A&#x00A0;-F&#x00A0;lowrie_magic_example.dat
 &#x00A0;<br />averaging:&#x00A0;records&#x00A0;&#x00A0;11&#x00A0;12
 &#x00A0;<br />318-U1359A-004H-2-W-18&#x00A0;started&#x00A0;with&#x00A0;&#x00A0;15&#x00A0;&#x00A0;ending&#x00A0;with&#x00A0;&#x00A0;14
@@ -6010,7 +6022,7 @@ href="#download_magic.py" >download_magic.py</a> example.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-94">
+   <div class="verbatim" id="verbatim-95">
 $&#x00A0;magic_select.py&#x00A0;-f&#x00A0;pmag_specimens.txt&#x00A0;-key&#x00A0;magic_method_codes&#x00A0;LP-DIR-AF&#x00A0;has&#x00A0;-F&#x00A0;AF_specimens.txt
 &#x00A0;<br />76&#x00A0;&#x00A0;records&#x00A0;written&#x00A0;to&#x00A0;&#x00A0;./AF_specimens.txt
 &#x00A0;<br />&#x00A0;&#x00A0;$&#x00A0;magic_select.py&#x00A0;-f&#x00A0;AF_specimens.txt&#x00A0;-key&#x00A0;magic_method_codes&#x00A0;DE-BFL&#x00A0;has&#x00A0;-F&#x00A0;AF_BFL_specimens.txt
@@ -6091,7 +6103,7 @@ parameters and put them in the relevant magic tables for you. ] s
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-95">
+   <div class="verbatim" id="verbatim-96">
 $&#x00A0;agm_magic.py&#x00A0;-spn&#x00A0;myspec&#x00A0;--usr&#x00A0;&#8216;&#8216;Lima&#x00A0;Tango&#8216;&#8216;&#x00A0;-f&#x00A0;agm_magic_example.agm&#x00A0;-u&#x00A0;cgs
 &#x00A0;<br />
 &#x00A0;<br />results&#x00A0;put&#x00A0;in&#x00A0;&#x00A0;./agm_measurements.txt
@@ -6131,7 +6143,7 @@ this format:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-96">
+   <div class="verbatim" id="verbatim-97">
 PI47-&#x00A0;9a&#x00A0;mag&#x00A0;compass&#x00A0;orientation&#x00A0;(IGRF&#x00A0;corrected)
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;0&#x00A0;328.1&#x00A0;&#x00A0;21.0&#x00A0;&#x00A0;0.0&#x00A0;&#x00A0;0.0&#x00A0;&#x00A0;1.0
 &#x00A0;<br />NRM&#x00A0;&#x00A0;&#x00A0;&#x00A0;103.2&#x00A0;&#x00A0;66.0&#x00A0;103.2&#x00A0;&#x00A0;66.0&#x00A0;8.81E-05&#x00A0;001.7&#x00A0;205.8&#x00A0;&#x00A0;48.5&#x00A0;0.074307&#x00A0;0.216786&#x00A0;0.124038&#x00A0;hargrave&#x00A0;2015-09-16&#x00A0;18:32:38
@@ -6154,7 +6166,7 @@ specimen files in the directory. The .sam file has the form:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-97">
+   <div class="verbatim" id="verbatim-98">
 PI47-
 &#x00A0;<br />&#x00A0;48.7&#x00A0;-87.0&#x00A0;&#x00A0;&#x00A0;0.0
 &#x00A0;<br />PI47-1a
@@ -6193,7 +6205,7 @@ and they were collected by drilling and with a magnetic compass (-mcd
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-98">
+   <div class="verbatim" id="verbatim-99">
 PI47-&#x00A0;Laurentia$&#x00A0;cit_magic.py&#x00A0;&#x00A0;-f&#x00A0;PI47-.sam&#x00A0;-loc&#x00A0;"Slate&#x00A0;Islands"&#x00A0;-spc&#x00A0;1&#x00A0;-ncn&#x00A0;2&#x00A0;-mcd&#x00A0;"FS-FD:SO-MAG"&#x00A0;-A
 &#x00A0;<br />
 &#x00A0;<br />PI47-
@@ -6294,7 +6306,7 @@ class="cmbx-10x-x-109">_magic.py</span>
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-99">
+   <div class="verbatim" id="verbatim-100">
 &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;A&#x00A0;generic&#x00A0;file&#x00A0;is&#x00A0;a&#x00A0;tab-delimited&#x00A0;file.&#x00A0;Each&#x00A0;columns&#x00A0;should&#x00A0;have&#x00A0;a&#x00A0;header.
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;The&#x00A0;file&#x00A0;must&#x00A0;include&#x00A0;the&#x00A0;follwing&#x00A0;headers&#x00A0;(the&#x00A0;order&#x00A0;of&#x00A0;the&#x00A0;columns&#x00A0;is&#x00A0;not&#x00A0;important):
 &#x00A0;<br />
@@ -6365,7 +6377,7 @@ University, Jerusalem for files with formats like this:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-100">
+   <div class="verbatim" id="verbatim-101">
 mk118 07R-08329 5/10/2007 7:35 N 0 10.4 73.9 10.4 73.9
 2.23E-03
 &#x00A0;<br />mk118 07R-08330 5/10/2007 7:37 A 5 359.2 60 359.2 60 2.19E-03
@@ -6407,7 +6419,7 @@ formats are different. Here is a typical example:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-101">
+   <div class="verbatim" id="verbatim-102">
 isaf2.fix
 &#x00A0;<br />LAT:&#x00A0;&#x00A0;&#x00A0;.00&#x00A0;&#x00A0;LON:&#x00A0;&#x00A0;&#x00A0;&#x00A0;.00
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;ID&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;TREAT&#x00A0;&#x00A0;I&#x00A0;&#x00A0;CD&#x00A0;&#x00A0;&#x00A0;&#x00A0;J&#x00A0;&#x00A0;&#x00A0;&#x00A0;CDECL&#x00A0;CINCL&#x00A0;&#x00A0;GDECL&#x00A0;GINCL&#x00A0;&#x00A0;BDECL&#x00A0;BINCL&#x00A0;&#x00A0;SUSC&#x00A0;&#x00A0;M/V
@@ -6419,7 +6431,7 @@ information. The columns are:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-102">
+   <div class="verbatim" id="verbatim-103">
 &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;ID:&#x00A0;specimen&#x00A0;name
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;TREAT:&#x00A0;&#x00A0;treatment&#x00A0;step
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;I:&#x00A0;&#x00A0;Instrument
@@ -6443,7 +6455,7 @@ format. It was an AF demagnetization experiment.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-103">
+   <div class="verbatim" id="verbatim-104">
 $&#x00A0;ldeo_magic.py&#x00A0;-f&#x00A0;ldeo_magic_example.dat&#x00A0;-LP&#x00A0;AF
 &#x00A0;<br />results&#x00A0;put&#x00A0;in&#x00A0;&#x00A0;magic_measurements.txt
 </div>
@@ -6464,7 +6476,7 @@ class="cmbx-10x-x-109">_magic.py</span>:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-104">
+   <div class="verbatim" id="verbatim-105">
 $&#x00A0;iodp_csv_magic.py&#x00A0;-f&#x00A0;SRM_318_U1359_A_A.csv
 &#x00A0;<br />processing:&#x00A0;&#x00A0;SRM_318_U1359_A_A.csv
 &#x00A0;<br />specimens&#x00A0;stored&#x00A0;in&#x00A0;&#x00A0;./er_specimens.txt
@@ -6502,7 +6514,7 @@ format like this:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-105">
+   <div class="verbatim" id="verbatim-106">
 Strat&#x00A0;post&#x00A0;corrected&#x00A0;-&#x00A0;Summit&#x00A0;Springs,&#x00A0;-
 &#x00A0;<br />ss0101a&#x00A0;&#x00A0;&#x00A0;a=&#x00A0;93.9&#x00A0;&#x00A0;&#x00A0;b=&#x00A0;61.0&#x00A0;&#x00A0;&#x00A0;s=&#x00A0;&#x00A0;0.0&#x00A0;&#x00A0;&#x00A0;d=&#x00A0;&#x00A0;0.0&#x00A0;&#x00A0;&#x00A0;v=11.0E-6m3&#x00A0;&#x00A0;06/17/2003&#x00A0;12:00
 &#x00A0;<br />STEP&#x00A0;&#x00A0;Xc&#x00A0;[Am2]&#x00A0;&#x00A0;Yc&#x00A0;[Am2]&#x00A0;&#x00A0;Zc&#x00A0;[Am2]&#x00A0;&#x00A0;MAG[A/m]&#x00A0;&#x00A0;&#x00A0;Dg&#x00A0;&#x00A0;&#x00A0;&#x00A0;Ig&#x00A0;&#x00A0;&#x00A0;&#x00A0;Ds&#x00A0;&#x00A0;&#x00A0;&#x00A0;Is&#x00A0;&#x00A0;a95
@@ -6541,7 +6553,7 @@ compass.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-106">
+   <div class="verbatim" id="verbatim-107">
 $&#x00A0;pmd_magic.py&#x00A0;-f&#x00A0;ss0101a.pmd&#x00A0;-loc&#x00A0;&#8216;&#8216;Summit&#x00A0;Springs&#8216;&#8216;&#x00A0;-ncn&#x00A0;4-2&#x00A0;-spc&#x00A0;1&#x00A0;-mcd&#x00A0;SO-MAG&#x00A0;-F&#x00A0;ss0101a.magic
 &#x00A0;<br />&#x00A0;results&#x00A0;put&#x00A0;in&#x00A0;&#x00A0;./magic_measurements.txt
 &#x00A0;<br />sample&#x00A0;orientations&#x00A0;put&#x00A0;in&#x00A0;&#x00A0;./er_samples.txt
@@ -6554,7 +6566,7 @@ imports:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-107">
+   <div class="verbatim" id="verbatim-108">
 $&#x00A0;pmd_magic.py&#x00A0;-f&#x00A0;ss0102a.pmd&#x00A0;-loc&#x00A0;&#8216;&#8216;Summit&#x00A0;Springs&#8216;&#8216;&#x00A0;-ncn&#x00A0;4-2&#x00A0;-spc&#x00A0;1&#x00A0;-mcd&#x00A0;SO-MAG&#x00A0;-F&#x00A0;ss0102a.magic-Fsa&#x00A0;er_samples.txt
 &#x00A0;<br />sample&#x00A0;information&#x00A0;will&#x00A0;be&#x00A0;appended&#x00A0;to&#x00A0;&#x00A0;./er_samples.txt
 &#x00A0;<br />results&#x00A0;put&#x00A0;in&#x00A0;&#x00A0;./magic_measurements.txt
@@ -6579,7 +6591,7 @@ delimited file:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-108">
+   <div class="verbatim" id="verbatim-109">
 sc12b1&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.00&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.3&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;2.878E-2&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;185.0&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;9.3
 &#x00A0;<br />sc12b1&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;5.00&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.3&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;2.864E-2&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;187.7&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;9.6
 &#x00A0;<br />sc12b1&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;10.00&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.3&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;2.833E-2&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;185.5&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;10.0
@@ -6634,7 +6646,7 @@ href="#combine_magic" >combine_magic.py</a>:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-109">
+   <div class="verbatim" id="verbatim-110">
 &#x00A0;<br />Note:&#x00A0;&#x00A0;all&#x00A0;of&#x00A0;these&#x00A0;should&#x00A0;actually&#x00A0;be&#x00A0;on&#x00A0;ONE&#x00A0;line:
 &#x00A0;<br />
 &#x00A0;<br />$&#x00A0;sio_magic.py&#x00A0;-f&#x00A0;sio_af_example.dat&#x00A0;-F&#x00A0;af_measurements.txt
@@ -6711,7 +6723,7 @@ MagIC format:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-110">
+   <div class="verbatim" id="verbatim-111">
 %sufar4_asc_magic.py&#x00A0;-f&#x00A0;sufar4-asc_magic_example.txt&#x00A0;-loc&#x00A0;U1356A&#x00A0;-spc&#x00A0;0&#x00A0;-ncn&#x00A0;5
 &#x00A0;<br />anisotropy&#x00A0;tensors&#x00A0;put&#x00A0;in&#x00A0;&#x00A0;./rmag_anisotropy.txt
 &#x00A0;<br />bulk&#x00A0;measurements&#x00A0;put&#x00A0;in&#x00A0;&#x00A0;./magic_measurements.txt
@@ -6742,7 +6754,7 @@ class="cmbx-10x-x-109">_magic.py</span></a>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-111">
+   <div class="verbatim" id="verbatim-112">
 Thellier-tdt
 &#x00A0;<br />50.12 0 0 0 0
 &#x00A0;<br />2396D 0.00 1821.50 4.6 49.4
@@ -6779,7 +6791,7 @@ applied along the 0,0 direction.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-112">
+   <div class="verbatim" id="verbatim-113">
 $&#x00A0;tdt_magic.py&#x00A0;-f&#x00A0;tdt_magic_example.dat&#x00A0;-loc&#x00A0;TEST&#x00A0;-dc&#x00A0;50.12&#x00A0;0&#x00A0;0
 &#x00A0;<br />results&#x00A0;put&#x00A0;in&#x00A0;&#x00A0;magic_measurements.txt
 </div>
@@ -6809,7 +6821,7 @@ class="cmti-10x-x-109">_weights.txt</span>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-113">
+   <div class="verbatim" id="verbatim-114">
 $&#x00A0;magic_select.py&#x00A0;-f&#x00A0;magic_measurements.txt&#x00A0;\
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;-key&#x00A0;magic_method_codes&#x00A0;LP-IRM&#x00A0;has&#x00A0;-F&#x00A0;irm_measurements.txt
 &#x00A0;<br />205&#x00A0;&#x00A0;records&#x00A0;written&#x00A0;to&#x00A0;&#x00A0;./irm_measurements.txt
@@ -6858,7 +6870,7 @@ examine them as follows:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-114">
+   <div class="verbatim" id="verbatim-115">
 $&#x00A0;mk_redo.py
 &#x00A0;<br />$&#x00A0;cat&#x00A0;zeq_redo
 &#x00A0;<br />sr01a1&#x00A0;DE-BFL&#x00A0;473&#x00A0;823&#x00A0;A
@@ -6918,7 +6930,7 @@ class="cmbx-10x-x-109">_magic.py</span>:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-115">
+   <div class="verbatim" id="verbatim-116">
 $&#x00A0;nrm_specimens_magic.py&#x00A0;-crd&#x00A0;g
 &#x00A0;<br />er_samples.txt&#x00A0;&#x00A0;read&#x00A0;in&#x00A0;with&#x00A0;&#x00A0;271&#x00A0;&#x00A0;records
 &#x00A0;<br />Data&#x00A0;saved&#x00A0;in&#x00A0;&#x00A0;nrm_specimens.txt
@@ -6980,7 +6992,7 @@ do this by:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-116">
+   <div class="verbatim" id="verbatim-117">
 orientation_magic.py&#x00A0;-f&#x00A0;orient_example.txt
 &#x00A0;<br />saving&#x00A0;data...
 &#x00A0;<br />Data&#x00A0;saved&#x00A0;in&#x00A0;&#x00A0;./er_samples.txt&#x00A0;&#x00A0;and&#x00A0;&#x00A0;./er_sites.txt
@@ -7015,7 +7027,7 @@ href="#measurements_normalize.py" >measurements_normalize.py</a>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-117">
+   <div class="verbatim" id="verbatim-118">
 $&#x00A0;parse_measurements.py
 &#x00A0;<br />site&#x00A0;record&#x00A0;in&#x00A0;er_sites&#x00A0;table&#x00A0;not&#x00A0;found&#x00A0;for:&#x00A0;&#x00A0;318-U1359A-002H-1-W-109
 &#x00A0;<br />site&#x00A0;record&#x00A0;in&#x00A0;er_sites&#x00A0;table&#x00A0;not&#x00A0;found&#x00A0;for:&#x00A0;&#x00A0;318-U1359A-002H-2-W-135
@@ -7047,7 +7059,7 @@ class="cmti-10x-x-109">_example.txt</span>:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-118">
+   <div class="verbatim" id="verbatim-119">
 &#x00A0;$&#x00A0;pca.py&#x00A0;-dir&#x00A0;L&#x00A0;1&#x00A0;10&#x00A0;-f&#x00A0;zeq_example.dat
 &#x00A0;<br />eba24a&#x00A0;DE-BFL
 &#x00A0;<br />0&#x00A0;0.00&#x00A0;339.9&#x00A0;57.9&#x00A0;9.2830e-05
@@ -7073,7 +7085,7 @@ size, axis labels and other options.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-119">
+   <div class="verbatim" id="verbatim-120">
 $&#x00A0;plotxy.py&#x00A0;-f&#x00A0;plotXY_example.txt
 </div>
 <!--l. 3798--><p class="nopar" >
@@ -7091,7 +7103,7 @@ deviation of 1.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-120">
+   <div class="verbatim" id="verbatim-121">
 $&#x00A0;gaussian.py&#x00A0;-n&#x00A0;1000&#x00A0;&#x003E;&#x00A0;gaussian.out
 &#x00A0;<br />&#x00A0;&#x00A0;$&#x00A0;plot_cdf.py&#x00A0;-f&#x00A0;gaussian.out
 &#x00A0;<br />S[a]ve&#x00A0;&#x00A0;plot,&#x00A0;&#x003C;Return&#x003E;&#x00A0;to&#x00A0;quit&#x00A0;a
@@ -7147,7 +7159,7 @@ illustrator.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-121">
+   <div class="verbatim" id="verbatim-122">
 $&#x00A0;uniform.py&#x00A0;-n&#x00A0;200&#x00A0;&#x003E;uniform.out
 &#x00A0;<br />$&#x00A0;plot_map_pts.py&#x00A0;-f&#x00A0;uniform.out&#x00A0;-prj&#x00A0;ortho&#x00A0;-eye&#x00A0;30&#x00A0;0&#x00A0;-etp&#x00A0;-sym&#x00A0;wo&#x00A0;10
 &#x00A0;<br />please&#x00A0;wait&#x00A0;to&#x00A0;draw&#x00A0;points
@@ -7220,7 +7232,7 @@ class="cmbx-10x-x-109">_a.py</span>:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-122">
+   <div class="verbatim" id="verbatim-123">
 $&#x00A0;plotdi_a.py&#x00A0;-f&#x00A0;plotdi_a_example.dat
 &#x00A0;<br />&#x00A0;S[a]ve&#x00A0;to&#x00A0;save&#x00A0;plot,&#x00A0;[q]uit,&#x00A0;Return&#x00A0;to&#x00A0;continue:&#x00A0;&#x00A0;a
 &#x00A0;<br />1&#x00A0;&#x00A0;saved&#x00A0;in&#x00A0;&#x00A0;eq.svg
@@ -7251,7 +7263,7 @@ class="cmbx-10x-x-109">_magic.py </span>example:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-123">
+   <div class="verbatim" id="verbatim-124">
 $&#x00A0;pmag_results_extract.py&#x00A0;-f&#x00A0;pmag_results.txt
 &#x00A0;<br />data&#x00A0;saved&#x00A0;in:&#x00A0;&#x00A0;./Directions.txt&#x00A0;./Intensities.txt&#x00A0;./SiteNfo.txt
 </div>
@@ -7291,7 +7303,7 @@ following:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-124">
+   <div class="verbatim" id="verbatim-125">
 $&#x00A0;awk&#x00A0;&#8217;{print&#x00A0;$1,$2}&#8217;&#x00A0;pt_rot.input&#x00A0;&#x003E;&#x00A0;lon_lat
 &#x00A0;<br />$&#x00A0;-prj&#x00A0;moll&#x00A0;-f&#x00A0;lon_lat&#x00A0;-sym&#x00A0;g^&#x00A0;10&#x00A0;-R&#x00A0;-B&#x00A0;-eye&#x00A0;0&#x00A0;0
 &#x00A0;<br />please&#x00A0;wait&#x00A0;to&#x00A0;draw&#x00A0;points
@@ -7328,7 +7340,7 @@ latitude longitude pairs.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-125">
+   <div class="verbatim" id="verbatim-126">
 $&#x00A0;plot_mapPTS.py&#x00A0;-f&#x00A0;nam_180-200.txt&#x00A0;-prj&#x00A0;ortho&#x00A0;-eye&#x00A0;60&#x00A0;90&#x00A0;-sym&#x00A0;c^&#x00A0;10
 &#x00A0;<br />please&#x00A0;wait&#x00A0;to&#x00A0;draw&#x00A0;points
 &#x00A0;<br />&#x00A0;S[a]ve&#x00A0;to&#x00A0;save&#x00A0;plot,&#x00A0;Return&#x00A0;to&#x00A0;quit:&#x00A0;&#x00A0;a
@@ -7379,7 +7391,7 @@ distributed. (It will be 95% of the time!).
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-126">
+   <div class="verbatim" id="verbatim-127">
 $&#x00A0;gaussian.py&#x00A0;&#x00A0;-F&#x00A0;&#x00A0;gauss.out
 &#x00A0;<br />$&#x00A0;qqplot.py&#x00A0;-f&#x00A0;gauss.out
 &#x00A0;<br />mean,sigma,&#x00A0;d,&#x00A0;Dc
@@ -7419,7 +7431,7 @@ class="cmti-10x-x-109">_magic </span>directory.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-127">
+   <div class="verbatim" id="verbatim-128">
 $&#x00A0;quick_hyst.py&#x00A0;-f&#x00A0;hysteresis_magic_example.dat&#x00A0;-fmt&#x00A0;svg
 &#x00A0;<br />IS06a-1&#x00A0;1&#x00A0;out&#x00A0;of&#x00A0;&#x00A0;8
 &#x00A0;<br />working&#x00A0;on&#x00A0;t:&#x00A0;&#x00A0;273
@@ -7457,7 +7469,7 @@ not:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-128">
+   <div class="verbatim" id="verbatim-129">
 $&#x00A0;revtest.py&#x00A0;-f&#x00A0;revtest_example.txt
 &#x00A0;<br />doing&#x00A0;first&#x00A0;mode,&#x00A0;be&#x00A0;patient
 &#x00A0;<br />doing&#x00A0;second&#x00A0;mode,&#x00A0;be&#x00A0;patient
@@ -7498,7 +7510,7 @@ using only the selected sites.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-129">
+   <div class="verbatim" id="verbatim-130">
 &#x00A0;revtest_magic.py&#x00A0;-f&#x00A0;revtest_magic_example.txt
 &#x00A0;<br />doing&#x00A0;first&#x00A0;mode,&#x00A0;be&#x00A0;patient
 &#x00A0;<br />doing&#x00A0;second&#x00A0;mode,&#x00A0;be&#x00A0;patient
@@ -7531,7 +7543,7 @@ href="#eqarea.py" >eqarea.py</a>:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-130">
+   <div class="verbatim" id="verbatim-131">
 $&#x00A0;eqarea.py&#x00A0;-f&#x00A0;Ao_etal2013_combined.txt
 </div>
 <!--l. 4080--><p class="nopar" >
@@ -7550,7 +7562,7 @@ class="cmti-10x-x-109">_rev.txt</span>:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-131">
+   <div class="verbatim" id="verbatim-132">
 $&#x00A0;MM1990_revtest.py&#x00A0;-f&#x00A0;Ao_etal2013_norm.txt&#x00A0;-f2&#x00A0;Ao_etal2013_rev.txt
 &#x00A0;<br />be&#x00A0;patient,&#x00A0;your&#x00A0;computer&#x00A0;is&#x00A0;doing&#x00A0;5000&#x00A0;simulations...
 &#x00A0;<br />
@@ -7601,7 +7613,7 @@ eigenvectors:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-132">
+   <div class="verbatim" id="verbatim-133">
 $&#x00A0;s_eigs.py&#x00A0;-f&#x00A0;s_eigs_example.dat
 &#x00A0;<br />0.33127186&#x00A0;239.53&#x00A0;&#x00A0;44.70&#x00A0;0.33351338&#x00A0;126.62&#x00A0;&#x00A0;21.47&#x00A0;0.33521473&#x00A0;&#x00A0;19.03&#x00A0;&#x00A0;37.54
 &#x00A0;<br />0.33177859&#x00A0;281.12&#x00A0;&#x00A0;&#x00A0;6.18&#x00A0;0.33218277&#x00A0;169.79&#x00A0;&#x00A0;73.43&#x00A0;0.33603862&#x00A0;&#x00A0;12.82&#x00A0;&#x00A0;15.32
@@ -7624,7 +7636,7 @@ axis.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-133">
+   <div class="verbatim" id="verbatim-134">
 $&#x00A0;s_geo.py&#x00A0;-f&#x00A0;s_geo_example.dat
 &#x00A0;<br />0.33412680&#x00A0;0.33282733&#x00A0;0.33304587&#x00A0;-0.00015289&#x00A0;0.00124843&#x00A0;0.00135721
 &#x00A0;<br />0.33556300&#x00A0;0.33198264&#x00A0;0.33245432&#x00A0;0.00087259&#x00A0;0.00024141&#x00A0;0.00096166
@@ -7646,7 +7658,7 @@ statistics:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-134">
+   <div class="verbatim" id="verbatim-135">
 $&#x00A0;s_geo.py&#x00A0;-f&#x00A0;s_geo_example.dat&#x00A0;|&#x00A0;s_hext.py
 &#x00A0;<br />F&#x00A0;=&#x00A0;&#x00A0;5.79&#x00A0;F12&#x00A0;=&#x00A0;&#x00A0;3.55&#x00A0;F23&#x00A0;=&#x00A0;&#x00A0;3.66
 &#x00A0;<br />N&#x00A0;=&#x00A0;&#x00A0;8&#x00A0;&#x00A0;sigma&#x00A0;=&#x00A0;&#x00A0;0.000641809950
@@ -7670,7 +7682,7 @@ class="cmti-10x-x-109">_example.dat </span>into stratigraphic coordinates:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-135">
+   <div class="verbatim" id="verbatim-136">
 $&#x00A0;s_tilt.py&#x00A0;-f&#x00A0;s_tilt_example.dat
 &#x00A0;<br />0.33455709&#x00A0;0.33192658&#x00A0;0.33351630&#x00A0;-0.00043562&#x00A0;0.00092778&#x00A0;0.00105006
 &#x00A0;<br />0.33585501&#x00A0;0.33191565&#x00A0;0.33222935&#x00A0;0.00055959&#x00A0;-0.00005316&#x00A0;0.00064731
@@ -7704,7 +7716,7 @@ follows:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-136">
+   <div class="verbatim" id="verbatim-137">
 $&#x00A0;s_tilt.py&#x00A0;-f&#x00A0;s_tilt_example.dat&#x00A0;&#x003E;s_magic_example.dat
 &#x00A0;<br />$&#x00A0;s_magic.py&#x00A0;-f&#x00A0;s_magic_example.dat
 &#x00A0;<br />data&#x00A0;saved&#x00A0;in&#x00A0;&#x00A0;./rmag_anisotropy.txt
@@ -7731,7 +7743,7 @@ bootstrap bounds on the calculation.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-137">
+   <div class="verbatim" id="verbatim-138">
 $&#x00A0;scalc.py&#x00A0;-f&#x00A0;scalc_example.txt
 &#x00A0;<br />99&#x00A0;&#x00A0;&#x00A0;&#x00A0;19.5&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;90.0
 &#x00A0;<br />$&#x00A0;scalc.py&#x00A0;-f&#x00A0;scalc_example.txt&#x00A0;-v
@@ -7767,7 +7779,7 @@ class="cmsy-8">&#x2218;</span></sup>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-138">
+   <div class="verbatim" id="verbatim-139">
 $&#x00A0;scalc_magic.py&#x00A0;-f&#x00A0;pmag_results.txt&#x00A0;&#x00A0;-c&#x00A0;30
 &#x00A0;<br />13&#x00A0;&#x00A0;&#x00A0;&#x00A0;17.8&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;30.0
 &#x00A0;<br />
@@ -7807,7 +7819,7 @@ example.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-139">
+   <div class="verbatim" id="verbatim-140">
 $&#x00A0;site_edit_magic.py
 &#x00A0;<br />....
 &#x00A0;<br />sr11
@@ -7926,7 +7938,7 @@ href="#pmag_results_extract.py" >pmag_results_extract.py</a>
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-140">
+   <div class="verbatim" id="verbatim-141">
 $&#x00A0;mk_redo.py
 &#x00A0;<br />$&#x00A0;zeq_magic_redo.py&#x00A0;-crd&#x00A0;g
 &#x00A0;<br />Processing&#x00A0;&#x00A0;173&#x00A0;&#x00A0;specimens&#x00A0;-&#x00A0;please&#x00A0;wait
@@ -7962,7 +7974,7 @@ class="cmti-10x-x-109">gauss.out</span>:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-141">
+   <div class="verbatim" id="verbatim-142">
 $&#x00A0;stats.py&#x00A0;-f&#x00A0;gauss.out
 &#x00A0;<br />100&#x00A0;10.12243251&#x00A0;1012.243251&#x00A0;2.79670530387&#x00A0;27.6287868663
 </div>
@@ -7971,7 +7983,7 @@ $&#x00A0;stats.py&#x00A0;-f&#x00A0;gauss.out
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-142">
+   <div class="verbatim" id="verbatim-143">
 &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;N,&#x00A0;mean,&#x00A0;sum,&#x00A0;sigma,&#x00A0;(%)&#x00A0;,&#x00A0;stderr,&#x00A0;95%&#x00A0;conf.
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;where&#x00A0;sigma&#x00A0;is&#x00A0;the&#x00A0;standard&#x00A0;deviation
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;where&#x00A0;%&#x00A0;is&#x00A0;sigma&#x00A0;as&#x00A0;percentage&#x00A0;of&#x00A0;the&#x00A0;mean
@@ -8002,7 +8014,7 @@ age:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-143">
+   <div class="verbatim" id="verbatim-144">
 $&#x00A0;download_magic.py&#x00A0;-f&#x00A0;zmab0094214tmp03.txt
 &#x00A0;<br />working&#x00A0;on:&#x00A0;&#x00A0;&#8217;er_locations&#8217;
 &#x00A0;<br />er_locations&#x00A0;&#x00A0;data&#x00A0;put&#x00A0;in&#x00A0;&#x00A0;./er_locations.txt
@@ -8054,7 +8066,7 @@ class="cmti-10x-x-109">_example.dat</span>:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-144">
+   <div class="verbatim" id="verbatim-145">
 3&#x00A0;35&#x00A0;33&#x00A0;1994&#x00A0;5&#x00A0;23&#x00A0;16&#x00A0;9&#x00A0;68
 </div>
 <!--l. 4408--><p class="nopar" > which is:
@@ -8064,7 +8076,7 @@ class="cmmi-8">GMT</span> </sub> lat lon year mon day hh mm shadow_angle
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-145">
+   <div class="verbatim" id="verbatim-146">
 $&#x00A0;sundec.py&#x00A0;-f&#x00A0;sundec_example.dat
 &#x00A0;<br />&#x00A0;&#x00A0;154.2
 </div>
@@ -8072,7 +8084,7 @@ $&#x00A0;sundec.py&#x00A0;-f&#x00A0;sundec_example.dat
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-146">
+   <div class="verbatim" id="verbatim-147">
 $&#x00A0;sundec.py&#x00A0;&#x003C;&#x00A0;sundec_example.dat
 &#x00A0;<br />&#x00A0;&#x00A0;154.2
 </div>
@@ -8080,7 +8092,7 @@ $&#x00A0;sundec.py&#x00A0;&#x003C;&#x00A0;sundec_example.dat
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-147">
+   <div class="verbatim" id="verbatim-148">
 $&#x00A0;sundec.py&#x00A0;-i
 &#x00A0;<br />Time&#x00A0;difference&#x00A0;between&#x00A0;Greenwich&#x00A0;Mean&#x00A0;Time&#x00A0;(hrs&#x00A0;to&#x00A0;ADD&#x00A0;to
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;GMT&#x00A0;for&#x00A0;local&#x00A0;time):
@@ -8152,7 +8164,7 @@ program.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-148">
+   <div class="verbatim" id="verbatim-149">
 $&#x00A0;download_magic.py&#x00A0;-f&#x00A0;zmab0100159tmp01.txt
 &#x00A0;<br />working&#x00A0;on:&#x00A0;&#x00A0;&#8217;er_locations&#8217;
 &#x00A0;<br />er_locations&#x00A0;&#x00A0;data&#x00A0;put&#x00A0;in&#x00A0;&#x00A0;./er_locations.txt
@@ -8306,7 +8318,7 @@ href="#combine_magic.py" >combine_magic.py</a>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-149">
+   <div class="verbatim" id="verbatim-150">
 $&#x00A0;mk_redo.py&#x00A0;-f&#x00A0;thellier_specimens.txt
 &#x00A0;<br />$&#x00A0;thellier_magic_redo.py&#x00A0;-ANI&#x00A0;-NLT
 &#x00A0;<br />Processing&#x00A0;&#x00A0;112&#x00A0;&#x00A0;specimens&#x00A0;-&#x00A0;please&#x00A0;wait
@@ -8339,7 +8351,7 @@ href="#eqarea.py" >eqarea.py</a>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-150">
+   <div class="verbatim" id="verbatim-151">
 $&#x00A0;tk03.py&#x00A0;-lat&#x00A0;30&#x00A0;&#x003E;tk03.out
 &#x00A0;<br />$&#x00A0;eqarea.py&#x00A0;-f&#x00A0;tk03.out
 </div>
@@ -8367,7 +8379,7 @@ href="#eqarea.py" >eqarea.py</a>:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-151">
+   <div class="verbatim" id="verbatim-152">
 $&#x00A0;&#x00A0;uniform.py&#x00A0;-F&#x00A0;uniform.out&#x00A0;-n&#x00A0;50
 &#x00A0;<br />$&#x00A0;eqarea.py&#x00A0;-f&#x00A0;uniform.out
 </div>
@@ -8463,7 +8475,7 @@ class="cmti-10x-x-109">_sites.txt </span>files, do the following:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-152">
+   <div class="verbatim" id="verbatim-153">
 $&#x00A0;specimens_results_magic.py&#x00A0;-exc&#x00A0;-lat&#x00A0;-age&#x00A0;0&#x00A0;5&#x00A0;Ma&#x00A0;-crd&#x00A0;g
 &#x00A0;<br />Acceptance&#x00A0;criteria&#x00A0;read&#x00A0;in&#x00A0;from&#x00A0;&#x00A0;pmag_criteria.txt
 &#x00A0;<br />
@@ -8506,7 +8518,7 @@ class="cmsy-8">&#x2218;</span></sup>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-153">
+   <div class="verbatim" id="verbatim-154">
 $&#x00A0;cat&#x003E;vdm_b_example.dat
 &#x00A0;<br />71.59e21&#x00A0;22
 &#x00A0;<br />^D
@@ -8531,7 +8543,7 @@ vector mean of these data.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-154">
+   <div class="verbatim" id="verbatim-155">
 $&#x00A0;tk03.py&#x00A0;-lat&#x00A0;30&#x00A0;&#x003E;vector_mean_example.dat
 &#x00A0;<br />$&#x00A0;vector_mean.py&#x00A0;-f&#x00A0;vector_mean_example.dat
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;1.3&#x00A0;&#x00A0;&#x00A0;&#x00A0;49.6&#x00A0;&#x00A0;&#x00A0;&#x00A0;2.289e+06&#x00A0;100
@@ -8589,7 +8601,7 @@ out declination, inclination:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-155">
+   <div class="verbatim" id="verbatim-156">
 $&#x00A0;vgp_di.py&#x00A0;-f&#x00A0;vgp_di_example.dat
 &#x00A0;<br />&#x00A0;&#x00A0;335.6&#x00A0;&#x00A0;&#x00A0;&#x00A0;62.9
 </div>
@@ -8620,7 +8632,7 @@ format
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-156">
+   <div class="verbatim" id="verbatim-157">
 &#x00A0;vgpmap_magic.py&#x00A0;-crd&#x00A0;g&#x00A0;-prj&#x00A0;ortho&#x00A0;-eye&#x00A0;60&#x00A0;0&#x00A0;-etp&#x00A0;-sym&#x00A0;ko&#x00A0;10&#x00A0;-fmt&#x00A0;png
 &#x00A0;<br />&#x00A0;S[a]ve&#x00A0;to&#x00A0;save&#x00A0;plot,&#x00A0;Return&#x00A0;to&#x00A0;quit:&#x00A0;&#x00A0;a
 &#x00A0;<br />1&#x00A0;&#x00A0;saved&#x00A0;in&#x00A0;&#x00A0;VGP_map.png
@@ -8654,7 +8666,7 @@ class="cmmi-10x-x-109">D </span>= 10. for the first and 20 for the second:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-157">
+   <div class="verbatim" id="verbatim-158">
 $&#x00A0;fishrot.py&#x00A0;-k&#x00A0;15&#x00A0;-n&#x00A0;10&#x00A0;-I&#x00A0;42&#x00A0;-D&#x00A0;10&#x00A0;&#x003E;watsons_f_example_file1.dat
 &#x00A0;<br />$&#x00A0;fishrot.py&#x00A0;-k&#x00A0;15&#x00A0;-n&#x00A0;10&#x00A0;-I&#x00A0;42&#x00A0;-D&#x00A0;20&#x00A0;&#x003E;&#x00A0;watsons_f_example_file2.dat
 </div>
@@ -8665,7 +8677,7 @@ class="cmbx-10x-x-109">_f.py</span>:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-158">
+   <div class="verbatim" id="verbatim-159">
 $&#x00A0;watsons_f.py&#x00A0;-f&#x00A0;watsons_f_example_file1.dat&#x00A0;-f2&#x00A0;watsons_f_example_file2.dat
 &#x00A0;<br />7.74186876032&#x00A0;3.2594&#x00A0;3.2594
 </div>
@@ -8693,7 +8705,7 @@ class="cmmi-8">w</span></sub> statistic.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-159">
+   <div class="verbatim" id="verbatim-160">
 $&#x00A0;watsons_v.py&#x00A0;-f&#x00A0;watsons_f_example_file1.dat&#x00A0;-f2&#x00A0;watsons_f_example_file2.dat
 &#x00A0;<br />Doing&#x00A0;&#x00A0;5000&#x00A0;&#x00A0;simulations
 &#x00A0;<br />50
@@ -8745,7 +8757,7 @@ plots.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-160">
+   <div class="verbatim" id="verbatim-161">
 $&#x00A0;zeq.py&#x00A0;-f&#x00A0;zeq_example.dat&#x00A0;-u&#x00A0;mT
 </div>
 <!--l. 4852--><p class="nopar" >
@@ -8784,7 +8796,7 @@ coordinates, where orientations are available.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-161">
+   <div class="verbatim" id="verbatim-162">
 $&#x00A0;zeq_magic.py&#x00A0;-crd&#x00A0;g
 &#x00A0;<br />sr01a1&#x00A0;0&#x00A0;out&#x00A0;of&#x00A0;&#x00A0;177
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;looking&#x00A0;up&#x00A0;previous&#x00A0;interpretations...
@@ -8873,7 +8885,7 @@ class="cmti-10x-x-109">_specimens.txt</span>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-162">
+   <div class="verbatim" id="verbatim-163">
 $&#x00A0;mk_redo.py
 &#x00A0;<br />$&#x00A0;zeq_magic_redo.py&#x00A0;-F&#x00A0;zeq_specimens_s.txt&#x00A0;-crd&#x00A0;s
 &#x00A0;<br />Processing&#x00A0;&#x00A0;175&#x00A0;&#x00A0;specimens&#x00A0;-&#x00A0;please&#x00A0;wait
@@ -9393,7 +9405,7 @@ this:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-163">
+   <div class="verbatim" id="verbatim-164">
 tab&#x00A0;&#x00A0;&#x00A0;er_locations
 &#x00A0;<br />location_type er_citation_names location_end_lat
 location_begin_lon er_location_name location_begin_lat
@@ -9447,7 +9459,7 @@ press the return key and see what happens:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-164">
+   <div class="verbatim" id="verbatim-165">
 &#x003E;&#x003E;&#x003E;&#x00A0;a=2
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;a
 &#x00A0;<br />2
@@ -9483,7 +9495,7 @@ once:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-165">
+   <div class="verbatim" id="verbatim-166">
 &#x003E;&#x003E;&#x003E;&#x00A0;a=2;&#x00A0;b=2;&#x00A0;c=a+b;&#x00A0;c
 &#x00A0;<br />and
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;d,e,f=4,5,6&#x00A0;#&#x00A0;note&#x00A0;syntax!&#x00A0;d=4;e=5;f=6
@@ -9542,7 +9554,7 @@ importing:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-166">
+   <div class="verbatim" id="verbatim-167">
 &#x003E;&#x003E;&#x003E;&#x00A0;import&#x00A0;numpy
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;numpy.pi
 &#x00A0;<br />3.1415926535897931
@@ -9552,7 +9564,7 @@ them with the numpy.FUNC syntax.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-167">
+   <div class="verbatim" id="verbatim-168">
 &#x003E;&#x003E;&#x003E;&#x00A0;import&#x00A0;numpy&#x00A0;as&#x00A0;np&#x00A0;&#x00A0;#&#x00A0;or&#x00A0;anything&#x00A0;else!
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;np.pi
 &#x00A0;<br />3.1415926535897931
@@ -9565,7 +9577,7 @@ import all the functions from NumPy and not have to type numpy at all:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-168">
+   <div class="verbatim" id="verbatim-169">
 &#x003E;&#x003E;&#x003E;&#x00A0;from&#x00A0;numpy&#x00A0;&#x00A0;import&#x00A0;*
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;pi
 &#x00A0;<br />3.1415926535897931
@@ -9576,7 +9588,7 @@ but you can also just import a few, like pi or sqrt:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-169">
+   <div class="verbatim" id="verbatim-170">
 &#x003E;&#x003E;&#x003E;&#x00A0;from&#x00A0;numpy&#x00A0;import&#x00A0;pi,&#x00A0;sqrt&#x00A0;#&#x00A0;pi&#x00A0;and&#x00A0;square&#x00A0;root
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;pi
 &#x00A0;<br />3.1415926535897931
@@ -9673,7 +9685,7 @@ class="cmmi-10x-x-109">&#x03C0;</span>.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-170">
+   <div class="verbatim" id="verbatim-171">
 &#x003E;&#x003E;&#x003E;&#x00A0;import&#x00A0;numpy&#x00A0;as&#x00A0;np
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;a&#x00A0;=&#x00A0;2
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;b&#x00A0;=&#x00A0;-12
@@ -9698,7 +9710,7 @@ Here are some examples:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-171">
+   <div class="verbatim" id="verbatim-172">
 &#x003E;&#x003E;&#x003E;&#x00A0;number&#x00A0;=&#x00A0;1&#x00A0;#&#x00A0;an&#x00A0;integer
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;Number&#x00A0;=&#x00A0;1.0&#x00A0;#&#x00A0;a&#x00A0;floating&#x00A0;point
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;NUMBER&#x00A0;=&#x00A0;"1"&#x00A0;#&#x00A0;a&#x00A0;string
@@ -9709,7 +9721,7 @@ Here are some examples:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-172">
+   <div class="verbatim" id="verbatim-173">
 &#x003E;&#x003E;&#x003E;&#x00A0;number+number
 &#x00A0;<br />2&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;[&#x00A0;an&#x00A0;integer]
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;number+Number
@@ -9727,7 +9739,7 @@ float.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-173">
+   <div class="verbatim" id="verbatim-174">
 &#x00A0;int(Number);&#x00A0;str(number);&#x00A0;&#x00A0;float(NUMBER);
 &#x00A0;<br />&#x00A0;long(Number);&#x00A0;complex(real,imag)
 &#x00A0;<br />&#x00A0;
@@ -9770,7 +9782,7 @@ href="#x1-1930007.3" id="x1-1930007.3">Lists</a></h5>
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-174">
+   <div class="verbatim" id="verbatim-175">
 &#x003E;&#x003E;&#x003E;&#x00A0;mylist&#x00A0;=&#x00A0;["a",2.0,"400","spam",42,[24,2]]&#x00A0;#&#x00A0;defines&#x00A0;a&#x00A0;list
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;mylist[2]&#x00A0;#&#x00A0;refers&#x00A0;to&#x00A0;the&#x00A0;third&#x00A0;item
 &#x00A0;<br />"400"
@@ -9784,7 +9796,7 @@ href="#x1-1930007.3" id="x1-1930007.3">Lists</a></h5>
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-175">
+   <div class="verbatim" id="verbatim-176">
 &#x003E;&#x003E;&#x003E;&#x00A0;newlist&#x00A0;=&#x00A0;mylist[1:3]
 </div>
 <!--l. 5365--><p class="nopar" > This takes items 2 and 3 out (note it takes out up to, but not including,
@@ -9792,7 +9804,7 @@ the last item number - don&#8217;t ask me why). Or, we can slice it this way:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-176">
+   <div class="verbatim" id="verbatim-177">
 &#x003E;&#x003E;&#x003E;&#x00A0;newlist&#x00A0;=&#x00A0;mylist[3:]
 </div>
 <!--l. 5371--><p class="nopar" > which takes from the fourth item (starting from 0!) to the end.
@@ -9802,7 +9814,7 @@ so:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-177">
+   <div class="verbatim" id="verbatim-178">
 &#x003E;&#x003E;&#x003E;&#x00A0;mycopy&#x00A0;=&#x00A0;mylist
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;mylist[2]&#x00A0;=&#x00A0;"new"
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;mycopy[2]
@@ -9813,14 +9825,14 @@ is a copy, but an independent entity:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-178">
+   <div class="verbatim" id="verbatim-179">
 &#x003E;&#x003E;&#x003E;&#x00A0;mycopy&#x00A0;=&#x00A0;mylist[:]
 </div>
 <!--l. 5389--><p class="nopar" > Now try:  
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-179">
+   <div class="verbatim" id="verbatim-180">
 &#x003E;&#x003E;&#x003E;&#x00A0;mylist[2]&#x00A0;=&#x00A0;1003
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;mycopy[2]
 &#x00A0;<br />"new"
@@ -9836,7 +9848,7 @@ Methods have the form: object.method()
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-180">
+   <div class="verbatim" id="verbatim-181">
 &#x003E;&#x003E;&#x003E;&#x00A0;mylist.append("me&#x00A0;too")&#x00A0;#&#x00A0;appends&#x00A0;a&#x00A0;string&#x00A0;to&#x00A0;mylist
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;mylist.sort()&#x00A0;#&#x00A0;sorts&#x00A0;the&#x00A0;list&#x00A0;alphanumerically
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;mylist
@@ -9857,7 +9869,7 @@ denoted with single, double or triple quotes: e.g., &#8217;spam&#8217;, &#8221;S
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-181">
+   <div class="verbatim" id="verbatim-182">
 &#8216;&#8216;&#8216;&#8216;&#8216;&#8216;
 &#x00A0;<br />Hi&#x00A0;there&#x00A0;we&#x00A0;can&#x00A0;type&#x00A0;as
 &#x00A0;<br />many&#x00A0;lines&#x00A0;as&#x00A0;we&#x00A0;want
@@ -9882,7 +9894,7 @@ are denoted with parentheses.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-182">
+   <div class="verbatim" id="verbatim-183">
 &#x003E;&#x003E;&#x003E;&#x00A0;t&#x00A0;=&#x00A0;1234,&#x00A0;2.0,&#x00A0;"hello"
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;t
 &#x00A0;<br />(1234,&#x00A0;2.0,&#x00A0;"hello")
@@ -9906,7 +9918,7 @@ is a bit more about them.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-183">
+   <div class="verbatim" id="verbatim-184">
 &#x003E;&#x003E;&#x003E;&#x00A0;Telnos&#x00A0;=&#x00A0;{"lisa":46084,"lab":46531,"jeff":44707}&#x00A0;#&#x00A0;defines&#x00A0;a&#x00A0;dictionary
 </div>
 <!--l. 5472--><p class="nopar" >
@@ -9914,7 +9926,7 @@ is a bit more about them.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-184">
+   <div class="verbatim" id="verbatim-185">
 &#x003E;&#x003E;&#x003E;&#x00A0;Telnos["lisa"]
 &#x00A0;<br />46084
 </div>
@@ -9923,7 +9935,7 @@ is a bit more about them.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-185">
+   <div class="verbatim" id="verbatim-186">
 &#x003E;&#x003E;&#x003E;&#x00A0;Telnos["lisa"]&#x00A0;=&#x00A0;46048
 </div>
 <!--l. 5486--><p class="nopar" >
@@ -9931,7 +9943,7 @@ is a bit more about them.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-186">
+   <div class="verbatim" id="verbatim-187">
 &#x003E;&#x003E;&#x003E;&#x00A0;Telnos["newguy"]&#x00A0;=&#x00A0;48888
 </div>
 <!--l. 5493--><p class="nopar" >
@@ -9939,7 +9951,7 @@ is a bit more about them.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-187">
+   <div class="verbatim" id="verbatim-188">
 &#x003E;&#x003E;&#x003E;&#x00A0;Telnos.keys()
 &#x00A0;<br />["lisa","lab","jeff","newguy"]
 </div>
@@ -9970,7 +9982,7 @@ numpy:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-188">
+   <div class="verbatim" id="verbatim-189">
 &#x003E;&#x003E;&#x003E;&#x00A0;import&#x00A0;numpy&#x00A0;as&#x00A0;np
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;A&#x00A0;=&#x00A0;np.array([[1,2,3],[4,2,0],[1,1,2]])
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;A
@@ -10025,7 +10037,7 @@ method dtype as in:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-189">
+   <div class="verbatim" id="verbatim-190">
 &#x003E;&#x003E;&#x003E;&#x00A0;D.dtype
 &#x00A0;<br />dtype("float64")
 </div>
@@ -10041,7 +10053,7 @@ Python to tell us this, we use the ndim method:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-190">
+   <div class="verbatim" id="verbatim-191">
 &#x003E;&#x003E;&#x003E;&#x00A0;A&#x00A0;=&#x00A0;np.array([[1,2,3],[4,2,0],[1,1,2]])&#x00A0;#&#x00A0;just&#x00A0;to&#x00A0;remind&#x00A0;you
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;A.ndim
 &#x00A0;<br />2
@@ -10053,7 +10065,7 @@ returns a tuple with the shape information using the shape method:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-191">
+   <div class="verbatim" id="verbatim-192">
 &#x003E;&#x003E;&#x003E;&#x00A0;C.shape
 &#x00A0;<br />(2,&#x00A0;3)
 </div>
@@ -10064,7 +10076,7 @@ this:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-192">
+   <div class="verbatim" id="verbatim-193">
 &#x003E;&#x003E;&#x003E;&#x00A0;C.reshape((3,2))
 &#x00A0;<br />array([[1,&#x00A0;2],
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;[3,&#x00A0;4],
@@ -10080,7 +10092,7 @@ the size in advance:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-193">
+   <div class="verbatim" id="verbatim-194">
 &#x003E;&#x003E;&#x003E;&#x00A0;C.ravel()
 &#x00A0;<br />array([1,&#x00A0;2,&#x00A0;3,&#x00A0;4,&#x00A0;5,&#x00A0;6])
 </div>
@@ -10090,7 +10102,7 @@ of arrays is similar to that for lists:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-194">
+   <div class="verbatim" id="verbatim-195">
 &#x003E;&#x003E;&#x003E;&#x00A0;B&#x00A0;=&#x00A0;A[0:2]&#x00A0;#&#x00A0;carve&#x00A0;the&#x00A0;top&#x00A0;two&#x00A0;lines&#x00A0;off&#x00A0;of&#x00A0;matrix&#x00A0;A&#x00A0;from&#x00A0;above
 &#x00A0;<br />array([[1,&#x00A0;2,&#x00A0;3],
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;[4,&#x00A0;2,&#x00A0;0]])
@@ -10100,7 +10112,7 @@ of arrays is similar to that for lists:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-195">
+   <div class="verbatim" id="verbatim-196">
 &#x003E;&#x003E;&#x003E;&#x00A0;A.transpose()&#x00A0;#&#x00A0;this&#x00A0;is&#x00A0;the&#x00A0;same&#x00A0;as&#x00A0;A.T
 &#x00A0;<br />array([[1,&#x00A0;4,&#x00A0;1],
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;[2,&#x00A0;2,&#x00A0;1],
@@ -10135,7 +10147,7 @@ each i at step k. This is best shown with examples:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-196">
+   <div class="verbatim" id="verbatim-197">
 &#x003E;&#x003E;&#x003E;&#x00A0;import&#x00A0;numpy&#x00A0;as&#x00A0;np
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;A&#x00A0;=&#x00A0;np.linspace(0,29,30)
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;B&#x00A0;=&#x00A0;A.reshape(5,6)
@@ -10154,7 +10166,7 @@ does. The first part alone returns lines 2 and 3:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-197">
+   <div class="verbatim" id="verbatim-198">
 &#x003E;&#x003E;&#x003E;&#x00A0;B[1:3]
 &#x00A0;<br />array([[&#x00A0;&#x00A0;6.,&#x00A0;&#x00A0;&#x00A0;7.,&#x00A0;&#x00A0;&#x00A0;8.,&#x00A0;&#x00A0;&#x00A0;9.,&#x00A0;&#x00A0;10.,&#x00A0;&#x00A0;11.],
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;[&#x00A0;12.,&#x00A0;&#x00A0;13.,&#x00A0;&#x00A0;14.,&#x00A0;&#x00A0;15.,&#x00A0;&#x00A0;16.,&#x00A0;&#x00A0;17.]])
@@ -10164,7 +10176,7 @@ does. The first part alone returns lines 2 and 3:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-198">
+   <div class="verbatim" id="verbatim-199">
 &#x003E;&#x003E;&#x003E;&#x00A0;B[1:3,:-1]
 &#x00A0;<br />array([[&#x00A0;&#x00A0;6.,&#x00A0;&#x00A0;&#x00A0;7.,&#x00A0;&#x00A0;&#x00A0;8.,&#x00A0;&#x00A0;&#x00A0;9.,&#x00A0;&#x00A0;10.],
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;[&#x00A0;12.,&#x00A0;&#x00A0;13.,&#x00A0;&#x00A0;14.,&#x00A0;&#x00A0;15.,&#x00A0;&#x00A0;16.]])
@@ -10174,7 +10186,7 @@ does. The first part alone returns lines 2 and 3:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-199">
+   <div class="verbatim" id="verbatim-200">
 &#x003E;&#x003E;&#x003E;&#x00A0;B[1:3,:-1:2]
 &#x00A0;<br />array([[&#x00A0;&#x00A0;6.,&#x00A0;&#x00A0;&#x00A0;8.,&#x00A0;&#x00A0;10.],
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;[&#x00A0;12.,&#x00A0;&#x00A0;14.,&#x00A0;&#x00A0;16.]])
@@ -10203,7 +10215,7 @@ documention, is for pandas to be imported as pd:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-200">
+   <div class="verbatim" id="verbatim-201">
 &#x003E;&#x003E;&#x003E;&#x00A0;import&#x00A0;pandas&#x00A0;as&#x00A0;pd
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;obj&#x00A0;=&#x00A0;pd.Series([1,2,3,4])&#x00A0;#&#x00A0;create&#x00A0;first&#x00A0;pandas&#x00A0;object&#x00A0;with&#x00A0;numeric&#x00A0;indices
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;obj
@@ -10234,7 +10246,7 @@ flexible than a NumPy array object. Here is an example:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-201">
+   <div class="verbatim" id="verbatim-202">
 &#x003E;&#x003E;&#x003E;&#x00A0;data={"telnos":["44707","46531","46084"],
 &#x00A0;<br />...&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;"names":["jeff","lisa","lab"],
 &#x00A0;<br />...&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;"rooms":["300D&#x00A0;RH","300E&#x00A0;RH","1162&#x00A0;SvH"]}
@@ -10263,7 +10275,7 @@ this:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-202">
+   <div class="verbatim" id="verbatim-203">
 %python&#x00A0;&#x003C;&#x00A0;myscript.py
 </div>
 <!--l. 5724--><p class="nopar" >
@@ -10273,7 +10285,7 @@ like this:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-203">
+   <div class="verbatim" id="verbatim-204">
 $&#x00A0;myscript.py
 </div>
 <!--l. 5730--><p class="nopar" >
@@ -10290,7 +10302,7 @@ it executable and then runs it:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-204">
+   <div class="verbatim" id="verbatim-205">
 $&#x00A0;cat&#x00A0;&#x003E;&#x00A0;printmess.py
 &#x00A0;<br />#!/usr/bin/env&#x00A0;python
 &#x00A0;<br />#&#x00A0;simple&#x00A0;Python&#x00A0;test&#x00A0;program&#x00A0;(printmess.py)
@@ -10306,7 +10318,7 @@ be:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-205">
+   <div class="verbatim" id="verbatim-206">
 #!&#x00A0;/usr/bin/env&#x00A0;python
 </div>
 <!--l. 5752--><p class="nopar" >
@@ -10321,7 +10333,7 @@ using single quotes, i.e.,
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-206">
+   <div class="verbatim" id="verbatim-207">
 #!&#x00A0;/usr/bin/env&#x00A0;python
 &#x00A0;<br />#&#x00A0;simple&#x00A0;Python&#x00A0;test&#x00A0;program&#x00A0;2&#x00A0;(printmess2.py)
 &#x00A0;<br />print&#x00A0;"The&#x00A0;pump&#x00A0;don&#8217;t&#x00A0;work&#x00A0;&#8217;cuz&#x00A0;the&#x00A0;vandals&#x00A0;took&#x00A0;the&#x00A0;handles"
@@ -10332,7 +10344,7 @@ using single quotes, i.e.,
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-207">
+   <div class="verbatim" id="verbatim-208">
 $&#x00A0;./printmess2.py
 &#x00A0;<br />The&#x00A0;pump&#x00A0;don&#8217;t&#x00A0;work&#x00A0;&#8217;cuz&#x00A0;the&#x00A0;vandals&#x00A0;took&#x00A0;the&#x00A0;handles
 &#x00A0;<br />She&#x00A0;said&#x00A0;&#8216;&#8216;I&#x00A0;know&#x00A0;what&#x00A0;it&#8217;s&#x00A0;like&#x00A0;to&#x00A0;be&#x00A0;dead&#8216;&#8216;
@@ -10353,7 +10365,7 @@ class="cmtt-10x-x-109">http://www.python-course.eu/variables.php</span></a>
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-208">
+   <div class="verbatim" id="verbatim-209">
 #!&#x00A0;/usr/bin/env&#x00A0;python
 &#x00A0;<br />abeg&#x00A0;=&#x00A0;2.1
 &#x00A0;<br />aend&#x00A0;=&#x00A0;3.9
@@ -10366,7 +10378,7 @@ program, you get an error message:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-209">
+   <div class="verbatim" id="verbatim-210">
 Traceback&#x00A0;(most&#x00A0;recent&#x00A0;call&#x00A0;last):
 &#x00A0;<br />&#x00A0;&#x00A0;File&#x00A0;&#8216;&#8216;./undeclared.py&#8216;&#8216;,&#x00A0;line&#x00A0;4,&#x00A0;in&#x00A0;&#x003C;module&#x003E;
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;adif&#x00A0;=&#x00A0;aend&#x00A0;-&#x00A0;abge
@@ -10393,7 +10405,7 @@ this:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-210">
+   <div class="verbatim" id="verbatim-211">
 program&#x00A0;statement
 &#x00A0;<br />block&#x00A0;1&#x00A0;top&#x00A0;statement:
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;block&#x00A0;1&#x00A0;statement
@@ -10450,7 +10462,7 @@ href="#x1-2030007.6" id="x1-2030007.6">Looping through lists</a></h5>
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-211">
+   <div class="verbatim" id="verbatim-212">
 #!/usr/bin/env&#x00A0;python
 &#x00A0;<br />mylist=[42,"spam","ocelot"]
 &#x00A0;<br />for&#x00A0;i&#x00A0;in&#x00A0;range(0,len(mylist),1):&#x00A0;#&#x00A0;note&#x00A0;absence&#x00A0;of&#x00A0;Indices&#x00A0;list,&#x00A0;start&#x00A0;and&#x00A0;step
@@ -10487,7 +10499,7 @@ script which does just that (why not?):
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-212">
+   <div class="verbatim" id="verbatim-213">
 #!/usr/bin/env&#x00A0;python
 &#x00A0;<br />mylist=[42,"spam","ocelot"]
 &#x00A0;<br />for&#x00A0;item&#x00A0;in&#x00A0;mylist:&#x00A0;#&#x00A0;note&#x00A0;absence&#x00A0;of&#x00A0;range&#x00A0;statement
@@ -10505,7 +10517,7 @@ trigonometry functions, spitting them out with a formatted print statement:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-213">
+   <div class="verbatim" id="verbatim-214">
 #!&#x00A0;/usr/bin/env&#x00A0;python
 &#x00A0;<br />import&#x00A0;numpy&#x00A0;as&#x00A0;np
 &#x00A0;<br />deg2rad&#x00A0;=&#x00A0;np.pi/180.&#x00A0;#&#x00A0;remember&#x00A0;conversion&#x00A0;to&#x00A0;radians
@@ -10535,7 +10547,7 @@ float first with the command float(theta).
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-214">
+   <div class="verbatim" id="verbatim-215">
 print&#x00A0;"%5.1f&#x00A0;%8.4f&#x00A0;%8.4f&#x00A0;%8.4f"&#x00A0;%(theta,&#x00A0;ctheta,&#x00A0;stheta,&#x00A0;ttheta)
 </div>
 <!--l. 5901--><p class="nopar" >
@@ -10543,7 +10555,7 @@ print&#x00A0;"%5.1f&#x00A0;%8.4f&#x00A0;%8.4f&#x00A0;%8.4f"&#x00A0;%(theta,&#x00
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-215">
+   <div class="verbatim" id="verbatim-216">
 print&#x00A0;theta,&#x00A0;ctheta,&#x00A0;stheta,&#x00A0;ttheta
 </div>
 <!--l. 5907--><p class="nopar" >
@@ -10558,7 +10570,7 @@ write:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-216">
+   <div class="verbatim" id="verbatim-217">
 print&#x00A0;"%5.1f,&#x00A0;%8.4f,&#x00A0;%8.4f,&#x00A0;%8.4f"&#x00A0;%(theta,&#x00A0;ctheta,&#x00A0;stheta,&#x00A0;ttheta)
 </div>
 <!--l. 5919--><p class="nopar" >
@@ -10567,7 +10579,7 @@ class="cmsy-10x-x-109">\</span>t) would be formatted like this:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-217">
+   <div class="verbatim" id="verbatim-218">
 print&#x00A0;"%5.1f&#x00A0;&#8217;\t&#8217;&#x00A0;%8.4f&#8217;\t&#8217;&#x00A0;&#x00A0;%8.4f,\t&#8217;&#x00A0;%8.4f"&#x00A0;%(theta,&#x00A0;ctheta,&#x00A0;stheta,&#x00A0;ttheta)
 </div>
 <!--l. 5925--><p class="nopar" > 
@@ -10580,7 +10592,7 @@ example,
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-218">
+   <div class="verbatim" id="verbatim-219">
 &#x003E;&#x003E;&#x003E;&#x00A0;for&#x00A0;r&#x00A0;in&#x00A0;B:
 &#x00A0;<br />...&#x00A0;&#x00A0;&#x00A0;&#x00A0;print&#x00A0;r
 &#x00A0;<br />...
@@ -10597,7 +10609,7 @@ dimension:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-219">
+   <div class="verbatim" id="verbatim-220">
 &#x003E;&#x003E;&#x003E;&#x00A0;for&#x00A0;e&#x00A0;in&#x00A0;B.ravel():
 &#x00A0;<br />...&#x00A0;&#x00A0;&#x00A0;&#x00A0;print&#x00A0;&#x00A0;e
 &#x00A0;<br />...
@@ -10735,7 +10747,7 @@ complicated statement:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-220">
+   <div class="verbatim" id="verbatim-221">
 &#x00A0;&#x00A0;&#x00A0;if&#x00A0;(&#x00A0;(a&#x00A0;&#x003E;&#x00A0;b&#x00A0;and&#x00A0;c&#x00A0;&#x003C;=&#x00A0;0)&#x00A0;or&#x00A0;d&#x00A0;==&#x00A0;0):
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;code&#x00A0;block
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;
@@ -10751,7 +10763,7 @@ type, for example,
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-221">
+   <div class="verbatim" id="verbatim-222">
 &#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;(a&#x00A0;=&#x00A0;0):
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;
 </div>
@@ -10765,7 +10777,7 @@ href="#x1-2060007.6" id="x1-2060007.6">Finer points of &#8216;if&#8217; blocks</
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-222">
+   <div class="verbatim" id="verbatim-223">
 if&#x00A0;(2+2)==4:&#x00A0;#&#x00A0;note&#x00A0;the&#x00A0;use&#x00A0;of&#x00A0;&#8217;==&#8217;&#x00A0;and&#x00A0;parentheses&#x00A0;in&#x00A0;comparison&#x00A0;statement
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;print&#x00A0;"I&#x00A0;can&#x00A0;put&#x00A0;two&#x00A0;and&#x00A0;two&#x00A0;together!"
 </div>
@@ -10779,7 +10791,7 @@ Consider these examples:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-223">
+   <div class="verbatim" id="verbatim-224">
 #!/usr/bin/env&#x00A0;python
 &#x00A0;<br />mylist=["jane","doug","denise"]
 &#x00A0;<br />if&#x00A0;"susie"&#x00A0;in&#x00A0;mylist:
@@ -10803,7 +10815,7 @@ examples:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-224">
+   <div class="verbatim" id="verbatim-225">
 #!/usr/bin/env&#x00A0;python
 &#x00A0;<br />a=1
 &#x00A0;<br />while&#x00A0;a&#x00A0;&#x003C;&#x00A0;10:
@@ -10823,7 +10835,7 @@ with the program block, simply hit return:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-225">
+   <div class="verbatim" id="verbatim-226">
 &#x003E;&#x003E;&#x003E;&#x00A0;a=1
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;while&#x00A0;a&#x003C;10:
 &#x00A0;<br />....&#x00A0;&#x00A0;&#x00A0;&#x00A0;print&#x00A0;a
@@ -10854,7 +10866,7 @@ prior to a return as a string.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-226">
+   <div class="verbatim" id="verbatim-227">
 X=[]&#x00A0;#&#x00A0;make&#x00A0;a&#x00A0;list&#x00A0;to&#x00A0;put&#x00A0;the&#x00A0;data&#x00A0;in
 &#x00A0;<br />ans=float(raw_input("Input&#x00A0;numeric&#x00A0;value&#x00A0;for&#x00A0;X:&#x00A0;&#x00A0;"))
 &#x00A0;<br />X.append(ans)&#x00A0;#&#x00A0;append&#x00A0;the&#x00A0;value&#x00A0;to&#x00A0;X
@@ -10882,7 +10894,7 @@ its first five lines are:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-227">
+   <div class="verbatim" id="verbatim-228">
 &#x00A0;&#x00A0;&#x00A0;9.02920&#x00A0;&#x00A0;&#x00A0;38.76560&#x00A0;2442&#x00A0;AAE
 &#x00A0;<br />&#x00A0;&#x00A0;42.63900&#x00A0;&#x00A0;&#x00A0;74.49400&#x00A0;1645&#x00A0;AAK
 &#x00A0;<br />&#x00A0;&#x00A0;37.93040&#x00A0;&#x00A0;&#x00A0;58.11890&#x00A0;&#x00A0;678&#x00A0;ABKT
@@ -10895,7 +10907,7 @@ data and print it out line by line.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-228">
+   <div class="verbatim" id="verbatim-229">
 #!/usr/bin/env&#x00A0;python
 &#x00A0;<br />f=open(&#8217;station.list&#8217;)
 &#x00A0;<br />StationNFO=f.readlines()
@@ -10907,7 +10919,7 @@ data and print it out line by line.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-229">
+   <div class="verbatim" id="verbatim-230">
 $&#x00A0;ReadStations.py
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;9.02920&#x00A0;&#x00A0;&#x00A0;38.76560&#x00A0;2442&#x00A0;AAE
 &#x00A0;<br />
@@ -10940,7 +10952,7 @@ invisible like the apostrophes and the line terminations:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-230">
+   <div class="verbatim" id="verbatim-231">
 $&#x00A0;ReadStations.py
 &#x00A0;<br />&#8217;&#x00A0;&#x00A0;&#x00A0;9.02920&#x00A0;&#x00A0;&#x00A0;38.76560&#x00A0;2442&#x00A0;AAE&#x00A0;\n&#8217;
 &#x00A0;<br />&#8217;&#x00A0;&#x00A0;42.63900&#x00A0;&#x00A0;&#x00A0;74.49400&#x00A0;1645&#x00A0;AAK&#x00A0;\n&#8217;
@@ -10957,7 +10969,7 @@ function:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-231">
+   <div class="verbatim" id="verbatim-232">
 &#x00A0;&#x00A0;&#x00A0;&#x00A0;print&#x00A0;line.strip("\n")
 </div>
 <!--l. 6143--><p class="nopar" >
@@ -10965,7 +10977,7 @@ function:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-232">
+   <div class="verbatim" id="verbatim-233">
 $&#x00A0;ReadStations.py
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;9.02920&#x00A0;&#x00A0;&#x00A0;38.76560&#x00A0;2442&#x00A0;AAE
 &#x00A0;<br />&#x00A0;&#x00A0;42.63900&#x00A0;&#x00A0;&#x00A0;74.49400&#x00A0;1645&#x00A0;AAK
@@ -10990,7 +11002,7 @@ lists:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-233">
+   <div class="verbatim" id="verbatim-234">
 #!/usr/bin/env&#x00A0;python
 &#x00A0;<br />Lats,Lons,StaIDs,StaName=[],[],[]&#x00A0;,[]#&#x00A0;creates&#x00A0;lists&#x00A0;to&#x00A0;put&#x00A0;things&#x00A0;in
 &#x00A0;<br />StationNFO=open("station.list").readlines()&#x00A0;#&#x00A0;combines&#x00A0;the&#x00A0;open&#x00A0;and&#x00A0;readlines&#x00A0;methods!
@@ -11014,7 +11026,7 @@ line:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-234">
+   <div class="verbatim" id="verbatim-235">
 #!/usr/bin/env&#x00A0;python
 &#x00A0;<br />import&#x00A0;sys
 &#x00A0;<br />Lats,Lons,StaIDs,StaName=[],[],[]&#x00A0;,[]#&#x00A0;creates&#x00A0;lists&#x00A0;to&#x00A0;put&#x00A0;things&#x00A0;in
@@ -11032,7 +11044,7 @@ line:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-235">
+   <div class="verbatim" id="verbatim-236">
 $&#x00A0;ReadStations.py&#x00A0;&#x003C;&#x00A0;station.list
 </div>
 <!--l. 6195--><p class="nopar" >
@@ -11045,7 +11057,7 @@ href="#x1-2130007.7" id="x1-2130007.7">Command line switches</a></h5>
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-236">
+   <div class="verbatim" id="verbatim-237">
 #!/usr/bin/env&#x00A0;python
 &#x00A0;<br />import&#x00A0;sys
 &#x00A0;<br />Lats,Lons,StaIDs,StaName=[],[],[]&#x00A0;,[]#&#x00A0;creates&#x00A0;lists&#x00A0;to&#x00A0;put&#x00A0;things&#x00A0;in
@@ -11065,7 +11077,7 @@ href="#x1-2130007.7" id="x1-2130007.7">Command line switches</a></h5>
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-237">
+   <div class="verbatim" id="verbatim-238">
 $&#x00A0;ReadStations.py&#x00A0;-f&#x00A0;&#x00A0;station.list
 </div>
 <!--l. 6221--><p class="nopar" >
@@ -11093,7 +11105,7 @@ this:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-238">
+   <div class="verbatim" id="verbatim-239">
 #!/usr/bin/env&#x00A0;python
 &#x00A0;<br />import&#x00A0;UTM&#x00A0;#&#x00A0;imports&#x00A0;the&#x00A0;UTM&#x00A0;module
 &#x00A0;<br />Ellipsoid=23-1&#x00A0;#&#x00A0;UTMs&#x00A0;code&#x00A0;for&#x00A0;WGS-84
@@ -11112,7 +11124,7 @@ this:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-239">
+   <div class="verbatim" id="verbatim-240">
 $&#x00A0;ConvertStations.py
 &#x00A0;<br />AAE&#x00A0;:&#x00A0;&#x00A0;474238.170087&#x00A0;998088.469113&#x00A0;37P
 &#x00A0;<br />AAK&#x00A0;:&#x00A0;&#x00A0;458516.115522&#x00A0;4720850.45385&#x00A0;43T
@@ -11126,7 +11138,7 @@ $&#x00A0;ConvertStations.py
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-240">
+   <div class="verbatim" id="verbatim-241">
 ConvertStations.py&#x00A0;&#x003E;&#x00A0;mynewfile
 &#x00A0;<br />&#x00A0;
 </div>
@@ -11137,7 +11149,7 @@ method on the output file object with format string:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-241">
+   <div class="verbatim" id="verbatim-242">
 #!/usr/bin/env&#x00A0;python
 &#x00A0;<br />import&#x00A0;UTM&#x00A0;#&#x00A0;imports&#x00A0;the&#x00A0;UTM&#x00A0;module
 &#x00A0;<br />outfile=open("mynewfile","w")&#x00A0;#&#x00A0;creates&#x00A0;outfile&#x00A0;object
@@ -11159,7 +11171,7 @@ file object:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-242">
+   <div class="verbatim" id="verbatim-243">
 &#x00A0;&#x00A0;&#x00A0;&#x00A0;outfile.write(&#8217;%s&#x00A0;&#x00A0;%s&#x00A0;&#x00A0;%s&#x00A0;&#x00A0;%s\n&#8217;%(StaName,&#x00A0;Easting,&#x00A0;Northing,&#x00A0;Zone))
 </div>
 <!--l. 6290--><p class="nopar" > The write statement uses the syntax: &#8217;format string&#8217;%(list of variables tuple).
@@ -11177,7 +11189,7 @@ Format strings have these rules:
                                                                      
 
                                                                      
-<div class="verbatim" id="verbatim-243">
+<div class="verbatim" id="verbatim-244">
 x,y=4.82,2.3e3
 &#x00A0;<br />print&#x00A0;&#8217;%7.1f,%s\t%10.3e&#8217;%(x,&#8217;hi&#x00A0;there&#8217;,y)
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;4.8,hi&#x00A0;there&#x00A0;&#x00A0;2.300e+03
@@ -11193,7 +11205,7 @@ could look like this:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-244">
+   <div class="verbatim" id="verbatim-245">
 $&#x00A0;ConvertStations2.py
 &#x00A0;<br />$&#x00A0;head&#x00A0;mynewfile
 &#x00A0;<br />AAE&#x00A0;&#x00A0;474238.170087&#x00A0;&#x00A0;998088.469113&#x00A0;&#x00A0;37P
@@ -11223,7 +11235,7 @@ is:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-245">
+   <div class="verbatim" id="verbatim-246">
 #!/usr/bin/env&#x00A0;python
 &#x00A0;<br />
 &#x00A0;<br />def&#x00A0;FUNCNAME(in_args):
@@ -11252,7 +11264,7 @@ all:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-246">
+   <div class="verbatim" id="verbatim-247">
 &#x00A0;#!/usr/bin/env&#x00A0;python
 &#x00A0;<br />def&#x00A0;gimmepi():
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;"""
@@ -11267,7 +11279,7 @@ passed:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-247">
+   <div class="verbatim" id="verbatim-248">
 #!/usr/bin/env&#x00A0;python
 &#x00A0;<br />def&#x00A0;deg2rad(degrees):
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;"""
@@ -11283,7 +11295,7 @@ want):
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-248">
+   <div class="verbatim" id="verbatim-249">
 #!/usr/bin/env&#x00A0;python
 &#x00A0;<br />def&#x00A0;print_args(*args):
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;"""
@@ -11301,7 +11313,7 @@ in_args:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-249">
+   <div class="verbatim" id="verbatim-250">
 #!/usr/bin/env&#x00A0;python
 &#x00A0;<br />def&#x00A0;print_kwargs(**kwargs):
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;"""
@@ -11349,7 +11361,7 @@ program with the final (not indented) line main():
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-250">
+   <div class="verbatim" id="verbatim-251">
 #!/usr/bin/env&#x00A0;python
 &#x00A0;<br />def&#x00A0;print_kwargs(**kwargs):
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;"""
@@ -11379,7 +11391,7 @@ NumPy.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-251">
+   <div class="verbatim" id="verbatim-252">
 def&#x00A0;gimmepi():
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;"""
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;returns&#x00A0;pi
@@ -11407,7 +11419,7 @@ help:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-252">
+   <div class="verbatim" id="verbatim-253">
 $&#x00A0;python
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;import&#x00A0;myfuncs
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;print&#x00A0;myfuncs.gimmepi()
@@ -11430,7 +11442,7 @@ functions variable V:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-253">
+   <div class="verbatim" id="verbatim-254">
 def&#x00A0;myfunc():
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;global&#x00A0;V
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;V=123
@@ -11459,7 +11471,7 @@ definition:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-254">
+   <div class="verbatim" id="verbatim-255">
 class&#x00A0;Circle:
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;"""
 &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;This&#x00A0;is&#x00A0;simple&#x00A0;example&#x00A0;of&#x00A0;a&#x00A0;class
@@ -11479,7 +11491,7 @@ manner similar to function modules:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-255">
+   <div class="verbatim" id="verbatim-256">
 &#x003E;&#x003E;&#x003E;&#x00A0;import&#x00A0;Shapes&#x00A0;#&#x00A0;import&#x00A0;the&#x00A0;class
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;r=4.0
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;C=Shapes.Circle(r)&#x00A0;#&#x00A0;create&#x00A0;a&#x00A0;class&#x00A0;instance&#x00A0;with&#x00A0;r=4.
@@ -11547,7 +11559,7 @@ href="#x1-2260007.10" id="x1-2260007.10">A first plot</a></h5>
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-256">
+   <div class="verbatim" id="verbatim-257">
 #!/usr/bin/env&#x00A0;python
 &#x00A0;<br />import&#x00A0;matplotlib
 &#x00A0;<br />matplotlib.use("TkAgg")&#x00A0;#&#x00A0;my&#x00A0;favorite&#x00A0;backend
@@ -11577,7 +11589,7 @@ mode:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-257">
+   <div class="verbatim" id="verbatim-258">
 &#x003E;&#x003E;&#x003E;&#x00A0;import&#x00A0;matplotlib
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;matplotlib.use("TkAgg")
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;import&#x00A0;pylab
@@ -11616,7 +11628,7 @@ this:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-258">
+   <div class="verbatim" id="verbatim-259">
 #!/usr/bin/env&#x00A0;python
 &#x00A0;<br />import&#x00A0;matplotlib
 &#x00A0;<br />matplotlib.use("TkAgg")
@@ -11653,7 +11665,7 @@ matplotlib2.py
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-259">
+   <div class="verbatim" id="verbatim-260">
 #!/usr/bin/env&#x00A0;python
 &#x00A0;<br />import&#x00A0;matplotlib
 &#x00A0;<br />matplotlib.use("TkAgg")
@@ -11695,7 +11707,7 @@ instance:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-260">
+   <div class="verbatim" id="verbatim-261">
 fig&#x00A0;=&#x00A0;pylab.figure(num=1,figsize=(5,7)).
 </div>
 <!--l. 6671--><p class="nopar" >
@@ -11712,7 +11724,7 @@ syntax:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-261">
+   <div class="verbatim" id="verbatim-262">
 &#x00A0;fig.add_subplot(211)
 &#x00A0;<br />&#x00A0;
 </div>
@@ -11728,7 +11740,7 @@ coordinates.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-262">
+   <div class="verbatim" id="verbatim-263">
 #!/usr/bin/env&#x00A0;python
 &#x00A0;<br />import&#x00A0;matplotlib
 &#x00A0;<br />matplotlib.use("TkAgg")
@@ -11770,7 +11782,7 @@ examples to show how some of these things work:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-263">
+   <div class="verbatim" id="verbatim-264">
 #!/usr/bin/env&#x00A0;python
 &#x00A0;<br />import&#x00A0;matplotlib
 &#x00A0;<br />matplotlib.use("TkAgg")
@@ -12031,7 +12043,7 @@ href="#QQ2-1-231" id="x1-2310009.1">Problems with installing Python or PmagPy</a
                                                                      
 
                                                                      
-          <div class="verbatim" id="verbatim-264">
+          <div class="verbatim" id="verbatim-265">
           $&#x00A0;python
           &#x00A0;<br />Enthought&#x00A0;Canopy&#x00A0;Python&#x00A0;2.7.6&#x00A0;|&#x00A0;64-bit&#x00A0;|&#x00A0;(default,&#x00A0;Jun&#x00A0;&#x00A0;4&#x00A0;2014,&#x00A0;16:42:26)
           &#x00A0;<br />[GCC&#x00A0;4.2.1&#x00A0;(Apple&#x00A0;Inc.&#x00A0;build&#x00A0;5666)&#x00A0;(dot&#x00A0;3)]&#x00A0;on&#x00A0;darwin
@@ -12045,7 +12057,7 @@ href="#QQ2-1-231" id="x1-2310009.1">Problems with installing Python or PmagPy</a
                                                                      
 
                                                                      
-          <div class="verbatim" id="verbatim-265">
+          <div class="verbatim" id="verbatim-266">
           $&#x00A0;python
           &#x00A0;<br />Enthought&#x00A0;Python&#x00A0;Distribution&#x00A0;--&#x00A0;www.enthought.com
           &#x00A0;<br />Version:&#x00A0;7.3-2&#x00A0;(32-bit)
@@ -12074,7 +12086,7 @@ href="#QQ2-1-231" id="x1-2310009.1">Problems with installing Python or PmagPy</a
                                                                      
 
                                                                      
-          <div class="verbatim" id="verbatim-266">
+          <div class="verbatim" id="verbatim-267">
           &#x00A0;-bash:&#x00A0;eqarea.py:&#x00A0;command&#x00A0;not&#x00A0;found
 </div>
           <!--l. 6842--><p class="nopar" >
@@ -12083,7 +12095,7 @@ href="#QQ2-1-231" id="x1-2310009.1">Problems with installing Python or PmagPy</a
                                                                      
 
                                                                      
-          <div class="verbatim" id="verbatim-267">
+          <div class="verbatim" id="verbatim-268">
           pip&#x00A0;list
 </div>
           <!--l. 6848--><p class="nopar" >
@@ -12093,7 +12105,7 @@ href="#QQ2-1-231" id="x1-2310009.1">Problems with installing Python or PmagPy</a
                                                                      
 
                                                                      
-          <div class="verbatim" id="verbatim-268">
+          <div class="verbatim" id="verbatim-269">
           pip&#x00A0;install&#x00A0;--upgrade&#x00A0;--force-reinstall&#x00A0;--no-deps&#x00A0;pmagpy
           &#x00A0;<br />pip&#x00A0;install&#x00A0;--upgrade&#x00A0;--force-reinstall&#x00A0;--no-deps&#x00A0;pmagpy-cli
 </div>
@@ -12103,7 +12115,7 @@ href="#QQ2-1-231" id="x1-2310009.1">Problems with installing Python or PmagPy</a
                                                                      
 
                                                                      
-          <div class="verbatim" id="verbatim-269">
+          <div class="verbatim" id="verbatim-270">
           &#x00A0;"eqarea.py"&#x00A0;is&#x00A0;not&#x00A0;recognized&#x00A0;as&#x00A0;an&#x00A0;internal&#x00A0;or&#x00A0;external&#x00A0;command,
           &#x00A0;<br />operable&#x00A0;program&#x00A0;or&#x00A0;batch&#x00A0;file.
 </div>
@@ -12138,7 +12150,7 @@ href="https://www.continuum.io/downloads" >Anaconda</a> Python distribution
                                                                      
 
                                                                      
-              <div class="verbatim" id="verbatim-270">
+              <div class="verbatim" id="verbatim-271">
               ImportError:&#x00A0;No&#x00A0;module&#x00A0;named&#x00A0;wx
 </div>
               <!--l. 6893--><p class="nopar" >
@@ -12152,7 +12164,7 @@ href="https://www.continuum.io/downloads" >Anaconda</a> Python distribution
                                                                      
 
                                                                      
-     <div class="verbatim" id="verbatim-271">
+     <div class="verbatim" id="verbatim-272">
      &#x00A0;-bash:&#x00A0;eqarea.py:&#x00A0;command&#x00A0;not&#x00A0;found
 </div>
      <!--l. 6902--><p class="nopar" >
@@ -12168,7 +12180,7 @@ href="https://www.continuum.io/downloads" >Anaconda</a> Python distribution
                                                                      
 
                                                                      
-     <div class="verbatim" id="verbatim-272">
+     <div class="verbatim" id="verbatim-273">
      &#x00A0;<br />pip&#x00A0;install&#x00A0;--upgrade&#x00A0;--force-reinstall&#x00A0;pmagpy
      &#x00A0;<br />pip&#x00A0;install&#x00A0;--upgrade&#x00A0;--force-reinstall&#x00A0;pmagpy-cli
 </div>
@@ -12176,7 +12188,7 @@ href="https://www.continuum.io/downloads" >Anaconda</a> Python distribution
                                                                      
 
                                                                      
-     <div class="verbatim" id="verbatim-273">
+     <div class="verbatim" id="verbatim-274">
      pip&#x00A0;list
 </div>
      <!--l. 6918--><p class="nopar" > which will show you all of your pip-installed packages. If you don&#8217;t see
@@ -12188,7 +12200,7 @@ href="https://www.continuum.io/downloads" >Anaconda</a> Python distribution
                                                                      
 
                                                                      
-     <div class="verbatim" id="verbatim-274">
+     <div class="verbatim" id="verbatim-275">
      &#x00A0;<br />&#x00A0;&#x00A0;File&#x00A0;&#8216;&#8216;/Applications/Canopy.app/appdata/canopy-1.7.4.3348.macosx-x86_64/Canopy.app/Contents/lib/python2.7/contextlib.py&#8217;&#8217;,&#x00A0;line&#x00A0;17,&#x00A0;in&#x00A0;__enter__
      &#x00A0;<br />&#x00A0;&#x00A0;return&#x00A0;self.gen.next()
      &#x00A0;<br />&#x00A0;&#x00A0;File&#x00A0;&#8216;&#8216;/Users/***/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/matplotlib/__init__.py&#8217;&#8217;,&#x00A0;line&#x00A0;1000,&#x00A0;in&#x00A0;_open_file_or_url
@@ -12205,7 +12217,7 @@ href="https://www.continuum.io/downloads" >Anaconda</a> Python distribution
                                                                      
 
                                                                      
-     <div class="verbatim" id="verbatim-275">
+     <div class="verbatim" id="verbatim-276">
      &#x00A0;&#x00A0;export&#x00A0;LC_ALL=en_US.UTF-8
      &#x00A0;<br />&#x00A0;&#x00A0;export&#x00A0;LANG=en_US.UTF-8
      &#x00A0;<br />&#x00A0;&#x00A0;
@@ -12238,7 +12250,7 @@ like this:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-276">
+   <div class="verbatim" id="verbatim-277">
 ImportError:&#x00A0;DLL&#x00A0;load&#x00A0;failed:&#x00A0;The&#x00A0;specified&#x00A0;procedure&#x00A0;could&#x00A0;not&#x00A0;be&#x00A0;found&#x00A0;&#x00A0;
 </div>
 <!--l. 6947--><p class="nopar" > you may be missing the MKL package. Open Canopy, go to package manager,
