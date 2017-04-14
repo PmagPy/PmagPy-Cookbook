@@ -222,12 +222,12 @@ If you want to contribute to PmagPy or modify PmagPy programs for your own use, 
 \item Fork the PmagPy repo (if you have set up with git/Github as in step 1), or simply download the zipfile from the \href{https://github.com/PmagPy/PmagPy}{Github repository}.
 \item Add PmagPy to your \$PATH by putting these lines to your .bashrc or .bash\_profile:
 \begin{verbatim}
-export PATH=/Users/***/PmagPy:$PATH
 export PATH=/Users/***/PmagPy/programs:$PATH
+export PATH=/Users/***/PmagPy/programs/conversion_scripts:$PATH
 export PYTHONPATH=$PYTHONPATH:/Users/***/PmagPy/
 \end{verbatim}
 
-where *** is your username.  Then restart your Terminal.  At this point you should be able to use all PmagPy functionality as if you had done a full \href{#pip_install}{pip install}.  The only difference is that you will be able to stay up-to-date with PmagPy development and make edits in PmagPy code which will be immediately available in your system.
+where *** is your username.  (Of course, these lines will depend on exactly where you have put your PmagPy folder -- if it lives on your Desktop, you will need to point your PATH there: \begin{verbatim}export PATH=/Users/***/Desktop/PmagPy/programs\end{verbatim}, and so on.)  Next, restart your Terminal.  At this point you should be able to use all PmagPy functionality as if you had done a full \href{#pip_install}{pip install}.  The only difference is that you will be able to stay up-to-date with PmagPy development and make edits in PmagPy code which will be immediately available in your system.
 
 \item Check out our guidelines on \href{https://github.com/PmagPy/PmagPy/blob/master/CONTRIBUTING.md}{how to contribute to PmagPy} for guidelines of all sorts, including how to raise issues, request features, and make pull requests.
 
