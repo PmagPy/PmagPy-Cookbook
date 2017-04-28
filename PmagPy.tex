@@ -168,7 +168,7 @@ Once you have installed the full version of Canopy and want to use a mapping pro
 
 To make sure everything is working, return to your \href{#command_line}{command line}, type {\bf eqarea.py -h}.      Important note for Windows users: you will need to use ``eqarea -h''.  In fact, you will drop the ``.py'' anytime you are calling a command-line program.
 
- If you do not see the help message, first try setting your path by hand following the instructions on the  \href{#trouble}{Trouble Shooting} page. If that fails, please send the error message and  Canopy version number to \href{mailto:ltauxe@ucsd.edu?subject=PmagPy Cookbook}{ltauxe@ucsd.edu}
+ If you do not see the help message, first try setting your path by hand following the instructions on the  \href{#trouble}{Trouble Shooting} page. If that fails, please send the error message and  the Python distribution you are using, including the version number, to \href{mailto:ltauxe@ucsd.edu?subject=PmagPy Cookbook}{ltauxe@ucsd.edu}
 
 \item Accessing example data files:
 
@@ -206,32 +206,63 @@ logged in on the main display of your Mac.
 
 \noindent Also, Anaconda users may need to \href{#anaconda_troubleshooting}{install wxPython}.
 
-
 \customlink{developer_install}
 \section{Developer install of PmagPy}
 
 If you are a developer, and wish to download PmagPy from the \href{https://github.com/PmagPy/PmagPy}{Github repository}, you may want to add PmagPy directly to your path instead of installing via pip.
 
-If you're wondering whether you should do a \href{#pip_install}{pip install} or a developer install, it depends on what you're hoping to do with {\bf PmagPy}.  The benefit of a regular pip installation is that you will get a tested, stable version of {\bf PmagPy}.  You can install everything you need quickly and easily, and you'll be able to use the full functionality.  The benefit of a developer installation is that you will be able to stay up-to-date with what other developers are working on.  You will also be able to make changes and use those changes immediately.  The downside is that the developer install may be buggier and requires you to make edits in your bash\_profile.
+If you're wondering whether you should do a \href{#pip_install}{pip install} or a developer install, it depends on what you're hoping to do with {\bf PmagPy}.  The benefit of a regular pip installation is that you will get a tested, stable version of {\bf PmagPy}.  You can install everything you need quickly and easily, and you'll be able to use the full functionality.  The benefit of a developer installation is that you will be able to stay up-to-date with what other developers are working on.  You will also be able to make changes and use those changes immediately.  The downside is that the developer install may be buggier and requires to edit your \$PATH.
 
-If you want to contribute to PmagPy or modify PmagPy programs for your own use, you should do a developer install, otherwise go with the regular \href{#pip_install}{pip install}.  The developer install follows these steps:
-
+If you want to contribute to {\bf PmagPy} or modify {\bf PmagPy} programs for your own use, you should do a developer install, otherwise go with the regular \href{#pip_install}{pip install}.  The developer install follows these steps:
 
 \begin{enumerate}
 \item (Optional) Install git on your computer and sign up for a \href{https://github.com}{Github account} if you don't already have one.
 \item Fork the PmagPy repo (if you have set up with git/Github as in step 1), or simply download the zipfile from the \href{https://github.com/PmagPy/PmagPy}{Github repository}.
-\item Add PmagPy to your \$PATH by putting these lines to your .bashrc or .bash\_profile:
+
+\item Open your command line and navigate to your PmagPy directory.  Windows users must open their command prompt \href{http://www.thewindowsclub.com/how-to-run-command-prompt-as-an-administrator}{as an admin}.
+
+\item Linux/OS X users: run \texttt{python dev_setup.py install}  For more information on how to install, run \texttt{python dev_setup.py -h}
+
+\item Windows users: From the PmagPy directory, try to run \texttt{python dev_setup.py install}.  If you don't have a fully set up python environment, you will also need to specify the location of your Python installation.  To figure that out, you can run the following two commands:
 \begin{verbatim}
-export PATH=/Users/***/PmagPy/programs:$PATH
-export PATH=/Users/***/PmagPy/programs/conversion_scripts:$PATH
-export PYTHONPATH=$PYTHONPATH:/Users/***/PmagPy/
+    cd \
+    dir python.exe /s /p
 \end{verbatim}
 
-where *** is your username.  (Of course, these lines will depend on exactly where you have put your PmagPy folder -- if it lives on your Desktop, you will need to point your PATH there: \begin{verbatim}export PATH=/Users/***/Desktop/PmagPy/programs\end{verbatim}, and so on.)  Next, restart your Terminal.  At this point you should be able to use all PmagPy functionality as if you had done a full \href{#pip_install}{pip install}.  The only difference is that you will be able to stay up-to-date with PmagPy development and make edits in PmagPy code which will be immediately available in your system.
+This can take a while, so be patient.  You should get a result that looks something like this:
+
+\begin{verbatim}
+    C:\Users\USERNAME\AppData\Local\Continuum\Anaconda2
+\end{verbatim}
+
+Once you've done that, navigate back into your PmagPy directory and run dev\_setup.py again:
+
+\begin{verbatim}
+    python dev_setup.py install -p path_to_python
+\end{verbatim}
+
+\item After completing the developer install, you will need to restart your command line.  After restarting, you should be able to use all {\bf PmagPy} functionality as if you had done a full \href{#pip_install}{pip install}.  The only difference is that you will be able to stay up-to-date with {\bf PmagPy} development and make edits in {\bf PmagPy} code which will be immediately available in your system.
 
 \item Check out our guidelines on \href{https://github.com/PmagPy/PmagPy/blob/master/CONTRIBUTING.md}{how to contribute to PmagPy} for guidelines of all sorts, including how to raise issues, request features, and make pull requests.
 
 \end{enumerate}
+
+If you care about the details, here is what the developer install script actually does.  It adds these lines editing \$PATH to your .bashrc file:
+
+\begin{verbatim}
+    export PATH=/Users/***/PmagPy/programs:$PATH
+    export PATH=/Users/***/PmagPy/programs/conversion_scripts:$PATH
+\end{verbatim}
+
+And this line to your editing \$PYTHONPATH to your .bashrc file:
+\begin{verbatim}
+    export PYTHONPATH=$PYTHONPATH:/Users/***/PmagPy/
+\end{verbatim}
+
+
+where *** is your username.  (Of course, these lines will depend on exactly where you have put your PmagPy folder -- if it lives on your Desktop, your \$PATH will point there: \begin{verbatim}export PATH=/Users/***/Desktop/PmagPy/programs\end{verbatim}, and so on.)
+
+On Windows, it adds these same variables to your \$PATH and \$PYTHONPATH.  For Windows users who want to look at or edit those variables directly, see this information \href{https://www.java.com/en/download/help/path.xml}{about setting your PATH}.
 
 %\setcounter{tocdepth}{1}
 %\tableofcontents
