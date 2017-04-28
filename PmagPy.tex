@@ -143,11 +143,12 @@ Once you have installed the full version of Canopy and want to use a mapping pro
 
    \begin{itemize}
       \item Find  and open your \href{#command_line}{command line}.
-      \item Update pip: type on  the command line: \begin{verbatim}pip install --upgrade pip\end{verbatim}
+      \item Update pip: type on  the command line: \begin{verbatim}pip install --upgrade pip setuptools\end{verbatim}
      \item Install or update pmagpy: use the command: \begin{verbatim}pip install --upgrade pmagpy \end{verbatim}
      \item Install or update pmagpy-cli, use the command: \begin{verbatim}pip install --upgrade pmagpy-cli \end{verbatim}
-     \item To uninstall either, use the command: ``pip uninstall pmagpy'' or ``pip uninstall pmagpy-cli''
-     \item If you run into trouble, use pip to uninstall both pmagpy and pmagpy-cli, then try again to install first pmagpy and then pmagpy-cli
+     \item To uninstall either, use the command: \texttt{pip uninstall pmagpy} or \texttt{pip uninstall pmagpy-cli}
+     \item If you run into trouble, use pip to uninstall both pmagpy and pmagpy-cli, then try again to install first pmagpy and then pmagpy-cli.
+     \item If you are getting weird install errors, try this: \texttt{pip install pmagpy --upgrade --no-deps --force-reinstall --no-cache-dir}
    \end{itemize}
 
    %
@@ -166,9 +167,9 @@ Once you have installed the full version of Canopy and want to use a mapping pro
     \begin{itemize}
 \item Testing your installation:
 
-To make sure everything is working, return to your \href{#command_line}{command line}, type {\bf eqarea.py -h}.      Important note for Windows users: you will need to use ``eqarea -h''.  In fact, you will drop the ``.py'' anytime you are calling a command-line program.
+To make sure everything is working, return to your \href{#command_line}{command line}, type \texttt{eqarea.py -h}.      Important note for Windows users: you will need to use \texttt{eqarea -h}  In fact, you will drop the ``.py'' anytime you are calling a command-line program.
 
- If you do not see the help message, first try setting your path by hand following the instructions on the  \href{#trouble}{Trouble Shooting} page. If that fails, please send the error message and  the Python distribution you are using, including the version number, to \href{mailto:ltauxe@ucsd.edu?subject=PmagPy Cookbook}{ltauxe@ucsd.edu}
+ If you do not see the help message, check the \href{#trouble}{Trouble Shooting} section. If you don't find a solution there, please send the error message and  the Python distribution you are using, including the version number, to \href{mailto:ltauxe@ucsd.edu?subject=PmagPy Cookbook}{ltauxe@ucsd.edu}
 
 \item Accessing example data files:
 
@@ -6831,7 +6832,7 @@ Although there is much much more to do in Python, this documentation is aimed at
 
  \item First, please test that you have successfully installed the appropriate Python distribution.
 
- \item For Mac users, find your command line (Terminal) and type ``python".  You should see something like this:
+ \item Find your command line (Terminal for Mac users, Command Prompt for Windows users) and type \texttt{python}  You should see something like this:
 
 
 \begin{verbatim}$ python
@@ -6841,21 +6842,15 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 \end{verbatim}
 
-
-
-\item For windows users, find your command line (Command Prompt), and type ``python''.  You should see something like this:
+or
 
 \begin{verbatim}$ python
-Enthought Python Distribution -- www.enthought.com
-Version: 7.3-2 (32-bit)
-
-Python 2.7.3 |EPD 7.3-2 (32-bit)| (default, Apr 12 2012, 11:28:34)
-[GCC 4.0.1 (Apple Inc. build 5493)] on darwin
-Type ``credits", ``demo" or ``enthought" for more information.
->>>
+Python 3.6.0 |Anaconda 4.3.1 (x86_64)| (default, Dec 23 2016, 13:19:00)
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
 \end{verbatim}
 
-\item If you don't see one of the above messages, you have not fully installed the Python distribution.  You'll need to try again.  In order to complete the install you must open Canopy (it will be your Applications folder) and select ``yes'' to use Canopy Python as your default Python.
+\item If you don't see one of the above messages, you have not fully installed the Python distribution.  You'll need to try again.  In order to fully install Canopy Python (it will be your Applications folder) and select ``yes'' to use Canopy Python as your default Python.
 
 \end{itemize}
 
@@ -6903,11 +6898,23 @@ pip install --upgrade --force-reinstall --no-deps pmagpy-cli
 operable program or batch file.
 \end{verbatim}
 
-Setting your path should not be an issue in Windows if you are using the PmagPy prompt (created by the install script).  PmagPy functionality will be available if you have installed pmagpy and pmagpy-cli using pip.  However, if you do need to set your path for some reason, see:
+First, remember that if you have a standard \href{#pip_install}{pip install}, you need to use \texttt{eqarea} instead of \texttt{eqarea.py}. This is caused by a strange Windows quirk, but what you need to know is this: anytime the Cookbook gives a command, you'll need to drop the ``.py'' and all will be well.
 
-\href{http://www.mathworks.com/matlabcentral/answers/94933-how-do-i-set-my-system-path-under-windows}{Setting your Path in Windows}
+If \texttt{eqarea -h} doesn't work, this probably means that you have not correctly installed PmagPy.  On your command line, try:
 
-If you are using the \href{#full_pip}{pip install}, you'll need to use the command ``eqarea -h'', \textbf{not} ``eqarea.py -h''.  This is caused by a strange Windows quirk, but all you need to know is this: anytime the Cookbook gives a command, you'll need to drop the ``.py'' and all will be well.
+\begin{verbatim}
+pip list
+\end{verbatim}
+
+You should see both pmagpy-(version_number) and pmagpy-cli-(version_number) on that list.  If you don't see them, go ahead and reinstall:
+
+\begin{verbatim}
+pip install --upgrade --force-reinstall --no-deps pmagpy
+pip install --upgrade --force-reinstall --no-deps pmagpy-cli
+\end{verbatim}
+
+Second, if you are trying to get a developer install to work, and you want to set/check your \$PATH manually, see \href{http://www.mathworks.com/matlabcentral/answers/94933-how-do-i-set-my-system-path-under-windows}{Setting your Path in Windows}
+
 
 \end {itemize}
 
@@ -6933,7 +6940,7 @@ conda install wxpython
 \end{verbatim}
 
   \begin{itemize}
-  \item  For Mac users, it is possible that you need to make the python scripts executable. On the command line in the directory with the scripts, type: chmod a+x *.py
+  \item  For Mac users with a \href{#developer_install}{developer_install}, it is possible that you need to make the python scripts executable. On the command line in the directory with the scripts, type: chmod a+x *.py
   \end{itemize}
 
 \item
@@ -6963,7 +6970,7 @@ which will show you all of your pip-installed packages.  If you don't see pmagpy
   raise ValueError, 'unknown locale: %s' % localename
   ValueError: unknown locale: UTF-8
   \end{verbatim}
-  You can fix this by opening your .bashrc file and adding these lines:
+  Mac users can fix this by opening your .bashrc file and adding these lines:
   \begin{verbatim}
   export LC_ALL=en_US.UTF-8
   export LANG=en_US.UTF-8
