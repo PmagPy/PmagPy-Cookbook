@@ -76,12 +76,15 @@ doi:10.1002/2016GC006307.}
 \chapter{Installing {\bf PmagPy}}
 
 %To skip all the details and just start using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI} to upload data into the \href{#MagICDatabase}{MagIC database}, or to analyze using \href{#thellier_GUI.py}{Thellier GUI} or \href{#DemagGUI}{Demag GUI}, start here.
-You have three options for downloading and using PmagPy.  If you only want to use the GUIs, you can download them as  \href{#standalone}{standalone programs}.  The standalone install doesn't require that you have Python, but is more limited that the full PmagPy install.
-  If you want access to all of PmagPy's functionality, you must first install the recommended version of
-   \href{#getting_python}{ Python}.
-   Then  \href{#pip_install}{use the pip utility} to download and install the {\bf PmagPy} function library and the {PmagPy} command line programs or manually download and install by setting environment variables yourself.
+You have three options for downloading and using PmagPy.
 
-   If you want to actively participate in developing and modifying PmagPy, you should do a \href{#developer_install}{developer install}.
+\begin{itemize}
+  \item If you only want to use the GUIs, you can download them as  \href{#standalone}{standalone programs}.  The standalone install doesn't require that you have Python, but is more limited than the full PmagPy install.
+
+  \item If you want access to all of PmagPy's functionality, you must first install the recommended version of
+    \href{#getting_python}{ Python}.  Then  \href{#pip_install}{use the pip utility} to download and install the {\bf PmagPy} function library and the {\bf PmagPy} command line programs or manually download and install by setting environment variables yourself.
+
+   \item If you want to actively participate in developing and modifying PmagPy, you should do a \href{#developer_install}{developer install}.
 
 \customlink{standalone}
 \section{Standalone GUI download}
@@ -110,20 +113,45 @@ This binary has only been tested on a Ubuntu 14.04 (Trusty) distribution and mig
 
 
 \customlink{full_install}
+\customlink{getting_python}
 \section{Full PmagPy install}
 
 To get the full  use of PmagPy functionality, you will first have to install Python.
 
-\customlink{getting_python}
+
    \begin{itemize}
-   \item If you have already installed Canopy Python or Anaconda Python, you can skip this section and go straight to \href{#pip_install}{installing PmagPy}.  If you have an Apple computer, be aware that they come with a version of Python already installed; but this pre-installed version does NOT have everything you will need to run PmagPy.  If in doubt, go ahead and install Canopy Python.
-   \item Download and install the \href{https://www.enthought.com/products/canopy/}{Enthought Canopy distribution of Python}. Canopy Express (the free version) contains everything you need (except the mapping utilities). If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license} that gives you access to additional features and bundled packages, including the Basemap package.
-   \item Launch Canopy to complete the installation process.  You may need to use control click on the Canopy icon to open it for the first time--try this if you get a message that says ``Canopy can't be opened because it is from an unidentified developer.''  Once you've opened Canopy successfully, select ``yes'' to making Canopy your default Python environment.  In the lower right hand corner of the Canopy launch page, you will find the Version number (currently 1.7.4 or higher). Please include this in any correspondence with the PmagPy team. While you might find use for some of the features within the Canopy environment that opens as an application, PmagPy programs are best run or launched on the \href{#command_line}{command line}.
-      \item Optional:  setting up Basemap for use in making maps with Python.
-Once you have installed the full version of Canopy and want to use a mapping programs like the \href{#basemap_magic.py}{basemap\_magic.py}) command line program or a function that plots data on a map projection (e.g. ipmag.plot\_pole), \customlink{HighRes}
-     click on  the `Package Manager' button on the Canopy welcome page, and then on `Available Packages'.  Install both basemap packages (one has high resolution data files in it).
-        \item A last note about Canopy: you should update it regularly!  Open the Canopy application and update all the packages at least every few months.
-   \end{itemize}
+   \item If you have already installed Canopy Python or Anaconda Python, you can skip this section and go straight to \href{#pip_install}{installing PmagPy}.  If you have an Apple computer, be aware that they come with a version of Python already installed; but this pre-installed version does NOT have everything you will need to run {\bf PmagPy}.  {\bf PmagPy} can be run with either Python 2 or Python 3, but if starting from scratch, we recommend that you install Anaconda Python 3.
+   \item Download and install \href{https://www.continuum.io/downloads}{Anaconda Python 3}.  During the install, you will see Advanced Options.  Select both, including: ``Add Anaconda to my PATH environment variable''  (this is listed as not recommended, but is useful).
+   \item Anaconda provides a \href{https://conda.io/docs/_downloads/conda-cheatsheet.pdf}{handy cheat sheet} with information about how to install and update Python packages, as well as create custom Python environments and more.
+   \item To customize your Python (and use PmagPy programs), you will need to find your \href{#command_line}{command line}.  This is Terminal for OS X and Command Prompt for Windows.  (Note for Windows users: if you did not add Anaconda Python to your PATH as recommended above, you will need to open the ``Anaconda Prompt'' instead).
+
+   \item To get started, you will need to download a few non-default Python 3 packages.  Open your command line and run the following commands: \begin{verbatim}
+    conda install future
+    pip install scripttest
+    pip install --upgrade --pre -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
+\end{verbatim}
+
+   \item If you have trouble running any of the above commands, you may need to preface them with ``sudo'': i.e., \texttt{sudo pip install scripttest}.  You will then be asked for your computer password.
+   \item For Windows users, you may need to provide your full path to pip.  To find this, run these commands: \begin{verbatim}
+            cd \
+            dir pip.exe /s /p \end{verbatim}
+     This should give you the full pip path, for example: \texttt{C:\\Users\\YOUR\_USERNAME\\Anaconda3\\Scripts\\pip.exe}
+
+   \item To make sure that you have installed Python successfully, type \texttt{python} on your command line.  You should see something like this: \begin{verbatim}
+Python 3.6.1 |Anaconda custom (x86_64)| (default, May 11 2017, 13:04:09)
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>\end{verbatim}
+  \item Now you are ready to install {\bf PmagPy}.
+
+\end{itemize}
+%   \item Download and install the \href{https://www.enthought.com/products/canopy/}{Enthought Canopy distribution of Python}. Canopy Express (the free version) contains everything you need (except the mapping utilities). If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license} that gives you access to additional features and bundled packages, including the Basemap package.
+%   \item Launch Canopy to complete the installation process.  You may need to use control click on the Canopy icon to open it for the first time--try this if you get a message that says ``Canopy can't be opened because it is from an unidentified developer.''  Once you've opened Canopy successfully, select ``yes'' to making Canopy your default Python environment.  In the lower right hand corner of the Canopy launch page, you will find the Version number (currently 1.7.4 or higher). Please include this in any correspondence with the PmagPy team. While you might find use for some of the features within the Canopy environment that opens as an application, PmagPy programs are best run or launched on the \href{#command_line}{command line}.
+%      \item Optional:  setting up Basemap for use in making maps with Python.
+%Once you have installed the full version of Canopy and want to use a mapping programs like the \href{#basemap_magic.py}{basemap\_magic.py}) command line program or a function that plots data on a map projection (e.g. ipmag.plot\_pole), \customlink{HighRes}
+%     click on  the `Package Manager' button on the Canopy welcome page, and then on `Available Packages'.  Install both basemap packages (one has high resolution data files in it).
+%        \item A last note about Canopy: you should update it regularly!  Open the Canopy application and update all the packages at least every few months.
+\end{itemize}
 % \subsection{Getting Python for Windows users}
 %   \begin{itemize}
 %   \item To use the full functionality PmagPy functionality, you will need to download the most recent Enthought Python Distribution (EPD).  If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license}, which gives access to this distribution.
@@ -143,7 +171,7 @@ Once you have installed the full version of Canopy and want to use a mapping pro
 
    \begin{itemize}
       \item Find  and open your \href{#command_line}{command line}.
-      \item Update pip: type on  the command line: \begin{verbatim}pip install --upgrade pip setuptools\end{verbatim}
+      \item Update pip and setuptools: type on  the command line: \begin{verbatim}pip install --upgrade pip setuptools\end{verbatim}
      \item Install or update pmagpy: use the command: \begin{verbatim}pip install --upgrade pmagpy \end{verbatim}
      \item Install or update pmagpy-cli, use the command: \begin{verbatim}pip install --upgrade pmagpy-cli \end{verbatim}
      \item To uninstall either, use the command: \texttt{pip uninstall pmagpy} or \texttt{pip uninstall pmagpy-cli}
@@ -167,9 +195,9 @@ Once you have installed the full version of Canopy and want to use a mapping pro
     \begin{itemize}
 \item Testing your installation:
 
-To make sure everything is working, return to your \href{#command_line}{command line}, type \texttt{eqarea.py -h}.      Important note for Windows users: you will need to use \texttt{eqarea -h}  In fact, you will drop the ``.py'' anytime you are calling a command-line program.
+To make sure everything is working, return to your \href{#command_line}{command line}. OSX users, run the command \texttt{eqarea.py -h}.      Windows users: you will need to use \texttt{eqarea -h}  In fact, you will drop the ``.py'' anytime you are calling a command-line program.
 
- If you do not see the help message, check the \href{#trouble}{Trouble Shooting} section. If you don't find a solution there, please send the error message and  the Python distribution you are using, including the version number, to \href{mailto:ltauxe@ucsd.edu?subject=PmagPy Cookbook}{ltauxe@ucsd.edu}
+If you do not see the help message, check the \href{#trouble}{Trouble Shooting} section. If you don't find a solution there, please report the error message and  the Python distribution you are using, including the version number, on \href{https://github.com/PmagPy/PmagPy/issues}{the PmagPy Github page}.
 
 \item Accessing example data files:
 
@@ -205,7 +233,7 @@ Please run with a Framework build of python, and only when you are
 logged in on the main display of your Mac.
 \end{verbatim}
 
-\noindent Also, Anaconda users may need to \href{#anaconda_troubleshooting}{install wxPython}.
+%\noindent Also, Anaconda users may need to \href{#anaconda_troubleshooting}{install wxPython}.
 
 \customlink{developer_install}
 \section{Developer install of PmagPy}
