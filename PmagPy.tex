@@ -84,14 +84,14 @@ You have three options for downloading and using PmagPy.
   \item If you want access to all of PmagPy's functionality, you must first install the recommended version of
     \href{#getting_python}{ Python}.  Then  \href{#pip_install}{use the pip utility} to download and install the {\bf PmagPy} function library and the {\bf PmagPy} command line programs or manually download and install by setting environment variables yourself.
 
-   \item If you want to actively participate in developing and modifying PmagPy, you should do a \href{#developer_install}{developer install}.
+   \item If you want to actively participate in developing and modifying {\bf PmagPy}, you should do a \href{#developer_install}{developer install}.
 
 \customlink{standalone}
 \section{Standalone GUI download}
 
 If you do not need the full PmagPy functionality, and you only want to use Pmag GUI, MagIC GUI, Thellier GUI, and Demag GUI, there is now a standalone download for you.  You won't need to install Python for this.
 
-\noindent Follow the download instructions in the provided links, and then you can skip the ``Full install'' section and go straight to using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI}.  The standalone versions of these applications are still in development; please report problems to the PmagPy team: \href{mailto:ltauxe@ucsd.edu}{ltauxe@ucsd.edu}.
+\noindent Follow the download instructions in the provided links, and then you can skip the ``Full install'' section and go straight to using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI}.  The standalone versions of these applications are still in development; please report problems to the PmagPy team by creating \href{https://github.com/PmagPy/PmagPy/issues/}{an issue on Github}.
 
 \subsection{OSX Standalone download}
 
@@ -120,7 +120,7 @@ To get the full  use of PmagPy functionality, you will first have to install Pyt
 
 
    \begin{itemize}
-   \item If you have already installed Canopy Python or Anaconda Python, you can skip this section and go straight to \href{#pip_install}{installing PmagPy}.  If you have an Apple computer, be aware that they come with a version of Python already installed; but this pre-installed version does NOT have everything you will need to run {\bf PmagPy}.  {\bf PmagPy} can be run with either Python 2 or Python 3, but if starting from scratch, we recommend that you install Anaconda Python 3.
+   \item If you have already installed Canopy Python or Anaconda Python, you can skip this section and go straight to \href{#pip_install}{installing PmagPy}.  If you have a Mac, be aware that they come with a version of Python already installed; but this pre-installed version does NOT have everything you will need to run {\bf PmagPy}, so you will still need to download a scientific Python distribution.  {\bf PmagPy} can be run with either Python 2 or Python 3, but if starting from scratch, we recommend that you install Anaconda Python 3.
    \item Download and install \href{https://www.continuum.io/downloads}{Anaconda Python 3}.  During the install, you will see Advanced Options.  Select both, including: ``Add Anaconda to my PATH environment variable''  (this is listed as not recommended, but is useful).
    \item Anaconda provides a \href{https://conda.io/docs/_downloads/conda-cheatsheet.pdf}{handy cheat sheet} with information about how to install and update Python packages, as well as create custom Python environments and more.
    \item To customize your Python (and use PmagPy programs), you will need to find your \href{#command_line}{command line}.  This is Terminal for OS X and Command Prompt for Windows.  (Note for Windows users: if you did not add Anaconda Python to your PATH as recommended above, you will need to open the ``Anaconda Prompt'' instead).
@@ -135,7 +135,12 @@ To get the full  use of PmagPy functionality, you will first have to install Pyt
    \item For Windows users, you may need to provide your full path to pip.  To find this, run these commands: \begin{verbatim}
             cd \
             dir pip.exe /s /p \end{verbatim}
-     This should give you the full pip path, for example: \texttt{C:\\Users\\YOUR\_USERNAME\\Anaconda3\\Scripts\\pip.exe}
+     This should give you the full pip path, for example: \begin{verbatim}
+  C:\Users\YOUR_USERNAME\Anaconda3\Scripts\pip.exe
+\end{verbatim}
+     Then you would re-run the pip command using the full path: \begin{verbatim}
+  C:\Users\YOUR_USERNAME\Anaconda3\Scripts\pip.exe install scripttest
+  \end{verbatim}
 
    \item To make sure that you have installed Python successfully, type \texttt{python} on your command line.  You should see something like this: \begin{verbatim}
 Python 3.6.1 |Anaconda custom (x86_64)| (default, May 11 2017, 13:04:09)
@@ -144,6 +149,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>\end{verbatim}
   \item Now you are ready to install {\bf PmagPy}.
 
+   \end{itemize}
 \end{itemize}
 %   \item Download and install the \href{https://www.enthought.com/products/canopy/}{Enthought Canopy distribution of Python}. Canopy Express (the free version) contains everything you need (except the mapping utilities). If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license} that gives you access to additional features and bundled packages, including the Basemap package.
 %   \item Launch Canopy to complete the installation process.  You may need to use control click on the Canopy icon to open it for the first time--try this if you get a message that says ``Canopy can't be opened because it is from an unidentified developer.''  Once you've opened Canopy successfully, select ``yes'' to making Canopy your default Python environment.  In the lower right hand corner of the Canopy launch page, you will find the Version number (currently 1.7.4 or higher). Please include this in any correspondence with the PmagPy team. While you might find use for some of the features within the Canopy environment that opens as an application, PmagPy programs are best run or launched on the \href{#command_line}{command line}.
@@ -151,7 +157,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 %Once you have installed the full version of Canopy and want to use a mapping programs like the \href{#basemap_magic.py}{basemap\_magic.py}) command line program or a function that plots data on a map projection (e.g. ipmag.plot\_pole), \customlink{HighRes}
 %     click on  the `Package Manager' button on the Canopy welcome page, and then on `Available Packages'.  Install both basemap packages (one has high resolution data files in it).
 %        \item A last note about Canopy: you should update it regularly!  Open the Canopy application and update all the packages at least every few months.
-\end{itemize}
+%\end{itemize}
 % \subsection{Getting Python for Windows users}
 %   \begin{itemize}
 %   \item To use the full functionality PmagPy functionality, you will need to download the most recent Enthought Python Distribution (EPD).  If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license}, which gives access to this distribution.
@@ -169,9 +175,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 
   To install using pip:
 
-   \begin{itemize}
-      \item Find  and open your \href{#command_line}{command line}.
-      \item Update pip and setuptools: type on  the command line: \begin{verbatim}pip install --upgrade pip setuptools\end{verbatim}
+  \begin{itemize}
+     \item Find  and open your \href{#command_line}{command line}.
+     \item Update pip and setuptools: type on  the command line: \begin{verbatim}pip install --upgrade pip setuptools\end{verbatim}
      \item Install or update pmagpy: use the command: \begin{verbatim}pip install --upgrade pmagpy \end{verbatim}
      \item Install or update pmagpy-cli, use the command: \begin{verbatim}pip install --upgrade pmagpy-cli \end{verbatim}
      \item To uninstall either, use the command: \texttt{pip uninstall pmagpy} or \texttt{pip uninstall pmagpy-cli}
@@ -199,6 +205,16 @@ To make sure everything is working, return to your \href{#command_line}{command 
 
 If you do not see the help message, check the \href{#trouble}{Trouble Shooting} section. If you don't find a solution there, please report the error message and  the Python distribution you are using, including the version number, on \href{https://github.com/PmagPy/PmagPy/issues}{the PmagPy Github page}.
 
+Next, make sure the GUIs are working.
+
+For Windows users: \texttt{pmag_gui}
+
+For Mac users with Anaconda Python: \texttt{pmag_gui_anaconda}.
+
+For Mac users with a different Python: \texttt{pmag_gui.py}
+
+If you don't see the Pmag GUI window, make sure you have followed all the install directions correctly, and check the \href{#trouble}{Trouble Shooting} section.  If you are stumped, please create a \href{https://github.com/PmagPy/PmagPy/issues}{Github issue}.
+
 \item Accessing example data files:
 
    There are many data files used in the examples of programs and for use with the textbook  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3.html}{Essentials of Paleomagnetism}.     You may want to copy  the data files to your Desktop or another convenient location.
@@ -212,8 +228,8 @@ To install the Etopo20 package, see \href{#install_etopo.py}{install\_etopo.py}.
    \end{itemize}
 
 
-    \subsection {For Anaconda users}
-    We have attempted to support both Canopy and Anaconda Python.  However, there are some differences in the way Anaconda Python interacts with the screen. Because of this, Anaconda users will need to use a different command to access the PmagPy GUIs.  All four GUIs -- Pmag GUI, MagIC GUI, Demag GUI, and Thellier GUI -- can be invoked with Anaconda python.  However, instead of calling them in the standard way on the command line:
+    \subsection {For Anaconda users on OSX}
+    We have attempted to support both Canopy and Anaconda Python.  However, there are some differences in the way Anaconda Python interacts with the screen. Because of this, Anaconda users will need to use a different command to access the PmagPy GUIs.  All four GUIs -- Pmag GUI, MagIC GUI, Demag GUI, and Thellier GUI -- can be invoked with on a Mac with Anaconda python.  However, instead of calling them in the standard way on the command line:
 
 \begin{verbatim}
 pmag_gui.py
@@ -231,6 +247,12 @@ If you try to use the first syntax, you will see an error message like this:
 This program needs access to the screen.
 Please run with a Framework build of python, and only when you are
 logged in on the main display of your Mac.
+\end{verbatim}
+
+\noindent Windows Anaconda users still invoke the GUIs without this trick:
+
+\begin{verbatim}
+pmag_gui
 \end{verbatim}
 
 %\noindent Also, Anaconda users may need to \href{#anaconda_troubleshooting}{install wxPython}.
