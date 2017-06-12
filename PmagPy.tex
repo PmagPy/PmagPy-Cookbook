@@ -719,7 +719,7 @@ The supported file formats are:
 
 \subsubsection{Hysteresis file formats}
 {\bf Pmag GUI} will import hysteresis data from room temperature  Micromag alternating gradient magnetometers (AGM)  in several different ways.  You can import either hysteresis loops or backfield curves, or you can import whole directories of the same.  In the latter case, the file endings must be either .agm (.AGM) or .irm (.IRM) and the first part of the file must be the specimen name.
- See the documentation for  \href{#AGM\_magic.py}{AGM\_magic.py} for examples.
+ See the documentation for  \href{#agm\_magic.py}{agm\_magic.py} for examples.
 
 
 Now you've collected together all the files you need, we can start importing them into {\it MagIC} directory with   \href{#convert2magic}{\bf Step 1 in Pmag GUI}.
@@ -1539,6 +1539,8 @@ Note that there are many options for relating sample names to site names and we 
 
 Another way to do this is to use the \href{#orientation_magic.py}{orientation\_magic.py} program which allows much more information to be imported.
 
+Note: {\bf azdip\_magic.py} does not currently support MagIC 3, but will soon.
+
 \customlink{b_vdm.py}
 
 \subsection{b\_vdm.py}
@@ -1783,7 +1785,7 @@ You can see the dependence on temperature, frequency and applied field.  These d
 \label{ex:combine_magic}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/combine_magic.py}{[combine\_magic docs]}
 
-MagIC tables have many columns only some of which are used in a particular instance.  So combining files of the same type must be done carefully to ensure that the right data come under the right headings.  The program {\bf combine\_magic.py} can be used to combine any number of MagIC files from a given type.    For an example of how to use this program, see \href{#AGM_magic.py}{AGM\_magic.py}.
+MagIC tables have many columns only some of which are used in a particular instance.  So combining files of the same type must be done carefully to ensure that the right data come under the right headings.  The program {\bf combine\_magic.py} can be used to combine any number of MagIC files from a given type.    For an example of how to use this program, see \href{#agm_magic.py}{agm\_magic.py}.
 
 
 
@@ -1900,12 +1902,18 @@ Use the program {\bf core\_depthplot.py} to plot various measurement data versus
 We can try this out on some data from DSDP Hole 522, measured by Tauxe and Hartl (1997).  \nocite{tauxe97}  These can be downloaded and unpacked (see \href{#download_magic.py}{download\_magic.py} for details),  or you can try it out on the data files in the directory {\bf core\_depthplot}.   You must specify a lab-protocol (LP) for plotting.  In this example, we will plot the alternating field (AF) data after the 15 mT step.  The magnetizations will be plotted on a log scale and, as this is a record of the Oligocene, we will plot the Oligocene time scale, using the calibration of Gradstein et al. (2004),  \nocite{gradstein04} commonly referred to as ``GTS04'' for the the Oligocene.  We are only interested in the data between 50 and 150 meters (the -d option sets this) and we will suppress the declinations (-D).
 
 \begin{verbatim}
-$ core_depthplot.py -fsa er_samples.txt -LP AF 15 -log -d 50 150 -ts gts04 23 34 -D
+$ core_depthplot.py -fsa samples.txt -LP AF 15 -log -d 50 150 -ts gts04 23 34 -D
 \end{verbatim}
 
 \noindent  will produce the plot:
 
 \includegraphics[width=15cm]{EPSFiles/core-depthplot.eps}
+
+Note: to run {\bf core\_depthplot.py} with old MagIC 2.5 files, make sure to use the -DM switch:
+
+\begin{verbatim}
+$ core_depthplot.py -fsa er_samples.txt -LP AF 15 -log -d 50 150 -ts gts04 23 34 -D -DM 2
+\end{verbatim}
 
 
 \customlink{curie.py}
@@ -2826,7 +2834,7 @@ $ histplot.py -f gauss.out
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch5.html#ch5}{[Essentials Chapters 5]}, \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch7.html#ch7}{[Essentials Chapter 7], }  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ap3.html#hysteresis_parameters}{[Essentials Appendix C.1]} \& \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/hysteresis_magic.py}{[hysteresis\_magic docs]}
 
-Plot the data in {\it hysteresis\_magic\_example.txt}, (from  Ben-Yosef et al., 2008) \nocite{benyosef08} which were imported into MagIC using  \href{#AGM_magic.py}{AGM\_magic.py}.   Use the program  {\bf hysteresis\_magic.py} to plot the data.
+Plot the data in {\it hysteresis\_magic\_example.txt}, (from  Ben-Yosef et al., 2008) \nocite{benyosef08} which were imported into MagIC using  \href{#agm_magic.py}{agm\_magic.py}.   Use the program  {\bf hysteresis\_magic.py} to plot the data.
 
 \begin{verbatim}
 $ hysteresis_magic.py -f hysteresis_magic_example.dat
@@ -2948,6 +2956,8 @@ U1359A
 which produces the plot:
 
 \includegraphics[width=15cm]{EPSFiles/irmaq_magic.eps}
+
+Note: {\bf irmaq\_magic.py} does not currently support MagIC 3, but will soon.
 
 %
 \customlink{k15_magic.py}
@@ -3282,7 +3292,7 @@ This program imports the binary format generated by the 2G proprietary software.
 
 \customlink{agm_magic.py}
 
-\subsubsection {Aagm\_magic.py} \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch5.html#ch5}{[Essentials Chapter 5]} \& \href{#MagICDatabase}{[MagIC Database]}
+\subsubsection {agm\_magic.py} \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch5.html#ch5}{[Essentials Chapter 5]} \& \href{#MagICDatabase}{[MagIC Database]}
 \href{https://github.com/PmagPy/PmagPy/blob/master/programs/agm_magic.py}{[agm\_magic docs]}
 
 
@@ -3302,7 +3312,7 @@ $ combine_magic.py -F magic_measurements.txt -f agm_measurements.txt irm_measure
 
 \end{verbatim}
 
-
+Note: {\bf agm\_magic.py} does not currently support MagIC 3, but will soon.
 
 \customlink{cit_magic.py}
 

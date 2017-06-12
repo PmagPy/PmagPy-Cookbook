@@ -81,7 +81,7 @@
 \doTocEntry\tocsubsection{5.2.18}{\csname a:TocLink\endcsname{1}{x1-800005.2.18}{QQ2-1-80}{convert2unix.py}}{147}\relax 
 \doTocEntry\tocsubsection{5.2.19}{\csname a:TocLink\endcsname{1}{x1-810005.2.19}{QQ2-1-81}{convert\_samples.py}}{148}\relax 
 \doTocEntry\tocsubsection{5.2.20}{\csname a:TocLink\endcsname{1}{x1-820005.2.20}{QQ2-1-82}{core\_depthplot.py}}{149}\relax 
-\doTocEntry\tocsubsection{5.2.21}{\csname a:TocLink\endcsname{1}{x1-830005.2.21}{QQ2-1-83}{curie.py}}{150}\relax 
+\doTocEntry\tocsubsection{5.2.21}{\csname a:TocLink\endcsname{1}{x1-830005.2.21}{QQ2-1-83}{curie.py}}{151}\relax 
 \doTocEntry\tocsubsection{5.2.22}{\csname a:TocLink\endcsname{1}{x1-840005.2.22}{QQ2-1-84}{customize\_criteria.py}}{153}\relax 
 \doTocEntry\tocsubsection{5.2.23}{\csname a:TocLink\endcsname{1}{x1-850005.2.23}{QQ2-1-85}{dayplot\_magic.py}}{154}\relax 
 \doTocEntry\tocsubsection{5.2.24}{\csname a:TocLink\endcsname{1}{x1-860005.2.24}{QQ2-1-86}{demag\_gui.py}}{156}\relax 
@@ -128,7 +128,7 @@
 \doTocEntry\tocsubsection{5.2.65}{\csname a:TocLink\endcsname{1}{x1-1270005.2.65}{QQ2-1-127}{make\_magic\_plots.py}}{235}\relax 
 \doTocEntry\tocsubsection{5.2.66}{\csname a:TocLink\endcsname{1}{x1-1280005.2.66}{QQ2-1-128}{Measurement Import Scripts}}{235}\relax 
 \doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1290005.2.66}{QQ2-1-129}{\_2g\_bin\_magic.py}}{235}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1300005.2.66}{QQ2-1-130}{Aagm\_magic.py}}{236}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1300005.2.66}{QQ2-1-130}{agm\_magic.py}}{236}\relax 
 \doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1310005.2.66}{QQ2-1-131}{cit\_magic.py}}{237}\relax 
 \doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1320005.2.66}{QQ2-1-132}{generic\_magic.py}}{240}\relax 
 \doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1330005.2.66}{QQ2-1-133}{huji\_magic.py}}{242}\relax 
