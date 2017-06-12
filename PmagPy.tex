@@ -1905,7 +1905,14 @@ We can try this out on some data from DSDP Hole 522, measured by Tauxe and Hartl
 $ core_depthplot.py -fsa samples.txt -LP AF 15 -log -d 50 150 -ts gts04 23 34 -D
 \end{verbatim}
 
-\noindent  will produce the plot:
+Anaconda Python users who installed with pip must use:
+
+\begin{verbatim}
+$ core_depthplot_anaconda -fsa samples.txt -LP AF 15 -log -d 50 150 -ts gts04 23 34 -D
+\end{verbatim}
+
+
+\noindent  In either case, the program will produce the plot:
 
 \includegraphics[width=15cm]{EPSFiles/core-depthplot.eps}
 
