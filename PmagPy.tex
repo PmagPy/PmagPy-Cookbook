@@ -379,7 +379,7 @@ Note: {\bf Pmag GUI} is available for use with both 3.0 and 2.5 data.  All new c
 
 \includegraphics[width=15cm]{EPSFiles/PmagGUI_choose_data_model.eps}
 
-The current tutorial is for the 2.5 format, but the usage is very similar.  We will update with new, 3.0 pictures soon!
+The current tutorial is for the 2.5 format, but the usage is very similar.  We will update with 3.0 pictures soon!
 
 \begin{enumerate}
 \item Make sure you have followed all of the steps in the \href{#quick_start}{Installing PmagPy} section.
@@ -395,7 +395,8 @@ The current tutorial is for the 2.5 format, but the usage is very similar.  We w
 %\includegraphics[width=15cm]{EPSFiles/ProjectDirectory.eps}
 
 
- \item \textbf{copy example files:}  In the {\it data\_files } folder you will find a subfolder named {\it Pmag\_GUI}. Copy the contents of the  \href{#Project_Directory}{\it ThisProject} directory  into  your  own \href{#Project_Directory}{Project Directory} folder.
+\item \textbf{copy example files:}  Find the PmagPy datafiles, or use \textbf{copy\_data\_files.py} to move the  datafiles to an accessible location (try \begin{verbatim}
+  move_data_files.py -h\end{verbatim} on the command line for help).  In the {\it data\_files } folder you will find a subfolder named {\it Pmag\_GUI}. Copy the contents of the  \href{#Project_Directory}{\it ThisProject} directory  into  your  own \href{#Project_Directory}{Project Directory} folder.
  \item Start Pmag GUI either by typing {\bf pmag\_gui.py} on your \href{#command_line}{command line}, or (if you have the \href{#standalone}{standalone}), by double-clicking the Pmag GUI icon on your Desktop.
  \item Change directories by clicking  on the ``change directory'' button and select your own {\it ThisProject} directory.
  \end{enumerate}
@@ -419,7 +420,7 @@ To learn what all the column headers mean look at the documentation for \href{#g
 %\item Run the program: Open up a terminal window (Mac) or command prompt (Windows) and type pmag_gui.py on the command line. In the Pmag GUI main panel press the Õchange dirÕ button. Select the MagIC directory in ThisProject when prompted.
 
 \item In your  \href{#Project_Directory}{\it ThisProject} directory  there are three files with AF, Thermal, and Thellier measurement data of specimens from site sr01 (a lava flow site) of \cite{tauxe04b}.  There is also a file with sample orientation, location and other metadata typical for a paleomagnetic study.
-\item Press the [Convert magnetometer files to MagIC format] button. If no menu pops up or the window is blank, click on the Python icon  (the little space ship) on your dock. You should see a dialog window will appear with different file formats:
+\item Press the [Convert magnetometer files to MagIC format] button. If no menu pops up or the window is blank, click on the Python icon  (the little space ship, pencil and paper, or feather) on your dock. You should see a dialog window will appear with different file formats:
 
 \includegraphics[width=15cm]{EPSFiles/FigChooseFile.eps}
 
@@ -461,8 +462,8 @@ and like this for the  paleointensity data.  For paleointensity data, you must a
 \begin{itemize}
 \item {\bf Pmag GUI} provides an optional tool for calculating geographic and tilt-corrected directions if those directions were not part of the original data files. To use this tool click on the button labeled `calculate geographic/tilt-corrected directions'.
 
-\item An empty template of a file named SrExample\_orient.txt was created in the MagIC Project Directory. This file is displayed in a Python window. You can fill in  this file manually using the Python window or \href{#field_info}{with with a spreadsheet program} (recommended). The empty template has now only the sample names derived from your measurement files, using the naming rules that you chose.
-\item To see an example of a filled in one, pull down the menu bar [file] $\rightarrow$  [open orientation file] and  choose the file SrExample\_orient.txt from {\it MyFiles} folder.
+\item When you open this window, an empty template of a file named demag\_orient.txt was created in your project directory. This file is displayed in a Python window. You can fill in  this file manually using the GUI window or \href{#field_info}{with with a spreadsheet program}. The template is pre-filled with sample names derived from your measurement files, using the naming rules that you chose.
+\item To see an example of a filled in orientation file, click the button $\rightarrow$ [Import Orientation File] and  choose the file SrExample\_orient.txt from {\it MyFiles} folder.
 \item Click the button $\rightarrow$ [Save orientation file].
 \item Click the button $\rightarrow$ [Calculate sample orientations].
 \item Fill in the dialog box like this:
@@ -481,18 +482,18 @@ and like this for the  paleointensity data.  For paleointensity data, you must a
 
 \includegraphics[width=15cm]{EPSFiles/FigOrientMagicCodes.eps}
 
-\section{Filling in the EarthRef data}
+\section{Filling in metadata}
 
-Filling in the Earth Ref data is a critical part of building a MagIC Project Directory. The Earth-Ref data relevant to this example are arranged in five er\_* tables: er\_specimens, er\_samples, er\_sites, er\_locations, er\_ages. To complete the  ER data, click the button, and follow the directions in the help window in order:
+Filling in metadata is a critical part of building a MagIC Project Directory. The data relevant to this example are arranged in five tables: specimens, samples, sites, locations, ages. To complete the data, click the button, and follow the directions in the help window in order:
 
 \begin{itemize}
-\item Step 0: Choose the appropriate headers for each of your er\_* tables.  Required headers (or headers already present in your er\_* tables) show up in the top box, optional headers in the bottom.  In our example, the only header you should add is ``age\_sigma'' in the age table.  Once you have added all needed headers, click the OK button to proceed to the next step.
+\item Step 0: Choose the appropriate headers for each of your tables.  Required headers (or headers already present in your tables) show up in the top box, optional headers in the bottom.  In our example, the only header you should add is ``age\_sigma'' in the age table.  Once you have added all needed headers, click the OK button to proceed to the next step.
 
  \includegraphics[width=30cm]{EPSFiles/FigErMagicStep0.eps}
 
  \item The next six steps contain editable grids.  For many columns, you can edit using drop-down menus that provide \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies}.  For others, you must manually enter data into the cell.  A single left click will bring up a drop-down menu; a double-left click will call up the cell editor.  With both types of data entry, it is possible to select a single value for the entire column. Simply click on the column label.  If that column has a drop-down menu, you can then click on any cell in the column, the appropriate menu will pop up, and the value you select will propagate throughout the column.  Edits in that column will continue to be global until you select another column to edit or you de-select the column by clicking on the column label again.  If you select a column that does not have a drop-down menu, a text entry dialog will pop up, and the value you provide will be applied to the column.
 
- \item Step 1: Update the relationship between specimens and samples.  You may not rename specimens, but you may reassign them to a different sample.  It is also possible to add additional samples, using the 'Add new sample' button.  Note that specimen\_type, specimen\_lithology, and specimen\_class columns do not show up.  They will propagate down when you select sample\_type, sample\_lithology, and sample\_class in step 4.
+ \item Step 1: Update the relationship between specimens and samples.  You may not rename specimens, but you may reassign them to a different sample.  It is also possible to add additional samples, using the 'Add new sample' button.  Note that type, lithology, and class columns need not be filled in here.  They will propagate down automatically when you select values at the sample or site level for type, lithology, and class.
 
  \includegraphics[width=16cm] {EPSFiles/FigErMagicStep1.eps}
 
@@ -500,7 +501,7 @@ Filling in the Earth Ref data is a critical part of building a MagIC Project Dir
 
  \includegraphics[width=16cm] {EPSFiles/FigErMagicStep2.eps}
 
-\item Step 3: Update the relationship between sites and locations.  You may rename sites, or you can reassign them to a different location.  You can add additional locations using the ``Add a new location'' button.  You must choose a legal entry from the \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies} for the following headers: ``site\_class'', ``site\_lithology'', ``site\_type''. You may combine more than one controlled vocabulary by making them a colon delimited list.  If you select a value in these categories: class, lithology, type, longitude, or latitude, the values will propagate to the samples table.  In this example,  site\_class=Extrusive:Igneous; site\_lithology=Basaltic Lava; site\_type=Lava Flow
+\item Step 3: Update the relationship between sites and locations.  You may rename sites, or you can reassign them to a different location.  You can add additional locations using the ``Add a new location'' button.  You must choose a legal entry from the \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies} for the following headers: ``class'', ``lithology'', ``type''. You may combine more than one controlled vocabulary by making them a colon delimited list.  If you select a value in these categories: class, lithology, type, longitude, or latitude, the values will propagate to the samples table.  In this example,  class=Extrusive:Igneous; lithology=Basaltic Lava; type=Lava Flow
 
 \includegraphics[width=32cm] {EPSFiles/FigErMagicStep3.eps}
 
@@ -540,7 +541,7 @@ To analyze the data in the example, follow these steps for each specimen:
 \item Click the `next' button to analyze the next specimen (hotkey: ctrl-right).
 \item To calculate  Fisher mean for the site: choose from the `mean options' drop-down menus: component=All; mean=Fisher.
 \item All of the fits can be viewed and modified using the Interpretation Editor which can be selected from the Tools menu in the top menubar. (hotkey: ctrl-e)
-\item To save all of the specimen interpretations, choose from the menubar [File] $\rightarrow$ [Save MagIC pmag tables]. This saves all the interpretations in MagIC formatted pmag\_* files in your \href{#Project_Directory}{\it ThisProject} directory. Fits that are saved this way will be loaded into demag\_gui the next time it is launched. To save temporary analysis data use [File] $\rightarrow$ [Save interpretations to a redo file]. This saves all interpretation data to a redo file which will not load immediately when the GUI starts, but preserves ascetic aspects of interpretations such as color as well as the specimen you were on when you saved to keep your place in analysis and allows rebooting of session without full export of MagIC tables.
+\item To save all of the specimen interpretations, choose from the menubar [File] $\rightarrow$ [Save MagIC pmag tables]. This saves all the interpretations in specimen/sample/site tables in your \href{#Project_Directory}{\it ThisProject} directory. Fits that are saved this way will be loaded into demag\_gui the next time it is launched. To save temporary analysis data use [File] $\rightarrow$ [Save interpretations to a redo file]. This saves all interpretation data to a redo file which will not load immediately when the GUI starts, but preserves ascetic aspects of interpretations such as color as well as the specimen you were on when you saved to keep your place in analysis and allows rebooting of session without full export of MagIC tables.
 \item Click through the dialog boxes and fill out choices for the MagIC results table.
 \item Close the Demag GUI.
 \end{itemize}
@@ -568,9 +569,9 @@ To analyze the data in the example, follow these steps for each specimen:
 
 \section{Upload to the database }
 
-For this, you first click on the green {\it prepare upload txt file} button on the main page of {\bf Pmag GUI}. A file named `upload.txt' will be created in your \href{#Project_Directory}{\it ThisProject} directory.  Now, go to the  \href{http://earthref.org/MAGIC/search}{MagIC search interface}.      Click on the `create' button and find or create your reference.
+For this, you first click on the green {\it prepare upload txt file} button on the main page of {\bf Pmag GUI}. A file will be created in your \href{#Project_Directory}{\it ThisProject} directory.  Now, go to the  \href{http://earthref.org/MAGIC/search}{MagIC search interface}.      Click on the `create' button and find or create your reference.
 
-Click on `Upload' in the Actions column and   drag and drop the {\it upload.txt}   file onto the  `Drop a MagIC Text File' window.
+Click on `Upload' in the Actions column and   drag and drop the {\it upload}   file onto the  `Drop a MagIC Text File' window.
 Congratulations. Your data are now in the database.  But, they are not yet activated which you can do by clicking on the `Activate' button in the Actions column.  Once you activate an uploaded dataset (only for published papers), it will be publicly available.
 
 \customlink{magic_download}
@@ -581,8 +582,8 @@ Data can be downloaded from the {\bf MagIC} database and examined with {\bf Pmag
 
 \href{http://earthref.org/MAGIC/doi/10.1029/2003GC000661}{http://earthref.org/MAGIC/doi/10.1029/2003GC000661}
 
-\noindent The above DOI will find the data for the paper by \cite{tauxe04b}.  [This may fail in Safari; if so, use an alternative browser like Firefox or Chrome.]     To download the data, simply click on the file icon below the column labeled `data'.  This will save a file to your downloads folder.
- To unpack this file after downloading it from the database click the ``unpack downloaded txt file button`` in the \href{#pmag_gui.py}{Pmag GUI}  panel.
+\noindent The above DOI will find the data for the paper by \cite{tauxe04b}.  [This may fail in Safari; if so, use an alternative browser like Firefox or Chrome.]     To download the data, simply click on the file icon labeled ``Download''.  This will save a file to your downloads folder.
+ To unpack this file after downloading it from the database, open \href{#pmag_gui.py}{Pmag GUI} and click ``unpack downloaded txt file``.
 
 
  \section{Preparing for MagIC}
