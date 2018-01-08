@@ -7057,8 +7057,8 @@ pip list
 You should see both pmagpy-(version_number) and pmagpy-cli-(version_number) on that list.  If you don't see them, go ahead and reinstall:
 
 \begin{verbatim}
-pip install --upgrade --force-reinstall --no-deps pmagpy
-pip install --upgrade --force-reinstall --no-deps pmagpy-cli
+pip install --upgrade --force-reinstall --no-cache-dir --no-deps pmagpy
+pip install --upgrade --force-reinstall --no-cache-dir --no-deps pmagpy-cli
 \end{verbatim}
 
 Second, if you are trying to get a developer install to work, and you want to set/check your \$PATH manually, see \href{http://www.mathworks.com/matlabcentral/answers/94933-how-do-i-set-my-system-path-under-windows}{Setting your Path in Windows}
@@ -7072,15 +7072,16 @@ Second, if you are trying to get a developer install to work, and you want to se
 \begin{itemize}
 \item For Mac users:
 \begin{itemize}
-\item If you only have the core packages installed with the Python 2.7 Anaconda distribution (plus the PmagPy package you just installed), you may get the following ImportError when attempting to execute ``eqarea.py -h'':
+\item If you only have the core packages installed with the Anaconda distribution (plus the PmagPy package you just installed), you may get the following ImportError when attempting to execute ``eqarea.py -h'':
 
 \begin{verbatim}
 ImportError: No module named wx
 \end{verbatim}
 
 To correct this error, simply execute at the command line:
-
-conda install wxpython
+\begin{verbatim}
+pip install --upgrade --pre -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
+\end{verbatim}
 \end{itemize}
 \end{itemize}
 
@@ -7094,9 +7095,8 @@ conda install wxpython
 \item
   If you are using the pip installation of PmagPy and you have any problems, you should start by uninstalling and reinstalling pmagpy and pmagpy-cli.  To do this, use these commands:
 \begin{verbatim}
-
-pip install --upgrade --force-reinstall pmagpy
-pip install --upgrade --force-reinstall pmagpy-cli
+pip install --upgrade --force-reinstall --no-cache-dir --no-deps pmagpy
+pip install --upgrade --force-reinstall --no-cache-dir --no-deps pmagpy-cli
 \end{verbatim}
 To test that they have installed properly, you can run the command:
 \begin{verbatim}
