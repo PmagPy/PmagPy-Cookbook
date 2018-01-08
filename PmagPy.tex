@@ -1151,7 +1151,7 @@ Your  \href{#Project_Directory}{ThisProject} directory should include a file nam
 
 
 \subsubsection{Reading and compiling measurements data}
-When your \href{#Project_Directory}{ThisProject}  project directory is selected, the program  reads all the measurement data, checks them, processes them and sorts them. If non-linear-TRM (NLT) data exist in {\it magic\_measurement.txt}  then the program tries to process the data using Equations (1)-(3) in \href{#http://dx.doi.org/MAGIC/doi/10.1016/j.epsl.2009.12.022}{Shaar et al., 2010}. \nocite{shaar10}  The program reads {\it magic\_measurement.txt}, and processes the measurements for presentation as Arai  and Zijderveld plots.
+When your \href{#Project_Directory}{ThisProject}  project directory is selected, the program  reads all the measurement data, checks them, processes them and sorts them. If non-linear-TRM (NLT) data exist in {\it magic\_measurement.txt}  then the program tries to process the data using Equations (1)-(3) in \href{http://dx.doi.org/10.7288/V4/MAGIC/12116}{Shaar et al., 2010}. \nocite{shaar10}  The program reads {\it magic\_measurement.txt}, and processes the measurements for presentation as Arai  and Zijderveld plots.
 We recommend that you check all the warnings and errors in {\it Thellier\_GUI.log} before starting to interpret the data.  For details about warnings and error messages during these steps, consult the tutorial document in the {\it thellier\_GUI} folder in  {\it data\_files}.  Also, consult the Preferences to change certain plotting options.
 
 \subsubsection{Main panel}
@@ -1569,20 +1569,21 @@ specimen statistics and eigenparameters stored in  ./atrm_results.txt
 
 Many paleomagnetists save orientation information in files in this format:
 Sample  Azimuth Plunge  Strike  Dip (AZDIP format),  where the Azimuth and Plunge are the declination and inclination of the drill direction and the strike and dip are the attitude of the sampled unit (with dip to the right of strike).   The MagIC database convention is to
-use the direction of the $X$ coordinate of the specimen measurement system.  To convert an  {\it AzDip} formatted file ({\it example.az}) for samples taken from a location name ``Northern Iceland''  into the MagIC format and save the information in the MagIC {\it er\_samples.txt}  file format, use the program {\bf azdip\_magic.py}:
+use the direction of the $X$ coordinate of the specimen measurement system.  To convert an  {\it AzDip} formatted file ({\it azdip_magic_example.dat}) for samples taken from a location name ``Northern Iceland''  into the MagIC format and save the information in the MagIC {\it samples}  file format, use the program {\bf azdip\_magic.py}:
+
 
 \begin{verbatim}
 $  azdip_magic.py -f azdip_magic_example.dat -ncn 1 -mcd FS-FD:SO-POM
       -loc ``Northern Iceland``
 
-Data saved in  er_samples.txt
+Data saved in  samples.txt
 \end{verbatim}
 
 Note that there are many options for relating sample names to site names and we used the first convention that has a single character at the end of the site name to designate each sample (e.g., is132d is sample 'd' from site is132).   We have also specified certain field sampling and orientation method codes (-mcd), here field sampling-field drilled (FS-FD) and sample orientation-Pomeroy (SO-POM).  The location was ``Northern Iceland''.   See the help menu for more options.
 
 Another way to do this is to use the \href{#orientation_magic.py}{orientation\_magic.py} program which allows much more information to be imported.
 
-Note: {\bf azdip\_magic.py} does not currently support MagIC 3, but will soon.
+Note: {\bf azdip\_magic.py} uses MagIC 3 by default, but can also output MagIC 2 files with the -DM switch (azdip\_magic.py -DM 2).
 
 \customlink{b_vdm.py}
 
@@ -2727,7 +2728,8 @@ S[a]ve all figures, <Return> to quit   a
 
 This program performs the same test as \href{#foldtest.py}{foldtest.py}.  The only difference is that it reads MagIC formatted input files and allows the application of selection criteria as specified in the {\it pmag\_criteria.txt} formatted file.
 
-To begin, download the file from this references:  Halls et al. (1974; doi: 10.1139/e74-113) at \url{https://earthref.org/MagIC/DOI/10.1139/e74-113} and unpack it with  \href{#download_magic.py}{download\_magic.py}. Then run {\bf foldtest\_magic.py} for the fold test.
+
+To begin, download the file from this references:  Halls et al. (1974; doi: 10.1139/e74-113) at \url{http://dx.doi.org/10.7288/V4/MAGIC/13267} and unpack it with  \href{#download_magic.py}{download\_magic.py}. Then run {\bf foldtest\_magic.py} for the fold test.
 
 \begin{verbatim}
 $ download_magic.py -f magic_contribution_11087.txt
@@ -4637,6 +4639,7 @@ To see how {\bf thellier\_magic.py}  works, download the text file from a recent
 
 \nocite{shaar11}
 \url{http://earthref.org/MAGIC/doi/0.1016/j.epsl.2010.11.013}
+\url{http://dx.doi.org/10.7288/V4/MAGIC/12116}
 
 Unpack the data with \href{#download_magic.py}{download\_magic.py}.   The original interpretations are stored in a file called {\it pmag\_specimens.txt}, but {\bf thellier\_magic.py} looks for a specimen file called {\it thellier\_specimens.txt}.  To create such a file, use the program \href{#mk_redo.py}{mk\_redo.py} followed by \href{#thellier_magic_redo.py}{thellier\_magic\_redo.py}.  Then you can take a look  at the data using \href{#thellier_magic.py}{thellier\_magic.py} and change some of the interpretations, for example adding one for the specimen s2s0-01 which was rejected by Shaar et al. (2011).   This has both non-linear TRM acquisition and ATRM anisotropy data, so the corrections will have to be applied using {\bf thellier\_magic\_redo.py} after exiting the \href{thellier_magic.py}{thellier\_magic.py} program.
 
