@@ -121,11 +121,6 @@ File: PmagPy.tmp
 File: PmagPy.tmp
 File: PmagPy.tmp
 File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
 Css: p.noindent { text-indent: 0em }
 Css: td p.noindent { text-indent: 0em; margin-top:0em; }
 Css: p.nopar { text-indent: 0em; }
@@ -364,12 +359,6 @@ Css: .figure img.graphics {margin-left:10%;}
 --- needs --- PmagPy.idv[220] ==> PmagPy111x.png ---
 --- needs --- PmagPy.idv[222] ==> PmagPy112x.png ---
 --- needs --- PmagPy.idv[224] ==> PmagPy113x.png ---
---- needs --- PmagPy.idv[226] ==> PmagPy114x.png ---
---- needs --- PmagPy.idv[228] ==> PmagPy115x.png ---
---- needs --- PmagPy.idv[230] ==> PmagPy116x.png ---
---- needs --- PmagPy.idv[232] ==> PmagPy117x.png ---
---- needs --- PmagPy.idv[234] ==> PmagPy118x.png ---
---- needs --- PmagPy.idv[236] ==> PmagPy119x.png ---
 --- characters ---
 Font("cmr","10","10","109")
 Font("cmbx","10","10","109")

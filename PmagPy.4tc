@@ -189,52 +189,14 @@
 \doTocEntry\tocsection{5.3}{\csname a:TocLink\endcsname{1}{x1-1880005.3}{QQ2-1-188}{Complaints department}}{335}\relax 
 \doTocEntry\tocchapter{6}{\csname a:TocLink\endcsname{1}{x1-1890006}{QQ2-1-189}{The MagIC database and file formats}}{337}\relax 
 \doTocEntry\tocsection{6.1}{\csname a:TocLink\endcsname{1}{x1-1900006.1}{QQ2-1-190}{Structure of the database tables}}{337}\relax 
-\doTocEntry\tocsection{6.2}{\csname a:TocLink\endcsname{1}{x1-1910006.2}{QQ2-1-191}{A word about method codes}}{339}\relax 
-\doTocEntry\tocchapter{7}{\csname a:TocLink\endcsname{1}{x1-1920007}{QQ2-1-192}{Introduction to Python Programming}}{343}\relax 
-\doTocEntry\tocsection{7.1}{\csname a:TocLink\endcsname{1}{x1-1930007.1}{QQ2-1-193}{A first look at NumPy}}{345}\relax 
-\doTocEntry\tocsection{7.2}{\csname a:TocLink\endcsname{1}{x1-1940007.2}{QQ2-1-194}{Variable types}}{351}\relax 
-\doTocEntry\tocsection{7.3}{\csname a:TocLink\endcsname{1}{x1-1950007.3}{QQ2-1-195}{Data Structures}}{354}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1960007.3}{QQ2-1-196}{Lists}}{354}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1970007.3}{QQ2-1-197}{More about strings}}{362}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1980007.3}{QQ2-1-198}{Data structures as objects}}{363}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1990007.3}{QQ2-1-199}{Tuples}}{363}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2000007.3}{QQ2-1-200}{Dictionaries!}}{364}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2010007.3}{QQ2-1-201}{N-dimensional arrays}}{369}\relax 
-\doTocEntry\tocsection{7.4}{\csname a:TocLink\endcsname{1}{x1-2020007.4}{QQ2-1-202}{Pandas}}{382}\relax 
-\doTocEntry\tocsection{7.5}{\csname a:TocLink\endcsname{1}{x1-2030007.5}{QQ2-1-203}{Python Scripts}}{384}\relax 
-\doTocEntry\tocsection{7.6}{\csname a:TocLink\endcsname{1}{x1-2040007.6}{QQ2-1-204}{Code blocks}}{392}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2050007.6}{QQ2-1-205}{The for loop}}{394}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2060007.6}{QQ2-1-206}{Looping through lists}}{394}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2070007.6}{QQ2-1-207}{Looping through arrays}}{401}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2080007.6}{QQ2-1-208}{If and while blocks}}{403}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2090007.6}{QQ2-1-209}{Finer points of `if' blocks}}{405}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2100007.6}{QQ2-1-210}{While loops}}{407}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2110007.6}{QQ2-1-211}{Code blocks in interactive Python}}{408}\relax 
-\doTocEntry\tocsection{7.7}{\csname a:TocLink\endcsname{1}{x1-2120007.7}{QQ2-1-212}{File I/O in Python}}{409}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2130007.7}{QQ2-1-213}{Reading data in}}{409}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2140007.7}{QQ2-1-214}{From a file}}{409}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2150007.7}{QQ2-1-215}{From Standard Input }}{417}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2160007.7}{QQ2-1-216}{Command line switches}}{419}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2170007.7}{QQ2-1-217}{Reading numeric files}}{421}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2180007.7}{QQ2-1-218}{Writing data out}}{421}\relax 
-\doTocEntry\tocsection{7.8}{\csname a:TocLink\endcsname{1}{x1-2190007.8}{QQ2-1-219}{Functions}}{428}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2200007.8}{QQ2-1-220}{Line by line analysis}}{429}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2210007.8}{QQ2-1-221}{def FUNCNAME(in\_args):}}{429}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2220007.8}{QQ2-1-222}{Doc String}}{433}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2230007.8}{QQ2-1-223}{Function body}}{433}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2240007.8}{QQ2-1-224}{Return statement}}{433}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2250007.8}{QQ2-1-225}{Main program as function}}{434}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2260007.8}{QQ2-1-226}{Scope of variables}}{437}\relax 
-\doTocEntry\tocsection{7.9}{\csname a:TocLink\endcsname{1}{x1-2270007.9}{QQ2-1-227}{Classes}}{438}\relax 
-\doTocEntry\tocsection{7.10}{\csname a:TocLink\endcsname{1}{x1-2280007.10}{QQ2-1-228}{Matplotlib}}{441}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2290007.10}{QQ2-1-229}{A first plot}}{441}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2300007.10}{QQ2-1-230}{Multiple figures and more customization}}{447}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2310007.10}{QQ2-1-231}{Adding text}}{451}\relax 
-\doTocEntry\tocchapter{8}{\csname a:TocLink\endcsname{1}{x1-2320008}{QQ2-1-232}{Jupyter Notebooks}}{455}\relax 
-\doTocEntry\tocchapter{9}{\csname a:TocLink\endcsname{1}{x1-2330009}{QQ2-1-233}{Troubleshooting}}{459}\relax 
-\doTocEntry\tocsection{9.1}{\csname a:TocLink\endcsname{1}{x1-2340009.1}{QQ2-1-234}{Problems with installing Python or PmagPy}}{459}\relax 
-\doTocEntry\tocsection{9.2}{\csname a:TocLink\endcsname{1}{x1-2350009.2}{QQ2-1-235}{Problems updating Canopy}}{474}\relax 
-\doTocEntry\tocsection{9.3}{\csname a:TocLink\endcsname{1}{x1-2360009.3}{QQ2-1-236}{Error loading dlls (windows only)}}{474}\relax 
-\doTocEntry\tocsection{9.4}{\csname a:TocLink\endcsname{1}{x1-2370009.4}{QQ2-1-237}{Problems with a specific program}}{475}\relax 
-\doTocEntry\tocsection{9.5}{\csname a:TocLink\endcsname{1}{x1-2380009.5}{QQ2-1-238}{Other problems}}{476}\relax 
-\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-2390009.5}{QQ2-1-239}{Bibliography}}{477}\relax 
+\doTocEntry\tocsection{6.2}{\csname a:TocLink\endcsname{1}{x1-1910006.2}{QQ2-1-191}{A word about method codes}}{338}\relax 
+\doTocEntry\tocsection{6.3}{\csname a:TocLink\endcsname{1}{x1-1920006.3}{QQ2-1-192}{Uploading to MagIC}}{339}\relax 
+\doTocEntry\tocchapter{7}{\csname a:TocLink\endcsname{1}{x1-1930007}{QQ2-1-193}{Introduction to Python Programming}}{341}\relax 
+\doTocEntry\tocchapter{8}{\csname a:TocLink\endcsname{1}{x1-1940008}{QQ2-1-194}{Jupyter Notebooks}}{343}\relax 
+\doTocEntry\tocchapter{9}{\csname a:TocLink\endcsname{1}{x1-1950009}{QQ2-1-195}{Troubleshooting}}{347}\relax 
+\doTocEntry\tocsection{9.1}{\csname a:TocLink\endcsname{1}{x1-1960009.1}{QQ2-1-196}{Problems with installing Python or PmagPy}}{347}\relax 
+\doTocEntry\tocsection{9.2}{\csname a:TocLink\endcsname{1}{x1-1970009.2}{QQ2-1-197}{Problems updating Canopy}}{362}\relax 
+\doTocEntry\tocsection{9.3}{\csname a:TocLink\endcsname{1}{x1-1980009.3}{QQ2-1-198}{Error loading dlls (windows only)}}{362}\relax 
+\doTocEntry\tocsection{9.4}{\csname a:TocLink\endcsname{1}{x1-1990009.4}{QQ2-1-199}{Problems with a specific program}}{363}\relax 
+\doTocEntry\tocsection{9.5}{\csname a:TocLink\endcsname{1}{x1-2000009.5}{QQ2-1-200}{Other problems}}{364}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-2010009.5}{QQ2-1-201}{Bibliography}}{365}\relax 
