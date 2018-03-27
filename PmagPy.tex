@@ -122,8 +122,8 @@ To get the full  use of PmagPy functionality, you will first have to install Pyt
 
 
    \begin{itemize}
-   \item If you have already installed Canopy Python or Anaconda Python, you can skip this section and go straight to \href{#pip_install}{installing PmagPy}.  If you have a Mac, be aware that they come with a version of Python already installed; but this pre-installed version does NOT have everything you will need to run {\bf PmagPy}, so you will still need to download a scientific Python distribution.  {\bf PmagPy} can be run with either Python 2 or Python 3, but if starting from scratch, we recommend that you install Anaconda Python 3.
-   \item Download and install \href{https://www.continuum.io/downloads}{Anaconda Python 3}.  During the install, you will see Advanced Options.  Select both, including: ``Add Anaconda to my PATH environment variable''  (this is listed as not recommended, but is useful).
+   \item If you have already installed Canopy Python or Anaconda Python, you can skip this section and go straight to \href{#pip_install}{installing PmagPy}.  If you have a Mac, be aware that your computer comes with a version of Python already installed; but this pre-installed version does NOT have everything you will need to run {\bf PmagPy}, so you will still need to download a scientific Python distribution.
+   \item Download and install \href{https://www.continuum.io/downloads}{Anaconda Python 3}.  We recommend using the Graphical Installer and sticking to the defaults.
    \item You will need to find your \href{#command_line}{command line}.  This is Terminal for OS X and Command Prompt for Windows.  (Note for Windows users: if you did not add Anaconda Python to your PATH as recommended above, you will open the ``Anaconda Prompt'' instead).
 
    \item You will download a few non-default Python packages.  Open your command line and run the following commands: \begin{verbatim}
@@ -151,9 +151,12 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>\end{verbatim}
 (Press control-D to exit)
 
-   \item To learn more about Python, click \href{#Python}{here}.
+  \item If you ever need to uninstall Anaconda Python, see the \href{https://docs.anaconda.com/anaconda/install/uninstall}{documentation}.
 
-  \item Now you are ready to install {\bf PmagPy}.
+\item To learn more about Python, click \href{#Python}{here}.
+
+
+  \item Now you are ready to install {\bf PmagPy}!
 
    \end{itemize}
 \end{itemize}
@@ -176,7 +179,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
  Here we provide instructions for using pip to install PmagPy from the command line.
 \customlink{pip_install}
-       ``Pip'' is a package manager that comes standard with any modern Python distribution (NB: you will have to update it to the most recent version).  Pip allows you to install and uninstall pmagpy, the package with all the low-level functionality of PmagPy and pmagpy-cli which provides the PmagPy command-line-interface and has all the packages you may use to download/upload, visualize, and manipulate data.
+       ``Pip'' is a package manager that comes standard with any modern Python distribution (NB: you will have to update it to the most recent version).  Pip allows you to install and uninstall pmagpy (the package with all the low-level functionality of PmagPy) and pmagpy-cli (which provides the PmagPy command-line-interface and has all the packages you may use to download/upload, visualize, and manipulate data).
 
 
   To install using pip:
@@ -269,6 +272,8 @@ pmag_gui
 \section{Developer install of PmagPy}
 
 If you are a developer, and wish to download PmagPy from the \href{https://github.com/PmagPy/PmagPy}{Github repository}, you may want to add PmagPy directly to your path instead of installing via pip.
+
+*Note*: you cannot have both a developer install and a pip install.  If you want to do a developer install, make sure you uninstall pmagpy/pmagpy-cli first if you have already installed them.
 
 If you're wondering whether you should do a \href{#pip_install}{pip install} or a developer install, it depends on what you're hoping to do with {\bf PmagPy}.  The benefit of a regular pip installation is that you will get a tested, stable version of {\bf PmagPy}.  You can install everything you need quickly and easily, and you'll be able to use the full functionality.  The benefit of a developer installation is that you will be able to stay up-to-date with what other developers are working on.  You will also be able to make changes and use those changes immediately.  The downside is that the developer install may be buggier and requires to edit your \$PATH.
 
