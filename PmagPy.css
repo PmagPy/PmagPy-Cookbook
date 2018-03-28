@@ -1,29 +1,14 @@
  
 /* start css.sty */
 .cmr-10x-x-109{}
-.ecbx-1095{ font-weight: bold;}
-.ecbx-1095{ font-weight: bold;}
-.ecbx-1095{ font-weight: bold;}
-.ecbx-1095{ font-weight: bold;}
-.ecbx-1095{ font-weight: bold;}
-.ecbx-1095{ font-weight: bold;}
-.ectt-1095{ font-family: monospace;}
-.ectt-1095{ font-family: monospace;}
-.ectt-1095{ font-family: monospace;}
-.ectt-1095{ font-family: monospace;}
-.ectt-1095{ font-family: monospace;}
-.ectt-1095{ font-family: monospace;}
-.ecrm-1728{font-size:154%;}
-.ecrm-1200{font-size:109%;}
+.cmbx-10x-x-109{ font-weight: bold;}
+.cmtt-10x-x-109{font-family: monospace;}
+.cmr-17{font-size:154%;}
+.cmr-12{font-size:109%;}
 .cmr-8{font-size:72%;}
 .cmmi-8{font-size:72%;font-style: italic;}
 .cmsy-8{font-size:72%;}
-.ecti-1095{ font-style: italic;}
-.ecti-1095{ font-style: italic;}
-.ecti-1095{ font-style: italic;}
-.ecti-1095{ font-style: italic;}
-.ecti-1095{ font-style: italic;}
-.ecti-1095{ font-style: italic;}
+.cmti-10x-x-109{ font-style: italic;}
 .cmmi-10x-x-109{font-style: italic;}
 .cmsy-10x-x-109{}
 p.noindent { text-indent: 0em }

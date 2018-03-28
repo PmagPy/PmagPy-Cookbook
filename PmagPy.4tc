@@ -177,26 +177,26 @@
 \doTocEntry\tocsubsection{5.2.100}{\csname a:TocLink\endcsname{1}{x1-1760005.2.100}{QQ2-1-176}{uniform.py}}{316}\relax 
 \doTocEntry\tocsubsection{5.2.101}{\csname a:TocLink\endcsname{1}{x1-1770005.2.101}{QQ2-1-177}{update\_measurements.py}}{319}\relax 
 \doTocEntry\tocsubsection{5.2.102}{\csname a:TocLink\endcsname{1}{x1-1780005.2.102}{QQ2-1-178}{upload\_magic.py}}{319}\relax 
-\doTocEntry\tocsubsection{5.2.103}{\csname a:TocLink\endcsname{1}{x1-1790005.2.103}{QQ2-1-179}{vdm\_b.py}}{320}\relax 
-\doTocEntry\tocsubsection{5.2.104}{\csname a:TocLink\endcsname{1}{x1-1800005.2.104}{QQ2-1-180}{vector\_mean.py}}{321}\relax 
-\doTocEntry\tocsubsection{5.2.105}{\csname a:TocLink\endcsname{1}{x1-1810005.2.105}{QQ2-1-181}{vgp\_di.py}}{322}\relax 
-\doTocEntry\tocsubsection{5.2.106}{\csname a:TocLink\endcsname{1}{x1-1820005.2.106}{QQ2-1-182}{vgpmap\_magic.py}}{323}\relax 
-\doTocEntry\tocsubsection{5.2.107}{\csname a:TocLink\endcsname{1}{x1-1830005.2.107}{QQ2-1-183}{watsons\_f.py}}{325}\relax 
-\doTocEntry\tocsubsection{5.2.108}{\csname a:TocLink\endcsname{1}{x1-1840005.2.108}{QQ2-1-184}{watsons\_v.py}}{327}\relax 
-\doTocEntry\tocsubsection{5.2.109}{\csname a:TocLink\endcsname{1}{x1-1850005.2.109}{QQ2-1-185}{zeq.py}}{329}\relax 
-\doTocEntry\tocsubsection{5.2.110}{\csname a:TocLink\endcsname{1}{x1-1860005.2.110}{QQ2-1-186}{zeq\_magic.py}}{331}\relax 
-\doTocEntry\tocsubsection{5.2.111}{\csname a:TocLink\endcsname{1}{x1-1870005.2.111}{QQ2-1-187}{zeq\_magic\_redo.py}}{333}\relax 
-\doTocEntry\tocsection{5.3}{\csname a:TocLink\endcsname{1}{x1-1880005.3}{QQ2-1-188}{Complaints department}}{334}\relax 
-\doTocEntry\tocchapter{6}{\csname a:TocLink\endcsname{1}{x1-1890006}{QQ2-1-189}{The MagIC database and file formats}}{335}\relax 
-\doTocEntry\tocsection{6.1}{\csname a:TocLink\endcsname{1}{x1-1900006.1}{QQ2-1-190}{Structure of the database tables}}{335}\relax 
-\doTocEntry\tocsection{6.2}{\csname a:TocLink\endcsname{1}{x1-1910006.2}{QQ2-1-191}{A word about method codes}}{336}\relax 
-\doTocEntry\tocsection{6.3}{\csname a:TocLink\endcsname{1}{x1-1920006.3}{QQ2-1-192}{Uploading to MagIC}}{337}\relax 
-\doTocEntry\tocchapter{7}{\csname a:TocLink\endcsname{1}{x1-1930007}{QQ2-1-193}{Introduction to Python Programming}}{339}\relax 
-\doTocEntry\tocchapter{8}{\csname a:TocLink\endcsname{1}{x1-1940008}{QQ2-1-194}{Jupyter Notebooks}}{341}\relax 
-\doTocEntry\tocchapter{9}{\csname a:TocLink\endcsname{1}{x1-1950009}{QQ2-1-195}{Troubleshooting}}{345}\relax 
-\doTocEntry\tocsection{9.1}{\csname a:TocLink\endcsname{1}{x1-1960009.1}{QQ2-1-196}{Problems with installing Python or PmagPy}}{345}\relax 
-\doTocEntry\tocsection{9.2}{\csname a:TocLink\endcsname{1}{x1-1970009.2}{QQ2-1-197}{Problems updating Canopy}}{360}\relax 
-\doTocEntry\tocsection{9.3}{\csname a:TocLink\endcsname{1}{x1-1980009.3}{QQ2-1-198}{Error loading dlls (windows only)}}{360}\relax 
-\doTocEntry\tocsection{9.4}{\csname a:TocLink\endcsname{1}{x1-1990009.4}{QQ2-1-199}{Problems with a specific program}}{361}\relax 
-\doTocEntry\tocsection{9.5}{\csname a:TocLink\endcsname{1}{x1-2000009.5}{QQ2-1-200}{Other problems}}{362}\relax 
-\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-2010009.5}{QQ2-1-201}{Bibliography}}{363}\relax 
+\doTocEntry\tocsubsection{5.2.103}{\csname a:TocLink\endcsname{1}{x1-1790005.2.103}{QQ2-1-179}{vdm\_b.py}}{321}\relax 
+\doTocEntry\tocsubsection{5.2.104}{\csname a:TocLink\endcsname{1}{x1-1800005.2.104}{QQ2-1-180}{vector\_mean.py}}{322}\relax 
+\doTocEntry\tocsubsection{5.2.105}{\csname a:TocLink\endcsname{1}{x1-1810005.2.105}{QQ2-1-181}{vgp\_di.py}}{323}\relax 
+\doTocEntry\tocsubsection{5.2.106}{\csname a:TocLink\endcsname{1}{x1-1820005.2.106}{QQ2-1-182}{vgpmap\_magic.py}}{324}\relax 
+\doTocEntry\tocsubsection{5.2.107}{\csname a:TocLink\endcsname{1}{x1-1830005.2.107}{QQ2-1-183}{watsons\_f.py}}{326}\relax 
+\doTocEntry\tocsubsection{5.2.108}{\csname a:TocLink\endcsname{1}{x1-1840005.2.108}{QQ2-1-184}{watsons\_v.py}}{328}\relax 
+\doTocEntry\tocsubsection{5.2.109}{\csname a:TocLink\endcsname{1}{x1-1850005.2.109}{QQ2-1-185}{zeq.py}}{330}\relax 
+\doTocEntry\tocsubsection{5.2.110}{\csname a:TocLink\endcsname{1}{x1-1860005.2.110}{QQ2-1-186}{zeq\_magic.py}}{332}\relax 
+\doTocEntry\tocsubsection{5.2.111}{\csname a:TocLink\endcsname{1}{x1-1870005.2.111}{QQ2-1-187}{zeq\_magic\_redo.py}}{334}\relax 
+\doTocEntry\tocsection{5.3}{\csname a:TocLink\endcsname{1}{x1-1880005.3}{QQ2-1-188}{Complaints department}}{335}\relax 
+\doTocEntry\tocchapter{6}{\csname a:TocLink\endcsname{1}{x1-1890006}{QQ2-1-189}{The MagIC database and file formats}}{337}\relax 
+\doTocEntry\tocsection{6.1}{\csname a:TocLink\endcsname{1}{x1-1900006.1}{QQ2-1-190}{Structure of the database tables}}{337}\relax 
+\doTocEntry\tocsection{6.2}{\csname a:TocLink\endcsname{1}{x1-1910006.2}{QQ2-1-191}{A word about method codes}}{338}\relax 
+\doTocEntry\tocsection{6.3}{\csname a:TocLink\endcsname{1}{x1-1920006.3}{QQ2-1-192}{Uploading to MagIC}}{339}\relax 
+\doTocEntry\tocchapter{7}{\csname a:TocLink\endcsname{1}{x1-1930007}{QQ2-1-193}{Introduction to Python Programming}}{341}\relax 
+\doTocEntry\tocchapter{8}{\csname a:TocLink\endcsname{1}{x1-1940008}{QQ2-1-194}{Jupyter Notebooks}}{343}\relax 
+\doTocEntry\tocchapter{9}{\csname a:TocLink\endcsname{1}{x1-1950009}{QQ2-1-195}{Troubleshooting}}{347}\relax 
+\doTocEntry\tocsection{9.1}{\csname a:TocLink\endcsname{1}{x1-1960009.1}{QQ2-1-196}{Problems with installing Python or PmagPy}}{347}\relax 
+\doTocEntry\tocsection{9.2}{\csname a:TocLink\endcsname{1}{x1-1970009.2}{QQ2-1-197}{Problems updating Canopy}}{362}\relax 
+\doTocEntry\tocsection{9.3}{\csname a:TocLink\endcsname{1}{x1-1980009.3}{QQ2-1-198}{Error loading dlls (windows only)}}{362}\relax 
+\doTocEntry\tocsection{9.4}{\csname a:TocLink\endcsname{1}{x1-1990009.4}{QQ2-1-199}{Problems with a specific program}}{363}\relax 
+\doTocEntry\tocsection{9.5}{\csname a:TocLink\endcsname{1}{x1-2000009.5}{QQ2-1-200}{Other problems}}{364}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-2010009.5}{QQ2-1-201}{Bibliography}}{365}\relax 
