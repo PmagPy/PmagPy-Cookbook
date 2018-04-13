@@ -232,7 +232,7 @@ If you don't see the Pmag GUI window, make sure you have followed all the instal
 \item Accessing example data files:
 
    There are many data files used in the examples of programs and for use with the textbook  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3.html}{Essentials of Paleomagnetism}.     You may want to copy  the data files to your Desktop or another convenient location.
-   To do this, navigate on the command line to your destination folder (for help, see \href{#file_system}{this section}).  Then, use the command: \begin{verbatim}move_data_files.py -d .\end{verbatim} This will copy all of the PmagPy example files to your current directory (represented by ``.'').
+   To do this, navigate on the command line to your destination folder (for help, see \href{#file_system}{this section}).  Then, use the command: \begin{verbatim}move_data_files.py -d .\end{verbatim} This will copy all of the PmagPy example files to your current directory (represented by ``.'').  NB: If you have a developer install, you can simply navigate to PmagPy/data_files, and move\_data\_files.py will not be needed.
 
 \customlink{hires}
 \item Installing the Etopo20 package for use with Basemap:
@@ -410,7 +410,7 @@ Note: {\bf Pmag GUI} is available for use with both 3.0 and 2.5 data.  All new c
 %\includegraphics[width=15cm]{EPSFiles/ProjectDirectory.eps}
 
 
-\item \textbf{copy example files:}  Find the PmagPy datafiles, or use \textbf{move\_data\_files.py} to move the  datafiles to an accessible location (try: \begin{verbatim}
+\item \textbf{copy example files:}  Navigate to the PmagPy datafiles (developer install), or use \textbf{move\_data\_files.py} to move the  datafiles to an accessible location (pip install). Use: \begin{verbatim}
 
   move_data_files.py -h\end{verbatim} on the command line for help).  In the {\it data\_files } folder you will find a subfolder named {\it Pmag\_GUI}. Copy the contents of the  \href{#Project_Directory}{\it ThisProject} directory  into  your  own \href{#Project_Directory}{Project Directory} folder.
  \item Start Pmag GUI either by typing {\bf pmag\_gui.py} on your \href{#command_line}{command line}, or (if you have the \href{#standalone}{standalone}), by double-clicking the Pmag GUI icon on your Desktop.
@@ -505,21 +505,21 @@ and like this for the  paleointensity data.  For paleointensity data, you must a
 Filling in metadata is a critical part of building a MagIC Project Directory. The data relevant to this example are arranged in five tables: specimens, samples, sites, locations, ages. To complete the data, click the button, and follow the directions in the help window in order:
 
 \begin{itemize}
-\item Step 0: Choose the appropriate headers for each of your tables.  Required headers (or headers already present in your tables) show up in the top box, optional headers in the bottom.  In our example, the only header you should add is ``age\_sigma'' in the age table.  Once you have added all needed headers, click the OK button to proceed to the next step.
+\item Step 0: Choose the appropriate headers for each of your tables.  Required headers (or headers already present in your tables) show up in the top box, optional headers in the bottom.  In our example, you won't need to add any additional headers.  Once you have added all needed headers, click the OK button to proceed to the next step.
 
  \includegraphics[width=30cm]{EPSFiles/FigErMagicStep0.eps}
 
  \item The next steps contain editable grids.  For many columns, you can edit using drop-down menus that provide \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies}.  For others, you must manually enter data into the cell.  A single left click will bring up a drop-down menu; a double-left click will call up the cell editor.  With both types of data entry, it is possible to select a single value for the entire column. Simply click on the column label.  If that column has a drop-down menu, you can then click on any cell in the column, the appropriate menu will pop up, and the value you select will propagate throughout the column.  Edits in that column will continue to be global until you select another column to edit or you de-select the column by clicking on the column label again.  If you select a column that does not have a drop-down menu, a text entry dialog will pop up, and the value you provide will be applied to the column.
 
- \item Step 1: Update the specimens table.  You may not rename specimens, but you may reassign them to a different sample.  It is also possible to add additional samples, using the 'Add new sample' button.  Note that type, lithology, and class columns need not be filled in here.  They will propagate down automatically when you select values at the sample or site level for type, lithology, and class.
+ \item Step 1: Update the specimens table.  You may not rename specimens, but you may reassign them to a different sample.  It is also possible to add additional samples, using the 'Add new sample' button.  Note that type, lithology, and class columns need not be filled in here.  They will propagate down automatically when you select values at the sample or site level for type, lithology, and class.  In this example, you can just click [Save and continue].
 
  \includegraphics[width=25cm] {EPSFiles/FigErMagicStep1.eps}
 
-\item Step 2:  Update the samples table.  You may rename samples, or you can reassign them to a different site.  You can also add additional sites using the ``Add a new site`` button.
+\item Step 2:  Update the samples table.  You may rename samples, or you can reassign them to a different site.  You can also add additional sites using the ``Add a new site`` button.  In this example, you can just click [Save and continue].
 
  \includegraphics[width=20cm] {EPSFiles/FigErMagicStep2.eps}
 
-\item Step 3: Update the sites table.  You may rename sites, or you can reassign them to a different location.  You can add additional locations using the ``Add a new location'' button.  You must choose a legal entry from the \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies} for the following headers: ``class'', ``lithology'', ``type''. You may combine more than one controlled vocabulary by making them a colon delimited list.  If you select a value in these categories: class, lithology, type, longitude, or latitude, the values will propagate to the samples table.  In this example,  class=Extrusive:Igneous; lithology=Basaltic Lava; type=Lava Flow
+\item Step 3: Update the sites table.  You may rename sites, or you can reassign them to a different location.  You can add additional locations using the ``Add a new location'' button.  You must choose a legal entry from the \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies} for the following headers: ``class'', ``lithology'', ``type''. You may combine more than one controlled vocabulary by making them a colon delimited list.  If you select a value in these categories: class, lithology, type, longitude, or latitude, the values will propagate to the samples table.  In this example,  class=Extrusive:Igneous; lithology=Basaltic Lava; type=Lava Flow.  You should also add age data: age=2.3, age_unit=Ma.
 
 \includegraphics[width=32cm] {EPSFiles/FigErMagicStep3.eps}
 
@@ -528,6 +528,7 @@ Filling in metadata is a critical part of building a MagIC Project Directory. Th
 
 \includegraphics[width=32cm] {EPSFiles/FigErMagicStep4.eps}
 
+\item Step 5: Add ages data.  For this tutorial, you can skip this step (just press [Save and continue]).
 
 \end{itemize}
 
@@ -559,6 +560,8 @@ To analyze the data in the example, follow these steps for each specimen:
 \customlink{ThellierGUI}
 
 \section{Thellier GUI quick start}
+Next, click the [Thellier GUI] button.  This is the main panel of the thellier GUI:
+
 This image shows the main panel of \href{#ThellierGUI}{Thellier GUI}:
 
 \includegraphics[width=30cm]{EPSFiles/FigThellierGui.eps}
@@ -581,7 +584,7 @@ To analyze the data in the example, follow these steps for each specimen:
 
 \section{Upload to the database }
 
-For this, you first click on the green {\it prepare upload txt file} button on the main page of {\bf Pmag GUI}. A file will be created in your \href{#Project_Directory}{\it ThisProject} directory.  Now, go to the  \href{http://earthref.org/MAGIC/}{MagIC  interface}.      Click on the `Upload Tool' button and upload your file by  draging and droping the {\it upload}   file onto the  `Drop and drop files here to uypload' window.
+To create a MagIC-format file for upload, you first click on the green {\it prepare upload txt file} button on the main page of {\bf Pmag GUI}. A file will be created in your \href{#Project_Directory}{\it ThisProject} directory.  Now, go to the  \href{http://earthref.org/MAGIC/}{MagIC  interface}.      Click on the `Upload Tool' button and upload your file by  draging and droping the {\it upload}   file onto the  `Drop and drop files here to uypload' window.
 Congratulations. Your data are now in the database under a Private Contribution.  But, they are not yet activated and cannot be until they are at least accepted for publication.  After you have a suitable reference, you can Activate your contribution.  Once you activate an uploaded dataset (only for published papers), it will be publicly available.
 
 \customlink{magic_download}
