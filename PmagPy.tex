@@ -400,7 +400,8 @@ Note: {\bf Pmag GUI} is available for use with both 3.0 and 2.5 data.  All new c
 
 \customlink{Project_Directory}
 
-\item  When you invoke {\bf Pmag GUI} from the command line, the first step is to change directories into a  `Project Directory'. For each study, create a directory with a name that relates to that study. Here we will call it {\it ThisProject}.  This is where you will collect and process all the rock and paleomagnetic data for a given study, usually a publication. The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path. Under certain Windows versions, this means you should not use your home directory, but create a directory called for example: D:\\MyPmagProjects and put {\it ThisProject} there.
+\item  When you invoke {\bf Pmag GUI} from the command line, the first step is to change directories into a  `Project Directory'. For each study, create a directory with a name that relates to that study. Here we will call it {\it ThisProject}.  This is where you will collect and process all the rock and paleomagnetic data for a given study, usually a publication. The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path. Under certain Windows versions, this means you should not use your home directory, but create a directory called for example:\begin{verbatim}
+  D:\MyPmagProjects\end{verbatim} and put {\it ThisProject} there.
 %
 %Inside the  {\it ThisProject} directory, create two additional directories: {\it MyFiles} and {\it MagIC}. All the files that you want to convert to the MagIC format should be placed in {\it MyFiles}.  The {\it Project Directory} that {\bf Pmag GUI} seeks is that {\it MagIC} directory.
 %
@@ -409,7 +410,8 @@ Note: {\bf Pmag GUI} is available for use with both 3.0 and 2.5 data.  All new c
 %\includegraphics[width=15cm]{EPSFiles/ProjectDirectory.eps}
 
 
-\item \textbf{copy example files:}  Find the PmagPy datafiles, or use \textbf{move\_data\_files.py} to move the  datafiles to an accessible location (try \begin{verbatim}
+\item \textbf{copy example files:}  Find the PmagPy datafiles, or use \textbf{move\_data\_files.py} to move the  datafiles to an accessible location (try: \begin{verbatim}
+
   move_data_files.py -h\end{verbatim} on the command line for help).  In the {\it data\_files } folder you will find a subfolder named {\it Pmag\_GUI}. Copy the contents of the  \href{#Project_Directory}{\it ThisProject} directory  into  your  own \href{#Project_Directory}{Project Directory} folder.
  \item Start Pmag GUI either by typing {\bf pmag\_gui.py} on your \href{#command_line}{command line}, or (if you have the \href{#standalone}{standalone}), by double-clicking the Pmag GUI icon on your Desktop.
  \item Change directories by clicking  on the ``change directory'' button and select your own {\it ThisProject} directory.
@@ -421,7 +423,7 @@ Note: {\bf Pmag GUI} is available for use with both 3.0 and 2.5 data.  All new c
 \begin{itemize}
 \item {\bf Pmag GUI} allows for converting many different laboratory formats.  For the complete set of instructions, see the section on \href{#magnetometer_files}{Supported Rock Magnetometer files}.   For this example, we will use a `generic' file format.
 %rshaar% In the {\it MyFiles} folder there are  files containing AF, Thermal, and Thellier measurement data of samples from location Snake River (lava flow site). All samples are from site sr01. The measurement data are arranged in the generic format.
-An example for a generic file format is shown here:
+An example of the generic file format is shown here:
 
 \includegraphics[width=30cm]{EPSFiles/FigGenericFormat.eps}
 
@@ -467,7 +469,7 @@ and like this for the  paleointensity data.  For paleointensity data, you must a
 
 \includegraphics[width=30cm]{EPSFiles/FigCombineMagic.eps}
 
-\item Click the OK button. The three files will be combined to a single file,  named {\it magic\_measurements.txt} and also stored  in your \href{#Project_Directory}{\it ThisProject} directory.
+\item Click the OK button. The three files will be combined to a single file,  named {\it measurements.txt} and also stored  in your \href{#Project_Directory}{\it ThisProject} directory.
 \end{itemize}
 
 \customlink{orient}
@@ -482,7 +484,7 @@ and like this for the  paleointensity data.  For paleointensity data, you must a
 \item Click the button $\rightarrow$ [Calculate sample orientations].
 \item Fill in the dialog box like this:
 
-\includegraphics[width=15cm]{EPSFiles/FigDemagOrient.eps}
+\includegraphics[width=25cm]{EPSFiles/FigDemagOrient.eps}
 
 \begin{itemize}
 \item Orientation convention :Pomeroy.
@@ -509,11 +511,11 @@ Filling in metadata is a critical part of building a MagIC Project Directory. Th
 
  \item Step 1: Update the relationship between specimens and samples.  You may not rename specimens, but you may reassign them to a different sample.  It is also possible to add additional samples, using the 'Add new sample' button.  Note that type, lithology, and class columns need not be filled in here.  They will propagate down automatically when you select values at the sample or site level for type, lithology, and class.
 
- \includegraphics[width=16cm] {EPSFiles/FigErMagicStep1.eps}
+ \includegraphics[width=25cm] {EPSFiles/FigErMagicStep1.eps}
 
 \item Step 2:  Update the relationship between samples and sites.  You may rename samples, or you can reassign them to a different site.  You can also add additional sites using the ``Add a new site`` button.  You will be able to update other columns in the samples file in step 4.
 
- \includegraphics[width=16cm] {EPSFiles/FigErMagicStep2.eps}
+ \includegraphics[width=20cm] {EPSFiles/FigErMagicStep2.eps}
 
 \item Step 3: Update the relationship between sites and locations.  You may rename sites, or you can reassign them to a different location.  You can add additional locations using the ``Add a new location'' button.  You must choose a legal entry from the \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies} for the following headers: ``class'', ``lithology'', ``type''. You may combine more than one controlled vocabulary by making them a colon delimited list.  If you select a value in these categories: class, lithology, type, longitude, or latitude, the values will propagate to the samples table.  In this example,  class=Extrusive:Igneous; lithology=Basaltic Lava; type=Lava Flow
 
@@ -561,7 +563,7 @@ Use of the Thellier GUI is described in more detail in the \href{#thellier_GUI.p
 
 To analyze the data in the example, follow these steps for each specimen:
  \begin{itemize}
- \item You can customize which selection criteria you need  under Preferences => Specimen paleointensity statistics (from SPD list).  This uses the \cite{paterson14} definitions of paleointensity statistices.
+ \item You can customize which selection criteria you need  under Preferences $=>$ Specimen paleointensity statistics (from SPD list).  This uses the \cite{paterson14} definitions of paleointensity statistices.
  \item You can select bounds for the statistics under Analysis $=>$Acceptance criteria $=>$ Change acceptance criteria.
 \item Choose temperature bounds from the temperatures dropdown menus.
 \item  Click `save' so the program remembers the interpretations (the interpretation is not saved to a file yet!).
