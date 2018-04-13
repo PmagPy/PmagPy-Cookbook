@@ -26,4 +26,4 @@ Generating the PDF and website after edits to the cookbook
 
     % htlatex PmagPy "html,1,sections+"
 
-6) For more informatoin on the formatting the htlatex command, see [stackexchange](https://tex.stackexchange.com/questions/423928/htlatex-combining-multiple-command-line-options)
+6) For more information on the formatting the htlatex command, see [stackexchange](https://tex.stackexchange.com/questions/423928/htlatex-combining-multiple-command-line-options)
