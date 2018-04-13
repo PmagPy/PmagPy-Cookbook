@@ -400,7 +400,7 @@ Note: {\bf Pmag GUI} is available for use with both 3.0 and 2.5 data.  All new c
 
 \customlink{Project_Directory}
 
-\item  When you invoke {\bf Pmag GUI} from the command line, the first step is to change directories into a  `Project Directory'. For each study, create a directory with a name that relates to that study. Here we will call it {\it ThisProject}.  This is where you will collect and process all the rock and paleomagnetic data for a given study, usually a publication. The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path. Under certain Windows versions, this means you should not use your home directory, but create a directory called for example:\begin{verbatim}
+\item  When you start {\bf Pmag GUI}, the first step is to change directories into a  `Project Directory'. For each study, create a directory with a name that relates to that study. Here we will call it {\it ThisProject}.  This is where you will collect and process all the rock and paleomagnetic data for a given study, usually a publication. The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path. Under certain Windows versions, this means you should not use your home directory, but create a directory called for example:\begin{verbatim}
   D:\MyPmagProjects\end{verbatim} and put {\it ThisProject} there.
 %
 %Inside the  {\it ThisProject} directory, create two additional directories: {\it MyFiles} and {\it MagIC}. All the files that you want to convert to the MagIC format should be placed in {\it MyFiles}.  The {\it Project Directory} that {\bf Pmag GUI} seeks is that {\it MagIC} directory.
@@ -421,7 +421,7 @@ Note: {\bf Pmag GUI} is available for use with both 3.0 and 2.5 data.  All new c
 
 \section{Converting magnetometer files to MagIC format}
 \begin{itemize}
-\item {\bf Pmag GUI} allows for converting many different laboratory formats.  For the complete set of instructions, see the section on \href{#magnetometer_files}{Supported Rock Magnetometer files}.   For this example, we will use a `generic' file format.
+\item {\bf Pmag GUI} allows for converting many different laboratory formats.  For more information, see the section on \href{#magnetometer_files}{Supported Rock Magnetometer files}.   In this example, we will use a `generic' file format.
 %rshaar% In the {\it MyFiles} folder there are  files containing AF, Thermal, and Thellier measurement data of samples from location Snake River (lava flow site). All samples are from site sr01. The measurement data are arranged in the generic format.
 An example of the generic file format is shown here:
 
@@ -3480,7 +3480,7 @@ These data can now be viewed and interpreted using, for example \href{#zeq_magic
 If you have a data file format that is not supported, you can relabel column headers to fit the generic format in {\it generic\_magic.py}:
 
 \begin{tabular}{cccccccccc}
-specimen & treatment & treatment\_type & moment & dec\_s & inc\_s \\
+specimen &treatment &treatment\_type &moment &dec\_s &inc\_s \\
 sr01e2 & 0 & A & 2.93E-02 & 200.6 & 27.9 \\
 sr01e2 & 10 & A & 2.83E-02 & 201 & 27.7 \\
 sr01e2 & 20 & A & 2.61E-02 & 200.5 & 27.4 \\
