@@ -470,6 +470,8 @@ and like this for the  paleointensity data.  For paleointensity data, you must a
 \includegraphics[width=30cm]{EPSFiles/FigCombineMagic.eps}
 
 \item Click the OK button. The three files will be combined to a single file,  named {\it measurements.txt} and also stored  in your \href{#Project_Directory}{\it ThisProject} directory.
+
+\item In the next dialog, you will combine specimen, sample, site, and location files.
 \end{itemize}
 
 \customlink{orient}
@@ -479,10 +481,10 @@ and like this for the  paleointensity data.  For paleointensity data, you must a
 \item {\bf Pmag GUI} provides an optional tool for calculating geographic and tilt-corrected directions if those directions were not part of the original data files. To use this tool click on the button labeled `calculate geographic/tilt-corrected directions'.
 
 \item When you open this window, an empty template of a file named demag\_orient.txt was created in your project directory. This file is displayed in a Python window. You can fill in  this file manually using the GUI window or \href{#field_info}{with with a spreadsheet program}. The template is pre-filled with sample names derived from your measurement files, using the naming rules that you chose.
-\item To see an example of a filled in orientation file, click the button $\rightarrow$ [Import Orientation File] and  choose the file SrExample\_orient.txt from {\it MyFiles} folder.
+\item To fill in the orientation information, click the button $\rightarrow$ [Import Orientation File] and  choose the file SrExample\_orient.txt from {\it MyFiles} folder.
 \item Click the button $\rightarrow$ [Save orientation file].
 \item Click the button $\rightarrow$ [Calculate sample orientations].
-\item Fill in the dialog box like this:
+\item Fill in the [set orientation convention] dialog box like this:
 
 \includegraphics[width=25cm]{EPSFiles/FigDemagOrient.eps}
 
@@ -493,7 +495,7 @@ and like this for the  paleointensity data.  For paleointensity data, you must a
 \item Put in the number of hours to SUBTRACT from the local time to get to Greenwich Mean Time: -6. [Local time was 6 hours behind GMT for this example.]
 \item press the OK button.
 \end{itemize}
-\item In the next dialog window add the additional information:
+\item In the [additional required information] dialog window add the additional information:
 \end{itemize}
 
 \includegraphics[width=15cm]{EPSFiles/FigOrientMagicCodes.eps}
@@ -507,22 +509,22 @@ Filling in metadata is a critical part of building a MagIC Project Directory. Th
 
  \includegraphics[width=30cm]{EPSFiles/FigErMagicStep0.eps}
 
- \item The next six steps contain editable grids.  For many columns, you can edit using drop-down menus that provide \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies}.  For others, you must manually enter data into the cell.  A single left click will bring up a drop-down menu; a double-left click will call up the cell editor.  With both types of data entry, it is possible to select a single value for the entire column. Simply click on the column label.  If that column has a drop-down menu, you can then click on any cell in the column, the appropriate menu will pop up, and the value you select will propagate throughout the column.  Edits in that column will continue to be global until you select another column to edit or you de-select the column by clicking on the column label again.  If you select a column that does not have a drop-down menu, a text entry dialog will pop up, and the value you provide will be applied to the column.
+ \item The next steps contain editable grids.  For many columns, you can edit using drop-down menus that provide \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies}.  For others, you must manually enter data into the cell.  A single left click will bring up a drop-down menu; a double-left click will call up the cell editor.  With both types of data entry, it is possible to select a single value for the entire column. Simply click on the column label.  If that column has a drop-down menu, you can then click on any cell in the column, the appropriate menu will pop up, and the value you select will propagate throughout the column.  Edits in that column will continue to be global until you select another column to edit or you de-select the column by clicking on the column label again.  If you select a column that does not have a drop-down menu, a text entry dialog will pop up, and the value you provide will be applied to the column.
 
- \item Step 1: Update the relationship between specimens and samples.  You may not rename specimens, but you may reassign them to a different sample.  It is also possible to add additional samples, using the 'Add new sample' button.  Note that type, lithology, and class columns need not be filled in here.  They will propagate down automatically when you select values at the sample or site level for type, lithology, and class.
+ \item Step 1: Update the specimens table.  You may not rename specimens, but you may reassign them to a different sample.  It is also possible to add additional samples, using the 'Add new sample' button.  Note that type, lithology, and class columns need not be filled in here.  They will propagate down automatically when you select values at the sample or site level for type, lithology, and class.
 
  \includegraphics[width=25cm] {EPSFiles/FigErMagicStep1.eps}
 
-\item Step 2:  Update the relationship between samples and sites.  You may rename samples, or you can reassign them to a different site.  You can also add additional sites using the ``Add a new site`` button.  You will be able to update other columns in the samples file in step 4.
+\item Step 2:  Update the samples table.  You may rename samples, or you can reassign them to a different site.  You can also add additional sites using the ``Add a new site`` button.
 
  \includegraphics[width=20cm] {EPSFiles/FigErMagicStep2.eps}
 
-\item Step 3: Update the relationship between sites and locations.  You may rename sites, or you can reassign them to a different location.  You can add additional locations using the ``Add a new location'' button.  You must choose a legal entry from the \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies} for the following headers: ``class'', ``lithology'', ``type''. You may combine more than one controlled vocabulary by making them a colon delimited list.  If you select a value in these categories: class, lithology, type, longitude, or latitude, the values will propagate to the samples table.  In this example,  class=Extrusive:Igneous; lithology=Basaltic Lava; type=Lava Flow
+\item Step 3: Update the sites table.  You may rename sites, or you can reassign them to a different location.  You can add additional locations using the ``Add a new location'' button.  You must choose a legal entry from the \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies} for the following headers: ``class'', ``lithology'', ``type''. You may combine more than one controlled vocabulary by making them a colon delimited list.  If you select a value in these categories: class, lithology, type, longitude, or latitude, the values will propagate to the samples table.  In this example,  class=Extrusive:Igneous; lithology=Basaltic Lava; type=Lava Flow
 
 \includegraphics[width=32cm] {EPSFiles/FigErMagicStep3.eps}
 
 
-\item Step 4: Fill in information for locations.  If you have provided site latitudes and longitudes, the columns for beginning and ending latitudes and longitudes should be filled in already. You must choose a legal entry from the \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies} for the  ``location\_type''. In this example: location\_type = outcrop.
+\item Step 4: Update the locations table.  If you have provided site latitudes and longitudes, the columns for beginning and ending latitudes and longitudes should be filled in already. You must choose a legal entry from the \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies} for the  ``location\_type''. In this example: location\_type = outcrop.
 
 \includegraphics[width=32cm] {EPSFiles/FigErMagicStep4.eps}
 
@@ -534,7 +536,7 @@ Filling in metadata is a critical part of building a MagIC Project Directory. Th
 \section{Demag GUI quick start}
 \label{sect:demag_gui}
 
-This image shows the main panel of the demag GUI:
+Next, click the [Demag GUI] button.  This is the main panel of the demag GUI:
 
 \includegraphics[width=30cm]{EPSFiles/demag_gui.eps}
 
@@ -545,10 +547,12 @@ To analyze the data in the example, follow these steps for each specimen:
 \item From the `coordinate system' drop-down menu you can choose the coordinate system in which you wish to view the data (e.g.  `geographic').
 \item Click `add a fit' (hotkey: ctrl-n) and choose the temperature/AF bounds for the fit by double clicking on the measurement lines, by double clicking on the measurement points in the zijderveld plot, or by choosing from the `bounds' dropdown menu.
 \item Click the `next' button to analyze the next specimen (hotkey: ctrl-right).
-\item To calculate  Fisher mean for the site: choose from the `mean options' drop-down menus: component=All; mean=Fisher.
+\item To calculate  Fisher mean for the site: choose from the `mean options' drop-down menus.  First select: component=All, then select: mean=Fisher.
 \item All of the fits can be viewed and modified using the Interpretation Editor which can be selected from the Tools menu in the top menubar. (hotkey: ctrl-e)
-\item To save all of the specimen interpretations, choose from the menubar [File] $\rightarrow$ [Save MagIC  tables]. This saves all the interpretations in specimen/sample/site tables in your \href{#Project_Directory}{\it ThisProject} directory. Fits that are saved this way will be loaded into demag\_gui the next time it is launched. To save temporary analysis data use [File] $\rightarrow$ [Save interpretations to a redo file]. This saves all interpretation data to a redo file which will not load immediately when the GUI starts, but preserves ascetic aspects of interpretations such as color as well as the specimen you were on when you saved to keep your place in analysis and allows rebooting of session without full export of MagIC tables.
-\item Click through the dialog boxes and fill out choices for the MagIC results table.
+\item To permanently save all of the specimen interpretations, choose from the menubar [File] $\rightarrow$ [Save MagIC  tables]. This saves all the interpretations in specimen/sample/site tables in your \href{#Project_Directory}{\it ThisProject} directory. Fits that are saved this way will be loaded into demag\_gui the next time it is launched.
+\item Click through the dialog boxes and fill out choices for generating MagIC results.
+\item If you are partway through your analysis, you may want to save your place without outputting to MagIC tables.  To save temporary analysis data use [File] $\rightarrow$ [Save interpretations to a redo file]. This saves all interpretation data to a redo file which will not load immediately when the GUI starts, but preserves aesthetic aspects of interpretations such as color as well as the specimen you were on when you saved to keep your place in analysis and allows rebooting of session without full export of MagIC tables.
+
 \item Close the Demag GUI.
 \end{itemize}
 
