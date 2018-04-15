@@ -541,19 +541,24 @@ Next, click the [Demag GUI] button.  This is the main panel of the demag GUI:
 
 Use of the Demag GUI is described in more detail in the \href{#demag_gui.py}{Demag GUI} section below. Here are a few instructions that can be used as a quick start for using Demag GUI. {\bf Note}: If at any point you require help with a particular aspect of Demag GUI clicking on [Help] $\rightarrow$ [Usage and Tips] (hotkey: ctrl-h) then clicking on the item you wish to know more about will provide a pop-up box with information for most all aspects of the GUI and Interpretation Editor, see \hyperref[add-help]{additional help} for details.
 
+Before you start your analysis, you can choose your coordinate system.  From the `coordinate system' drop-down menu you can choose the coordinate system in which you wish to view the data (e.g.  `geographic').
+
 To analyze the data in the example, follow these steps for each specimen:
 \begin{itemize}
-\item From the `coordinate system' drop-down menu you can choose the coordinate system in which you wish to view the data (e.g.  `geographic').
 \item Click `add a fit' (hotkey: ctrl-n) and choose the temperature/AF bounds for the fit by double clicking on the measurement lines, by double clicking on the measurement points in the zijderveld plot, or by choosing from the `bounds' dropdown menu.
 \item Click the `next' button to analyze the next specimen (hotkey: ctrl-right).
-\item To calculate  Fisher mean for the site: choose from the `mean options' drop-down menus.  First select: component=All, then select: mean=Fisher.
-\item All of the fits can be viewed and modified using the Interpretation Editor which can be selected from the Tools menu in the top menubar. (hotkey: ctrl-e)
-\item To permanently save all of the specimen interpretations, choose from the menubar [File] $\rightarrow$ [Save MagIC  tables]. This saves all the interpretations in specimen/sample/site tables in your \href{#Project_Directory}{\it ThisProject} directory. Fits that are saved this way will be loaded into demag\_gui the next time it is launched.
-\item Click through the dialog boxes and fill out choices for generating MagIC results.
-\item If you are partway through your analysis, you may want to save your place without outputting to MagIC tables.  To save temporary analysis data use [File] $\rightarrow$ [Save interpretations to a redo file]. This saves all interpretation data to a redo file which will not load immediately when the GUI starts, but preserves aesthetic aspects of interpretations such as color as well as the specimen you were on when you saved to keep your place in analysis and allows rebooting of session without full export of MagIC tables.
-
-\item Close the Demag GUI.
 \end{itemize}
+
+To calculate  Fisher mean for the site: choose from the `mean options' drop-down menus.  First select: component=All, then select: mean=Fisher.
+
+All of the fits can be viewed and modified using the Interpretation Editor which can be selected from the Tools menu in the top menubar. (hotkey: ctrl-e)
+
+To permanently save all of the specimen interpretations, choose from the menubar [File] $\rightarrow$ [Save MagIC  tables]. This saves all the interpretations in specimen/sample/site tables in your \href{#Project_Directory}{\it ThisProject} directory. Fits that are saved this way will be loaded into demag\_gui the next time it is launched.  Click through the dialog boxes and fill out choices for generating MagIC results.
+
+If you are partway through your analysis, you may want to save your place without outputting to MagIC tables.  To save temporary analysis data use [File] $\rightarrow$ [Save interpretations to a redo file]. This saves all interpretation data to a redo file which will not load immediately when the GUI starts, but preserves aesthetic aspects of interpretations such as color as well as the specimen you were on when you saved to keep your place in analysis and allows rebooting of session without full export of MagIC tables.
+
+Close the Demag GUI.
+
 
 \customlink{ThellierGUI}
 
