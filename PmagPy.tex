@@ -389,11 +389,9 @@ Where do you want to go from here?
 
 \includegraphics[width=15cm]{EPSFiles/FigQkMagicFlow.eps}
 
-Note: {\bf Pmag GUI} is available for use with both 3.0 and 2.5 data.  All new contributions should be built up using 3.0, but 2.5 may be used for legacy data sets and then later upgraded using on the \href{https://beta.earthref.org/MagIC/upgrade}{MagIC site}.  You may specify which data model you want to use on the command-line using the switch ``-DM'', or in the window that pops up when you first open {\bf Pmag GUI}.
+Note: {\bf Pmag GUI} is available for use with both 3.0 and 2.5 data.  All new contributions should be built up using 3.0, but 2.5 may be used for legacy data sets and then later upgraded using the \href{https://www.earthref.org/MagIC/upgrade}{MagIC site}.  You may specify which data model you want to use on the command-line using the switch ``-DM'', or in the window that pops up when you first open {\bf Pmag GUI}.
 
 \includegraphics[width=6in]{EPSFiles/PmagGUI_choose_data_model.eps}
-
-%The current tutorial is for the 2.5 format, but the usage is very similar.  We will update with 3.0 pictures soon!
 
 \begin{enumerate}
 \item Make sure you have followed all of the steps in the \href{#quick_start}{Installing PmagPy} section.
@@ -519,12 +517,12 @@ Filling in metadata is a critical part of building a MagIC Project Directory. Th
 
  \includegraphics[width=20cm] {EPSFiles/FigErMagicStep2.eps}
 
-\item Step 3: Update the sites table.  You may rename sites, or you can reassign them to a different location.  You can add additional locations using the ``Add a new location'' button.  You must choose a legal entry from the \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies} for the following headers: ``class'', ``lithology'', ``type''. You may combine more than one controlled vocabulary by making them a colon delimited list.  If you select a value in these categories: class, lithology, type, longitude, or latitude, the values will propagate to the samples table.  In this example,  class=Extrusive:Igneous; lithology=Basaltic Lava; type=Lava Flow.  You should also add age data: age=2.3, age_unit=Ma.
+\item Step 3: Update the sites table.  You may rename sites, or you can reassign them to a different location.  You can add additional locations using the ``Add a new location'' button.  You must choose a legal entry from the \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies} for the following headers: ``class'', ``lithology'', ``type''. You may combine more than one controlled vocabulary by making them a colon delimited list.  If you select a value in these categories: class, lithology, type, longitude, or latitude, the values will propagate to the samples table.  In this example,  geologic_classes=Extrusive:Igneous; lithologies=Basaltic Lava; geologic_types=Lava Flow.  You should also add age data: age=2.3, age_unit=Ma.
 
 \includegraphics[width=32cm] {EPSFiles/FigErMagicStep3.eps}
 
 
-\item Step 4: Update the locations table.  If you have provided site latitudes and longitudes, the columns for beginning and ending latitudes and longitudes should be filled in already. You must choose a legal entry from the \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies} for the  ``location\_type''. In this example: location\_type = outcrop.
+\item Step 4: Update the locations table.  If you have provided site latitudes and longitudes, the columns for beginning and ending latitudes and longitudes should be filled in already. Likewise, ``age_high'', ``age_low'', and ``age_unit'' will be filled with data from the sites table.  You must choose a legal entry from the \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies} for the  ``location\_type''. In this example: location\_type = outcrop.
 
 \includegraphics[width=32cm] {EPSFiles/FigErMagicStep4.eps}
 
@@ -568,23 +566,26 @@ This image shows the main panel of \href{#ThellierGUI}{Thellier GUI}:
 
 Use of the Thellier GUI is described in more detail in the \href{#thellier_GUI.py}{Thellier GUI} section below and in this PDF document: \href{https://github.com/PmagPy/PmagPy-Cookbook/blob/gh-pages/thellier_GUI_full_manual.pdf}{Thellier GUI manual}. Here are a few instructions that can be used as a quick start for using Thellier GUI.
 
-To analyze the data in the example, follow these steps for each specimen:
+You can customize which selection criteria you need  under Preferences $=>$ Specimen paleointensity statistics (from SPD list).  This uses the \cite{paterson14} definitions of paleointensity statistices.
+Next, select bounds for the statistics under [Analysis] $=>$[Acceptance criteria] $=>$ [Change acceptance criteria].
+
+The default of the program is to calculate sample means. To change it to site level mean, choose from the menubar: [Analysis] $\rightarrow$ [Acceptance criteria] $\rightarrow$  [Change acceptance criteria]. Find the `average by sample/site' dropdown menu in the third row and change it to [site]. Click OK. The site mean will appear in the sample/site results box (top right).
+
+Then, to analyze the data, follow these steps for each specimen:
  \begin{itemize}
- \item You can customize which selection criteria you need  under Preferences $=>$ Specimen paleointensity statistics (from SPD list).  This uses the \cite{paterson14} definitions of paleointensity statistices.
- \item You can select bounds for the statistics under Analysis $=>$Acceptance criteria $=>$ Change acceptance criteria.
-\item Choose temperature bounds from the temperatures dropdown menus.
-\item  Click `save' so the program remembers the interpretations (the interpretation is not saved to a file yet!).
-\item  Click the `next' button to analyze the next specimen.
-\item The default of the program is to calculate sample means. To change it to site level mean, choose from the menubar: [Analysis $\rightarrow$ [Acceptance criteria] $\rightarrow$  [Change acceptance criteria]. Find the `average by sample/site' dropdown menu in the third row and change it to [site]. Click OK. The site mean will appear in the sample/site results box (top right).
-\item  After all specimen interpretations are saved in memory, choose from the menubar [File] $\rightarrow$ [Save MagIC pmag tables]. This save all the interpretations in MagIC formatted pmag\_* files in the MagIC Project Directory.
-\item  Close the Thellier GUI.
-\end{itemize}
+ \item Choose temperature bounds from the temperatures dropdown menus.
+ \item Click ‘save’ so the program remembers the interpretations (the interpretation is not saved to a file yet!).
+ \item  Click the ‘next’ button to analyze the next specimen.
+   \end{itemize}
+After all specimen interpretations are saved in memory, choose from the menubar [File] $\rightarrow$ [Save MagIC pmag tables]. This save all the interpretations in MagIC formatted pmag\_* files in the MagIC Project Directory.
+Close the Thellier GUI.
+
 
 \customlink{magic_upload}
 
 \section{Upload to the database }
 
-To create a MagIC-format file for upload, you first click on the green {\it prepare upload txt file} button on the main page of {\bf Pmag GUI}. A file will be created in your \href{#Project_Directory}{\it ThisProject} directory.  Now, go to the  \href{http://earthref.org/MAGIC/}{MagIC  interface}.      Click on the `Upload Tool' button and upload your file by  draging and droping the {\it upload}   file onto the  `Drop and drop files here to uypload' window.
+To create a MagIC-format file for upload, you first click on the green {\it Create MagIC txt file for upload} button on the main page of {\bf Pmag GUI}. A file will be created in your \href{#Project_Directory}{\it ThisProject} directory.  Now, go to the  \href{http://earthref.org/MAGIC/}{MagIC  interface}.      Click on the `Upload Tool' button and upload your file by  draging and droping the {\it upload}   file onto the  `Drop and drop files here to uypload' window.
 Congratulations. Your data are now in the database under a Private Contribution.  But, they are not yet activated and cannot be until they are at least accepted for publication.  After you have a suitable reference, you can Activate your contribution.  Once you activate an uploaded dataset (only for published papers), it will be publicly available.
 
 \customlink{magic_download}
