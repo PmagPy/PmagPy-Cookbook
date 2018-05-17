@@ -290,19 +290,24 @@ For Windows users:
 
 \begin{enumerate}
 
-\item  Download the zipfile from the \href{https://github.com/PmagPy/PmagPy}{Github repository}.
 
-\item Drag the zip file PmagPy-master to your Desktop and extract all files (unzip)
+\item Download and \href{https://git-scm.com/downloads}{install git}
 
 \item Open your command prompt \href{http://www.thewindowsclub.com/how-to-run-command-prompt-as-an-administrator}{as an admin} (right click on the Command Prompt icon and select ``Run as administrator'').
 
+\item Navigate to the directory where you want to put the PmagPy folder, then run:\begin{verbatim}
+  git clone https://github.com/PmagPy/PmagPy.git
+\end{verbatim}
 
-%\item (Optional) Install git on your computer and sign up for a \href{https://github.com}{Github account} if you don't already have one.
-  %\item Fork the PmagPy repo (if you have set up with git/Github as in step 1), or simply download the zipfile from the \href{https://github.com/PmagPy/PmagPy}{Github repository}.
+\item You should now have a full local copy of the PmagPy repository.  Change directories into PmagPy:\begin{verbatim}
+  cd PmagPy
+\end{verbatim}
 
-\item Try running: \verb!python dev_setup.py install!
+\item Next, you need to add PmagPy to your PATH so that the PmagPy programs can be called from any directory. Try running: \begin{verbatim}
+  python dev_setup.py install
+\end{verbatim}
 
-\item  If that didn't work, you will also need to specify the location of your Python installation.  To figure that out, you can run the following two commands:
+\item  If you see an error message, that means that you will also need to specify the location of your Python installation.  To get your full path to python, you can run the following two commands (exactly as written!):
 \begin{verbatim}
     cd \
     dir python.exe /s /p
@@ -320,9 +325,11 @@ Once you've done that, navigate back into your PmagPy directory and run dev\_set
     python dev_setup.py install -p path_to_python
 \end{verbatim}
 
-\item dev\_setup.py edits your \$PATH and \$PYTHONPATH variables.  If you want to look at or edit those variables directly, see this information \href{https://www.java.com/en/download/help/path.xml}{about setting your PATH}.
+where path_to_python is your specific Python result.
 
-\item After completing the developer install, you will need to restart your command line.  After restarting, you should be able to use all {\bf PmagPy} functionality as if you had done a full \href{#pip_install}{pip install}.  The only difference is that you will be able to stay up-to-date with {\bf PmagPy} development and make edits in {\bf PmagPy} code which will be immediately available in your system.
+\item Note: dev\_setup.py edits your \$PATH and \$PYTHONPATH variables.  If you want to look at or edit those variables directly, see this information \href{https://www.java.com/en/download/help/path.xml}{about setting your PATH on Windows} and \href{#setting_path}{editing your PATH for PmagPy}.
+
+\item After completing the developer install, you will need to restart the Command Prompt.  After restarting, you should be able to use all {\bf PmagPy} functionality as if you had done a full \href{#pip_install}{pip install}.  The only difference is that you will be able to stay up-to-date with {\bf PmagPy} development and make edits in {\bf PmagPy} code which will be immediately available in your system.
 
 \end{enumerate}
 
@@ -332,35 +339,50 @@ For Mac/Linux users:
 
 \begin{enumerate}
 
-\item  Download the zipfile from the \href{https://github.com/PmagPy/PmagPy}{Github repository}.
+\item Download and \href{https://git-scm.com/downloads}{install git}
 
-\item Drag PmagPy-master to your Desktop and unzip.
-
-\item Open your command line and navigate to your PmagPy directory: \begin{verbatim}
-  cd ~\Desktop\PmagPy-master
+\item Open your Terminal and navigate to your PmagPy directory: \begin{verbatim}
+  cd PmagPy
 \end{verbatim}
 
-\item Run \verb!python dev_setup.py install!  For more information on how to install, run \verb!python dev_setup.py -h!
+\item Navigate to the directory where you want to put the PmagPy folder, then run:\begin{verbatim}
+  git clone https://github.com/PmagPy/PmagPy.git
+\end{verbatim}
+
+\item You should now have a full local copy of the PmagPy repository.  Change directories into PmagPy:\begin{verbatim}
+  cd PmagPy
+\end{verbatim}
+
+\item Next, you need to add PmagPy to your PATH so that the PmagPy programs can be called from any directory. Run: \begin{verbatim}
+  python dev_setup.py install
+\end{verbatim} If you have problems with the install, run \verb!python dev_setup.py -h! for more information.
 
 \item After completing the developer install, you will need to restart your command line.  After restarting, you should be able to use all {\bf PmagPy} functionality as if you had done a full \href{#pip_install}{pip install}.  The only difference is that you will be able to stay up-to-date with {\bf PmagPy} development and make edits in {\bf PmagPy} code which will be immediately available in your system.
 
 \end{enumerate}
 
+\subsection{Details of setting your PATH}
 \customlink{setting_path}
-If you care about the details, here is what the developer install script actually does.  It adds these lines editing \$PATH to your .bashrc file:
+If you care about the details, here is what the developer install script actually does.  For OS X and Linux, it adds these lines editing \$PATH to your .bashrc file:
 
 \begin{verbatim}
     export PATH=/Users/***/Desktop/PmagPy/programs:$PATH
     export PATH=/Users/***/Desktop/PmagPy/programs/conversion_scripts:$PATH
 \end{verbatim}
 
-And this line to your editing \$PYTHONPATH to your .bashrc file:
+And this line to your \$PYTHONPATH to your .bashrc file:
+
 \begin{verbatim}
     export PYTHONPATH=$PYTHONPATH:/Users/***/Desktop/PmagPy/
 \end{verbatim}
 
 
-where *** is your username.  (Of course, these lines will depend on exactly where you have put your PmagPy folder -- if it lives on your home directory, your \$PATH will point there: \begin{verbatim}export PATH=/Users/***/PmagPy/programs\end{verbatim}, and so on.)
+where *** is your username.  (Of course, these lines will depend on exactly where you have put your PmagPy folder -- if it lives on your home directory, your \$PATH will point there:
+\begin{verbatim}
+    export PATH=/Users/***/PmagPy/programs
+\end{verbatim}, and so on.)
+
+For Windows, the same variables are set but in your \href{https://www.java.com/en/download/help/path.xml}{Control Panel (Environment Variables)}.
 
 
 
