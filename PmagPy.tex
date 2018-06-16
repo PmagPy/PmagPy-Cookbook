@@ -341,9 +341,7 @@ For Mac/Linux users:
 
 \item Download and \href{https://git-scm.com/downloads}{install git}
 
-\item Open your Terminal and navigate to your PmagPy directory: \begin{verbatim}
-  cd PmagPy
-\end{verbatim}
+\item Open your Terminal
 
 \item Navigate to the directory where you want to put the PmagPy folder, then run:\begin{verbatim}
   git clone https://github.com/PmagPy/PmagPy.git
@@ -355,7 +353,7 @@ For Mac/Linux users:
 
 \item Next, you need to add PmagPy to your PATH so that the PmagPy programs can be called from any directory. Run: \begin{verbatim}
   python dev_setup.py install
-\end{verbatim} If you have problems with the install, run \verb!python dev_setup.py -h! for more information.
+\end{verbatim} If you have problems with the install, run \verb!python dev_setup.py -h! for more information.  You can also set your \href{#setting_path}{PATH manually} if dev\_setup.py fails.
 
 \item After completing the developer install, you will need to restart your command line.  After restarting, you should be able to use all {\bf PmagPy} functionality as if you had done a full \href{#pip_install}{pip install}.  The only difference is that you will be able to stay up-to-date with {\bf PmagPy} development and make edits in {\bf PmagPy} code which will be immediately available in your system.
 
@@ -382,7 +380,7 @@ where *** is your username.  (Of course, these lines will depend on exactly wher
     export PATH=/Users/***/PmagPy/programs
 \end{verbatim}, and so on.)
 
-For Windows, the same variables are set but in your \href{https://www.java.com/en/download/help/path.xml}{Control Panel (Environment Variables)}.
+For Windows, the same variables are set but in your \href{https://www.java.com/en/download/help/path.xml}{Control Panel (Environment Variables)}.  First, add to your existing PATH variable or create a new PATH variable with: \verb!\Users\***\Desktop\PmagPy\programs!, and \verb!\Users\***\PmagPy\Desktop\programs\conversion_scripts!.  Next, add to your existing PYTHONPATH variable or create a new PYTHONPATH variable with \verb!\Users\***\Desktop\PmagPy!.
 
 
 

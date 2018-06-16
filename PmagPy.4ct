@@ -13,8 +13,8 @@
 \doTocEntry\tocsection{1.3}{\csname a:TocLink\endcsname{1}{x1-120001.3}{QQ2-1-12}{Developer install of PmagPy}}{20}\relax 
 \doTocEntry\tocsubsection{1.3.1}{\csname a:TocLink\endcsname{1}{x1-130001.3.1}{QQ2-1-13}{Developer install for Windows}}{20}\relax 
 \doTocEntry\tocsubsection{1.3.2}{\csname a:TocLink\endcsname{1}{x1-140001.3.2}{QQ2-1-14}{Developer install for OS X/Linux}}{27}\relax 
-\doTocEntry\tocsubsection{1.3.3}{\csname a:TocLink\endcsname{1}{x1-150001.3.3}{QQ2-1-15}{Details of setting your PATH}}{31}\relax 
-\doTocEntry\tocsection{1.4}{\csname a:TocLink\endcsname{1}{x1-160001.4}{QQ2-1-16}{Next steps}}{34}\relax 
+\doTocEntry\tocsubsection{1.3.3}{\csname a:TocLink\endcsname{1}{x1-150001.3.3}{QQ2-1-15}{Details of setting your PATH}}{30}\relax 
+\doTocEntry\tocsection{1.4}{\csname a:TocLink\endcsname{1}{x1-160001.4}{QQ2-1-16}{Next steps}}{33}\relax 
 \doTocEntry\tocchapter{2}{\csname a:TocLink\endcsname{1}{x1-170002}{QQ2-1-17}{Pmag GUI Tutorial}}{35}\relax 
 \doTocEntry\tocsection{2.1}{\csname a:TocLink\endcsname{1}{x1-180002.1}{QQ2-1-18}{Converting magnetometer files to MagIC format}}{38}\relax 
 \doTocEntry\tocsection{2.2}{\csname a:TocLink\endcsname{1}{x1-190002.2}{QQ2-1-19}{Optional: Calculate geographic / tilt-corrected direction}}{47}\relax 
