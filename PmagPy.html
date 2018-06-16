@@ -10,7 +10,7 @@
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <!-- xhtml,1,sections+,charset=utf-8,html --> 
 <meta name="src" content="PmagPy.tex" /> 
-<meta name="date" content="2018-05-25 10:44:00" /> 
+<meta name="date" content="2018-06-15 17:31:00" /> 
 <link rel="stylesheet" type="text/css" href="PmagPy.css" /> 
 </head><body 
 >
@@ -46,7 +46,7 @@ href="#x1-1950008" id="QQ2-1-195">Jupyter Notebooks</a></span>
 <br />   <span class="chapterToc" >9 <a 
 href="#x1-1960009" id="QQ2-1-196">Troubleshooting</a></span>
 <br />   <span class="likechapterToc" ><a 
-href="#x1-2020009.5" id="QQ2-1-202">Bibliography</a></span>
+href="#x1-2030009.6" id="QQ2-1-203">Bibliography</a></span>
    </div>
    <h2 class="likechapterHead"><a 
 href="#QQ2-1-1" id="x1-1000">Contents</a></h2> <div class="tableofcontents">
@@ -394,7 +394,9 @@ href="#x1-1990009.3" id="QQ2-1-199">Error loading dlls (windows only)</a></span>
 <br />    <span class="sectionToc" >9.4 <a 
 href="#x1-2000009.4" id="QQ2-1-200">Problems with a specific program</a></span>
 <br />    <span class="sectionToc" >9.5 <a 
-href="#x1-2010009.5" id="QQ2-1-201">Other problems</a></span>
+href="#x1-2010009.5" id="QQ2-1-201">Wrong Python in Jupyter notebook</a></span>
+<br />    <span class="sectionToc" >9.6 <a 
+href="#x1-2020009.6" id="QQ2-1-202">Other problems</a></span>
    </div>
                                                                      
 
@@ -415,7 +417,7 @@ name="PmagPy0x.png" src="EPSFiles/logo.eps"
 <h2 class="titleHead">PmagPy Cookbook</h2>
 <div class="author" ></div><br />
 <div class="date" ><span 
-class="cmr-12">May 25, 2018</span></div>
+class="cmr-12">June 15, 2018</span></div>
                                                                      
 
                                                                      
@@ -446,7 +448,7 @@ Geosyst., 17, doi:10.1002/2016GC006307.</a>
    Lisa Tauxe
    <br />Scripps Institution of Oceanography
    <br />La Jolla, CA 92093
-   <br />May 25, 2018
+   <br />June 15, 2018
    <br /><a 
 href="http://magician.ucsd.edu/" class="url" ><span 
 class="cmtt-10x-x-109">http://magician.ucsd.edu/</span></a></div>
@@ -10461,7 +10463,7 @@ href="https://www.continuum.io/downloads" >Anaconda</a> Python distribution
                                                                      
 </p>
               <div class="verbatim" id="verbatim-198">
-              pip install --upgrade --pre -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
+              pip install --upgrade -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
 </div>
               <!--l. 5549--><p class="nopar" ></p></li></ul>
           </li></ul>
@@ -10541,17 +10543,15 @@ href="#developer_install" >developer˙install</a>, it is possible that you need
 <!--l. 5594--><p class="indent" >   <a name='sec9-2'></a></p><h3 class="sectionHead"><span class="titlemark">9.2   </span> <a 
 href="#QQ2-1-198" id="x1-1980009.2">Problems updating Canopy</a></h3>
 <!--l. 5595--><p class="noindent" >If you are using Canopy, you will need to keep it up to date. Currently, that
-means the version number should be 1.6.1 or higher. In general, you can
-update by opening the Canopy application; it will automatically check
-for updates. However, if you haven&#x2019;t updated for a long time, Canopy
-can get “stuck” in an old version where it can no longer update. If
-that is the case, you will need to fully uninstall and reinstall canopy,
-following the directions on the Enthought site. For a full explanation, see
-<a 
-href="this" support article >https://support.enthought.com/hc/en-us/articles/204469570-Canopy-shows-no-updates-available-reinstalling-from-the-website</a>Enthought
-website. For the full uninstall instructions, see
-<a 
-href="these" directions >https://support.enthought.com/hc/en-us/articles/204469700-Uninstalling-and-resetting-Canopy</a>.
+means the version number should be 1.6.1 or higher. In general, you can update
+by opening the Canopy application; it will automatically check for updates.
+However, if you haven&#x2019;t updated for a long time, Canopy can get “stuck” in an
+old version where it can no longer update. If that is the case, you will need to
+fully uninstall and reinstall canopy, following the directions on the Enthought
+site. For a full explanation, see <a 
+href="https://support.enthought.com/hc/en-us/articles/204469570-Canopy-shows-no-updates-available-reinstalling-from-the-website" >the Enthought website</a>. For the full uninstall
+instructions, see <a 
+href="https://support.enthought.com/hc/en-us/articles/204469700-Uninstalling-and-resetting-Canopy" >these directions</a>.
 </p><!--l. 5597--><p class="noindent" >
 </p>
 <!--l. 5597--><p class="indent" >   <a name='sec9-3'></a></p><h3 class="sectionHead"><span class="titlemark">9.3   </span> <a 
@@ -10609,8 +10609,34 @@ href="#standalone" >standalone  Pmag  GUI</a>
 <!--l. 5611--><p class="noindent" >
 </p>
 <!--l. 5611--><p class="indent" >   <a name='sec9-5'></a></p><h3 class="sectionHead"><span class="titlemark">9.5   </span> <a 
-href="#QQ2-1-201" id="x1-2010009.5">Other problems</a></h3>
-<!--l. 5611--><p class="noindent" >Report a problem not listed above on <a 
+href="#QQ2-1-201" id="x1-2010009.5">Wrong Python in Jupyter notebook</a></h3>
+<!--l. 5613--><p class="noindent" >If your jupyter notebook is calling the wrong version of python (i.e., using the
+OSX verion of python instead of Anaconda python), do this:
+                                                                     
+
+                                                                     
+</p>
+   <div class="verbatim" id="verbatim-206">
+    unlink /usr/local/bin/python
+ <br />    ln -s /Users/USERNAME/anaconda3/bin/python /usr/local/bin/python
+ <br />
+</div>
+<!--l. 5619--><p class="nopar" > and this:
+                                                                     
+
+                                                                     
+</p>
+   <div class="verbatim" id="verbatim-207">
+    unlink /usr/local/bin/pythonw
+ <br />    ln -s /Users/USERNAME/anaconda3/bin/pythonw /usr/local/bin/pythonw
+</div>
+<!--l. 5625--><p class="nopar" >
+</p><!--l. 5627--><p class="indent" >   where USERNAME is your username.
+</p><!--l. 5629--><p class="noindent" >
+</p>
+<!--l. 5629--><p class="indent" >   <a name='sec9-6'></a></p><h3 class="sectionHead"><span class="titlemark">9.6   </span> <a 
+href="#QQ2-1-202" id="x1-2020009.6">Other problems</a></h3>
+<!--l. 5629--><p class="noindent" >Report a problem not listed above on <a 
 href="https://github.com/PmagPy/PmagPy/issues/new" >Github</a>, or e-mail <a 
 href="mailto:ltauxe@ucsd.edu" >ltauxe@ucsd.edu</a>. Please
 include the following information: 1) the version of PmagPy that you are using,
@@ -10621,7 +10647,7 @@ is giving trouble, if relevant.
                                                                      
 </p>
    <h2 class="likechapterHead"><a 
-href="#QQ2-1-202" id="x1-2020009.5">Bibliography</a></h2>
+href="#QQ2-1-203" id="x1-2030009.6">Bibliography</a></h2>
   <div class="thebibliography">
   <p class="bibitem" ><span class="biblabel">
 <a 

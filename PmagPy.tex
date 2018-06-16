@@ -5545,7 +5545,7 @@ ImportError: No module named wx
 
 To correct this error, simply execute at the command line:
 \begin{verbatim}
-pip install --upgrade --pre -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
+pip install --upgrade -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
 \end{verbatim}
 \end{itemize}
 \end{itemize}
@@ -5592,7 +5592,7 @@ which will show you all of your pip-installed packages.  If you don't see pmagpy
 \end{enumerate}
 
 \section{Problems updating Canopy}
-If you are using Canopy, you will need to keep it up to date.  Currently, that means the version number should be 1.6.1 or higher.  In general, you can update by opening the Canopy application; it will automatically check for updates.  However, if you haven't updated for a long time, Canopy can get ``stuck'' in an old version where it can no longer update.  If that is the case, you will need to fully uninstall and reinstall canopy, following the directions on the Enthought site.  For a full explanation, see \href{this support article}{https://support.enthought.com/hc/en-us/articles/204469570-Canopy-shows-no-updates-available-reinstalling-from-the-website}{Enthought website}.  For the full uninstall instructions, see \href{these directions}{https://support.enthought.com/hc/en-us/articles/204469700-Uninstalling-and-resetting-Canopy}.
+If you are using Canopy, you will need to keep it up to date.  Currently, that means the version number should be 1.6.1 or higher.  In general, you can update by opening the Canopy application; it will automatically check for updates.  However, if you haven't updated for a long time, Canopy can get ``stuck'' in an old version where it can no longer update.  If that is the case, you will need to fully uninstall and reinstall canopy, following the directions on the Enthought site.  For a full explanation, see \href{https://support.enthought.com/hc/en-us/articles/204469570-Canopy-shows-no-updates-available-reinstalling-from-the-website}{the Enthought website}.  For the full uninstall instructions, see \href{https://support.enthought.com/hc/en-us/articles/204469700-Uninstalling-and-resetting-Canopy}{these directions}.
 
 \section{Error loading dlls (windows only)}
 Some of the modules used in PmagPy have dependencies that are not called directly.  If you are missing one of those dependencies, the programs may fail in odd ways.  In general, it is worthwhile to open Canopy, go into the package manager, and update all packages.  More specifically, if you see an error message like this: \begin{verbatim}ImportError: DLL load failed: The specified procedure could not be found  \end{verbatim} you may be missing the MKL package.  Open Canopy, go to package manager, and select ``Available packages".  Scroll down to MKL, and install it.  This should fix the problem!  Note that windows users who are having trouble opening one of the GUIs should try this solution whether or not they actually see this error message.
@@ -5607,6 +5607,24 @@ Some of the modules used in PmagPy have dependencies that are not called directl
   \item Alternative: open the Canopy application, and navigate to the Canopy Package Manager.  Go to ``Installed packages'' and find matplotlib.  Click matplotlib's ``more info'' button.  The click ``show'' to see all versions of the package.  Select matplotlib 1.4.3-7 and install.  This will fix the segmentation error, however, it may cause the Thellier GUI menubar to behave oddly.  For this reason, we recommend the first solution (above).
   \end{itemize}
 \end{enumerate}
+
+\section{Wrong Python in Jupyter notebook}
+
+If your jupyter notebook is calling the wrong version of python (i.e., using the OSX verion of python instead of Anaconda python), do this:
+
+\begin{verbatim}
+    unlink /usr/local/bin/python
+    ln -s /Users/USERNAME/anaconda3/bin/python /usr/local/bin/python
+
+\end{verbatim}
+    and this:
+
+\begin{verbatim}
+    unlink /usr/local/bin/pythonw
+    ln -s /Users/USERNAME/anaconda3/bin/pythonw /usr/local/bin/pythonw
+\end{verbatim}
+
+where USERNAME is your username.
 
 \section{Other problems}Report a problem not listed above on \href{https://github.com/PmagPy/PmagPy/issues/new}{Github}, or e-mail \href{mailto:ltauxe@ucsd.edu}{ltauxe@ucsd.edu}. Please include the following information: 1) the version of PmagPy that you are using, 2) your operating system, 3) any error messages that you got, 4) the datafile that is giving trouble, if relevant.
 

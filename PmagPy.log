@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  25 MAY 2018 10:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  15 JUN 2018 17:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1958,20 +1958,22 @@ l#anaconda_troubleshooting
  --- Customlinks says: Link to section 9.4: PmagPy.html#sec9-4
 [377]
  --- Customlinks says: Link to section 9.5: PmagPy.html#sec9-5
-[378] [379
+[378] [379]
+ --- Customlinks says: Link to section 9.6: PmagPy.html#sec9-6
+[380] [381
 
-] [380] [381] [382] [383]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5834.
- [384]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 5834.
+] [382] [383] [384] [385]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5852.
+ [386]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 5852.
  (./PmagPy.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 5834.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 5834.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 5852.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 5852.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5834.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5852.
  )
 (\end occurred inside a group at level 3)
 
@@ -1980,12 +1982,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5834.
 ### simple group (level 1) entered at line 42 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10685 strings out of 493090
- 149410 string characters out of 6134868
- 346257 words of memory out of 5000000
- 13839 multiletter control sequences out of 15000+600000
+ 10688 strings out of 493090
+ 149454 string characters out of 6134868
+ 346263 words of memory out of 5000000
+ 13842 multiletter control sequences out of 15000+600000
  15547 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,9n,32p,135885b,2693s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on PmagPy.dvi (393 pages, 1038736 bytes).
+Output written on PmagPy.dvi (395 pages, 1041020 bytes).
