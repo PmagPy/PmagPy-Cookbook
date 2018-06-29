@@ -82,10 +82,10 @@ doi:10.1002/2016GC006307.}
 You have three options for downloading and using PmagPy.
 
 \begin{itemize}
-  \item If you only want to use the GUIs, you can download them as  \href{#standalone}{standalone programs}.  The standalone install doesn't require that you have Python, but is more limited than the full PmagPy install.
+  \item If you only want to use the graphical user interfaces (GUIs), you can download them as  \href{#standalone}{standalone programs}.  The standalone install doesn't require that you have Python, but is more limited than the full PmagPy install.
 
   \item If you want access to all of PmagPy's functionality, you must first install the recommended version of
-    \href{#getting_python}{ Python}.  Then  \href{#pip_install}{use the pip utility} to download and install the {\bf PmagPy} function library and the {\bf PmagPy} command line programs or manually download and install by setting environment variables yourself.
+    \href{#getting_python}{ Python}.  Then  \href{#pip_install}{use the pip utility} to download and install the {\bf PmagPy} function library and the {\bf PmagPy} command line programs.
 
    \item If you want to actively participate in developing and modifying {\bf PmagPy}, you should do a \href{#developer_install}{developer install}.
 
@@ -94,25 +94,21 @@ You have three options for downloading and using PmagPy.
 
 If you do not need the full PmagPy functionality, and you only want to use Pmag GUI, MagIC GUI, Thellier GUI, and Demag GUI, there is now a standalone download for you.  You won't need to install Python for this.
 
-\noindent Follow the download instructions in the provided links, and then you can skip the ``Full install'' section and go straight to using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI}.  The standalone versions of these applications are still in development; please report problems to the PmagPy team by creating \href{https://github.com/PmagPy/PmagPy/issues/}{an issue on Github}.
+\noindent Follow the download instructions in the provided links, and then you can skip the ``Full install'' section and go straight to using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI}.  The standalone versions of these applications are still in development; please report problems to the PmagPy team by creating \href{https://github.com/PmagPy/PmagPy/issues/}{an issue on Github}.  Note that these standalone programs can be slow to boot up: please be patient!
 
 \subsection{OSX Standalone download}
 
-To get started, download the zip file and put the resulting folder on your desktop. Inside the PmagPy-Standalone folder you will have one folder each for Pmag GUI and MagIC GUI. Open the appropriate folder and double click the icon (depending on your security settings, you may have to right click the icon and then select ``ok'' the first time you open it).
-
-\noindent You will find the latest stable release at: \href{https://github.com/PmagPy/PmagPy-Standalone-OSX/releases/latest}{https://github.com/PmagPy/PmagPy-Standalone-OSX/releases/latest}
+\noindent You will find the latest OS X standalone download here: \href{https://github.com/PmagPy/PmagPy-Standalone-OSX/releases/latest}{https://github.com/PmagPy/PmagPy-Standalone-OSX/releases/latest}
 
 \subsection{Windows Standalone download}
 
-Get started by downloading the zip file (see links below) and put the resulting folder wherever you wish. You will need to “extract all” files. Inside the PmagPy-Standalone folder you will find icons for Pmag GUI and MagIC GUI. Double click the program you wish to use and you should be able to get started.
-
-\noindent You will find the latest stable release at: \href{https://github.com/PmagPy/PmagPy-Standalone-Windows/releases/latest}{https://github.com/PmagPy/PmagPy-Standalone-Windows/releases/latest}
+\noindent You will find the latest Windows standalone download here: \href{https://github.com/PmagPy/PmagPy-Standalone-Windows/releases/latest}{https://github.com/PmagPy/PmagPy-Standalone-Windows/releases/latest}
 
 \subsection{Linux Standalone download}
 
-This binary has only been tested on a Ubuntu 14.04 (Trusty) distribution and might experience problems on other distributions. You can simply clone the standalone repository or download and unzip. The GUIs should run when you double click the executable, but will take time to start up (anywhere from 5 to 30 seconds) please be patient.
+This binary has only been tested on a Ubuntu 14.04 (Trusty) distribution and might be buggy on other distributions.
 
-\noindent You will find the latest stable release at: \href{https://github.com/PmagPy/PmagPy-Standalone-Linux/releases/latest}{https://github.com/PmagPy/PmagPy-Standalone-Linux/releases/latest}
+\noindent You will find the latest Linux standalone download: \href{https://github.com/PmagPy/PmagPy-Standalone-Linux/releases/latest}{https://github.com/PmagPy/PmagPy-Standalone-Linux/releases/latest}
 
 
 \customlink{full_install}
@@ -121,15 +117,16 @@ This binary has only been tested on a Ubuntu 14.04 (Trusty) distribution and mig
 
 \subsection{Installing Python}
 
-To get the full  use of PmagPy functionality, you will first have to install Python.
+To get the full use of PmagPy functionality, you will first have to install Python.
 
+If you have already installed Canopy Python or Anaconda Python, you can skip this section and go straight to \href{#pip_install}{installing PmagPy}.  If you have a Mac, be aware that your computer comes with a version of Python already installed; but this pre-installed version does NOT have everything you will need to run {\bf PmagPy}, so you will still need to download a scientific Python distribution.
 
    \begin{itemize}
-   \item If you have already installed Canopy Python or Anaconda Python, you can skip this section and go straight to \href{#pip_install}{installing PmagPy}.  If you have a Mac, be aware that your computer comes with a version of Python already installed; but this pre-installed version does NOT have everything you will need to run {\bf PmagPy}, so you will still need to download a scientific Python distribution.
-   \item Download and install \href{https://www.continuum.io/downloads}{Anaconda Python 3}.  We recommend using the Graphical Installer.  Windows users should select ``Add Anaconda to my PATH environment variable'' in Advanced Installation Options (if available).  Otherwise, go ahead stay with the defaults.
-   \item You will need to find your \href{#command_line}{command line}.  This is Terminal for OS X and Command Prompt for Windows.  (Note for Windows users: if you did not add Anaconda Python to your PATH as recommended above, you will open the ``Anaconda Prompt'' instead).
+   \item Download and install \href{https://www.continuum.io/downloads}{Anaconda Python 3}.  Windows users should select ``Add Anaconda to my PATH environment variable'' in Advanced Installation Options (if available).  Otherwise, stick with the defaults.
+   \item Find your \href{#command_line}{command line}.  This is Terminal for OS X and Command Prompt for Windows.  (Note for Windows users: if you did not add Anaconda Python to your PATH as recommended above, you will open the ``Anaconda Prompt'' instead).
 
-   \item You will download a few non-default Python packages.  Open your command line and run the following commands: \begin{verbatim}
+   \item Download a few non-default Python packages.  Open your command line and run the following commands: \begin{verbatim}
+
     conda install future
     pip install scripttest
     pip install --upgrade -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
@@ -137,17 +134,19 @@ To get the full  use of PmagPy functionality, you will first have to install Pyt
 \end{verbatim}
 
    \item If you have trouble running any of the above commands, you may need to preface them with ``sudo'': i.e., \texttt{sudo pip install scripttest}.  You will then be asked for your computer password.
-   \item For Windows users, you may need to provide your full path to pip.  To find this, run these commands: \begin{verbatim}
-            cd \
-            dir pip.exe /s /p \end{verbatim}
+   \item For Windows users, you may need to help your computer to find the pip utility.  To find this, run these commands: \begin{verbatim}
+
+    cd \
+    dir pip.exe /s /p \end{verbatim}
      This should give you the full pip path, for example: \begin{verbatim}
   C:\Users\YOUR_USERNAME\Anaconda3\Scripts\pip.exe
 \end{verbatim}
-     Then you would re-run the pip command using the full path: \begin{verbatim}
+     Then you can re-run the pip command using the full path: \begin{verbatim}
   C:\Users\YOUR_USERNAME\Anaconda3\Scripts\pip.exe install scripttest
   \end{verbatim}
 
    \item To make sure that you have installed Python successfully, type \texttt{python} on your command line.  You should see something like this: \begin{verbatim}
+
 Python 3.6.1 |Anaconda custom (x86_64)| (default, May 11 2017, 13:04:09)
 [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -156,7 +155,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
   \item If you ever need to uninstall Anaconda Python, see the \href{https://docs.anaconda.com/anaconda/install/uninstall}{documentation}.
 
-\item To learn more about Python, click \href{#Python}{here}.
+\item To learn more about using Python, click \href{#Python}{here}.
 
 
   \item Now you are ready to install {\bf PmagPy}!
@@ -178,25 +177,52 @@ Type "help", "copyright", "credits" or "license" for more information.
 %   \item If you run into problems with your installation, you may need to uninstall any previous Python installations.
 %   \end{itemize}
 
- \subsection{Installing PmagPy}
+\subsection{Installing PmagPy}
 
  Here we provide instructions for using pip to install PmagPy from the command line.
 \customlink{pip_install}
-       ``Pip'' is a package manager that comes standard with any modern Python distribution (NB: you will have to update it to the most recent version).  Pip allows you to install and uninstall pmagpy (the package with all the low-level functionality of PmagPy) and pmagpy-cli (which provides the PmagPy command-line-interface and has all the packages you may use to download/upload, visualize, and manipulate data).
-
+       ``Pip'' is a package manager that comes standard with any modern Python distribution.  Pip allows you to install and uninstall pmagpy and pmagpy-cli.  pmagpy provides all the low-level functionality of PmagPy, and pmagpy-cli provides the PmagPy command-line-interface and has all the packages you may use to download/upload, visualize, and manipulate data.
 
   To install using pip:
 
   \begin{itemize}
      \item Find  and open your \href{#command_line}{command line}.
-     \item Update pip and setuptools: type on  the command line: \begin{verbatim}
+     \item Update pip and setuptools: type on  the command line:
+
+\begin{verbatim}
+
   pip install --upgrade pip
-  pip install --upgrade setuptools\end{verbatim}
-     \item Install or update pmagpy, use the command: \begin{verbatim}pip install --upgrade pmagpy --no-deps \end{verbatim}
-     \item Install or update pmagpy-cli, use the command: \begin{verbatim}pip install --upgrade pmagpy-cli --no-deps \end{verbatim}
-     \item To uninstall either, use the command: \texttt{pip uninstall pmagpy} or \texttt{pip uninstall pmagpy-cli}
+  pip install --upgrade setuptools
+\end{verbatim}
+\item Install or update pmagpy, use the command:
+
+\begin{verbatim}
+
+  pip install --upgrade pmagpy --no-deps
+\end{verbatim}
+\item Install or update pmagpy-cli, use the command:
+
+\begin{verbatim}
+
+  pip install --upgrade pmagpy-cli --no-deps
+\end{verbatim}
+\item To uninstall either, use the command:
+
+\begin{verbatim}
+
+  pip uninstall pmagpy
+\end{verbatim}
+  or
+\begin{verbatim}
+  pip uninstall pmagpy-cli
+\end{verbatim}
      \item If you run into trouble, use pip to uninstall both pmagpy and pmagpy-cli, then try again to install first pmagpy and then pmagpy-cli.
-     \item If you are getting weird install errors, try uninstalling and then force reinstalling with this: \texttt{pip install pmagpy --upgrade --no-deps --force-reinstall --no-cache-dir}
+     \item If you are getting weird install errors, try uninstalling and then force reinstalling with this:
+
+\begin{verbatim}
+
+  pip install pmagpy --upgrade --no-deps --force-reinstall --no-cache-dir
+\end{verbatim}
    \end{itemize}
 
    %
@@ -215,58 +241,90 @@ Type "help", "copyright", "credits" or "license" for more information.
     \begin{itemize}
 \item Testing your installation:
 
-To make sure everything is working, return to your \href{#command_line}{command line}. OSX users, run the command \texttt{eqarea.py -h}.      Windows users: you will need to use \texttt{eqarea -h}  In fact, you will drop the ``.py'' anytime you are calling a command-line program.
+  To make sure everything is working, return to your \href{#command_line}{command line}. OSX users, run the command
+
+\begin{verbatim}
+  eqarea.py -h
+\end{verbatim}
+
+  Windows users: you will need to use
+
+\begin{verbatim}
+  eqarea -h
+\end{verbatim}
+
+  (In fact, you will drop the ``.py'' anytime you are calling a command-line program.)
 
 If you do not see the help message, check the \href{#trouble}{Trouble Shooting} section. If you don't find a solution there, please report the error message and  the Python distribution you are using, including the version number, on \href{https://github.com/PmagPy/PmagPy/issues}{the PmagPy Github page}.
 
-Next, make sure the GUIs are working.
+Next, make sure the GUIs are working on the command line.
 
-For Windows users: \texttt{pmag_gui}
+For Windows users:
 
-For Mac users with Anaconda Python: \texttt{pmag_gui_anaconda}.
+\begin{verbatim}
+  pmag_gui
+\end{verbatim}
 
-For Mac users with a different Python: \texttt{pmag_gui.py}
+For Mac users with Anaconda Python:
+
+\begin{verbatim}
+  pmag_gui_anaconda
+\end{verbatim}
+
+For Mac users with a different Python:
+
+\begin{verbatim}
+  pmag_gui.py
+\end{verbatim}
 
 If you don't see the Pmag GUI window, make sure you have followed all the install directions correctly, and check the \href{#trouble}{Trouble Shooting} section.  If you are stumped, please create a \href{https://github.com/PmagPy/PmagPy/issues}{Github issue}.
 
 \item Accessing example data files:
 
    There are many data files used in the examples of programs and for use with the textbook  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3.html}{Essentials of Paleomagnetism}.     You may want to copy  the data files to your Desktop or another convenient location.
-   To do this, navigate on the command line to your destination folder (for help, see \href{#file_system}{this section}).  Then, use the command: \begin{verbatim}move_data_files.py -d .\end{verbatim} This will copy all of the PmagPy example files to your current directory (represented by ``.'').  NB: If you have a developer install, you can simply navigate to PmagPy/data_files, and move\_data\_files.py will not be needed.
+   To do this, navigate on the command line to your desired destination folder (for help, see \href{#file_system}{this section}).  Then, use the command:
+
+\begin{verbatim}
+move_data_files.py -d .
+\end{verbatim}
+
+This will copy all of the PmagPy example files to your current directory (represented by ``.'').  NB: If you have a developer install, you can simply navigate to PmagPy/data_files, and move\_data\_files.py will not be needed.
 
 \customlink{hires}
 \item Installing the Etopo20 package for use with Basemap:
 
-To install the Etopo20 package, see \href{#install_etopo.py}{install\_etopo.py}.
+\begin{verbatim}
+  install_etopo.py
+\end{verbatim}
 
    \end{itemize}
 
 
     \subsection {For Anaconda users on OSX}
-    We have attempted to support both Canopy and Anaconda Python.  However, there are some differences in the way Anaconda Python interacts with the screen. Because of this, Anaconda users will need to use a different command to access the PmagPy GUIs.  All four GUIs -- Pmag GUI, MagIC GUI, Demag GUI, and Thellier GUI -- can be invoked with on a Mac with Anaconda python.  However, instead of calling them in the standard way on the command line:
+    We have attempted to support multiple versions of Python.  However, there are some differences in the way Anaconda Python interacts with the screen. Because of this, Anaconda users will need to use a special command to access the PmagPy GUIs.  All four GUIs -- Pmag GUI, MagIC GUI, Demag GUI, and Thellier GUI -- can be invoked with on a Mac with Anaconda python.  However, instead of calling them in the standard way on the command line:
 
 \begin{verbatim}
-pmag_gui.py
+  pmag_gui.py
 \end{verbatim}
 
 You will use:
 
 \begin{verbatim}
-pmag_gui_anaconda
+  pmag_gui_anaconda
 \end{verbatim}
 
 If you try to use the first syntax, you will see an error message like this:
 
 \begin{verbatim}
-This program needs access to the screen.
-Please run with a Framework build of python, and only when you are
-logged in on the main display of your Mac.
+  This program needs access to the screen.
+  Please run with a Framework build of python, and only when you are
+  logged in on the main display of your Mac.
 \end{verbatim}
 
 \noindent Windows Anaconda users still invoke the GUIs without this trick:
 
 \begin{verbatim}
-pmag_gui
+  pmag_gui
 \end{verbatim}
 
 %\noindent Also, Anaconda users may need to \href{#anaconda_troubleshooting}{install wxPython}.
@@ -282,11 +340,9 @@ If you're wondering whether you should do a \href{#pip_install}{pip install} or 
 
 Check out our guidelines on \href{https://github.com/PmagPy/PmagPy/blob/master/CONTRIBUTING.md}{how to contribute to PmagPy} for guidelines of all sorts, including how to raise issues, request features, and make pull requests.
 
-If you want to contribute to {\bf PmagPy} or modify {\bf PmagPy} programs for your own use, you should do a developer install, otherwise go with the regular \href{#pip_install}{pip install}.  The developer install follows these steps:
+If you want to contribute to {\bf PmagPy} or modify {\bf PmagPy} programs for your own use, you should do a developer install, otherwise go with the regular \href{#pip_install}{pip install}.
 
 \subsection{Developer install for Windows}
-
-For Windows users:
 
 \begin{enumerate}
 
@@ -295,28 +351,39 @@ For Windows users:
 
 \item Open your command prompt \href{http://www.thewindowsclub.com/how-to-run-command-prompt-as-an-administrator}{as an admin} (right click on the Command Prompt icon and select ``Run as administrator'').
 
-\item Navigate to the directory where you want to put the PmagPy folder, then run:\begin{verbatim}
+\item Navigate to the directory where you want to put the PmagPy folder, then run:
+
+\begin{verbatim}
+
   git clone https://github.com/PmagPy/PmagPy.git
 \end{verbatim}
 
-\item You should now have a full local copy of the PmagPy repository.  Change directories into PmagPy:\begin{verbatim}
+\item You should now have a full local copy of the PmagPy repository.  Change directories into PmagPy:
+
+\begin{verbatim}
+
   cd PmagPy
 \end{verbatim}
 
-\item Next, you need to add PmagPy to your PATH so that the PmagPy programs can be called from any directory. Try running: \begin{verbatim}
+\item Next, you need to add PmagPy to your PATH so that the PmagPy programs can be called from any directory. Try running:
+
+\begin{verbatim}
+
   python dev_setup.py install
 \end{verbatim}
 
 \item  If you see an error message, that means that you will also need to specify the location of your Python installation.  To get your full path to python, you can run the following two commands (exactly as written!):
+
 \begin{verbatim}
-    cd \
-    dir python.exe /s /p
+
+  cd \
+  dir python.exe /s /p
 \end{verbatim}
 
 This can take a while, so be patient.  You should get a result that looks something like this:
 
 \begin{verbatim}
-    C:\Users\USERNAME\AppData\Local\Continuum\Anaconda3
+  C:\Users\USERNAME\AppData\Local\Continuum\Anaconda3
 \end{verbatim}
 
 Once you've done that, navigate back into your PmagPy directory and run dev\_setup.py again:
@@ -325,17 +392,15 @@ Once you've done that, navigate back into your PmagPy directory and run dev\_set
     python dev_setup.py install -p path_to_python
 \end{verbatim}
 
-where path_to_python is your specific Python result.
+where path\_to\_python is your specific Python result.
 
-\item Note: dev\_setup.py edits your \$PATH and \$PYTHONPATH variables.  If you want to look at or edit those variables directly, see this information \href{https://www.java.com/en/download/help/path.xml}{about setting your PATH on Windows} and \href{#setting_path}{editing your PATH for PmagPy}.
+\item Note: dev\_setup.py edits your \$PATH and \$PYTHONPATH variables.  If you want to look at or edit those variables directly, see this section on \href{#setting_path}{editing your PATH for PmagPy}.
 
-\item After completing the developer install, you will need to restart the Command Prompt.  After restarting, you should be able to use all {\bf PmagPy} functionality as if you had done a full \href{#pip_install}{pip install}.  The only difference is that you will be able to stay up-to-date with {\bf PmagPy} development and make edits in {\bf PmagPy} code which will be immediately available in your system.
+\item After completing the developer install, you will need to restart the Command Prompt.  After restarting, you should be able to use all {\bf PmagPy} functionality.  You will be able to stay up-to-date with {\bf PmagPy} development and make edits in {\bf PmagPy} code which will be immediately available in your system.
 
 \end{enumerate}
 
 \subsection{Developer install for OS X/Linux}
-
-For Mac/Linux users:
 
 \begin{enumerate}
 
@@ -343,15 +408,24 @@ For Mac/Linux users:
 
 \item Open your Terminal
 
-\item Navigate to the directory where you want to put the PmagPy folder, then run:\begin{verbatim}
+\item Navigate to the directory where you want to put the PmagPy folder, then run:
+
+\begin{verbatim}
+
   git clone https://github.com/PmagPy/PmagPy.git
 \end{verbatim}
 
-\item You should now have a full local copy of the PmagPy repository.  Change directories into PmagPy:\begin{verbatim}
+\item You should now have a full local copy of the PmagPy repository.  Change directories into PmagPy:
+
+\begin{verbatim}
+
   cd PmagPy
 \end{verbatim}
 
-\item Next, you need to add PmagPy to your PATH so that the PmagPy programs can be called from any directory. Run: \begin{verbatim}
+\item Next, you need to add PmagPy to your PATH so that the PmagPy programs can be called from any directory. Run:
+
+\begin{verbatim}
+
   python dev_setup.py install
 \end{verbatim} If you have problems with the install, run \verb!python dev_setup.py -h! for more information.  You can also set your \href{#setting_path}{PATH manually} if dev\_setup.py fails.
 
@@ -380,7 +454,15 @@ where *** is your username.  (Of course, these lines will depend on exactly wher
     export PATH=/Users/***/PmagPy/programs
 \end{verbatim}, and so on.)
 
-For Windows, the same variables are set but in your \href{https://www.java.com/en/download/help/path.xml}{Control Panel (Environment Variables)}.  First, add to your existing PATH variable or create a new PATH variable with: \verb!\Users\***\Desktop\PmagPy\programs!, and \verb!\Users\***\PmagPy\Desktop\programs\conversion_scripts!.  Next, add to your existing PYTHONPATH variable or create a new PYTHONPATH variable with \verb!\Users\***\Desktop\PmagPy!.
+For Windows, the same variables are set but in your \href{https://www.java.com/en/download/help/path.xml}{Control Panel (Environment Variables)}.  To do this yourself, you would first add to your existing PATH variable or create a new PATH variable with: \begin{verbatim}
+  \Users\***\Desktop\PmagPy\programs
+\end{verbatim}
+and \begin{verbatim}
+  \Users\***\PmagPy\Desktop\programs\conversion_scripts
+\end{verbatim}
+Next, add to your existing PYTHONPATH variable or create a new PYTHONPATH variable with \begin{verbatim}
+  \Users\***\Desktop\PmagPy
+\end{verbatim}
 
 
 
@@ -428,11 +510,11 @@ Note: {\bf Pmag GUI} is available for use with both 3.0 and 2.5 data.  All new c
 %\includegraphics[width=15cm]{EPSFiles/ProjectDirectory.eps}
 
 
-\item \textbf{copy example files:}  Navigate to the PmagPy datafiles (developer install), or use \textbf{move\_data\_files.py} to move the  datafiles to an accessible location (pip install). Use: \begin{verbatim}
+\item \textbf{copy example files:}  Use \textbf{move\_data\_files.py} to move the  datafiles to an accessible location.  Use: \begin{verbatim}
 
   move_data_files.py -h\end{verbatim} on the command line for help).  In the {\it data\_files } folder you will find a subfolder named {\it Pmag\_GUI}. Copy the contents of the  \href{#Project_Directory}{\it ThisProject} directory  into  your  own \href{#Project_Directory}{Project Directory} folder.
  \item Start Pmag GUI either by typing {\bf pmag\_gui.py} on your \href{#command_line}{command line}, or (if you have the \href{#standalone}{standalone}), by double-clicking the Pmag GUI icon on your Desktop.
- \item Change directories by clicking  on the ``change directory'' button and select your own {\it ThisProject} directory.
+ \item If necessary, change directories by clicking  on the ``change directory'' button and select your own {\it ThisProject} directory.
  \end{enumerate}
 
  \customlink{convert2magic}
@@ -609,7 +691,7 @@ Close the Thellier GUI.
 
 \section{Upload to the database }
 
-To create a MagIC-format file for upload, you first click on the green {\it Create MagIC txt file for upload} button on the main page of {\bf Pmag GUI}. A file will be created in your \href{#Project_Directory}{\it ThisProject} directory.  Now, go to the  \href{http://earthref.org/MAGIC/}{MagIC  interface}.      Click on the `Upload Tool' button and upload your file by  draging and droping the {\it upload}   file onto the  `Drop and drop files here to uypload' window.
+To create a MagIC-format file for upload, you first click on the green {\it Create MagIC txt file for upload} button on the main page of {\bf Pmag GUI}. A file will be created in your \href{#Project_Directory}{\it ThisProject} directory.  Now, go to the  \href{http://earthref.org/MAGIC/}{MagIC  interface}.      Click on the `Upload Tool' button and upload your file by  draging and droping the {\it upload}   file onto the  `Drop and drop files here to upload' window.
 Congratulations. Your data are now in the database under a Private Contribution.  But, they are not yet activated and cannot be until they are at least accepted for publication.  After you have a suitable reference, you can Activate your contribution.  Once you activate an uploaded dataset (only for published papers), it will be publicly available.
 
 \customlink{magic_download}
@@ -5374,7 +5456,7 @@ To get started, you will need to \href{#getting_python}{install Python}.  Then, 
 
 Next, open your \href{#command_line}{command line} (you may need to restart it after installing Python and git) and run the following commands:  \begin{verbatim}
 
-    git clone git@github.com:ltauxe/Python-for-Earth-Science-Students.git
+    git clone https://github.com/ltauxe/Python-for-Earth-Science-Students.git
 
     cd Python-for-Earth-Science-Students
 
