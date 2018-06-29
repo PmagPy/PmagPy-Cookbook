@@ -10,7 +10,7 @@
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <!-- xhtml,1,sections+,charset=utf-8,html --> 
 <meta name="src" content="PmagPy.tex" /> 
-<meta name="date" content="2018-06-29 12:31:00" /> 
+<meta name="date" content="2018-06-29 14:13:00" /> 
 <link rel="stylesheet" type="text/css" href="PmagPy.css" /> 
 </head><body 
 >
@@ -10132,25 +10132,39 @@ follow the install instructions. If you don&#x2019;t know whether you have git
 installed, just type <span class="obeylines-h"><span class="verb"><span 
 class="cmtt-10x-x-109">git</span></span></span> on your command line and see if the help message
 appears.
-</p><!--l. 5457--><p class="indent" >   Next, open your <a 
-href="#command_line" >command line</a> (you may need to restart it after installing
-Python and git) and run the following commands:
+     </p><ol  class="enumerate1" >
+     <li 
+  class="enumerate" id="x1-194002x1"><a 
+href="#getting_python" >Install Python</a>
+     </li>
+     <li 
+  class="enumerate" id="x1-194004x2"><a 
+href="https://git-scm.com/downloads" >Download git</a>
+     </li>
+     <li 
+  class="enumerate" id="x1-194006x3">Open your <a 
+href="#command_line" >command line</a>
+     </li>
+     <li 
+  class="enumerate" id="x1-194008x4">Clone the notebook respoitory
                                                                      
 
                                                                      
-</p>
-   <div class="verbatim" id="verbatim-199">
- <br />    git clone https://github.com/ltauxe/Python-for-Earth-Science-Students.git
- <br />
- <br />    cd Python-for-Earth-Science-Students
- <br />
- <br />    jupyter notebook
+     <div class="verbatim" id="verbatim-199">
+      <br />    git clone https://github.com/ltauxe/Python-for-Earth-Science-Students.git
+      <br />
+      <br />    cd Python-for-Earth-Science-Students
+      <br />
+      <br />    jupyter notebook
 </div>
-<!--l. 5464--><p class="nopar" > This will open a browser window with a list of Notebooks. Click on Lecture 1,
-which overviews the course and teaches you how to run Notebooks. From there,
-you can follow the lectures in order or pick and choose based on your interests.
-Python is a lot of fun - enjoy!
-</p><!--l. 5467--><p class="indent" >   NB: For Anaconda-specific information, see this a <a 
+     <!--l. 5469--><p class="nopar" >
+</p>
+     </li></ol>
+<!--l. 5472--><p class="noindent" >This will open a browser window with a list of Notebooks. Click on Lecture 1, which
+overviews the course and teaches you how to run Notebooks. From there, you can
+follow the lectures in order or pick and choose based on your interests. Python is
+a lot of fun - enjoy!
+</p><!--l. 5474--><p class="indent" >   NB: For Anaconda-specific information, see this a <a 
 href="https://conda.io/docs/_downloads/conda-cheatsheet.pdf" >handy cheat sheet</a> with
 information about how to install and update Python packages, as well as create
 custom Python environments and more.
@@ -10158,18 +10172,18 @@ custom Python environments and more.
 
                                                                      
 </p>
-<!--l. 5469--><p class="indent" >   <a name='ch8'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 8</span><br /><a 
+<!--l. 5476--><p class="indent" >   <a name='ch8'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 8</span><br /><a 
 href="#QQ2-1-195" id="x1-1950008">Jupyter Notebooks</a></h2> <a name='Notebooks'></a>
    Data analysis in Python benefits from an increasingly robust ecosystem of
-packages for scientific computing and plotting. A tool that has gained
-increasingly widespread use for conducting and presenting data analysis is the
-Jupyter notebook. The Jupyter notebook builds on the IPython project which
-began as a way to bring increased interactivity to data analysis in Python (<a 
+packages for scientific computing and plotting. The Jupyter notebook is one
+such tool. It has gained widespread use for conducting and presenting
+data analysis. Jupyter builds on the IPython project which began as a
+way to bring increased interactivity to data analysis in Python (<a 
 href="#Xperez07">Pérez
 &#x0026; Granger</a>, <a 
 href="#Xperez07">2007</a>) and has evolved to include an interactive notebook
-environment that seeks to enable the full trajectory of scientific computing from
-initial analysis and visualization onwards to collaboration and through to
+environment that seeks to enable the full trajectory of scientific computing
+from initial analysis and visualization, to collaboration, and through to
 publication. The project has expanded to enable a reproducible interactive
 computing environment for many other programming languages (such as
 R and Julia) and the language-agnostic parts of its architecture have
@@ -10180,9 +10194,11 @@ notebooks allow for executable code, results, text and graphical output to
 coherently coexist in a single document. With these combined components,
 they are excellent tools both for conducting data analysis and presenting
 results.
-<!--l. 5475--><p class="indent" >   There are two main function libraries that the <span 
-class="cmbx-10x-x-109">PmagPy </span>programs are
-built from: <span 
+<!--l. 5483--><p class="indent" >   In this section, we will explain how to use <span 
+class="cmbx-10x-x-109">PmagPy </span>in the notebook
+environment. There are two main function libraries that the <span 
+class="cmbx-10x-x-109">PmagPy </span>programs
+are built from: <span 
 class="cmbx-10x-x-109">pmag.py </span>and <span 
 class="cmbx-10x-x-109">pmagplotlib.py</span>. The functions within these
 modules can be imported and called upon within a Jupyter notebook
@@ -10193,7 +10209,7 @@ contains functions that replicate and extend functionality that is found
 within the <span 
 class="cmbx-10x-x-109">PmagPy </span>command line programs for use in the notebook
 environment.
-</p><!--l. 5477--><p class="indent" >   To show some of what is possible in terms of data analysis using
+</p><!--l. 5485--><p class="indent" >   To show some of what is possible in terms of data analysis using
 <span 
 class="cmbx-10x-x-109">PmagPy </span>in a notebook environment, we have created example
 notebooks that are available for download from this repository:
@@ -10207,7 +10223,7 @@ class="cmtt-10x-x-109">http://pmagpy.github.io/Example_PmagPy_Notebook.html</spa
 <a 
 href="http://pmagpy.github.io/Additional_PmagPy_Examples.html" class="url" ><span 
 class="cmtt-10x-x-109">http://pmagpy.github.io/Additional_PmagPy_Examples.html</span></a>.
-</p><!--l. 5479--><p class="indent" >   The main example notebook (Example_PmagPy_Notebook.ipynb) combines
+</p><!--l. 5487--><p class="indent" >   The main example notebook (Example_PmagPy_Notebook.ipynb) combines
 data from two different studies for the sake of developing a mean paleomagnetic
 pole from the upper portion of a sequence of volcanics in the North American
 Midcontinent Rift (<a 
@@ -10219,19 +10235,19 @@ class="cmti-10x-x-109"> al.</span></a>, <a
 href="#Xswansonhysell14">2014</a>). The two data files
 used within the notebook can be downloaded from the MagIC database. The
 digital object identifier (doi) search option allows for the data files to be readily
-located as <a 
-href="https://earthref.org/MagIC/doi/10.1139/e74-113/" class="url" ><span 
-class="cmtt-10x-x-109">https://earthref.org/MagIC/doi/10.1139/e74-113/</span></a> and
                                                                      
 
                                                                      
+located as <a 
+href="https://earthref.org/MagIC/doi/10.1139/e74-113/" class="url" ><span 
+class="cmtt-10x-x-109">https://earthref.org/MagIC/doi/10.1139/e74-113/</span></a> and
 <a 
 href="https://earthref.org/MagIC/doi/10.1002/2013GC005180/" class="url" ><span 
 class="cmtt-10x-x-109">https://earthref.org/MagIC/doi/10.1002/2013GC005180/</span></a>. Downloading
 these data files from the database and putting them into folders within a
 local ‘Project Directory&#x2019; allows them to be accessed within the Jupyter
 notebook.
-</p><!--l. 5481--><p class="indent" >   Within the example notebook, these data are unpacked into their respective
+</p><!--l. 5489--><p class="indent" >   Within the example notebook, these data are unpacked into their respective
 MagIC formatted tab delimited data files. The data are then loaded into
 dataframes and filtered using several different criteria (stratigraphic height and
 polarity). Several functions from the <span 
@@ -10253,7 +10269,7 @@ example code. Functions related to paleomagnetic and rock magnetic data
 analysis are shown as examples. The notebook also illustrates some of
 the interactivity that can be built into the notebook utilizing IPython
 widgets.
-</p><!--l. 5483--><p class="indent" >   If you want to to run the example notebook interactively, you&#x2019;ll need to follow
+</p><!--l. 5491--><p class="indent" >   If you want to to run the example notebook interactively, you&#x2019;ll need to follow
 these steps:
      </p><ol  class="enumerate1" >
      <li 
@@ -10269,31 +10285,39 @@ href="https://git-scm.com/downloads" >Download git</a>
 href="#quick_start" >Install PmagPy</a> (pip install or developer install)
      </li>
      <li 
-  class="enumerate" id="x1-195008x4">Clone the notebook repository
+  class="enumerate" id="x1-195008x4">Open your <a 
+href="#command_line" >command line</a>
+     </li>
+     <li 
+  class="enumerate" id="x1-195010x5">Clone the notebook repository
                                                                      
 
                                                                      
      <div class="verbatim" id="verbatim-200">
       <br />  git clone https://github.com/PmagPy/2016_Tauxe-et-al_PmagPy_Notebooks
+      <br />
       <br />  cd 2016_Tauxe-et-al_PmagPy_Notebooks
+      <br />
       <br />  jupyter notebook
 </div>
-     <!--l. 5495--><p class="nopar" ></p></li></ol>
-<!--l. 5498--><p class="indent" >   This will open up a local IPython server in your default web browser. Click
+     <!--l. 5506--><p class="nopar" ></p></li></ol>
+<!--l. 5509--><p class="indent" >   This will open up a local IPython server in your default web browser. Click
 on <span 
-class="cmti-10x-x-109">Example˙PmagPy˙notebook.ipynb </span>to open and edit the main example
+class="cmti-10x-x-109">Example</span><span 
+class="cmti-10x-x-109">_PmagPy</span><span 
+class="cmti-10x-x-109">_notebook.ipynb </span>to open and edit the main example
 notebook. You will see something like this:
-</p><!--l. 5500--><p class="indent" >   <img 
+</p><!--l. 5511--><p class="indent" >   <img 
 src="PmagPy110x.png" alt="PIC" class="graphics" width="426.79134pt" height="130.44284pt"  /><!--tex4ht:graphics  
 name="PmagPy110x.png" src="EPSFiles/notebook.eps"  
 -->
-</p><!--l. 5502--><p class="indent" >   Notebooks are constructed as a series of ‘cells&#x2019; which can be text or code. To
+</p><!--l. 5513--><p class="indent" >   Notebooks are constructed as a series of ‘cells&#x2019; which can be text or code. To
 view the ‘source&#x2019; of a text cell, just click on it. To render it, click on the ‘run&#x2019;
 button (sideways triangle on the toolbar). Similarly, to run the code in a code
 cell, click on the cell and then the ‘run&#x2019; button (or use the shift+enter short cut).
 To execute the entire notebook, click on the ‘Cell&#x2019; button and choose &#x2019;Run
 All&#x2019;.
-</p><!--l. 5506--><p class="indent" >   <a name='notebook_start'></a> Now you are ready to look at some data. In the code block under the
+</p><!--l. 5517--><p class="indent" >   <a name='notebook_start'></a> Now you are ready to look at some data. In the code block under the
 heading ‘Reading data from MagIC format results files&#x2019;, data are read in from a
 file <a 
 href="#magic_download" >downloaded</a> and unpacked from the MagIC database. The notebook shows
@@ -10303,11 +10327,11 @@ equal area projection:
                                                                      
 
                                                                      
-</p><!--l. 5509--><p class="indent" >   <img 
+</p><!--l. 5520--><p class="indent" >   <img 
 src="PmagPy111x.png" alt="PIC" class="graphics" width="426.79134pt" height="279.79002pt"  /><!--tex4ht:graphics  
 name="PmagPy111x.png" src="EPSFiles/SnakeRiver.eps"  
 -->
-</p><!--l. 5511--><p class="indent" >   There are several other tricks shown off in the notebook, which should be
+</p><!--l. 5522--><p class="indent" >   There are several other tricks shown off in the notebook, which should be
 enough to get you started using <span 
 class="cmbx-10x-x-109">ipmag </span>in a Python notebook environment.
 Conducting data analysis using <span 
@@ -10315,7 +10339,7 @@ class="cmbx-10x-x-109">PmagPy </span>in a notebook allows for the
 underlying code of statistical tests to be available and for the decisions
 made in the specific implementation of such tests to be transparently
 presented.
-</p><!--l. 5513--><p class="indent" >   Although there is much much more to do in Python, this documentation
+</p><!--l. 5524--><p class="indent" >   Although there is much much more to do in Python, this documentation
 is aimed at getting and using <span 
 class="cmbx-10x-x-109">PmagPy</span>, so that&#x2019;s it for this chapter.
 Congratulations if you made it to the end!
@@ -10323,11 +10347,11 @@ Congratulations if you made it to the end!
 
                                                                      
 </p>
-<!--l. 5517--><p class="indent" >   <a name='ch9'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 9</span><br /><a 
+<!--l. 5528--><p class="indent" >   <a name='ch9'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 9</span><br /><a 
 href="#QQ2-1-196" id="x1-1960009">Troubleshooting</a></h2> <a name='trouble'></a>
-<!--l. 5521--><p class="noindent" ><a name='sec9-1'></a></p><h3 class="sectionHead"><span class="titlemark">9.1   </span> <a 
+<!--l. 5532--><p class="noindent" ><a name='sec9-1'></a></p><h3 class="sectionHead"><span class="titlemark">9.1   </span> <a 
 href="#QQ2-1-197" id="x1-1970009.1">Problems with installing Python or PmagPy</a></h3>
-<!--l. 5523--><p class="noindent" >
+<!--l. 5534--><p class="noindent" >
      </p><ol  class="enumerate1" >
      <li 
   class="enumerate" id="x1-197002x1">Nothing works as advertised!
@@ -10342,7 +10366,7 @@ class="cmtt-10x-x-109">python </span>You should see something like
      this:
           <ul class="itemize1">
           <li class="itemize">For Mac users:
-          <!--l. 5555--><p class="noindent" >When you try to run eqarea.py -h to test your installation, you
+          <!--l. 5566--><p class="noindent" >When you try to run eqarea.py -h to test your installation, you
           get this error message:
                                                                      
 
@@ -10351,8 +10375,8 @@ class="cmtt-10x-x-109">python </span>You should see something like
           <div class="verbatim" id="verbatim-201">
            -bash: eqarea.py: command not found
 </div>
-          <!--l. 5558--><p class="nopar" >
-          </p><!--l. 5560--><p class="noindent" >This probably means that you have not correctly installed PmagPy.
+          <!--l. 5569--><p class="nopar" >
+          </p><!--l. 5571--><p class="noindent" >This probably means that you have not correctly installed PmagPy.
           On your command line, try:
                                                                      
 
@@ -10361,8 +10385,8 @@ class="cmtt-10x-x-109">python </span>You should see something like
           <div class="verbatim" id="verbatim-202">
           pip list
 </div>
-          <!--l. 5564--><p class="nopar" >
-          </p><!--l. 5566--><p class="noindent" >You should see both pmagpy-(version˙number) and
+          <!--l. 5575--><p class="nopar" >
+          </p><!--l. 5577--><p class="noindent" >You should see both pmagpy-(version˙number) and
           pmagpy-cli-(version˙number) on that list. If you don&#x2019;t see them, go
           ahead and reinstall:
                                                                      
@@ -10373,8 +10397,8 @@ class="cmtt-10x-x-109">python </span>You should see something like
           pip install --upgrade --force-reinstall --no-deps pmagpy
            <br />pip install --upgrade --force-reinstall --no-deps pmagpy-cli
 </div>
-          <!--l. 5571--><p class="nopar" >
-          </p><!--l. 5573--><p class="noindent" >Second, if you are trying to get a developer install to work,
+          <!--l. 5582--><p class="nopar" >
+          </p><!--l. 5584--><p class="noindent" >Second, if you are trying to get a developer install to work,
           you can test if your PATH has been properly set with this
           command:
                                                                      
@@ -10385,8 +10409,8 @@ class="cmtt-10x-x-109">python </span>You should see something like
            <br />  echo $PATH
            <br />
 </div>
-          <!--l. 5577--><p class="nopar" >
-          </p><!--l. 5579--><p class="noindent" >If you don&#x2019;t see PmagPy, PmagPy/programs, and
+          <!--l. 5588--><p class="nopar" >
+          </p><!--l. 5590--><p class="noindent" >If you don&#x2019;t see PmagPy, PmagPy/programs, and
           PmagPy/programs/conversion˙scripts somewhere in the output, you
           have not successfully completed a developer install. If it isn&#x2019;t set, try
           running:
@@ -10398,9 +10422,9 @@ class="cmtt-10x-x-109">python </span>You should see something like
            <br />  python dev_setup.py -h
            <br />
 </div>
-          <!--l. 5583--><p class="nopar" >
-          </p><!--l. 5585--><p class="noindent" >for more information.
-          </p><!--l. 5587--><p class="noindent" >If for some reason you need to add PmagPy to your $PATH manually,
+          <!--l. 5594--><p class="nopar" >
+          </p><!--l. 5596--><p class="noindent" >for more information.
+          </p><!--l. 5598--><p class="noindent" >If for some reason you need to add PmagPy to your $PATH manually,
           you can find more general information about setting $PATH <a 
 href="https://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux-unix" >here</a>, and
           specific information about adding <span 
@@ -10416,8 +10440,8 @@ href="#setting_path" >here</a>.
            &#x0022;eqarea.py&#x0022; is not recognized as an internal or external command,
            <br />operable program or batch file.
 </div>
-          <!--l. 5605--><p class="nopar" >
-          </p><!--l. 5607--><p class="noindent" >First, remember that if you have a standard <a 
+          <!--l. 5616--><p class="nopar" >
+          </p><!--l. 5618--><p class="noindent" >First, remember that if you have a standard <a 
 href="#pip_install" >pip install</a>, you need to
           use <span 
 class="cmtt-10x-x-109">eqarea </span>instead of <span 
@@ -10425,7 +10449,7 @@ class="cmtt-10x-x-109">eqarea.py</span>. This is caused by a strange
           Windows quirk, but what you need to know is this: anytime the
           Cookbook gives a command, you&#x2019;ll need to drop the “.py” and all will
           be well.
-          </p><!--l. 5609--><p class="noindent" >If <span 
+          </p><!--l. 5620--><p class="noindent" >If <span 
 class="cmtt-10x-x-109">eqarea -h </span>doesn&#x2019;t work, this probably means that you
           have not correctly installed PmagPy. On your command line,
           try:
@@ -10436,8 +10460,8 @@ class="cmtt-10x-x-109">eqarea -h </span>doesn&#x2019;t work, this probably means
           <div class="verbatim" id="verbatim-207">
           pip list
 </div>
-          <!--l. 5613--><p class="nopar" >
-          </p><!--l. 5615--><p class="noindent" >You should see both pmagpy-(version˙number) and
+          <!--l. 5624--><p class="nopar" >
+          </p><!--l. 5626--><p class="noindent" >You should see both pmagpy-(version˙number) and
           pmagpy-cli-(version˙number) on that list. If you don&#x2019;t see them, go
           ahead and reinstall:
                                                                      
@@ -10448,14 +10472,14 @@ class="cmtt-10x-x-109">eqarea -h </span>doesn&#x2019;t work, this probably means
           pip install --upgrade --force-reinstall --no-cache-dir --no-deps pmagpy
            <br />pip install --upgrade --force-reinstall --no-cache-dir --no-deps pmagpy-cli
 </div>
-          <!--l. 5620--><p class="nopar" >
-          </p><!--l. 5622--><p class="noindent" >Second, if you are trying to get a developer install to work on
+          <!--l. 5631--><p class="nopar" >
+          </p><!--l. 5633--><p class="noindent" >Second, if you are trying to get a developer install to work on
           Windows, and you want to set/check your $PATH manually, see
           <a 
 href="http://www.mathworks.com/matlabcentral/answers/94933-how-do-i-set-my-system-path-under-windows" >Setting your Path in Windows</a>.
 </p>
           </li></ul>
-     <!--l. 5627--><p class="noindent" ><a name='anaconda_troubleshooting'></a>
+     <!--l. 5638--><p class="noindent" ><a name='anaconda_troubleshooting'></a>
      </p></li>
      <li 
   class="enumerate" id="x1-197006x3">I am installing pmagpy into the <a 
@@ -10473,8 +10497,8 @@ href="https://www.continuum.io/downloads" >Anaconda</a> Python distribution
               <div class="verbatim" id="verbatim-209">
               ImportError: No module named wx
 </div>
-              <!--l. 5637--><p class="nopar" >
-              </p><!--l. 5639--><p class="noindent" >To correct this error, simply execute at the command
+              <!--l. 5648--><p class="nopar" >
+              </p><!--l. 5650--><p class="noindent" >To correct this error, simply execute at the command
               line:
                                                                      
 
@@ -10483,7 +10507,7 @@ href="https://www.continuum.io/downloads" >Anaconda</a> Python distribution
               <div class="verbatim" id="verbatim-210">
               pip install --upgrade -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
 </div>
-              <!--l. 5642--><p class="nopar" ></p></li></ul>
+              <!--l. 5653--><p class="nopar" ></p></li></ul>
           </li></ul>
      </li>
      <li 
@@ -10494,7 +10518,7 @@ href="https://www.continuum.io/downloads" >Anaconda</a> Python distribution
      <div class="verbatim" id="verbatim-211">
       -bash: eqarea.py: command not found
 </div>
-     <!--l. 5647--><p class="nopar" >
+     <!--l. 5658--><p class="nopar" >
 </p>
           <ul class="itemize1">
           <li class="itemize">For Mac users with a <a 
@@ -10513,7 +10537,7 @@ href="#developer_install" >developer˙install</a>, it is possible that you need
      pip install --upgrade --force-reinstall --no-cache-dir --no-deps pmagpy
       <br />pip install --upgrade --force-reinstall --no-cache-dir --no-deps pmagpy-cli
 </div>
-     <!--l. 5658--><p class="nopar" > To test that they have installed properly, you can run the command:
+     <!--l. 5669--><p class="nopar" > To test that they have installed properly, you can run the command:
                                                                      
 
                                                                      
@@ -10521,7 +10545,7 @@ href="#developer_install" >developer˙install</a>, it is possible that you need
      <div class="verbatim" id="verbatim-213">
      pip list
 </div>
-     <!--l. 5662--><p class="nopar" > which will show you all of your pip-installed packages. If you don&#x2019;t see
+     <!--l. 5673--><p class="nopar" > which will show you all of your pip-installed packages. If you don&#x2019;t see
      pmagpy and pmagpy-cli, you&#x2019;ll need to install them.
      </p></li>
      <li 
@@ -10542,7 +10566,7 @@ href="#developer_install" >developer˙install</a>, it is possible that you need
       <br />  ValueError: unknown locale: UTF-8
       <br />  
 </div>
-     <!--l. 5678--><p class="nopar" > Mac users can fix this by opening your .bashrc file and adding these
+     <!--l. 5689--><p class="nopar" > Mac users can fix this by opening your .bashrc file and adding these
      lines:
                                                                      
 
@@ -10553,14 +10577,14 @@ href="#developer_install" >developer˙install</a>, it is possible that you need
       <br />  export LANG=en_US.UTF-8
       <br />  
 </div>
-     <!--l. 5683--><p class="nopar" >
+     <!--l. 5694--><p class="nopar" >
 </p>
      </li></ol>
-<!--l. 5687--><p class="noindent" >
+<!--l. 5698--><p class="noindent" >
 </p>
-<!--l. 5687--><p class="indent" >   <a name='sec9-2'></a></p><h3 class="sectionHead"><span class="titlemark">9.2   </span> <a 
+<!--l. 5698--><p class="indent" >   <a name='sec9-2'></a></p><h3 class="sectionHead"><span class="titlemark">9.2   </span> <a 
 href="#QQ2-1-198" id="x1-1980009.2">Problems updating Canopy</a></h3>
-<!--l. 5688--><p class="noindent" >If you are using Canopy, you will need to keep it up to date. Currently, that
+<!--l. 5699--><p class="noindent" >If you are using Canopy, you will need to keep it up to date. Currently, that
 means the version number should be 1.6.1 or higher. In general, you can update
 by opening the Canopy application; it will automatically check for updates.
 However, if you haven&#x2019;t updated for a long time, Canopy can get “stuck” in an
@@ -10570,11 +10594,11 @@ site. For a full explanation, see <a
 href="https://support.enthought.com/hc/en-us/articles/204469570-Canopy-shows-no-updates-available-reinstalling-from-the-website" >the Enthought website</a>. For the full uninstall
 instructions, see <a 
 href="https://support.enthought.com/hc/en-us/articles/204469700-Uninstalling-and-resetting-Canopy" >these directions</a>.
-</p><!--l. 5690--><p class="noindent" >
+</p><!--l. 5701--><p class="noindent" >
 </p>
-<!--l. 5690--><p class="indent" >   <a name='sec9-3'></a></p><h3 class="sectionHead"><span class="titlemark">9.3   </span> <a 
+<!--l. 5701--><p class="indent" >   <a name='sec9-3'></a></p><h3 class="sectionHead"><span class="titlemark">9.3   </span> <a 
 href="#QQ2-1-199" id="x1-1990009.3">Error loading dlls (windows only)</a></h3>
-<!--l. 5691--><p class="noindent" >Some of the modules used in PmagPy have dependencies that are not called
+<!--l. 5702--><p class="noindent" >Some of the modules used in PmagPy have dependencies that are not called
 directly. If you are missing one of those dependencies, the programs may fail in
 odd ways. In general, it is worthwhile to open Canopy, go into the package
 manager, and update all packages. More specifically, if you see an error message
@@ -10586,16 +10610,16 @@ like this:
    <div class="verbatim" id="verbatim-216">
 ImportError: DLL load failed: The specified procedure could not be found  
 </div>
-<!--l. 5691--><p class="nopar" > you may be missing the MKL package. Open Canopy, go to package manager,
+<!--l. 5702--><p class="nopar" > you may be missing the MKL package. Open Canopy, go to package manager,
 and select “Available packages”. Scroll down to MKL, and install it. This should
 fix the problem! Note that windows users who are having trouble opening one of
 the GUIs should try this solution whether or not they actually see this error
 message.
-</p><!--l. 5694--><p class="noindent" >
+</p><!--l. 5705--><p class="noindent" >
 </p>
-<!--l. 5694--><p class="indent" >   <a name='sec9-4'></a></p><h3 class="sectionHead"><span class="titlemark">9.4   </span> <a 
+<!--l. 5705--><p class="indent" >   <a name='sec9-4'></a></p><h3 class="sectionHead"><span class="titlemark">9.4   </span> <a 
 href="#QQ2-1-200" id="x1-2000009.4">Problems with a specific program</a></h3>
-<!--l. 5695--><p class="noindent" >
+<!--l. 5706--><p class="noindent" >
      </p><ol  class="enumerate1" >
      <li 
   class="enumerate" id="x1-200002x1">Thellier auto_interpreter crashes with a Segmentation Fault (on Mac). NB:
@@ -10606,7 +10630,7 @@ href="#QQ2-1-200" id="x1-2000009.4">Problems with a specific program</a></h3>
      <div class="verbatim" id="verbatim-217">
      matplotlib&#x003E;=2.0.
 </div>
-     <!--l. 5696--><p class="nopar" >. </p>
+     <!--l. 5707--><p class="nopar" >. </p>
           <ul class="itemize1">
           <li class="itemize">This error is caused by a version issue with one of PmagPy&#x2019;s
           dependencies,  matplotlib.  There  are  two  ways  to  solve  this
@@ -10624,11 +10648,11 @@ href="#standalone" >standalone  Pmag  GUI</a>
           cause the Thellier GUI menubar to behave oddly. For this reason,
           we recommend the first solution (above).</li></ul>
      </li></ol>
-<!--l. 5704--><p class="noindent" >
+<!--l. 5715--><p class="noindent" >
 </p>
-<!--l. 5704--><p class="indent" >   <a name='sec9-5'></a></p><h3 class="sectionHead"><span class="titlemark">9.5   </span> <a 
+<!--l. 5715--><p class="indent" >   <a name='sec9-5'></a></p><h3 class="sectionHead"><span class="titlemark">9.5   </span> <a 
 href="#QQ2-1-201" id="x1-2010009.5">Wrong Python in Jupyter notebook</a></h3>
-<!--l. 5706--><p class="noindent" >If your jupyter notebook is calling the wrong version of python (i.e., using the
+<!--l. 5717--><p class="noindent" >If your jupyter notebook is calling the wrong version of python (i.e., using the
 OSX verion of python instead of Anaconda python), do this:
                                                                      
 
@@ -10639,7 +10663,7 @@ OSX verion of python instead of Anaconda python), do this:
  <br />    ln -s /Users/USERNAME/anaconda3/bin/python /usr/local/bin/python
  <br />
 </div>
-<!--l. 5712--><p class="nopar" > and this:
+<!--l. 5723--><p class="nopar" > and this:
                                                                      
 
                                                                      
@@ -10648,13 +10672,13 @@ OSX verion of python instead of Anaconda python), do this:
     unlink /usr/local/bin/pythonw
  <br />    ln -s /Users/USERNAME/anaconda3/bin/pythonw /usr/local/bin/pythonw
 </div>
-<!--l. 5718--><p class="nopar" >
-</p><!--l. 5720--><p class="indent" >   where USERNAME is your username.
-</p><!--l. 5722--><p class="noindent" >
+<!--l. 5729--><p class="nopar" >
+</p><!--l. 5731--><p class="indent" >   where USERNAME is your username.
+</p><!--l. 5733--><p class="noindent" >
 </p>
-<!--l. 5722--><p class="indent" >   <a name='sec9-6'></a></p><h3 class="sectionHead"><span class="titlemark">9.6   </span> <a 
+<!--l. 5733--><p class="indent" >   <a name='sec9-6'></a></p><h3 class="sectionHead"><span class="titlemark">9.6   </span> <a 
 href="#QQ2-1-202" id="x1-2020009.6">Other problems</a></h3>
-<!--l. 5722--><p class="noindent" >Report a problem not listed above on <a 
+<!--l. 5733--><p class="noindent" >Report a problem not listed above on <a 
 href="https://github.com/PmagPy/PmagPy/issues/new" >Github</a>, or e-mail <a 
 href="mailto:ltauxe@ucsd.edu" >ltauxe@ucsd.edu</a>. Please
 include the following information: 1) the version of PmagPy that you are using,

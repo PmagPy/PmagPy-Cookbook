@@ -5454,7 +5454,12 @@ There are many resources for learning Python, but Lisa Tauxe's \href{https://git
 
 To get started, you will need to \href{#getting_python}{install Python}.  Then, \href{https://git-scm.com/downloads}{download git} and follow the install instructions.  If you don't know whether you have git installed, just type \verb!git! on your command line and see if the help message appears.
 
-Next, open your \href{#command_line}{command line} (you may need to restart it after installing Python and git) and run the following commands:  \begin{verbatim}
+\begin{enumerate}
+\item \href{#getting_python}{Install Python}
+\item \href{https://git-scm.com/downloads}{Download git}
+\item Open your \href{#command_line}{command line}
+\item Clone the notebook respoitory
+\begin{verbatim}
 
     git clone https://github.com/ltauxe/Python-for-Earth-Science-Students.git
 
@@ -5462,6 +5467,8 @@ Next, open your \href{#command_line}{command line} (you may need to restart it a
 
     jupyter notebook
 \end{verbatim}
+
+\end{enumerate}
 This will open a browser window with a list of Notebooks.  Click on Lecture 1, which overviews the course and teaches you how to run Notebooks.  From there, you can follow the lectures in order or pick and choose based on your interests. Python is a lot of fun - enjoy!
 
 NB: For Anaconda-specific information, see this a \href{https://conda.io/docs/_downloads/conda-cheatsheet.pdf}{handy cheat sheet} with information about how to install and update Python packages, as well as create custom Python environments and more.
@@ -5470,9 +5477,10 @@ NB: For Anaconda-specific information, see this a \href{https://conda.io/docs/_d
 \customlink{Notebooks}
 \label{chap:notebooks}
 
-Data analysis in Python benefits from an increasingly robust ecosystem of packages for scientific computing and plotting. A tool that has gained increasingly widespread use for conducting and presenting data analysis is the Jupyter notebook. The Jupyter notebook builds on the IPython project which began as a way to bring increased interactivity to data analysis in Python \citep{perez07} and has evolved to include an interactive notebook environment that seeks to enable the full trajectory of scientific computing from initial analysis and visualization onwards to collaboration and through to publication. The project has expanded to enable a reproducible interactive computing environment for many other programming languages (such as R and Julia) and the language-agnostic parts of its architecture have recently been rebranded as Project Jupyter (\url{http://jupyter.org}). Jupyter notebooks allow for executable code, results, text and graphical output to coherently coexist in a single document. With these combined components, they are excellent tools both for conducting data analysis and presenting results.
+Data analysis in Python benefits from an increasingly robust ecosystem of packages for scientific computing and plotting. The Jupyter notebook is one such tool.  It has gained widespread use for conducting and presenting data analysis. Jupyter builds on the IPython project which began as a way to bring increased interactivity to data analysis in Python \citep{perez07} and has evolved to include an interactive notebook environment that seeks to enable the full trajectory of scientific computing from initial analysis and visualization, to collaboration, and through to publication. The project has expanded to enable a reproducible interactive computing environment for many other programming languages (such as R and Julia) and the language-agnostic parts of its architecture have recently been rebranded as Project Jupyter (\url{http://jupyter.org}). Jupyter notebooks allow for executable code, results, text and graphical output to coherently coexist in a single document. With these combined components, they are excellent tools both for conducting data analysis and presenting results.
 
-There are two main function libraries that the {\bf PmagPy}  programs are built from: {\bf pmag.py} and {\bf pmagplotlib.py}. The functions within these modules can  be imported and called upon within a Jupyter notebook running Python. In addition to these functions, Nick Swanson-Hysell created a module called {\bf ipmag.py} that is in active development and contains functions that replicate and extend functionality that is found within the {\bf PmagPy}  command line programs for use in the notebook environment.
+
+In this section, we will explain how to use {\bf PmagPy} in the notebook environment.  There are two main function libraries that the {\bf PmagPy}  programs are built from: {\bf pmag.py} and {\bf pmagplotlib.py}. The functions within these modules can  be imported and called upon within a Jupyter notebook running Python. In addition to these functions, Nick Swanson-Hysell created a module called {\bf ipmag.py} that is in active development and contains functions that replicate and extend functionality that is found within the {\bf PmagPy}  command line programs for use in the notebook environment.
 
 To show some of what is possible in terms of data analysis using {\bf PmagPy} in a notebook environment, we have created example notebooks that are available for download from this repository: \url{https://github.com/PmagPy/2016_Tauxe-et-al_PmagPy_Notebooks}. These notebooks can also be viewed as static webpages here: \url{http://pmagpy.github.io/Example_PmagPy_Notebook.html} and \url{http://pmagpy.github.io/Additional_PmagPy_Examples.html}.
 
@@ -5486,16 +5494,19 @@ If you want to to run the example notebook interactively, you'll need to follow 
 \item \href{#getting_python}{Install Python}
 \item \href{https://git-scm.com/downloads}{Download git}
 \item \href{#quick_start}{Install PmagPy} (pip install or developer install)
+\item Open your \href{#command_line}{command line}
 \item Clone the notebook repository
 \begin{verbatim}
 
   git clone https://github.com/PmagPy/2016_Tauxe-et-al_PmagPy_Notebooks
+
   cd 2016_Tauxe-et-al_PmagPy_Notebooks
+
   jupyter notebook
 \end{verbatim}
 \end{enumerate}
 
-This will open up a local IPython server in your default web browser. Click on \textit{Example_PmagPy_notebook.ipynb} to open and edit the main example notebook. You will see something like this:
+This will open up a local IPython server in your default web browser. Click on \textit{Example\_PmagPy\_notebook.ipynb} to open and edit the main example notebook. You will see something like this:
 
 \includegraphics[width=15cm]{EPSFiles/notebook.eps}
 
