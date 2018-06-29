@@ -988,7 +988,7 @@ If you are not using a Unix-like computer (*NIX), you may never have encountered
 
   \includegraphics[width=15cm]{EPSFiles/terminal.eps}
 
-Under the Windows operating system, you can find your command line by searching for the ``cmd'' application. You'll use this if you are using the \href{#full_pip}{full pip installation of PmagPy}. If you are doing the \href{#full_install}{standard PmagPy install}, you will create a shortcut to the PmagPy command window on your desktop.  Double clicking on that will give you a window in which you can type {\bf PmagPy} commands.  You will use the PmagPy prompt instead of the Windows command line from there on.
+Under the Windows operating system, you can find your command line by searching for the ``Command Prompt'' application.
 
   \includegraphics[width=15cm]{EPSFiles/cmd.eps}
 
@@ -1003,17 +1003,17 @@ Fundamental to all operating systems is the concept of
 directories and files.  On windows-based operating systems (MacOS or Windows), directories are depicted
 as ``folders'' and moving about is accomplished by clicking on the different icons.
 In the world of terminal windows, the directories have names and are arranged in a hierarchical sequence with
-the top directory being the ``root'' directory, known as  ``/'' (or C:'backslash' in Windows) and the file system looks something like this:
+the top directory being the ``root'' directory, known as  ``/'' (or C:\verb!\! in Windows) and the file system looks something like this:
 
 
   \includegraphics[width=15cm]{EPSFiles/filesys.eps}
 
  Within the root directory, there are subdirectories
 (e.g. {\bf Applications} and {\bf Users} in bold face).  In any directory, there can also be ``files''
-(e.g. {\it dir\_cart\_example.dat} in italics).   To
+(e.g. {\it dir\_cart\_example.dat}).   To
 refer to directories,  the operating system relies on what is called a ``pathname''. Every object
 has an ``absolute'' pathname which is valid from anywhere on the computer.  The
-absolute pathname in *NIX always begins from the root directory {\bf /} and in DOS (the operating system working in the Windows command line window), it is C:'backslash'.
+absolute pathname in *NIX always begins from the root directory {\bf /} and in DOS (the operating system working in the Windows command line window), it is C:\verb!\!.
 
 The absolute pathname to the home directory {\bf lisa} in the figure is {\bf /Users/lisa}.
 Similarly, the absolute pathname to the directory containing {\bf PmagPy}
@@ -1038,7 +1038,7 @@ This command works in both Unix and DOS environments) and you can move into your
 \begin{verbatim}
 % cd NEW_DIRECTORY_NAME
 \end{verbatim}
-   To move back up into the home directory, just type {\bf cd ..} remembering that .. refers to the directory above.  Also, {\bf cd} by itself will transport you home from where ever you are (there's no place like home....).     You can also change to any arbitrary directory by specifying the full path of the destination directory.
+   To move back up into the home directory, just type {\bf cd ..} remembering that {\bf ..} refers to the directory above.  Also, {\bf cd} by itself will transport you home from where ever you are (there's no place like home....).     You can also change to any arbitrary directory by specifying the full path of the destination directory.
 
 
 %\section {Wildcards}
@@ -5249,7 +5249,7 @@ The best way to raise issues with any of the software or its documentation is to
 \chapter{The MagIC database and file formats}
 
 A number of the programs in {\bf PmagPy} were  developed to take advantage of the MagIC database and aid getting data in and out of it.   So, we need some basic understanding of what MagIC is and how it is structured.
-MagIC  is an Oracle  database that is part of the EarthRef.org collection of databases and digital reference material.
+MagIC  is part of the EarthRef.org collection of databases and digital reference material.
 Anyone interested in the MagIC database should first become a registered EarthRef.org user.  To do this, go to \url{http://earthref.org} and click on the {\bf Register} link in the {\bf Topmenu}.   Registration is not required for access to data or browsing around, but is required for uploading of data into the MagIC database, something which we sincerely hope you will have a chance to do.
 %By registering, you will also be kept informed of our progress through bi-monthly newsletters and other email alerts.
 After you register, go to \url{http://earthref.org/MAGIC/search}.
@@ -5279,7 +5279,7 @@ The MagIC database is organized around a series of data tables.  The complete da
 \url{https://www2.earthref.org/MagIC/data-models/3.0}
 %\url{http://earthref.org/MAGIC/metadata.htm}.
 
-  Each MagIC table has  a one line header of the form:
+  The first line of each MagIC table looks something like this:
 
 
 tab\hskip 2em{\bf table\_name}
@@ -5308,7 +5308,7 @@ table\qquad &Brief description\\
 \end{tabular}
 
 
-The second line of every file contains the column headers (meta-data) describing the included data.   For example, a {\bf sites} table might look like this:
+The second line of each MagIC table contains the column headers (meta-data) describing the included data.   For example, a {\bf sites} table might look like this:
 
 {\hoffset -1in
 \begin{tabular}{llllll}
@@ -5375,7 +5375,7 @@ LT-ZF-CI \qquad & Lab Treatment \qquad & Zero field cooled, induced M measured o
 
 \section{Uploading to MagIC}
 
-For uploading to the database, all the individual tables should be assembled into a single file.  Each individual data table is separated from the next by a series of `$>>>>>>>>>>$' symbols, so a typical upload file might look like this:
+For uploading to the database, all the individual tables can be assembled into a single file.  Each individual data table is separated from the next by a series of `$>>>>>>>>>>$' symbols, so a typical upload file might look like this:
 
 
 \begin{verbatim}
@@ -5472,23 +5472,36 @@ NB: For Anaconda-specific information, see this a \href{https://conda.io/docs/_d
 
 Data analysis in Python benefits from an increasingly robust ecosystem of packages for scientific computing and plotting. A tool that has gained increasingly widespread use for conducting and presenting data analysis is the Jupyter notebook. The Jupyter notebook builds on the IPython project which began as a way to bring increased interactivity to data analysis in Python \citep{perez07} and has evolved to include an interactive notebook environment that seeks to enable the full trajectory of scientific computing from initial analysis and visualization onwards to collaboration and through to publication. The project has expanded to enable a reproducible interactive computing environment for many other programming languages (such as R and Julia) and the language-agnostic parts of its architecture have recently been rebranded as Project Jupyter (\url{http://jupyter.org}). Jupyter notebooks allow for executable code, results, text and graphical output to coherently coexist in a single document. With these combined components, they are excellent tools both for conducting data analysis and presenting results.
 
-Underlying the {\bf PmagPy}  programs that are accessible through the command line and the GUI interfaces (e.g., {\bf Pmag GUI}) are two main function libraries: {\bf pmag.py} and {\bf pmagplotlib.py}. The functions within these modules can  be imported and called upon within a Jupyter notebook running a Python 2.7 kernel. In addition to these functions, Nick Swanson-Hysell created a module called {\bf ipmag.py} that is in active development and contains functions that replicate and extend functionality that is found within the {\bf PmagPy}  command line programs for use in the notebook environment.
+There are two main function libraries that the {\bf PmagPy}  programs are built from: {\bf pmag.py} and {\bf pmagplotlib.py}. The functions within these modules can  be imported and called upon within a Jupyter notebook running Python. In addition to these functions, Nick Swanson-Hysell created a module called {\bf ipmag.py} that is in active development and contains functions that replicate and extend functionality that is found within the {\bf PmagPy}  command line programs for use in the notebook environment.
 
 To show some of what is possible in terms of data analysis using {\bf PmagPy} in a notebook environment, we have created example notebooks that are available for download from this repository: \url{https://github.com/PmagPy/2016_Tauxe-et-al_PmagPy_Notebooks}. These notebooks can also be viewed as static webpages here: \url{http://pmagpy.github.io/Example_PmagPy_Notebook.html} and \url{http://pmagpy.github.io/Additional_PmagPy_Examples.html}.
 
-The main example notebook (Example\_PmagPy\_Notebook.ipynb) combines data from two different studies for the sake of developing a mean paleomagnetic pole from the upper portion of a sequence of volcanics in the North American Midcontinent Rift \citep{halls74, swansonhysell14}.  The two data files used within the notebook can be downloaded from the MagIC database. The digital object identifier (doi) search option allows for the data files to be readily located as  \url{https://earthref.org/MagIC/doi/10.1139/e74-113/} and \url{https://earthref.org/MagIC/doi/10.1002/2013GC005180/}. Downloading these data files from the database and putting them into folders within a local `Project Directory' allows them to be accessed within the Jupyter notebook. Within the notebook, these data are unpacked into their respective MagIC formatted tab delimited data files. The data are then loaded into dataframes and filtered using several different criteria (stratigraphic height and polarity).  Several functions from the {\bf ipmag} module are used for making equal area projections and calculating statistics. In addition to combining the data sets to calculate the mean pole, the code in the notebook conducts a bootstrap fold test on the data using the approach of \cite{tauxe94} as well as a common mean test. The data recombinations and calculations done in this notebook are examples of portions of the data analysis workflow which are often difficult to document and reproduce. The examples illustrate a small sliver of the potential for the use of notebooks for data manipulation and analysis of paleomagnetic data. Additional functionality available within PmagPy is demonstrated within the additional {\bf PmagPy} examples notebook (Additional\_PmagPy\_Examples.ipynb) as small vignettes of example code. Functions related to paleomagnetic and rock magnetic data analysis are shown as examples. The notebook also illustrates some of the interactivity that can be built into the notebook utilizing IPython widgets.
+The main example notebook (Example\_PmagPy\_Notebook.ipynb) combines data from two different studies for the sake of developing a mean paleomagnetic pole from the upper portion of a sequence of volcanics in the North American Midcontinent Rift \citep{halls74, swansonhysell14}.  The two data files used within the notebook can be downloaded from the MagIC database. The digital object identifier (doi) search option allows for the data files to be readily located as  \url{https://earthref.org/MagIC/doi/10.1139/e74-113/} and \url{https://earthref.org/MagIC/doi/10.1002/2013GC005180/}. Downloading these data files from the database and putting them into folders within a local `Project Directory' allows them to be accessed within the Jupyter notebook.
 
-To execute and edit notebook code yourself, you can clone or download this repository: \url{https://github.com/PmagPy/2016_Tauxe-et-al_PmagPy_Notebooks}.  If you installed the Enthought Canopy or Anaconda Python distribution you will have the IPython and Jupyter packages installed. If you have another Python distribution you will want to make sure that you have IPython and Jupyter (installation instructions can currently be found here: \url{http://ipython.org/install.html} and here: \url{http://jupyter.readthedocs.org/en/latest/install.html}). To view and edit the notebooks,  type {\bf ipython notebook} or {\bf jupyter notebook} on the \href{#command_line}{command line}.  This command will open up a local IPython server in your default web browser within which you can use the directory to navigate to the data\_files folder. Click on it to open and edit. You will see something like this:
+Within the example notebook, these data are unpacked into their respective MagIC formatted tab delimited data files. The data are then loaded into dataframes and filtered using several different criteria (stratigraphic height and polarity).  Several functions from the {\bf ipmag} module are used for making equal area projections and calculating statistics. In addition to combining the data sets to calculate the mean pole, the code in the notebook conducts a bootstrap fold test on the data using the approach of \cite{tauxe94} as well as a common mean test. The data recombinations and calculations done in this notebook are examples of portions of the data analysis workflow which are often difficult to document and reproduce. The examples illustrate a small sliver of the potential for the use of notebooks for data manipulation and analysis of paleomagnetic data. Additional functionality available within PmagPy is demonstrated within the additional {\bf PmagPy} examples notebook (Additional\_PmagPy\_Examples.ipynb) as small vignettes of example code. Functions related to paleomagnetic and rock magnetic data analysis are shown as examples. The notebook also illustrates some of the interactivity that can be built into the notebook utilizing IPython widgets.
+
+If you want to to run the example notebook interactively, you'll need to follow these steps:
+
+\begin{enumerate}
+\item \href{#getting_python}{Install Python}
+\item \href{https://git-scm.com/downloads}{Download git}
+\item \href{#quick_start}{Install PmagPy} (pip install or developer install)
+\item Clone the notebook repository
+\begin{verbatim}
+
+  git clone https://github.com/PmagPy/2016_Tauxe-et-al_PmagPy_Notebooks
+  cd 2016_Tauxe-et-al_PmagPy_Notebooks
+  jupyter notebook
+\end{verbatim}
+\end{enumerate}
+
+This will open up a local IPython server in your default web browser. Click on \textit{Example_PmagPy_notebook.ipynb} to open and edit the main example notebook. You will see something like this:
 
 \includegraphics[width=15cm]{EPSFiles/notebook.eps}
 
 Notebooks are constructed as a series of `cells' which can be text or code.  To view the `source' of a text cell, just click on it.  To render it, click on the `run' button (sideways triangle on the toolbar).  Similarly, to run the code in a code cell, click on the cell and then the `run' button (or use the shift+enter short cut).   To execute the entire notebook, click on the `Cell' button and choose 'Run All'.
 
-The easiest way to access {\bf PmagPy} functionality in the notebook is to follow the regular install instructions using \href{#pip_install}{pip}.  This automatically adds all of the pmagpy module into your Python path.  You can go straight to \href{#notebook_start}{looking at the data}!
-
-If you didn't install using pip, you can also do a \href{#developer_install}{developer install}.
-
-A third way to acces {\bf PmagPy} inside a notebook is to set the path to the location of your downloaded PmagPy folder within the notebook itself. The default location on  MacOS is in a folder called {\it PmagPy} in your home directory (e.g., /Users/YOUR\_NAME\_HERE/PmagPy) and on Windows is in the Documents folder (e.g., 'C:\\Users\\YOUR\_NAME\_HERE\\Documents\\PmagPy\\PmagPy'. To do this you must \texttt{import os} and then have a line that reads \texttt{sys.path.insert(0, `/Users/......')} where the path reflects your own path.   If PmagPy is in your path you should be able to run the first code block which imports the {\bf PmagPy} modules and makes them availible available to use within the notebook.  The notebooks also import several other Python modules useful for scientific computing (numpy),  data manipulation (pandas) and plotting (matplotlib).
+%A third way to acces {\bf PmagPy} inside a notebook is to set the path to the location of your downloaded PmagPy folder within the notebook itself. The default location on  MacOS is in a folder called {\it PmagPy} in your home directory (e.g., /Users/YOUR\_NAME\_HERE/PmagPy) and on Windows is in the Documents folder (e.g., 'C:\\Users\\YOUR\_NAME\_HERE\\Documents\\PmagPy\\PmagPy'. To do this you must \texttt{import os} and then have a line that reads \texttt{sys.path.insert(0, `/Users/......')} where the path reflects your own path.   If PmagPy is in your path you should be able to run the first code block which imports the {\bf PmagPy} modules and makes them availible available to use within the notebook.  The notebooks also import several other Python modules useful for scientific computing (numpy),  data manipulation (pandas) and plotting (matplotlib).
 
 \customlink{notebook_start}
  Now you are ready to look at some data.  In the code block under the heading `Reading data from MagIC format results files',  data are read in from a file \href{#magic_download}{downloaded} and unpacked from the MagIC database.   The notebook shows how to read in the data into a \href{#pandas}{pandas DataFrame}, and plot the directions on an equal area projection:
