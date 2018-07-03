@@ -4595,43 +4595,6 @@ Compare behaviors for sr11, sample sr11XXX and sr20, sample sr20i:
   The latter plausibly fits the ``wrong mark'' hypothesis, while the former does not fit any of the common pathologies.  The sample orientation in the {\it er\_samples.txt} file has a note that it is `bad' and will be ignored by the PmagPy programs when calculating site means.
 
 
-
-
-\customlink{specimens_results_magic.py}
-
-\subsection{specimens\_results\_magic.py}
-\href{#MagIC}{MagIC}
-\href{https://github.com/PmagPy/PmagPy/blob/master/programs/specimens_results_magic.py}{[specimens\_results\_magic docs]}
-
-Starting from the magnetometer output files, paleomagnetists interpret the data in terms of vectors, using software like \href{#zeq_magic.py}{zeq\_magic.py} or \href{thellier_magic.py}{thellier\_magic.py}.  The interpretations from these programs are stored in pmag\_specimen formatted files.
-Once a pmag\_specimens format file has been created, the data are usually  averaged by sample and/or by site and converted into \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#Virtual_dipole_moment}{V[A]DMs} and/or
-\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#Virtual_geomagnetic_poles}{VGPs} and put in a pmag\_results formatted file along with the location and age information that are available.  Data must be selected or rejected according to some criteria at each level (for example, the specimen MAD direction must be less than some value or the site $\kappa$ must be greater than some value).   This onerous task can be accomplished using the program {\bf specimens\_results\_magic.py}.          This program has many optional features, so the reader is encouraged just to look at the documentation.
-
-Test it out  by using the data files created in the \href{#site_edit_magic.py}{site\_edit\_magic.py} example.  Block the interpretation of some of the samples owing to `bad' orientation.  Change the selection criteria using \href{customize_criteria.py}{customize\_criteria.py}.    Then generate a new {\it pmag\_specimen.txt} file using \href{#mk_redo.py}{mk\_redo.py},  \href{#zeq_magic_redo.py}{zeq\_magic\_redo.py} and \href{#combine_magic.py}{combine\_magic.py}.   Then do the averaging by site with {\bf specimens\_results\_magic.py}.  The age bounds of the data are 0-5 Ma (-age 0 5 Ma).  Use the existing (or modified) criteria (-exc option).   There are some paleointensity data, so use the current site latitude for the VADM  calculation (-lat option).   Calculate the data in the geographic coordinate system (-crd g).    Then extract the data into tab delimited tables using \href{#pmag_results_extract.py}{pmag\_results\_extract.py}
-
-\begin{verbatim}
-$ mk_redo.py
-$ zeq_magic_redo.py -crd g
-Processing  173  specimens - please wait
-Recalculated specimen data stored in  ./zeq_specimens.txt
-$ combine_magic.py -F pmag_specimens.txt -f zeq_specimens.txt thellier_specimens.txt
-File  ./zeq_specimens.txt  read in with  173  records
-File  ./thellier_specimens.txt  read in with  50  records
-All records stored in  ./pmag_specimens.txt
-$ specimens_results_magic.py -age 0 5 Ma -exc -lat -crd g
-Acceptance criteria read in from  pmag_criteria.txt
-
- Pmag Criteria stored in  pmag_criteria.txt
-
- sites written to  pmag_sites.txt
- results written to  pmag_results.txt
-$ pmag_results_extract.py -fa er_ages.txt
-data saved in:  ./Directions.txt ./Intensities.txt ./SiteNfo.txt
-\end{verbatim}
-
-Note that this procedure is more or less automated in \href{#pmag_gui.py}{Pmag GUI}.
-
-
 \customlink{stats.py}
 
 \subsection{stats.py}
@@ -4725,7 +4688,7 @@ $ sundec.py < sundec_example.dat
 or by manual input:
 \begin{verbatim}
 $ sundec.py -i
-Time difference between Greenwich Mean Time (hrs to ADD to
+Time difference between Greenwich Mean Time (hrs to SUBTRACT to
       GMT for local time):
 <cntl-D> to quit 3
 Year:  <cntl-D to quit> 1994
