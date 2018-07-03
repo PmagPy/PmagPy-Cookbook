@@ -168,37 +168,33 @@
 \doTocEntry\tocsubsection{5.2.90}{\csname a:TocLink\endcsname{1}{x1-1670005.2.90}{QQ2-1-167}{scalc.py}}{316}\relax 
 \doTocEntry\tocsubsection{5.2.91}{\csname a:TocLink\endcsname{1}{x1-1680005.2.91}{QQ2-1-168}{scalc\_magic.py}}{317}\relax 
 \doTocEntry\tocsubsection{5.2.92}{\csname a:TocLink\endcsname{1}{x1-1690005.2.92}{QQ2-1-169}{site\_edit\_magic.py}}{318}\relax 
-\doTocEntry\tocsubsection{5.2.93}{\csname a:TocLink\endcsname{1}{x1-1700005.2.93}{QQ2-1-170}{specimens\_results\_magic.py}}{321}\relax 
-\doTocEntry\tocsubsection{5.2.94}{\csname a:TocLink\endcsname{1}{x1-1710005.2.94}{QQ2-1-171}{stats.py}}{322}\relax 
-\doTocEntry\tocsubsection{5.2.95}{\csname a:TocLink\endcsname{1}{x1-1720005.2.95}{QQ2-1-172}{strip\_magic.py}}{324}\relax 
-\doTocEntry\tocsubsection{5.2.96}{\csname a:TocLink\endcsname{1}{x1-1730005.2.96}{QQ2-1-173}{sundec.py}}{326}\relax 
-\doTocEntry\tocsubsection{5.2.97}{\csname a:TocLink\endcsname{1}{x1-1740005.2.97}{QQ2-1-174}{thellier\_magic.py}}{330}\relax 
-\doTocEntry\tocsubsection{5.2.98}{\csname a:TocLink\endcsname{1}{x1-1750005.2.98}{QQ2-1-175}{thellier\_magic\_redo.py}}{335}\relax 
-\doTocEntry\tocsubsection{5.2.99}{\csname a:TocLink\endcsname{1}{x1-1760005.2.99}{QQ2-1-176}{tk03.py}}{336}\relax 
-\doTocEntry\tocsubsection{5.2.100}{\csname a:TocLink\endcsname{1}{x1-1770005.2.100}{QQ2-1-177}{uniform.py}}{338}\relax 
-\doTocEntry\tocsubsection{5.2.101}{\csname a:TocLink\endcsname{1}{x1-1780005.2.101}{QQ2-1-178}{update\_measurements.py}}{340}\relax 
-\doTocEntry\tocsubsection{5.2.102}{\csname a:TocLink\endcsname{1}{x1-1790005.2.102}{QQ2-1-179}{upload\_magic.py}}{340}\relax 
-\doTocEntry\tocsubsection{5.2.103}{\csname a:TocLink\endcsname{1}{x1-1800005.2.103}{QQ2-1-180}{vdm\_b.py}}{342}\relax 
-\doTocEntry\tocsubsection{5.2.104}{\csname a:TocLink\endcsname{1}{x1-1810005.2.104}{QQ2-1-181}{vector\_mean.py}}{343}\relax 
-\doTocEntry\tocsubsection{5.2.105}{\csname a:TocLink\endcsname{1}{x1-1820005.2.105}{QQ2-1-182}{vgp\_di.py}}{344}\relax 
-\doTocEntry\tocsubsection{5.2.106}{\csname a:TocLink\endcsname{1}{x1-1830005.2.106}{QQ2-1-183}{vgpmap\_magic.py}}{345}\relax 
-\doTocEntry\tocsubsection{5.2.107}{\csname a:TocLink\endcsname{1}{x1-1840005.2.107}{QQ2-1-184}{watsons\_f.py}}{347}\relax 
-\doTocEntry\tocsubsection{5.2.108}{\csname a:TocLink\endcsname{1}{x1-1850005.2.108}{QQ2-1-185}{watsons\_v.py}}{349}\relax 
-\doTocEntry\tocsubsection{5.2.109}{\csname a:TocLink\endcsname{1}{x1-1860005.2.109}{QQ2-1-186}{zeq.py}}{351}\relax 
-\doTocEntry\tocsubsection{5.2.110}{\csname a:TocLink\endcsname{1}{x1-1870005.2.110}{QQ2-1-187}{zeq\_magic.py}}{353}\relax 
-\doTocEntry\tocsubsection{5.2.111}{\csname a:TocLink\endcsname{1}{x1-1880005.2.111}{QQ2-1-188}{zeq\_magic\_redo.py}}{356}\relax 
-\doTocEntry\tocsection{5.3}{\csname a:TocLink\endcsname{1}{x1-1890005.3}{QQ2-1-189}{Complaints department}}{357}\relax 
-\doTocEntry\tocchapter{6}{\csname a:TocLink\endcsname{1}{x1-1900006}{QQ2-1-190}{The MagIC database and file formats}}{359}\relax 
-\doTocEntry\tocsection{6.1}{\csname a:TocLink\endcsname{1}{x1-1910006.1}{QQ2-1-191}{Structure of the database tables}}{359}\relax 
-\doTocEntry\tocsection{6.2}{\csname a:TocLink\endcsname{1}{x1-1920006.2}{QQ2-1-192}{A word about method codes}}{360}\relax 
-\doTocEntry\tocsection{6.3}{\csname a:TocLink\endcsname{1}{x1-1930006.3}{QQ2-1-193}{Uploading to MagIC}}{361}\relax 
-\doTocEntry\tocchapter{7}{\csname a:TocLink\endcsname{1}{x1-1940007}{QQ2-1-194}{Introduction to Python Programming}}{365}\relax 
-\doTocEntry\tocchapter{8}{\csname a:TocLink\endcsname{1}{x1-1950008}{QQ2-1-195}{Jupyter Notebooks}}{367}\relax 
-\doTocEntry\tocchapter{9}{\csname a:TocLink\endcsname{1}{x1-1960009}{QQ2-1-196}{Troubleshooting}}{371}\relax 
-\doTocEntry\tocsection{9.1}{\csname a:TocLink\endcsname{1}{x1-1970009.1}{QQ2-1-197}{Problems with installing Python or PmagPy}}{371}\relax 
-\doTocEntry\tocsection{9.2}{\csname a:TocLink\endcsname{1}{x1-1980009.2}{QQ2-1-198}{Problems updating Canopy}}{386}\relax 
-\doTocEntry\tocsection{9.3}{\csname a:TocLink\endcsname{1}{x1-1990009.3}{QQ2-1-199}{Error loading dlls (windows only)}}{386}\relax 
-\doTocEntry\tocsection{9.4}{\csname a:TocLink\endcsname{1}{x1-2000009.4}{QQ2-1-200}{Problems with a specific program}}{387}\relax 
-\doTocEntry\tocsection{9.5}{\csname a:TocLink\endcsname{1}{x1-2010009.5}{QQ2-1-201}{Wrong Python in Jupyter notebook}}{388}\relax 
-\doTocEntry\tocsection{9.6}{\csname a:TocLink\endcsname{1}{x1-2020009.6}{QQ2-1-202}{Other problems}}{390}\relax 
-\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-2030009.6}{QQ2-1-203}{Bibliography}}{391}\relax 
+\doTocEntry\tocsubsection{5.2.93}{\csname a:TocLink\endcsname{1}{x1-1700005.2.93}{QQ2-1-170}{stats.py}}{321}\relax 
+\doTocEntry\tocsubsection{5.2.94}{\csname a:TocLink\endcsname{1}{x1-1710005.2.94}{QQ2-1-171}{strip\_magic.py}}{323}\relax 
+\doTocEntry\tocsubsection{5.2.95}{\csname a:TocLink\endcsname{1}{x1-1720005.2.95}{QQ2-1-172}{sundec.py}}{325}\relax 
+\doTocEntry\tocsubsection{5.2.96}{\csname a:TocLink\endcsname{1}{x1-1730005.2.96}{QQ2-1-173}{thellier\_magic.py}}{329}\relax 
+\doTocEntry\tocsubsection{5.2.97}{\csname a:TocLink\endcsname{1}{x1-1740005.2.97}{QQ2-1-174}{tk03.py}}{334}\relax 
+\doTocEntry\tocsubsection{5.2.98}{\csname a:TocLink\endcsname{1}{x1-1750005.2.98}{QQ2-1-175}{uniform.py}}{336}\relax 
+\doTocEntry\tocsubsection{5.2.99}{\csname a:TocLink\endcsname{1}{x1-1760005.2.99}{QQ2-1-176}{upload\_magic.py}}{338}\relax 
+\doTocEntry\tocsubsection{5.2.100}{\csname a:TocLink\endcsname{1}{x1-1770005.2.100}{QQ2-1-177}{vdm\_b.py}}{339}\relax 
+\doTocEntry\tocsubsection{5.2.101}{\csname a:TocLink\endcsname{1}{x1-1780005.2.101}{QQ2-1-178}{vector\_mean.py}}{340}\relax 
+\doTocEntry\tocsubsection{5.2.102}{\csname a:TocLink\endcsname{1}{x1-1790005.2.102}{QQ2-1-179}{vgp\_di.py}}{341}\relax 
+\doTocEntry\tocsubsection{5.2.103}{\csname a:TocLink\endcsname{1}{x1-1800005.2.103}{QQ2-1-180}{vgpmap\_magic.py}}{342}\relax 
+\doTocEntry\tocsubsection{5.2.104}{\csname a:TocLink\endcsname{1}{x1-1810005.2.104}{QQ2-1-181}{watsons\_f.py}}{344}\relax 
+\doTocEntry\tocsubsection{5.2.105}{\csname a:TocLink\endcsname{1}{x1-1820005.2.105}{QQ2-1-182}{watsons\_v.py}}{346}\relax 
+\doTocEntry\tocsubsection{5.2.106}{\csname a:TocLink\endcsname{1}{x1-1830005.2.106}{QQ2-1-183}{zeq.py}}{348}\relax 
+\doTocEntry\tocsubsection{5.2.107}{\csname a:TocLink\endcsname{1}{x1-1840005.2.107}{QQ2-1-184}{zeq\_magic.py}}{350}\relax 
+\doTocEntry\tocsection{5.3}{\csname a:TocLink\endcsname{1}{x1-1850005.3}{QQ2-1-185}{Complaints department}}{353}\relax 
+\doTocEntry\tocchapter{6}{\csname a:TocLink\endcsname{1}{x1-1860006}{QQ2-1-186}{The MagIC database and file formats}}{355}\relax 
+\doTocEntry\tocsection{6.1}{\csname a:TocLink\endcsname{1}{x1-1870006.1}{QQ2-1-187}{Structure of the database tables}}{355}\relax 
+\doTocEntry\tocsection{6.2}{\csname a:TocLink\endcsname{1}{x1-1880006.2}{QQ2-1-188}{A word about method codes}}{356}\relax 
+\doTocEntry\tocsection{6.3}{\csname a:TocLink\endcsname{1}{x1-1890006.3}{QQ2-1-189}{Uploading to MagIC}}{357}\relax 
+\doTocEntry\tocchapter{7}{\csname a:TocLink\endcsname{1}{x1-1900007}{QQ2-1-190}{Introduction to Python Programming}}{361}\relax 
+\doTocEntry\tocchapter{8}{\csname a:TocLink\endcsname{1}{x1-1910008}{QQ2-1-191}{Jupyter Notebooks}}{363}\relax 
+\doTocEntry\tocchapter{9}{\csname a:TocLink\endcsname{1}{x1-1920009}{QQ2-1-192}{Troubleshooting}}{367}\relax 
+\doTocEntry\tocsection{9.1}{\csname a:TocLink\endcsname{1}{x1-1930009.1}{QQ2-1-193}{Problems with installing Python or PmagPy}}{367}\relax 
+\doTocEntry\tocsection{9.2}{\csname a:TocLink\endcsname{1}{x1-1940009.2}{QQ2-1-194}{Problems updating Canopy}}{382}\relax 
+\doTocEntry\tocsection{9.3}{\csname a:TocLink\endcsname{1}{x1-1950009.3}{QQ2-1-195}{Error loading dlls (windows only)}}{382}\relax 
+\doTocEntry\tocsection{9.4}{\csname a:TocLink\endcsname{1}{x1-1960009.4}{QQ2-1-196}{Problems with a specific program}}{383}\relax 
+\doTocEntry\tocsection{9.5}{\csname a:TocLink\endcsname{1}{x1-1970009.5}{QQ2-1-197}{Wrong Python in Jupyter notebook}}{384}\relax 
+\doTocEntry\tocsection{9.6}{\csname a:TocLink\endcsname{1}{x1-1980009.6}{QQ2-1-198}{Other problems}}{386}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-1990009.6}{QQ2-1-199}{Bibliography}}{387}\relax 
