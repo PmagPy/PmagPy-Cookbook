@@ -176,11 +176,12 @@ Type "help", "copyright", "credits" or "license" for more information.
 %   \item Windows users who cannot get an academic license should install this \href{http://magician.ucsd.edu/Software/PmagPy/archive/epd-7.3-2-win-x86.msi}{older Enthought Distribution}.  This version of EPD will not support all PmagPy programs, so if you want to run Pmag GUI or MagIC GUI you should download the \href{#standalone}{standalone versions}.
 %   \item If you run into problems with your installation, you may need to uninstall any previous Python installations.
 %   \end{itemize}
+\customlink{pip_install}
 
 \subsection{Installing PmagPy}
 
  Here we provide instructions for using pip to install PmagPy from the command line.
-\customlink{pip_install}
+
        ``Pip'' is a package manager that comes standard with any modern Python distribution.  Pip allows you to install and uninstall pmagpy and pmagpy-cli.  pmagpy provides all the low-level functionality of PmagPy, and pmagpy-cli provides the PmagPy command-line-interface and has all the packages you may use to download/upload, visualize, and manipulate data.
 
   To install using pip:
@@ -4827,37 +4828,6 @@ You should have gotten plots that look like these:
 
 When you exit the program, you will have modified the {\it thellier\_specimens.txt} file to include the new interpretation.
 
-
-\customlink{thellier_magic_redo.py}
-
-\subsection{thellier\_magic\_redo.py}
-\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#ch10}{[Essentials Chapter 10]} and \href{#MagIC}{[MagIC}]
-\href{https://github.com/PmagPy/PmagPy/blob/master/programs/thellier_magic_redo.py}{[thellier\_magic\_redo docs]}
-
-
-This program is no longer maintained. This function is embedded in  \href{#thellier_GUI.py}{thellier\_gui.py} when you import a specimen file.
-
-
-
-This program allows the recalculation of paleointensity experimental data derived from Thellier type experiments.  It allows correction for remanence  anisotropy from AARM or ATRM ellipsoids (stored in {\it rmag\_anisotropy} format files (see \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch13.html#ch13}{[Essentials Chapter 13]} and the \href{#aarm_magic.py}{aarm\_magic.py} and \href{#atrm_magic.py}{atrm\_magic.py}) and \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#non-linear_TRM}{non-linear TRM} corrections, if TRM aquisition data are available (see also \href{#trmaq_magic.py}{trmaq\_magic.py}).
-
-
-Apply the corrections to the  data you re-interpreted in the \href{#thellier_magic.py}{thellier\_magic.py} example,   and create a new {\it pmag\_specimens.txt} formatted file, use the program {\bf thellier\_magic\_redo.py}.   First, create a ``redo'' file using \href{#mk_redo.py}, then re-do the calculations using {\bf thellier\_magic\_redo.py}, including anisotropy and non-linear TRM corrections.    Combine all the specimen files into one using \href{#combine_magic.py}{combine\_magic.py}.
-
-\begin{verbatim}
-$ mk_redo.py -f thellier_specimens.txt
-$ thellier_magic_redo.py -ANI -NLT
-Processing  112  specimens - please wait
-WARNING: NO FTEST ON ANISOTROPY PERFORMED BECAUSE OF MISSING SIGMA - DOING CORRECTION ANYWAY
-....
-anisotropy corrected data saved in:  ./AC_specimens.txt
-$ combine_magic.py -F pmag_specimens.txt -f thellier_specimens.txt AC_specimens.txt NLT_specimens.txt
-File  ./thellier_specimens.txt  read in with  112  records
-File  ./AC_specimens.txt  read in with  112  records
-non-linear TRM corrected data saved in:  ./NLT_specimens.txt
-All records stored in  ./pmag_specimens.txt
-\end{verbatim}
-
 \customlink{tk03.py}
 
 \subsection{tk03.py}
@@ -4892,20 +4862,6 @@ $ eqarea.py -f uniform.out
 which should yield a plot something (but not exactly) like this:
 
 \includegraphics[width=12cm]{EPSFiles/uniform.eps}
-
-
-\customlink{update_measurements.py}
-
-\subsection{update\_measurements.py}
-\href{#MagICDatabase}{[MagIC Database]}
-\href{https://github.com/PmagPy/PmagPy/blob/master/programs/update_measurements.py}{[update\_measurements docs]}
-
-This program is no longer maintained. This function is embedded in  \href{#pmag_gui.py}{Pmag GUI}.
-
-
-
-In the SIO laboratory, our default specimen naming scheme has a logical relationship to the sample and site names.
-Sometimes there is no simple relationship and the MagIC import procedure can't parse the sample name into a site name, or the original concept of a site gets changed, for example if several lava flows turn out to be the same one.  In any case, there must be a way to change the way data get averaged after the measurement data get converted to a magic\_measurments formatted file.  To do this, the sample, site relationship can be established in the {\it er\_sample.txt} file for example via the procedure described in \href{#orientation_magic.py}{orientation\_magic.py} docuementation.  After the correct relationships are in the {\it er\_samples.txt} file, these must be propagated throughout the rest of the MagIC tables, starting with the {\it magic\_measurements.txt} file.  The program {\bf update\_measurements.py} will do this at the measurements level.  \href{#specimens_results_magic.py}{specimens\_results\_magic.py} will then propagate the changes through to the {\it pmag\_results.txt} file.
 
 
 \customlink{upload_magic.py}
@@ -5176,32 +5132,6 @@ The plots will look similar to the \href{#zeq.py}{zeq.py} example, but the defau
 
 
 
-\customlink{zeq_magic_redo.py}
-
-\subsection{zeq\_magic\_redo.py}
-\href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch9.html#ch9}{[Essentials Chapter 9]}  \& \href{#MagICDatabase}{[MagIC Database]}
-\href{https://github.com/PmagPy/PmagPy/blob/master/programs/zeq_magic_redo.py}{[zeq\_magic\_redo docs]}
-
-The functionality of this program has been incorporated into \href{#demag_gui.py}{Demag GUI} so you should use that.
-
-
-In the {\it zeq\_magic} directory, use the program {\bf zeq\_magic\_redo.py} to create a {\it pmag\_specimens} formatted file with data in geographic coordinates from the sample coordinate file {\it zeq\_specimens.txt}.
-Assuming that sample orientations are in a file called {\it er\_samples.txt}, use \href{#mk_redo.py}{mk\_redo.py} first to create file called {\it zeq\_redo}.  Then use
-{\bf zeq\_magic\_redo.py} to create two {\it pmag\_specimen} formatted files:  one in specimen coordinates {\it zeq\_specimens\_s.txt} and one in geographic coordinates {\it zeq\_specimens\_g.txt}.   Combine these into one file called {\it pmag\_specimens.txt}.
-
-Note that indented lines belong with the line above as a single line.
-
-\begin{verbatim}
-$ mk_redo.py
-$ zeq_magic_redo.py -F zeq_specimens_s.txt -crd s
-Processing  175  specimens - please wait
-Recalculated specimen data stored in  ./zeq_specimens_s.txt
-
-$ zeq_magic_redo.py -F zeq_specimens_g.txt -crd g
-Processing  175  specimens - please wait
-Recalculated specimen data stored in  ./zeq_specimens_g.txt
-$ combine_magic.py -F pmag_specimens.txt   -f zeq_specimens_s.txt zeq_specimens_g.txt
-\end{verbatim}
 
 %
 \section{Complaints department}
