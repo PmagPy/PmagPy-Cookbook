@@ -235,48 +235,62 @@ Type "help", "copyright", "credits" or "license" for more information.
 %    \end{itemize}
 %
 %
-
+   \customlink{finishing_up}
    \subsection{Finishing up}
 
     Now your installation should be complete.  There are a few more details:
     \begin{itemize}
 \item Testing your installation:
 
-  To make sure everything is working, return to your \href{#command_line}{command line}. OSX users, run the command
+  To make sure everything is working, return to your \href{#command_line}{command line}.
+
+  \begin{itemize}
+
+    \item For OSX or developer install, run the command:
 
 \begin{verbatim}
   eqarea.py -h
 \end{verbatim}
 
-  Windows users: you will need to use
+    \item For Windows (pip install only), run the command:
 
 \begin{verbatim}
   eqarea -h
 \end{verbatim}
 
-  (In fact, you will drop the ``.py'' anytime you are calling a command-line program.)
+(In fact, you will drop the ``.py'' anytime you are calling a command-line program.)
+
+\end{itemize}
 
 If you do not see the help message, check the \href{#trouble}{Trouble Shooting} section. If you don't find a solution there, please report the error message and  the Python distribution you are using, including the version number, on \href{https://github.com/PmagPy/PmagPy/issues}{the PmagPy Github page}.
 
-Next, make sure the GUIs are working on the command line.
+\item Make sure the GUIs are working on the command line.
+  \begin{itemize}
 
-For Windows users:
-
-\begin{verbatim}
-  pmag_gui
-\end{verbatim}
-
-For Mac users with Anaconda Python:
+    \item For OSX with Anaconda Python:
 
 \begin{verbatim}
   pmag_gui_anaconda
 \end{verbatim}
 
-For Mac users with a different Python:
+     \item For OSX with non-Anaconda Python OR a developer install:
 
 \begin{verbatim}
   pmag_gui.py
 \end{verbatim}
+
+     \item For Windows (pip install only):
+
+\begin{verbatim}
+  pmag_gui
+\end{verbatim}
+
+     \item For Windows with a developer install:
+
+\begin{verbatim}
+  pmag_gui.py
+\end{verbatim}
+    \end{itemize}
 
 If you don't see the Pmag GUI window, make sure you have followed all the install directions correctly, and check the \href{#trouble}{Trouble Shooting} section.  If you are stumped, please create a \href{https://github.com/PmagPy/PmagPy/issues}{Github issue}.
 
@@ -337,9 +351,9 @@ If you are a developer, and wish to download PmagPy from the \href{https://githu
 
 *Note*: you cannot have both a developer install and a pip install.  If you want to do a developer install, make sure you uninstall pmagpy/pmagpy-cli first if you have already installed them.
 
-If you're wondering whether you should do a \href{#pip_install}{pip install} or a developer install, it depends on what you're hoping to do with {\bf PmagPy}.  The benefit of a regular pip installation is that you will get a tested, stable version of {\bf PmagPy}.  You can install everything you need quickly and easily, and you'll be able to use the full functionality.  The benefit of a developer installation is that you will be able to stay up-to-date with what other developers are working on.  You will also be able to make changes and use those changes immediately.  The downside is that the developer install may be buggier and requires to edit your \$PATH.
+The benefit of a regular \href{#pip_install}{pip installation} is that you will get a tested, stable version of {\bf PmagPy}.  The install is quick and easy, and can access {\bf PmagPy}'s full functionality.  The benefit of a developer installation is that you will be able to stay up-to-date with what other developers are working on.  You will also be able to make changes and use those changes immediately.  However, the developer install may be buggier and requires to edit your \$PATH.
 
-Check out our guidelines on \href{https://github.com/PmagPy/PmagPy/blob/master/CONTRIBUTING.md}{how to contribute to PmagPy} for guidelines of all sorts, including how to raise issues, request features, and make pull requests.
+Check out our guidelines on \href{https://github.com/PmagPy/PmagPy/blob/master/CONTRIBUTING.md}{how to contribute to PmagPy} for information on how to raise issues, request features, and make pull requests.
 
 If you want to contribute to {\bf PmagPy} or modify {\bf PmagPy} programs for your own use, you should do a developer install, otherwise go with the regular \href{#pip_install}{pip install}.
 
@@ -399,7 +413,18 @@ where path\_to\_python is your specific Python result.
 
 \item After completing the developer install, you will need to restart the Command Prompt.  After restarting, you should be able to use all {\bf PmagPy} functionality.  You will be able to stay up-to-date with {\bf PmagPy} development and make edits in {\bf PmagPy} code which will be immediately available in your system.
 
+\item Complete the steps in the \href{#finishing_up}{Finishing up} section to test your installation
+
 \end{enumerate}
+
+    You will want to stay up to date with {\bf PmagPy} development.  To update your developer install, you will just need to navigate to the {\bf PmagPy} directory and run:
+
+\begin{verbatim}
+    git pull
+\end{verbatim}
+
+This will grab all of the latest code from \href{https://github.com/PmagPy/PmagPy}{Github}, and will be immediately available to you.
+
 
 \subsection{Developer install for OS X/Linux}
 
@@ -432,7 +457,17 @@ where path\_to\_python is your specific Python result.
 
 \item After completing the developer install, you will need to restart your command line.  After restarting, you should be able to use all {\bf PmagPy} functionality as if you had done a full \href{#pip_install}{pip install}.  The only difference is that you will be able to stay up-to-date with {\bf PmagPy} development and make edits in {\bf PmagPy} code which will be immediately available in your system.
 
+\item Complete the steps in the \href{#finishing_up}{Finishing up} section to test your installation
+
 \end{enumerate}
+
+    You will want to stay up to date with {\bf PmagPy} development.  To update your developer install, you will just need to navigate to the {\bf PmagPy} directory and run:
+
+\begin{verbatim}
+    git pull
+\end{verbatim}
+
+This will grab all of the latest code from \href{https://github.com/PmagPy/PmagPy}{Github}, and will be immediately available to you.
 
 \subsection{Details of setting your PATH}
 \customlink{setting_path}
@@ -500,6 +535,8 @@ Note: {\bf Pmag GUI} is available for use with both 3.0 and 2.5 data.  All new c
 \item Make sure you have followed all of the steps in the \href{#quick_start}{Installing PmagPy} section.
 
 \customlink{Project_Directory}
+
+\item Open your command prompt and start {\bf Pmag GUI} with the appropriate command (pmag\_gui.py, pmag\_gui\_anaconda, or pmag\_gui).  If you are confused about which command to use, see the \href{#finishing_up}{Finishing up} section for details.
 
 \item  When you start {\bf Pmag GUI}, the first step is to change directories into a  `Project Directory'. For each study, create a directory with a name that relates to that study. Here we will call it {\it ThisProject}.  This is where you will collect and process all the rock and paleomagnetic data for a given study, usually a publication. The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path. Under certain Windows versions, this means you should not use your home directory, but create a directory called for example:\begin{verbatim}
   D:\MyPmagProjects\end{verbatim} and put {\it ThisProject} there.
