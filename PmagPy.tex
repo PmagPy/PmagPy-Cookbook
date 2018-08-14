@@ -560,7 +560,6 @@ Be sure to replace the wheel name above with the actual wheel you downloaded.
 
 Or install the wheel from the download site directly:
 \begin{verbatim}
-
 pip install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-16.04 wxPython
 
 \end{verbatim}
@@ -576,10 +575,8 @@ Again, you will need the replace the link above with the link appropriate for yo
     import wx
 
 \end{verbatim}
-
   You may have an error like this:
-  \begin{verbatim}
-
+\begin{verbatim}
     ImportError: libwx_gtk3u_core-3.0.so.0: cannot open shared object file: No such file or directory
 
 \end{verbatim}
@@ -597,12 +594,21 @@ Try again to import wx.  If it now works, you may want to add that line to the e
 For more details about this issue, see \href{https://github.com/wxWidgets/Phoenix/blob/e13273c5d939d993abf2a2649e90b3ea0d39382c/packaging/README-bdist.txt#L38-L57}{this explanation} and \href{https://github.com/pyenv/pyenv/issues/691}{this Github issue} for more information.
 
 
+
+
 \item Now, you can either complete a \href{#dev_for_nix}{developer install}, or install pmagpy/pmagpy-cli using pip:
 
 \begin{verbatim}
     pip install pmagpy
     pip install pmagpy-cli
 \end{verbatim}
+
+\item If you are trying to run PmagPy programs and you run into an issue with python vs pythonw, you may need to link your python to pythonw:
+  \begin{verbatim}
+
+    ln -s ~/anaconda3/bin/python3 ~/anaconda3/bin/pythonw
+
+    \end{verbatim}
 
   \end{enumerate}
 
