@@ -130,7 +130,14 @@ If you have already installed Canopy Python or Anaconda Python, you can skip thi
     conda install future
     pip install scripttest
     pip install --upgrade -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
+\end{verbatim}
+     The next two basemap packages are optional:
+
+\begin{verbatim}
+
     conda install basemap --channel conda-forge
+    conda install basemap-data-hires -channel conda-forge
+
 \end{verbatim}
 
    \item If you have trouble running any of the above commands, you may need to preface them with ``sudo'': i.e., \texttt{sudo pip install scripttest}.  You will then be asked for your computer password.
@@ -425,7 +432,7 @@ where path\_to\_python is your specific Python result.
 
 This will grab all of the latest code from \href{https://github.com/PmagPy/PmagPy}{Github}, and will be immediately available to you.
 
-
+\customlink{dev_for_nix}
 \subsection{Developer install for OS X/Linux}
 
 \begin{enumerate}
@@ -434,7 +441,7 @@ This will grab all of the latest code from \href{https://github.com/PmagPy/PmagP
 
 \item Open your Terminal
 
-\item You must use bash as your shell (not csh, zsh, etc.). This is the default for OSX, so if you have set up a different shell you will need to switch back.  Select Terminal \verb!-->! Preferences \verb!-->! General, and choose "default login shell".  Restart Terminal, and you'll be ready to go.
+\item You must use bash as your shell (not csh, zsh, etc.). This is the default for OSX, so if you have set up a different shell you will need to switch back.  Select Terminal \verb!-->! Preferences \verb!-->! General, and choose ``default login shell''.  Restart Terminal, and you'll be ready to go.
 
 \item Navigate to the directory where you want to put the PmagPy folder, then run:
 
@@ -503,9 +510,66 @@ Next, add to your existing PYTHONPATH variable or create a new PYTHONPATH variab
 \end{verbatim}
 
 
-
 %\setcounter{tocdepth}{1}
 %\tableofcontents
+
+
+\section{Installing for Linux}
+
+\begin{enumerate}
+
+  \item Download and install \href{https://www.continuum.io/downloads}{Anaconda Python 3}
+
+   \item Download a few non-default Python packages.  Open your command line and run the following commands: \begin{verbatim}
+
+    conda install future
+    pip install scripttest
+\end{verbatim}
+     The next two basemap packages are optional:
+
+\begin{verbatim}
+    conda install basemap --channel conda-forge
+    conda install basemap-data-hires -channel conda-forge
+
+\end{verbatim}
+
+\item If you have trouble running any of the above commands, you may need to preface them with ``sudo'': i.e., \texttt{sudo pip install scripttest}.  You will then be asked for your computer password.
+
+\item Next, you need to install wxPython.  The following is a list of wxPython dependencies for Ubuntu 16.04 (this list may be redundant or incomplete, depending on your specific OS):
+
+  \begin{verbatim}
+
+    pip install libtiff
+
+    sudo apt-get install libgtk-3-dev freeglut3-dev libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-doc gstreamer1.0-tools libgstreamer-plugins-base0.10-dev
+
+    sudo apt-get install dpkg-dev build-essential libjpeg-dev  libtiff-dev libsdl1.2-dev   libnotify-dev  freeglut3 freeglut3-dev libsm-dev libwebkitgtk-3.0-dev libxtst-dev python-dev libpng-dev
+
+    sudo apt-get install libwebkit2gtk-4.0-dev libsdl2-dev
+\end{verbatim}
+
+
+\item Carefully read through \href{https://wxpython.org/pages/downloads/}{this page} and look for a compatible wheel for your distribution.  Download the appropriate wheel and then install it:
+\begin{verbatim}
+
+pip install wxPython-4.0.1-cp35-cp35m-linux_x86_64.whl
+
+\end{verbatim}
+
+Be sure to replace the wheel name above with the actual wheel you downloaded.
+
+\item If you aren't able to find a wheel that works, try \href{https://wxpython.org/blog/2017-08-17-builds-for-linux-with-pip/}{these instructions}
+
+\item Now, you can either complete a \href{#dev_for_nix}{developer install}, or install pmagpy/pmagpy-cli using pip:
+
+\begin{verbatim}
+    pip install pmagpy
+    pip install pmagpy-cli
+\end{verbatim}
+
+  \end{enumerate}
+
+
 \section{Next steps}
 
 Where do you want to go from here?
