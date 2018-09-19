@@ -156,7 +156,7 @@ First, you will need to download a scientific Python distribution.  We strongly 
     pip install scripttest
     pip install --upgrade -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
 \end{verbatim}
-     The next two basemap packages are optional:
+     The next two basemap packages are only required if you want to make maps:
 \begin{verbatim}
 
     conda install basemap --channel conda-forge
@@ -225,7 +225,7 @@ array([30.59060998])
 Test the GUIs:
 
 \begin{itemize}
-\item  On the command line, run:
+\item  On the command line, open Pmag GUI by running:
 
 \begin{verbatim}
 pmag_gui_anaconda
@@ -277,7 +277,7 @@ First, you will need to download a scientific Python distribution.  We strongly 
     pip install scripttest
     pip install --upgrade -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
 \end{verbatim}
-     The next two basemap packages are optional:
+     The next two basemap packages are only required if you want to make maps:
 \begin{verbatim}
 
     conda install basemap --channel conda-forge
@@ -344,7 +344,7 @@ array([30.59060998])
 Test the GUIs:
 
 \begin{itemize}
-\item  On the command line, run:
+\item  On the command line, open Pmag GUI by running:
 
 \begin{verbatim}
 pmag_gui
@@ -387,10 +387,191 @@ If you ever need to uninstall pmagpy or pmagpy-cli:
 \subsection{Linux pip install}
 
 \subsubsection{1. Install Python}
-\subsubsection{2. Test your python}
+
+First, you will need to download a scientific Python distribution.  We strongly recommend Anaconda.  Be warned, your computer comes with a version of Python already installed; but this pre-installed version does NOT have everything you will need to run {\bf PmagPy}, so you will still need to download Anaconda.
+
+\begin{itemize}
+   \item Download and install \href{https://www.anaconda.com/download}{Anaconda Python 3}.
+   \item Open your Terminal (see \href{#command_line}{this section} for more information on finding Terminal).
+   \item Download a few non-default Python packages.  Run the following commands: \begin{verbatim}
+
+    conda install future
+    pip install scripttest
+    pip install --upgrade -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
+\end{verbatim}
+     The next two basemap packages are only required if you want to make maps:
+\begin{verbatim}
+
+    conda install basemap --channel conda-forge
+    conda install basemap-data-hires --channel conda-forge
+
+\end{verbatim}
+
+\item If you have trouble running any of the above commands, you may need to preface them with ``sudo'': i.e., \texttt{sudo pip install scripttest}.  You will then be asked for your computer password.
+
+  \end{itemize}
+
+
+\subsubsection{2. Install wxPython}
+
+Next, you need to install wxPython.
+
+\begin{itemize}
+  \item The following is a list of wxPython dependencies for Ubuntu 16.04 (this list may be redundant or incomplete, depending on your specific OS):
+
+  \begin{verbatim}
+
+    pip install libtiff
+
+    sudo apt-get install libgtk-3-dev freeglut3-dev libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-doc gstreamer1.0-tools libgstreamer-plugins-base0.10-dev
+
+    sudo apt-get install dpkg-dev build-essential libjpeg-dev  libtiff-dev libsdl1.2-dev   libnotify-dev  freeglut3 freeglut3-dev libsm-dev libwebkitgtk-3.0-dev libxtst-dev python-dev libpng-dev
+
+    sudo apt-get install libwebkit2gtk-4.0-dev libsdl2-dev
+\end{verbatim}
+
+
+Carefully read through \href{https://wxpython.org/pages/downloads/}{this page} and look for a compatible wheel for your distribution.  Download the appropriate wheel and then install it:
+\begin{verbatim}
+
+pip install wxPython-4.0.1-cp35-cp35m-linux_x86_64.whl
+
+\end{verbatim}
+
+Be sure to replace the wheel name above with the actual wheel you downloaded.
+
+Or install the wheel from the download site directly:
+\begin{verbatim}
+pip install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-16.04 wxPython
+
+\end{verbatim}
+
+Again, you will need the replace the link above with the link appropriate for your OS.
+
+\item If you aren't able to find a wheel that works, try \href{https://wxpython.org/blog/2017-08-17-builds-for-linux-with-pip/}{these instructions}
+
+\end{itemize}
+
+\subsubsection{3. Test your python}
+
+
+Run python on your command line.
+
+You should see something like this: \begin{verbatim}
+
+Python 3.6.1 |Anaconda custom (x86_64)| (default, May 11 2017, 13:04:09)
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>\end{verbatim}
+
+If you don't see that, go back and reinstall Anaconda.
+
+Once you have successfully started the python interactive prompt, try:
+\begin{verbatim}
+
+    import wx
+
+\end{verbatim}
+  You may have an error like this:
+\begin{verbatim}
+    ImportError: libwx_gtk3u_core-3.0.so.0: cannot open shared object file: No such file or directory
+
+\end{verbatim}
+
+If so, exit the python interpreter (quit()) and try:
+  \begin{verbatim}
+    export LD_LIBRARY_PATH=~/anaconda3/lib/python3.6/site-packages/wx/
+
+\end{verbatim}
+
+(If you are using a non-Anaconda Python, your path to wx may be different).
+
+Try again to import wx.  If it now works, you may want to add that line to the end of your .bashrc file so that you don't have to specify the path each time.
+
+For more details about this issue, see \href{https://github.com/wxWidgets/Phoenix/blob/e13273c5d939d993abf2a2649e90b3ea0d39382c/packaging/README-bdist.txt#L38-L57}{this explanation} and \href{https://github.com/pyenv/pyenv/issues/691}{this Github issue} for more information.
+
 \subsubsection{3. Install PmagPy}
+
+\begin{itemize}
+     \item Update pip and setuptools on the command line:
+
+\begin{verbatim}
+
+  conda upgrade pip
+  conda upgrade setuptools
+\end{verbatim}
+\item Install pmagpy and pmagpy-cli:
+
+\begin{verbatim}
+
+  pip install --upgrade pmagpy --no-deps
+  pip install --upgrade pmagpy-cli --no-deps
+\end{verbatim}
+     \item If you are getting weird install errors, try uninstalling and then force reinstalling with this:
+
+\begin{verbatim}
+  pip uninstall pmagpy &&  pip install pmagpy --upgrade --no-deps --force-reinstall --no-cache-dir
+\end{verbatim}
+
+You can do the same for pmagpy-cli.
+   \end{itemize}
+
+
 \subsubsection{4. Test PmagPy}
+
+Test core functionality:
+
+\begin{itemize}
+  \item On your command line, type ``python'' to start the interpreter.  You will import pmagpy and then run a simple calculation.
+
+\begin{verbatim}
+>>> from pmagpy import pmag
+>>> pmag.angle([350.0,10.0],[320.0,20.0])
+array([30.59060998])
+>>>
+\end{verbatim}
+
+\end{itemize}
+
+Test the GUIs:
+
+\begin{itemize}
+\item  On the command line, open Pmag GUI by running:
+
+\begin{verbatim}
+pmag_gui.py
+\end{verbatim}
+
+\end{itemize}
+
+If any of these commands don't work, go back and carefully follow the install instructions.  If you still have a problem, try the \href{#trouble}{Troubleshooting section}.  If you don't find an answer there, check out the existing \href{https://github.com/PmagPy/PmagPy/issues}{Github issues} and create a new one if necessary.
+
+
 \subsubsection{5. Keeping PmagPy up-to-date}
+
+
+To stay up to date with new features and bug fixes, you should periodically update both {\bf PmagPy} packages.
+\begin{verbatim}
+
+  pip install pmagpy --upgrade --no-deps
+\end{verbatim}
+
+To check the currently installed version number for pmagpy (or any other Python package), run:
+\begin{verbatim}
+
+conda list
+\end{verbatim}
+
+If you ever need to uninstall pmagpy or pmagpy-cli:
+
+\begin{verbatim}
+
+  pip uninstall pmagpy
+\end{verbatim}
+  or
+\begin{verbatim}
+  pip uninstall pmagpy-cli
+\end{verbatim}
 
 
 \subsection{OSX developer install}
@@ -671,7 +852,7 @@ Next, add to your existing PYTHONPATH variable or create a new PYTHONPATH variab
 \end{verbatim}
 
 
-\item Carefully read through \href{https://wxpython.org/pages/downloads/}{this page} and look for a compatible wheel for your distribution.  Download the appropriate wheel and then install it:
+\item Carefully read through \href{https://wxpython.org/pages/downloads/}{this page} and look for a compatible wheel for your distribution.  Download the appropriate wheel and then install it, e.g.:
 \begin{verbatim}
 
 pip install wxPython-4.0.1-cp35-cp35m-linux_x86_64.whl
@@ -680,7 +861,7 @@ pip install wxPython-4.0.1-cp35-cp35m-linux_x86_64.whl
 
 Be sure to replace the wheel name above with the actual wheel you downloaded.
 
-Or install the wheel from the download site directly:
+Or install the wheel from the download site directly, e.g.:
 \begin{verbatim}
 pip install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-16.04 wxPython
 
@@ -697,7 +878,7 @@ Again, you will need the replace the link above with the link appropriate for yo
     import wx
 
 \end{verbatim}
-  You may have an error like this:
+You may have an error like this:
 \begin{verbatim}
     ImportError: libwx_gtk3u_core-3.0.so.0: cannot open shared object file: No such file or directory
 
