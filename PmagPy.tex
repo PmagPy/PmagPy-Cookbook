@@ -84,17 +84,18 @@ You have three options for downloading and using PmagPy.
 \begin{itemize}
   \item If you only want to use the graphical user interfaces (GUIs), you can download them as  \href{#standalone}{standalone programs}.  The standalone install doesn't require that you have Python, but is more limited than the full PmagPy install.
 
-  \item If you want access to all of PmagPy's functionality, you must first install the recommended version of
-    \href{#getting_python}{ Python}.  Then  \href{#pip_install}{use the pip utility} to download and install the {\bf PmagPy} function library and the {\bf PmagPy} command line programs.
+  \item If you want access to all of PmagPy's functionality, you must first install Anaconda Python. Then you will use pip to download and install the {\bf PmagPy} function library and the {\bf PmagPy} command line programs.
 
-   \item If you want to actively participate in developing and modifying {\bf PmagPy}, you should do a \href{#developer_install}{developer install}.
+  \item If you want to actively participate in developing and modifying {\bf PmagPy}, you will do a developer install.
+\end{itemize}
+
 
 \customlink{standalone}
 \section{Standalone GUI download}
 
 If you do not need the full PmagPy functionality, and you only want to use Pmag GUI, MagIC GUI, Thellier GUI, and Demag GUI, there is now a standalone download for you.  You won't need to install Python for this.
 
-\noindent Follow the download instructions in the provided links, and then you can skip the ``Full install'' section and go straight to using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI}.  The standalone versions of these applications are still in development; please report problems to the PmagPy team by creating \href{https://github.com/PmagPy/PmagPy/issues/}{an issue on Github}.  Note that these standalone programs can be slow to boot up: please be patient!
+%\noindent Follow the download instructions in the provided links, and then you can go straight to using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI}.  The standalone versions of these applications are still in development; please report problems to the PmagPy team by creating \href{https://github.com/PmagPy/PmagPy/issues/}{an issue on Github}.  Note that these standalone programs can be slow to boot up: please be patient!
 
 \subsection{OSX Standalone download}
 
@@ -113,26 +114,49 @@ This binary has only been tested on a Ubuntu 14.04 (Trusty) distribution and mig
 
 \customlink{full_install}
 \customlink{getting_python}
-\section{Full PmagPy install}
 
-\subsection{Installing Python}
+%\setcounter{tocdepth}{1}
+%\tableofcontents
 
-To get the full use of PmagPy functionality, you will first have to install Python.
 
-If you have already installed Canopy Python or Anaconda Python, you can skip this section and go straight to \href{#pip_install}{installing PmagPy}.  If you have a Mac, be aware that your computer comes with a version of Python already installed; but this pre-installed version does NOT have everything you will need to run {\bf PmagPy}, so you will still need to download a scientific Python distribution.
+\section{Installing PmagPy}
 
-   \begin{itemize}
-   \item Download and install \href{https://www.anaconda.com/download}{Anaconda Python 3}.  Windows users should select ``Add Anaconda to my PATH environment variable'' in Advanced Installation Options (if available).  Otherwise, stick with the defaults.
-   \item Find your \href{#command_line}{command line}.  This is Terminal for OS X and Command Prompt for Windows.  (Note for Windows users: if you did not add Anaconda Python to your PATH as recommended above, you will open the ``Anaconda Prompt'' instead).
 
-   \item Download a few non-default Python packages.  Open your command line and run the following commands: \begin{verbatim}
+If you have previously downloaded Canopy Python, you will need to uninstall it following \href{https://support.enthought.com/hc/en-us/articles/204469700-Uninstalling-and-resetting-Canopy}{these directions}
+
+Next, choose whether you want a developer install.  If you want to get into the nitty-gritty of the code, you should do a developer install.  If you just want to use {\bf PmagPy} out of the box, do a regular pip install.
+
+*Note*: you cannot have both a developer install and a pip install.  If you want to do a developer install, make sure you uninstall pmagpy/pmagpy-cli first if you have already installed them.
+
+The benefit of a regular \href{#pip_install}{pip installation} is that you will get a tested, stable version of {\bf PmagPy}.  The install is quick and easy, and can access {\bf PmagPy}'s full functionality.  The benefit of a developer installation is that you will be able to stay up-to-date with what other developers are working on.  You will also be able to make changes and use those changes immediately.  However, the developer install may be buggier and requires to edit your \$PATH.
+
+Check out our guidelines on \href{https://github.com/PmagPy/PmagPy/blob/master/CONTRIBUTING.md}{how to contribute to PmagPy} for information on how to raise issues, request features, and make pull requests.
+
+Next, choose install instructions based on your chosen install method (pip/developer) and your operating system (OSX/Windows/Linux).
+
+\href{#osx_pip_install}{OSX pip}
+
+\href{#windows_pip_install}{Windows pip}
+
+\href{#linux_pip_install}{Linux pip}
+
+\customlink{#osx_pip_install}
+\subsection{OSX pip install}
+
+\subsubsection{1. Install Python}
+
+First, you will need to download a scientific Python distribution.  We strongly recommend Anaconda.  Be warned, your computer comes with a version of Python already installed; but this pre-installed version does NOT have everything you will need to run {\bf PmagPy}, so you will still need to download Anaconda.
+
+\begin{itemize}
+   \item Download and install \href{https://www.anaconda.com/download}{Anaconda Python 3}.
+   \item Open your Terminal (see \href{#command_line}{this section} for more information on finding Terminal).
+   \item Download a few non-default Python packages.  Run the following commands: \begin{verbatim}
 
     conda install future
     pip install scripttest
     pip install --upgrade -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
 \end{verbatim}
      The next two basemap packages are optional:
-
 \begin{verbatim}
 
     conda install basemap --channel conda-forge
@@ -140,19 +164,15 @@ If you have already installed Canopy Python or Anaconda Python, you can skip thi
 
 \end{verbatim}
 
-   \item If you have trouble running any of the above commands, you may need to preface them with ``sudo'': i.e., \texttt{sudo pip install scripttest}.  You will then be asked for your computer password.
-   \item For Windows users, you may need to help your computer to find the pip utility.  To find this, run these commands: \begin{verbatim}
+\item If you have trouble running any of the above commands, you may need to preface them with ``sudo'': i.e., \texttt{sudo pip install scripttest}.  You will then be asked for your computer password.
 
-    cd \
-    dir pip.exe /s /p \end{verbatim}
-     This should give you the full pip path, for example: \begin{verbatim}
-  C:\Users\YOUR_USERNAME\Anaconda3\Scripts\pip.exe
-\end{verbatim}
-     Then you can re-run the pip command using the full path: \begin{verbatim}
-  C:\Users\YOUR_USERNAME\Anaconda3\Scripts\pip.exe install scripttest
-  \end{verbatim}
+  \end{itemize}
 
-   \item To make sure that you have installed Python successfully, type \texttt{python} on your command line.  You should see something like this: \begin{verbatim}
+
+\subsubsection{2. Test your python}
+
+
+To make sure that you have installed Python successfully, type \texttt{python} on your command line.  You should see something like this: \begin{verbatim}
 
 Python 3.6.1 |Anaconda custom (x86_64)| (default, May 11 2017, 13:04:09)
 [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
@@ -160,61 +180,76 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>\end{verbatim}
 (Press control-D to exit)
 
-  \item If you ever need to uninstall Anaconda Python, see the \href{https://docs.anaconda.com/anaconda/install/uninstall}{documentation}.
+\subsubsection{3. Install PmagPy}
 
-\item To learn more about using Python, click \href{#Python}{here}.
-
-
-  \item Now you are ready to install {\bf PmagPy}!
-
-   \end{itemize}
-\end{itemize}
-%   \item Download and install the \href{https://www.enthought.com/products/canopy/}{Enthought Canopy distribution of Python}. Canopy Express (the free version) contains everything you need (except the mapping utilities). If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license} that gives you access to additional features and bundled packages, including the Basemap package.
-%   \item Launch Canopy to complete the installation process.  You may need to use control click on the Canopy icon to open it for the first time--try this if you get a message that says ``Canopy can't be opened because it is from an unidentified developer.''  Once you've opened Canopy successfully, select ``yes'' to making Canopy your default Python environment.  In the lower right hand corner of the Canopy launch page, you will find the Version number (currently 1.7.4 or higher). Please include this in any correspondence with the PmagPy team. While you might find use for some of the features within the Canopy environment that opens as an application, PmagPy programs are best run or launched on the \href{#command_line}{command line}.
-%      \item Optional:  setting up Basemap for use in making maps with Python.
-%Once you have installed the full version of Canopy and want to use a mapping programs like the \href{#basemap_magic.py}{basemap\_magic.py}) command line program or a function that plots data on a map projection (e.g. ipmag.plot\_pole), \customlink{HighRes}
-%     click on  the `Package Manager' button on the Canopy welcome page, and then on `Available Packages'.  Install both basemap packages (one has high resolution data files in it).
-%        \item A last note about Canopy: you should update it regularly!  Open the Canopy application and update all the packages at least every few months.
-%\end{itemize}
-% \subsection{Getting Python for Windows users}
-%   \begin{itemize}
-%   \item To use the full functionality PmagPy functionality, you will need to download the most recent Enthought Python Distribution (EPD).  If you are at a degree-granting educational institution you can request an \href{https://www.enthought.com/products/canopy/academic/}{academic license}, which gives access to this distribution.
-%   \item Once you have registered and gotten your academic license, you can \href{https://store.enthought.com/repo/epd/installers/epd-7.5-2-win-x86_64.msi}{download EPD here}.
-%   \item Windows users who cannot get an academic license should install this \href{http://magician.ucsd.edu/Software/PmagPy/archive/epd-7.3-2-win-x86.msi}{older Enthought Distribution}.  This version of EPD will not support all PmagPy programs, so if you want to run Pmag GUI or MagIC GUI you should download the \href{#standalone}{standalone versions}.
-%   \item If you run into problems with your installation, you may need to uninstall any previous Python installations.
-%   \end{itemize}
-\customlink{pip_install}
-
-\subsection{Installing PmagPy}
-
- Here we provide instructions for using pip to install PmagPy from the command line.
-
-       ``Pip'' is a package manager that comes standard with any modern Python distribution.  Pip allows you to install and uninstall pmagpy and pmagpy-cli.  pmagpy provides all the low-level functionality of PmagPy, and pmagpy-cli provides the PmagPy command-line-interface and has all the packages you may use to download/upload, visualize, and manipulate data.
-
-  To install using pip:
-
-  \begin{itemize}
-     \item Find  and open your \href{#command_line}{command line}.
-     \item Update pip and setuptools: type on  the command line:
+\begin{itemize}
+     \item Update pip and setuptools on the command line:
 
 \begin{verbatim}
 
   conda upgrade pip
   conda upgrade setuptools
 \end{verbatim}
-\item Install or update pmagpy, use the command:
+\item Install pmagpy and pmagpy-cli:
 
 \begin{verbatim}
 
   pip install --upgrade pmagpy --no-deps
-\end{verbatim}
-\item Install or update pmagpy-cli, use the command:
-
-\begin{verbatim}
-
   pip install --upgrade pmagpy-cli --no-deps
 \end{verbatim}
-\item To uninstall either, use the command:
+     \item If you are getting weird install errors, try uninstalling and then force reinstalling with this:
+
+\begin{verbatim}
+  pip uninstall pmagpy &&  pip install pmagpy --upgrade --no-deps --force-reinstall --no-cache-dir
+\end{verbatim}
+
+You can do the same for pmagpy-cli.
+   \end{itemize}
+
+\subsubsection{4. Test PmagPy}
+
+Test core functionality:
+
+\begin{itemize}
+  \item On your command line, type ``python'' to start the interpreter.  You will import pmagpy and then run a simple calculation.
+
+\begin{verbatim}
+>>> from pmagpy import pmag
+>>> pmag.angle([350.0,10.0],[320.0,20.0])
+array([30.59060998])
+>>>
+\end{verbatim}
+
+\end{itemize}
+
+Test the GUIs:
+
+\begin{itemize}
+\item  On the command line, run:
+
+\begin{verbatim}
+pmag_gui_anaconda
+\end{verbatim}
+
+\end{itemize}
+
+If any of these commands don't work, go back and carefully follow the install instructions.  If you still have a problem, try the \href{#trouble}{Troubleshooting section}.  If you don't find an answer there, check out the existing \href{https://github.com/PmagPy/PmagPy/issues}{Github issues} and create a new one if necessary.
+
+\subsubsection{5. Keeping PmagPy up-to-date}
+
+To stay up to date with new features and bug fixes, you should periodically update both {\bf PmagPy} packages.
+\begin{verbatim}
+
+  pip install pmagpy --upgrade --no-deps
+\end{verbatim}
+
+To check the currently installed version number for pmagpy (or any other Python package), run:
+\begin{verbatim}
+
+conda list
+\end{verbatim}
+
+If you ever need to uninstall pmagpy or pmagpy-cli:
 
 \begin{verbatim}
 
@@ -224,84 +259,176 @@ Type "help", "copyright", "credits" or "license" for more information.
 \begin{verbatim}
   pip uninstall pmagpy-cli
 \end{verbatim}
-     \item If you run into trouble, use pip to uninstall both pmagpy and pmagpy-cli, then try again to install first pmagpy and then pmagpy-cli.
+
+\customlink{#windows_pip_install}
+\subsection{Windows pip install}
+
+
+\subsubsection{1. Install Python}
+First, you will need to download a scientific Python distribution.  We strongly recommend Anaconda.
+
+   \begin{itemize}
+   \item Download and install \href{https://www.anaconda.com/download}{Anaconda Python 3}.  You should select ``Add Anaconda to my PATH environment variable'' in Advanced Installation Options (if available).  Otherwise, stick with the defaults.
+   \item Open your Command Prompt (see \href{#command_line}{this section} for more information on finding Command Prompt)
+   \item Note: if you did not add Anaconda Python to your PATH as recommended above, you will open the ``Anaconda Prompt'' instead).
+   \item Download a few non-default Python packages.  Run the following commands: \begin{verbatim}
+
+    conda install future
+    pip install scripttest
+    pip install --upgrade -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
+\end{verbatim}
+     The next two basemap packages are optional:
+\begin{verbatim}
+
+    conda install basemap --channel conda-forge
+    conda install basemap-data-hires --channel conda-forge
+
+\end{verbatim}
+\end{itemize}
+
+
+\subsubsection{2. Test your python}
+
+To make sure that you have installed Python successfully, type \texttt{python} on your command line.  You should see something like this: \begin{verbatim}
+
+Python 3.6.1 |Anaconda custom (x86_64)| (default, May 11 2017, 13:04:09)
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>\end{verbatim}
+(Press control-D to exit)
+
+
+\subsubsection{3. Install PmagPy}
+
+
+\begin{itemize}
+     \item Update pip and setuptools on the command line:
+
+\begin{verbatim}
+
+  conda upgrade pip
+  conda upgrade setuptools
+\end{verbatim}
+\item Install pmagpy and pmagpy-cli:
+
+\begin{verbatim}
+
+  pip install --upgrade pmagpy --no-deps
+  pip install --upgrade pmagpy-cli --no-deps
+\end{verbatim}
      \item If you are getting weird install errors, try uninstalling and then force reinstalling with this:
 
 \begin{verbatim}
-
-  pip install pmagpy --upgrade --no-deps --force-reinstall --no-cache-dir
+  pip uninstall pmagpy &&  pip install pmagpy --upgrade --no-deps --force-reinstall --no-cache-dir
 \end{verbatim}
+
+You can do the same for pmagpy-cli.
    \end{itemize}
 
-   %
+\subsubsection{4. Test PmagPy}
 
+Test core functionality:
 
-% \begin{itemize}
-%   \item Download the zip file from the \href{https://github.com/ltauxe/PmagPy/releases/latest} {PmagPy} software package on Github. Unzip the downloaded file by double clicking on it. PC users should extract all the files to a folder on your desktop (or wherever).  Once you have the folder open, double click on the {\it install\_MacOS} or {\it install\_Windows} file depending on your operating system.  (If you are a Linux user, just copy the files to some directory and put both PmagPy and PmagPy/programs into your path.)
-%   \item For Windows users, the install process will create a custom ``PmagPy Prompt'' with a shortcut on your desktop.  This prompt is identical to the regular Command Prompt, except that it has all of the PmagPy functionality built in. From here on, whenever the documentation refers to your ``command line'', you should use the PmagPy Prompt.
-%    \end{itemize}
-%
-%
-   \customlink{finishing_up}
-   \subsection{Finishing up}
-
-    Now your installation should be complete.  There are a few more details:
-    \begin{itemize}
-\item Testing your installation:
-
-  To make sure everything is working, return to your \href{#command_line}{command line}.
-
-  \begin{itemize}
-
-    \item For OSX or developer install, run the command:
+\begin{itemize}
+  \item On your command line, type ``python'' to start the interpreter.  You will import pmagpy and then run a simple calculation.
 
 \begin{verbatim}
-  eqarea.py -h
+>>> from pmagpy import pmag
+>>> pmag.angle([350.0,10.0],[320.0,20.0])
+array([30.59060998])
+>>>
 \end{verbatim}
-
-    \item For Windows (pip install only), run the command:
-
-\begin{verbatim}
-  eqarea -h
-\end{verbatim}
-
-(In fact, you will drop the ``.py'' anytime you are calling a command-line program.)
 
 \end{itemize}
 
-If you do not see the help message, check the \href{#trouble}{Trouble Shooting} section. If you don't find a solution there, please report the error message and  the Python distribution you are using, including the version number, on \href{https://github.com/PmagPy/PmagPy/issues}{the PmagPy Github page}.
+Test the GUIs:
 
-\item Make sure the GUIs are working on the command line.
-  \begin{itemize}
-
-    \item For OSX with Anaconda Python (pip install only):
+\begin{itemize}
+\item  On the command line, run:
 
 \begin{verbatim}
-  pmag_gui_anaconda
+pmag_gui
 \end{verbatim}
 
-     \item For OSX with non-Anaconda Python OR a developer install:
+\end{itemize}
+
+If any of these commands don't work, go back and carefully follow the install instructions.  If you still have a problem, try the \href{#trouble}{Troubleshooting section}.  If you don't find an answer there, check out the existing \href{https://github.com/PmagPy/PmagPy/issues}{Github issues} and create a new one if necessary.
+
+
+\subsubsection{5. Keeping PmagPy up-to-date}
+
+
+To stay up to date with new features and bug fixes, you should periodically update both {\bf PmagPy} packages.
+\begin{verbatim}
+
+  pip install pmagpy --upgrade --no-deps
+\end{verbatim}
+
+To check the currently installed version number for pmagpy (or any other Python package), run:
+\begin{verbatim}
+
+conda list
+\end{verbatim}
+
+If you ever need to uninstall pmagpy or pmagpy-cli:
 
 \begin{verbatim}
-  pmag_gui.py
+
+  pip uninstall pmagpy
 \end{verbatim}
-
-     \item For Windows (pip install only):
-
+  or
 \begin{verbatim}
-  pmag_gui
+  pip uninstall pmagpy-cli
 \end{verbatim}
 
-     \item For Windows with a developer install:
 
-\begin{verbatim}
-  pmag_gui.py
-\end{verbatim}
-    \end{itemize}
 
-If you don't see the Pmag GUI window, make sure you have followed all the install directions correctly, and check the \href{#trouble}{Trouble Shooting} section.  If you are stumped, please create a \href{https://github.com/PmagPy/PmagPy/issues}{Github issue}.
+\customlink{#linux_pip_install}
+\subsection{Linux pip install}
 
-\item Accessing example data files:
+\subsubsection{1. Install Python}
+\subsubsection{2. Test your python}
+\subsubsection{3. Install PmagPy}
+\subsubsection{4. Test PmagPy}
+\subsubsection{5. Keeping PmagPy up-to-date}
+
+
+\subsection{OSX developer install}
+
+\subsubsection{1. Install Python}
+\subsubsection{2. Test your python}
+\subsubsection{3. Install PmagPy}
+\subsubsection{4. Test PmagPy}
+\subsubsection{5. Keeping PmagPy up-to-date}
+
+
+\subsection{Windows developer install}
+
+\subsubsection{1. Install Python}
+\subsubsection{2. Test your python}
+\subsubsection{3. Install PmagPy}
+\subsubsection{4. Test PmagPy}
+\subsubsection{5. Keeping PmagPy up-to-date}
+
+
+
+\subsection{Linux developer install}
+
+\subsubsection{1. Install Python}
+\subsubsection{2. Test your python}
+\subsubsection{3. Install PmagPy}
+\subsubsection{4. Test PmagPy}
+\subsubsection{5. Keeping PmagPy up-to-date}
+
+
+
+
+   %
+
+   \customlink{finishing_up}
+   \subsection{Finishing up}
+
+Accessing example data files:
 
    There are many data files used in the examples of programs and for use with the textbook  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3.html}{Essentials of Paleomagnetism}.     You may want to copy  the data files to your Desktop or another convenient location.
    To do this, navigate on the command line to your desired destination folder (for help, see \href{#file_system}{this section}).  Then, use the command:
@@ -313,13 +440,11 @@ move_data_files.py
 This will copy all of the PmagPy example files to your current directory.  NB: If you have a developer install, you can simply navigate to PmagPy/data\_files, and move\_data\_files.py will not be needed.
 
 \customlink{hires}
-\item Installing the Etopo20 package for use with Basemap:
+Installing the Etopo20 package for use with Basemap:
 
 \begin{verbatim}
   install_etopo.py
 \end{verbatim}
-
-   \end{itemize}
 
 
     \subsection {For Anaconda users on OSX}
@@ -510,9 +635,6 @@ Next, add to your existing PYTHONPATH variable or create a new PYTHONPATH variab
 \end{verbatim}
 
 
-%\setcounter{tocdepth}{1}
-%\tableofcontents
-
 
 \section{Installing for Linux}
 
@@ -625,6 +747,12 @@ Where do you want to go from here?
 \item \href{#Python}{Learn how to write your own programs in Python.}
 \item \href{#Notebooks}{Learn how to use Jupyter notebooks for managing your data analysis workflow.}
 \end{itemize}
+
+
+\customlink{pmag_gui.py}
+
+
+
 
 
 \customlink{pmag_gui.py}
@@ -4285,7 +4413,7 @@ which should have generated a plot something like this:
   \href{#hires}{high resolution instructions}
   \href{https://github.com/PmagPy/PmagPy/blob/master/programs/plot_map_pts.py}{[plot\_map\_pts docs]}
 
-NOTE:  This program only works if you have installed basemap (full version of Canopy Python as opposed to the free version.)  It may not work with  free versions.  {\bf plot\_map\_pts.py} will generate a simple map of the data points in a file (lon lat) on the desired projection.
+NOTE:  This program only works if you have installed basemap.  {\bf plot\_map\_pts.py} will generate a simple map of the data points in a file (lon lat) on the desired projection.
 If you want to use high resolution or the etopo20 meshgrid (-etp option), You must install the etopo20 data files and can use \href{#install_etopo.py}{install\_etopo.py}  for that.
  There are many options, so check the documentation (-h option) for details.
 
@@ -5563,9 +5691,8 @@ There are several other tricks shown off in the notebook, which should be enough
 Although there is much much more to do in Python, this documentation is aimed at getting and using {\bf PmagPy}, so that's it for this chapter. Congratulations if you made it to the end!
 
 
-
-\chapter{Troubleshooting}
 \customlink{trouble}
+\chapter{Troubleshooting}
 \label{chap:trouble}
 
 \section{Problems with installing Python or PmagPy}
@@ -5734,8 +5861,6 @@ which will show you all of your pip-installed packages.  If you don't see pmagpy
 
 \end{enumerate}
 
-\section{Problems updating Canopy}
-If you are using Canopy, you will need to keep it up to date.  Currently, that means the version number should be 1.6.1 or higher.  In general, you can update by opening the Canopy application; it will automatically check for updates.  However, if you haven't updated for a long time, Canopy can get ``stuck'' in an old version where it can no longer update.  If that is the case, you will need to fully uninstall and reinstall canopy, following the directions on the Enthought site.  For a full explanation, see \href{https://support.enthought.com/hc/en-us/articles/204469570-Canopy-shows-no-updates-available-reinstalling-from-the-website}{the Enthought website}.  For the full uninstall instructions, see \href{https://support.enthought.com/hc/en-us/articles/204469700-Uninstalling-and-resetting-Canopy}{these directions}.
 
 \section{Error loading dlls (windows only)}
 Some of the modules used in PmagPy have dependencies that are not called directly.  If you are missing one of those dependencies, the programs may fail in odd ways.  In general, it is worthwhile to open Canopy, go into the package manager, and update all packages.  More specifically, if you see an error message like this: \begin{verbatim}ImportError: DLL load failed: The specified procedure could not be found  \end{verbatim} you may be missing the MKL package.  Open Canopy, go to package manager, and select ``Available packages".  Scroll down to MKL, and install it.  This should fix the problem!  Note that windows users who are having trouble opening one of the GUIs should try this solution whether or not they actually see this error message.
@@ -5992,4 +6117,6 @@ Watson, G. (1983).
 
 %\bibliography{UCPbook}
 %\bibliographystyle{apalike2}
+
+
 \end{document}
