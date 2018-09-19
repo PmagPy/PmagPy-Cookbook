@@ -82,9 +82,15 @@ doi:10.1002/2016GC006307.}
 You have three options for downloading and using PmagPy.
 
 \begin{itemize}
-  \item If you only want to use the graphical user interfaces (GUIs), you can download them as  \href{#standalone}{standalone programs}.  The standalone install doesn't require that you have Python, but is more limited than the full PmagPy install.
+\item If you only want to use the graphical user interfaces (GUIs), you can download them as  \href{#standalone}{standalone programs}.  The standalone install doesn't require that you have Python, but is more limited than the full PmagPy install.
 
-  \item If you want access to all of PmagPy's functionality, you must first install Anaconda Python. Then you will use pip to download and install the {\bf PmagPy} function library and the {\bf PmagPy} command line programs.
+\end{itemize}
+
+If you want the full {\bf PmagPy} functionality, you have two options:
+
+\begin{itemize}
+
+  \item You can use pip to download and install the {\bf PmagPy} function library and the {\bf PmagPy} command line programs.
 
   \item If you want to actively participate in developing and modifying {\bf PmagPy}, you will do a developer install.
 \end{itemize}
@@ -119,20 +125,16 @@ This binary has only been tested on a Ubuntu 14.04 (Trusty) distribution and mig
 %\tableofcontents
 
 
-\section{Installing PmagPy}
+\section{Full PmagPy install}
 
 
 If you have previously downloaded Canopy Python, you will need to uninstall it following \href{https://support.enthought.com/hc/en-us/articles/204469700-Uninstalling-and-resetting-Canopy}{these directions}
 
-Next, choose whether you want a developer install.  If you want to get into the nitty-gritty of the code, you should do a developer install.  If you just want to use {\bf PmagPy} out of the box, do a regular pip install.
+Next, choose whether you want a developer install.  If you want to get into the nitty-gritty of the code, you should do a developer install.  If you just want to use {\bf PmagPy} out of the box, do a regular pip install.  *Note*: you cannot have both a developer install and a pip install.  If you want to do a developer install, make sure you uninstall pmagpy/pmagpy-cli first if you have already installed them.
 
-*Note*: you cannot have both a developer install and a pip install.  If you want to do a developer install, make sure you uninstall pmagpy/pmagpy-cli first if you have already installed them.
+The benefit of a regular pip installation is that you will get a tested, stable version of {\bf PmagPy}.  The install is quick and easy, and can access {\bf PmagPy}'s full functionality.  The benefit of a developer installation is that you will be able to stay up-to-date with what other developers are working on.  You will also be able to make changes and use those changes immediately.  However, the developer install may be buggier and requires to edit your \$PATH.
 
-The benefit of a regular \href{#pip_install}{pip installation} is that you will get a tested, stable version of {\bf PmagPy}.  The install is quick and easy, and can access {\bf PmagPy}'s full functionality.  The benefit of a developer installation is that you will be able to stay up-to-date with what other developers are working on.  You will also be able to make changes and use those changes immediately.  However, the developer install may be buggier and requires to edit your \$PATH.
-
-Check out our guidelines on \href{https://github.com/PmagPy/PmagPy/blob/master/CONTRIBUTING.md}{how to contribute to PmagPy} for information on how to raise issues, request features, and make pull requests.
-
-Next, choose install instructions based on your chosen install method (pip/developer) and your operating system (OSX/Windows/Linux).
+Next, choose install instructions based on your preferred install method (pip/developer) and your operating system (OSX/Windows/Linux).
 
 \href{#osx_pip_install}{OSX pip}
 
@@ -140,7 +142,13 @@ Next, choose install instructions based on your chosen install method (pip/devel
 
 \href{#linux_pip_install}{Linux pip}
 
-\customlink{#osx_pip_install}
+\href{#osx_developer_install}{OSX developer}
+
+\href{#windows_developer_install}{Windows developer}
+
+\href{#linux_developer_install}{Linux developer}
+
+\customlink{osx_pip_install}
 \subsection{OSX pip install}
 
 \subsubsection{1. Install Python}
@@ -259,7 +267,7 @@ If you ever need to uninstall pmagpy or pmagpy-cli:
   pip uninstall pmagpy-cli
 \end{verbatim}
 
-\customlink{#windows_pip_install}
+\customlink{windows_pip_install}
 \subsection{Windows pip install}
 
 
@@ -381,7 +389,7 @@ If you ever need to uninstall pmagpy or pmagpy-cli:
 
 
 
-\customlink{#linux_pip_install}
+\customlink{linux_pip_install}
 \subsection{Linux pip install}
 
 \subsubsection{1. Install Python}
@@ -570,7 +578,7 @@ If you ever need to uninstall pmagpy or pmagpy-cli:
   pip uninstall pmagpy-cli
 \end{verbatim}
 
-
+\customlink{osx_developer_install}
 \subsection{OSX developer install}
 
 \subsubsection{1. Install Python}
@@ -688,7 +696,7 @@ If any of these commands don't work, go back and carefully follow the install in
 This will grab all of the latest code from \href{https://github.com/PmagPy/PmagPy}{Github}, and will be immediately available to you.
 
 
-
+\customlink{windows_developer_install}
 \subsection{Windows developer install}
 
 \subsubsection{1. Install Python}
@@ -827,7 +835,7 @@ If any of these commands don't work, go back and carefully follow the install in
 This will grab all of the latest code from \href{https://github.com/PmagPy/PmagPy}{Github}, and will be immediately available to you.
 
 
-
+\customlink{linux_developer_install}
 \subsection{Linux developer install}
 
 \subsubsection{1. Install Python}
@@ -1032,7 +1040,7 @@ Accessing example data files:
    To do this, navigate on the command line to your desired destination folder (for help, see \href{#file_system}{this section}).  Then, use the command:
 
 \begin{verbatim}
-move_data_files.py
+  move_data_files.py
 \end{verbatim}
 
 This will copy all of the PmagPy example files to your current directory.  NB: If you have a developer install, you can simply navigate to PmagPy/data\_files, and move\_data\_files.py will not be needed.
@@ -1044,12 +1052,9 @@ Installing the Etopo20 package for use with Basemap:
   install_etopo.py
 \end{verbatim}
 
-
+\customlink{which_command}
     \subsection {Using PmagPy programs}
     We try to support all platforms, but there are some quirks that will affect how you invoke {\bf PmagPy} programs depending on your platform.  For OSX users with a pip install, you will invoke the GUIs with a special syntax:
-
-
-You will use:
 
 \begin{verbatim}
   pmag_gui_anaconda
@@ -1064,7 +1069,7 @@ For all platforms with a developer install:
 For Windows users with a pip install:
 
 \begin{verbatim}
-pmag_gui
+  pmag_gui
 \end{verbatim}
 
 
@@ -1081,7 +1086,7 @@ you need to use ``pmag_gui_anaconda''
 If you see an error message like this:
 
 \begin{verbatim}
--bash: pmag_gui: command not found
+  -bash: pmag_gui: command not found
 \end{verbatim}
 
 You are either using the wrong command for your operating system, or you haven't fully installed {\bf PmagPy}.
@@ -1094,7 +1099,7 @@ Check out our guidelines on \href{https://github.com/PmagPy/PmagPy/blob/master/C
 
 \customlink{setting_path}
 \subsection{Details of setting your PATH}
-If you care about the details, here is what the developer install script actually does.  For OS X and Linux, it adds these lines editing \$PATH to your .bashrc file:
+Here are the details of what the developer install script actually does.  For OS X and Linux, it adds these lines editing \$PATH to your .bashrc file:
 
 \begin{verbatim}
     export PATH=/Users/***/Desktop/PmagPy/programs:$PATH
@@ -1113,7 +1118,7 @@ where *** is your username.  (Of course, these lines will depend on exactly wher
     export PATH=/Users/***/PmagPy/programs
 \end{verbatim}, and so on.)
 
-For Windows, the same variables are set but in your \href{https://www.java.com/en/download/help/path.xml}{Control Panel (Environment Variables)}.  To do this yourself, you would first add to your existing PATH variable or create a new PATH variable with: \begin{verbatim}
+For Windows, the same variables are set but in your \href{https://www.java.com/en/download/help/path.xml}{Control Panel (Environment Variables)}.  To do this yourself, you would first add to your existing PATH variable or create a new PATH variable with the following values: \begin{verbatim}
   \Users\***\Desktop\PmagPy\programs
 \end{verbatim}
 and \begin{verbatim}
@@ -1125,25 +1130,34 @@ Next, add to your existing PYTHONPATH variable or create a new PYTHONPATH variab
 
 \subsection{Common install problems}
 
+\begin{itemize}
 
-Make sure you have the correct version of Python
+\item Make sure you have the correct version of Python.  If you run the command ``python'', you should see a message like this:
 
-Make sure you have the correct version of PmagPy
+\begin{verbatim}
 
-ImportError
+Python 3.6.1 |Anaconda custom (x86_64)| (default, May 11 2017, 13:04:09)
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+\end{verbatim}
+(Press control-D to exit)
+
+If you have Python 2.7 or a non-Anaconda Python, you will need to go back and install Anaconda Python.  If you installed Canopy Python at any point, make sure you uninstall it first.
 
 
+\item If you try to run a {\bf PmagPy} program and you get an ImportError, you are probably missing a required package.  Go back and install all required, non-default packages.  If the ImportError is for a {\bf PmagPy} package, go back and make sure you installed pmagpy and pmagpy-cli via pip or dev\_setup.py.
 
-python vs. pythonw
-
-If you are trying to run PmagPy programs and you run into an issue with python vs pythonw, you may need to link your python to pythonw:
+\item If you are trying to run PmagPy programs and you run into an issue with python vs pythonw, you may need to link your python to pythonw:
   \begin{verbatim}
 
     ln -s ~/anaconda3/bin/python3 ~/anaconda3/bin/pythonw
 
     \end{verbatim}
 
+\end{itemize}
 
+For more help, see the \href{#trouble}{troubleshooting section}.
 
 \section{Next steps}
 
@@ -1183,7 +1197,7 @@ Note: {\bf Pmag GUI} is available for use with both 3.0 and 2.5 data.  All new c
 
 \customlink{Project_Directory}
 
-\item Open your command prompt and start {\bf Pmag GUI} with the appropriate command (pmag\_gui.py, pmag\_gui\_anaconda, or pmag\_gui).  If you are confused about which command to use, see the \href{#finishing_up}{Finishing up} section for details.
+\item Open your command prompt and start {\bf Pmag GUI} with the appropriate command (pmag\_gui.py, pmag\_gui\_anaconda, or pmag\_gui).  If you are confused about which command to use, see \href{#which_command}{this section} for details.
 
 \item  When you start {\bf Pmag GUI}, the first step is to change directories into a  `Project Directory'. For each study, create a directory with a name that relates to that study. Here we will call it {\it ThisProject}.  This is where you will collect and process all the rock and paleomagnetic data for a given study, usually a publication. The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path. Under certain Windows versions, this means you should not use your home directory, but create a directory called for example:\begin{verbatim}
   D:\MyPmagProjects\end{verbatim} and put {\it ThisProject} there.
