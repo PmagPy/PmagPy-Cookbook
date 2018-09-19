@@ -158,7 +158,6 @@ First, you will need to download a scientific Python distribution.  We strongly 
 \end{verbatim}
      The next two basemap packages are only required if you want to make maps:
 \begin{verbatim}
-
     conda install basemap --channel conda-forge
     conda install basemap-data-hires --channel conda-forge
 
@@ -197,9 +196,10 @@ Type "help", "copyright", "credits" or "license" for more information.
   pip install --upgrade pmagpy --no-deps
   pip install --upgrade pmagpy-cli --no-deps
 \end{verbatim}
-     \item If you are getting weird install errors, try uninstalling and then force reinstalling with this:
+\item If you are getting weird install errors, try uninstalling and then force reinstalling with this:
 
 \begin{verbatim}
+
   pip uninstall pmagpy &&  pip install pmagpy --upgrade --no-deps --force-reinstall --no-cache-dir
 \end{verbatim}
 
@@ -245,7 +245,6 @@ To stay up to date with new features and bug fixes, you should periodically upda
 
 To check the currently installed version number for pmagpy (or any other Python package), run:
 \begin{verbatim}
-
 conda list
 \end{verbatim}
 
@@ -279,7 +278,6 @@ First, you will need to download a scientific Python distribution.  We strongly 
 \end{verbatim}
      The next two basemap packages are only required if you want to make maps:
 \begin{verbatim}
-
     conda install basemap --channel conda-forge
     conda install basemap-data-hires --channel conda-forge
 
@@ -319,6 +317,7 @@ Type "help", "copyright", "credits" or "license" for more information.
      \item If you are getting weird install errors, try uninstalling and then force reinstalling with this:
 
 \begin{verbatim}
+
   pip uninstall pmagpy &&  pip install pmagpy --upgrade --no-deps --force-reinstall --no-cache-dir
 \end{verbatim}
 
@@ -366,7 +365,6 @@ To stay up to date with new features and bug fixes, you should periodically upda
 
 To check the currently installed version number for pmagpy (or any other Python package), run:
 \begin{verbatim}
-
 conda list
 \end{verbatim}
 
@@ -401,7 +399,6 @@ First, you will need to download a scientific Python distribution.  We strongly 
 \end{verbatim}
      The next two basemap packages are only required if you want to make maps:
 \begin{verbatim}
-
     conda install basemap --channel conda-forge
     conda install basemap-data-hires --channel conda-forge
 
@@ -490,7 +487,7 @@ Try again to import wx.  If it now works, you may want to add that line to the e
 
 For more details about this issue, see \href{https://github.com/wxWidgets/Phoenix/blob/e13273c5d939d993abf2a2649e90b3ea0d39382c/packaging/README-bdist.txt#L38-L57}{this explanation} and \href{https://github.com/pyenv/pyenv/issues/691}{this Github issue} for more information.
 
-\subsubsection{3. Install PmagPy}
+\subsubsection{4. Install PmagPy}
 
 \begin{itemize}
      \item Update pip and setuptools on the command line:
@@ -510,12 +507,145 @@ For more details about this issue, see \href{https://github.com/wxWidgets/Phoeni
      \item If you are getting weird install errors, try uninstalling and then force reinstalling with this:
 
 \begin{verbatim}
+
   pip uninstall pmagpy &&  pip install pmagpy --upgrade --no-deps --force-reinstall --no-cache-dir
 \end{verbatim}
 
 You can do the same for pmagpy-cli.
    \end{itemize}
 
+
+\subsubsection{5. Test PmagPy}
+
+Test core functionality:
+
+\begin{itemize}
+  \item On your command line, type ``python'' to start the interpreter.  You will import pmagpy and then run a simple calculation.
+
+\begin{verbatim}
+>>> from pmagpy import pmag
+>>> pmag.angle([350.0,10.0],[320.0,20.0])
+array([30.59060998])
+>>>
+\end{verbatim}
+
+\end{itemize}
+
+Test the GUIs:
+
+\begin{itemize}
+\item  On the command line, open Pmag GUI by running:
+
+\begin{verbatim}
+pmag_gui.py
+\end{verbatim}
+
+\end{itemize}
+
+If any of these commands don't work, go back and carefully follow the install instructions.  If you still have a problem, try the \href{#trouble}{Troubleshooting section}.  If you don't find an answer there, check out the existing \href{https://github.com/PmagPy/PmagPy/issues}{Github issues} and create a new one if necessary.
+
+
+\subsubsection{6. Keeping PmagPy up-to-date}
+
+
+To stay up to date with new features and bug fixes, you should periodically update both {\bf PmagPy} packages.
+\begin{verbatim}
+
+  pip install pmagpy --upgrade --no-deps
+\end{verbatim}
+
+To check the currently installed version number for pmagpy (or any other Python package), run:
+\begin{verbatim}
+conda list
+\end{verbatim}
+
+If you ever need to uninstall pmagpy or pmagpy-cli:
+
+\begin{verbatim}
+
+  pip uninstall pmagpy
+\end{verbatim}
+  or
+\begin{verbatim}
+  pip uninstall pmagpy-cli
+\end{verbatim}
+
+
+\subsection{OSX developer install}
+
+\subsubsection{1. Install Python}
+First, you will need to download a scientific Python distribution.  We strongly recommend Anaconda.  Be warned, your computer comes with a version of Python already installed; but this pre-installed version does NOT have everything you will need to run {\bf PmagPy}, so you will still need to download Anaconda.
+
+\begin{itemize}
+   \item Download and install \href{https://www.anaconda.com/download}{Anaconda Python 3}.
+   \item Open your Terminal (see \href{#command_line}{this section} for more information on finding Terminal).
+   \item Download a few non-default Python packages.  Run the following commands: \begin{verbatim}
+
+    conda install future
+    pip install scripttest
+    pip install --upgrade -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
+\end{verbatim}
+     The next two basemap packages are only required if you want to make maps:
+\begin{verbatim}
+    conda install basemap --channel conda-forge
+    conda install basemap-data-hires --channel conda-forge
+
+\end{verbatim}
+
+\item If you have trouble running any of the above commands, you may need to preface them with ``sudo'': i.e., \texttt{sudo pip install scripttest}.  You will then be asked for your computer password.
+
+  \end{itemize}
+
+
+
+\subsubsection{2. Test your python}
+
+
+To make sure that you have installed Python successfully, type \texttt{python} on your command line.  You should see something like this: \begin{verbatim}
+
+Python 3.6.1 |Anaconda custom (x86_64)| (default, May 11 2017, 13:04:09)
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>\end{verbatim}
+(Press control-D to exit)
+
+
+\subsubsection{3. Install PmagPy}
+
+Here are the steps to clone and install {\bf PmagPy}.
+
+\begin{itemize}
+
+  \item You must use bash as your shell (not csh, zsh, etc.). This is the default for OSX, so if you have set up a different shell you will need to switch back.  Select Terminal \verb!-->! Preferences \verb!-->! General, and choose ``default login shell''.  Restart Terminal, and you'll be ready to go.
+
+\item Download and \href{https://git-scm.com/downloads}{install git}
+
+  \item Navigate to the directory where you want to put the PmagPy folder, then run:
+
+\begin{verbatim}
+
+  git clone https://github.com/PmagPy/PmagPy.git
+\end{verbatim}
+
+\item You should now have a full local copy of the PmagPy repository.  Change directories into PmagPy:
+
+\begin{verbatim}
+
+  cd PmagPy
+\end{verbatim}
+
+\item Next, you need to add PmagPy to your PATH so that the PmagPy programs can be called from any directory. Try running:
+
+\begin{verbatim}
+
+  python dev_setup.py install
+\end{verbatim}
+
+\item If you have problems with the install, run \verb!python dev_setup.py -h! for more information.  You can also set your \href{#setting_path}{PATH manually} if dev\_setup.py fails.
+
+\item After completing the developer install, you should restart your command line.
+
+\end{itemize}
 
 \subsubsection{4. Test PmagPy}
 
@@ -549,58 +679,345 @@ If any of these commands don't work, go back and carefully follow the install in
 
 \subsubsection{5. Keeping PmagPy up-to-date}
 
-
-To stay up to date with new features and bug fixes, you should periodically update both {\bf PmagPy} packages.
-\begin{verbatim}
-
-  pip install pmagpy --upgrade --no-deps
-\end{verbatim}
-
-To check the currently installed version number for pmagpy (or any other Python package), run:
-\begin{verbatim}
-
-conda list
-\end{verbatim}
-
-If you ever need to uninstall pmagpy or pmagpy-cli:
+    You will want to stay up to date with {\bf PmagPy} development.  To update your developer install, you will just need to navigate to the {\bf PmagPy} directory and run:
 
 \begin{verbatim}
-
-  pip uninstall pmagpy
-\end{verbatim}
-  or
-\begin{verbatim}
-  pip uninstall pmagpy-cli
+    git pull
 \end{verbatim}
 
+This will grab all of the latest code from \href{https://github.com/PmagPy/PmagPy}{Github}, and will be immediately available to you.
 
-\subsection{OSX developer install}
-
-\subsubsection{1. Install Python}
-\subsubsection{2. Test your python}
-\subsubsection{3. Install PmagPy}
-\subsubsection{4. Test PmagPy}
-\subsubsection{5. Keeping PmagPy up-to-date}
 
 
 \subsection{Windows developer install}
 
 \subsubsection{1. Install Python}
+
+First, you will need to download a scientific Python distribution.  We strongly recommend Anaconda.
+
+   \begin{itemize}
+   \item Download and install \href{https://www.anaconda.com/download}{Anaconda Python 3}.  You should select ``Add Anaconda to my PATH environment variable'' in Advanced Installation Options (if available).  Otherwise, stick with the defaults.
+   \item Open your Command Prompt (see \href{#command_line}{this section} for more information on finding Command Prompt)
+   \item Note: if you did not add Anaconda Python to your PATH as recommended above, you will open the ``Anaconda Prompt'' instead).
+   \item Download a few non-default Python packages.  Run the following commands: \begin{verbatim}
+
+    conda install future
+    pip install scripttest
+    pip install --upgrade -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
+\end{verbatim}
+     The next two basemap packages are only required if you want to make maps:
+\begin{verbatim}
+    conda install basemap --channel conda-forge
+    conda install basemap-data-hires --channel conda-forge
+
+\end{verbatim}
+\end{itemize}
+
 \subsubsection{2. Test your python}
+
+To make sure that you have installed Python successfully, type \texttt{python} on your command line.  You should see something like this: \begin{verbatim}
+
+Python 3.6.1 |Anaconda custom (x86_64)| (default, May 11 2017, 13:04:09)
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>\end{verbatim}
+(Press control-D to exit)
+
+
+
 \subsubsection{3. Install PmagPy}
+
+Here are the steps to clone and install {\bf PmagPy}.
+
+\begin{itemize}
+
+\item Open your command prompt \href{http://www.thewindowsclub.com/how-to-run-command-prompt-as-an-administrator}{as an admin} (right click on the Command Prompt icon and select ``Run as administrator'').
+
+\item Download and \href{https://git-scm.com/downloads}{install git}
+
+  \item Navigate to the directory where you want to put the PmagPy folder, then run:
+
+\begin{verbatim}
+
+  git clone https://github.com/PmagPy/PmagPy.git
+\end{verbatim}
+
+\item You should now have a full local copy of the PmagPy repository.  Change directories into PmagPy:
+
+\begin{verbatim}
+
+  cd PmagPy
+\end{verbatim}
+
+
+\item Next, you need to add PmagPy to your PATH so that the PmagPy programs can be called from any directory. Try running:
+
+\begin{verbatim}
+
+  python dev_setup.py install
+\end{verbatim}
+
+
+\item  If you see an error message, that means that you will also need to specify the location of your Python installation.  To get your full path to python, you can run the following two commands (exactly as written!):
+
+\begin{verbatim}
+
+  cd \
+  dir python.exe /s /p
+\end{verbatim}
+
+This can take a while, so be patient.  You should get a result that looks something like this:
+
+\begin{verbatim}
+  C:\Users\USERNAME\AppData\Local\Continuum\Anaconda3
+\end{verbatim}
+
+Once you've done that, navigate back into your PmagPy directory and run dev\_setup.py again:
+
+\begin{verbatim}
+    python dev_setup.py install -p path_to_python
+\end{verbatim}
+
+where path\_to\_python is your specific Python result.
+
+\item Note: dev\_setup.py edits your \$PATH and \$PYTHONPATH variables.  If you need to set those variables by hand, see this section on \href{#setting_path}{editing your PATH for PmagPy}.
+
+\item After completing the developer install, you will need to restart the Command Prompt.  After restarting, you should be able to use all {\bf PmagPy} functionality.  You will be able to stay up-to-date with {\bf PmagPy} development and make edits in {\bf PmagPy} code which will be immediately available in your system.
+
+\end{itemize}
+
 \subsubsection{4. Test PmagPy}
+
+Test core functionality:
+
+\begin{itemize}
+  \item On your command line, type ``python'' to start the interpreter.  You will import pmagpy and then run a simple calculation.
+
+\begin{verbatim}
+>>> from pmagpy import pmag
+>>> pmag.angle([350.0,10.0],[320.0,20.0])
+array([30.59060998])
+>>>
+\end{verbatim}
+
+\end{itemize}
+
+Test the GUIs:
+
+\begin{itemize}
+\item  On the command line, open Pmag GUI by running:
+
+\begin{verbatim}
+pmag_gui.py
+\end{verbatim}
+
+\end{itemize}
+
+If any of these commands don't work, go back and carefully follow the install instructions.  If you still have a problem, try the \href{#trouble}{Troubleshooting section}.  If you don't find an answer there, check out the existing \href{https://github.com/PmagPy/PmagPy/issues}{Github issues} and create a new one if necessary.
+
+
 \subsubsection{5. Keeping PmagPy up-to-date}
+
+    You will want to stay up to date with {\bf PmagPy} development.  To update your developer install, you will just need to navigate to the {\bf PmagPy} directory and run:
+
+\begin{verbatim}
+    git pull
+\end{verbatim}
+
+This will grab all of the latest code from \href{https://github.com/PmagPy/PmagPy}{Github}, and will be immediately available to you.
 
 
 
 \subsection{Linux developer install}
 
 \subsubsection{1. Install Python}
-\subsubsection{2. Test your python}
-\subsubsection{3. Install PmagPy}
-\subsubsection{4. Test PmagPy}
-\subsubsection{5. Keeping PmagPy up-to-date}
 
+First, you will need to download a scientific Python distribution.  We strongly recommend Anaconda.  Be warned, your computer comes with a version of Python already installed; but this pre-installed version does NOT have everything you will need to run {\bf PmagPy}, so you will still need to download Anaconda.
+
+\begin{itemize}
+   \item Download and install \href{https://www.anaconda.com/download}{Anaconda Python 3}.
+   \item Open your Terminal (see \href{#command_line}{this section} for more information on finding Terminal).
+   \item Download a few non-default Python packages.  Run the following commands: \begin{verbatim}
+
+    conda install future
+    pip install scripttest
+    pip install --upgrade -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
+\end{verbatim}
+     The next two basemap packages are only required if you want to make maps:
+\begin{verbatim}
+    conda install basemap --channel conda-forge
+    conda install basemap-data-hires --channel conda-forge
+
+\end{verbatim}
+
+\item If you have trouble running any of the above commands, you may need to preface them with ``sudo'': i.e., \texttt{sudo pip install scripttest}.  You will then be asked for your computer password.
+
+  \end{itemize}
+
+\subsubsection{2. Install wxPython}
+
+Next, you need to install wxPython.
+
+\begin{itemize}
+  \item The following is a list of wxPython dependencies for Ubuntu 16.04 (this list may be redundant or incomplete, depending on your specific OS):
+
+  \begin{verbatim}
+
+    pip install libtiff
+
+    sudo apt-get install libgtk-3-dev freeglut3-dev libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-doc gstreamer1.0-tools libgstreamer-plugins-base0.10-dev
+
+    sudo apt-get install dpkg-dev build-essential libjpeg-dev  libtiff-dev libsdl1.2-dev   libnotify-dev  freeglut3 freeglut3-dev libsm-dev libwebkitgtk-3.0-dev libxtst-dev python-dev libpng-dev
+
+    sudo apt-get install libwebkit2gtk-4.0-dev libsdl2-dev
+\end{verbatim}
+
+
+Carefully read through \href{https://wxpython.org/pages/downloads/}{this page} and look for a compatible wheel for your distribution.  Download the appropriate wheel and then install it:
+\begin{verbatim}
+
+pip install wxPython-4.0.1-cp35-cp35m-linux_x86_64.whl
+
+\end{verbatim}
+
+Be sure to replace the wheel name above with the actual wheel you downloaded.
+
+Or install the wheel from the download site directly:
+\begin{verbatim}
+pip install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-16.04 wxPython
+
+\end{verbatim}
+
+Again, you will need the replace the link above with the link appropriate for your OS.
+
+\item If you aren't able to find a wheel that works, try \href{https://wxpython.org/blog/2017-08-17-builds-for-linux-with-pip/}{these instructions}
+
+\end{itemize}
+
+
+\subsubsection{3. Test your python}
+
+Run python on your command line.
+
+You should see something like this: \begin{verbatim}
+
+Python 3.6.1 |Anaconda custom (x86_64)| (default, May 11 2017, 13:04:09)
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>\end{verbatim}
+
+If you don't see that, go back and reinstall Anaconda.
+
+Once you have successfully started the python interactive prompt, try:
+\begin{verbatim}
+
+    import wx
+
+\end{verbatim}
+You may have an error like this:
+\begin{verbatim}
+    ImportError: libwx_gtk3u_core-3.0.so.0: cannot open shared object file: No such file or directory
+
+\end{verbatim}
+
+If so, exit the python interpreter (quit()) and try:
+  \begin{verbatim}
+    export LD_LIBRARY_PATH=~/anaconda3/lib/python3.6/site-packages/wx/
+
+\end{verbatim}
+
+(If you are using a non-Anaconda Python, your path to wx may be different).
+
+Try again to import wx.  If it now works, you may want to add that line to the end of your .bashrc file so that you don't have to specify the path each time.
+
+For more details about this issue, see \href{https://github.com/wxWidgets/Phoenix/blob/e13273c5d939d993abf2a2649e90b3ea0d39382c/packaging/README-bdist.txt#L38-L57}{this explanation} and \href{https://github.com/pyenv/pyenv/issues/691}{this Github issue} for more information.
+
+
+\subsubsection{4. Install PmagPy}
+
+
+
+Here are the steps to clone and install {\bf PmagPy}.
+
+\begin{itemize}
+
+\item You must use bash as your shell (not csh, zsh, etc.).  You can make sure you are using bash with the command:
+\begin{verbatim}
+
+  printenv SHELL
+\end{verbatim}
+
+If your result is not ``/bin/bash'', you will need to reset it.   See \href{https://stackoverflow.com/questions/13046192/changing-default-shell-in-linux}{this question} for more details.
+
+\item Download and \href{https://git-scm.com/downloads}{install git}
+
+  \item Navigate to the directory where you want to put the PmagPy folder, then run:
+
+\begin{verbatim}
+
+  git clone https://github.com/PmagPy/PmagPy.git
+\end{verbatim}
+
+\item You should now have a full local copy of the PmagPy repository.  Change directories into PmagPy:
+
+\begin{verbatim}
+
+  cd PmagPy
+\end{verbatim}
+
+\item Next, you need to add PmagPy to your PATH so that the PmagPy programs can be called from any directory. Try running:
+
+\begin{verbatim}
+
+  python dev_setup.py install
+\end{verbatim}
+
+\item If you have problems with the install, run \verb!python dev_setup.py -h! for more information.  You can also set your \href{#setting_path}{PATH manually} if dev\_setup.py fails.
+
+\item After completing the developer install, you should restart your command line.
+
+\end{itemize}
+
+\subsubsection{5.  Test PmagPy}
+
+
+Test core functionality:
+
+\begin{itemize}
+  \item On your command line, type ``python'' to start the interpreter.  You will import pmagpy and then run a simple calculation.
+
+\begin{verbatim}
+>>> from pmagpy import pmag
+>>> pmag.angle([350.0,10.0],[320.0,20.0])
+array([30.59060998])
+>>>
+\end{verbatim}
+
+\end{itemize}
+
+Test the GUIs:
+
+\begin{itemize}
+\item  On the command line, open Pmag GUI by running:
+
+\begin{verbatim}
+pmag_gui.py
+\end{verbatim}
+
+\end{itemize}
+
+If any of these commands don't work, go back and carefully follow the install instructions.  If you still have a problem, try the \href{#trouble}{Troubleshooting section}.  If you don't find an answer there, check out the existing \href{https://github.com/PmagPy/PmagPy/issues}{Github issues} and create a new one if necessary.
+
+\subsubsection{6. Keeping PmagPy up-to-date}
+
+
+    You will want to stay up to date with {\bf PmagPy} development.  To update your developer install, you will just need to navigate to the {\bf PmagPy} directory and run:
+
+\begin{verbatim}
+    git pull
+\end{verbatim}
+
+This will grab all of the latest code from \href{https://github.com/PmagPy/PmagPy}{Github}, and will be immediately available to you.
 
 
 
@@ -628,12 +1045,9 @@ Installing the Etopo20 package for use with Basemap:
 \end{verbatim}
 
 
-    \subsection {For Anaconda users on OSX}
-    We have attempted to support multiple versions of Python.  However, there are some differences in the way Anaconda Python interacts with the screen. Because of this, Anaconda users will need to use a special command to access the PmagPy GUIs.  All four GUIs -- Pmag GUI, MagIC GUI, Demag GUI, and Thellier GUI -- can be invoked with on a Mac with Anaconda python.  However, instead of calling them in the standard way on the command line:
+    \subsection {Using PmagPy programs}
+    We try to support all platforms, but there are some quirks that will affect how you invoke {\bf PmagPy} programs depending on your platform.  For OSX users with a pip install, you will invoke the GUIs with a special syntax:
 
-\begin{verbatim}
-  pmag_gui.py
-\end{verbatim}
 
 You will use:
 
@@ -641,7 +1055,20 @@ You will use:
   pmag_gui_anaconda
 \end{verbatim}
 
-If you try to use the first syntax, you will see an error message like this:
+For all platforms with a developer install:
+
+\begin{verbatim}
+  pmag_gui.py
+\end{verbatim}
+
+For Windows users with a pip install:
+
+\begin{verbatim}
+pmag_gui
+\end{verbatim}
+
+
+If you see an error message like this:
 
 \begin{verbatim}
   This program needs access to the screen.
@@ -649,143 +1076,24 @@ If you try to use the first syntax, you will see an error message like this:
   logged in on the main display of your Mac.
 \end{verbatim}
 
-\noindent Windows Anaconda users still invoke the GUIs without this trick:
+you need to use ``pmag_gui_anaconda''
+
+If you see an error message like this:
 
 \begin{verbatim}
-  pmag_gui
+-bash: pmag_gui: command not found
 \end{verbatim}
 
-%\noindent Also, Anaconda users may need to \href{#anaconda_troubleshooting}{install wxPython}.
+You are either using the wrong command for your operating system, or you haven't fully installed {\bf PmagPy}.
 
-\customlink{developer_install}
-\section{Developer install of PmagPy}
 
-If you are a developer, and wish to download PmagPy from the \href{https://github.com/PmagPy/PmagPy}{Github repository}, you may want to add PmagPy directly to your path instead of installing via pip.
-
-*Note*: you cannot have both a developer install and a pip install.  If you want to do a developer install, make sure you uninstall pmagpy/pmagpy-cli first if you have already installed them.
-
-The benefit of a regular \href{#pip_install}{pip installation} is that you will get a tested, stable version of {\bf PmagPy}.  The install is quick and easy, and can access {\bf PmagPy}'s full functionality.  The benefit of a developer installation is that you will be able to stay up-to-date with what other developers are working on.  You will also be able to make changes and use those changes immediately.  However, the developer install may be buggier and requires to edit your \$PATH.
+\section{Install help}
 
 Check out our guidelines on \href{https://github.com/PmagPy/PmagPy/blob/master/CONTRIBUTING.md}{how to contribute to PmagPy} for information on how to raise issues, request features, and make pull requests.
 
-If you want to contribute to {\bf PmagPy} or modify {\bf PmagPy} programs for your own use, you should do a developer install, otherwise go with the regular \href{#pip_install}{pip install}.
 
-\subsection{Developer install for Windows}
-
-\begin{enumerate}
-
-
-\item Download and \href{https://git-scm.com/downloads}{install git}
-
-\item Open your command prompt \href{http://www.thewindowsclub.com/how-to-run-command-prompt-as-an-administrator}{as an admin} (right click on the Command Prompt icon and select ``Run as administrator'').
-
-\item Navigate to the directory where you want to put the PmagPy folder, then run:
-
-\begin{verbatim}
-
-  git clone https://github.com/PmagPy/PmagPy.git
-\end{verbatim}
-
-\item You should now have a full local copy of the PmagPy repository.  Change directories into PmagPy:
-
-\begin{verbatim}
-
-  cd PmagPy
-\end{verbatim}
-
-\item Next, you need to add PmagPy to your PATH so that the PmagPy programs can be called from any directory. Try running:
-
-\begin{verbatim}
-
-  python dev_setup.py install
-\end{verbatim}
-
-\item  If you see an error message, that means that you will also need to specify the location of your Python installation.  To get your full path to python, you can run the following two commands (exactly as written!):
-
-\begin{verbatim}
-
-  cd \
-  dir python.exe /s /p
-\end{verbatim}
-
-This can take a while, so be patient.  You should get a result that looks something like this:
-
-\begin{verbatim}
-  C:\Users\USERNAME\AppData\Local\Continuum\Anaconda3
-\end{verbatim}
-
-Once you've done that, navigate back into your PmagPy directory and run dev\_setup.py again:
-
-\begin{verbatim}
-    python dev_setup.py install -p path_to_python
-\end{verbatim}
-
-where path\_to\_python is your specific Python result.
-
-\item Note: dev\_setup.py edits your \$PATH and \$PYTHONPATH variables.  If you want to look at or edit those variables directly, see this section on \href{#setting_path}{editing your PATH for PmagPy}.
-
-\item After completing the developer install, you will need to restart the Command Prompt.  After restarting, you should be able to use all {\bf PmagPy} functionality.  You will be able to stay up-to-date with {\bf PmagPy} development and make edits in {\bf PmagPy} code which will be immediately available in your system.
-
-\item Complete the steps in the \href{#finishing_up}{Finishing up} section to test your installation
-
-\end{enumerate}
-
-    You will want to stay up to date with {\bf PmagPy} development.  To update your developer install, you will just need to navigate to the {\bf PmagPy} directory and run:
-
-\begin{verbatim}
-    git pull
-\end{verbatim}
-
-This will grab all of the latest code from \href{https://github.com/PmagPy/PmagPy}{Github}, and will be immediately available to you.
-
-\customlink{dev_for_nix}
-\subsection{Developer install for OS X/Linux}
-
-\begin{enumerate}
-
-\item Download and \href{https://git-scm.com/downloads}{install git}
-
-\item Open your Terminal
-
-\item You must use bash as your shell (not csh, zsh, etc.). This is the default for OSX, so if you have set up a different shell you will need to switch back.  Select Terminal \verb!-->! Preferences \verb!-->! General, and choose ``default login shell''.  Restart Terminal, and you'll be ready to go.
-
-\item Navigate to the directory where you want to put the PmagPy folder, then run:
-
-\begin{verbatim}
-
-  git clone https://github.com/PmagPy/PmagPy.git
-\end{verbatim}
-
-\item You should now have a full local copy of the PmagPy repository.  Change directories into PmagPy:
-
-\begin{verbatim}
-
-  cd PmagPy
-\end{verbatim}
-
-\item Next, you need to add PmagPy to your PATH so that the PmagPy programs can be called from any directory. Run:
-
-\begin{verbatim}
-
-  python dev_setup.py install
-\end{verbatim} If you have problems with the install, run \verb!python dev_setup.py -h! for more information.  You can also set your \href{#setting_path}{PATH manually} if dev\_setup.py fails.
-
-\item After completing the developer install, you will need to restart your command line.  After restarting, you should be able to use all {\bf PmagPy} functionality as if you had done a full \href{#pip_install}{pip install}.  The only difference is that you will be able to stay up-to-date with {\bf PmagPy} development and make edits in {\bf PmagPy} code which will be immediately available in your system.
-
-\item Complete the steps in the \href{#finishing_up}{Finishing up} section to test your installation
-
-\end{enumerate}
-
-    You will want to stay up to date with {\bf PmagPy} development.  To update your developer install, you will just need to navigate to the {\bf PmagPy} directory and run:
-
-\begin{verbatim}
-    git pull
-\end{verbatim}
-
-This will grab all of the latest code from \href{https://github.com/PmagPy/PmagPy}{Github}, and will be immediately available to you.
-
-\subsection{Details of setting your PATH}
 \customlink{setting_path}
+\subsection{Details of setting your PATH}
 If you care about the details, here is what the developer install script actually does.  For OS X and Linux, it adds these lines editing \$PATH to your .bashrc file:
 
 \begin{verbatim}
@@ -815,105 +1123,26 @@ Next, add to your existing PYTHONPATH variable or create a new PYTHONPATH variab
   \Users\***\Desktop\PmagPy
 \end{verbatim}
 
+\subsection{Common install problems}
 
 
-\section{Installing for Linux}
+Make sure you have the correct version of Python
 
-\begin{enumerate}
+Make sure you have the correct version of PmagPy
 
-  \item Download and install \href{https://www.continuum.io/downloads}{Anaconda Python 3}
-
-   \item Download a few non-default Python packages.  Open your command line and run the following commands: \begin{verbatim}
-
-    conda install future
-    pip install scripttest
-\end{verbatim}
-     The next two basemap packages are optional:
-
-\begin{verbatim}
-    conda install basemap --channel conda-forge
-    conda install basemap-data-hires -channel conda-forge
-
-\end{verbatim}
-
-\item If you have trouble running any of the above commands, you may need to preface them with ``sudo'': i.e., \texttt{sudo pip install scripttest}.  You will then be asked for your computer password.
-
-\item Next, you need to install wxPython.  The following is a list of wxPython dependencies for Ubuntu 16.04 (this list may be redundant or incomplete, depending on your specific OS):
-
-  \begin{verbatim}
-
-    pip install libtiff
-
-    sudo apt-get install libgtk-3-dev freeglut3-dev libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-doc gstreamer1.0-tools libgstreamer-plugins-base0.10-dev
-
-    sudo apt-get install dpkg-dev build-essential libjpeg-dev  libtiff-dev libsdl1.2-dev   libnotify-dev  freeglut3 freeglut3-dev libsm-dev libwebkitgtk-3.0-dev libxtst-dev python-dev libpng-dev
-
-    sudo apt-get install libwebkit2gtk-4.0-dev libsdl2-dev
-\end{verbatim}
-
-
-\item Carefully read through \href{https://wxpython.org/pages/downloads/}{this page} and look for a compatible wheel for your distribution.  Download the appropriate wheel and then install it, e.g.:
-\begin{verbatim}
-
-pip install wxPython-4.0.1-cp35-cp35m-linux_x86_64.whl
-
-\end{verbatim}
-
-Be sure to replace the wheel name above with the actual wheel you downloaded.
-
-Or install the wheel from the download site directly, e.g.:
-\begin{verbatim}
-pip install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-16.04 wxPython
-
-\end{verbatim}
-
-Again, you will need the replace the link above with the link appropriate for your OS.
-
-\item If you aren't able to find a wheel that works, try \href{https://wxpython.org/blog/2017-08-17-builds-for-linux-with-pip/}{these instructions}
-
-\item
-  Run python on your command line.  Once in the python interactive prompt, try:
-\begin{verbatim}
-
-    import wx
-
-\end{verbatim}
-You may have an error like this:
-\begin{verbatim}
-    ImportError: libwx_gtk3u_core-3.0.so.0: cannot open shared object file: No such file or directory
-
-\end{verbatim}
-
-  If so, exit the python interpreter (quit()) and try:
-  \begin{verbatim}
-    export LD_LIBRARY_PATH=~/anaconda3/lib/python3.6/site-packages/wx/
-
-\end{verbatim}
-
-(If you are using a non-Anaconda Python, your path to wx may be different).
-
-Try again to import wx.  If it now works, you may want to add that line to the end of your .bashrc file so that you don't have to specify the path each time.
-
-For more details about this issue, see \href{https://github.com/wxWidgets/Phoenix/blob/e13273c5d939d993abf2a2649e90b3ea0d39382c/packaging/README-bdist.txt#L38-L57}{this explanation} and \href{https://github.com/pyenv/pyenv/issues/691}{this Github issue} for more information.
+ImportError
 
 
 
+python vs. pythonw
 
-\item Now, you can either complete a \href{#dev_for_nix}{developer install}, or install pmagpy/pmagpy-cli using pip:
-
-\begin{verbatim}
-    pip install pmagpy
-    pip install pmagpy-cli
-\end{verbatim}
-
-\item If you are trying to run PmagPy programs and you run into an issue with python vs pythonw, you may need to link your python to pythonw:
+If you are trying to run PmagPy programs and you run into an issue with python vs pythonw, you may need to link your python to pythonw:
   \begin{verbatim}
 
     ln -s ~/anaconda3/bin/python3 ~/anaconda3/bin/pythonw
 
     \end{verbatim}
 
-  \end{enumerate}
 
 
 \section{Next steps}
