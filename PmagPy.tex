@@ -128,7 +128,7 @@ This binary has only been tested on a Ubuntu 14.04 (Trusty) distribution and mig
 \section{Full PmagPy install}
 
 
-If you have previously downloaded Canopy Python, you will need to uninstall it following \href{https://support.enthought.com/hc/en-us/articles/204469700-Uninstalling-and-resetting-Canopy}{these directions}
+If you have previously downloaded Canopy Python, you will need to uninstall it following \href{https://support.enthought.com/hc/en-us/articles/204469700-Uninstalling-and-resetting-Canopy}{these directions}.
 
 Next, choose whether you want a developer install.  If you want to get into the nitty-gritty of the code, you should do a developer install.  If you just want to use {\bf PmagPy} out of the box, do a regular pip install.  *Note*: you cannot have both a developer install and a pip install.  If you want to do a developer install, make sure you uninstall pmagpy/pmagpy-cli first if you have already installed them.
 
@@ -1081,7 +1081,7 @@ If you see an error message like this:
   logged in on the main display of your Mac.
 \end{verbatim}
 
-you need to use ``pmag_gui_anaconda''
+you need to use ``pmag\_gui\_anaconda''
 
 If you see an error message like this:
 
@@ -1173,14 +1173,219 @@ Where do you want to go from here?
 \end{itemize}
 
 
+
+
+
+\customlink{PmagPy}
+\chapter{The {\bf PmagPy} software package}
+\label{chap:PmagPy}
+
+The {\bf PmagPy} software package is a comprehensive set of programs for paleomagnetists and rock magnetists.  For installation,  follow the instructions in the \href{#quick_start}{Installing PmagPy} Chapter in this cookbook. \\
+
+\noindent When you type something on your \href{#command_line}{command line}, your operating system looks for programs of the same name in special places.  These are special ``paths'' so the directory with your Python scripts has to ``be in your path''.  To inform the operating system of the new directory, you need to ``set your path''.    It should have been set when you installed {\bf PmagPy}.
+
+
+
+\section{Using PmagPy}
+
+Much more information is available on specific {\bf PmagPy} functionality.  To learn how to use {\bf PmagPy} in a Python environment (i.e., a Juypyter notebook, the Python interpreter, or your own Python script), see the documentation below.
+
+You can run an interactive \href{https://mybinder.org/v2/gh/PmagPy/PmagPy-notebooks/master?filepath=PmagPy.ipynb}{{\bf PmagPy} demo} here.  Please be patient -- it will take a few minutes to initialize.
+
+You can find a non-interactive page with the same information on the \href{https://github.com/PmagPy/PmagPy/blob/master/PmagPy.ipynb}{{\bf PmagPy} Github page}.
+
+Either option contains a comprehensive introduction to {\bf PmagPy}.
+
+\section{PmagPy on the command line}
+
+{\bf PmagPy}  scripts work by calling them on a \href{#command_line}{command line}.
+% The python scripts must be placed in a directory that is in your ``path''.  To see if this has been properly done, type {\bf dir\_cart.py -h} on the command line and you should get a help message.  If you get a ``command not found'' message, you need to fix your path; check the ``installing python'' page on the software website.   Another possible cause for failure is that somehow, the python scripts are no longer executable.  To fix this, change directories into the directory with the scripts, and type the command:  chmod a+x *.py
+
+For people who hate command line programs and prefer graphical user interfaces with menus, etc., some of the key programs for interpreting paleomagnetic and rock magnetic data are packaged together in a program called {\href{#pmag_gui.py}{Pmag GUI}.  This can be invoked by typing {\bf pmag\_gui.py} on the command line.
+The \href{#pmag_gui.py}{Pmag GUI} program generates the desired commands for you behind the scenes, so you do not have to learn UNIX or how to use the command line (except to call {\bf Pmag GUI} itself).  Nonetheless, some understanding of what is actually happening is helpful, because {\bf Pmag GUI} is more limited than  full range of {\bf PmagPy} programs.  So, here is a brief introduction to how the {\bf PmagPy} programs work.
+
+All {\bf PmagPy} programs print a help message out if you type: {\bf program\_name.py -h} on the command line.  Many have an ``interactive'' option triggered by typing {\bf program\_name.py -i}.  Many also allow reading from \href{#standard_IO }{standard input and output}.   The help message will explain how each particular program functions.  There are some common features for the command line options:
+
+
+\begin{itemize}
+\item Switches are from one to three characters long, preceded by a '-'.
+\item The switch '-h' always prints the help message and '-i' allows interactive entry of options.
+\item  Options for command line switches immediately follow the switch.  For example:  -f INPUT -F OUTPUT will set the input file to INPUT and the output to OUTPUT.
+\item  The switch for input  files all start with -f and -F for output files.
+\item -spc -sam -sit -syn  -loc are switches relating to specimens, samples, sites, synthetics and locations respectively.
+\item Capitalized switches suppress an option (e.g., -A means do not average, while -a means DO average).
+\item -crd [s,g,t] sets the coordinate system
+\item -fmt [svg,png,jpg] the default image format.
+\item -sav  saves the plots silently and quits the program
+\end{itemize}
+\newcommand{\stt}{\small\tt}
+\newcount\exnum
+\outer\def\example{\medbreak\advance\exnum by 1
+  \noindent{$\item$ \bf Example \the\exnum\enspace} \noindent}
+
+ The {\bf PmagPy} scripts call on several special modules, including {\bf pmag} and {\bf ipmag} for general calculations, {\bf convert\_2\_magic} for importing measurementsinto the MagIC format, {\bf contribution_builder} for building and managing MagIC contributions, and {\bf pmagplotlib} for generating plots.  These contain most of the calculations and plotting functions.
+
+ The source code and the help messages for all programs in the PmagPy package are available online at:
+
+ \customlink{github}
+
+ \url{https://github.com/PmagPy/PmagPy}
+
+
+Examples of how to use command line {\bf PmagPy} programs are given below. The example data files referred to in the following are located in the {\it data\_files} directory bundled with the {\bf PmagPy} software distribution.
+
+
+You can run an interactive \href{https://mybinder.org/v2/gh/PmagPy/PmagPy-notebooks/master?filepath=PmagPy-cli.ipynb}{{\bf PmagPy} command line demo} here.  Please be patient -- it will take a few minutes to initialize.
+
+You can find a non-interactive page with the same information on the \href{https://github.com/PmagPy/PmagPy/blob/master/PmagPy-cli.ipynb}{{\bf PmagPy} Github page}.
+
+
+Calculations:
+
+\begin{itemize}
+
+\item aarm\_magic : takes a measurements.txt file with anisotropy of ARM data and calculates the tensors and stores in a specimens.txt file.
+\item angle : calculates the angle between two vectors
+\item apwp : returns predicted paleolatitudes, directions and pole latitude/longitude from apparent polar wander paths of Besse and Courtillot (2002.
+\item atrm\_magic : takes a measurements.txt file with anisotropy of TRM data and calculates the tensors and stores in a specimens.txt file.
+\item b\_vdm : converts B (in microT and (magnetic latitude to V(ADM (see vdm\_b
+\item bootams : calculates bootstrap statistics for tensor data
+\item cart\_dir : converts cartesian coordinates (x,y,z to declination, inclination, intensity (see dir\_cart
+\item di\_eq : maps declination, inclinatitions to X,Y for plotting in equal area projections
+\item di\_geo : rotates declination, inclination in specimen coordinates to geographic
+\item di\_rot : rotates directions to a  coordinate system with D,I as center
+\item di\_tilt : rotates directions to stratigraphic coordinates
+\item di\_vgp : converts direction to Virtual Geomagnetic Pole (see vgp\_di)
+\item dia\_vgp : converts direction and alpha95 to Virtual Geomagnetic Pole and dp,dm
+\item dipole\_pinc : calculates inclination given latitude assuming geocentric axial dipole
+\item dipole\_plat : calculates latitude given inclination assuming geocentric axial dipole
+\item dir\_cart : converts declination, inclination, intensity to cartesian coordinates (see cart\_dir)
+\item eigs\_s : converts eigenparameters to equivalent 6 element tensor (see s\_eigs)
+\item eq\_di : takes X,Y from equal area projection (e.g., from digitized coordinates and  converts to declination, inclination
+\item fcalc : returns the value from an F table, given the degrees of freedom.
+\item fisher : generates sets of directions drawn from Fisher distributions with vertical true mean
+\item fishrot : generates sets of directions drawn from Fisher distributions with arbitrary true mean
+\item gaussian : generates data drawn from a normal distribution
+\item gobing : calculates Bingham statistics from a set of directions
+\item gofish : calculates Fisher statistics from a set of directions
+\item gokent : calculates Kent statistics from a set of directions
+\item goprinc : calculates principal directions statistics
+\item igrf : calculates geomagnetic field vectors for location, age given a field model (e.g., IGRF
+\item incfish : estimates the true mean inclination from inclination only data
+\item pca : calculates the best-fit line or plane for demagnetization data and associated statistics
+\item pt\_rot : rotates point given finite rotation pole
+\item scalc : calculates  VGP scatter
+\item s\_eigs : takes a 6 element tensor and calculates eigen parameters (see eigs\_s)
+\item s\_geo : rotates 6 element tensors to geographic coordinates
+\item s\_hext : calculates Hext statistics from 6 element tensors
+\item s\_tilt : rotates 6 element tensors to stratigraphic coordinates
+\item squish: flattens inclination data given flattening factor (see unsquish
+\item sundec : calulates direction to sun for location, date, time and sun azimuth
+\item tk03 : generates sets of directions consistent with the TK03 field model
+\item uniform : generates sets of uniformly distributed directions
+\item unsquish : unsquishes flattened inclinations, given flattening factor (see squish
+\item vector\_mean : calculates vector mean for sets of vectors (declination, inclination, intensity
+\item vdm\_b : calculates intensity at given location from specified virtual dipole moment (see b\_vdm)
+\item vgp\_di : calculates direction at given location from virtual geomagnetic pole (see di_vgp)
+\item watsons\_f : calculates Watson's F statistic for testing for common mean
+
+  \end{itemize}
+
+Plots:
+
+\begin{itemize}
+
+  \item ani\_depthplot : plots anisotropy data against depth in stratigraphic section (Xmas tree plots
+\item aniso\_magic : makes plots of anisotropy data and bootstrapped confidences
+\item biplot\_magic : plots different columns against each other in MagIC formatted data files
+\item chi\_magic : plots magnetic susceptibility data in MagIC format as function of field, frequency or temperature
+\item common\_mean : graphical approach to testing two sets of directions for common mean using bootstrap
+\item core\_depthplot : plots MagIC formatted data
+\item curie : makes plots of Curie Temperature data and provides estimates for Tc
+\item dayplot\_magic : makes Day et al. (1977) and other plots with hysteresis statistics
+\item dmag\_magic : plots remanence against demagnetization step for MagIC formatted files
+\item eqarea and eqarea\_magic : makes equal area projections for directions
+\item eqarea\_ell : makes equal area projections for directions with specified confidence ellipses
+\item find\_ei : finds the inclination unflattening factor that unsquishes directions to match TK03 distribution
+\item fishqq: makes a Quantile-Quantile plot for directions against uniform and exponential distributions
+\item foldtest and foldtest\_magic : finds  tilt correction that maximizes concentration of directions, with bootstrap confidence bounds.
+\item hysteresis\_magic : makes plots of hysteresis data (not FORCs.
+\item irm\_magic : plots IRM acquistion data
+\item lnp\_magic : plots lines and planes for site level data and calculates best fit mean and alpha\_95
+\item lowes : makes a plot of the Lowe's spectrum for a geomagnetic field model
+\item lowrie and lowrie\_magic : makes plots of Lowrie's (1990 3D-IRM demagnetization experiments
+\item plot\_cdf and plot\_2cdfs : makes a cumulative distribution plot of data
+\item plotdi\_a : makes equal are plots of directions and their alpha95s
+\item plot\_geomagia : makes plots from files downloaded from the  geomagia website
+\item plot\_magic\_keys : plots data from MagIC formatted data files
+\item qqplot : makes a Quantile-Quantile plot for data against a normal distribution
+\item qqunf : makes a Quantile-Quantile plot for data against a uniform distribution
+\item revtest and revtest\_magic : performs a bootstrap reversals test
+\item thellier\_magic : makes plots of thellier-thellier data.
+\item watsons\_v : makes a graph for Watson's V test for common mean
+\item zeq and zeq\_magic : makes quicky zijderveld plots for measurement data
+
+\end{itemize}
+
+Maps
+
+\begin{itemize}
+
+  \item cont\_rot : makes plots of continents after rotation to specified coordinate system
+\item plot\_mag\_map : makes a color contour plot of geomagnetic field models
+\item plot\_map\_pts : plots points on maps
+\item polemap\_magic : reads in MagIC formatted file with paleomagnetic poles and plots them
+\item vgpmap\_magic : reads in MagIC formatted file with virtual geomagnetic poles and plots them
+
+\end{itemize}
+
+Working with MagIC
+\begin{itemize}
+\item magic\_read : reading in MagIC formatted files
+\item magic\_write : outputing MagIC formatted files
+\item combine\_magic : combines two MagIC formatted files of same type
+\item convert\_ages : convert ages in downloaded MagIC file to Ma
+\item grab\_magic\_key : prints out a single column from a MagIC format file
+\item magic\_select : selects data from MagIC format file given conditions (e.g., method\_codes contain string
+\item Contributions work with data model 3.0 MagIC contributions
+\item download\_magic : unpacks a contribution text file downloaded from the MagIC website
+\item upload\_magic : prepares a directory with a MagIC contribution for uploading to MagIC
+\item cb.add\_sites\_to\_meas\_table : completes a measurements data frame with the information required for plotting by site.
+\item cb.get\_intensity\_col : finds the first non-zero type of intensity data in a measurements dataframe.
+\item convert\_2\_magic : convert many laboratory measurement formats to the MagIC data model 3 format
+\item \_2g\_asc\_magic : converts the 2G ascii file to MagIC - but no example yet.
+\item \_2g\_bin\_magic : convert 2G binary format to MagIC
+\item agm\_magic : convert Princeton Measurements alternating gradient force magnetization (AGM output files to the MagIC format.
+\item bgc\_magic : convert the Berkeley Geochronology lab format to MagIC.
+\item cit\_magic : convert the Cal Tech file format.
+\item generic\_magic : convert the generic file format to MagIC.
+\item huji\_magic : convert Hebrew University, Jerusalem, Israel file format to MagIC.
+\item huji\_sample\_magic : convert the HUJI sample file to a MagIC format.
+\item jr6\_jr6\_magic : convert the AGICO JR6 spinner .jr6 output to MagIC
+\item jr6\_txt\_magic : convert the AGICO JR6 txt format to MagIC
+\item k15\_magic : convert  15 measurement anisotropy of magnetic susceptibility file format to MagIC.
+\item ldeo\_magic : convert Lamont-Doherty file format to MagIC.
+\item livdb\_magic : convert Liverpool file format to MagIC.
+\item mst\_magic : converts Curie Temperature experimental data to MagIC
+\item sio\_magic : convert the Scripps Institution of Oceanography data format to MagIC
+\item sufar4\_magic : converts the AGICO SUFAR program (ver.1.2. ascii file format to MagIC
+\item tdt\_magic : converts the Thellier Tool format to MagIC 3.0
+\item utrecht\_magic : converts the Fort Hoofddijk, Utrecht University Robot file format to MagIC
+\item orientation\_magic : converts an "orient.txt" formatted file with field notebook information into MagIC formatted files
+\item azdip\_magic : converts an "azdip" formatted file to a samples.txt file format
+
+\end{itemize}
+
+Other handy scripts
+
+\begin{itemize}
+
+\item chartmaker : script for making chart to guide IZZI lab experiment
+
+  \end{itemize}
+
+
 \customlink{pmag_gui.py}
-
-
-
-
-
-\customlink{pmag_gui.py}
-
 \chapter{Pmag GUI Tutorial}
 \label{chap:Pmag GUI}
 
@@ -1669,120 +1874,9 @@ Now we'll walk through a simple data input process, with fake data.
 %While \href{#pmag_gui.py}{Pmag GUI} provides a bare bones interface for importing, interpreting and uploading most demagnetization and paleointensity experimental data into the MagIC database, {\bf MagIC.py} is a more complete (and complicated) program.
 %It is an umbrella program that links many MagIC related functions of the \href{#PmagPy}{PmagPy} Software Package in a user-friendly  graphical user interface (GUI).  While it is invoked with a command line call, this  can be done from any directory (with no spaces in the path).  It generates calls to the programs described in Chapter~\ref{chap:PmagPy} so you don't have to.    It allows importing of many lab and instrument formats, plotting of a variety of data and doing the data processing and book-keeping required to create files ready for uploading into the MagIC Console software.
 
-
-
-
-\customlink{survival_skills}
-
-\chapter{Survival computer skills}
-\label{ex:unix}
-
-The `Py' part of  `PmagPy' stands for Python, the language in which all the code is written.   It is not essential, but it is helpful, to understand a bit about computer operating systems and the Python language when using PmagPy because no one should be using programs as black boxes without understanding what they are doing. As all the programs are open source, you have the opportunity to look into them.  If you understand a bit about how computers work yourself, you will be able to follow along what the programs are doing and even modify them to work better for you. In this chapter, you will find a brief introduction to the computer skills necessary for using the programs properly.  We have tried to make this tutorial operating system independent.  All the examples should work equally well on Mac OS, Windows and Unix-type operating systems.  For a more complete explanation of the marvelous world of UNIX, refer to the website at \url{http://www.tutorialspoint.com/unix/unix-quick-guide.htm}.  For handy tricks in DOS, try this link:  \url{http://www.c3scripts.com/tutorials/msdos}.
-For an introduction to programming in Python, see the \href{#Python}{Python Programming Chapter}.   For now, we are interested in having the skills to find a command line and navigate the file system in order to get started with \href{#PmagPy}{PmagPy}.
-
-
-\customlink{command_line}
-\section{Finding your command line}
-If you are not using a Unix-like computer (*NIX), you may never have encountered a command line. Using any of the command line programs requires accessing the command line.  If you are using the MacOS operating system, look for the Terminal application in the Utilities folder within the Applications folder. When the Terminal application is launched, you will get a terminal window. The Unix (and MacOS) Bash shell has a \$ sign as a prompt.  Other shells have other command line prompts, such as the antiquated `C-shell' used by Lisa Tauxe (don't ask) which has a \% prompt which is used in the examples here.
-
-  \includegraphics[width=15cm]{EPSFiles/terminal.eps}
-
-Under the Windows operating system, you can find your command line by searching for the ``Command Prompt'' application.
-
-  \includegraphics[width=15cm]{EPSFiles/cmd.eps}
-
-  Note that the location of this program varies on different computers, so you may have to hunt around a little to find yours. Also, the actual  ``prompt'' will vary for different machines.
-
-
-
-\section{File systems}
-\label{sect:file_systems}
-When you first open a terminal window,  you are in your ``home'' directory.
-Fundamental to all operating systems is the concept of
-directories and files.  On windows-based operating systems (MacOS or Windows), directories are depicted
-as ``folders'' and moving about is accomplished by clicking on the different icons.
-In the world of terminal windows, the directories have names and are arranged in a hierarchical sequence with
-the top directory being the ``root'' directory, known as  ``/'' (or C:\verb!\! in Windows) and the file system looks something like this:
-
-
-  \includegraphics[width=15cm]{EPSFiles/filesys.eps}
-
- Within the root directory, there are subdirectories
-(e.g. {\bf Applications} and {\bf Users} in bold face).  In any directory, there can also be ``files''
-(e.g. {\it dir\_cart\_example.dat}).   To
-refer to directories,  the operating system relies on what is called a ``pathname''. Every object
-has an ``absolute'' pathname which is valid from anywhere on the computer.  The
-absolute pathname in *NIX always begins from the root directory {\bf /} and in DOS (the operating system working in the Windows command line window), it is C:\verb!\!.
-
-The absolute pathname to the home directory {\bf lisa} in the figure is {\bf /Users/lisa}.
-Similarly, the absolute pathname to the directory containing {\bf PmagPy}
-scripts  would be  {\bf /Users/lisa/PmagPy}.  There is also a ``relative'' pathname,
-which is in reference to the  current directory (the one you are `sitting' in).  If user ``lisa'' is sitting in
-her home directory, the relative pathname for the file {\it dir\_cart\_example.dat} in the directory
-{\bf data\_files} would be {\it data\_files/dir\_cart/dir\_cart\_example.dat}.  When using relative
-pathnames, it is useful to remember that {\bf ./} refers to the current
-directory and {\bf ../} refers to the directory  ``above''.     Also, lisa's home directory would be $\sim$lisa, or if you are logged in as lisa yourself, then it is just $\sim$.
-
-
-\customlink{file_system}
-\section{Moving around in the file system}
-
-Now that you have found your command line and are comfortable in your home directory, you can view the contents of your directory with the Unix command {\bf ls} or the DOS command {\bf dir}.
-\customlink{mkdir}
-You can make a new directory with the command
-\begin{verbatim}
-% mkdir NEW_DIRECTORY_NAME
-\end{verbatim}
-This command works in both Unix and DOS environments) and you can move into your new directory with the command
-\begin{verbatim}
-% cd NEW_DIRECTORY_NAME
-\end{verbatim}
-   To move back up into the home directory, just type {\bf cd ..} remembering that {\bf ..} refers to the directory above.  Also, {\bf cd} by itself will transport you home from where ever you are (there's no place like home....).     You can also change to any arbitrary directory by specifying the full path of the destination directory.
-
-
-%\section {Wildcards}
-%
-%Unix and DOS have the ability to refer to a number of files and/or directories using
-%``wildcards''.  The  wildcard for a  single character is ``?'' and for any number of
-%characters is ``*''.  For example, to refer to all the files with ``.py'' in their name in the PmagPy directory in my home directory,
-%I would type:
-%
-%\begin{verbatim}
-%% ls PmagPy/*.py
-%apwp.py bootams.py fishrot.py.....
-%\end{verbatim}
-
-\customlink{standard_IO}
-
-\section {Redirecting input and output}
-
-Programs that operate at the command line level print output to the screen and read input
-from the keyboard. This is
-known as ``standard input and output'' or ``standard I/O''.
-One of the nicest things about working at the command line level is the ability to redirect input and output.
-For example, instead of typing input to a program with the keyboard, it can
-be read from a file using the symbol {\bf $<$}.   Output can either be printed to the screen (standard output), redirected into a file using the symbol {\bf $>$}, appended to the end of a file with {\bf $>>$} or
-used as input to another program with the pipe operator ({\bf$ |$}).
-
-\section{Text editors}
-
-There are many ways of editing text and the subject is beyond the scope of this documentation. Text editing is a blessing and a curse.  You either love it or
-hate it and in the beginning, and if you are used to programs like Word, you will certainly hate it. (And if you are used to a decent text editor, you will hate Word!).      But you can't use Word because the output is in a weird format that no scripting languages read easily.  So you have to use text editor that will produce a plain (ascii) file, like Notepad, TextWrangler, Sublime Text or Atom.  \href{http://textwrangler.onfreedownload.com}{TextWrangler} is free software available for Macs, the notepad comes standard in the Windows operating system and the \href{https://atom.io}{Atom} text editor is a free cross-platform option with lots of nice packages available that extend its functionality. Enthought Python's Canopy programming environment comes with its own text editor.
-
-\customlink{PmagPy}
-
-\chapter{The {\bf PmagPy} software package}
-\label{chap:PmagPy}
-
-The {\bf PmagPy} software package is a comprehensive set of programs for paleomagnetists and rock magnetists.  For installation,  follow the instructions in the \href{#quick_start}{Installing PmagPy} Chapter in this cookbook. \\
-
-\noindent When you type something on your \href{#command_line}{command line}, your operating system looks for programs of the same name in special places.  These are special ``paths'' so the directory with your Python scripts has to ``be in your path''.  To inform the operating system of the new directory, you need to ``set your path''.    It should have been set when you installed {\bf PmagPy}.
-
+\chapter{Graphical data analysis programs}
 \customlink{demag_gui.py}
-
-
-\section{Graphical data analysis programs}
-\subsection{demag\_gui.py}
+\section{demag\_gui.py}
 
 The  Demag GUI ({\bf demag\_gui.py}) program enables the display and analysis of paleomagnetic demagnetization data. The software will display specimen level data within the chosen directory as a Zijderveld plot, equal area plot and intensity plot. Interpretations can be made to the data as least-squares line or plane fits. Mean directions can be calculated and displayed for these interpretations. These interpretations can be exported as MagIC pmag files from the program.
 
@@ -1933,7 +2027,7 @@ Finally, if you need more help working with Demag GUI it offers in context assis
 
 \customlink{thellier_GUI.py}
 
-\subsection{thellier\_gui.py}
+\section{thellier\_gui.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#ch10}{[Essentials Chapter 10]} and \href{#MagIC}{[MagIC}]
 \href{https://github.com/PmagPy/PmagPy-Cookbook/blob/gh-pages/thellier_GUI_full_manual.pdf}{[Thellier\_GUI\_full\_manual.pdf]}
 
@@ -2084,209 +2178,6 @@ The bottom of the main panel include paleointensity statistics. The first line h
 %\end{itemize}
 %\end{itemize}
 
-
-\section{Using PmagPy}
-
-Much more information is available on specific {\bf PmagPy} functionality.  To learn how to use {\bf PmagPy} in a Python environment (i.e., a Juypyter notebook, the Python interpreter, or your own Python script), see the documentation below.
-
-You can run an interactive \href{https://mybinder.org/v2/gh/PmagPy/PmagPy-notebooks/master?filepath=PmagPy.ipynb}{{\bf PmagPy} demo} here.  Please be patient -- it will take a few minutes to initialize.
-
-You can find a non-interactive page with the same information on the \href{https://github.com/PmagPy/PmagPy/blob/master/PmagPy.ipynb}{{\bf PmagPy} Github page}.
-
-Either option contains a comprehensive introduction to {\bf PmagPy}.
-
-\section{PmagPy on the command line}
-
-{\bf PmagPy}  scripts work by calling them on a \href{#command_line}{command line}.
-% The python scripts must be placed in a directory that is in your ``path''.  To see if this has been properly done, type {\bf dir\_cart.py -h} on the command line and you should get a help message.  If you get a ``command not found'' message, you need to fix your path; check the ``installing python'' page on the software website.   Another possible cause for failure is that somehow, the python scripts are no longer executable.  To fix this, change directories into the directory with the scripts, and type the command:  chmod a+x *.py
-
-For people who hate command line programs and prefer graphical user interfaces with menus, etc., some of the key programs for interpreting paleomagnetic and rock magnetic data are packaged together in a program called {\href{#pmag_gui.py}{Pmag GUI}.  This can be invoked by typing {\bf pmag\_gui.py} on the command line.
-The \href{#pmag_gui.py}{Pmag GUI} program generates the desired commands for you behind the scenes, so you do not have to learn UNIX or how to use the command line (except to call {\bf Pmag GUI} itself).  Nonetheless, some understanding of what is actually happening is helpful, because {\bf Pmag GUI} is more limited than  full range of {\bf PmagPy} programs.  So, here is a brief introduction to how the {\bf PmagPy} programs work.
-
-All {\bf PmagPy} programs print a help message out if you type: {\bf program\_name.py -h} on the command line.  Many have an ``interactive'' option triggered by typing {\bf program\_name.py -i}.  Many also allow reading from \href{#standard_IO }{standard input and output}.   The help message will explain how each particular program functions.  There are some common features for the command line options:
-
-
-\begin{itemize}
-\item Switches are from one to three characters long, preceded by a '-'.
-\item The switch '-h' always prints the help message and '-i' allows interactive entry of options.
-\item  Options for command line switches immediately follow the switch.  For example:  -f INPUT -F OUTPUT will set the input file to INPUT and the output to OUTPUT.
-\item  The switch for input  files all start with -f and -F for output files.
-\item -spc -sam -sit -syn  -loc are switches relating to specimens, samples, sites, synthetics and locations respectively.
-\item Capitalized switches suppress an option (e.g., -A means do not average, while -a means DO average).
-\item -crd [s,g,t] sets the coordinate system
-\item -fmt [svg,png,jpg] the default image format.
-\item -sav  saves the plots silently and quits the program
-\end{itemize}
-\newcommand{\stt}{\small\tt}
-\newcount\exnum
-\outer\def\example{\medbreak\advance\exnum by 1
-  \noindent{$\item$ \bf Example \the\exnum\enspace} \noindent}
-
- The {\bf PmagPy} scripts call on several special modules, including {\bf pmag} and {\bf ipmag} for general calculations, {\bf convert\_2\_magic} for importing measurementsinto the MagIC format, {\bf contribution_builder} for building and managing MagIC contributions, and {\bf pmagplotlib} for generating plots.  These contain most of the calculations and plotting functions.
-
- The source code and the help messages for all programs in the PmagPy package are available online at:
-
- \customlink{github}
-
- \url{https://github.com/PmagPy/PmagPy}
-
-
-Examples of how to use command line {\bf PmagPy} programs are given below. The example data files referred to in the following are located in the {\it data\_files} directory bundled with the {\bf PmagPy} software distribution.
-
-
-You can run an interactive \href{https://mybinder.org/v2/gh/PmagPy/PmagPy-notebooks/master?filepath=PmagPy-cli.ipynb}{{\bf PmagPy} command line demo} here.  Please be patient -- it will take a few minutes to initialize.
-
-You can find a non-interactive page with the same information on the \href{https://github.com/PmagPy/PmagPy/blob/master/PmagPy-cli.ipynb}{{\bf PmagPy} Github page}.
-
-
-Calculations:
-
-\begin{itemize}
-
-\item aarm\_magic : takes a measurements.txt file with anisotropy of ARM data and calculates the tensors and stores in a specimens.txt file.
-\item angle : calculates the angle between two vectors
-\item apwp : returns predicted paleolatitudes, directions and pole latitude/longitude from apparent polar wander paths of Besse and Courtillot (2002.
-\item atrm\_magic : takes a measurements.txt file with anisotropy of TRM data and calculates the tensors and stores in a specimens.txt file.
-\item b\_vdm : converts B (in microT and (magnetic latitude to V(ADM (see vdm\_b
-\item bootams : calculates bootstrap statistics for tensor data
-\item cart\_dir : converts cartesian coordinates (x,y,z to declination, inclination, intensity (see dir\_cart
-\item di\_eq : maps declination, inclinatitions to X,Y for plotting in equal area projections
-\item di\_geo : rotates declination, inclination in specimen coordinates to geographic
-\item di\_rot : rotates directions to a  coordinate system with D,I as center
-\item di\_tilt : rotates directions to stratigraphic coordinates
-\item di\_vgp : converts direction to Virtual Geomagnetic Pole (see vgp\_di)
-\item dia\_vgp : converts direction and alpha95 to Virtual Geomagnetic Pole and dp,dm
-\item dipole\_pinc : calculates inclination given latitude assuming geocentric axial dipole
-\item dipole\_plat : calculates latitude given inclination assuming geocentric axial dipole
-\item dir\_cart : converts declination, inclination, intensity to cartesian coordinates (see cart\_dir)
-\item eigs\_s : converts eigenparameters to equivalent 6 element tensor (see s\_eigs)
-\item eq\_di : takes X,Y from equal area projection (e.g., from digitized coordinates and  converts to declination, inclination
-\item fcalc : returns the value from an F table, given the degrees of freedom.
-\item fisher : generates sets of directions drawn from Fisher distributions with vertical true mean
-\item fishrot : generates sets of directions drawn from Fisher distributions with arbitrary true mean
-\item gaussian : generates data drawn from a normal distribution
-\item gobing : calculates Bingham statistics from a set of directions
-\item gofish : calculates Fisher statistics from a set of directions
-\item gokent : calculates Kent statistics from a set of directions
-\item goprinc : calculates principal directions statistics
-\item igrf : calculates geomagnetic field vectors for location, age given a field model (e.g., IGRF
-\item incfish : estimates the true mean inclination from inclination only data
-\item pca : calculates the best-fit line or plane for demagnetization data and associated statistics
-\item pt\_rot : rotates point given finite rotation pole
-\item scalc : calculates  VGP scatter
-\item s\_eigs : takes a 6 element tensor and calculates eigen parameters (see eigs\_s)
-\item s\_geo : rotates 6 element tensors to geographic coordinates
-\item s\_hext : calculates Hext statistics from 6 element tensors
-\item s\_tilt : rotates 6 element tensors to stratigraphic coordinates
-\item squish: flattens inclination data given flattening factor (see unsquish
-\item sundec : calulates direction to sun for location, date, time and sun azimuth
-\item tk03 : generates sets of directions consistent with the TK03 field model
-\item uniform : generates sets of uniformly distributed directions
-\item unsquish : unsquishes flattened inclinations, given flattening factor (see squish
-\item vector\_mean : calculates vector mean for sets of vectors (declination, inclination, intensity
-\item vdm\_b : calculates intensity at given location from specified virtual dipole moment (see b\_vdm)
-\item vgp\_di : calculates direction at given location from virtual geomagnetic pole (see di_vgp)
-\item watsons\_f : calculates Watson's F statistic for testing for common mean
-
-  \end{itemize}
-
-Plots:
-
-\begin{itemize}
-
-  \item ani\_depthplot : plots anisotropy data against depth in stratigraphic section (Xmas tree plots
-\item aniso\_magic : makes plots of anisotropy data and bootstrapped confidences
-\item biplot\_magic : plots different columns against each other in MagIC formatted data files
-\item chi\_magic : plots magnetic susceptibility data in MagIC format as function of field, frequency or temperature
-\item common\_mean : graphical approach to testing two sets of directions for common mean using bootstrap
-\item core\_depthplot : plots MagIC formatted data
-\item curie : makes plots of Curie Temperature data and provides estimates for Tc
-\item dayplot\_magic : makes Day et al. (1977) and other plots with hysteresis statistics
-\item dmag\_magic : plots remanence against demagnetization step for MagIC formatted files
-\item eqarea and eqarea\_magic : makes equal area projections for directions
-\item eqarea\_ell : makes equal area projections for directions with specified confidence ellipses
-\item find\_ei : finds the inclination unflattening factor that unsquishes directions to match TK03 distribution
-\item fishqq: makes a Quantile-Quantile plot for directions against uniform and exponential distributions
-\item foldtest and foldtest\_magic : finds  tilt correction that maximizes concentration of directions, with bootstrap confidence bounds.
-\item hysteresis\_magic : makes plots of hysteresis data (not FORCs.
-\item irm\_magic : plots IRM acquistion data
-\item lnp\_magic : plots lines and planes for site level data and calculates best fit mean and alpha\_95
-\item lowes : makes a plot of the Lowe's spectrum for a geomagnetic field model
-\item lowrie and lowrie\_magic : makes plots of Lowrie's (1990 3D-IRM demagnetization experiments
-\item plot\_cdf and plot\_2cdfs : makes a cumulative distribution plot of data
-\item plotdi\_a : makes equal are plots of directions and their alpha95s
-\item plot\_geomagia : makes plots from files downloaded from the  geomagia website
-\item plot\_magic\_keys : plots data from MagIC formatted data files
-\item qqplot : makes a Quantile-Quantile plot for data against a normal distribution
-\item qqunf : makes a Quantile-Quantile plot for data against a uniform distribution
-\item revtest and revtest\_magic : performs a bootstrap reversals test
-\item thellier\_magic : makes plots of thellier-thellier data.
-\item watsons\_v : makes a graph for Watson's V test for common mean
-\item zeq and zeq\_magic : makes quicky zijderveld plots for measurement data
-
-\end{itemize}
-
-Maps
-
-\begin{itemize}
-
-  \item cont\_rot : makes plots of continents after rotation to specified coordinate system
-\item plot\_mag\_map : makes a color contour plot of geomagnetic field models
-\item plot\_map\_pts : plots points on maps
-\item polemap\_magic : reads in MagIC formatted file with paleomagnetic poles and plots them
-\item vgpmap\_magic : reads in MagIC formatted file with virtual geomagnetic poles and plots them
-
-\end{itemize}
-
-Working with MagIC
-\begin{itemize}
-\item magic\_read : reading in MagIC formatted files
-\item magic\_write : outputing MagIC formatted files
-\item combine\_magic : combines two MagIC formatted files of same type
-\item convert\_ages : convert ages in downloaded MagIC file to Ma
-\item grab\_magic\_key : prints out a single column from a MagIC format file
-\item magic\_select : selects data from MagIC format file given conditions (e.g., method\_codes contain string
-\item Contributions work with data model 3.0 MagIC contributions
-\item download\_magic : unpacks a contribution text file downloaded from the MagIC website
-\item upload\_magic : prepares a directory with a MagIC contribution for uploading to MagIC
-\item cb.add\_sites\_to\_meas\_table : completes a measurements data frame with the information required for plotting by site.
-\item cb.get\_intensity\_col : finds the first non-zero type of intensity data in a measurements dataframe.
-\item convert\_2\_magic : convert many laboratory measurement formats to the MagIC data model 3 format
-\item \_2g\_asc\_magic : converts the 2G ascii file to MagIC - but no example yet.
-\item \_2g\_bin\_magic : convert 2G binary format to MagIC
-\item agm\_magic : convert Princeton Measurements alternating gradient force magnetization (AGM output files to the MagIC format.
-\item bgc\_magic : convert the Berkeley Geochronology lab format to MagIC.
-\item cit\_magic : convert the Cal Tech file format.
-\item generic\_magic : convert the generic file format to MagIC.
-\item huji\_magic : convert Hebrew University, Jerusalem, Israel file format to MagIC.
-\item huji\_sample\_magic : convert the HUJI sample file to a MagIC format.
-\item jr6\_jr6\_magic : convert the AGICO JR6 spinner .jr6 output to MagIC
-\item jr6\_txt\_magic : convert the AGICO JR6 txt format to MagIC
-\item k15\_magic : convert  15 measurement anisotropy of magnetic susceptibility file format to MagIC.
-\item ldeo\_magic : convert Lamont-Doherty file format to MagIC.
-\item livdb\_magic : convert Liverpool file format to MagIC.
-\item mst\_magic : converts Curie Temperature experimental data to MagIC
-\item sio\_magic : convert the Scripps Institution of Oceanography data format to MagIC
-\item sufar4\_magic : converts the AGICO SUFAR program (ver.1.2. ascii file format to MagIC
-\item tdt\_magic : converts the Thellier Tool format to MagIC 3.0
-\item utrecht\_magic : converts the Fort Hoofddijk, Utrecht University Robot file format to MagIC
-\item orientation\_magic : converts an "orient.txt" formatted file with field notebook information into MagIC formatted files
-\item azdip\_magic : converts an "azdip" formatted file to a samples.txt file format
-
-\end{itemize}
-
-Other handy scripts
-
-\begin{itemize}
-
-\item chartmaker : script for making chart to guide IZZI lab experiment
-
-  \end{itemize}
-
-%
-\section{Complaints department}
-
-The best way to raise issues with any of the software or its documentation is to post to the issues page of the Github project: \url{https://github.com/ltauxe/PmagPy/issues}. Lisa Tauxe (\href{mailto:ltauxe@ucsd.edu}{ltauxe@usd.edu}) can also be contacted by email with bug reports, suggestions and requests.
 
 \customlink{MagICDatabase}
 \chapter{The MagIC database and file formats}
@@ -2484,6 +2375,104 @@ Correctly formatted MagIC data tables can be assembled into a suitable upload te
 %If you don't get something about Enthought Python, you are probably using the standard Mac Os version, which has none of the whistles and bells we want (plotting, numerical packages, etc.), and you'll need to set your path properly. Look for hints at:
 %\url{http://earthref.org/PmagPy}.     For more on how to program in Python, see Chapter~\ref{chap:python}.
 
+
+
+
+\customlink{survival_skills}
+\chapter{Survival computer skills}
+\label{ex:unix}
+
+The `Py' part of  `PmagPy' stands for Python, the language in which all the code is written.   It is not essential, but it is helpful, to understand a bit about computer operating systems and the Python language when using PmagPy because no one should be using programs as black boxes without understanding what they are doing. As all the programs are open source, you have the opportunity to look into them.  If you understand a bit about how computers work yourself, you will be able to follow along what the programs are doing and even modify them to work better for you. In this chapter, you will find a brief introduction to the computer skills necessary for using the programs properly.  We have tried to make this tutorial operating system independent.  All the examples should work equally well on Mac OS, Windows and Unix-type operating systems.  For a more complete explanation of the marvelous world of UNIX, refer to the website at \url{http://www.tutorialspoint.com/unix/unix-quick-guide.htm}.  For handy tricks in DOS, try this link:  \url{http://www.c3scripts.com/tutorials/msdos}.
+For an introduction to programming in Python, see the \href{#Python}{Python Programming Chapter}.   For now, we are interested in having the skills to find a command line and navigate the file system in order to get started with \href{#PmagPy}{PmagPy}.
+
+
+\customlink{command_line}
+\section{Finding your command line}
+If you are not using a Unix-like computer (*NIX), you may never have encountered a command line. Using any of the command line programs requires accessing the command line.  If you are using the MacOS operating system, look for the Terminal application in the Utilities folder within the Applications folder. When the Terminal application is launched, you will get a terminal window. The Unix (and MacOS) Bash shell has a \$ sign as a prompt.  Other shells have other command line prompts, such as the antiquated `C-shell' used by Lisa Tauxe (don't ask) which has a \% prompt which is used in the examples here.
+
+  \includegraphics[width=15cm]{EPSFiles/terminal.eps}
+
+Under the Windows operating system, you can find your command line by searching for the ``Command Prompt'' application.
+
+  \includegraphics[width=15cm]{EPSFiles/cmd.eps}
+
+  Note that the location of this program varies on different computers, so you may have to hunt around a little to find yours. Also, the actual  ``prompt'' will vary for different machines.
+
+
+
+\section{File systems}
+\label{sect:file_systems}
+When you first open a terminal window,  you are in your ``home'' directory.
+Fundamental to all operating systems is the concept of
+directories and files.  On windows-based operating systems (MacOS or Windows), directories are depicted
+as ``folders'' and moving about is accomplished by clicking on the different icons.
+In the world of terminal windows, the directories have names and are arranged in a hierarchical sequence with
+the top directory being the ``root'' directory, known as  ``/'' (or C:\verb!\! in Windows) and the file system looks something like this:
+
+
+  \includegraphics[width=15cm]{EPSFiles/filesys.eps}
+
+ Within the root directory, there are subdirectories
+(e.g. {\bf Applications} and {\bf Users} in bold face).  In any directory, there can also be ``files''
+(e.g. {\it dir\_cart\_example.dat}).   To
+refer to directories,  the operating system relies on what is called a ``pathname''. Every object
+has an ``absolute'' pathname which is valid from anywhere on the computer.  The
+absolute pathname in *NIX always begins from the root directory {\bf /} and in DOS (the operating system working in the Windows command line window), it is C:\verb!\!.
+
+The absolute pathname to the home directory {\bf lisa} in the figure is {\bf /Users/lisa}.
+Similarly, the absolute pathname to the directory containing {\bf PmagPy}
+scripts  would be  {\bf /Users/lisa/PmagPy}.  There is also a ``relative'' pathname,
+which is in reference to the  current directory (the one you are `sitting' in).  If user ``lisa'' is sitting in
+her home directory, the relative pathname for the file {\it dir\_cart\_example.dat} in the directory
+{\bf data\_files} would be {\it data\_files/dir\_cart/dir\_cart\_example.dat}.  When using relative
+pathnames, it is useful to remember that {\bf ./} refers to the current
+directory and {\bf ../} refers to the directory  ``above''.     Also, lisa's home directory would be $\sim$lisa, or if you are logged in as lisa yourself, then it is just $\sim$.
+
+
+\customlink{file_system}
+\section{Moving around in the file system}
+
+Now that you have found your command line and are comfortable in your home directory, you can view the contents of your directory with the Unix command {\bf ls} or the DOS command {\bf dir}.
+\customlink{mkdir}
+You can make a new directory with the command
+\begin{verbatim}
+% mkdir NEW_DIRECTORY_NAME
+\end{verbatim}
+This command works in both Unix and DOS environments) and you can move into your new directory with the command
+\begin{verbatim}
+% cd NEW_DIRECTORY_NAME
+\end{verbatim}
+   To move back up into the home directory, just type {\bf cd ..} remembering that {\bf ..} refers to the directory above.  Also, {\bf cd} by itself will transport you home from where ever you are (there's no place like home....).     You can also change to any arbitrary directory by specifying the full path of the destination directory.
+
+
+%\section {Wildcards}
+%
+%Unix and DOS have the ability to refer to a number of files and/or directories using
+%``wildcards''.  The  wildcard for a  single character is ``?'' and for any number of
+%characters is ``*''.  For example, to refer to all the files with ``.py'' in their name in the PmagPy directory in my home directory,
+%I would type:
+%
+%\begin{verbatim}
+%% ls PmagPy/*.py
+%apwp.py bootams.py fishrot.py.....
+%\end{verbatim}
+
+\customlink{standard_IO}
+
+\section {Redirecting input and output}
+
+Programs that operate at the command line level print output to the screen and read input
+from the keyboard. This is
+known as ``standard input and output'' or ``standard I/O''.
+One of the nicest things about working at the command line level is the ability to redirect input and output.
+For example, instead of typing input to a program with the keyboard, it can
+be read from a file using the symbol {\bf $<$}.   Output can either be printed to the screen (standard output), redirected into a file using the symbol {\bf $>$}, appended to the end of a file with {\bf $>>$} or
+used as input to another program with the pipe operator ({\bf$ |$}).
+
+\section{Text editors}
+
+There are many ways of editing text and the subject is beyond the scope of this documentation. Text editing is a blessing and a curse.  You either love it or
+hate it and in the beginning, and if you are used to programs like Word, you will certainly hate it. (And if you are used to a decent text editor, you will hate Word!).      But you can't use Word because the output is in a weird format that no scripting languages read easily.  So you have to use text editor that will produce a plain (ascii) file, like Notepad, TextWrangler, Sublime Text or Atom.  \href{http://textwrangler.onfreedownload.com}{TextWrangler} is free software available for Macs, the notepad comes standard in the Windows operating system and the \href{https://atom.io}{Atom} text editor is a free cross-platform option with lots of nice packages available that extend its functionality. Enthought Python's Canopy programming environment comes with its own text editor.
 
 
 
