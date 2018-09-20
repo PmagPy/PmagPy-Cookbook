@@ -130,9 +130,7 @@ This binary has only been tested on a Ubuntu 14.04 (Trusty) distribution and mig
 
 If you have previously downloaded Canopy Python, you will need to uninstall it following \href{https://support.enthought.com/hc/en-us/articles/204469700-Uninstalling-and-resetting-Canopy}{these directions}.
 
-Next, choose whether you want a developer install.  If you want to get into the nitty-gritty of the code, you should do a developer install.  If you just want to use {\bf PmagPy} out of the box, do a regular pip install.  *Note*: you cannot have both a developer install and a pip install.  If you want to do a developer install, make sure you uninstall pmagpy/pmagpy-cli first if you have already installed them.
-
-The benefit of a regular pip installation is that you will get a tested, stable version of {\bf PmagPy}.  The install is quick and easy, and can access {\bf PmagPy}'s full functionality.  The benefit of a developer installation is that you will be able to stay up-to-date with what other developers are working on.  You will also be able to make changes and use those changes immediately.  However, the developer install may be buggier and requires to edit your \$PATH.
+Next, choose whether you want a developer install.  If you want to get into the nitty-gritty of the code, you should do a developer install.  However, the developer install may be buggier.  If you just want to use {\bf PmagPy} out of the box, do a regular pip install.  *Note*: you cannot have both a developer install and a pip install.  If you want to do a developer install, make sure you uninstall pmagpy/pmagpy-cli first if you have already installed them.
 
 Next, choose install instructions based on your preferred install method (pip/developer) and your operating system (OSX/Windows/Linux).
 
@@ -395,7 +393,7 @@ Accessing example data files:
    To do this, navigate on the command line to your desired destination folder (for help, see \href{#file_system}{this section}).  Then, use the command:
 
 \begin{verbatim}
-  move_data_files.py
+  move_data_files
 \end{verbatim}
 
 This will copy all of the PmagPy example files to your current directory.  NB: If you have a developer install, you can simply navigate to PmagPy/data\_files, and move\_data\_files.py will not be needed.
@@ -404,7 +402,7 @@ This will copy all of the PmagPy example files to your current directory.  NB: I
 Installing the Etopo20 package for use with Basemap:
 
 \begin{verbatim}
-  install_etopo.py
+  install_etopo
 \end{verbatim}
 
 
@@ -1276,7 +1274,7 @@ Where do you want to go from here?
 
 The {\bf PmagPy} software package is a comprehensive set of programs for paleomagnetists and rock magnetists.  For installation,  follow the instructions in the \href{#quick_start}{Installing PmagPy} Chapter in this cookbook. \\
 
-Some of the key programs for interpreting paleomagnetic and rock magnetic data are packaged together in a program called {\href{#pmag_gui.py}{Pmag GUI}.  This can be invoked by typing {\bf pmag\_gui.py} on the command line.
+Some of the key programs for importing and interpreting paleomagnetic and rock magnetic data are packaged together in a program called {\href{#pmag_gui.py}{Pmag GUI}.  This can be invoked by typing {\bf pmag\_gui.py} on the command line.
 
 Here is a list of what {\bf PmagPy} can do.  For more information on any of the programs listed below, use the links in the following two sections.
 
@@ -1367,7 +1365,7 @@ Plots:
 
 \end{itemize}
 
-Maps
+Maps:
 
 \begin{itemize}
 
@@ -1379,7 +1377,7 @@ Maps
 
 \end{itemize}
 
-Working with MagIC
+Working with MagIC:
 \begin{itemize}
 \item magic\_read : reading in MagIC formatted files
 \item magic\_write : outputing MagIC formatted files
@@ -1416,7 +1414,7 @@ Working with MagIC
 
 \end{itemize}
 
-Other handy scripts
+Other handy scripts:
 
 \begin{itemize}
 
@@ -1431,14 +1429,14 @@ Much more information is available on each {\bf PmagPy} program.  To learn how t
 
 You can run an interactive \href{https://mybinder.org/v2/gh/PmagPy/PmagPy-notebooks/master?filepath=PmagPy.ipynb}{{\bf PmagPy} demo} here.  Please be patient -- it will take a few minutes to initialize.
 
-You can find a non-interactive page with the same information on the \href{https://github.com/PmagPy/PmagPy/blob/master/PmagPy.ipynb}{{\bf PmagPy} Github page}.
+You can find a non-interactive page with information about each program on the \href{https://github.com/PmagPy/PmagPy/blob/master/PmagPy.ipynb}{{\bf PmagPy} Github page}.
 
 Either option contains a comprehensive introduction to {\bf PmagPy}.
 
 
 \section{Using PmagPy on the command line}
 
-{\bf PmagPy}  scripts work by calling them on a \href{#command_line}{command line}.
+{\bf PmagPy}  can also be used on the \href{#command_line}{command line}.
 % The python scripts must be placed in a directory that is in your ``path''.  To see if this has been properly done, type {\bf dir\_cart.py -h} on the command line and you should get a help message.  If you get a ``command not found'' message, you need to fix your path; check the ``installing python'' page on the software website.   Another possible cause for failure is that somehow, the python scripts are no longer executable.  To fix this, change directories into the directory with the scripts, and type the command:  chmod a+x *.py
 
 Here is a brief introduction to how the {\bf PmagPy} command-line programs work.  All {\bf PmagPy} programs print a help message out if you type: {\bf program\_name.py -h} on the command line.  Many have an ``interactive'' option triggered by typing {\bf program\_name.py -i}.  Many also allow reading from \href{#standard_IO }{standard input and output}.   The help message will explain how each particular program functions.  There are some common features for the command line options:
@@ -1460,13 +1458,6 @@ Here is a brief introduction to how the {\bf PmagPy} command-line programs work.
 \outer\def\example{\medbreak\advance\exnum by 1
   \noindent{$\item$ \bf Example \the\exnum\enspace} \noindent}
 
- The {\bf PmagPy} scripts call on several special modules, including {\bf pmag} and {\bf ipmag} for general calculations, {\bf convert\_2\_magic} for importing measurementsinto the MagIC format, {\bf contribution_builder} for building and managing MagIC contributions, and {\bf pmagplotlib} for generating plots.  These contain most of the calculations and plotting functions.
-
- The source code and the help messages for all programs in the PmagPy package are available online at:
-
- \customlink{github}
-
- \url{https://github.com/PmagPy/PmagPy}
 
 
 Examples of how to use command line {\bf PmagPy} programs are given below. The example data files referred to in the following are located in the {\it data\_files} directory bundled with the {\bf PmagPy} software distribution.
@@ -1475,6 +1466,13 @@ Examples of how to use command line {\bf PmagPy} programs are given below. The e
 You can run an interactive \href{https://mybinder.org/v2/gh/PmagPy/PmagPy-notebooks/master?filepath=PmagPy-cli.ipynb}{{\bf PmagPy} command line demo} here.  Please be patient -- it will take a few minutes to initialize.
 
 You can find a non-interactive page with the same information on the \href{https://github.com/PmagPy/PmagPy/blob/master/PmagPy-cli.ipynb}{{\bf PmagPy} Github page}.
+
+Additionally, the source code is available online at:
+
+ \customlink{github}
+
+ \url{https://github.com/PmagPy/PmagPy}
+
 
 
 \customlink{pmag_gui.py}
@@ -2564,9 +2562,7 @@ used as input to another program with the pipe operator ({\bf$ |$}).
 \section{Text editors}
 
 There are many ways of editing text and the subject is beyond the scope of this documentation. Text editing is a blessing and a curse.  You either love it or
-hate it and in the beginning, and if you are used to programs like Word, you will certainly hate it. (And if you are used to a decent text editor, you will hate Word!).      But you can't use Word because the output is in a weird format that no scripting languages read easily.  So you have to use text editor that will produce a plain (ascii) file, like Notepad, TextWrangler, Sublime Text or Atom.  \href{http://textwrangler.onfreedownload.com}{TextWrangler} is free software available for Macs, the notepad comes standard in the Windows operating system and the \href{https://atom.io}{Atom} text editor is a free cross-platform option with lots of nice packages available that extend its functionality. Enthought Python's Canopy programming environment comes with its own text editor.
-
-
+hate it and in the beginning, and if you are used to programs like Word, you will certainly hate it. (And if you are used to a decent text editor, you will hate Word!).      But you can't use Word because the output is in a weird format that no scripting languages read easily.  So you have to use text editor that will produce a plain (ascii) file, like Notepad, TextWrangler, Sublime Text or Atom.  \href{http://textwrangler.onfreedownload.com}{TextWrangler} is free software available for Macs, Notepad comes standard in the Windows operating system and the \href{https://atom.io}{Atom} text editor is a free cross-platform option with lots of nice packages available that extend its functionality.
 
 
 
@@ -2604,7 +2600,7 @@ NB: For Anaconda-specific information, see this a \href{https://conda.io/docs/_d
 Data analysis in Python benefits from an increasingly robust ecosystem of packages for scientific computing and plotting. The Jupyter notebook is one such tool.  It has gained widespread use for conducting and presenting data analysis. Jupyter builds on the IPython project which began as a way to bring increased interactivity to data analysis in Python \citep{perez07} and has evolved to include an interactive notebook environment that seeks to enable the full trajectory of scientific computing from initial analysis and visualization, to collaboration, and through to publication. The project has expanded to enable a reproducible interactive computing environment for many other programming languages (such as R and Julia) and the language-agnostic parts of its architecture have recently been rebranded as Project Jupyter (\url{http://jupyter.org}). Jupyter notebooks allow for executable code, results, text and graphical output to coherently coexist in a single document. With these combined components, they are excellent tools both for conducting data analysis and presenting results.
 
 
-In this section, we will explain how to use {\bf PmagPy} in the notebook environment.  There are two main function libraries that the {\bf PmagPy}  programs are built from: {\bf pmag.py} and {\bf pmagplotlib.py}. The functions within these modules can  be imported and called upon within a Jupyter notebook running Python. In addition to these functions, Nick Swanson-Hysell created a module called {\bf ipmag.py} that is in active development and contains functions that replicate and extend functionality that is found within the {\bf PmagPy}  command line programs for use in the notebook environment.
+%In this section, we will explain how to use {\bf PmagPy} in the notebook environment.  There are two main function libraries that the {\bf PmagPy}  programs are built from: {\bf pmag.py} and {\bf pmagplotlib.py}. The functions within these modules can  be imported and called upon within a Jupyter notebook running Python. In addition to these functions, Nick Swanson-Hysell created a module called {\bf ipmag.py} that is in active development and contains functions that replicate and extend functionality that is found within the {\bf PmagPy}  command line programs for use in the notebook environment.
 
 To show some of what is possible in terms of data analysis using {\bf PmagPy} in a notebook environment, we have created example notebooks that are available for download from this repository: \url{https://github.com/PmagPy/2016_Tauxe-et-al_PmagPy_Notebooks}. These notebooks can also be viewed as static webpages here: \url{http://pmagpy.github.io/Example_PmagPy_Notebook.html} and \url{http://pmagpy.github.io/Additional_PmagPy_Examples.html}.
 
@@ -2615,9 +2611,8 @@ Within the example notebook, these data are unpacked into their respective MagIC
 If you want to to run the example notebook interactively, you'll need to follow these steps:
 
 \begin{enumerate}
-\item \href{#getting_python}{Install Python}
+\item \href{#getting_python}{Install Python and PmagPy}
 \item \href{https://git-scm.com/downloads}{Download git}
-\item \href{#quick_start}{Install PmagPy} (pip install or developer install)
 \item Open your \href{#command_line}{command line}
 \item Clone the notebook repository:
 \begin{verbatim}
@@ -2756,6 +2751,7 @@ pip install --upgrade --force-reinstall --no-cache-dir --no-deps pmagpy-cli
 Second, if you are trying to get a developer install to work on Windows, and you want to set/check your \$PATH manually, see \href{http://www.mathworks.com/matlabcentral/answers/94933-how-do-i-set-my-system-path-under-windows}{Setting your Path in Windows}.
 
 
+
 \end {itemize}
 
 \customlink{anaconda_troubleshooting}
@@ -2819,13 +2815,17 @@ which will show you all of your pip-installed packages.  If you don't see pmagpy
 \end{enumerate}
 
 
-\section{Error loading dlls (windows only)}
+\section{Error loading dlls (Canopy Python/Windows only)}
 Some of the modules used in PmagPy have dependencies that are not called directly.  If you are missing one of those dependencies, the programs may fail in odd ways.  In general, it is worthwhile to open Canopy, go into the package manager, and update all packages.  More specifically, if you see an error message like this: \begin{verbatim}ImportError: DLL load failed: The specified procedure could not be found  \end{verbatim} you may be missing the MKL package.  Open Canopy, go to package manager, and select ``Available packages".  Scroll down to MKL, and install it.  This should fix the problem!  Note that windows users who are having trouble opening one of the GUIs should try this solution whether or not they actually see this error message.
+
+\section{Program generates an ImportError or SyntaxError}
+
+{\bf PmagPy} depends on a variety of Python packages.  Sometimes you will run into problems if you have the wrong version of a dependency.  You can check the list of correct dependencies on \href{https://github.com/PmagPy/PmagPy/blob/master/pmagpy_dependencies.txt}{Github}.
 
 
 \section{Problems with a specific program}
 \begin{enumerate}
-\item Thellier auto\_interpreter crashes with a Segmentation Fault (on Mac).  NB: This should no longer be a problem with \begin{verbatim}matplotlib>=2.0.\end{verbatim}.
+\item Thellier auto\_interpreter crashes with a Segmentation Fault (on Mac).  NB: This should no longer be a problem with \begin{verbatim}matplotlib>=2.0.\end{verbatim}
   \begin{itemize}
   \item This error is caused by a version issue with one of PmagPy's dependencies, matplotlib.  There are two ways to solve this problem.
   \item Recommended: download and use the \href{#standalone}{standalone Pmag GUI} distribution to access Thellier GUI.
