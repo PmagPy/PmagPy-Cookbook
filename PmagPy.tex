@@ -1284,11 +1284,11 @@ Calculations:
 
 \item aarm\_magic : takes a measurements.txt file with anisotropy of ARM data and calculates the tensors and stores in a specimens.txt file.
 \item angle : calculates the angle between two vectors
-\item apwp : returns predicted paleolatitudes, directions and pole latitude/longitude from apparent polar wander paths of Besse and Courtillot (2002.
+\item apwp : returns predicted paleolatitudes, directions and pole latitude/longitude from apparent polar wander paths of Besse and Courtillot (2002).
 \item atrm\_magic : takes a measurements.txt file with anisotropy of TRM data and calculates the tensors and stores in a specimens.txt file.
-\item b\_vdm : converts B (in microT and (magnetic latitude to V(ADM (see vdm\_b
+\item b\_vdm : converts B (in microT) and magnetic latitude to V(ADM (see vdm\_b)
 \item bootams : calculates bootstrap statistics for tensor data
-\item cart\_dir : converts cartesian coordinates (x,y,z to declination, inclination, intensity (see dir\_cart
+\item cart\_dir : converts cartesian coordinates (x,y,z) to declination, inclination, intensity (see dir\_cart)
 \item di\_eq : maps declination, inclinatitions to X,Y for plotting in equal area projections
 \item di\_geo : rotates declination, inclination in specimen coordinates to geographic
 \item di\_rot : rotates directions to a  coordinate system with D,I as center
@@ -1299,7 +1299,7 @@ Calculations:
 \item dipole\_plat : calculates latitude given inclination assuming geocentric axial dipole
 \item dir\_cart : converts declination, inclination, intensity to cartesian coordinates (see cart\_dir)
 \item eigs\_s : converts eigenparameters to equivalent 6 element tensor (see s\_eigs)
-\item eq\_di : takes X,Y from equal area projection (e.g., from digitized coordinates and  converts to declination, inclination
+\item eq\_di : takes X,Y from equal area projection (e.g., from digitized coordinates and  converts to declination, inclination)
 \item fcalc : returns the value from an F table, given the degrees of freedom.
 \item fisher : generates sets of directions drawn from Fisher distributions with vertical true mean
 \item fishrot : generates sets of directions drawn from Fisher distributions with arbitrary true mean
@@ -1308,7 +1308,7 @@ Calculations:
 \item gofish : calculates Fisher statistics from a set of directions
 \item gokent : calculates Kent statistics from a set of directions
 \item goprinc : calculates principal directions statistics
-\item igrf : calculates geomagnetic field vectors for location, age given a field model (e.g., IGRF
+\item igrf : calculates geomagnetic field vectors for location, age given a field model (e.g., IGRF)
 \item incfish : estimates the true mean inclination from inclination only data
 \item pca : calculates the best-fit line or plane for demagnetization data and associated statistics
 \item pt\_rot : rotates point given finite rotation pole
@@ -1317,12 +1317,12 @@ Calculations:
 \item s\_geo : rotates 6 element tensors to geographic coordinates
 \item s\_hext : calculates Hext statistics from 6 element tensors
 \item s\_tilt : rotates 6 element tensors to stratigraphic coordinates
-\item squish: flattens inclination data given flattening factor (see unsquish
+\item squish: flattens inclination data given flattening factor (see unsquish)
 \item sundec : calulates direction to sun for location, date, time and sun azimuth
 \item tk03 : generates sets of directions consistent with the TK03 field model
 \item uniform : generates sets of uniformly distributed directions
-\item unsquish : unsquishes flattened inclinations, given flattening factor (see squish
-\item vector\_mean : calculates vector mean for sets of vectors (declination, inclination, intensity
+\item unsquish : unsquishes flattened inclinations, given flattening factor (see squish)
+\item vector\_mean : calculates vector mean for sets of vectors (declination, inclination, intensity)
 \item vdm\_b : calculates intensity at given location from specified virtual dipole moment (see b\_vdm)
 \item vgp\_di : calculates direction at given location from virtual geomagnetic pole (see di_vgp)
 \item watsons\_f : calculates Watson's F statistic for testing for common mean
@@ -1333,7 +1333,7 @@ Plots:
 
 \begin{itemize}
 
-  \item ani\_depthplot : plots anisotropy data against depth in stratigraphic section (Xmas tree plots
+  \item ani\_depthplot : plots anisotropy data against depth in stratigraphic section (Xmas tree plots)
 \item aniso\_magic : makes plots of anisotropy data and bootstrapped confidences
 \item biplot\_magic : plots different columns against each other in MagIC formatted data files
 \item chi\_magic : plots magnetic susceptibility data in MagIC format as function of field, frequency or temperature
@@ -1347,11 +1347,11 @@ Plots:
 \item find\_ei : finds the inclination unflattening factor that unsquishes directions to match TK03 distribution
 \item fishqq: makes a Quantile-Quantile plot for directions against uniform and exponential distributions
 \item foldtest and foldtest\_magic : finds  tilt correction that maximizes concentration of directions, with bootstrap confidence bounds.
-\item hysteresis\_magic : makes plots of hysteresis data (not FORCs.
+\item hysteresis\_magic : makes plots of hysteresis data (not FORCs).
 \item irm\_magic : plots IRM acquistion data
 \item lnp\_magic : plots lines and planes for site level data and calculates best fit mean and alpha\_95
 \item lowes : makes a plot of the Lowe's spectrum for a geomagnetic field model
-\item lowrie and lowrie\_magic : makes plots of Lowrie's (1990 3D-IRM demagnetization experiments
+\item lowrie and lowrie\_magic : makes plots of Lowrie's (1990) 3D-IRM demagnetization experiments
 \item plot\_cdf and plot\_2cdfs : makes a cumulative distribution plot of data
 \item plotdi\_a : makes equal are plots of directions and their alpha95s
 \item plot\_geomagia : makes plots from files downloaded from the  geomagia website
@@ -1384,7 +1384,7 @@ Working with MagIC:
 \item combine\_magic : combines two MagIC formatted files of same type
 \item convert\_ages : convert ages in downloaded MagIC file to Ma
 \item grab\_magic\_key : prints out a single column from a MagIC format file
-\item magic\_select : selects data from MagIC format file given conditions (e.g., method\_codes contain string
+\item magic\_select : selects data from MagIC format file given conditions (e.g., method\_codes contain string)
 \item Contributions work with data model 3.0 MagIC contributions
 \item download\_magic : unpacks a contribution text file downloaded from the MagIC website
 \item upload\_magic : prepares a directory with a MagIC contribution for uploading to MagIC
@@ -1393,7 +1393,7 @@ Working with MagIC:
 \item convert\_2\_magic : convert many laboratory measurement formats to the MagIC data model 3 format
 \item \_2g\_asc\_magic : converts the 2G ascii file to MagIC - but no example yet.
 \item \_2g\_bin\_magic : convert 2G binary format to MagIC
-\item agm\_magic : convert Princeton Measurements alternating gradient force magnetization (AGM output files to the MagIC format.
+\item agm\_magic : convert Princeton Measurements alternating gradient force magnetization (AGM) output files to the MagIC format.
 \item bgc\_magic : convert the Berkeley Geochronology lab format to MagIC.
 \item cit\_magic : convert the Cal Tech file format.
 \item generic\_magic : convert the generic file format to MagIC.
@@ -1406,7 +1406,7 @@ Working with MagIC:
 \item livdb\_magic : convert Liverpool file format to MagIC.
 \item mst\_magic : converts Curie Temperature experimental data to MagIC
 \item sio\_magic : convert the Scripps Institution of Oceanography data format to MagIC
-\item sufar4\_magic : converts the AGICO SUFAR program (ver.1.2. ascii file format to MagIC
+\item sufar4\_magic : converts the AGICO SUFAR program (ver.1.2.) ascii file format to MagIC
 \item tdt\_magic : converts the Thellier Tool format to MagIC 3.0
 \item utrecht\_magic : converts the Fort Hoofddijk, Utrecht University Robot file format to MagIC
 \item orientation\_magic : converts an "orient.txt" formatted file with field notebook information into MagIC formatted files
