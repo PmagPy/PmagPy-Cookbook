@@ -1,0 +1,139 @@
+\documentclass[11pt]{article}
+
+\usepackage{hyperref}
+\begin{document}
+
+\tableofcontents
+
+\section{OSX developer install}
+
+\subsection{Install Python}
+First, you will need to download a scientific Python distribution.  We strongly recommend Anaconda.  Be warned, your computer comes with a version of Python already installed; but this pre-installed version does NOT have everything you will need to run {\bf PmagPy}, so you will still need to download Anaconda.
+
+\begin{itemize}
+   \item Download and install \href{https://www.anaconda.com/download}{Anaconda Python 3}.
+   \item Open your Terminal (see \href{https://earthref.org/PmagPy/cookbook/#command_line}{this section} for more information on finding Terminal).
+   \item Download a few non-default Python packages.  Run the following commands: \begin{verbatim}
+
+    conda install future
+    pip install scripttest
+    pip install --upgrade -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
+\end{verbatim}
+     The next two basemap packages are only required if you want to make maps:
+\begin{verbatim}
+    conda install basemap --channel conda-forge
+    conda install basemap-data-hires --channel conda-forge
+
+\end{verbatim}
+
+\item If you have trouble running any of the above commands, you may need to preface them with ``sudo'': i.e., \texttt{sudo pip install scripttest}.  You will then be asked for your computer password.
+
+  \end{itemize}
+
+
+
+\subsection{Test your python}
+
+
+To make sure that you have installed Python successfully, type \texttt{python} on your command line.  You should see something like this: \begin{verbatim}
+
+Python 3.6.1 |Anaconda custom (x86_64)| (default, May 11 2017, 13:04:09)
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>\end{verbatim}
+(Press control-D to exit)
+
+
+\subsection{Install PmagPy}
+
+Here are the steps to clone and install {\bf PmagPy}.
+
+\begin{itemize}
+
+  \item You must use bash as your shell (not csh, zsh, etc.). This is the default for OSX, so if you have set up a different shell you will need to switch back.  Select Terminal \verb!-->! Preferences \verb!-->! General, and choose ``default login shell''.  Restart Terminal, and you'll be ready to go.
+
+\item Download and \href{https://git-scm.com/downloads}{install git}
+
+  \item Navigate to the directory where you want to put the PmagPy folder, then run:
+
+\begin{verbatim}
+
+  git clone https://github.com/PmagPy/PmagPy.git
+\end{verbatim}
+
+\item You should now have a full local copy of the PmagPy repository.  Change directories into PmagPy:
+
+\begin{verbatim}
+
+  cd PmagPy
+\end{verbatim}
+
+\item Next, you need to add PmagPy to your PATH so that the PmagPy programs can be called from any directory. Try running:
+
+\begin{verbatim}
+
+  python dev_setup.py install
+\end{verbatim}
+
+\item If you have problems with the install, run \verb!python dev_setup.py -h! for more information.  You can also set your \href{https://earthref.org/PmagPy/cookbook/#setting_path}{PATH manually} if dev\_setup.py fails.
+
+\item After completing the developer install, you should restart your command line.
+
+\end{itemize}
+
+\subsection{Test PmagPy}
+
+Test core functionality:
+
+\begin{itemize}
+  \item On your command line, type ``python'' to start the interpreter.  You will import pmagpy and then run a simple calculation.
+
+\begin{verbatim}
+>>> from pmagpy import pmag
+>>> pmag.angle([350.0,10.0],[320.0,20.0])
+array([30.59060998])
+>>>
+\end{verbatim}
+
+\end{itemize}
+
+Test the GUIs:
+
+\begin{itemize}
+\item  On the command line, open Pmag GUI by running:
+
+\begin{verbatim}
+pmag_gui.py
+\end{verbatim}
+
+\end{itemize}
+
+If any of these commands don't work, go back and carefully follow the install instructions.  If you still have a problem, try the \href{https://earthref.org/PmagPy/cookbook/#trouble}{Troubleshooting section}.  If you don't find an answer there, check out the existing \href{https://github.com/PmagPy/PmagPy/issues}{Github issues} and create a new one if necessary.
+
+\subsection{Finishing up}
+
+Accessing example data files:
+
+   There are many data files used in the examples of programs and for use with the textbook  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3.html}{Essentials of Paleomagnetism}.  You can find these in PmagPy/data_files.
+
+Installing the Etopo20 package for use with Basemap:
+
+\begin{verbatim}
+  install_etopo.py
+\end{verbatim}
+
+\subsection{Keeping PmagPy up-to-date}
+
+    You will want to stay up to date with {\bf PmagPy} development.  To update your developer install, you will just need to navigate to the {\bf PmagPy} directory and run:
+
+\begin{verbatim}
+    git pull
+\end{verbatim}
+
+This will grab all of the latest code from \href{https://github.com/PmagPy/PmagPy}{Github}, and will be immediately available to you.
+
+\section{Next steps}
+
+Back to the \href{https://earthref.org/PmagPy/cookbook/#next_steps}{Cookbook}!
+
+\end{document}
