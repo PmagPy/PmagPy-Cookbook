@@ -5,16 +5,16 @@
 
 \tableofcontents
 
-\section{Windows pip install}
 
+\section{Linux pip install}
 
 \subsection{Install Python}
-First, you will need to download a scientific Python distribution.  We strongly recommend Anaconda.
 
-   \begin{itemize}
-   \item Download and install \href{https://www.anaconda.com/download}{Anaconda Python 3}.  You should select ``Add Anaconda to my PATH environment variable'' in Advanced Installation Options (if available).  Otherwise, stick with the defaults.
-   \item Open your Command Prompt (see \href{https://earthref.org/PmagPy/cookbook/#command_line}{this section} for more information on finding Command Prompt)
-   \item Note: if you did not add Anaconda Python to your PATH as recommended above, you will open the ``Anaconda Prompt'' instead).
+First, you will need to download a scientific Python distribution.  We strongly recommend Anaconda.  Be warned, your computer comes with a version of Python already installed; but this pre-installed version does NOT have everything you will need to run {\bf PmagPy}, so you will still need to download Anaconda.
+
+\begin{itemize}
+   \item Download and install \href{https://www.anaconda.com/download}{Anaconda Python 3}.
+   \item Open your Terminal (see \href{https://earthref.org/PmagPy/cookbook/#command_line}{this section} for more information on finding Terminal).
    \item Download a few non-default Python packages.  Run the following commands: \begin{verbatim}
 
     conda install future
@@ -27,22 +27,91 @@ First, you will need to download a scientific Python distribution.  We strongly 
     conda install basemap-data-hires --channel conda-forge
 
 \end{verbatim}
-\end{itemize}
 
+\item If you have trouble running any of the above commands, you may need to preface them with ``sudo'': i.e., \texttt{sudo pip install scripttest}.  You will then be asked for your computer password.
+
+  \end{itemize}
+
+
+\subsection{Install wxPython}
+
+Next, you need to install wxPython.
+
+\begin{itemize}
+  \item The following is a list of wxPython dependencies for Ubuntu 16.04 (this list may be redundant or incomplete, depending on your specific OS):
+
+  \begin{verbatim}
+
+    pip install libtiff
+
+    sudo apt-get install libgtk-3-dev freeglut3-dev libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-doc gstreamer1.0-tools libgstreamer-plugins-base0.10-dev
+
+    sudo apt-get install dpkg-dev build-essential libjpeg-dev  libtiff-dev libsdl1.2-dev   libnotify-dev  freeglut3 freeglut3-dev libsm-dev libwebkitgtk-3.0-dev libxtst-dev python-dev libpng-dev
+
+    sudo apt-get install libwebkit2gtk-4.0-dev libsdl2-dev
+\end{verbatim}
+
+
+Carefully read through \href{https://wxpython.org/pages/downloads/}{this page} and look for a compatible wheel for your distribution.  Download the appropriate wheel and then install it:
+\begin{verbatim}
+
+pip install wxPython-4.0.1-cp35-cp35m-linux_x86_64.whl
+
+\end{verbatim}
+
+Be sure to replace the wheel name above with the actual wheel you downloaded.
+
+Or install the wheel from the download site directly:
+\begin{verbatim}
+pip install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-16.04 wxPython
+
+\end{verbatim}
+
+Again, you will need the replace the link above with the link appropriate for your OS.
+
+\item If you aren't able to find a wheel that works, try \href{https://wxpython.org/blog/2017-08-17-builds-for-linux-with-pip/}{these instructions}
+
+\end{itemize}
 
 \subsection{Test your python}
 
-To make sure that you have installed Python successfully, type \texttt{python} on your command line.  You should see something like this: \begin{verbatim}
+
+Run python on your command line.
+
+You should see something like this: \begin{verbatim}
 
 Python 3.6.1 |Anaconda custom (x86_64)| (default, May 11 2017, 13:04:09)
 [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>>\end{verbatim}
-(Press control-D to exit)
 
+If you don't see that, go back and reinstall Anaconda.
+
+Once you have successfully started the python interactive prompt, try:
+\begin{verbatim}
+
+    import wx
+
+\end{verbatim}
+  You may have an error like this:
+\begin{verbatim}
+    ImportError: libwx_gtk3u_core-3.0.so.0: cannot open shared object file: No such file or directory
+
+\end{verbatim}
+
+If so, exit the python interpreter (quit()) and try:
+  \begin{verbatim}
+    export LD_LIBRARY_PATH=~/anaconda3/lib/python3.6/site-packages/wx/
+
+\end{verbatim}
+
+(If you are using a non-Anaconda Python, your path to wx may be different).
+
+Try again to import wx.  If it now works, you may want to add that line to the end of your .bashrc file so that you don't have to specify the path each time.
+
+For more details about this issue, see \href{https://github.com/wxWidgets/Phoenix/blob/e13273c5d939d993abf2a2649e90b3ea0d39382c/packaging/README-bdist.txt#L38-L57}{this explanation} and \href{https://github.com/pyenv/pyenv/issues/691}{this Github issue} for more information.
 
 \subsection{Install PmagPy}
-
 
 \begin{itemize}
      \item Update pip and setuptools on the command line:
@@ -69,6 +138,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 You can do the same for pmagpy-cli.
    \end{itemize}
 
+
 \subsection{Test PmagPy}
 
 Test core functionality:
@@ -91,12 +161,13 @@ Test the GUIs:
 \item  On the command line, open Pmag GUI by running:
 
 \begin{verbatim}
-pmag_gui
+pmag_gui.py
 \end{verbatim}
 
 \end{itemize}
 
 If any of these commands don't work, go back and carefully follow the install instructions.  If you still have a problem, try the \href{https://earthref.org/PmagPy/cookbook/#trouble}{Troubleshooting section}.  If you don't find an answer there, check out the existing \href{https://github.com/PmagPy/PmagPy/issues}{Github issues} and create a new one if necessary.
+
 
 \subsection{Finishing up}
 
@@ -106,7 +177,7 @@ Accessing example data files:
    To do this, navigate on the command line to your desired destination folder (for help, see \href{https://earthref.org/PmagPy/cookbook/#file_system}{this section}).  Then, use the command:
 
 \begin{verbatim}
-  move_data_files
+  move_data_files.py
 \end{verbatim}
 
 This will copy all of the PmagPy example files to your current directory.  NB: If you have a developer install, you can simply navigate to PmagPy/data\_files, and move\_data\_files.py will not be needed.
@@ -114,7 +185,7 @@ This will copy all of the PmagPy example files to your current directory.  NB: I
 Installing the Etopo20 package for use with Basemap:
 
 \begin{verbatim}
-  install_etopo
+  install_etopo.py
 \end{verbatim}
 
 
