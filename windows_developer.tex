@@ -1,0 +1,163 @@
+\documentclass[11pt]{article}
+
+\usepackage{hyperref}
+\begin{document}
+
+\tableofcontents
+
+
+\section{Windows developer install}
+
+\subsection{Install Python}
+
+First, you will need to download a scientific Python distribution.  We strongly recommend Anaconda.
+
+   \begin{itemize}
+   \item Download and install \href{https://www.anaconda.com/download}{Anaconda Python 3}.  You should select ``Add Anaconda to my PATH environment variable'' in Advanced Installation Options (if available).  Otherwise, stick with the defaults.
+   \item Open your Command Prompt (see \href{https://earthref.org/PmagPy/cookbook/#command_line}{this section} for more information on finding Command Prompt)
+   \item Note: if you did not add Anaconda Python to your PATH as recommended above, you will open the ``Anaconda Prompt'' instead).
+   \item Download a few non-default Python packages.  Run the following commands: \begin{verbatim}
+
+    conda install future
+    pip install scripttest
+    pip install --upgrade -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
+\end{verbatim}
+     The next two basemap packages are only required if you want to make maps:
+\begin{verbatim}
+    conda install basemap --channel conda-forge
+    conda install basemap-data-hires --channel conda-forge
+
+\end{verbatim}
+\end{itemize}
+
+\subsection{Test your python}
+
+To make sure that you have installed Python successfully, type \texttt{python} on your command line.  You should see something like this: \begin{verbatim}
+
+Python 3.6.1 |Anaconda custom (x86_64)| (default, May 11 2017, 13:04:09)
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>\end{verbatim}
+(Press control-D to exit)
+
+
+
+\subsection{Install PmagPy}
+
+Here are the steps to clone and install {\bf PmagPy}.
+
+\begin{itemize}
+
+\item Open your command prompt \href{http://www.thewindowsclub.com/how-to-run-command-prompt-as-an-administrator}{as an admin} (right click on the Command Prompt icon and select ``Run as administrator'').
+
+\item Download and \href{https://git-scm.com/downloads}{install git}
+
+  \item Navigate to the directory where you want to put the PmagPy folder, then run:
+
+\begin{verbatim}
+
+  git clone https://github.com/PmagPy/PmagPy.git
+\end{verbatim}
+
+\item You should now have a full local copy of the PmagPy repository.  Change directories into PmagPy:
+
+\begin{verbatim}
+
+  cd PmagPy
+\end{verbatim}
+
+
+\item Next, you need to add PmagPy to your PATH so that the PmagPy programs can be called from any directory. Try running:
+
+\begin{verbatim}
+
+  python dev_setup.py install
+\end{verbatim}
+
+
+\item  If you see an error message, that means that you will also need to specify the location of your Python installation.  To get your full path to python, you can run the following two commands (exactly as written!):
+
+\begin{verbatim}
+
+  cd \
+  dir python.exe /s /p
+\end{verbatim}
+
+This can take a while, so be patient.  You should get a result that looks something like this:
+
+\begin{verbatim}
+  C:\Users\USERNAME\AppData\Local\Continuum\Anaconda3
+\end{verbatim}
+
+Once you've done that, navigate back into your PmagPy directory and run dev\_setup.py again:
+
+\begin{verbatim}
+    python dev_setup.py install -p path_to_python
+\end{verbatim}
+
+where path\_to\_python is your specific Python result.
+
+\item Note: dev\_setup.py edits your \$PATH and \$PYTHONPATH variables.  If you need to set those variables by hand, see this section on \href{https://earthref.org/PmagPy/cookbook/#setting_path}{editing your PATH for PmagPy}.
+
+\item After completing the developer install, you will need to restart the Command Prompt.  After restarting, you should be able to use all {\bf PmagPy} functionality.  You will be able to stay up-to-date with {\bf PmagPy} development and make edits in {\bf PmagPy} code which will be immediately available in your system.
+
+\end{itemize}
+
+\subsection{Test PmagPy}
+
+Test core functionality:
+
+\begin{itemize}
+  \item On your command line, type ``python'' to start the interpreter.  You will import pmagpy and then run a simple calculation.
+
+\begin{verbatim}
+>>> from pmagpy import pmag
+>>> pmag.angle([350.0,10.0],[320.0,20.0])
+array([30.59060998])
+>>>
+\end{verbatim}
+
+\end{itemize}
+
+Test the GUIs:
+
+\begin{itemize}
+\item  On the command line, open Pmag GUI by running:
+
+\begin{verbatim}
+pmag_gui.py
+\end{verbatim}
+
+\end{itemize}
+
+If any of these commands don't work, go back and carefully follow the install instructions.  If you still have a problem, try the \href{https://earthref.org/PmagPy/cookbook/#trouble}{Troubleshooting section}.  If you don't find an answer there, check out the existing \href{https://github.com/PmagPy/PmagPy/issues}{Github issues} and create a new one if necessary.
+
+\subsection{Finishing up}
+
+Accessing example data files:
+
+   There are many data files used in the examples of programs and for use with the textbook  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3.html}{Essentials of Paleomagnetism}.  You can find these in PmagPy/data_files.
+
+
+Installing the Etopo20 package for use with Basemap:
+
+\begin{verbatim}
+  install_etopo.py
+\end{verbatim}
+
+\subsection{Keeping PmagPy up-to-date}
+
+    You will want to stay up to date with {\bf PmagPy} development.  To update your developer install, you will just need to navigate to the {\bf PmagPy} directory and run:
+
+\begin{verbatim}
+    git pull
+\end{verbatim}
+
+This will grab all of the latest code from \href{https://github.com/PmagPy/PmagPy}{Github}, and will be immediately available to you.
+
+
+\section{Next steps}
+
+Back to the \href{https://earthref.org/PmagPy/cookbook/#next_steps}{Cookbook}!
+
+\end{document}
