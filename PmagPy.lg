@@ -64,61 +64,6 @@ File: PmagPy.tmp
 File: PmagPy.tmp
 File: PmagPy.tmp
 File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
-File: PmagPy.tmp
 Css: p.noindent { text-indent: 0em }
 Css: td p.noindent { text-indent: 0em; margin-top:0em; }
 Css: p.nopar { text-indent: 0em; }
@@ -282,79 +227,24 @@ Css: .figure img.graphics {margin-left:10%;}
 --- needs --- PmagPy.idv[73] ==> PmagPy36x.png ---
 --- needs --- PmagPy.idv[75] ==> PmagPy37x.png ---
 --- needs --- PmagPy.idv[77] ==> PmagPy38x.png ---
---- needs --- PmagPy.idv[78] ==> PmagPy39x.png ---
+--- needs --- PmagPy.idv[79] ==> PmagPy39x.png ---
 --- needs --- PmagPy.idv[80] ==> PmagPy40x.png ---
 --- needs --- PmagPy.idv[82] ==> PmagPy41x.png ---
---- needs --- PmagPy.idv[84] ==> PmagPy42x.png ---
+--- needs --- PmagPy.idv[83] ==> PmagPy42x.png ---
 --- needs --- PmagPy.idv[85] ==> PmagPy43x.png ---
 --- needs --- PmagPy.idv[87] ==> PmagPy44x.png ---
---- needs --- PmagPy.idv[88] ==> PmagPy45x.png ---
+--- needs --- PmagPy.idv[89] ==> PmagPy45x.png ---
 --- needs --- PmagPy.idv[90] ==> PmagPy46x.png ---
 --- needs --- PmagPy.idv[92] ==> PmagPy47x.png ---
 --- needs --- PmagPy.idv[94] ==> PmagPy48x.png ---
---- needs --- PmagPy.idv[95] ==> PmagPy49x.png ---
---- needs --- PmagPy.idv[97] ==> PmagPy50x.png ---
---- needs --- PmagPy.idv[99] ==> PmagPy51x.png ---
---- needs --- PmagPy.idv[101] ==> PmagPy52x.png ---
+--- needs --- PmagPy.idv[96] ==> PmagPy49x.png ---
+--- needs --- PmagPy.idv[98] ==> PmagPy50x.png ---
+--- needs --- PmagPy.idv[100] ==> PmagPy51x.png ---
+--- needs --- PmagPy.idv[102] ==> PmagPy52x.png ---
 --- needs --- PmagPy.idv[103] ==> PmagPy53x.png ---
 --- needs --- PmagPy.idv[105] ==> PmagPy54x.png ---
 --- needs --- PmagPy.idv[107] ==> PmagPy55x.png ---
 --- needs --- PmagPy.idv[109] ==> PmagPy56x.png ---
---- needs --- PmagPy.idv[111] ==> PmagPy57x.png ---
---- needs --- PmagPy.idv[113] ==> PmagPy58x.png ---
---- needs --- PmagPy.idv[115] ==> PmagPy59x.png ---
---- needs --- PmagPy.idv[117] ==> PmagPy60x.png ---
---- needs --- PmagPy.idv[119] ==> PmagPy61x.png ---
---- needs --- PmagPy.idv[121] ==> PmagPy62x.png ---
---- needs --- PmagPy.idv[123] ==> PmagPy63x.png ---
---- needs --- PmagPy.idv[125] ==> PmagPy64x.png ---
---- needs --- PmagPy.idv[127] ==> PmagPy65x.png ---
---- needs --- PmagPy.idv[129] ==> PmagPy66x.png ---
---- needs --- PmagPy.idv[131] ==> PmagPy67x.png ---
---- needs --- PmagPy.idv[133] ==> PmagPy68x.png ---
---- needs --- PmagPy.idv[135] ==> PmagPy69x.png ---
---- needs --- PmagPy.idv[137] ==> PmagPy70x.png ---
---- needs --- PmagPy.idv[139] ==> PmagPy71x.png ---
---- needs --- PmagPy.idv[141] ==> PmagPy72x.png ---
---- needs --- PmagPy.idv[143] ==> PmagPy73x.png ---
---- needs --- PmagPy.idv[145] ==> PmagPy74x.png ---
---- needs --- PmagPy.idv[147] ==> PmagPy75x.png ---
---- needs --- PmagPy.idv[149] ==> PmagPy76x.png ---
---- needs --- PmagPy.idv[151] ==> PmagPy77x.png ---
---- needs --- PmagPy.idv[153] ==> PmagPy78x.png ---
---- needs --- PmagPy.idv[155] ==> PmagPy79x.png ---
---- needs --- PmagPy.idv[157] ==> PmagPy80x.png ---
---- needs --- PmagPy.idv[159] ==> PmagPy81x.png ---
---- needs --- PmagPy.idv[161] ==> PmagPy82x.png ---
---- needs --- PmagPy.idv[163] ==> PmagPy83x.png ---
---- needs --- PmagPy.idv[165] ==> PmagPy84x.png ---
---- needs --- PmagPy.idv[167] ==> PmagPy85x.png ---
---- needs --- PmagPy.idv[169] ==> PmagPy86x.png ---
---- needs --- PmagPy.idv[171] ==> PmagPy87x.png ---
---- needs --- PmagPy.idv[173] ==> PmagPy88x.png ---
---- needs --- PmagPy.idv[175] ==> PmagPy89x.png ---
---- needs --- PmagPy.idv[177] ==> PmagPy90x.png ---
---- needs --- PmagPy.idv[179] ==> PmagPy91x.png ---
---- needs --- PmagPy.idv[181] ==> PmagPy92x.png ---
---- needs --- PmagPy.idv[183] ==> PmagPy93x.png ---
---- needs --- PmagPy.idv[185] ==> PmagPy94x.png ---
---- needs --- PmagPy.idv[187] ==> PmagPy95x.png ---
---- needs --- PmagPy.idv[189] ==> PmagPy96x.png ---
---- needs --- PmagPy.idv[191] ==> PmagPy97x.png ---
---- needs --- PmagPy.idv[193] ==> PmagPy98x.png ---
---- needs --- PmagPy.idv[195] ==> PmagPy99x.png ---
---- needs --- PmagPy.idv[197] ==> PmagPy100x.png ---
---- needs --- PmagPy.idv[199] ==> PmagPy101x.png ---
---- needs --- PmagPy.idv[201] ==> PmagPy102x.png ---
---- needs --- PmagPy.idv[203] ==> PmagPy103x.png ---
---- needs --- PmagPy.idv[205] ==> PmagPy104x.png ---
---- needs --- PmagPy.idv[207] ==> PmagPy105x.png ---
---- needs --- PmagPy.idv[209] ==> PmagPy106x.png ---
---- needs --- PmagPy.idv[211] ==> PmagPy107x.png ---
---- needs --- PmagPy.idv[213] ==> PmagPy108x.png ---
---- needs --- PmagPy.idv[215] ==> PmagPy109x.png ---
---- needs --- PmagPy.idv[217] ==> PmagPy110x.png ---
---- needs --- PmagPy.idv[219] ==> PmagPy111x.png ---
 --- characters ---
 Font("cmr","10","10","109")
 Font("cmbx","10","10","109")
@@ -362,7 +252,6 @@ Font("cmtt","10","10","109")
 Font("cmr","17","17","100")
 Font("cmr","12","12","100")
 Font("cmr","8","8","100")
-Font("cmmi","8","8","100")
 Font("cmsy","8","8","100")
 Font("cmti","10","10","109")
 Font("cmmi","10","10","109")
