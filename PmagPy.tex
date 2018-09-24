@@ -1276,56 +1276,57 @@ The {\bf PmagPy} software package is a comprehensive set of programs for paleoma
 
 Some of the key programs for importing and interpreting paleomagnetic and rock magnetic data are packaged together in a program called {\href{#pmag_gui.py}{Pmag GUI}.  This can be invoked by typing {\bf pmag\_gui.py} on the command line.
 
-Here is a list of what {\bf PmagPy} can do.  For more information on any of the programs listed below, use the links in the following two sections.
+Here is a list of what {\bf PmagPy} can do.
+  % For more information on any of the programs listed below, use the links in the following two sections.
 
 Calculations:
 
 \begin{itemize}
 
-\item aarm\_magic : takes a measurements.txt file with anisotropy of ARM data and calculates the tensors and stores in a specimens.txt file.
+\item \href{http://pmagpy.github.io/PmagPy.html#angle}{aarm\_magic} : takes a measurements.txt file with anisotropy of ARM data and calculates the tensors and stores in a specimens.txt file.
 \item angle : calculates the angle between two vectors
-\item apwp : returns predicted paleolatitudes, directions and pole latitude/longitude from apparent polar wander paths of Besse and Courtillot (2002).
-\item atrm\_magic : takes a measurements.txt file with anisotropy of TRM data and calculates the tensors and stores in a specimens.txt file.
-\item b\_vdm : converts B (in microT) and magnetic latitude to V(ADM (see vdm\_b)
-\item bootams : calculates bootstrap statistics for tensor data
-\item cart\_dir : converts cartesian coordinates (x,y,z) to declination, inclination, intensity (see dir\_cart)
-\item di\_eq : maps declination, inclinatitions to X,Y for plotting in equal area projections
-\item di\_geo : rotates declination, inclination in specimen coordinates to geographic
-\item di\_rot : rotates directions to a  coordinate system with D,I as center
-\item di\_tilt : rotates directions to stratigraphic coordinates
-\item di\_vgp : converts direction to Virtual Geomagnetic Pole (see vgp\_di)
-\item dia\_vgp : converts direction and alpha95 to Virtual Geomagnetic Pole and dp,dm
-\item dipole\_pinc : calculates inclination given latitude assuming geocentric axial dipole
-\item dipole\_plat : calculates latitude given inclination assuming geocentric axial dipole
-\item dir\_cart : converts declination, inclination, intensity to cartesian coordinates (see cart\_dir)
-\item eigs\_s : converts eigenparameters to equivalent 6 element tensor (see s\_eigs)
-\item eq\_di : takes X,Y from equal area projection (e.g., from digitized coordinates and  converts to declination, inclination)
-\item fcalc : returns the value from an F table, given the degrees of freedom.
-\item fisher : generates sets of directions drawn from Fisher distributions with vertical true mean
-\item fishrot : generates sets of directions drawn from Fisher distributions with arbitrary true mean
-\item gaussian : generates data drawn from a normal distribution
-\item gobing : calculates Bingham statistics from a set of directions
-\item gofish : calculates Fisher statistics from a set of directions
-\item gokent : calculates Kent statistics from a set of directions
-\item goprinc : calculates principal directions statistics
-\item igrf : calculates geomagnetic field vectors for location, age given a field model (e.g., IGRF)
-\item incfish : estimates the true mean inclination from inclination only data
-\item pca : calculates the best-fit line or plane for demagnetization data and associated statistics
-\item pt\_rot : rotates point given finite rotation pole
-\item scalc : calculates  VGP scatter
-\item s\_eigs : takes a 6 element tensor and calculates eigen parameters (see eigs\_s)
-\item s\_geo : rotates 6 element tensors to geographic coordinates
-\item s\_hext : calculates Hext statistics from 6 element tensors
-\item s\_tilt : rotates 6 element tensors to stratigraphic coordinates
-\item squish: flattens inclination data given flattening factor (see unsquish)
-\item sundec : calulates direction to sun for location, date, time and sun azimuth
-\item tk03 : generates sets of directions consistent with the TK03 field model
-\item uniform : generates sets of uniformly distributed directions
-\item unsquish : unsquishes flattened inclinations, given flattening factor (see squish)
-\item vector\_mean : calculates vector mean for sets of vectors (declination, inclination, intensity)
-\item vdm\_b : calculates intensity at given location from specified virtual dipole moment (see b\_vdm)
-\item vgp\_di : calculates direction at given location from virtual geomagnetic pole (see di_vgp)
-\item watsons\_f : calculates Watson's F statistic for testing for common mean
+\item \href{http://pmagpy.github.io/PmagPy.html#apwp}{apwp} : returns predicted paleolatitudes, directions and pole latitude/longitude from apparent polar wander paths of Besse and Courtillot (2002).
+\item \href{http://pmagpy.github.io/PmagPy.html#atrm_magic}{atrm\_magic} : takes a measurements.txt file with anisotropy of TRM data and calculates the tensors and stores in a specimens.txt file.
+\item \href{http://pmagpy.github.io/PmagPy.html#b_vdm}{b\_vdm} : converts B (in microT) and magnetic latitude to V(A)DM (see vdm\_b)
+\item \href{http://pmagpy.github.io/PmagPy.html#bootams}{bootams} : calculates bootstrap statistics for tensor data
+\item \href{http://pmagpy.github.io/PmagPy.html#cart_dir}{cart\_dir} : converts cartesian coordinates (x,y,z) to declination, inclination, intensity (see dir\_cart)
+\item \href{http://pmagpy.github.io/PmagPy.html#di_eq}{di\_eq} : maps declination, inclinatitions to X,Y for plotting in equal area projections
+\item \href{http://pmagpy.github.io/PmagPy.html#di_geo}{di\_geo} : rotates declination, inclination in specimen coordinates to geographic
+\item \href{http://pmagpy.github.io/PmagPy.html#di_rot}{di\_rot} : rotates directions to a  coordinate system with D,I as center
+\item \href{http://pmagpy.github.io/PmagPy.html#di_tilt}{di\_tilt} : rotates directions to stratigraphic coordinates
+\item \href{http://pmagpy.github.io/PmagPy.html#di_vgp}{di\_vgp} : converts direction to Virtual Geomagnetic Pole (see vgp\_di)
+\item \href{http://pmagpy.github.io/PmagPy.html#dia_vgp}{dia\_vgp} : converts direction and alpha95 to Virtual Geomagnetic Pole and dp,dm
+\item \href{http://pmagpy.github.io/PmagPy.html#dipole_pinc}{dipole\_pinc} : calculates inclination given latitude assuming geocentric axial dipole
+\item \href{http://pmagpy.github.io/PmagPy.html#dipole_plat}{dipole\_plat} : calculates latitude given inclination assuming geocentric axial dipole
+\item \href{http://pmagpy.github.io/PmagPy.html#dir_cart}{dir\_cart} : converts declination, inclination, intensity to cartesian coordinates (see cart\_dir)
+\item \href{http://pmagpy.github.io/PmagPy.html#eigs_s}{eigs\_s} : converts eigenparameters to equivalent 6 element tensor (see s\_eigs)
+\item \href{http://pmagpy.github.io/PmagPy.html#eq_di}{eq\_di} : takes X,Y from equal area projection (e.g., from digitized coordinates and  converts to declination, inclination)
+\item \href{http://pmagpy.github.io/PmagPy.html#fcalc}{fcalc} : returns the value from an F table, given the degrees of freedom.
+\item \href{http://pmagpy.github.io/PmagPy.html#fisher}{fisher} : generates sets of directions drawn from Fisher distributions with vertical true mean
+\item \href{http://pmagpy.github.io/PmagPy.html#fishrot}{fishrot} : generates sets of directions drawn from Fisher distributions with arbitrary true mean
+\item \href{http://pmagpy.github.io/PmagPy.html#gaussian}{gaussian} : generates data drawn from a normal distribution
+\item \href{http://pmagpy.github.io/PmagPy.html#gobing}{gobing} : calculates Bingham statistics from a set of directions
+\item \href{http://pmagpy.github.io/PmagPy.html#gofish}{gofish} : calculates Fisher statistics from a set of directions
+\item \href{http://pmagpy.github.io/PmagPy.html#gokent}{gokent} : calculates Kent statistics from a set of directions
+\item \href{http://pmagpy.github.io/PmagPy.html#goprinc}{goprinc} : calculates principal directions statistics
+\item \href{http://pmagpy.github.io/PmagPy.html#igrf}{igrf} : calculates geomagnetic field vectors for location, age given a field model (e.g., IGRF)
+\item \href{http://pmagpy.github.io/PmagPy.html#incfish}{incfish} : estimates the true mean inclination from inclination only data
+\item \href{http://pmagpy.github.io/PmagPy.html#pca}{pca} : calculates the best-fit line or plane for demagnetization data and associated statistics
+\item \href{http://pmagpy.github.io/PmagPy.html#pt_rot}{pt\_rot} : rotates point given finite rotation pole
+\item \href{http://pmagpy.github.io/PmagPy.html#scalc}{scalc} : calculates  VGP scatter
+\item \href{http://pmagpy.github.io/PmagPy.html#s_eigs}{s\_eigs} : takes a 6 element tensor and calculates eigen parameters (see eigs\_s)
+\item \href{http://pmagpy.github.io/PmagPy.html#s_geo}{s\_geo} : rotates 6 element tensors to geographic coordinates
+\item \href{http://pmagpy.github.io/PmagPy.html#s_hext}{s\_hext} : calculates Hext statistics from 6 element tensors
+\item \href{http://pmagpy.github.io/PmagPy.html#s_tilt}{s\_tilt} : rotates 6 element tensors to stratigraphic coordinates
+\item \href{http://pmagpy.github.io/PmagPy.html#squish}{squish}: flattens inclination data given flattening factor (see unsquish)
+\item \href{http://pmagpy.github.io/PmagPy.html#sundec}{sundec} : calulates direction to sun for location, date, time and sun azimuth
+\item \href{http://pmagpy.github.io/PmagPy.html#tk03}{tk03} : generates sets of directions consistent with the TK03 field model
+\item \href{http://pmagpy.github.io/PmagPy.html#uniform}{uniform} : generates sets of uniformly distributed directions
+\item \href{http://pmagpy.github.io/PmagPy.html#unsquish}{unsquish} : unsquishes flattened inclinations, given flattening factor (see squish)
+\item \href{http://pmagpy.github.io/PmagPy.html#vector_mean}{vector\_mean} : calculates vector mean for sets of vectors (declination, inclination, intensity)
+\item \href{http://pmagpy.github.io/PmagPy.html#vdm_b}{vdm\_b} : calculates intensity at given location from specified virtual dipole moment (see b\_vdm)
+\item \href{http://pmagpy.github.io/PmagPy.html#vgp_di}{vgp\_di} : calculates direction at given location from virtual geomagnetic pole (see di_vgp)
+\item \href{http://pmagpy.github.io/PmagPy.html#watsons_f}{watsons\_f} : calculates Watson's F statistic for testing for common mean
 
   \end{itemize}
 
@@ -1333,35 +1334,35 @@ Plots:
 
 \begin{itemize}
 
-  \item ani\_depthplot : plots anisotropy data against depth in stratigraphic section (Xmas tree plots)
-\item aniso\_magic : makes plots of anisotropy data and bootstrapped confidences
-\item biplot\_magic : plots different columns against each other in MagIC formatted data files
-\item chi\_magic : plots magnetic susceptibility data in MagIC format as function of field, frequency or temperature
-\item common\_mean : graphical approach to testing two sets of directions for common mean using bootstrap
-\item core\_depthplot : plots MagIC formatted data
-\item curie : makes plots of Curie Temperature data and provides estimates for Tc
-\item dayplot\_magic : makes Day et al. (1977) and other plots with hysteresis statistics
-\item dmag\_magic : plots remanence against demagnetization step for MagIC formatted files
-\item eqarea and eqarea\_magic : makes equal area projections for directions
-\item eqarea\_ell : makes equal area projections for directions with specified confidence ellipses
-\item find\_ei : finds the inclination unflattening factor that unsquishes directions to match TK03 distribution
-\item fishqq: makes a Quantile-Quantile plot for directions against uniform and exponential distributions
-\item foldtest and foldtest\_magic : finds  tilt correction that maximizes concentration of directions, with bootstrap confidence bounds.
-\item hysteresis\_magic : makes plots of hysteresis data (not FORCs).
-\item irm\_magic : plots IRM acquistion data
-\item lnp\_magic : plots lines and planes for site level data and calculates best fit mean and alpha\_95
-\item lowes : makes a plot of the Lowe's spectrum for a geomagnetic field model
-\item lowrie and lowrie\_magic : makes plots of Lowrie's (1990) 3D-IRM demagnetization experiments
-\item plot\_cdf and plot\_2cdfs : makes a cumulative distribution plot of data
-\item plotdi\_a : makes equal are plots of directions and their alpha95s
-\item plot\_geomagia : makes plots from files downloaded from the  geomagia website
-\item plot\_magic\_keys : plots data from MagIC formatted data files
-\item qqplot : makes a Quantile-Quantile plot for data against a normal distribution
-\item qqunf : makes a Quantile-Quantile plot for data against a uniform distribution
-\item revtest and revtest\_magic : performs a bootstrap reversals test
-\item thellier\_magic : makes plots of thellier-thellier data.
-\item watsons\_v : makes a graph for Watson's V test for common mean
-\item zeq and zeq\_magic : makes quicky zijderveld plots for measurement data
+  \item \href{http://pmagpy.github.io/PmagPy.html#ani_depthplot}{ani\_depthplot} : plots anisotropy data against depth in stratigraphic section (Xmas tree plots)
+\item \href{http://pmagpy.github.io/PmagPy.html#aniso_magic}{aniso\_magic} : makes plots of anisotropy data and bootstrapped confidences
+\item \href{http://pmagpy.github.io/PmagPy.html#biplot_magic}{biplot\_magic} : plots different columns against each other in MagIC formatted data files
+\item \href{http://pmagpy.github.io/PmagPy.html#chi_magic}{chi\_magic} : plots magnetic susceptibility data in MagIC format as function of field, frequency or temperature
+\item \href{http://pmagpy.github.io/PmagPy.html#common_mean}{common\_mean} : graphical approach to testing two sets of directions for common mean using bootstrap
+\item \href{http://pmagpy.github.io/PmagPy.html#core_depthplot}{core\_depthplot} : plots MagIC formatted data
+\item \href{http://pmagpy.github.io/PmagPy.html#curie}{curie} : makes plots of Curie Temperature data and provides estimates for Tc
+\item \href{http://pmagpy.github.io/PmagPy.html#dayplot}{dayplot\_magic} : makes Day et al. (1977) and other plots with hysteresis statistics
+\item \href{http://pmagpy.github.io/PmagPy.html#dmag_magic}{dmag\_magic} : plots remanence against demagnetization step for MagIC formatted files
+\item \href{http://pmagpy.github.io/PmagPy.html#eqarea}{eqarea} and \href{http://pmagpy.github.io/PmagPy.html#eqarea_magic}{eqarea\_magic} : makes equal area projections for directions
+\item \href{http://pmagpy.github.io/PmagPy.html#eqarea_ell}{eqarea\_ell} : makes equal area projections for directions with specified confidence ellipses
+\item \href{http://pmagpy.github.io/PmagPy.html#find_ei}{find\_ei} : finds the inclination unflattening factor that unsquishes directions to match TK03 distribution
+\item \href{http://pmagpy.github.io/PmagPy.html#fishqq}{fishqq}: makes a Quantile-Quantile plot for directions against uniform and exponential distributions
+\item \href{http://pmagpy.github.io/PmagPy.html#foldtest}{foldtest} and \href{http://pmagpy.github.io/PmagPy.html#foldtest_magic}{foldtest\_magic} : finds  tilt correction that maximizes concentration of directions, with bootstrap confidence bounds.
+\item \href{http://pmagpy.github.io/PmagPy.html#hysteresis_magic}{hysteresis\_magic} : makes plots of hysteresis data (not FORCs).
+\item \href{http://pmagpy.github.io/PmagPy.html#irm_magic}{irm\_magic} : plots IRM acquistion data
+\item \href{http://pmagpy.github.io/PmagPy.html#lnp_magic}{lnp\_magic} : plots lines and planes for site level data and calculates best fit mean and alpha\_95
+\item \href{http://pmagpy.github.io/PmagPy.html#lowes}{lowes} : makes a plot of the Lowe's spectrum for a geomagnetic field model
+\item \href{http://pmagpy.github.io/PmagPy.html#lowrie}{lowrie} and \href{http://pmagpy.github.io/PmagPy.html#lowrie_magic}{lowrie\_magic} : makes plots of Lowrie's (1990) 3D-IRM demagnetization experiments
+\item \href{http://pmagpy.github.io/PmagPy.html#plot_cdf}{plot\_cdf} and \href{http://pmagpy.github.io/PmagPy.html#plot_2cdfs}{plot\_2cdfs} : makes a cumulative distribution plot of data
+\item \href{http://pmagpy.github.io/PmagPy.html#plotdi_a}{plotdi\_a} : makes equal are plots of directions and their alpha95s
+\item \href{http://pmagpy.github.io/PmagPy.html#plot_geomagia}{plot\_geomagia} : makes plots from files downloaded from the  geomagia website
+\item \href{http://pmagpy.github.io/PmagPy.html#plot_magic_keys}{plot\_magic\_keys} : plots data from MagIC formatted data files
+\item \href{http://pmagpy.github.io/PmagPy.html#qqplot}{qqplot} : makes a Quantile-Quantile plot for data against a normal distribution
+\item \href{http://pmagpy.github.io/PmagPy.html#qqunf}{qqunf} : makes a Quantile-Quantile plot for data against a uniform distribution
+\item \href{http://pmagpy.github.io/PmagPy.html#revtest}{revtest} and \href{http://pmagpy.github.io/PmagPy.html#revtest_magic}{revtest\_magic} : performs a bootstrap reversals test
+\item \href{http://pmagpy.github.io/PmagPy.html#thellier_magic}{thellier\_magic} : makes plots of thellier-thellier data.
+\item \href{http://pmagpy.github.io/PmagPy.html#watsons_v}{watsons\_v} : makes a graph for Watson's V test for common mean
+\item \href{http://pmagpy.github.io/PmagPy.html#zeq}{zeq} and \href{http://pmagpy.github.io/PmagPy.html#zeq_magic}{zeq\_magic} : makes quicky zijderveld plots for measurement data
 
 \end{itemize}
 
@@ -1369,48 +1370,52 @@ Maps:
 
 \begin{itemize}
 
-  \item cont\_rot : makes plots of continents after rotation to specified coordinate system
-\item plot\_mag\_map : makes a color contour plot of geomagnetic field models
-\item plot\_map\_pts : plots points on maps
-\item polemap\_magic : reads in MagIC formatted file with paleomagnetic poles and plots them
-\item vgpmap\_magic : reads in MagIC formatted file with virtual geomagnetic poles and plots them
+  \item \href{http://pmagpy.github.io/PmagPy.html#cont_rot}{cont\_rot} : makes plots of continents after rotation to specified coordinate system
+\item \href{http://pmagpy.github.io/PmagPy.html#plot_mag_map}{plot\_mag\_map} : makes a color contour plot of geomagnetic field models
+\item \href{http://pmagpy.github.io/PmagPy.html#plot_map_pts}{plot\_map\_pts} : plots points on maps
+\item \href{http://pmagpy.github.io/PmagPy.html#polemap_magic}polemap\_magic : reads in MagIC formatted file with paleomagnetic poles and plots them
+\item \href{http://pmagpy.github.io/PmagPy.html#vgpmap_magic}{vgpmap\_magic} : reads in MagIC formatted file with virtual geomagnetic poles and plots them
 
 \end{itemize}
 
 Working with MagIC:
 \begin{itemize}
-\item magic\_read : reading in MagIC formatted files
-\item magic\_write : outputing MagIC formatted files
-\item combine\_magic : combines two MagIC formatted files of same type
-\item convert\_ages : convert ages in downloaded MagIC file to Ma
-\item grab\_magic\_key : prints out a single column from a MagIC format file
-\item magic\_select : selects data from MagIC format file given conditions (e.g., method\_codes contain string)
-\item Contributions work with data model 3.0 MagIC contributions
-\item download\_magic : unpacks a contribution text file downloaded from the MagIC website
-\item upload\_magic : prepares a directory with a MagIC contribution for uploading to MagIC
-\item cb.add\_sites\_to\_meas\_table : completes a measurements data frame with the information required for plotting by site.
-\item cb.get\_intensity\_col : finds the first non-zero type of intensity data in a measurements dataframe.
-\item convert\_2\_magic : convert many laboratory measurement formats to the MagIC data model 3 format
-\item \_2g\_asc\_magic : converts the 2G ascii file to MagIC - but no example yet.
-\item \_2g\_bin\_magic : convert 2G binary format to MagIC
-\item agm\_magic : convert Princeton Measurements alternating gradient force magnetization (AGM) output files to the MagIC format.
-\item bgc\_magic : convert the Berkeley Geochronology lab format to MagIC.
-\item cit\_magic : convert the Cal Tech file format.
-\item generic\_magic : convert the generic file format to MagIC.
-\item huji\_magic : convert Hebrew University, Jerusalem, Israel file format to MagIC.
-\item huji\_sample\_magic : convert the HUJI sample file to a MagIC format.
-\item jr6\_jr6\_magic : convert the AGICO JR6 spinner .jr6 output to MagIC
-\item jr6\_txt\_magic : convert the AGICO JR6 txt format to MagIC
-\item k15\_magic : convert  15 measurement anisotropy of magnetic susceptibility file format to MagIC.
-\item ldeo\_magic : convert Lamont-Doherty file format to MagIC.
-\item livdb\_magic : convert Liverpool file format to MagIC.
-\item mst\_magic : converts Curie Temperature experimental data to MagIC
-\item sio\_magic : convert the Scripps Institution of Oceanography data format to MagIC
-\item sufar4\_magic : converts the AGICO SUFAR program (ver.1.2.) ascii file format to MagIC
-\item tdt\_magic : converts the Thellier Tool format to MagIC 3.0
-\item utrecht\_magic : converts the Fort Hoofddijk, Utrecht University Robot file format to MagIC
-\item orientation\_magic : converts an "orient.txt" formatted file with field notebook information into MagIC formatted files
-\item azdip\_magic : converts an "azdip" formatted file to a samples.txt file format
+\item \href{http://pmagpy.github.io/PmagPy.html#magic_read}{magic\_read} : reading in MagIC formatted files
+\item \href{http://pmagpy.github.io/PmagPy.html#magic_write}{magic\_write} : outputing MagIC formatted files
+\item \href{http://pmagpy.github.io/PmagPy.html#combine_magic}{combine\_magic} : combines two MagIC formatted files of same type
+\item \href{http://pmagpy.github.io/PmagPy.html#convert_ages}{convert\_ages} : convert ages in downloaded MagIC file to Ma
+\item \href{http://pmagpy.github.io/PmagPy.html#grab_magic_key}{grab\_magic\_key} : prints out a single column from a MagIC format file
+\item \href{http://pmagpy.github.io/PmagPy.html#magic_select}{magic\_select} : selects data from MagIC format file given conditions (e.g., method\_codes contain string)
+\item \href{http://pmagpy.github.io/PmagPy.html#Contributions}{Contributions} work with data model 3.0 MagIC contributions
+  \begin{itemize}
+\item \href{http://pmagpy.github.io/PmagPy.html#download_magic}{download\_magic} : unpacks a contribution text file downloaded from the MagIC website
+\item \href{http://pmagpy.github.io/PmagPy.html#upload_magic}{upload\_magic} : prepares a directory with a MagIC contribution for uploading to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#cb.add_sites_to_meas_table}{cb.add\_sites\_to\_meas\_table} : completes a measurements data frame with the information required for plotting by site.
+\item \href{http://pmagpy.github.io/PmagPy.html#cb.get_intensity_col}{cb.get\_intensity\_col} : finds the first non-zero type of intensity data in a measurements dataframe.
+  \end{itemize}
+\item \href{http://pmagpy.github.io/PmagPy.html#convert_2_magic}{convert\_2\_magic} : convert many laboratory measurement formats to the MagIC data model 3 format
+  \begin{itemize}
+\item \href{http://pmagpy.github.io/PmagPy.html#_2g_asc_magic}{\_2g\_asc\_magic} : converts the 2G ascii file to MagIC - but no example yet.
+\item \href{http://pmagpy.github.io/PmagPy.html#_2g_bin_magic}{\_2g\_bin\_magic} : convert 2G binary format to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#agm_magic}{agm\_magic} : convert Princeton Measurements alternating gradient force magnetization (AGM) output files to the MagIC format.
+\item \href{http://pmagpy.github.io/PmagPy.html#bgc_magic}{bgc\_magic} : convert the Berkeley Geochronology lab format to MagIC.
+\item \href{http://pmagpy.github.io/PmagPy.html#cit_magic}{cit\_magic} : convert the Cal Tech file format.
+\item \href{http://pmagpy.github.io/PmagPy.html#generic_magic}{generic\_magic} : convert the generic file format to MagIC.
+\item \href{http://pmagpy.github.io/PmagPy.html#huji_magic}{huji\_magic} : convert Hebrew University, Jerusalem, Israel file format to MagIC.
+\item \href{http://pmagpy.github.io/PmagPy.html#huji_sample_magic}{huji\_sample\_magic} : convert the HUJI sample file to a MagIC format.
+\item \href{http://pmagpy.github.io/PmagPy.html#jr6_jr6}{jr6\_jr6\_magic} : convert the AGICO JR6 spinner .jr6 output to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#jr6_txt_magic}{jr6\_txt\_magic} : convert the AGICO JR6 txt format to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#k15_magic}{k15\_magic} : convert  15 measurement anisotropy of magnetic susceptibility file format to MagIC.
+\item \href{http://pmagpy.github.io/PmagPy.html#ldeo_magic}{ldeo\_magic} : convert Lamont-Doherty file format to MagIC.
+\item \href{http://pmagpy.github.io/PmagPy.html#livdb_magic}{livdb\_magic} : convert Liverpool file format to MagIC.
+\item \href{http://pmagpy.github.io/PmagPy.html#mst_magic}{mst\_magic} : converts Curie Temperature experimental data to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#sio_magic}{sio\_magic} : convert the Scripps Institution of Oceanography data format to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#sufar4_magic}{sufar4\_magic} : converts the AGICO SUFAR program (ver.1.2.) ascii file format to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#tdt_magic}{tdt\_magic} : converts the Thellier Tool format to MagIC 3.0
+\item \href{http://pmagpy.github.io/PmagPy.html#utrecht_magic}{utrecht\_magic} : converts the Fort Hoofddijk, Utrecht University Robot file format to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#orientation_magic}{orientation\_magic} : converts an "orient.txt" formatted file with field notebook information into MagIC formatted files
+\item \href{http://pmagpy.github.io/PmagPy.html#azdip_magic}{azdip\_magic} : converts an "azdip" formatted file to a samples.txt file format
+  \end{itemize}
 
 \end{itemize}
 
@@ -1418,18 +1423,18 @@ Other handy scripts:
 
 \begin{itemize}
 
-\item chartmaker : script for making chart to guide IZZI lab experiment
+\item \href{http://pmagpy.github.io/PmagPy.html#chartmaker}{chartmaker} : script for making chart to guide IZZI lab experiment
 
   \end{itemize}
 
 
 \section{Using PmagPy}
 
-Much more information is available on each {\bf PmagPy} program.  To learn how to use {\bf PmagPy} in a Python environment (i.e., a Juypyter notebook, the Python interpreter, or your own Python script), see the documentation below.
+Much more information is available on each {\bf PmagPy} program.  To learn how to use {\bf PmagPy} in a Python environment (i.e., a Juypyter notebook, the Python interpreter, or your own Python script), you have two options.
 
 You can run an interactive \href{https://mybinder.org/v2/gh/PmagPy/PmagPy-notebooks/master?filepath=PmagPy.ipynb}{{\bf PmagPy} demo} here.  Please be patient -- it will take a few minutes to initialize.
 
-You can find a non-interactive page with information about each program on the \href{https://nbviewer.jupyter.org/github/PmagPy/PmagPy-notebooks/blob/master/PmagPy.ipynb}{{\bf PmagPy} Github page}.
+You can find a non-interactive page with information about each program on the \href{http://pmagpy.github.io/PmagPy.html}{{\bf PmagPy} Github page}.
 
 Either option contains a comprehensive introduction to {\bf PmagPy}.
 
@@ -1459,20 +1464,20 @@ Here is a brief introduction to how the {\bf PmagPy} command-line programs work.
   \noindent{$\item$ \bf Example \the\exnum\enspace} \noindent}
 
 
+Depending on your operating system, you  may need to use a different command to invoke a command line program.  See \href{#which_command}{this section} for details.
 
-Examples of how to use command line {\bf PmagPy} programs are given below. The example data files referred to in the following are located in the {\it data\_files} directory bundled with the {\bf PmagPy} software distribution.
+Links to more information on to how to use the command line programs are given below. The example data files referred to in the following are located in the {\it data\_files} directory bundled with the {\bf PmagPy} software distribution.
 
 
 You can run an interactive \href{https://mybinder.org/v2/gh/PmagPy/PmagPy-notebooks/master?filepath=PmagPy-cli.ipynb}{{\bf PmagPy} command line demo} here.  Please be patient -- it will take a few minutes to initialize.
 
-You can find a non-interactive page with the same information on the \href{https://nbviewer.jupyter.org/github/PmagPy/PmagPy-notebooks/blob/master/PmagPy.ipynb}{{\bf PmagPy} Github page}.
+You can find a non-interactive page with the same information on the \href{http://pmagpy.github.io/PmagPy-cli.html}{{\bf PmagPy} Github page}.
 
 Additionally, the source code is available online at:
 
  \customlink{github}
 
  \url{https://github.com/PmagPy/PmagPy}
-
 
 
 \customlink{pmag_gui.py}
