@@ -7,7 +7,7 @@
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
 <!-- html,1,sections+ --> 
 <meta name="src" content="windows_pip.tex"> 
-<meta name="date" content="2018-09-25 13:33:00"> 
+<meta name="date" content="2018-09-27 10:54:00"> 
 <link rel="stylesheet" type="text/css" href="windows_pip.css"> 
 </head><body 
 >
@@ -70,20 +70,11 @@ href="https://earthref.org/PmagPy/cookbook/#command_line" >this section</a> for 
                                                                      
      <div class="verbatim" id="verbatim-1">
      &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;conda&#x00A0;install&#x00A0;future
+     &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;conda&#x00A0;install&#x00A0;cartopy
      &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;pip&#x00A0;install&#x00A0;scripttest
      &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;pip&#x00A0;install&#x00A0;--upgrade&#x00A0;-f&#x00A0;https://wxpython.org/Phoenix/snapshot-builds/&#x00A0;wxPython
 </div>
-     <!--l. 23--><p class="nopar" > The next two basemap packages are only required if you want to make
-     maps:
-                                                                     
-
-                                                                     
-     <div class="verbatim" id="verbatim-2">
-     &#x00A0;&#x00A0;&#x00A0;&#x00A0;conda&#x00A0;install&#x00A0;basemap&#x00A0;--channel&#x00A0;conda-forge
-     &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;conda&#x00A0;install&#x00A0;basemap-data-hires&#x00A0;--channel&#x00A0;conda-forge
-     &#x00A0;<br />
-</div>
-     <!--l. 29--><p class="nopar" ></li></ul>
+     <!--l. 24--><p class="nopar" ></li></ul>
 <!--l. 33--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.2   </span> <a 
 href="#QQ2-1-4" id="x1-40001.2">Test your python</a></h4>
@@ -93,7 +84,7 @@ command line. You should see something like this:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-3">
+   <div class="verbatim" id="verbatim-2">
 &#x00A0;<br />Python&#x00A0;3.6.1&#x00A0;|Anaconda&#x00A0;custom&#x00A0;(x86_64)|&#x00A0;(default,&#x00A0;May&#x00A0;11&#x00A0;2017,&#x00A0;13:04:09)
 &#x00A0;<br />[GCC&#x00A0;4.2.1&#x00A0;Compatible&#x00A0;Apple&#x00A0;LLVM&#x00A0;6.0&#x00A0;(clang-600.0.57)]&#x00A0;on&#x00A0;darwin
 &#x00A0;<br />Type&#x00A0;"help",&#x00A0;"copyright",&#x00A0;"credits"&#x00A0;or&#x00A0;"license"&#x00A0;for&#x00A0;more&#x00A0;information.
@@ -108,7 +99,7 @@ href="#QQ2-1-5" id="x1-50001.3">Install PmagPy</a></h4>
                                                                      
 
                                                                      
-     <div class="verbatim" id="verbatim-4">
+     <div class="verbatim" id="verbatim-3">
      &#x00A0;<br />&#x00A0;&#x00A0;conda&#x00A0;upgrade&#x00A0;pip
      &#x00A0;<br />&#x00A0;&#x00A0;conda&#x00A0;upgrade&#x00A0;setuptools
 </div>
@@ -118,7 +109,7 @@ href="#QQ2-1-5" id="x1-50001.3">Install PmagPy</a></h4>
                                                                      
 
                                                                      
-     <div class="verbatim" id="verbatim-5">
+     <div class="verbatim" id="verbatim-4">
      &#x00A0;<br />&#x00A0;&#x00A0;pip&#x00A0;install&#x00A0;--upgrade&#x00A0;pmagpy&#x00A0;--no-deps
      &#x00A0;<br />&#x00A0;&#x00A0;pip&#x00A0;install&#x00A0;--upgrade&#x00A0;pmagpy-cli&#x00A0;--no-deps
 </div>
@@ -129,7 +120,7 @@ href="#QQ2-1-5" id="x1-50001.3">Install PmagPy</a></h4>
                                                                      
 
                                                                      
-     <div class="verbatim" id="verbatim-6">
+     <div class="verbatim" id="verbatim-5">
      &#x00A0;<br />&#x00A0;&#x00A0;pip&#x00A0;uninstall&#x00A0;pmagpy&#x00A0;&amp;&amp;&#x00A0;&#x00A0;pip&#x00A0;install&#x00A0;pmagpy&#x00A0;--upgrade&#x00A0;--no-deps&#x00A0;--force-reinstall&#x00A0;--no-cache-dir
 </div>
      <!--l. 67--><p class="nopar" >
@@ -144,7 +135,7 @@ href="#QQ2-1-6" id="x1-60001.4">Test PmagPy</a></h4>
                                                                      
 
                                                                      
-     <div class="verbatim" id="verbatim-7">
+     <div class="verbatim" id="verbatim-6">
      &#x003E;&#x003E;&#x003E;&#x00A0;from&#x00A0;pmagpy&#x00A0;import&#x00A0;pmag
      &#x00A0;<br />&#x003E;&#x003E;&#x003E;&#x00A0;pmag.angle([350.0,10.0],[320.0,20.0])
      &#x00A0;<br />array([30.59060998])
@@ -158,7 +149,7 @@ href="#QQ2-1-6" id="x1-60001.4">Test PmagPy</a></h4>
                                                                      
 
                                                                      
-     <div class="verbatim" id="verbatim-8">
+     <div class="verbatim" id="verbatim-7">
      pmag_gui
 </div>
      <!--l. 95--><p class="nopar" >
@@ -183,21 +174,13 @@ use the command:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-9">
+   <div class="verbatim" id="verbatim-8">
 &#x00A0;&#x00A0;move_data_files
 </div>
 <!--l. 110--><p class="nopar" >
 <!--l. 112--><p class="indent" >   This will copy all of the PmagPy example files to your current directory. NB:
 If you have a developer install, you can simply navigate to PmagPy/data_files,
 and move_data_files.py will not be needed.
-<!--l. 114--><p class="indent" >   Installing the Etopo20 package for use with Basemap:
-                                                                     
-
-                                                                     
-   <div class="verbatim" id="verbatim-10">
-&#x00A0;&#x00A0;install_etopo
-</div>
-<!--l. 118--><p class="nopar" >
 <!--l. 121--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.6   </span> <a 
 href="#QQ2-1-8" id="x1-80001.6">Keeping PmagPy up-to-date</a></h4>
@@ -207,7 +190,7 @@ class="cmbx-10x-x-109">PmagPy </span>packages.
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-11">
+   <div class="verbatim" id="verbatim-9">
 &#x00A0;<br />&#x00A0;&#x00A0;pip&#x00A0;install&#x00A0;pmagpy&#x00A0;--upgrade&#x00A0;--no-deps
 </div>
 <!--l. 128--><p class="nopar" >
@@ -216,7 +199,7 @@ Python package), run:
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-12">
+   <div class="verbatim" id="verbatim-10">
 conda&#x00A0;list
 </div>
 <!--l. 133--><p class="nopar" >
@@ -224,14 +207,14 @@ conda&#x00A0;list
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-13">
+   <div class="verbatim" id="verbatim-11">
 &#x00A0;<br />&#x00A0;&#x00A0;pip&#x00A0;uninstall&#x00A0;pmagpy
 </div>
 <!--l. 140--><p class="nopar" > or
                                                                      
 
                                                                      
-   <div class="verbatim" id="verbatim-14">
+   <div class="verbatim" id="verbatim-12">
 &#x00A0;&#x00A0;pip&#x00A0;uninstall&#x00A0;pmagpy-cli
 </div>
 <!--l. 144--><p class="nopar" >

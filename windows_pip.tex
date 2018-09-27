@@ -18,15 +18,15 @@ First, you will need to download a scientific Python distribution.  We strongly 
    \item Download a few non-default Python packages.  Run the following commands: \begin{verbatim}
 
     conda install future
+    conda install cartopy
     pip install scripttest
     pip install --upgrade -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
 \end{verbatim}
-     The next two basemap packages are only required if you want to make maps:
-\begin{verbatim}
-    conda install basemap --channel conda-forge
-    conda install basemap-data-hires --channel conda-forge
-
-\end{verbatim}
+%     The next two basemap packages are only required if you want to make maps:
+%\begin{verbatim}
+%    conda install basemap --channel conda-forge
+%    conda install basemap-data-hires --channel conda-forge
+%\end{verbatim}
 \end{itemize}
 
 
@@ -111,11 +111,11 @@ Accessing example data files:
 
 This will copy all of the PmagPy example files to your current directory.  NB: If you have a developer install, you can simply navigate to PmagPy/data\_files, and move\_data\_files.py will not be needed.
 
-Installing the Etopo20 package for use with Basemap:
+%Installing the Etopo20 package for use with Basemap:
 
-\begin{verbatim}
-  install_etopo
-\end{verbatim}
+%\begin{verbatim}
+%  install_etopo
+%\end{verbatim}
 
 
 \subsection{Keeping PmagPy up-to-date}
