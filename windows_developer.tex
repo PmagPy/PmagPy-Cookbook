@@ -18,8 +18,7 @@ First, you will need to download a scientific Python distribution.  We strongly 
    \item Note: if you did not add Anaconda Python to your PATH as recommended above, you will open the ``Anaconda Prompt'' instead).
    \item Download a few non-default Python packages.  Run the following commands: \begin{verbatim}
 
-    conda install future
-    conda install cartopy
+    conda install future cartopy
     pip install scripttest
     pip install --upgrade -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
 \end{verbatim}
@@ -109,7 +108,7 @@ where path\_to\_python is your specific Python result.
 Test core functionality:
 
 \begin{itemize}
-  \item On your command line, type ``python'' to start the interpreter.  You will import pmagpy and then run a simple calculation.
+  \item On your command line, type ``python'' to start the interpreter.  You will import pmagpy and then run a simple calculation.  Importing pmagpy may take over a minute the first time, so be patient!  It will be much faster in subsequent runs.
 
 \begin{verbatim}
 >>> from pmagpy import pmag
