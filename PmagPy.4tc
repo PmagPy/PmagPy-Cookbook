@@ -68,10 +68,17 @@
 \doTocEntry\tocchapter{8}{\csname a:TocLink\endcsname{1}{x1-670008}{QQ2-1-67}{Introduction to Python Programming}}{127}\relax 
 \doTocEntry\tocchapter{9}{\csname a:TocLink\endcsname{1}{x1-680009}{QQ2-1-68}{Jupyter Notebooks}}{129}\relax 
 \doTocEntry\tocchapter{10}{\csname a:TocLink\endcsname{1}{x1-6900010}{QQ2-1-69}{Troubleshooting}}{133}\relax 
-\doTocEntry\tocsection{10.1}{\csname a:TocLink\endcsname{1}{x1-7000010.1}{QQ2-1-70}{Problems with installing Python or PmagPy}}{133}\relax 
-\doTocEntry\tocsection{10.2}{\csname a:TocLink\endcsname{1}{x1-7100010.2}{QQ2-1-71}{Error loading dlls (Canopy Python/Windows only)}}{148}\relax 
-\doTocEntry\tocsection{10.3}{\csname a:TocLink\endcsname{1}{x1-7200010.3}{QQ2-1-72}{Program generates an ImportError or SyntaxError}}{149}\relax 
-\doTocEntry\tocsection{10.4}{\csname a:TocLink\endcsname{1}{x1-7300010.4}{QQ2-1-73}{Problems with a specific program}}{149}\relax 
-\doTocEntry\tocsection{10.5}{\csname a:TocLink\endcsname{1}{x1-7400010.5}{QQ2-1-74}{Wrong Python in Jupyter notebook}}{150}\relax 
-\doTocEntry\tocsection{10.6}{\csname a:TocLink\endcsname{1}{x1-7500010.6}{QQ2-1-75}{Other problems}}{152}\relax 
-\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-7600010.6}{QQ2-1-76}{Bibliography}}{153}\relax 
+\doTocEntry\tocsection{10.1}{\csname a:TocLink\endcsname{1}{x1-7000010.1}{QQ2-1-70}{Problems with installing Python}}{133}\relax 
+\doTocEntry\tocsection{10.2}{\csname a:TocLink\endcsname{1}{x1-7100010.2}{QQ2-1-71}{wxPython is not installed}}{134}\relax 
+\doTocEntry\tocsection{10.3}{\csname a:TocLink\endcsname{1}{x1-7200010.3}{QQ2-1-72}{Troubleshooting a pip install}}{136}\relax 
+\doTocEntry\tocsection{10.4}{\csname a:TocLink\endcsname{1}{x1-7300010.4}{QQ2-1-73}{Troubleshooting a developer install}}{139}\relax 
+\doTocEntry\tocsubsection{10.4.1}{\csname a:TocLink\endcsname{1}{x1-7400010.4.1}{QQ2-1-74}{PATH for Windows}}{140}\relax 
+\doTocEntry\tocsubsection{10.4.2}{\csname a:TocLink\endcsname{1}{x1-7500010.4.2}{QQ2-1-75}{PATH for OSX or Linux}}{140}\relax 
+\doTocEntry\tocsection{10.5}{\csname a:TocLink\endcsname{1}{x1-7600010.5}{QQ2-1-76}{Languages other than English}}{141}\relax 
+\doTocEntry\tocsection{10.6}{\csname a:TocLink\endcsname{1}{x1-7700010.6}{QQ2-1-77}{Error loading dlls (Canopy Python/Windows only)}}{143}\relax 
+\doTocEntry\tocsection{10.7}{\csname a:TocLink\endcsname{1}{x1-7800010.7}{QQ2-1-78}{Problem with a PmagPy dependency}}{144}\relax 
+\doTocEntry\tocsection{10.8}{\csname a:TocLink\endcsname{1}{x1-7900010.8}{QQ2-1-79}{Problems with a specific program}}{144}\relax 
+\doTocEntry\tocsubsection{10.8.1}{\csname a:TocLink\endcsname{1}{x1-8000010.8.1}{QQ2-1-80}{Thellier auto\_interpreter crashes with a Segmentation Fault (on Mac).}}{144}\relax 
+\doTocEntry\tocsection{10.9}{\csname a:TocLink\endcsname{1}{x1-8100010.9}{QQ2-1-81}{Wrong Python in Jupyter notebook}}{145}\relax 
+\doTocEntry\tocsection{10.10}{\csname a:TocLink\endcsname{1}{x1-8200010.10}{QQ2-1-82}{Other problems}}{147}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-8300010.10}{QQ2-1-83}{Bibliography}}{149}\relax 

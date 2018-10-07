@@ -1657,74 +1657,24 @@ Although there is much much more to do in Python, this documentation is aimed at
 \chapter{Troubleshooting}
 \label{chap:trouble}
 
-\section{Problems with installing Python or PmagPy}
+\section{Problems with installing Python}
 
-\begin{enumerate}
+First, please test that you have successfully installed the correct Python distribution.
 
- \item Nothing works as advertised!
-
-
-\begin{itemize}
-
-\item First, please test that you have successfully installed the appropriate Python distribution.
-\end{itemize}
-
-\item Find your command line (Terminal for Mac users, Command Prompt for Windows users) and type \texttt{python}  You should see something like this:
+Find your command line (Terminal for Mac users, Command Prompt for Windows users) and type \texttt{python}.  You should see something like this:
 
 
-%\begin{verbatim}$ python
-%Python 3.6.0 |Anaconda 4.3.1 (x86_64)| (default, Dec 23 2016, 13:19:00)
-%[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
-%Type "help", "copyright", "credits" or "license" for more information.
-%\end{verbatim}
+\begin{verbatim}$ python
+Python 3.6.0 |Anaconda 4.3.1 (x86_64)| (default, Dec 23 2016, 13:19:00)
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+\end{verbatim}
 
-%\item If you don't see a message like this, you have not fully installed the Python distribution.  You'll need to try again.  In order to fully install Python, you must select ``yes'' to use Anaconda Python as your default Python.
+If you get an error message, or you don't see ``Anaconda'' in the initial message, you should go back to the \href{#getting_python}{installing Python} section and follow the instructions there.
 
-%\end{itemize}
-%\end{itemize}
 
 
 %\item I've installed the proper Python distribution, but PmagPy doesn't work
-
-\begin{itemize}
-
-\item For Mac users:
-
-
-When you try to run eqarea.py -h to test your installation, you get this error message:
-
-\begin{verbatim} -bash: eqarea.py: command not found
-\end{verbatim}
-
-This probably means that you have not correctly installed PmagPy.  On your command line, try:
-
-\begin{verbatim}
-pip list
-\end{verbatim}
-
-You should see both pmagpy-(version_number) and pmagpy-cli-(version_number) on that list.  If you don't see them, go ahead and reinstall:
-
-\begin{verbatim}
-pip install --upgrade --force-reinstall --no-deps pmagpy
-pip install --upgrade --force-reinstall --no-deps pmagpy-cli
-\end{verbatim}
-
-Second, if you are trying to get a developer install to work, you can test if your PATH has been properly set with this command:\begin{verbatim}
-
-  echo $PATH
-
-\end{verbatim}
-
-If you don't see PmagPy, PmagPy/programs, and PmagPy/programs/conversion_scripts somewhere in the output, you have not successfully completed a developer install.  If it isn't set, try running:\begin{verbatim}
-
-  python dev_setup.py -h
-
-\end{verbatim}
-
-for more information.
-
-If for some reason you need to add PmagPy to your \$PATH manually, you can find more general information about setting \$PATH \href{https://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux-unix}{here}, and specific information about adding {\bf PmagPy} to your \$PATH \href{#setting_path}{here}.
-
 
 %There are a few possible reasons for this failure, the most common of which is that your path has not been correctly set.  To test this, type ``echo \$PATH" in your command line.
 
@@ -1737,40 +1687,9 @@ If for some reason you need to add PmagPy to your \$PATH manually, you can find 
 %Your \$PATH may look very different, but as long as you have the complete path to the PmagPy directory in there, you are golden.  If the directory is not in your path, you can try re-running the PmagPy install script, which should set your path correctly  for you.  If that doesn't work, go to your home directory (to get there, type ``cd" in your command line).  Use a text editor to open a file called .bash\_profile and add these lines:
 
 
-\item For Windows users:
+\section{wxPython is not installed}
 
-\begin{verbatim} "eqarea.py" is not recognized as an internal or external command,
-operable program or batch file.
-\end{verbatim}
-
-First, remember that if you have a standard \href{#pip_install}{pip install}, you need to use \texttt{eqarea} instead of \texttt{eqarea.py}. This is caused by a strange Windows quirk, but what you need to know is this: anytime the Cookbook gives a command, you'll need to drop the ``.py'' and all will be well.
-
-If \texttt{eqarea -h} doesn't work, this probably means that you have not correctly installed PmagPy.  On your command line, try:
-
-\begin{verbatim}
-pip list
-\end{verbatim}
-
-You should see both pmagpy-(version_number) and pmagpy-cli-(version_number) on that list.  If you don't see them, go ahead and reinstall:
-
-\begin{verbatim}
-pip install --upgrade --force-reinstall --no-cache-dir --no-deps pmagpy
-pip install --upgrade --force-reinstall --no-cache-dir --no-deps pmagpy-cli
-\end{verbatim}
-
-Second, if you are trying to get a developer install to work on Windows, and you want to set/check your \$PATH manually, see \href{http://www.mathworks.com/matlabcentral/answers/94933-how-do-i-set-my-system-path-under-windows}{Setting your Path in Windows}.
-
-
-
-\end {itemize}
-
-\customlink{anaconda_troubleshooting}
-\item I am installing pmagpy into the \href{https://www.continuum.io/downloads}{Anaconda} Python distribution
-
-\begin{itemize}
-\item For Mac users:
-\begin{itemize}
-\item If you only have the core packages installed with the Anaconda distribution (plus the PmagPy package you just installed), you may get the following ImportError when attempting to execute ``eqarea.py -h'':
+If you only have the core packages installed with the Anaconda distribution (plus the PmagPy package you just installed), you may get the following ImportError when attempting to execute ``eqarea.py -h'':
 
 \begin{verbatim}
 ImportError: No module named wx
@@ -1780,29 +1699,60 @@ To correct this error, simply execute at the command line:
 \begin{verbatim}
 pip install --upgrade -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
 \end{verbatim}
-\end{itemize}
-\end{itemize}
 
-\item  My path is correctly set, but I still get this error message: \begin{verbatim} -bash: eqarea.py: command not found
+
+\section{Troubleshooting a pip install}
+If you installed with pip but you have this error message or similar when you try to run a program:
+
+\begin{verbatim} -bash: eqarea.py: command not found
 \end{verbatim}
 
-  \begin{itemize}
-  \item  For Mac users with a \href{#developer_install}{developer_install}, it is possible that you need to make the python scripts executable. On the command line in the directory with the scripts, type: chmod a+x *.py
-  \end{itemize}
+Make sure you are running the \href{#which_command}{correct command} for your operating system and {\bf PmagPy} install.
 
-\item
-  If you are using the pip installation of PmagPy and you have any problems, you should start by uninstalling and reinstalling pmagpy and pmagpy-cli.  To do this, use these commands:
+Once you have the correct command, if you still see that error message, this probably means that you have not correctly installed PmagPy.  On your command line, try:
+
+\begin{verbatim}
+pip list
+\end{verbatim}
+
+You should see both pmagpy-(version\_number) and pmagpy-cli-(version\_number) on that list.  If you don't see them, go ahead and reinstall:
+
 \begin{verbatim}
 pip install --upgrade --force-reinstall --no-cache-dir --no-deps pmagpy
 pip install --upgrade --force-reinstall --no-cache-dir --no-deps pmagpy-cli
 \end{verbatim}
-To test that they have installed properly, you can run the command:
-\begin{verbatim}
-pip list
-\end{verbatim}
-which will show you all of your pip-installed packages.  If you don't see pmagpy and pmagpy-cli, you'll need to install them.
 
-\item
+Fully uninstalling and reinstalling can occasionally fix other problems as well!
+
+
+\section{Troubleshooting a developer install}
+
+For more information on the developer install, you can run:
+\begin{verbatim}
+dev_setup.py -h
+\end{verbatim}
+
+You can also check the specific \href{#getting_python}{install instructions}.
+
+For Mac users with a developer install, it is possible that you need to make the python scripts executable. On the command line in the PmagPy/programs directory, run the command: chmod a+x *.py
+
+\subsection{PATH for Windows}
+
+If you are trying to get a developer install to work on Windows, and you want to set/check your \$PATH manually, see \href{http://www.mathworks.com/matlabcentral/answers/94933-how-do-i-set-my-system-path-under-windows}{Setting your Path in Windows}.  More information about adding {\bf PmagPy} to your \$PATH is available \href{#setting_path}{here}.
+
+\subsection{PATH for OSX or Linux}
+You can test if your PATH has been properly set with this command:\begin{verbatim}
+
+  echo $PATH
+
+\end{verbatim}
+
+If you don't see PmagPy, PmagPy/programs, and PmagPy/programs/conversion\_scripts somewhere in the output, you have not successfully completed a developer install.
+
+If for some reason you need to add PmagPy to your \$PATH manually, you can find more general information about setting \$PATH \href{https://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux-unix}{here}, and specific information about adding {\bf PmagPy} to your \$PATH \href{#setting_path}{here}.
+
+
+\section{Languages other than English}
   If your computer uses multiple languages, or a language other than English, you may get an error message like this:
   \begin{verbatim}
 
@@ -1822,26 +1772,25 @@ which will show you all of your pip-installed packages.  If you don't see pmagpy
   export LANG=en_US.UTF-8
   \end{verbatim}
 
-\end{enumerate}
-
-
 \section{Error loading dlls (Canopy Python/Windows only)}
 Some of the modules used in PmagPy have dependencies that are not called directly.  If you are missing one of those dependencies, the programs may fail in odd ways.  In general, it is worthwhile to open Canopy, go into the package manager, and update all packages.  More specifically, if you see an error message like this: \begin{verbatim}ImportError: DLL load failed: The specified procedure could not be found  \end{verbatim} you may be missing the MKL package.  Open Canopy, go to package manager, and select ``Available packages".  Scroll down to MKL, and install it.  This should fix the problem!  Note that windows users who are having trouble opening one of the GUIs should try this solution whether or not they actually see this error message.
 
-\section{Program generates an ImportError or SyntaxError}
+\section{Problem with a PmagPy dependency}
 
-{\bf PmagPy} depends on a variety of Python packages.  Sometimes you will run into problems if you have the wrong version of a dependency.  You can check the list of correct dependencies on \href{https://github.com/PmagPy/PmagPy/blob/master/pmagpy_dependencies.txt}{Github}.
+{\bf PmagPy} depends on a variety of Python packages.  Sometimes you will run into problems if you have the wrong version of a dependency.  You may get an ImportError or a SyntaxError in these cases.  You can check the list of correct dependencies on \href{https://github.com/PmagPy/PmagPy/blob/master/environment.yml}{Github}.
 
+You can see what package versions you are running by using the command ``conda list'' (or ``pip list'' if you have a non-Anaconda Python).  You can then compare with our list, and upgrade or downgrade if necessary.  For example: ``conda install pandas=0.23.4''.
 
 \section{Problems with a specific program}
-\begin{enumerate}
-\item Thellier auto\_interpreter crashes with a Segmentation Fault (on Mac).  NB: This should no longer be a problem with \begin{verbatim}matplotlib>=2.0.\end{verbatim}
+\subsection{Thellier auto\_interpreter crashes with a Segmentation Fault (on Mac).}
+
+NB: This should no longer be a problem with matplotlib 2.0 and higher.
   \begin{itemize}
   \item This error is caused by a version issue with one of PmagPy's dependencies, matplotlib.  There are two ways to solve this problem.
-  \item Recommended: download and use the \href{#standalone}{standalone Pmag GUI} distribution to access Thellier GUI.
-  \item Alternative: open the Canopy application, and navigate to the Canopy Package Manager.  Go to ``Installed packages'' and find matplotlib.  Click matplotlib's ``more info'' button.  The click ``show'' to see all versions of the package.  Select matplotlib 1.4.3-7 and install.  This will fix the segmentation error, however, it may cause the Thellier GUI menubar to behave oddly.  For this reason, we recommend the first solution (above).
+  \item Recommended: upgrade matplotlib with the command ``conda upgrade matplotlib''
+  \item Alternative: download and use the \href{#standalone}{standalone Pmag GUI} distribution to access Thellier GUI.
   \end{itemize}
-\end{enumerate}
+
 
 \section{Wrong Python in Jupyter notebook}
 
@@ -1860,6 +1809,7 @@ If your jupyter notebook is calling the wrong version of python (i.e., using the
 \end{verbatim}
 
 where USERNAME is your username.
+
 
 \section{Other problems}Report a problem not listed above on \href{https://github.com/PmagPy/PmagPy/issues/new}{Github}, or e-mail \href{mailto:ltauxe@ucsd.edu}{ltauxe@ucsd.edu}. Please include the following information: 1) the version of PmagPy that you are using, 2) your operating system, 3) any error messages that you got, 4) the datafile that is giving trouble, if relevant.
 

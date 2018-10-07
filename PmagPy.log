@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  28 SEP 2018 14:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  6 OCT 2018 20:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -856,11 +856,10 @@ LaTeX Info: Redefining \nameref on input line 35.
 
 ] [2
 
-] (./PmagPy.4ct) (./PmagPy.4ct [3]) (./customlinks.tex)
+] (./PmagPy.4ct) (./PmagPy.4ct [3] [4]) (./customlinks.tex)
 l. 42 Writing PmagPy.idv[1] (PmagPy0x.png)
 File: EPSFiles/logo.eps Graphic file (type eps)
-
-<EPSFiles/logo.eps> [4] [5] [6
+ <EPSFiles/logo.eps> [5] [6
 
 ] [7]
 LaTeX Font Info:    Try loading font information for U+msa on input line 46.
@@ -1299,28 +1298,37 @@ Chapter 10.
  --- Customlinks says: Link to section 10.1: PmagPy.html#sec10-1
 [133
 
-] [134] [135] [136] [137] [138] [139] [140]
- --- Customlinks says: Custom link named 'anaconda_troubleshooting': PmagPy.htm
-l#anaconda_troubleshooting 
-[141] [142] [143] [144] [145] [146] [147]
+]
  --- Customlinks says: Link to section 10.2: PmagPy.html#sec10-2
-[148]
+[134] [135]
  --- Customlinks says: Link to section 10.3: PmagPy.html#sec10-3
+[136] [137] [138]
  --- Customlinks says: Link to section 10.4: PmagPy.html#sec10-4
-[149]
+[139]
+ --- Customlinks says: Link to subsection 10.4.1: PmagPy.html#subsec10-4-1
+ --- Customlinks says: Link to subsection 10.4.2: PmagPy.html#subsec10-4-2
+[140]
  --- Customlinks says: Link to section 10.5: PmagPy.html#sec10-5
-[150] [151]
+[141] [142]
  --- Customlinks says: Link to section 10.6: PmagPy.html#sec10-6
-[152] [153
+[143]
+ --- Customlinks says: Link to section 10.7: PmagPy.html#sec10-7
+ --- Customlinks says: Link to section 10.8: PmagPy.html#sec10-8
+ --- Customlinks says: Link to subsection 10.8.1: PmagPy.html#subsec10-8-1
+[144]
+ --- Customlinks says: Link to section 10.9: PmagPy.html#sec10-9
+[145] [146]
+ --- Customlinks says: Link to section 10.10: PmagPy.html#sec10-10
+[147] [148
 
-] [154] [155] [156] [157]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2089.
- [158]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2089.
+] [149] [150] [151] [152] [153]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2039.
+ [154]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2039.
  (./PmagPy.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2089.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2089.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2089.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2039.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2039.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2039.
  )
 (\end occurred inside a group at level 2)
 
@@ -1328,12 +1336,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2089.
 ### simple group (level 1) entered at line 42 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10012 strings out of 493090
- 137807 string characters out of 6134868
- 345501 words of memory out of 5000000
- 13221 multiletter control sequences out of 15000+600000
+ 10021 strings out of 493090
+ 137987 string characters out of 6134868
+ 344522 words of memory out of 5000000
+ 13230 multiletter control sequences out of 15000+600000
  15547 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,6n,32p,135885b,1526s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on PmagPy.dvi (165 pages, 362856 bytes).
+Output written on PmagPy.dvi (161 pages, 362148 bytes).
