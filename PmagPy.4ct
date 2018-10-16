@@ -14,7 +14,7 @@
 \doTocEntry\tocsection{1.5}{\csname a:TocLink\endcsname{1}{x1-130001.5}{QQ2-1-13}{Next steps}}{19}\relax 
 \doTocEntry\tocchapter{2}{\csname a:TocLink\endcsname{1}{x1-140002}{QQ2-1-14}{The {\bf  PmagPy} software package}}{21}\relax 
 \doTocEntry\tocsection{2.1}{\csname a:TocLink\endcsname{1}{x1-150002.1}{QQ2-1-15}{Using PmagPy}}{30}\relax 
-\doTocEntry\tocsection{2.2}{\csname a:TocLink\endcsname{1}{x1-160002.2}{QQ2-1-16}{Using PmagPy on the command line}}{30}\relax 
+\doTocEntry\tocsection{2.2}{\csname a:TocLink\endcsname{1}{x1-160002.2}{QQ2-1-16}{Using PmagPy on the command line}}{31}\relax 
 \doTocEntry\tocchapter{3}{\csname a:TocLink\endcsname{1}{x1-170003}{QQ2-1-17}{Pmag GUI Tutorial}}{33}\relax 
 \doTocEntry\tocsection{3.1}{\csname a:TocLink\endcsname{1}{x1-180003.1}{QQ2-1-18}{Converting magnetometer files to MagIC format}}{36}\relax 
 \doTocEntry\tocsection{3.2}{\csname a:TocLink\endcsname{1}{x1-190003.2}{QQ2-1-19}{Optional: Calculate geographic / tilt-corrected direction}}{45}\relax 
@@ -81,6 +81,7 @@
 \doTocEntry\tocsection{10.8}{\csname a:TocLink\endcsname{1}{x1-8000010.8}{QQ2-1-80}{Problems with a specific program}}{146}\relax 
 \doTocEntry\tocsubsection{10.8.1}{\csname a:TocLink\endcsname{1}{x1-8100010.8.1}{QQ2-1-81}{Thellier auto\_interpreter crashes with a Segmentation Fault (on Mac).}}{146}\relax 
 \doTocEntry\tocsection{10.9}{\csname a:TocLink\endcsname{1}{x1-8200010.9}{QQ2-1-82}{Wrong Python in Jupyter notebook}}{147}\relax 
-\doTocEntry\tocsection{10.10}{\csname a:TocLink\endcsname{1}{x1-8300010.10}{QQ2-1-83}{Other problems}}{149}\relax 
-\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-8400010.10}{QQ2-1-84}{Bibliography}}{151}\relax 
+\doTocEntry\tocsection{10.10}{\csname a:TocLink\endcsname{1}{x1-8300010.10}{QQ2-1-83}{Making maps (Basemap vs. cartopy)}}{149}\relax 
+\doTocEntry\tocsection{10.11}{\csname a:TocLink\endcsname{1}{x1-8400010.11}{QQ2-1-84}{Other problems}}{152}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-8500010.11}{QQ2-1-85}{Bibliography}}{153}\relax 
 \par 

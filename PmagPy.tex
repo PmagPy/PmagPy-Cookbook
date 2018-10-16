@@ -190,10 +190,10 @@ Next, add to your existing PYTHONPATH variable or create a new PYTHONPATH variab
 
 \begin{verbatim}
 
-Python 3.7.0 (default, Jun 28 2018, 07:39:16) 
+Python 3.7.0 (default, Jun 28 2018, 07:39:16)
 [Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
 Type "help", "copyright", "credits" or "license" for more information.
->>> 
+>>>
 \end{verbatim}
 (Press control-D to exit)
 
@@ -455,9 +455,9 @@ Much more information is available on each {\bf PmagPy} program.  To learn how t
 
 You can run an interactive \href{https://mybinder.org/v2/gh/PmagPy/PmagPy-notebooks/master?filepath=PmagPy.ipynb}{{\bf PmagPy} demo} here.  Please be patient -- it will take a few minutes to initialize.
 
-You can view a static \href{http://pmagpy.github.io/PmagPy.html}{{\bf PmagPy} page} here.
+You can view a static \href{http://pmagpy.github.io/PmagPy.html}{{\bf PmagPy} page} here.  The example data files used are located in the {\it data\_files} directory bundled with the {\bf PmagPy} software distribution.  If you need help finding the data\_files, see the \href{#getting_python}{install instructions}.
 
-Either option contains a comprehensive introduction to {\bf PmagPy}.
+Both the interactive demo and the static page contain a comprehensive introduction to {\bf PmagPy}.
 
 You can also see the source code online at:
 
@@ -494,13 +494,14 @@ Here is a brief introduction to how the {\bf PmagPy} command-line programs work.
 
 Depending on your operating system, you  may need to use a different command to invoke a command line program.  See \href{#which_command}{this section} for details.
 
-You can see examples for each program on the \href{http://pmagpy.github.io/PmagPy-cli.html}{{\bf PmagPy} Github page}. The example data files used are located in the {\it data\_files} directory bundled with the {\bf PmagPy} software distribution.
+You can see examples for each program on the \href{http://pmagpy.github.io/PmagPy-cli.html}{{\bf PmagPy-cli} page}. The example data files used are located in the {\it data\_files} directory bundled with the {\bf PmagPy} software distribution.  If you need help finding the data\_files, see the \href{#getting_python}{install instructions}.
 
 You can also see the source code online at:
 
  \customlink{github}
 
  \url{https://github.com/PmagPy/PmagPy}
+
 
 
 \customlink{pmag_gui.py}
@@ -534,7 +535,7 @@ Note: {\bf Pmag GUI} is available for use with both 3.0 and 2.5 data.  All new c
 
 \item \textbf{copy example files:}  Use \textbf{move\_data\_files.py} to move the  datafiles to an accessible location.  Use: \begin{verbatim}
 
-  move_data_files.py -h\end{verbatim} on the command line for help).  In the {\it data\_files } folder you will find a subfolder named {\it Pmag\_GUI}. Copy the contents of the  \href{#Project_Directory}{\it ThisProject} directory  into  your  own \href{#Project_Directory}{Project Directory} folder.
+  move_data_files.py -h\end{verbatim} on the command line for help).  In the {\it PmagPy-data/data\_files } folder you will find a subfolder named {\it Pmag\_GUI}. Copy the contents of the  \href{#Project_Directory}{\it ThisProject} directory  into  your  own \href{#Project_Directory}{Project Directory} folder.
  \item Start Pmag GUI either by typing {\bf pmag\_gui.py} on your \href{#command_line}{command line}, or (if you have the \href{#standalone}{standalone}), by double-clicking the Pmag GUI icon on your Desktop.
  \item If necessary, change directories by clicking  on the ``change directory'' button and select your own {\it ThisProject} directory.
  \end{enumerate}
@@ -1827,6 +1828,31 @@ If your jupyter notebook is calling the wrong version of python (i.e., using the
 \end{verbatim}
 
 where USERNAME is your username.
+
+
+\section{Making maps (Basemap vs. cartopy)}
+
+In the past, {\bf PmagPy} used Basemap for all map plotting functionality.  Basemap is no longer being developed, so we have switched to cartopy.  We highly recommend that any newcomers simply follow the regular install instructions which include installing cartopy.  However, if you need to use Basemap, you can still install it:
+
+\begin{verbatim}
+
+    conda install --channel conda-forge basemap basemap-data-hire
+\end{verbatim}
+
+Then install the high-res data files:
+
+\begin{verbatim}
+    install_etopo.py
+\end{verbatim}
+
+By default, all pmagplotlib/ipmag functions will now use cartopy.  If you need the old Basemap version, the following functions have been preserved:
+
+\begin{verbatim}
+    pmagplotlib.plot_map_basemap
+    pmagplotlib.plot_mag_map_basemap
+    ipmag.plot_pole_basemap
+    ipmag.plot_vgp_basemap
+\end{verbatim}
 
 
 \section{Other problems}Report a problem not listed above on \href{https://github.com/PmagPy/PmagPy/issues/new}{Github}, or e-mail \href{mailto:ltauxe@ucsd.edu}{ltauxe@ucsd.edu}. Please include the following information: 1) the version of PmagPy that you are using, 2) your operating system, 3) any error messages that you got, 4) the datafile that is giving trouble, if relevant.
