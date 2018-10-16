@@ -1854,6 +1854,9 @@ By default, all pmagplotlib/ipmag functions will now use cartopy.  If you need t
     ipmag.plot_vgp_basemap
 \end{verbatim}
 
+To use the most up-to-date Basemap, you will need to run it in a conda env.  Otherwise, you will get a KeyError and/or a FileNotFoundError.  \href{https://medium.com/data-science-in-practice/saving-the-environment-with-anaconda-ad68e603d8c5}{This article} explains how to create and run a conda env.
+
+All that is to say: you *can* still use Basemap, but please just use cartopy instead.
 
 \section{Other problems}Report a problem not listed above on \href{https://github.com/PmagPy/PmagPy/issues/new}{Github}, or e-mail \href{mailto:ltauxe@ucsd.edu}{ltauxe@ucsd.edu}. Please include the following information: 1) the version of PmagPy that you are using, 2) your operating system, 3) any error messages that you got, 4) the datafile that is giving trouble, if relevant.
 

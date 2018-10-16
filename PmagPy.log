@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  16 OCT 2018 09:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  16 OCT 2018 10:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1330,13 +1330,13 @@ Chapter 10.
 [152] [153
 
 ] [154] [155] [156] [157]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2083.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2086.
  [158]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2083.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2086.
  (./PmagPy.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2083.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2083.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2083.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2086.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2086.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2086.
  )
 (\end occurred inside a group at level 2)
 
@@ -1350,6 +1350,6 @@ Here is how much of TeX's memory you used:
  13236 multiletter control sequences out of 15000+600000
  15547 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,6n,32p,135885b,1544s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,6n,32p,135885b,1546s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on PmagPy.dvi (165 pages, 368612 bytes).
+Output written on PmagPy.dvi (165 pages, 369232 bytes).
