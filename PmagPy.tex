@@ -170,7 +170,7 @@ And this line to your \$PYTHONPATH to your .bashrc file:
 where *** is your username.  (Of course, these lines will depend on exactly where you have put your PmagPy folder -- if it lives on your home directory, your \$PATH will point there:
 \begin{verbatim}
     export PATH=/Users/***/PmagPy/programs
-\end{verbatim}, and so on.)
+\end{verbatim}
 
 For Windows, the same variables are set but in your \href{https://www.java.com/en/download/help/path.xml}{Control Panel (Environment Variables)}.  To do this yourself, you would first add to your existing PATH variable or create a new PATH variable with the following values: \begin{verbatim}
   \Users\***\Desktop\PmagPy\programs
@@ -416,7 +416,7 @@ Working with MagIC:
   \end{itemize}
 \item \href{http://pmagpy.github.io/PmagPy.html#convert_2_magic}{convert\_2\_magic} : convert many laboratory measurement formats to the MagIC data model 3 format
   \begin{itemize}
-\item \href{http://pmagpy.github.io/PmagPy.html#_2g_asc_magic}{\_2g\_asc\_magic} : converts the 2G ascii file to MagIC - but no example yet.
+\item \href{http://pmagpy.github.io/PmagPy.html#_2g_asc_magic}{\_2g\_asc\_magic} : convert the 2G ascii file to MagIC - but no example yet.
 \item \href{http://pmagpy.github.io/PmagPy.html#_2g_bin_magic}{\_2g\_bin\_magic} : convert 2G binary format to MagIC
 \item \href{http://pmagpy.github.io/PmagPy.html#agm_magic}{agm\_magic} : convert Princeton Measurements alternating gradient force magnetization (AGM) output files to the MagIC format.
 \item \href{http://pmagpy.github.io/PmagPy.html#bgc_magic}{bgc\_magic} : convert the Berkeley Geochronology lab format to MagIC.
@@ -429,13 +429,15 @@ Working with MagIC:
 \item \href{http://pmagpy.github.io/PmagPy.html#k15_magic}{k15\_magic} : convert  15 measurement anisotropy of magnetic susceptibility file format to MagIC.
 \item \href{http://pmagpy.github.io/PmagPy.html#ldeo_magic}{ldeo\_magic} : convert Lamont-Doherty file format to MagIC.
 \item \href{http://pmagpy.github.io/PmagPy.html#livdb_magic}{livdb\_magic} : convert Liverpool file format to MagIC.
-\item \href{http://pmagpy.github.io/PmagPy.html#mst_magic}{mst\_magic} : converts Curie Temperature experimental data to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#mst_magic}{mst\_magic} : convert Curie Temperature experimental data to MagIC
 \item \href{http://pmagpy.github.io/PmagPy.html#sio_magic}{sio\_magic} : convert the Scripps Institution of Oceanography data format to MagIC
-\item \href{http://pmagpy.github.io/PmagPy.html#sufar4_magic}{sufar4\_magic} : converts the AGICO SUFAR program (ver.1.2.) ascii file format to MagIC
-\item \href{http://pmagpy.github.io/PmagPy.html#tdt_magic}{tdt\_magic} : converts the Thellier Tool format to MagIC 3.0
-\item \href{http://pmagpy.github.io/PmagPy.html#utrecht_magic}{utrecht\_magic} : converts the Fort Hoofddijk, Utrecht University Robot file format to MagIC
-\item \href{http://pmagpy.github.io/PmagPy.html#orientation_magic}{orientation\_magic} : converts an "orient.txt" formatted file with field notebook information into MagIC formatted files
-\item \href{http://pmagpy.github.io/PmagPy.html#azdip_magic}{azdip\_magic} : converts an "azdip" formatted file to a samples.txt file format
+\item \href{http://pmagpy.github.io/PmagPy.html#sufar4_magic}{sufar4\_magic} : convert the AGICO SUFAR program (ver.1.2.) ascii file format to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#s_magic}{s\_magic} : convert the 6 tensor element format (.s) to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#kly4s_magic}{kly4s\_magic} : convert the AMSSpin format of Gee et al. 2008 to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#tdt_magic}{tdt\_magic} : convert the Thellier Tool format to MagIC 3.0
+\item \href{http://pmagpy.github.io/PmagPy.html#utrecht_magic}{utrecht\_magic} : convert the Fort Hoofddijk, Utrecht University Robot file format to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#orientation_magic}{orientation\_magic} : convert an "orient.txt" formatted file with field notebook information into MagIC formatted files
+\item \href{http://pmagpy.github.io/PmagPy.html#azdip_magic}{azdip\_magic} : convert an "azdip" formatted file to a samples.txt file format
   \end{itemize}
 
 \end{itemize}
@@ -763,13 +765,13 @@ Data can be downloaded from the {\bf MagIC} database and examined with {\bf Pmag
 {\bf Supported sample orientation schemes:}
 
   There are options for
- different orientation conventions (drill direction with the Pomeroy orientation device  [drill azimuth and hade] is the default), different naming conventions and a choice of whether to automatically calculate the IGRF value for magnetic declination correction, supply your own or ignore the correction.  The program generates {\it er\_samples.txt} and {er\_sites.txt} files.  Be warned that existing files with these names will be overwritten.
+ different orientation conventions (drill direction with the Pomeroy orientation device  [drill azimuth and hade] is the default), different naming conventions and a choice of whether to automatically calculate the IGRF value for magnetic declination correction, supply your own or ignore the correction.  The program generates or updates {\it samples.txt} and {\it sites.txt} files.
 
- All images, for example outcrop photos are supplied as a separate zip file. image\_name is the name of the picture you will import, image\_look is the ``look direction`` and image\_photographer is the person who took the picture. This information will be put in a file named er\_images.txt and will ultimately be read into the er\_image table in the console where additional information must be entered (keywords, etc.).
+ All images, for example outcrop photos are supplied as a separate zip file. image\_name is the name of the picture you will import, image\_look is the ``look direction`` and image\_photographer is the person who took the picture. This information will be put in a file named {\it images.txt} and will ultimately be read into the images table.
 
 Often, paleomagnetists note when a sample orientation is suspect in the field. To indicate that a particular sample may have an uncertainty in its orientation that is greater than about 5$^{\circ}$, enter SO-GT5 in the method\_codes column and any other special codes pertaining to a particular sample from the method codes table. Other general method codes can be entered later. Note that unlike date and sample\_class, the method codes entered in orient.txt pertain only to the sample on the same line.
 
-Samples are oriented in the field with a ``field arrow`` and measured in the laboratory with a ``lab arrow``. The lab arrow is the positive X direction of the right handed coordinate system of the specimen measurements. The lab and field arrows may not be the same. In the MagIC database, we require the orientation (azimuth and plunge) of the X direction of the measurements (lab arrow). Here are some popular conventions that convert the field arrow azimuth (mag\_azimuth in the orient.txt file) and dip (field\_dip in orient.txt) to the azimuth and plunge of the laboratory arrow (sample\_azimuth and sample\_dip in er\_samples.txt). The two angles, mag\_azimuth and field\_dip are explained below.
+Samples are oriented in the field with a ``field arrow`` and measured in the laboratory with a ``lab arrow``. The lab arrow is the positive X direction of the right handed coordinate system of the specimen measurements. The lab and field arrows may not be the same. In the MagIC database, we require the orientation (azimuth and plunge) of the X direction of the measurements (lab arrow). Here are some popular conventions that convert the field arrow azimuth (mag\_azimuth in the orient.txt file) and dip (field\_dip in orient.txt) to the azimuth and plunge of the laboratory arrow (sample\_azimuth and sample\_dip in samples.txt). The two angles, mag\_azimuth and field\_dip are explained below.
 
 {\parindent 0pt
 [1] Standard Pomeroy convention of azimuth and hade (degrees from vertical down) of the drill direction (field arrow). sample\_azimuth = mag\_azimuth; sample\_dip =-field\_dip.
@@ -823,35 +825,6 @@ Because of the ambiguity of strike and dip, the MagIC database uses the dip dire
 When you are finished with editing the {\it orient.txt} file,  return to  \href{#orient}{step 2 on the GUI front panel}.
 
 
-%
-\customlink{AZDIP}
-%
-%\subsubsection{AZDIP formatted files}
-%
-%This is a very simple file format with the sample name Azimuth Plunge Strike Dip where the Azimuth and Plunge are of the drill direction (Specimen's Z direction) or orientation convention \#3 above to convert to the MagIC standard. To convert strike to bedding dip direction, we would just add 90$^{\circ}$. Here is an example AzDip file:
-%
-%\includegraphics[width=15cm]{EPSFiles/azdip.eps}
-
-\customlink{LIMS}
-
-\subsubsection{Data files downloaded from the IODP (LIMS) database}
-
-
-There are two types of files that help in plotting of IODP paleomagnetic data sets: the core summaries with depth to core top information and the sample information that contains lists of samples taken.
-Visiting the IODP science query website at \url{http://web.iodp.tamu.edu/WTR/html/sci-data.html} allows you to
-select 'SRM - Remanence of magnetization' under the Analysis scroll down menu.  By picking the expedition, site, hole, etc. you can download a  .csv format (comma separated values) for the expedition data.  (Be aware that this is the rawest form of the data, including disturbed intervals, bad measurements, core ends, etc. and may not be exactly what ended up getting published!).   First click on the ``Show Report`` button, then, ``Expand Table'', then ``Get File'':
-
-\includegraphics[width=15cm]{EPSFiles/WebTabular_srm.eps}
-
-This can take a very long time, so get yourself a cup of tea.
-
-You can also (while you're at it) click on the 'Summaries' tab and download the coring summaries:
-
-\includegraphics[width=15cm]{EPSFiles/WebTabular_core.eps}
-
-Place both of the downloaded files in your {\it MyFiles} directory.
-
-
 \customlink{magnetometer_files}
 
 \subsection{Supported Rock Magnetometer files}
@@ -864,41 +837,46 @@ The supported file formats are:
 {\bf Rock Magnetometer Files:}
 
 \begin{itemize}
-%\item \href{#2G_magic.py}{2G binary format}
-\item \href{#cit_magic.py}{The CalTech format used by labs in the RAPID consortium}
-%\item \href{#FIN_magic.py}{whatever}
-%\item \href{#FLA_magic.py}{Univ. Florida, Gainesville format}
-\item \href{#huji_magic.py}{Hebrew University, Jerusalem format}
-\item \href{#sio_magic.py}{Scripps Institution of Oceanography format}
-\item \href{#ldeo_magic.py}{Lamont Doherty Earth Observatory format}
-%\item \href{#LIVMW_magic.py}{Unviersity of Liverpool, microwave format}
-\item \href{#iodp_csv_magic.py}{IODP rock magnetometer (SRM) data downloaded from the LIMS database}
-\item \href{#pmd_magic.py}{PMD (ascii) format}
-\item \href{#tdt_magic.py}{ThellierTool format}
-%\item \href{#UB_magic.py}{University of Barcelona format}
-%\item \href{#UCSC}{various UC Santa Cruz formats}
-%\item \href{#UMICH_magic.py}{University of Michigan format}
-%\item \href{#JR6_magic.py}{University of Rome, JR 6 format}
-%\item \href{#UU_magic.py}{University of Utrecht format}
+\item \href{http://pmagpy.github.io/PmagPy.html#_2g_asc_magic}{\_2g\_asc\_magic} : convert the 2G ascii file to MagIC - but no example yet.
+\item \href{http://pmagpy.github.io/PmagPy.html#_2g_bin_magic}{\_2g\_bin\_magic} : convert 2G binary format to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#agm_magic}{agm\_magic} : convert Princeton Measurements alternating gradient force magnetization (AGM) output files to the MagIC format.
+\item \href{http://pmagpy.github.io/PmagPy.html#bgc_magic}{bgc\_magic} : convert the Berkeley Geochronology lab format to MagIC.
+\item \href{http://pmagpy.github.io/PmagPy.html#cit_magic}{cit\_magic} : convert the Cal Tech file format.
+\item \href{http://pmagpy.github.io/PmagPy.html#generic_magic}{generic\_magic} : convert the generic file format to MagIC.
+\item \href{http://pmagpy.github.io/PmagPy.html#huji_magic}{huji\_magic} : convert Hebrew University, Jerusalem, Israel file format to MagIC.
+\item \href{http://pmagpy.github.io/PmagPy.html#huji_sample_magic}{huji\_sample\_magic} : convert the HUJI sample file to a MagIC format.
+\item \href{http://pmagpy.github.io/PmagPy.html#jr6_jr6}{jr6\_jr6\_magic} : convert the AGICO JR6 spinner .jr6 output to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#jr6_txt_magic}{jr6\_txt\_magic} : convert the AGICO JR6 txt format to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#k15_magic}{k15\_magic} : convert  15 measurement anisotropy of magnetic susceptibility file format to MagIC.
+\item \href{http://pmagpy.github.io/PmagPy.html#ldeo_magic}{ldeo\_magic} : convert Lamont-Doherty file format to MagIC.
+\item \href{http://pmagpy.github.io/PmagPy.html#livdb_magic}{livdb\_magic} : convert Liverpool file format to MagIC.
+\item \href{http://pmagpy.github.io/PmagPy.html#mst_magic}{mst\_magic} : convert Curie Temperature experimental data to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#sio_magic}{sio\_magic} : convert the Scripps Institution of Oceanography data format to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#sufar4_magic}{sufar4\_magic} : convert the AGICO SUFAR program (ver.1.2.) ascii file format to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#tdt_magic}{tdt\_magic} : convert the Thellier Tool format to MagIC 3.0
+\item \href{http://pmagpy.github.io/PmagPy.html#utrecht_magic}{utrecht\_magic} : convert the Fort Hoofddijk, Utrecht University Robot file format to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#orientation_magic}{orientation\_magic} : convert an "orient.txt" formatted file with field notebook information into MagIC formatted files
+\item \href{http://pmagpy.github.io/PmagPy.html#azdip_magic}{azdip\_magic} : convert an "azdip" formatted file to a samples.txt file format
 \end{itemize}
+
 
 \customlink{anisotropy_files}
 
 {\bf Anisotropy of Magnetic Susceptibility files:}
 
 \begin{itemize}
-\item \href{#s_magic.py}{The 6 tensor element format (.s)}
-\item \href{#KLY4S_magic.py}{LabView program} of Gee et al. 2008 \nocite{gee08}
-\item \href{#k15\_magic.py}{15 measurement convention of Tauxe 1998 \nocite{tauxe98}}
-%\item \href{#susar4-asc\_magic.py}{SUSAR 4.0 ascii output for Kappabridge}
-\item \href{#SUFAR4-asc\_magic.py}{SUFAR 4.0 ascii output for Kappabridge}
+\item \href{http://pmagpy.github.io/PmagPy.html#s_magic}{s\_magic} : convert the 6 tensor element format (.s) to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#kly4s_magic}{kly4s\_magic} : convert the AMSSpin format of Gee et al. 2008 to MagIC
+\item \href{http://pmagpy.github.io/PmagPy.html#k15_magic}{k15\_magic} : convert  15 measurement anisotropy of magnetic susceptibility file format to MagIC. \nocite{tauxe98}
+\item \href{http://pmagpy.github.io/PmagPy.html#sufar4_magic}{sufar4\_magic} : convert the AGICO SUFAR program (ver.1.2.) ascii file format to MagIC
+
 \end{itemize}
 
 \customlink{Hysteresis_file_formats}
 
 \subsubsection{Hysteresis file formats}
 {\bf Pmag GUI} will import hysteresis data from room temperature  Micromag alternating gradient magnetometers (AGM)  in several different ways.  You can import either hysteresis loops or backfield curves, or you can import whole directories of the same.  In the latter case, the file endings must be either .agm (.AGM) or .irm (.IRM) and the first part of the file must be the specimen name.
- See the documentation for  \href{#agm\_magic.py}{agm\_magic.py} for examples.
+ See the documentation for  \href{http://pmagpy.github.io/PmagPy.html#agm_magic}{agm\_magic} for examples.
 
 
 Now you've collected together all the files you need, we can start importing them into {\it MagIC} directory with   \href{#convert2magic}{\bf Step 1 in Pmag GUI}.
@@ -927,7 +905,7 @@ Now we'll walk through a simple data input process, with fake data.
   \begin{itemize}
   \item Start by clicking on `1. add location data'.  Enter location data as seen below. Notice use of the context menu: in most instances, these will provide controlled vocabularies.
     \includegraphics[width=40cm]{EPSFiles/MM_location_grid_with_menu.eps}
-  \item You'll notice that some information is not filled in.  First, if you have no outside citations, you can leave `er\_citation\_names' blank and it will be automatically filled in with `This study' after you save this data.  Second, if you will be providing latitude/longitude for sites, then you don't need to provide it at the location level.  The program will extract start and end latitude and longitude from your site data and apply it to each location.
+  \item You'll notice that some information is not filled in.  First, if you have no outside citations, you can leave `citations' blank and it will be automatically filled in with `This study' after you save this data.  Second, if you will be providing latitude/longitude for sites, then you don't need to provide it at the location level.  The program will extract start and end latitude and longitude from your site data and apply it to each location.
   \item If you want to provide more than the default required information, you may want to add more columns to your grid.  In our case, we'll add in `Country'.  To do this, just click the button `Add additional columns'.  Choose whatever headers you want to add and select `Ok'.
 
     \includegraphics[width=15cm]{EPSFiles/MM_add_location_headers.eps}
@@ -1007,8 +985,7 @@ The best way to launch the Demag GUI application is through  \href{#pmag_gui.py}
 
 
 \noindent If you want to launch {\bf Demag GUI} directly, (assuming {\bf PmagPy} was properly installed using pip or has been added to your PATH), you can simply type
-demag\_gui.py at the command line. Anaconda users will type `demag\_gui\_anaconda' instead.  \textbf{Note:} on OSX it is
-recommended to launch through \href{#pmag_gui.py}{Pmag GUI} as on wxpython 2.9 the drop-down boxes behave better when {\bf Demag GUI} is launched this way.\\
+demag\_gui.py at the command line. Anaconda users will type `demag\_gui\_anaconda' instead.
 
 
 \includegraphics[width=10 cm]{EPSFiles/demag_gui_QuickMagicLauncher.eps}
@@ -1130,7 +1107,9 @@ In order to more easily view and edit specimen interpretation data there is a sp
 
 \subsubsection{VGP Viewer}\label{vgp-view}
 
-Another tool offered by Demag GUI is the VGP (Virtual Geomagnetic Pole) Viewer which allows you to view your VGPs before exporting to MagIC tables. This tool can be opened by using the menu option [Tools] $\rightarrow$ [View VGPs] (hotkey: ctrl-shift-v). The VGP viewer requires latitude and longitude data for sites and locations in order to calculate all VGPs from specimen interpretations, if this data is not already contained in the MagIC tables imported when the GUI started then it will be asked for during calculation so have it ready. The VGP viewer allows you to select viewing samples, sites, or location VGPs from the drop-down menu at the top. Plot interactions are the same here as in the main GUI and can be zoomed, panned, and points selected in the same manner. The list on the left shows all the data for the currently displayed VGPs.
+Another tool offered by Demag GUI is the VGP (Virtual Geomagnetic Pole) Viewer which allows you to view your VGPs before exporting to MagIC tables. Note: this is not available in the standalone executables.
+
+The VGP viewer can be opened by using the menu option [Tools] $\rightarrow$ [View VGPs] (hotkey: ctrl-shift-v). The viewer requires latitude and longitude data for sites and locations in order to calculate all VGPs from specimen interpretations, if this data is not already contained in the MagIC tables imported when the GUI started then it will be asked for during calculation so have it ready. The VGP viewer allows you to select viewing samples, sites, or location VGPs from the drop-down menu at the top. Plot interactions are the same here as in the main GUI and can be zoomed, panned, and points selected in the same manner. The list on the left shows all the data for the currently displayed VGPs.
 
 \includegraphics[width=15 cm]{EPSFiles/demag_gui_VGPViewer.eps}
 
@@ -1182,7 +1161,7 @@ Your  \href{#Project_Directory}{ThisProject} directory should include a file nam
 
 
 \subsubsection{Reading and compiling measurements data}
-When your \href{#Project_Directory}{ThisProject}  project directory is selected, the program  reads all the measurement data, checks them, processes them and sorts them. If non-linear-TRM (NLT) data exist in {\it magic\_measurement.txt}  then the program tries to process the data using Equations (1)-(3) in \href{http://dx.doi.org/10.7288/V4/MAGIC/12116}{Shaar et al., 2010}. \nocite{shaar10}  The program reads {\it magic\_measurement.txt}, and processes the measurements for presentation as Arai  and Zijderveld plots.
+When your \href{#Project_Directory}{ThisProject}  project directory is selected, the program  reads all the measurement data, checks them, processes them and sorts them. If non-linear-TRM (NLT) data exist in {\it magic\_measurement.txt}  then the program tries to process the data using Equations (1)-(3) in \href{http://dx.doi.org/10.7288/V4/MAGIC/12116}{Shaar et al., 2010}. \nocite{shaar10}  The program reads {\it measurement.txt}, and processes the measurements for presentation as Arai  and Zijderveld plots.
 We recommend that you check all the warnings and errors in {\it Thellier\_GUI.log} before starting to interpret the data.  For details about warnings and error messages during these steps, consult the tutorial document in the {\it thellier\_GUI} folder in  {\it data\_files}.  Also, consult the Preferences to change certain plotting options.
 
 \subsubsection{Main panel}
@@ -1864,91 +1843,12 @@ All that is to say: you *can* still use Basemap, but please just use cartopy ins
 
 \begin{thebibliography}{}
 
-\bibitem[Ben-Yosef et~al., 2008]{benyosef08}
-Ben-Yosef, E., Ron, H., Tauxe, L., Agnon, A., Genevey, A., Levy, T., Avner, U.,
-  \& Najjar, M. (2008).
-\newblock Application of copper slag in geomagnetic archaeointensity research.
-\newblock {\em J. Geophys. Res.}, 113, doi:10.1029/2007JB005235.
-
-\bibitem[Besse \& Courtillot, 2002]{besse02}
-Besse, J. \& Courtillot, V. (2002).
-\newblock Apparent and true polar wander and the geometry of the geomagnetic
-  field over the last 200 myr.
-\newblock {\em J. Geophys. Res}, 107, doi:10.1029/2000JB000050.
-
-\bibitem[Carter-Stiglitz et~al., 2006]{carterstiglitz06}
-Carter-Stiglitz, B., Solheid, P., Egli, R., \& Chen, A. (2006).
-\newblock Tiva canyon tuff (ii): Near single domain standard reference material
-  available.
-\newblock {\em The IRM Quarterly}, 16(1), 1.
-
-\bibitem[Cogn\'e, 2003]{cogne03}
-Cogn\'e, J. (2003).
-\newblock Paleomac: A macintosh application for treating paleomagnetic data and
-  making plate reconstructions.
-\newblock {\em Geochem. Geophys. Geosys.}, 4, 1007, doi:10.1029/2001GC000227.
-
-\bibitem[Day et~al., 1977]{day77}
-Day, R., Fuller, M.~D., \& Schmidt, V.~A. (1977).
-\newblock Hysteresis properties of titanomagnetites: grain size and composition
-  dependence.
-\newblock {\em Phys. Earth Planet. Inter.}, 13, 260--266.
-
-\bibitem[Fairchild et~al., 2016]{fairchild16}
-Fairchild, L.M., Swanson-Hysell, N.L., \& Tikoo, S.M. (2016).
-\newblock A matter of minutes: Breccia dike paleomagnetism provides evidence for rapid crater modification.
-\newblock {\em Geology}, 10.1130/G37927.1.
-
-\bibitem[Gee et~al., 2008]{gee08}
-Gee, J.~S., Tauxe, L., \& Constable, C. (2008).
-\newblock Amsspin - a labview program for measuring the anisotropy of magnetic
-  susceptibility (ams) with the kappabridge kly-4s.
-\newblock {\em Geochem. Geophys. Geosyst.}, 9, Q08Y02,doi:10.1029/2008GC001976.
-
-\bibitem[Gradstein et~al., 2004]{gradstein04}
-Gradstein, F., Ogg, J., \& Smith, A. (2004).
-\newblock {\em Geologic Time Scale 2004}.
-\newblock Cambridge: Cambridge University Press.
 
 \bibitem[Halls, 1974]{halls74}
 Halls, H.C. (1974).
 \newblock A paleomagnetic reversal in the Osler volcanic group, Northern Lake Superior.
 \newblock {\em Can. J. Earth Sci.}, 11, (pp.1200-1207).
 
-\bibitem[Jelinek, 1977]{jelinek77}
-Jelinek, V. (1977).
-\newblock The statistical theory of measuring anisotropy of magnetic
-  susceptibility of rocks and its application.
-\newblock {\em Brno, Geophyzika}, (pp.\ 1--88).
-
-\bibitem[Korte \& Constable, 2011]{korte11a}
-Korte, M. \& Constable, C. (2011).
-\newblock Improving geomagnetic field reconstructions for 0-3 ka.
-\newblock {\em Phys. Earth Planet. Int.}, 188, 247--259.
-
-\bibitem[Korte et~al., 2011]{korte11b}
-Korte, M., Constable, C., Donadini, F., \& Holme, R. (2011).
-\newblock Reconstructing the holocene geomagnetic field.
-\newblock {\em Earth and Planetary Science Letters}, 312, 497--505.
-
-\bibitem[Lawrence et~al., 2009]{lawrence09}
-Lawrence, K.~P., Tauxe, L., Staudigel, H., Constable, C., Koppers, A.,
-  McIntosh, W.~C., \& Johnson, C.~L. (2009).
-\newblock Paleomagnetic field properties near the southern hemisphere tangent
-  cylinder.
-\newblock {\em Geochem. Geophys. Geosyst.}, 10, Q01005,
-  doi:10.1029/2008GC00207.
-
-\bibitem[Leonhardt et~al., 2004]{leonhardt04}
-Leonhardt, R., Heunemann, C., \& Kra\'asa, D. (2004).
-\newblock Analyzing absolute paleointensity determinations: Acceptance criteria
-  and the software thelliertool4.0.
-\newblock {\em Geochem. Geophys. Geosys.}, 5, Q12016, doi:10.1029/2004GC000807.
-
-\bibitem[McFadden \& McElhinny, 1990]{mcfadden90}
-McFadden, P.~L. \& McElhinny, M.~W. (1990).
-\newblock Classification of the reversal test in palaeomagnetism.
-\newblock {\em Geophys. J. Int.}, 103, 725--729.
 
 \bibitem[Paterson et~al., 2014]{paterson14}
 Paterson, G., Tauxe, L., Biggin, A., Shaar, R., \& Jonestrask, L. (2014).
@@ -1960,17 +1860,6 @@ P\'{e}rez, F. \& Granger, B. (2007).
 \newblock {IP}ython: a system for interactive scientific computing.
 \newblock {\em Computing in Science and Engineering}, 9, 21--29.
 
-\bibitem[Sbarbori et~al., 2009]{sbarbori09}
-Sbarbori, E., Tauxe, L., Gogichaishvili, A., Urrutia-Fucugauchi, J., \&
-  Bohrson, W. (2009).
-\newblock Paleomagnetic behavior of volcanic rocks from isla socorro, mexico.
-\newblock {\em Earth Planets and Space}, (pp.\ in press).
-
-\bibitem[Shaar et~al., 2011]{shaar11}
-Shaar, R., Ben~Yosef, E., Ron, H., Tauxe, L., Agnon, A., \& Kessel, R. (2011).
-\newblock Geomagnetic field intensity: How high can it get? how fast can it
-  change? constraints from iron-age copper-slag.
-\newblock {\em Earth and Planetary Science Letters}, 301, 297--306.
 
 \bibitem[Shaar et~al., 2010]{shaar10}
 Shaar, R., Ron, H., Tauxe, L., Kessel, R., Agnon, A., Ben~Yosef, E., \&
@@ -2014,22 +1903,6 @@ Tauxe, L., Constable, C., Johnson, C., Miller, W., \& Staudigel, H. (2003).
   rocks.
 \newblock {\em Geochem., Geophys., Geosyst.}, (pp.\ DOI 10.1029/2002GC000343).
 
-\bibitem[Tauxe \& Hartl, 1997]{tauxe97}
-Tauxe, L. \& Hartl, P. (1997).
-\newblock 11 million years of oligocene geomagnetic field behaviour.
-\newblock {\em Geophys. J. Int.}, 128, 217--229.
-
-\bibitem[Tauxe \& Kent, 2004]{tauxe04d}
-Tauxe, L. \& Kent, D.~V. (2004).
-\newblock {\em A simplified statistical model for the geomagnetic field and the
-  detection of shallow bias in paleomagnetic inclinations: Was the ancient
-  magnetic field dipolar?}, volume 145, (pp.\ 101--116).
-\newblock American Geophysical Union: Washington, D.C.
-
-\bibitem[Tauxe et~al., 1991]{tauxe91}
-Tauxe, L., Kylstra, N., \& Constable, C. (1991).
-\newblock Bootstrap statistics for paleomagnetic data.
-\newblock {\em J. Geophys. Res}, 96, 11723--11740.
 
 \bibitem[Tauxe et~al., 2004]{tauxe04b}
 Tauxe, L., Luskin, C., Selkin, P., Gans, P.~B., \& Calvert, A. (2004).
@@ -2044,37 +1917,12 @@ Tauxe, L. \& Staudigel, H. (2004).
 \newblock {\em Geochem. Geophys. Geosyst.}, 5(2), Q02H06,
   doi:10.1029/2003GC000635.
 
-\bibitem[Tauxe et~al., 2012]{tauxe12}
-Tauxe, L., Stickley, C., Sugisaki, S., Bijl, P., Bohaty, S., Brinkhuis, H.,
-  Escutia, C., Flores, J.-A., Houben, A., Iwai, M., Jimenez-Espejo, F., McKay,
-  R., Passchier, S., Pross, J., Riesselman, C., Roehl, U., Sangiorgi, F.,
-  Welsh, K., Klaus, A., Fehr, J., Bendle, J., Dunbar, R., Gonzalez, S., Hayden,
-  T., Katsuki, K., Olney, M., Pekar, S., Shrivastava, P., van~de Flierdt, T.,
-  Williams, T., \& Yamane, M. (2012).
-\newblock Chronostratigraphic framework for the iodp expedition 318 cores from
-  the wilkes land margin: constraints for paleoceanographic reconstruction.
-\newblock {\em Paleoceanography}, 27, doi:10.1029/2012PA002308.
 
 \bibitem[Tauxe \& Watson, 1994]{tauxe94}
 Tauxe, L. \& Watson, G.~S. (1994).
 \newblock The fold test: an eigen analysis approach.
 \newblock {\em Earth Planet. Sci. Lett.}, 122, 331--341.
 
-\bibitem[Torsvik et~al., 2008]{torsvik08}
-Torsvik, T., M\"{u}ller, R., van~der Voo, R., Steinberger, B., \& Gaina, C.
-  (2008).
-\newblock Global plate montion frames: toward a unified model.
-\newblock {\em Rev. Geohys.}, 46, RG3004, doi:10.1029/2007RG000227.
-
-\bibitem[Vandamme, 1994]{vandamme94}
-Vandamme, D. (1994).
-\newblock A new method to determine paleosecular variation.
-\newblock {\em Phys. Earth Planet. Int.}, 85, 131--142.
-
-\bibitem[Watson, 1983]{watson83}
-Watson, G. (1983).
-\newblock Large sample theory of the langevin distributions.
-\newblock {\em J. Stat. Plann. Inference}, 8, 245--256.
 
 \end{thebibliography}
 
