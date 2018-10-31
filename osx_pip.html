@@ -7,7 +7,7 @@
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
 <!-- html,1,sections+ --> 
 <meta name="src" content="osx_pip.tex"> 
-<meta name="date" content="2018-10-16 11:32:00"> 
+<meta name="date" content="2018-10-31 13:53:00"> 
 <link rel="stylesheet" type="text/css" href="osx_pip.css"> 
 </head><body 
 >
@@ -67,16 +67,15 @@ href="https://earthref.org/PmagPy/cookbook/#command_line" >this  section</a>  fo
      information on finding your command line.
      </li>
      <li class="itemize">Download a few non-default Python packages. Run the following
-     commands:
+     command:
                                                                      
 
                                                                      
      <div class="verbatim" id="verbatim-1">
-     &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;conda&#x00A0;install&#x00A0;future&#x00A0;cartopy
+     &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;conda&#x00A0;install&#x00A0;future&#x00A0;cartopy&#x00A0;wxPython
      &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;pip&#x00A0;install&#x00A0;--upgrade&#x00A0;pip&#x00A0;setuptools
-     &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;pip&#x00A0;install&#x00A0;--upgrade&#x00A0;-f&#x00A0;https://wxpython.org/Phoenix/snapshot-builds/&#x00A0;wxPython
 </div>
-     <!--l. 24--><p class="nopar" >
+     <!--l. 23--><p class="nopar" >
      </li>
      <li class="itemize">When running these commands you may see some warnings about
      dependencies, but you can just ignore them!
@@ -88,10 +87,10 @@ class="cmtt-10x-x-109">--upgrade -f https://wxpython.org/Phoenix/snapshot-builds
      <span 
 class="cmtt-10x-x-109">wxPython</span>. You will then be asked for your computer password.
      </li></ul>
-<!--l. 31--><p class="noindent" >
+<!--l. 30--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.2   </span> <a 
 href="#QQ2-1-4" id="x1-40001.2">Test your python</a></h4>
-<!--l. 34--><p class="noindent" >To make sure that you have installed Python successfully, type <span 
+<!--l. 33--><p class="noindent" >To make sure that you have installed Python successfully, type <span 
 class="cmtt-10x-x-109">python </span>on your
 command line. You should see something like this:
                                                                      
@@ -103,8 +102,8 @@ command line. You should see something like this:
 &#x00A0;<br />Type&#x00A0;"help",&#x00A0;"copyright",&#x00A0;"credits"&#x00A0;or&#x00A0;"license"&#x00A0;for&#x00A0;more&#x00A0;information.
 &#x00A0;<br />&#x003E;&#x003E;&#x003E;
 </div>
-<!--l. 39--><p class="nopar" > (Press control-D to exit)
-<!--l. 42--><p class="noindent" >
+<!--l. 38--><p class="nopar" > (Press control-D to exit)
+<!--l. 41--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.3   </span> <a 
 href="#QQ2-1-5" id="x1-50001.3">Install PmagPy</a></h4>
      <ul class="itemize1">
@@ -116,7 +115,7 @@ href="#QQ2-1-5" id="x1-50001.3">Install PmagPy</a></h4>
      &#x00A0;<br />&#x00A0;&#x00A0;pip&#x00A0;install&#x00A0;--upgrade&#x00A0;pmagpy&#x00A0;--no-deps
      &#x00A0;<br />&#x00A0;&#x00A0;pip&#x00A0;install&#x00A0;--upgrade&#x00A0;pmagpy-cli&#x00A0;--no-deps
 </div>
-     <!--l. 51--><p class="nopar" >
+     <!--l. 50--><p class="nopar" >
      </li>
      <li class="itemize">If you are getting weird install errors, try uninstalling and then force
      reinstalling with this:
@@ -129,12 +128,12 @@ href="#QQ2-1-5" id="x1-50001.3">Install PmagPy</a></h4>
      &#x00A0;<br />&#x00A0;&#x00A0;pip&#x00A0;install&#x00A0;pmagpy-cli&#x00A0;--upgrade&#x00A0;--no-deps&#x00A0;--force-reinstall&#x00A0;--no-cache-dir
      &#x00A0;<br />
 </div>
-     <!--l. 59--><p class="nopar" >
+     <!--l. 58--><p class="nopar" >
      </li></ul>
-<!--l. 63--><p class="noindent" >
+<!--l. 62--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.4   </span> <a 
 href="#QQ2-1-6" id="x1-60001.4">Test PmagPy</a></h4>
-<!--l. 65--><p class="noindent" >Test core functionality:
+<!--l. 64--><p class="noindent" >Test core functionality:
      <ul class="itemize1">
      <li class="itemize">On your command line, type &#8220;python&#8221; to start the interpreter. You will
      import pmagpy and then run a simple calculation. Importing pmagpy
@@ -149,9 +148,9 @@ href="#QQ2-1-6" id="x1-60001.4">Test PmagPy</a></h4>
      &#x00A0;<br />array([30.59060998])
      &#x00A0;<br />&#x003E;&#x003E;&#x003E;
 </div>
-     <!--l. 75--><p class="nopar" >
+     <!--l. 74--><p class="nopar" >
      </li></ul>
-<!--l. 79--><p class="indent" >   Test the GUIs:
+<!--l. 78--><p class="indent" >   Test the GUIs:
      <ul class="itemize1">
      <li class="itemize">On the command line, open Pmag GUI by running:
                                                                      
@@ -160,19 +159,19 @@ href="#QQ2-1-6" id="x1-60001.4">Test PmagPy</a></h4>
      <div class="verbatim" id="verbatim-6">
      pmag_gui_anaconda
 </div>
-     <!--l. 86--><p class="nopar" >
+     <!--l. 85--><p class="nopar" >
      </li></ul>
-<!--l. 90--><p class="indent" >   If any of these commands don&#8217;t work, go back and carefully follow the install
+<!--l. 89--><p class="indent" >   If any of these commands don&#8217;t work, go back and carefully follow the install
 instructions. If you still have a problem, try the <a 
 href="https://earthref.org/PmagPy/cookbook/#trouble" >Troubleshooting section</a>. If you
 don&#8217;t find an answer there, check out the existing <a 
 href="https://github.com/PmagPy/PmagPy/issues" >Github issues</a> and create a new
 one if necessary.
-<!--l. 93--><p class="noindent" >
+<!--l. 92--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.5   </span> <a 
 href="#QQ2-1-7" id="x1-70001.5">Finishing up</a></h4>
-<!--l. 95--><p class="noindent" >Accessing example data files:
-<!--l. 97--><p class="indent" >   There are many data files used in the examples of programs and for use with
+<!--l. 94--><p class="noindent" >Accessing example data files:
+<!--l. 96--><p class="indent" >   There are many data files used in the examples of programs and for use with
 the textbook <a 
 href="http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3.html" >Essentials of Paleomagnetism</a>. You may want to copy the data files
 to your Desktop or another convenient location. To do this, navigate on the
@@ -185,14 +184,14 @@ section</a>). Then, use the command:
    <div class="verbatim" id="verbatim-7">
 &#x00A0;&#x00A0;move_data_files.py
 </div>
-<!--l. 102--><p class="nopar" >
-<!--l. 104--><p class="indent" >   This will copy all of the PmagPy example files to your current directory. NB:
+<!--l. 101--><p class="nopar" >
+<!--l. 103--><p class="indent" >   This will copy all of the PmagPy example files to your current directory. NB:
 If you have a developer install, you can simply navigate to PmagPy/data_files,
 and move_data_files.py will not be needed.
-<!--l. 107--><p class="noindent" >
+<!--l. 106--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.6   </span> <a 
 href="#QQ2-1-8" id="x1-80001.6">Keeping PmagPy up-to-date</a></h4>
-<!--l. 109--><p class="noindent" >To stay up to date with new features and bug fixes, you should periodically
+<!--l. 108--><p class="noindent" >To stay up to date with new features and bug fixes, you should periodically
 update both <span 
 class="cmbx-10x-x-109">PmagPy </span>packages.
                                                                      
@@ -201,8 +200,8 @@ class="cmbx-10x-x-109">PmagPy </span>packages.
    <div class="verbatim" id="verbatim-8">
 &#x00A0;<br />&#x00A0;&#x00A0;pip&#x00A0;install&#x00A0;pmagpy&#x00A0;--upgrade&#x00A0;--no-deps
 </div>
-<!--l. 113--><p class="nopar" >
-<!--l. 115--><p class="indent" >   To check the currently installed version number for pmagpy (or any other
+<!--l. 112--><p class="nopar" >
+<!--l. 114--><p class="indent" >   To check the currently installed version number for pmagpy (or any other
 Python package), run:
                                                                      
 
@@ -210,26 +209,26 @@ Python package), run:
    <div class="verbatim" id="verbatim-9">
 &#x00A0;&#x00A0;conda&#x00A0;list
 </div>
-<!--l. 118--><p class="nopar" >
-<!--l. 120--><p class="indent" >   If you ever need to uninstall pmagpy or pmagpy-cli:
+<!--l. 117--><p class="nopar" >
+<!--l. 119--><p class="indent" >   If you ever need to uninstall pmagpy or pmagpy-cli:
                                                                      
 
                                                                      
    <div class="verbatim" id="verbatim-10">
 &#x00A0;<br />&#x00A0;&#x00A0;pip&#x00A0;uninstall&#x00A0;pmagpy
 </div>
-<!--l. 125--><p class="nopar" > or
+<!--l. 124--><p class="nopar" > or
                                                                      
 
                                                                      
    <div class="verbatim" id="verbatim-11">
 &#x00A0;&#x00A0;pip&#x00A0;uninstall&#x00A0;pmagpy-cli
 </div>
-<!--l. 129--><p class="nopar" >
-<!--l. 131--><p class="noindent" >
+<!--l. 128--><p class="nopar" >
+<!--l. 130--><p class="noindent" >
    <h3 class="sectionHead"><span class="titlemark">2   </span> <a 
 href="#QQ2-1-9" id="x1-90002">Next steps</a></h3>
-<!--l. 133--><p class="noindent" >Back to the <a 
+<!--l. 132--><p class="noindent" >Back to the <a 
 href="https://earthref.org/PmagPy/cookbook/#next_steps" >Cookbook</a>!
     
 </body></html> 
