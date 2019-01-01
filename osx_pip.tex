@@ -18,13 +18,11 @@ First, you will need to download a scientific Python distribution.  We strongly 
    \item Open your command line (Terminal). See \href{https://earthref.org/PmagPy/cookbook/#command_line}{this section} for more information on finding your command line.
    \item Download a few non-default Python packages.  Run the following command: \begin{verbatim}
 
-    conda install future wxPython
-    conda install matplotlib=2.2.3
-    conda install cartopy --channel conda-forge
+    conda install future wxPython cartopy
     pip install --upgrade pip setuptools
 \end{verbatim}
    \item When running these commands you may see some warnings about dependencies, but you can just ignore them!
-\item If a package fails to install, you may need to use ``sudo'': i.e., \texttt{sudo pip install --upgrade -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython}.  You will then be asked for your computer password.
+\item If a package fails to install, you may need to use ``sudo'': i.e., \texttt{sudo pip install --upgrade pip setuptools}.  You will then be asked for your computer password.
 
   \end{itemize}
 
