@@ -3,18 +3,18 @@
 \doTocEntry\tocchapter{1}{\csname a:TocLink\endcsname{1}{x1-20001}{QQ2-1-2}{Installing {\bf  PmagPy}}}{3}\relax 
 \doTocEntry\tocsection{1.1}{\csname a:TocLink\endcsname{1}{x1-30001.1}{QQ2-1-3}{Standalone GUI download}}{3}\relax 
 \doTocEntry\tocsubsection{1.1.1}{\csname a:TocLink\endcsname{1}{x1-40001.1.1}{QQ2-1-4}{OSX Standalone download}}{3}\relax 
-\doTocEntry\tocsubsection{1.1.2}{\csname a:TocLink\endcsname{1}{x1-50001.1.2}{QQ2-1-5}{Windows Standalone download}}{4}\relax 
+\doTocEntry\tocsubsection{1.1.2}{\csname a:TocLink\endcsname{1}{x1-50001.1.2}{QQ2-1-5}{Windows Standalone download}}{3}\relax 
 \doTocEntry\tocsubsection{1.1.3}{\csname a:TocLink\endcsname{1}{x1-60001.1.3}{QQ2-1-6}{Linux Standalone download}}{4}\relax 
 \doTocEntry\tocsection{1.2}{\csname a:TocLink\endcsname{1}{x1-70001.2}{QQ2-1-7}{Full PmagPy install}}{4}\relax 
-\doTocEntry\tocsection{1.3}{\csname a:TocLink\endcsname{1}{x1-80001.3}{QQ2-1-8}{Install help}}{5}\relax 
-\doTocEntry\tocsubsection{1.3.1}{\csname a:TocLink\endcsname{1}{x1-90001.3.1}{QQ2-1-9}{Details of setting your PATH}}{5}\relax 
+\doTocEntry\tocsection{1.3}{\csname a:TocLink\endcsname{1}{x1-80001.3}{QQ2-1-8}{Install help}}{4}\relax 
+\doTocEntry\tocsubsection{1.3.1}{\csname a:TocLink\endcsname{1}{x1-90001.3.1}{QQ2-1-9}{Details of setting your PATH}}{4}\relax 
 \doTocEntry\tocsubsection{1.3.2}{\csname a:TocLink\endcsname{1}{x1-100001.3.2}{QQ2-1-10}{Common install problems}}{11}\relax 
 \doTocEntry\tocsubsection{1.3.3}{\csname a:TocLink\endcsname{1}{x1-110001.3.3}{QQ2-1-11}{OS-specific differences}}{13}\relax 
 \doTocEntry\tocsection{1.4}{\csname a:TocLink\endcsname{1}{x1-120001.4}{QQ2-1-12}{Quickstart with PmagPy notebooks}}{18}\relax 
 \doTocEntry\tocsection{1.5}{\csname a:TocLink\endcsname{1}{x1-130001.5}{QQ2-1-13}{Next steps}}{19}\relax 
 \doTocEntry\tocchapter{2}{\csname a:TocLink\endcsname{1}{x1-140002}{QQ2-1-14}{The {\bf  PmagPy} software package}}{21}\relax 
 \doTocEntry\tocsection{2.1}{\csname a:TocLink\endcsname{1}{x1-150002.1}{QQ2-1-15}{Using PmagPy}}{30}\relax 
-\doTocEntry\tocsection{2.2}{\csname a:TocLink\endcsname{1}{x1-160002.2}{QQ2-1-16}{Using PmagPy on the command line}}{31}\relax 
+\doTocEntry\tocsection{2.2}{\csname a:TocLink\endcsname{1}{x1-160002.2}{QQ2-1-16}{Using PmagPy on the command line}}{30}\relax 
 \doTocEntry\tocchapter{3}{\csname a:TocLink\endcsname{1}{x1-170003}{QQ2-1-17}{Pmag GUI Tutorial}}{33}\relax 
 \doTocEntry\tocsection{3.1}{\csname a:TocLink\endcsname{1}{x1-180003.1}{QQ2-1-18}{Converting magnetometer files to MagIC format}}{36}\relax 
 \doTocEntry\tocsection{3.2}{\csname a:TocLink\endcsname{1}{x1-190003.2}{QQ2-1-19}{Optional: Calculate geographic / tilt-corrected direction}}{45}\relax 
@@ -29,7 +29,7 @@
 \doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-280003.8.2}{QQ2-1-28}{Hysteresis file formats}}{73}\relax 
 \doTocEntry\tocchapter{4}{\csname a:TocLink\endcsname{1}{x1-290004}{QQ2-1-29}{MagIC GUI Tutorial}}{75}\relax 
 \doTocEntry\tocsection{4.1}{\csname a:TocLink\endcsname{1}{x1-300004.1}{QQ2-1-30}{Starting with MagIC GUI}}{75}\relax 
-\doTocEntry\tocsection{4.2}{\csname a:TocLink\endcsname{1}{x1-310004.2}{QQ2-1-31}{MagIC GUI example dataset}}{77}\relax 
+\doTocEntry\tocsection{4.2}{\csname a:TocLink\endcsname{1}{x1-310004.2}{QQ2-1-31}{MagIC GUI example dataset}}{76}\relax 
 \doTocEntry\tocchapter{5}{\csname a:TocLink\endcsname{1}{x1-320005}{QQ2-1-32}{Graphical data analysis programs}}{91}\relax 
 \doTocEntry\tocsection{5.1}{\csname a:TocLink\endcsname{1}{x1-330005.1}{QQ2-1-33}{demag\_gui.py}}{91}\relax 
 \doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-340005.1}{QQ2-1-34}{Launching}}{91}\relax 
@@ -40,7 +40,7 @@
 \doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-390005.1}{QQ2-1-39}{Plot Interface}}{97}\relax 
 \doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-400005.1}{QQ2-1-40}{Saving Specimen Interpretations}}{98}\relax 
 \doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-410005.1}{QQ2-1-41}{The .redo File:}}{98}\relax 
-\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-420005.1}{QQ2-1-42}{The Pmag Tables:}}{99}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-420005.1}{QQ2-1-42}{The MagIC Tables:}}{99}\relax 
 \doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-430005.1}{QQ2-1-43}{Images of Plots:}}{99}\relax 
 \doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-440005.1}{QQ2-1-44}{Flag Specimen Interpretations Good or Bad}}{99}\relax 
 \doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-450005.1}{QQ2-1-45}{Sample Orientation}}{100}\relax 
@@ -49,38 +49,38 @@
 \doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-480005.1}{QQ2-1-48}{List of Interpretations:}}{103}\relax 
 \doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-490005.1}{QQ2-1-49}{Buttons and Boxes:}}{103}\relax 
 \doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-500005.1}{QQ2-1-50}{Additional High Level Means Options:}}{104}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-510005.1}{QQ2-1-51}{VGP Viewer}}{105}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-510005.1}{QQ2-1-51}{VGP Viewer}}{104}\relax 
 \doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-520005.1}{QQ2-1-52}{Current Warnings Box}}{105}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-530005.1}{QQ2-1-53}{Additional Help}}{106}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-530005.1}{QQ2-1-53}{Additional Help}}{105}\relax 
 \doTocEntry\tocsection{5.2}{\csname a:TocLink\endcsname{1}{x1-540005.2}{QQ2-1-54}{thellier\_gui.py}}{106}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-550005.2}{QQ2-1-55}{Reading and compiling measurements data}}{109}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-560005.2}{QQ2-1-56}{Main panel}}{110}\relax 
-\doTocEntry\tocchapter{6}{\csname a:TocLink\endcsname{1}{x1-570006}{QQ2-1-57}{The MagIC database and file formats}}{115}\relax 
-\doTocEntry\tocsection{6.1}{\csname a:TocLink\endcsname{1}{x1-580006.1}{QQ2-1-58}{Structure of the database tables}}{115}\relax 
-\doTocEntry\tocsection{6.2}{\csname a:TocLink\endcsname{1}{x1-590006.2}{QQ2-1-59}{A word about method codes}}{116}\relax 
-\doTocEntry\tocsection{6.3}{\csname a:TocLink\endcsname{1}{x1-600006.3}{QQ2-1-60}{Uploading to MagIC}}{117}\relax 
-\doTocEntry\tocchapter{7}{\csname a:TocLink\endcsname{1}{x1-610007}{QQ2-1-61}{Survival computer skills}}{121}\relax 
-\doTocEntry\tocsection{7.1}{\csname a:TocLink\endcsname{1}{x1-620007.1}{QQ2-1-62}{Finding your command line}}{121}\relax 
-\doTocEntry\tocsection{7.2}{\csname a:TocLink\endcsname{1}{x1-630007.2}{QQ2-1-63}{File systems}}{123}\relax 
-\doTocEntry\tocsection{7.3}{\csname a:TocLink\endcsname{1}{x1-640007.3}{QQ2-1-64}{Moving around in the file system}}{124}\relax 
-\doTocEntry\tocsection{7.4}{\csname a:TocLink\endcsname{1}{x1-650007.4}{QQ2-1-65}{Redirecting input and output}}{126}\relax 
-\doTocEntry\tocsection{7.5}{\csname a:TocLink\endcsname{1}{x1-660007.5}{QQ2-1-66}{Text editors}}{126}\relax 
-\doTocEntry\tocchapter{8}{\csname a:TocLink\endcsname{1}{x1-670008}{QQ2-1-67}{Introduction to Python Programming}}{129}\relax 
-\doTocEntry\tocchapter{9}{\csname a:TocLink\endcsname{1}{x1-680009}{QQ2-1-68}{Jupyter Notebooks}}{131}\relax 
-\doTocEntry\tocchapter{10}{\csname a:TocLink\endcsname{1}{x1-6900010}{QQ2-1-69}{Troubleshooting}}{135}\relax 
-\doTocEntry\tocsection{10.1}{\csname a:TocLink\endcsname{1}{x1-7000010.1}{QQ2-1-70}{Problems with installing Python}}{135}\relax 
-\doTocEntry\tocsection{10.2}{\csname a:TocLink\endcsname{1}{x1-7100010.2}{QQ2-1-71}{wxPython is not installed}}{136}\relax 
-\doTocEntry\tocsection{10.3}{\csname a:TocLink\endcsname{1}{x1-7200010.3}{QQ2-1-72}{Troubleshooting a pip install}}{138}\relax 
-\doTocEntry\tocsection{10.4}{\csname a:TocLink\endcsname{1}{x1-7300010.4}{QQ2-1-73}{Troubleshooting a developer install}}{141}\relax 
-\doTocEntry\tocsubsection{10.4.1}{\csname a:TocLink\endcsname{1}{x1-7400010.4.1}{QQ2-1-74}{PATH for Windows}}{142}\relax 
-\doTocEntry\tocsubsection{10.4.2}{\csname a:TocLink\endcsname{1}{x1-7500010.4.2}{QQ2-1-75}{PATH for OSX or Linux}}{142}\relax 
-\doTocEntry\tocsection{10.5}{\csname a:TocLink\endcsname{1}{x1-7600010.5}{QQ2-1-76}{Languages other than English}}{143}\relax 
-\doTocEntry\tocsection{10.6}{\csname a:TocLink\endcsname{1}{x1-7700010.6}{QQ2-1-77}{Error loading dlls (Canopy Python/Windows only)}}{145}\relax 
-\doTocEntry\tocsection{10.7}{\csname a:TocLink\endcsname{1}{x1-7800010.7}{QQ2-1-78}{Problem with a PmagPy dependency}}{146}\relax 
-\doTocEntry\tocsection{10.8}{\csname a:TocLink\endcsname{1}{x1-7900010.8}{QQ2-1-79}{Problems with a specific program}}{146}\relax 
-\doTocEntry\tocsubsection{10.8.1}{\csname a:TocLink\endcsname{1}{x1-8000010.8.1}{QQ2-1-80}{Thellier auto\_interpreter crashes with a Segmentation Fault (on Mac).}}{146}\relax 
-\doTocEntry\tocsection{10.9}{\csname a:TocLink\endcsname{1}{x1-8100010.9}{QQ2-1-81}{Wrong Python in Jupyter notebook}}{147}\relax 
-\doTocEntry\tocsection{10.10}{\csname a:TocLink\endcsname{1}{x1-8200010.10}{QQ2-1-82}{Making maps (Basemap vs. cartopy)}}{149}\relax 
-\doTocEntry\tocsection{10.11}{\csname a:TocLink\endcsname{1}{x1-8300010.11}{QQ2-1-83}{Other problems}}{152}\relax 
-\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-8400010.11}{QQ2-1-84}{Bibliography}}{153}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-550005.2}{QQ2-1-55}{Reading and compiling measurements data}}{108}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-560005.2}{QQ2-1-56}{Main panel}}{109}\relax 
+\doTocEntry\tocchapter{6}{\csname a:TocLink\endcsname{1}{x1-570006}{QQ2-1-57}{The MagIC database and file formats}}{113}\relax 
+\doTocEntry\tocsection{6.1}{\csname a:TocLink\endcsname{1}{x1-580006.1}{QQ2-1-58}{Structure of the database tables}}{113}\relax 
+\doTocEntry\tocsection{6.2}{\csname a:TocLink\endcsname{1}{x1-590006.2}{QQ2-1-59}{A word about method codes}}{114}\relax 
+\doTocEntry\tocsection{6.3}{\csname a:TocLink\endcsname{1}{x1-600006.3}{QQ2-1-60}{Uploading to MagIC}}{115}\relax 
+\doTocEntry\tocchapter{7}{\csname a:TocLink\endcsname{1}{x1-610007}{QQ2-1-61}{Survival computer skills}}{117}\relax 
+\doTocEntry\tocsection{7.1}{\csname a:TocLink\endcsname{1}{x1-620007.1}{QQ2-1-62}{Finding your command line}}{117}\relax 
+\doTocEntry\tocsection{7.2}{\csname a:TocLink\endcsname{1}{x1-630007.2}{QQ2-1-63}{File systems}}{119}\relax 
+\doTocEntry\tocsection{7.3}{\csname a:TocLink\endcsname{1}{x1-640007.3}{QQ2-1-64}{Moving around in the file system}}{120}\relax 
+\doTocEntry\tocsection{7.4}{\csname a:TocLink\endcsname{1}{x1-650007.4}{QQ2-1-65}{Redirecting input and output}}{122}\relax 
+\doTocEntry\tocsection{7.5}{\csname a:TocLink\endcsname{1}{x1-660007.5}{QQ2-1-66}{Text editors}}{122}\relax 
+\doTocEntry\tocchapter{8}{\csname a:TocLink\endcsname{1}{x1-670008}{QQ2-1-67}{Introduction to Python Programming}}{125}\relax 
+\doTocEntry\tocchapter{9}{\csname a:TocLink\endcsname{1}{x1-680009}{QQ2-1-68}{Jupyter Notebooks}}{127}\relax 
+\doTocEntry\tocchapter{10}{\csname a:TocLink\endcsname{1}{x1-6900010}{QQ2-1-69}{Troubleshooting}}{131}\relax 
+\doTocEntry\tocsection{10.1}{\csname a:TocLink\endcsname{1}{x1-7000010.1}{QQ2-1-70}{Problems with installing Python}}{131}\relax 
+\doTocEntry\tocsection{10.2}{\csname a:TocLink\endcsname{1}{x1-7100010.2}{QQ2-1-71}{wxPython is not installed}}{132}\relax 
+\doTocEntry\tocsection{10.3}{\csname a:TocLink\endcsname{1}{x1-7200010.3}{QQ2-1-72}{Troubleshooting a pip install}}{134}\relax 
+\doTocEntry\tocsection{10.4}{\csname a:TocLink\endcsname{1}{x1-7300010.4}{QQ2-1-73}{Troubleshooting a developer install}}{137}\relax 
+\doTocEntry\tocsubsection{10.4.1}{\csname a:TocLink\endcsname{1}{x1-7400010.4.1}{QQ2-1-74}{PATH for Windows}}{138}\relax 
+\doTocEntry\tocsubsection{10.4.2}{\csname a:TocLink\endcsname{1}{x1-7500010.4.2}{QQ2-1-75}{PATH for OSX or Linux}}{138}\relax 
+\doTocEntry\tocsection{10.5}{\csname a:TocLink\endcsname{1}{x1-7600010.5}{QQ2-1-76}{Languages other than English}}{139}\relax 
+\doTocEntry\tocsection{10.6}{\csname a:TocLink\endcsname{1}{x1-7700010.6}{QQ2-1-77}{Error loading dlls (Canopy Python/Windows only)}}{141}\relax 
+\doTocEntry\tocsection{10.7}{\csname a:TocLink\endcsname{1}{x1-7800010.7}{QQ2-1-78}{Problem with a PmagPy dependency}}{142}\relax 
+\doTocEntry\tocsection{10.8}{\csname a:TocLink\endcsname{1}{x1-7900010.8}{QQ2-1-79}{Problems with a specific program}}{142}\relax 
+\doTocEntry\tocsubsection{10.8.1}{\csname a:TocLink\endcsname{1}{x1-8000010.8.1}{QQ2-1-80}{Thellier auto\_interpreter crashes with a Segmentation Fault (on Mac).}}{142}\relax 
+\doTocEntry\tocsection{10.9}{\csname a:TocLink\endcsname{1}{x1-8100010.9}{QQ2-1-81}{Wrong Python in Jupyter notebook}}{143}\relax 
+\doTocEntry\tocsection{10.10}{\csname a:TocLink\endcsname{1}{x1-8200010.10}{QQ2-1-82}{Making maps (Basemap vs. cartopy)}}{145}\relax 
+\doTocEntry\tocsection{10.11}{\csname a:TocLink\endcsname{1}{x1-8300010.11}{QQ2-1-83}{Other problems}}{148}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-8400010.11}{QQ2-1-84}{Bibliography}}{149}\relax 
 \par 
