@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  17 JAN 2019 14:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  6 FEB 2019 14:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7,8 +7,8 @@ de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
 {\g@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\
 documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
  tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{
-\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode html,1,sections+.a.b.c.\inp
-ut  PmagPy
+\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode xhtml,1,sections+,charset=u
+tf-8.a.b.c.\input  PmagPy
 (./PmagPy.tex (/usr/local/texlive/2015/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/bk11.clo
@@ -454,9 +454,6 @@ version 2008-10-27-17:23
 
 (./PmagPy.tmp)
 \tmp:dim=\skip45
---------------------------------------
---- Note --- for XML code, use the command line option `xml' or `xhtml'
---------------------------------------
  (./PmagPy.xref)
 \:refout=\write3
 \openout3 = `PmagPy.xref'.
@@ -500,10 +497,6 @@ version 2015-01-26-15:58
  line option `sec-filename'
 --------------------------------------
 --------------------------------------
---- Note --- for alternative charset, use the command line option `charset=...'
-
---------------------------------------
---------------------------------------
 --- Note --- to ignore CSS font decoration, use the `NoFonts' command line opti
 on
 --------------------------------------
@@ -528,7 +521,7 @@ option `frames-fn'
 --------------------------------------
 --- Note --- for file extension name xht, use the command line option `xht'
 --------------------------------------
-TeX4ht package options: html,1,sections+
+TeX4ht package options: xhtml,1,sections+,charset=utf-8,html
 --------------------------------------
 --- Note --- to ignore CSS code, use the command line option `-css
 --------------------------------------
@@ -899,20 +892,21 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
  --- Customlinks says: Link to section 1.1: PmagPy.html#sec1-1
  --- Customlinks says: Link to subsection 1.1.1: PmagPy.html#subsec1-1-1
  --- Customlinks says: Link to subsection 1.1.2: PmagPy.html#subsec1-1-2
- --- Customlinks says: Link to subsection 1.1.3: PmagPy.html#subsec1-1-3
 [3
 
 ]
+ --- Customlinks says: Link to subsection 1.1.3: PmagPy.html#subsec1-1-3
  --- Customlinks says: Custom link named 'full_install': PmagPy.html#full_insta
 ll 
  --- Customlinks says: Custom link named 'getting_python': PmagPy.html#getting_
 python 
  --- Customlinks says: Link to section 1.2: PmagPy.html#sec1-2
+[4]
  --- Customlinks says: Link to section 1.3: PmagPy.html#sec1-3
  --- Customlinks says: Custom link named 'setting_path': PmagPy.html#setting_pa
 th 
  --- Customlinks says: Link to subsection 1.3.1: PmagPy.html#subsec1-3-1
-[4] [5] [6] [7] [8] [9] [10]
+[5] [6] [7] [8] [9] [10]
  --- Customlinks says: Link to subsection 1.3.2: PmagPy.html#subsec1-3-2
 [11] [12]
  --- Customlinks says: Custom link named 'which_command': PmagPy.html#which_com
@@ -925,19 +919,21 @@ ebook_quickstart
 [18]
  --- Customlinks says: Custom link named 'next_steps': PmagPy.html#next_steps 
  --- Customlinks says: Link to section 1.5: PmagPy.html#sec1-5
+[19]
  --- Customlinks says: Custom link named 'PmagPy': PmagPy.html#PmagPy 
-[19] [20]
+[20]
 Chapter 2.
  --- Customlinks says: Link to chapter 2: PmagPy.html#ch2
 [21
 
 ] [22] [23] [24] [25] [26] [27] [28] [29]
  --- Customlinks says: Link to section 2.1: PmagPy.html#sec2-1
+[30]
  --- Customlinks says: Custom link named 'github': PmagPy.html#github 
  --- Customlinks says: Link to section 2.2: PmagPy.html#sec2-2
-[30]
+[31]
 \exnum=\count97
- [31]
+
  --- Customlinks says: Custom link named 'github': PmagPy.html#github 
  --- Customlinks says: Custom link named 'pmag_gui.py': PmagPy.html#pmag_gui.py
  
@@ -979,9 +975,10 @@ File: EPSFiles/FigCombineMagic.eps Graphic file (type eps)
 <EPSFiles/FigCombineMagic.eps> [43] [44]
  --- Customlinks says: Custom link named 'orient': PmagPy.html#orient 
  --- Customlinks says: Link to section 3.2: PmagPy.html#sec3-2
+[45]
 l. 614 Writing PmagPy.idv[9] (PmagPy8x.png)
 File: EPSFiles/FigDemagOrient.eps Graphic file (type eps)
-<EPSFiles/FigDemagOrient.eps> [45] [46]
+ <EPSFiles/FigDemagOrient.eps> [46]
 l. 626 Writing PmagPy.idv[10] (PmagPy9x.png)
 File: EPSFiles/FigOrientMagicCodes.eps Graphic file (type eps)
  <EPSFiles/FigOrientMagicCodes.eps>
@@ -1029,10 +1026,10 @@ wnload
 [61]
 l. 746 Writing PmagPy.idv[18] (PmagPy17x.png)
 File: EPSFiles/orient.eps Graphic file (type eps)
- <EPSFiles/orient.eps>
+ <EPSFiles/orient.eps> [62]
 l. 762 Writing PmagPy.idv[19] (PmagPy18x.png)
 File: EPSFiles/suncomp.eps Graphic file (type eps)
- <EPSFiles/suncomp.eps> [62]
+ <EPSFiles/suncomp.eps>
  --- Customlinks says: Custom link named 'orientation_schemes': PmagPy.html#ori
 entation_schemes 
 [63]
@@ -1065,9 +1062,9 @@ etometer_files
 [70] [71]
  --- Customlinks says: Custom link named 'anisotropy_files': PmagPy.html#anisot
 ropy_files 
+[72]
  --- Customlinks says: Custom link named 'Hysteresis_file_formats': PmagPy.html
 #Hysteresis_file_formats 
-[72]
  --- Customlinks says: Link to subsubsection 3.8.2.0: PmagPy.html#subsubsec3-8-
 2-0
  --- Customlinks says: Custom link named 'magic_gui.py': PmagPy.html#magic_gui.
@@ -1085,44 +1082,42 @@ File: EPSFiles/MM_main_frame.eps Graphic file (type eps)
 [76]
 l. 908 Writing PmagPy.idv[27] (PmagPy26x.png)
 File: EPSFiles/MM_location_grid_with_menu.eps Graphic file (type eps)
- <EPSFiles/MM_location_grid_with_menu.eps> [77]
+ <EPSFiles/MM_location_grid_with_menu.eps> [77] [78]
 l. 912 Writing PmagPy.idv[28] (PmagPy27x.png)
 File: EPSFiles/MM_add_location_headers.eps Graphic file (type eps)
 
-<EPSFiles/MM_add_location_headers.eps> [78] [79]
+<EPSFiles/MM_add_location_headers.eps> [79] [80]
 l. 919 Writing PmagPy.idv[29] (PmagPy28x.png)
 File: EPSFiles/MM_site_grid_with_edit_all.eps Graphic file (type eps)
 
-<EPSFiles/MM_site_grid_with_edit_all.eps> [80]
+<EPSFiles/MM_site_grid_with_edit_all.eps> [81]
 l. 924 Writing PmagPy.idv[30] (PmagPy29x.png)
 File: EPSFiles/MM_sample_grid.eps Graphic file (type eps)
  <EPSFiles/MM_sample_grid.eps>
-[81] [82]
+[82] [83]
 l. 930 Writing PmagPy.idv[31] (PmagPy30x.png)
 File: EPSFiles/MM_sample_grid_added_cols.eps Graphic file (type eps)
- <EPSFiles/MM_sample_grid_added_cols.eps> [83] [84]
+ <EPSFiles/MM_sample_grid_added_cols.eps> [84] [85]
 l. 934 Writing PmagPy.idv[32] (PmagPy31x.png)
 File: EPSFiles/MM_sample_grid_propagated_full.eps Graphic file (type eps)
 
-<EPSFiles/MM_sample_grid_propagated_full.eps> [85]
+<EPSFiles/MM_sample_grid_propagated_full.eps> [86]
 l. 940 Writing PmagPy.idv[33] (PmagPy32x.png)
 File: EPSFiles/MM_age_grid.eps Graphic file (type eps)
  <EPSFiles/MM_age_grid.eps>
 l. 946 Writing PmagPy.idv[34] (PmagPy33x.png)
 File: EPSFiles/MM_result_grid.eps Graphic file (type eps)
 
-<EPSFiles/MM_result_grid.eps> [86]
+<EPSFiles/MM_result_grid.eps> [87]
 l. 952 Writing PmagPy.idv[35] (PmagPy34x.png)
 File: EPSFiles/MM_validation_mainframe.eps Graphic file (type eps)
  <EPSFiles/MM_validation_mainframe.eps>
-[87] [88]
+[88] [89]
 l. 956 Writing PmagPy.idv[36] (PmagPy35x.png)
 File: EPSFiles/MM_filled_in_result_validation.eps Graphic file (type eps)
  <EPSFiles/MM_filled_in_result_validation.eps>
  --- Customlinks says: Custom link named 'MagIC.py': PmagPy.html#MagIC.py 
-[89] [90
-
-]
+[90]
 Chapter 5.
  --- Customlinks says: Link to chapter 5: PmagPy.html#ch5
  --- Customlinks says: Custom link named 'demag_gui.py': PmagPy.html#demag_gui.
@@ -1132,7 +1127,9 @@ py
 0-0
 l. 991 Writing PmagPy.idv[37] (PmagPy36x.png)
 File: EPSFiles/demag_gui_QuickMagicLauncher.eps Graphic file (type eps)
-<EPSFiles/demag_gui_QuickMagicLauncher.eps> [91] [92]
+<EPSFiles/demag_gui_QuickMagicLauncher.eps> [91
+
+] [92]
  --- Customlinks says: Link to subsubsection 5.1.0.0: PmagPy.html#subsubsec5-1-
 0-0
 l. 1008 Writing PmagPy.idv[38] (PmagPy37x.png)
@@ -1173,12 +1170,12 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 [98]
  --- Customlinks says: Link to subsubsection 5.1.0.0: PmagPy.html#subsubsec5-1-
 0-0
+[99]
  --- Customlinks says: Link to subsubsection 5.1.0.0: PmagPy.html#subsubsec5-1-
 0-0
-[99]
 l. 1077 Writing PmagPy.idv[44] (PmagPy43x.png)
 File: EPSFiles/demag_gui_CheckSampleOrient.eps Graphic file (type eps)
- <EPSFiles/demag_gui_CheckSampleOrient.eps> [100]
+<EPSFiles/demag_gui_CheckSampleOrient.eps> [100]
  --- Customlinks says: Link to subsubsection 5.1.0.0: PmagPy.html#subsubsec5-1-
 0-0
 l. 1084 Writing PmagPy.idv[45] (PmagPy44x.png)
@@ -1193,54 +1190,56 @@ File: EPSFiles/demag_gui_HLMTypes.eps Graphic file (type eps)
 [103]
 l. 1105 Writing PmagPy.idv[47] (PmagPy46x.png)
 File: EPSFiles/demag_gui_InterpEditor.eps Graphic file (type eps)
- <EPSFiles/demag_gui_InterpEditor.eps>
+ <EPSFiles/demag_gui_InterpEditor.eps> [104]
  --- Customlinks says: Link to subsubsection 5.1.0.0: PmagPy.html#subsubsec5-1-
 0-0
-[104]
 l. 1113 Writing PmagPy.idv[48] (PmagPy47x.png)
 File: EPSFiles/demag_gui_VGPViewer.eps Graphic file (type eps)
- <EPSFiles/demag_gui_VGPViewer.eps>
+<EPSFiles/demag_gui_VGPViewer.eps>
  --- Customlinks says: Link to subsubsection 5.1.0.0: PmagPy.html#subsubsec5-1-
 0-0
+[105]
  --- Customlinks says: Link to subsubsection 5.1.0.0: PmagPy.html#subsubsec5-1-
 0-0
 l. 1123 Writing PmagPy.idv[49] (PmagPy48x.png)
 File: EPSFiles/demag_gui_ContextHelp.eps Graphic file (type eps)
-<EPSFiles/demag_gui_ContextHelp.eps> [105]
+<EPSFiles/demag_gui_ContextHelp.eps>
  --- Customlinks says: Custom link named 'thellier_GUI.py': PmagPy.html#thellie
 r_GUI.py 
  --- Customlinks says: Link to section 5.2: PmagPy.html#sec5-2
-[106] [107]
+[106] [107] [108]
  --- Customlinks says: Custom link named 'choose_directory': PmagPy.html#choose
 _directory 
  --- Customlinks says: Link to subsubsection 5.2.0.0: PmagPy.html#subsubsec5-2-
 0-0
+[109]
  --- Customlinks says: Link to subsubsection 5.2.0.0: PmagPy.html#subsubsec5-2-
 0-0
-[108]
 l. 1170 Writing PmagPy.idv[50] (PmagPy49x.png)
 File: EPSFiles/Screenshot_main_panel.eps Graphic file (type eps)
- <EPSFiles/Screenshot_main_panel.eps> [109] [110] [111]
+<EPSFiles/Screenshot_main_panel.eps> [110] [111] [112]
  --- Customlinks says: Custom link named 'MagICDatabase': PmagPy.html#MagICData
 base 
-[112]
+[113] [114
+
+]
 Chapter 6.
  --- Customlinks says: Link to chapter 6: PmagPy.html#ch6
  --- Customlinks says: Custom link named 'Uploading': PmagPy.html#Uploading 
  --- Customlinks says: Custom link named 'DataTables': PmagPy.html#DataTables 
  --- Customlinks says: Link to section 6.1: PmagPy.html#sec6-1
-[113
-
-]
+[115]
  --- Customlinks says: Custom link named 'method_codes': PmagPy.html#method_cod
 es 
  --- Customlinks says: Link to section 6.2: PmagPy.html#sec6-2
-[114]
+[116]
  --- Customlinks says: Link to section 6.3: PmagPy.html#sec6-3
-[115]
+[117] [118]
  --- Customlinks says: Custom link named 'survival_skills': PmagPy.html#surviva
 l_skills 
-[116]
+[119] [120
+
+]
 Chapter 7.
  --- Customlinks says: Link to chapter 7: PmagPy.html#ch7
  --- Customlinks says: Custom link named 'command_line': PmagPy.html#command_li
@@ -1248,38 +1247,37 @@ ne
  --- Customlinks says: Link to section 7.1: PmagPy.html#sec7-1
 l. 1490 Writing PmagPy.idv[51] (PmagPy50x.png)
 File: EPSFiles/terminal.eps Graphic file (type eps)
-<EPSFiles/terminal.eps> [117
-
-]
+<EPSFiles/terminal.eps> [121]
 l. 1494 Writing PmagPy.idv[52] (PmagPy51x.png)
 File: EPSFiles/cmd.eps Graphic file (type eps)
- <EPSFiles/cmd.eps> [118]
+ <EPSFiles/cmd.eps> [122]
  --- Customlinks says: Link to section 7.2: PmagPy.html#sec7-2
 l. 1510 Writing PmagPy.idv[53] (PmagPy52x.png)
 File: EPSFiles/filesys.eps Graphic file (type eps)
-<EPSFiles/filesys.eps> [119]
+<EPSFiles/filesys.eps> [123]
  --- Customlinks says: Custom link named 'file_system': PmagPy.html#file_system
  
  --- Customlinks says: Link to section 7.3: PmagPy.html#sec7-3
  --- Customlinks says: Custom link named 'mkdir': PmagPy.html#mkdir 
-[120] [121]
+[124] [125]
  --- Customlinks says: Custom link named 'standard_IO': PmagPy.html#standard_IO
  
  --- Customlinks says: Link to section 7.4: PmagPy.html#sec7-4
  --- Customlinks says: Link to section 7.5: PmagPy.html#sec7-5
+[126]
  --- Customlinks says: Custom link named 'Python': PmagPy.html#Python 
-[122] [123] [124
+[127] [128
 
 ]
 Chapter 8.
  --- Customlinks says: Link to chapter 8: PmagPy.html#ch8
-[125] [126]
+[129] [130]
 Chapter 9.
  --- Customlinks says: Link to chapter 9: PmagPy.html#ch9
  --- Customlinks says: Custom link named 'Notebooks': PmagPy.html#Notebooks 
-[127
+[131
 
-] [128]
+] [132]
 l. 1637 Writing PmagPy.idv[54] (PmagPy53x.png)
 File: EPSFiles/notebook.eps Graphic file (type eps)
  <EPSFiles/notebook.eps>
@@ -1287,42 +1285,42 @@ File: EPSFiles/notebook.eps Graphic file (type eps)
 _start 
 l. 1646 Writing PmagPy.idv[55] (PmagPy54x.png)
 File: EPSFiles/SnakeRiver.eps Graphic file (type eps)
-<EPSFiles/SnakeRiver.eps> [129]
+<EPSFiles/SnakeRiver.eps> [133]
  --- Customlinks says: Custom link named 'trouble': PmagPy.html#trouble 
-[130]
+[134]
 Chapter 10.
  --- Customlinks says: Link to chapter 10: PmagPy.html#ch10
  --- Customlinks says: Link to section 10.1: PmagPy.html#sec10-1
-[131
+[135
 
 ]
  --- Customlinks says: Link to section 10.2: PmagPy.html#sec10-2
-[132] [133]
+[136] [137]
  --- Customlinks says: Link to section 10.3: PmagPy.html#sec10-3
-[134] [135] [136]
+[138] [139] [140]
  --- Customlinks says: Link to section 10.4: PmagPy.html#sec10-4
-[137]
+[141]
  --- Customlinks says: Link to subsection 10.4.1: PmagPy.html#subsec10-4-1
  --- Customlinks says: Link to subsection 10.4.2: PmagPy.html#subsec10-4-2
-[138]
+[142]
  --- Customlinks says: Link to section 10.5: PmagPy.html#sec10-5
-[139] [140]
+[143] [144]
  --- Customlinks says: Link to section 10.6: PmagPy.html#sec10-6
-[141]
+[145]
  --- Customlinks says: Link to section 10.7: PmagPy.html#sec10-7
  --- Customlinks says: Link to section 10.8: PmagPy.html#sec10-8
  --- Customlinks says: Link to subsection 10.8.1: PmagPy.html#subsec10-8-1
-[142]
+[146]
  --- Customlinks says: Link to section 10.9: PmagPy.html#sec10-9
-[143] [144]
+[147] [148]
  --- Customlinks says: Link to section 10.10: PmagPy.html#sec10-10
-[145] [146] [147]
+[149] [150] [151]
  --- Customlinks says: Link to section 10.11: PmagPy.html#sec10-11
-[148] [149
+[152] [153
 
-] [150]
+] [154]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1933.
- [151]
+ [155]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 1933.
  (./PmagPy.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1933.
@@ -1335,12 +1333,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1933.
 ### simple group (level 1) entered at line 42 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9919 strings out of 493090
- 136272 string characters out of 6134868
- 350104 words of memory out of 5000000
- 13130 multiletter control sequences out of 15000+600000
+ 9924 strings out of 493090
+ 136321 string characters out of 6134868
+ 345462 words of memory out of 5000000
+ 13135 multiletter control sequences out of 15000+600000
  15547 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,6n,32p,135870b,1500s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,6n,32p,135885b,1502s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on PmagPy.dvi (158 pages, 350536 bytes).
+Output written on PmagPy.dvi (162 pages, 358632 bytes).

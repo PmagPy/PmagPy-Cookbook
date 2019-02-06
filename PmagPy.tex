@@ -666,7 +666,7 @@ Next, click the [Demag GUI] button.  This is the main panel of the demag GUI:
 
 \includegraphics[width=30cm]{EPSFiles/demag_gui.eps}
 
-Use of the Demag GUI is described in more detail in the \href{#demag_gui.py}{Demag GUI} section below. Here are a few instructions that can be used as a quick start for using Demag GUI. {\bf Note}: If at any point you require help with a particular aspect of Demag GUI clicking on [Help] $\rightarrow$ [Usage and Tips] (hotkey: ctrl-h) then clicking on the item you wish to know more about will provide a pop-up box with information for most all aspects of the GUI and Interpretation Editor, see \hyperref[add-help]{additional help} for details.
+Use of the Demag GUI is described in more detail in the \href{#demag_gui.py}{Demag GUI} section below. Here are a few instructions that can be used as a quick start for using Demag GUI. {\bf Note}: If at any point you require help with a particular aspect of Demag GUI clicking on [Help] $\rightarrow$ [Usage and Tips] (hotkey: ctrl-h) then clicking on the item you wish to know more about will provide a pop-up box with information for most all aspects of the GUI and Interpretation Editor, see \hyperref[add-help]{additional help} for details.  (For Mac users, all hotkeys use the Command button instead of Ctrl.)
 
 Before you start your analysis, you can choose your coordinate system.  From the `coordinate system' drop-down menu you can choose the coordinate system in which you wish to view the data (e.g.  `geographic'). The coordinate system and the orientation of the projection can be switched throughout your analysis which updates the view of the data within the Zijderveld vector component plot and the equal area directional projections.
 
@@ -1003,7 +1003,7 @@ The best way to launch the Demag GUI application is through  \href{#pmag_gui.py}
 
 \subsubsection{Adding and Editing Specimen Interpretations:}\label{adding-interpretations}
 
-To add a new fit, click the `add fit' button (hotkey: ctrl-n).  If no fit has yet been created for the current specimen, you add a new fit by double clicking on two measurements in the list of measurements to the left, or by double clicking on the data points on the zijderveld plot.  You can manage multiple fits for the same specimen, switching between them using the drop-down-menu under the add fit button.  Once you have selected a fit, the shape of the end points of the selected fit will turn to diamond shapes on all plots to distinguish them from the other data points.  It is also possible to add interpretations in mass using the \hyperref[interpretation-editor]{interpretation editor} tool described below.
+To add a new fit, click the `add fit' button (hotkey: ctrl-n).  (For Mac users, all hotkeys use the Command button instead of Ctrl.)  If no fit has yet been created for the current specimen, you add a new fit by double clicking on two measurements in the list of measurements to the left, or by double clicking on the data points on the zijderveld plot.  You can manage multiple fits for the same specimen, switching between them using the drop-down-menu under the add fit button.  Once you have selected a fit, the shape of the end points of the selected fit will turn to diamond shapes on all plots to distinguish them from the other data points.  It is also possible to add interpretations in mass using the \hyperref[interpretation-editor]{interpretation editor} tool described below.
 
 \includegraphics[width=10 cm]{EPSFiles/demag_gui_Fit.eps}
 
@@ -1011,14 +1011,14 @@ To add a new fit, click the `add fit' button (hotkey: ctrl-n).  If no fit has ye
 
 \includegraphics[width=3 cm]{EPSFiles/demag_gui_BoundsBox.eps}
 
-\noindent Another way to edit bounds is to double-click the list of measurement steps in the list on the left. The included steps in the currently selected interpretation are shown in highlighted in blue on the measurement list and the measurements marked ``bad'' are shown in highlighted in red. In the case of duplicate measurements, the first \emph{good} measurement with the same treatment is used as a bound. All points between the selected bounds that are flagged good (i.e. not flagged bad and marked in red), including duplicate measurements, will be included in the interpreted fit.\\
+\noindent Another way to edit bounds is to double-click the list of measurement steps in the list on the left. The included steps in the currently selected interpretation are highlighted blue on the measurement list and the measurements marked ``bad'' are highlighted red. Bad measurements can be marked and unmarked by right clicking on them (this change takes a moment to appear, see more details below).  In the case of duplicate measurements, the first \emph{good} measurement with the same treatment is used as a bound. All points between the selected bounds that are flagged good (i.e. not flagged bad and marked in red), including duplicate measurements, will be included in the interpreted fit.\\
 
 \includegraphics[width=5 cm]{EPSFiles/demag_gui_DataBox.eps}
 
 \noindent Finally, you can select the bounds of an interpretation directly off the Zijderveld plot by hovering your mouse over a measurement (should change to a hand shape) and double clicking.\\
 
 \noindent When first created, the fit will be given a generic name such as
-\emph{Fit 1}. The name of the fit can be changed from the default by typing into the drop-down box containing fit name. The default fit type is a least-squares line. You can choose different fits, such as a line anchored to the origin or a plane, by using the drop-down menu under the label `interpretation type'. Plane fits can be plotted as either poles, full planes, partial planes, best fit vectors, or best fit vectors and full plane ({\bf Note:} plane poles will be displayed as squares and best fit vectors will display as sideways triangles on \hyperref[higher-level-plots-and-interpretation]{high level mean plot}). This display option can be changed in the second drop-down menu under interpretation type.\\
+\emph{Fit 1}. The name of the fit can be changed from the default by typing into the drop-down box containing fit name. The default fit type is a least-squares line. You can choose different fits, such as a line anchored to the origin or a plane, by using the drop-down menu in the `Interpretation Type' box. Plane fits can be plotted as either poles, full planes, partial planes, best fit vectors, or best fit vectors and full plane ({\bf Note:} plane poles will be displayed as squares and best fit vectors will display as sideways triangles on \hyperref[higher-level-plots-and-interpretation]{high level mean plot}). This display option can be changed in the second drop-down menu in the `Interpretation Type' box.\\
 
 \includegraphics[width=10 cm]{EPSFiles/demag_gui_SpecimenMeanType.eps}
 
@@ -1029,7 +1029,7 @@ To add a new fit, click the `add fit' button (hotkey: ctrl-n).  If no fit has ye
 \subsubsection{Deleting Specimen
 Interpretations}\label{deleting-specimen-interpretations}
 
-\noindent If you would like to delete a single interpretation, select the one you wish to delete from the interpretation drop-down menu and click `delete'. If you wish to clear all interpretations you may go into the \hyperref[interpretation-editor]{interpretation editor} located under the tools menu, select the fits you wish to delete and click the ``delete selected'' button.\\
+\noindent If you would like to delete a single interpretation, select the one you wish to delete from the interpretation drop-down menu and click `delete fit'. If you wish to clear all interpretations you may go into the \hyperref[interpretation-editor]{interpretation editor} located under the tools menu, select the fits you wish to delete and click the ``delete selected'' button.\\
 
 \subsubsection{Changing Specimen, Coordinate System, and Zijderveld Direction:}\label{change-specimen-coord-zijd}
 
