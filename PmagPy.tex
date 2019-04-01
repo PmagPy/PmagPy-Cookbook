@@ -172,15 +172,24 @@ where *** is your username.  (Of course, these lines will depend on exactly wher
     export PATH=/Users/***/PmagPy/programs
 \end{verbatim}
 
-For Windows, the same variables are set but in your \href{https://www.java.com/en/download/help/path.xml}{Control Panel (Environment Variables)}.  To do this yourself, you would first add to your existing PATH variable or create a new PATH variable with the following values: \begin{verbatim}
-  \Users\***\Desktop\PmagPy\programs
+For Windows, \$PATH and \$PYTHONPATH will be set in your \href{https://www.java.com/en/download/help/path.xml}{Control Panel (Environment Variables)}.
+
+In Windows 10, this is done by opening Control Panel \verb|->| System and Security \verb|->| System \verb|->| Advanced system settings \verb|->| Environment Variables.  You can see details \href{https://www.java.com/en/download/help/path.xml}{here}.  Alternatively, just search for “environment variables” in the Windows 10 search bar select ``Edit the system environment variables''.
+
+To make the needed edits, you will first add to your existing PATH variable or create a new PATH variable with the following values: \begin{verbatim}
+  C:\Users\***\Desktop\PmagPy\programs\conversion_scripts
 \end{verbatim}
 and \begin{verbatim}
-  \Users\***\PmagPy\Desktop\programs\conversion_scripts
+  C:\Users\***\Desktop\PmagPy\programs\conversion_scripts
 \end{verbatim}
-Next, add to your existing PYTHONPATH variable or create a new PYTHONPATH variable with \begin{verbatim}
-  \Users\***\Desktop\PmagPy
+Next, add to your existing PYTHONPATH variable or create a new PYTHONPATH variable with: \begin{verbatim}
+  C:\Users\***\Desktop\PmagPy
 \end{verbatim}
+
+Important: you will need to modify the above paths based on *your* username and the location where *you* have put the PmagPy folder.  So, if my username is limatango and I put PmagPy in my Downloads folder, my path would read: \begin{verbatim}
+  C:\Users\limatango\Downloads\PmagPy
+\end{verbatim}
+and so on.
 
 \subsection{Common install problems}
 

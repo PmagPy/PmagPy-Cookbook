@@ -16,9 +16,9 @@ These are the install instructions for Windows/developer.  If this isn't your op
 First, you will need to download a scientific Python distribution.  We strongly recommend Anaconda.
 
    \begin{itemize}
-   \item Download and install \href{https://www.anaconda.com/download}{Anaconda Python 3}.  You should select ``Add Anaconda to my PATH environment variable'' in Advanced Installation Options (if available).  Otherwise, stick with the defaults.
+   \item Download and install \href{https://www.anaconda.com/download}{Anaconda Python 3}.  Select an install for “Just Me”, not for all users.  You should select ``Add Anaconda to my PATH environment variable'' in Advanced Installation Options (if available).  Otherwise, stick with the defaults.
    \item Open your command line (Command Prompt). See \href{https://earthref.org/PmagPy/cookbook/#command_line}{this Cookbook section} for more information on finding your command line.
-   \item Note: if you did not add Anaconda Python to your PATH as recommended above, you will open the ``Anaconda Prompt'' instead).
+   \item Note: if you did not add Anaconda Python to your PATH as recommended above, you will open the ``Anaconda Prompt'' instead.
    \item Download a few non-default Python packages.  Run the following commands: \begin{verbatim}
 
     conda install future wxPython cartopy pandas
@@ -36,11 +36,10 @@ First, you will need to download a scientific Python distribution.  We strongly 
 
 To make sure that you have installed Python successfully, type \texttt{python} on your command line.  You should see something like this: \begin{verbatim}
 
-Python 3.6.1 |Anaconda custom (x86_64)| (default, May 11 2017, 13:04:09)
-[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Python 3.6.4 |Anaconda custom (32-bit)| (default, Jan 16 2018, 10:21:59) [MSC v.1900 32 bit (Intel)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 >>>\end{verbatim}
-(Press control-D to exit)
+(Type ``quit()'' and then hit enter to end your python session)
 
 
 
@@ -69,39 +68,9 @@ Here are the steps to clone and install {\bf PmagPy}.
 \end{verbatim}
 
 
-\item Next, you need to add PmagPy to your PATH so that the PmagPy programs can be called from any directory. Try running:
+\item Next, you need to add PmagPy to your PATH so that the PmagPy programs can be called from any directory.  At present, you will have to do this manually.  This section of the Cookbook has the full instructions for \href{https://earthref.org/PmagPy/cookbook/#setting_path}{editing your PATH for PmagPy}.
 
-\begin{verbatim}
-
-  python dev_setup.py install
-\end{verbatim}
-
-
-\item  If you see an error message, that means that you will also need to specify the location of your Python installation.  To get your full path to python, you can run the following two commands (exactly as written!):
-
-\begin{verbatim}
-
-  cd \
-  dir python.exe /s /p
-\end{verbatim}
-
-This can take a while, so be patient.  You should get a result that looks something like this:
-
-\begin{verbatim}
-  C:\Users\USERNAME\AppData\Local\Continuum\Anaconda3
-\end{verbatim}
-
-Once you've done that, navigate back into your PmagPy directory and run dev\_setup.py again:
-
-\begin{verbatim}
-    python dev_setup.py install -p path_to_python
-\end{verbatim}
-
-where path\_to\_python is your specific Python result.
-
-\item Note: dev\_setup.py edits your \$PATH and \$PYTHONPATH variables.  If you need to set those variables by hand, see this section on \href{https://earthref.org/PmagPy/cookbook/#setting_path}{editing your PATH for PmagPy}.
-
-\item After completing the developer install, you will need to restart the Command Prompt.  After restarting, you should be able to use all {\bf PmagPy} functionality.  You will be able to stay up-to-date with {\bf PmagPy} development and make edits in {\bf PmagPy} code which will be immediately available in your system.
+\item After setting your PATH, you will need to restart the Command Prompt.  After restarting, you should be able to use all {\bf PmagPy} functionality.  You will be able to stay up-to-date with {\bf PmagPy} development and make edits in {\bf PmagPy} code which will be immediately available in your system.
 
 \end{itemize}
 
