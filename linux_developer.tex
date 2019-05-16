@@ -32,6 +32,15 @@ First, you will need to download a scientific Python distribution.  We strongly 
 
 Next, you need to install wxPython.
 
+Most recently (on Ubuntu 18.04.2), I've had success with simply running:
+
+\begin{verbatim}
+    conda install wxPython
+\end{verbatim}
+
+However, in the past this didn't work and still may not work for all Linux distributions.  Try the above command first, and if that fails, try working through the instructions below.
+
+
 \begin{itemize}
   \item The following is a list of wxPython dependencies for Ubuntu 16.04 (this list may be redundant or incomplete, depending on your specific OS):
 
@@ -180,7 +189,15 @@ pmag_gui.py
 
 \end{itemize}
 
-If any of these commands don't work, go back and carefully follow the install instructions.  If you still have a problem, try the \href{https://earthref.org/PmagPy/cookbook/#trouble}{Troubleshooting section}.  If you don't find an answer there, check out the existing \href{https://github.com/PmagPy/PmagPy/issues}{Github issues} and create a new one if necessary.
+If you get an error about ``pythonw'', you may need to link ``python'' to ``pythonw'' with the command:
+
+  \begin{verbatim}
+
+    ln -s ~/anaconda3/bin/python3 ~/anaconda3/bin/pythonw
+
+    \end{verbatim}
+
+If you get any other errors, or if any of the test commands don't work, go back and carefully follow the install instructions.  If you still have a problem, try the \href{https://earthref.org/PmagPy/cookbook/#trouble}{Troubleshooting section}.  If you don't find an answer there, check out the existing \href{https://github.com/PmagPy/PmagPy/issues}{Github issues} and create a new one if necessary.
 
 \subsection{Finishing up}
 
