@@ -10,7 +10,7 @@
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)" /> 
 <!-- xhtml,1,sections+,charset=utf-8,html --> 
 <meta name="src" content="PmagPy.tex" /> 
-<meta name="date" content="2019-11-06 11:08:00" /> 
+<meta name="date" content="2020-04-03 14:17:00" /> 
 <link rel="stylesheet" type="text/css" href="PmagPy.css" /> 
 </head><body 
 >
@@ -199,7 +199,7 @@ name="PmagPy0x.png" src="EPSFiles/logo.eps"
 <h2 class="titleHead">PmagPy Cookbook</h2>
 <div class="author" ></div><br />
 <div class="date" ><span 
-class="cmr-12">November 6, 2019</span></div>
+class="cmr-12">April 3, 2020</span></div>
                                                                      
 
                                                                      
@@ -230,7 +230,7 @@ Geosyst., 17, doi:10.1002/2016GC006307.</a>
    Lisa Tauxe and Lori Jonestrask
    <br />Scripps Institution of Oceanography
    <br />La Jolla, CA 92093
-   <br />November 6, 2019
+   <br />April 3, 2020
    <br /><a 
 href="http://magician.ucsd.edu/" class="url" ><span 
 class="cmtt-10x-x-109">http://magician.ucsd.edu/</span></a></div>
@@ -374,10 +374,13 @@ $PATH will point there:
     export PATH=/Users/***/PmagPy/programs
 </div>
 <!--l. 173--><p class="nopar" >
-</p><!--l. 175--><p class="indent" >   For Windows, $PATH and $PYTHONPATH will be set in your <a 
+</p><!--l. 175--><p class="indent" >   If you are using Z shell instead of bash (which is the new default for Mac
+starting with OSX Catalina), you will need to manually add the same $PATH
+and $PYTHONPATH lines to .zshrc instead of .bashrc.
+</p><!--l. 177--><p class="indent" >   For Windows, $PATH and $PYTHONPATH will be set in your <a 
 href="https://www.java.com/en/download/help/path.xml" >Control Panel
 (Environment Variables)</a>.
-</p><!--l. 177--><p class="indent" >   In Windows 10, this is done by opening Control Panel <span class="obeylines-h"><span class="verb"><span 
+</p><!--l. 179--><p class="indent" >   In Windows 10, this is done by opening Control Panel <span class="obeylines-h"><span class="verb"><span 
 class="cmtt-10x-x-109">-&#x003E;</span></span></span> System and
 Security <span class="obeylines-h"><span class="verb"><span 
 class="cmtt-10x-x-109">-&#x003E;</span></span></span> System <span class="obeylines-h"><span class="verb"><span 
@@ -387,7 +390,7 @@ You can see details <a
 href="https://www.java.com/en/download/help/path.xml" >here</a>. Alternatively, just search for “environment
 variables” in the Windows 10 search bar select “Edit the system environment
 variables”.
-</p><!--l. 179--><p class="indent" >   To make the needed edits, you will first add to your existing PATH variable
+</p><!--l. 181--><p class="indent" >   To make the needed edits, you will first add to your existing PATH variable
 or create a new PATH variable with the following values:
                                                                      
 
@@ -396,7 +399,7 @@ or create a new PATH variable with the following values:
    <div class="verbatim" id="verbatim-4">
   C:\Users\***\Desktop\PmagPy\programs\conversion_scripts
 </div>
-<!--l. 181--><p class="nopar" > and
+<!--l. 183--><p class="nopar" > and
                                                                      
 
                                                                      
@@ -404,7 +407,7 @@ or create a new PATH variable with the following values:
    <div class="verbatim" id="verbatim-5">
   C:\Users\***\Desktop\PmagPy\programs\conversion_scripts
 </div>
-<!--l. 184--><p class="nopar" > Next, add to your existing PYTHONPATH variable or create a new
+<!--l. 186--><p class="nopar" > Next, add to your existing PYTHONPATH variable or create a new
 PYTHONPATH variable with:
                                                                      
 
@@ -413,8 +416,8 @@ PYTHONPATH variable with:
    <div class="verbatim" id="verbatim-6">
   C:\Users\***\Desktop\PmagPy
 </div>
-<!--l. 187--><p class="nopar" >
-</p><!--l. 189--><p class="indent" >   Important: you will need to modify the above paths based on *your*
+<!--l. 189--><p class="nopar" >
+</p><!--l. 191--><p class="indent" >   Important: you will need to modify the above paths based on *your*
 username and the location where *you* have put the PmagPy folder. So, if my
 username is limatango and I put PmagPy in my Downloads folder, my path
 would read:
@@ -425,10 +428,10 @@ would read:
    <div class="verbatim" id="verbatim-7">
   C:\Users\limatango\Downloads\PmagPy
 </div>
-<!--l. 191--><p class="nopar" > and so on.
-</p><!--l. 194--><p class="noindent" >
+<!--l. 193--><p class="nopar" > and so on.
+</p><!--l. 196--><p class="noindent" >
 </p>
-<!--l. 194--><p class="indent" >   <a name='subsec1-3-2'></a></p><h4 class="subsectionHead"><span class="titlemark">1.3.2   </span> <a 
+<!--l. 196--><p class="indent" >   <a name='subsec1-3-2'></a></p><h4 class="subsectionHead"><span class="titlemark">1.3.2   </span> <a 
 href="#QQ2-1-10" id="x1-100001.3.2">Common install problems</a></h4>
      <ul class="itemize1">
      <li class="itemize">Make sure you have the correct version of Python. If you run the
@@ -442,8 +445,8 @@ href="#QQ2-1-10" id="x1-100001.3.2">Common install problems</a></h4>
       <br />Type &#x0022;help&#x0022;, &#x0022;copyright&#x0022;, &#x0022;credits&#x0022; or &#x0022;license&#x0022; for more information.
       <br />&#x003E;&#x003E;&#x003E;
 </div>
-     <!--l. 206--><p class="nopar" > (Press control-D to exit)
-     </p><!--l. 209--><p class="noindent" >If you have Python 2.7 or a non-Anaconda Python, you will need to go
+     <!--l. 208--><p class="nopar" > (Press control-D to exit)
+     </p><!--l. 211--><p class="noindent" >If you have Python 2.7 or a non-Anaconda Python, you will need to go
      back and install Anaconda Python. If you installed Canopy Python at any
      point, make sure you uninstall it first.
      </p></li>
@@ -466,16 +469,16 @@ class="cmbx-10x-x-109">PmagPy </span>package, go
       <br />
       <br />    
 </div>
-     <!--l. 219--><p class="nopar" >
+     <!--l. 221--><p class="nopar" >
 </p>
      </li></ul>
-<!--l. 223--><p class="noindent" >For more help, see the <a 
+<!--l. 225--><p class="noindent" >For more help, see the <a 
 href="#trouble" >troubleshooting section</a>.
-</p><!--l. 225--><p class="indent" >   <a name='which_command'></a>
+</p><!--l. 227--><p class="indent" >   <a name='which_command'></a>
 </p>
-<!--l. 226--><p class="indent" >   <a name='subsec1-3-3'></a></p><h4 class="subsectionHead"><span class="titlemark">1.3.3   </span> <a 
+<!--l. 228--><p class="indent" >   <a name='subsec1-3-3'></a></p><h4 class="subsectionHead"><span class="titlemark">1.3.3   </span> <a 
 href="#QQ2-1-11" id="x1-110001.3.3">OS-specific differences</a></h4>
-<!--l. 227--><p class="noindent" >We try to support all platforms, but there are some quirks that will affect
+<!--l. 229--><p class="noindent" >We try to support all platforms, but there are some quirks that will affect
 how you invoke <span 
 class="cmbx-10x-x-109">PmagPy </span>programs depending on your platform. For
 OSX users with a pip install, you will invoke the GUIs with a special
@@ -487,8 +490,8 @@ syntax:
    <div class="verbatim" id="verbatim-10">
   pmag_gui_anaconda
 </div>
-<!--l. 231--><p class="nopar" >
-</p><!--l. 233--><p class="indent" >   For all platforms with a developer install:
+<!--l. 233--><p class="nopar" >
+</p><!--l. 235--><p class="indent" >   For all platforms with a developer install:
                                                                      
 
                                                                      
@@ -496,8 +499,8 @@ syntax:
    <div class="verbatim" id="verbatim-11">
   pmag_gui.py
 </div>
-<!--l. 237--><p class="nopar" >
-</p><!--l. 239--><p class="indent" >   For Windows users with a pip install:
+<!--l. 239--><p class="nopar" >
+</p><!--l. 241--><p class="indent" >   For Windows users with a pip install:
                                                                      
 
                                                                      
@@ -505,8 +508,8 @@ syntax:
    <div class="verbatim" id="verbatim-12">
   pmag_gui
 </div>
-<!--l. 243--><p class="nopar" >
-</p><!--l. 246--><p class="indent" >   If you see an error message like this:
+<!--l. 245--><p class="nopar" >
+</p><!--l. 248--><p class="indent" >   If you see an error message like this:
                                                                      
 
                                                                      
@@ -516,9 +519,9 @@ syntax:
  <br />  Please run with a Framework build of python, and only when you are
  <br />  logged in on the main display of your Mac.
 </div>
-<!--l. 252--><p class="nopar" >
-</p><!--l. 254--><p class="indent" >   you need to use “pmag_gui_anaconda”
-</p><!--l. 256--><p class="indent" >   If you see an error message like this:
+<!--l. 254--><p class="nopar" >
+</p><!--l. 256--><p class="indent" >   you need to use “pmag_gui_anaconda”
+</p><!--l. 258--><p class="indent" >   If you see an error message like this:
                                                                      
 
                                                                      
@@ -526,16 +529,16 @@ syntax:
    <div class="verbatim" id="verbatim-14">
   -bash: pmag_gui: command not found
 </div>
-<!--l. 260--><p class="nopar" >
-</p><!--l. 262--><p class="indent" >   You are either using the wrong command for your operating system, or you
+<!--l. 262--><p class="nopar" >
+</p><!--l. 264--><p class="indent" >   You are either using the wrong command for your operating system, or you
 haven&#x2019;t fully installed <span 
 class="cmbx-10x-x-109">PmagPy</span>.
-</p><!--l. 264--><p class="indent" >   <a name='notebook_quickstart'></a>
-</p><!--l. 267--><p class="noindent" >
+</p><!--l. 266--><p class="indent" >   <a name='notebook_quickstart'></a>
+</p><!--l. 269--><p class="noindent" >
 </p>
-<!--l. 267--><p class="indent" >   <a name='sec1-4'></a></p><h3 class="sectionHead"><span class="titlemark">1.4   </span> <a 
+<!--l. 269--><p class="indent" >   <a name='sec1-4'></a></p><h3 class="sectionHead"><span class="titlemark">1.4   </span> <a 
 href="#QQ2-1-12" id="x1-120001.4">Quickstart with PmagPy notebooks</a></h3>
-<!--l. 269--><p class="noindent" >Once you have installed <span 
+<!--l. 271--><p class="noindent" >Once you have installed <span 
 class="cmbx-10x-x-109">PmagPy</span>, you may want to run the example notebooks.
 You can copy example data_files and launch the <span 
 class="cmbx-10x-x-109">PmagPy </span>notebooks from your
@@ -550,20 +553,20 @@ command line with the following:
  <br />    cd PmagPy-data
  <br />    jupyter notebook
 </div>
-<!--l. 276--><p class="nopar" >
-</p><!--l. 278--><p class="indent" >   The final command (<span 
+<!--l. 278--><p class="nopar" >
+</p><!--l. 280--><p class="indent" >   The final command (<span 
 class="cmbx-10x-x-109">jupyter notebook</span>) will open a browser window, and
 you can then click on the notebook you want to run (we recommend you start
 with PmagPy_introduction.ipynb).
-</p><!--l. 280--><p class="indent" >   **Note**: You only have to do the move_data_files.py command once after
+</p><!--l. 282--><p class="indent" >   **Note**: You only have to do the move_data_files.py command once after
 initial installion and then once after each update. You should make a copy of any
 notebook (see File menu) if you want to make any changes as each update will
 overwrite the standard notebooks.
-</p><!--l. 282--><p class="indent" >   <a name='next_steps'></a>
+</p><!--l. 284--><p class="indent" >   <a name='next_steps'></a>
 </p>
-<!--l. 283--><p class="indent" >   <a name='sec1-5'></a></p><h3 class="sectionHead"><span class="titlemark">1.5   </span> <a 
+<!--l. 285--><p class="indent" >   <a name='sec1-5'></a></p><h3 class="sectionHead"><span class="titlemark">1.5   </span> <a 
 href="#QQ2-1-13" id="x1-130001.5">Next steps</a></h3>
-<!--l. 285--><p class="noindent" >Where do you want to go from here?
+<!--l. 287--><p class="noindent" >Where do you want to go from here?
 </p>
      <ul class="itemize1">
      <li class="itemize"><a 
@@ -592,7 +595,7 @@ href="#Python" >Learn how to write your own programs in Python.</a>
      <li class="itemize"><a 
 href="#Notebooks" >Learn how to use Jupyter notebooks for managing your data analysis
      workflow.</a></li></ul>
-<!--l. 298--><p class="indent" >   <a name='PmagPy'></a>
+<!--l. 300--><p class="indent" >   <a name='PmagPy'></a>
                                                                      
 
                                                                      
@@ -600,7 +603,7 @@ href="#Notebooks" >Learn how to use Jupyter notebooks for managing your data ana
 
                                                                      
 </p>
-<!--l. 299--><p class="indent" >   <a name='ch2'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 2</span><br /><a 
+<!--l. 301--><p class="indent" >   <a name='ch2'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 2</span><br /><a 
 href="#QQ2-1-14" id="x1-140002">The <span 
 class="cmbx-10x-x-109">PmagPy </span>software package</a></h2>
    The <span 
@@ -609,13 +612,13 @@ paleomagnetists and rock magnetists. For installation, follow the instructions i
 the <a 
 href="#quick_start" >Installing PmagPy</a> Chapter in this cookbook. <br 
 class="newline" />
-<!--l. 304--><p class="indent" >   Some of the key programs for importing and interpreting paleomagnetic and
+<!--l. 306--><p class="indent" >   Some of the key programs for importing and interpreting paleomagnetic and
 rock magnetic data are packaged together in a program called <a 
 href="#pmag_gui.py" >Pmag
 GUI</a>.
-</p><!--l. 306--><p class="indent" >   Here is a list of what <span 
+</p><!--l. 308--><p class="indent" >   Here is a list of what <span 
 class="cmbx-10x-x-109">PmagPy </span>can do.
-</p><!--l. 309--><p class="indent" >   Calculations:
+</p><!--l. 311--><p class="indent" >   Calculations:
 </p>
      <ul class="itemize1">
      <li class="itemize"><a 
@@ -800,7 +803,7 @@ href="https://pmagpy.github.io/PmagPy_calculations.html#di_vgp" >di_vgp</a>)
 href="https://pmagpy.github.io/PmagPy_calculations.html#watsons_f" >watsons_f</a>  :  calculates  Watson&#x2019;s  F  statistic  for  testing  for  common
      mean
      </li></ul>
-<!--l. 407--><p class="indent" >   Plots:
+<!--l. 409--><p class="indent" >   Plots:
 </p>
                                                                      
 
@@ -940,7 +943,7 @@ href="https://pmagpy.github.io/PmagPy_plots_analysis.html#zeq" >zeq</a> and <a
 href="https://pmagpy.github.io/PmagPy_plots_analysis.html#zeq_magic" >zeq_magic</a> : makes quicky zijderveld plots for measurement
      data
      </li></ul>
-<!--l. 480--><p class="indent" >   Maps:
+<!--l. 482--><p class="indent" >   Maps:
 </p>
      <ul class="itemize1">
      <li class="itemize"><a 
@@ -965,7 +968,7 @@ href="https://pmagpy.github.io/PmagPy_plots_analysis.html#polemap_magic" >polema
 href="https://pmagpy.github.io/PmagPy_plots_analysis.html#vgpmap_magic" >vgpmap_magic</a>   :   reads   in   MagIC   formatted   file   with   virtual
      geomagnetic poles and plots them
      </li></ul>
-<!--l. 498--><p class="indent" >   Working with MagIC: </p>
+<!--l. 500--><p class="indent" >   Working with MagIC: </p>
      <ul class="itemize1">
      <li class="itemize"><a 
 href="https://pmagpy.github.io/PmagPy_MagIC.html#reading" MagIC files >reading MagIC files (magic_read)</a> : reading in MagIC formatted files
@@ -1101,7 +1104,7 @@ href="https://pmagpy.github.io/PmagPy_MagIC.html#azdip_magic" >azdip_magic</a> :
           file format
           </li></ul>
      </li></ul>
-<!--l. 582--><p class="indent" >   Other handy scripts:
+<!--l. 584--><p class="indent" >   Other handy scripts:
 </p>
                                                                      
 
@@ -1110,18 +1113,18 @@ href="https://pmagpy.github.io/PmagPy_MagIC.html#azdip_magic" >azdip_magic</a> :
      <li class="itemize"><a 
 href="https://pmagpy.github.io/PmagPy_MagIC.html#chartmaker" >chartmaker</a> : script for making chart to guide IZZI lab experim
      </li></ul>
-<!--l. 592--><p class="noindent" ><a name='sec2-1'></a></p><h3 class="sectionHead"><span class="titlemark">2.1   </span> <a 
+<!--l. 594--><p class="noindent" ><a name='sec2-1'></a></p><h3 class="sectionHead"><span class="titlemark">2.1   </span> <a 
 href="#QQ2-1-15" id="x1-150002.1">Using PmagPy</a></h3>
-<!--l. 594--><p class="noindent" >Much more information is available on each <span 
+<!--l. 596--><p class="noindent" >Much more information is available on each <span 
 class="cmbx-10x-x-109">PmagPy </span>program. To learn how to
 use <span 
 class="cmbx-10x-x-109">PmagPy </span>in a Python environment (i.e., a Juypyter notebook, the Python
 interpreter, or your own Python script), you have two options.
-</p><!--l. 596--><p class="indent" >   You can run an interactive <a 
+</p><!--l. 598--><p class="indent" >   You can run an interactive <a 
 href="https://mybinder.org/v2/gh/PmagPy/PmagPy-notebooks/master?filepath=PmagPy.ipynb" ><span 
 class="cmbx-10x-x-109">PmagPy </span>demo</a> here. Please be patient – it will
 take a few minutes to initialize.
-</p><!--l. 598--><p class="indent" >   You can view a static <a 
+</p><!--l. 600--><p class="indent" >   You can view a static <a 
 href="https://pmagpy.github.io/PmagPy_introduction.html" ><span 
 class="cmbx-10x-x-109">PmagPy </span>page</a> here. The data files used in the
 examples are located in the <span 
@@ -1131,22 +1134,22 @@ class="cmbx-10x-x-109">PmagPy</span>
 software distribution. If you need help finding the data_files, see the <a 
 href="#getting_python" >install
 instructions</a>.
-</p><!--l. 600--><p class="indent" >   Both the interactive demo and the static page contain a comprehensive
+</p><!--l. 602--><p class="indent" >   Both the interactive demo and the static page contain a comprehensive
 introduction to <span 
 class="cmbx-10x-x-109">PmagPy</span>.
-</p><!--l. 602--><p class="indent" >   You can also see the source code online at:
-</p><!--l. 604--><p class="indent" >   <a name='github'></a>
-</p><!--l. 606--><p class="indent" >   <a 
+</p><!--l. 604--><p class="indent" >   You can also see the source code online at:
+</p><!--l. 606--><p class="indent" >   <a name='github'></a>
+</p><!--l. 608--><p class="indent" >   <a 
 href="https://github.com/PmagPy/PmagPy" class="url" ><span 
 class="cmtt-10x-x-109">https://github.com/PmagPy/PmagPy</span></a>
-</p><!--l. 610--><p class="noindent" >
+</p><!--l. 612--><p class="noindent" >
 </p>
-<!--l. 610--><p class="indent" >   <a name='sec2-2'></a></p><h3 class="sectionHead"><span class="titlemark">2.2   </span> <a 
+<!--l. 612--><p class="indent" >   <a name='sec2-2'></a></p><h3 class="sectionHead"><span class="titlemark">2.2   </span> <a 
 href="#QQ2-1-16" id="x1-160002.2">Using PmagPy on the command line</a></h3>
-<!--l. 612--><p class="noindent" ><span 
+<!--l. 614--><p class="noindent" ><span 
 class="cmbx-10x-x-109">PmagPy </span>can also be used on the <a 
 href="#command_line" >command line</a>.
-</p><!--l. 615--><p class="indent" >   Here is a brief introduction to how the <span 
+</p><!--l. 617--><p class="indent" >   Here is a brief introduction to how the <span 
 class="cmbx-10x-x-109">PmagPy </span>command-line programs
 work. All <span 
 class="cmbx-10x-x-109">PmagPy </span>programs print a help message out if you type:
@@ -1187,10 +1190,10 @@ options:
      <li class="itemize">-fmt [svg,png,jpg] the default image format.
      </li>
      <li class="itemize">-sav saves the plots silently and quits the program</li></ul>
-<!--l. 635--><p class="indent" >   Depending on your operating system, you may need to use a different
+<!--l. 637--><p class="indent" >   Depending on your operating system, you may need to use a different
 command to invoke a command line program. See <a 
 href="#which_command" >this section</a> for details.
-</p><!--l. 637--><p class="indent" >   You can see examples for each program on the <a 
+</p><!--l. 639--><p class="indent" >   You can see examples for each program on the <a 
 href="http://pmagpy.github.io/PmagPy-cli.html" ><span 
 class="cmbx-10x-x-109">PmagPy-cli </span>page</a>. The data
 files used in the examples are located in the <span 
@@ -1200,28 +1203,28 @@ class="cmti-10x-x-109">_files </span>directory bundled with the
 class="cmbx-10x-x-109">PmagPy </span>software distribution. If you need help finding the data_files, see the
 <a 
 href="#getting_python" >install instructions</a>.
-</p><!--l. 639--><p class="indent" >   You can also see the source code online at:
-</p><!--l. 641--><p class="indent" >   <a name='github'></a>
-</p><!--l. 643--><p class="indent" >   <a 
+</p><!--l. 641--><p class="indent" >   You can also see the source code online at:
+</p><!--l. 643--><p class="indent" >   <a name='github'></a>
+</p><!--l. 645--><p class="indent" >   <a 
 href="https://github.com/PmagPy/PmagPy" class="url" ><span 
 class="cmtt-10x-x-109">https://github.com/PmagPy/PmagPy</span></a>
-</p><!--l. 647--><p class="indent" >   <a name='pmag_gui.py'></a>
+</p><!--l. 649--><p class="indent" >   <a name='pmag_gui.py'></a>
                                                                      
 
                                                                      
 </p>
-<!--l. 648--><p class="indent" >   <a name='ch3'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 3</span><br /><a 
+<!--l. 650--><p class="indent" >   <a name='ch3'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 3</span><br /><a 
 href="#QQ2-1-17" id="x1-170003">Pmag GUI Tutorial</a></h2>
    <span 
 class="cmbx-10x-x-109">Pmag GUI </span>is a Graphical User Interface (GUI) written by Lori Jonestrask
 and Ron Shaar that provides a quick path to the main <span 
 class="cmbx-10x-x-109">PmagPy </span>programs. The
 work flow is illustrated schematically here:
-<!--l. 653--><p class="indent" >   <img 
+<!--l. 655--><p class="indent" >   <img 
 src="PmagPy1x.png" alt="PIC" class="graphics" width="426.79134pt" height="320.09822pt"  /><!--tex4ht:graphics  
 name="PmagPy1x.png" src="EPSFiles/FigQkMagicFlow.eps"  
 -->
-</p><!--l. 655--><p class="indent" >   Note: <span 
+</p><!--l. 657--><p class="indent" >   Note: <span 
 class="cmbx-10x-x-109">Pmag GUI </span>is available for use with both 3.0 and 2.5 data. All
 new contributions should be built up using 3.0, but 2.5 may be used for
 legacy data sets and then later upgraded using the <a 
@@ -1234,7 +1237,7 @@ class="cmbx-10x-x-109">GUI</span>.
                                                                      
 
                                                                      
-</p><!--l. 657--><p class="indent" >   <img 
+</p><!--l. 659--><p class="indent" >   <img 
 src="PmagPy2x.png" alt="PIC" class="graphics" width="433.62pt" height="104.44173pt"  /><!--tex4ht:graphics  
 name="PmagPy2x.png" src="EPSFiles/PmagGUI_choose_data_model.eps"  
 -->
@@ -1243,7 +1246,7 @@ name="PmagPy2x.png" src="EPSFiles/PmagGUI_choose_data_model.eps"
   class="enumerate" id="x1-17002x1">Make sure you have followed all of the steps in the <a 
 href="#quick_start" >Installing PmagPy</a>
      section.
-     <!--l. 662--><p class="noindent" ><a name='Project_Directory'></a>
+     <!--l. 664--><p class="noindent" ><a name='Project_Directory'></a>
      </p></li>
      <li 
   class="enumerate" id="x1-17004x2">Open   your   command   prompt   and   start   <span 
@@ -1271,7 +1274,7 @@ class="cmti-10x-x-109">ThisProject</span>. This is where you will
      <div class="verbatim" id="verbatim-16">
        D:\MyPmagProjects
 </div>
-     <!--l. 667--><p class="nopar" > and put <span 
+     <!--l. 669--><p class="nopar" > and put <span 
 class="cmti-10x-x-109">ThisProject </span>there.
      </p></li>
      <li 
@@ -1287,7 +1290,7 @@ class="cmbx-10x-x-109">_files.py </span>to move the datafiles to an
      <div class="verbatim" id="verbatim-17">
       <br />  move_data_files.py -h
 </div>
-     <!--l. 678--><p class="nopar" > on the command line for help). In the <span 
+     <!--l. 680--><p class="nopar" > on the command line for help). In the <span 
 class="cmti-10x-x-109">PmagPy-data/data</span><span 
 class="cmti-10x-x-109">_files  </span>folder you
      will find a subfolder named <span 
@@ -1311,9 +1314,9 @@ href="#standalone" >standalone</a>), by double-clicking the Pmag GUI icon on you
   class="enumerate" id="x1-17012x6">If necessary, change directories by clicking on the “change directory”
      button and select your own <span 
 class="cmti-10x-x-109">ThisProject </span>directory.</li></ol>
-<!--l. 683--><p class="indent" >   <a name='convert2magic'></a>
+<!--l. 685--><p class="indent" >   <a name='convert2magic'></a>
 </p>
-<!--l. 685--><p class="noindent" ><a name='sec3-1'></a></p><h3 class="sectionHead"><span class="titlemark">3.1   </span> <a 
+<!--l. 687--><p class="noindent" ><a name='sec3-1'></a></p><h3 class="sectionHead"><span class="titlemark">3.1   </span> <a 
 href="#QQ2-1-18" id="x1-180003.1">Converting magnetometer files to MagIC format</a></h3>
      <ul class="itemize1">
      <li class="itemize"><span 
@@ -1322,11 +1325,11 @@ class="cmbx-10x-x-109">Pmag   GUI  </span>allows   for   converting   many   dif
 href="#magnetometer_files" >Supported Rock
      Magnetometer files</a>. In this example, we will use a ‘generic&#x2019; file format.
      An example of the generic file format is shown here:
-     <!--l. 691--><p class="noindent" ><img 
+     <!--l. 693--><p class="noindent" ><img 
 src="PmagPy3x.png" alt="PIC" class="graphics" width="853.58267pt" height="93.21864pt"  /><!--tex4ht:graphics  
 name="PmagPy3x.png" src="EPSFiles/FigGenericFormat.eps"  
 -->
-     </p><!--l. 693--><p class="noindent" >To learn what all the column headers mean look at the documentation
+     </p><!--l. 695--><p class="noindent" >To learn what all the column headers mean look at the documentation
      for <a 
 href="#generic_magic.py" >generic_magic.py</a>.
                                                                      
@@ -1350,7 +1353,7 @@ href="#Xtauxe04b">2004</a>).  There  is  also  a  file  with  sample
                                                                      
 
                                                                      
-     <!--l. 704--><p class="noindent" ><img 
+     <!--l. 706--><p class="noindent" ><img 
 src="PmagPy4x.png" alt="PIC" class="graphics" width="853.58267pt" height="591.46838pt"  /><!--tex4ht:graphics  
 name="PmagPy4x.png" src="EPSFiles/FigChooseFile.eps"  
 -->
@@ -1383,21 +1386,21 @@ href="#MagICDatabase" >EarthRef Location Name</a> for this project . For this pr
      is, but use the same location name every time you are asked for it,
      because it really ties your dataset together and is required within the
      data model.
-     <!--l. 718--><p class="noindent" >Your dialog boxes should look like this for the AF and thermal data:
+     <!--l. 720--><p class="noindent" >Your dialog boxes should look like this for the AF and thermal data:
                                                                      
 
                                                                      
-     </p><!--l. 720--><p class="noindent" ><img 
+     </p><!--l. 722--><p class="noindent" ><img 
 src="PmagPy5x.png" alt="PIC" class="graphics" width="853.58267pt" height="1103.96487pt"  /><!--tex4ht:graphics  
 name="PmagPy5x.png" src="EPSFiles/FigConvertGenericA.eps"  
 -->
-     </p><!--l. 722--><p class="noindent" >and like this for the paleointensity data. For paleointensity data, you
+     </p><!--l. 724--><p class="noindent" >and like this for the paleointensity data. For paleointensity data, you
      must  also  supply  the  lab  field  in  micro  tesla  (40)  and  orientation
      relative to sample&#x2019;s X direction: 0 -90.
                                                                      
 
                                                                      
-     </p><!--l. 724--><p class="noindent" ><img 
+     </p><!--l. 726--><p class="noindent" ><img 
 src="PmagPy6x.png" alt="PIC" class="graphics" width="853.58267pt" height="1112.50072pt"  /><!--tex4ht:graphics  
 name="PmagPy6x.png" src="EPSFiles/FigConvertGenericB.eps"  
 -->
@@ -1406,7 +1409,7 @@ name="PmagPy6x.png" src="EPSFiles/FigConvertGenericB.eps"
      your <a 
 href="#Project_Directory" ><span 
 class="cmti-10x-x-109">ThisProject</span></a> directory.
-     <!--l. 729--><p class="noindent" ><a name='Combine'></a>
+     <!--l. 731--><p class="noindent" ><a name='Combine'></a>
      </p></li>
      <li class="itemize">After converting all files to MagIC format, press the [Next Step] button
      in the ‘convert magnetometer files&#x2019; dialog box. All files with the .magic
@@ -1416,7 +1419,7 @@ class="cmti-10x-x-109">ThisProject</span></a> directory.
                                                                      
 
                                                                      
-     <!--l. 733--><p class="noindent" ><img 
+     <!--l. 735--><p class="noindent" ><img 
 src="PmagPy7x.png" alt="PIC" class="graphics" width="853.58267pt" height="720.8889pt"  /><!--tex4ht:graphics  
 name="PmagPy7x.png" src="EPSFiles/FigCombineMagic.eps"  
 -->
@@ -1429,10 +1432,10 @@ class="cmti-10x-x-109">ThisProject</span></a> directory.
      </li>
      <li class="itemize">In  the  next  dialog,  you  will  combine  specimen,  sample,  site,  and
      location files.</li></ul>
-<!--l. 740--><p class="noindent" ><a name='orient'></a>
-</p><!--l. 742--><p class="noindent" >
+<!--l. 742--><p class="noindent" ><a name='orient'></a>
+</p><!--l. 744--><p class="noindent" >
 </p>
-<!--l. 742--><p class="indent" >   <a name='sec3-2'></a></p><h3 class="sectionHead"><span class="titlemark">3.2   </span> <a 
+<!--l. 744--><p class="indent" >   <a name='sec3-2'></a></p><h3 class="sectionHead"><span class="titlemark">3.2   </span> <a 
 href="#QQ2-1-19" id="x1-190003.2">Optional: Calculate geographic / tilt-corrected direction</a></h3>
      <ul class="itemize1">
      <li class="itemize"><span 
@@ -1465,7 +1468,7 @@ class="cmsy-10x-x-109">→ </span>[Calculate sample orientations].
                                                                      
      </li>
      <li class="itemize">Fill in the [set orientation convention] dialog box like this:
-     <!--l. 752--><p class="noindent" ><img 
+     <!--l. 754--><p class="noindent" ><img 
 src="PmagPy8x.png" alt="PIC" class="graphics" width="711.3189pt" height="482.70967pt"  /><!--tex4ht:graphics  
 name="PmagPy8x.png" src="EPSFiles/FigDemagOrient.eps"  
 -->
@@ -1491,15 +1494,15 @@ name="PmagPy8x.png" src="EPSFiles/FigDemagOrient.eps"
                                                                      
 
                                                                      
-<!--l. 764--><p class="noindent" ><img 
+<!--l. 766--><p class="noindent" ><img 
 src="PmagPy9x.png" alt="PIC" class="graphics" width="426.79134pt" height="348.52484pt"  /><!--tex4ht:graphics  
 name="PmagPy9x.png" src="EPSFiles/FigOrientMagicCodes.eps"  
 -->
-</p><!--l. 766--><p class="noindent" >
+</p><!--l. 768--><p class="noindent" >
 </p>
-<!--l. 766--><p class="indent" >   <a name='sec3-3'></a></p><h3 class="sectionHead"><span class="titlemark">3.3   </span> <a 
+<!--l. 768--><p class="indent" >   <a name='sec3-3'></a></p><h3 class="sectionHead"><span class="titlemark">3.3   </span> <a 
 href="#QQ2-1-20" id="x1-200003.3">Filling in metadata</a></h3>
-<!--l. 768--><p class="noindent" >Filling in metadata is a critical part of building a MagIC Project Directory. The
+<!--l. 770--><p class="noindent" >Filling in metadata is a critical part of building a MagIC Project Directory. The
 data relevant to this example are arranged in five tables: specimens, samples,
 sites, locations, ages. To complete the data, click the button, and follow the
 directions in the help window in order:
@@ -1516,7 +1519,7 @@ directions in the help window in order:
                                                                      
 
                                                                      
-     <!--l. 773--><p class="noindent" ><img 
+     <!--l. 775--><p class="noindent" ><img 
 src="PmagPy10x.png" alt="PIC" class="graphics" width="853.58267pt" height="587.87552pt"  /><!--tex4ht:graphics  
 name="PmagPy10x.png" src="EPSFiles/FigErMagicStep0.eps"  
 -->
@@ -1547,7 +1550,7 @@ href="http://earthref.org/MAGIC/shortlists.htm" >controlled vocabularies</a>. Fo
                                                                      
 
                                                                      
-     <!--l. 779--><p class="noindent" ><img 
+     <!--l. 781--><p class="noindent" ><img 
 src="PmagPy11x.png" alt="PIC" class="graphics" width="711.3189pt" height="406.00375pt"  /><!--tex4ht:graphics  
 name="PmagPy11x.png" src="EPSFiles/FigErMagicStep1.eps"  
 -->
@@ -1559,7 +1562,7 @@ name="PmagPy11x.png" src="EPSFiles/FigErMagicStep1.eps"
                                                                      
 
                                                                      
-     <!--l. 783--><p class="noindent" ><img 
+     <!--l. 785--><p class="noindent" ><img 
 src="PmagPy12x.png" alt="PIC" class="graphics" width="569.05511pt" height="401.59631pt"  /><!--tex4ht:graphics  
 name="PmagPy12x.png" src="EPSFiles/FigErMagicStep2.eps"  
 -->
@@ -1579,7 +1582,7 @@ href="http://earthref.org/MAGIC/shortlists.htm" >controlled  vocabularies</a>  f
      this example, geologic˙classes=Extrusive:Igneous; lithologies=Basaltic
      Lava;  geologic˙types=Lava  Flow.  You  should  also  add  age  data:
      age=2.3, age˙unit=Ma.
-     <!--l. 787--><p class="noindent" ><img 
+     <!--l. 789--><p class="noindent" ><img 
 src="PmagPy13x.png" alt="PIC" class="graphics" width="910.48817pt" height="203.85185pt"  /><!--tex4ht:graphics  
 name="PmagPy13x.png" src="EPSFiles/FigErMagicStep3.eps"  
 -->
@@ -1594,7 +1597,7 @@ href="http://earthref.org/MAGIC/shortlists.htm" >controlled vocabularies</a> for
                                                                      
 
                                                                      
-     <!--l. 792--><p class="noindent" ><img 
+     <!--l. 794--><p class="noindent" ><img 
 src="PmagPy14x.png" alt="PIC" class="graphics" width="910.48817pt" height="258.86603pt"  /><!--tex4ht:graphics  
 name="PmagPy14x.png" src="EPSFiles/FigErMagicStep4.eps"  
 -->
@@ -1602,21 +1605,21 @@ name="PmagPy14x.png" src="EPSFiles/FigErMagicStep4.eps"
      <li class="itemize">Step 5: Add ages data. For this tutorial, you can skip this step (just
      press [Save and continue]).
      </li></ul>
-<!--l. 798--><p class="indent" >   <a name='DemagGUI'></a>
-</p><!--l. 800--><p class="noindent" >
+<!--l. 800--><p class="indent" >   <a name='DemagGUI'></a>
+</p><!--l. 802--><p class="noindent" >
 </p>
-<!--l. 800--><p class="indent" >   <a name='sec3-4'></a></p><h3 class="sectionHead"><span class="titlemark">3.4   </span> <a 
+<!--l. 802--><p class="indent" >   <a name='sec3-4'></a></p><h3 class="sectionHead"><span class="titlemark">3.4   </span> <a 
 href="#QQ2-1-21" id="x1-210003.4">Demag GUI quick start</a></h3>
-<!--l. 803--><p class="noindent" >Next, click the [Demag GUI] button. This is the main panel of the demag
+<!--l. 805--><p class="noindent" >Next, click the [Demag GUI] button. This is the main panel of the demag
 GUI:
                                                                      
 
                                                                      
-</p><!--l. 805--><p class="indent" >   <img 
+</p><!--l. 807--><p class="indent" >   <img 
 src="PmagPy15x.png" alt="PIC" class="graphics" width="853.58267pt" height="454.06908pt"  /><!--tex4ht:graphics  
 name="PmagPy15x.png" src="EPSFiles/demag_gui.eps"  
 -->
-</p><!--l. 807--><p class="indent" >   Use of the Demag GUI is described in more detail in the <a 
+</p><!--l. 809--><p class="indent" >   Use of the Demag GUI is described in more detail in the <a 
 href="#demag_gui.py" >Demag GUI</a> section
 below. Here are a few instructions that can be used as a quick start for using
 Demag GUI. <span 
@@ -1631,13 +1634,13 @@ information for most all aspects of the GUI and Interpretation Editor, see
 <a 
 href="#x1-530005.1">additional help</a> for details. (For Mac users, all hotkeys use the Command button
 instead of Ctrl.)
-</p><!--l. 809--><p class="indent" >   Before you start your analysis, you can choose your coordinate system. From
+</p><!--l. 811--><p class="indent" >   Before you start your analysis, you can choose your coordinate system. From
 the ‘coordinate system&#x2019; drop-down menu you can choose the coordinate system in
 which you wish to view the data (e.g. ‘geographic&#x2019;). The coordinate system and
 the orientation of the projection can be switched throughout your analysis which
 updates the view of the data within the Zijderveld vector component plot and
 the equal area directional projections.
-</p><!--l. 811--><p class="indent" >   To analyze the data in the example, follow these steps for each specimen:
+</p><!--l. 813--><p class="indent" >   To analyze the data in the example, follow these steps for each specimen:
 </p>
      <ul class="itemize1">
      <li class="itemize">Click  ‘add  a  fit&#x2019;  (hotkey:  ctrl-n)  and  choose  the  temperature/AF
@@ -1650,12 +1653,12 @@ the equal area directional projections.
      </li>
      <li class="itemize">Note:  each  fit  will  be  saved  in  memory  when  you  click  ‘next&#x2019;  or
      ‘previous&#x2019;. To disable this behavior, de-select auto-save.</li></ul>
-<!--l. 818--><p class="indent" >   To calculate Fisher mean for the site: choose from the ‘mean options&#x2019;
+<!--l. 820--><p class="indent" >   To calculate Fisher mean for the site: choose from the ‘mean options&#x2019;
 drop-down menus. First select: component=All, then select: mean=Fisher.
-</p><!--l. 820--><p class="indent" >   All of the fits can be viewed and modified using the Interpretation Editor
+</p><!--l. 822--><p class="indent" >   All of the fits can be viewed and modified using the Interpretation Editor
 which can be selected from the Tools menu in the top menubar. (hotkey:
 ctrl-e)
-</p><!--l. 822--><p class="indent" >   To permanently save all of the specimen interpretations, choose from the
+</p><!--l. 824--><p class="indent" >   To permanently save all of the specimen interpretations, choose from the
 menubar [File] <span 
 class="cmsy-10x-x-109">→ </span>[Save MagIC tables]. This saves all the interpretations in
 specimen/sample/site tables in your <a 
@@ -1664,7 +1667,7 @@ class="cmti-10x-x-109">ThisProject</span></a> directory. Fits that are saved
 this way will be loaded into demag_gui the next time it is launched.
 Click through the dialog boxes and fill out choices for generating MagIC
 results.
-</p><!--l. 824--><p class="indent" >   If you are partway through your analysis, you may want to save your place
+</p><!--l. 826--><p class="indent" >   If you are partway through your analysis, you may want to save your place
 without outputting to MagIC tables. To save temporary analysis data use [File]
 <span 
 class="cmsy-10x-x-109">→ </span>[Save interpretations to a redo file]. This saves all interpretation data to a redo
@@ -1675,24 +1678,24 @@ file which will not load immediately when the GUI starts, but preserves aestheti
 aspects of interpretations such as color as well as the specimen you were on when
 you saved to keep your place in analysis and allows rebooting of session without
 full export of MagIC tables.
-</p><!--l. 826--><p class="indent" >   Close the Demag GUI.
-</p><!--l. 829--><p class="indent" >   <a name='ThellierGUI'></a>
-</p><!--l. 831--><p class="noindent" >
+</p><!--l. 828--><p class="indent" >   Close the Demag GUI.
+</p><!--l. 831--><p class="indent" >   <a name='ThellierGUI'></a>
+</p><!--l. 833--><p class="noindent" >
 </p>
-<!--l. 831--><p class="indent" >   <a name='sec3-5'></a></p><h3 class="sectionHead"><span class="titlemark">3.5   </span> <a 
+<!--l. 833--><p class="indent" >   <a name='sec3-5'></a></p><h3 class="sectionHead"><span class="titlemark">3.5   </span> <a 
 href="#QQ2-1-22" id="x1-220003.5">Thellier GUI quick start</a></h3>
-<!--l. 832--><p class="noindent" >Next, click the [Thellier GUI] button. This is the main panel of the thellier
+<!--l. 834--><p class="noindent" >Next, click the [Thellier GUI] button. This is the main panel of the thellier
 GUI:
-</p><!--l. 834--><p class="indent" >   This image shows the main panel of <a 
+</p><!--l. 836--><p class="indent" >   This image shows the main panel of <a 
 href="#ThellierGUI" >Thellier GUI</a>:
                                                                      
 
                                                                      
-</p><!--l. 836--><p class="indent" >   <img 
+</p><!--l. 838--><p class="indent" >   <img 
 src="PmagPy16x.png" alt="PIC" class="graphics" width="853.58267pt" height="495.59233pt"  /><!--tex4ht:graphics  
 name="PmagPy16x.png" src="EPSFiles/FigThellierGui.eps"  
 -->
-</p><!--l. 838--><p class="indent" >   Use of the Thellier GUI is described in more detail in the <a 
+</p><!--l. 840--><p class="indent" >   Use of the Thellier GUI is described in more detail in the <a 
 href="#thellier_GUI.py" >Thellier GUI</a>
 section below and in this PDF document: <a 
 href="https://github.com/PmagPy/PmagPy-Cookbook/blob/gh-pages/thellier_GUI_full_manual.pdf" >Thellier GUI manual</a>. Here are
@@ -1701,7 +1704,7 @@ href="https://github.com/PmagPy/PmagPy-Cookbook/blob/gh-pages/thellier_GUI_full_
                                                                      
 a few instructions that can be used as a quick start for using Thellier
 GUI.
-</p><!--l. 840--><p class="indent" >   You can customize which selection criteria you need under Preferences =<span 
+</p><!--l. 842--><p class="indent" >   You can customize which selection criteria you need under Preferences =<span 
 class="cmmi-10x-x-109">&#x003E;</span>
 Specimen paleointensity statistics (from SPD list). This uses the <a 
 href="#Xpaterson14">Paterson
@@ -1711,29 +1714,29 @@ statistics under [Analysis] =<span
 class="cmmi-10x-x-109">&#x003E;</span>[Acceptance criteria] =<span 
 class="cmmi-10x-x-109">&#x003E; </span>[Change acceptance
 criteria].
-</p><!--l. 843--><p class="indent" >   The default of the program is to calculate sample means. To change it to site
+</p><!--l. 845--><p class="indent" >   The default of the program is to calculate sample means. To change it to site
 level mean, choose from the menubar: [Analysis] <span 
 class="cmsy-10x-x-109">→ </span>[Acceptance criteria] <span 
 class="cmsy-10x-x-109">→</span>
 [Change acceptance criteria]. Find the ‘average by sample/site&#x2019; dropdown menu
 in the third row and change it to [site]. Click OK. The site mean will appear in
 the sample/site results box (top right).
-</p><!--l. 845--><p class="indent" >   Then, to analyze the data, follow these steps for each specimen: </p>
+</p><!--l. 847--><p class="indent" >   Then, to analyze the data, follow these steps for each specimen: </p>
      <ul class="itemize1">
      <li class="itemize">Choose temperature bounds from the temperatures dropdown menus.
      </li>
      <li class="itemize">Click the ‘next&#x2019; button to analyze the next specimen.</li></ul>
-<!--l. 850--><p class="noindent" >Next, you will save these interpretations to a file. To do so, choose from the menubar
+<!--l. 852--><p class="noindent" >Next, you will save these interpretations to a file. To do so, choose from the menubar
 [File] <span 
 class="cmsy-10x-x-109">→ </span>[Save MagIC pmag tables]. This save all the interpretations in the
 specimens.txt file in your MagIC Project Directory. Close the Thellier
 GUI.
-</p><!--l. 854--><p class="indent" >   <a name='magic_upload'></a>
-</p><!--l. 856--><p class="noindent" >
+</p><!--l. 856--><p class="indent" >   <a name='magic_upload'></a>
+</p><!--l. 858--><p class="noindent" >
 </p>
-<!--l. 856--><p class="indent" >   <a name='sec3-6'></a></p><h3 class="sectionHead"><span class="titlemark">3.6   </span> <a 
+<!--l. 858--><p class="indent" >   <a name='sec3-6'></a></p><h3 class="sectionHead"><span class="titlemark">3.6   </span> <a 
 href="#QQ2-1-23" id="x1-230003.6">Upload to the database </a></h3>
-<!--l. 858--><p class="noindent" >To create a MagIC-format file for upload, you first click on the green <span 
+<!--l. 860--><p class="noindent" >To create a MagIC-format file for upload, you first click on the green <span 
 class="cmti-10x-x-109">Create</span>
 <span 
 class="cmti-10x-x-109">MagIC txt file for upload </span>button on the main page of <span 
@@ -1753,13 +1756,13 @@ available.
                                                                      
 
                                                                      
-</p><!--l. 861--><p class="indent" >   <a name='magic_download'></a>
-</p><!--l. 863--><p class="noindent" >
+</p><!--l. 863--><p class="indent" >   <a name='magic_download'></a>
+</p><!--l. 865--><p class="noindent" >
 </p>
-<!--l. 863--><p class="indent" >   <a name='sec3-7'></a></p><h3 class="sectionHead"><span class="titlemark">3.7   </span> <a 
+<!--l. 865--><p class="indent" >   <a name='sec3-7'></a></p><h3 class="sectionHead"><span class="titlemark">3.7   </span> <a 
 href="#QQ2-1-24" id="x1-240003.7">Downloading data from <span 
 class="cmbx-10x-x-109">MagIC</span></a></h3>
-<!--l. 865--><p class="noindent" >Data can be downloaded from the <span 
+<!--l. 867--><p class="noindent" >Data can be downloaded from the <span 
 class="cmbx-10x-x-109">MagIC </span>database and examined with
 <span 
 class="cmbx-10x-x-109">PmagPy </span>tools. The <a 
@@ -1768,9 +1771,9 @@ class="cmbx-10x-x-109">MagIC</span></a> search interface provides a rich variety
 filters available by clicking on the ‘Filter the MagIC Search Results&#x2019; text box. To
 locate data from a particular reference, simply substitute the digital object
 identifier (DOI) in your browser window:
-</p><!--l. 867--><p class="indent" >   <a 
+</p><!--l. 869--><p class="indent" >   <a 
 href="http://earthref.org/MAGIC/doi/10.1029/2003GC000661" >http://earthref.org/MAGIC/doi/10.1029/2003GC000661</a>
-</p><!--l. 869--><p class="noindent" >The above DOI will find the data for the paper by <a 
+</p><!--l. 871--><p class="noindent" >The above DOI will find the data for the paper by <a 
 href="#Xtauxe04b">Tauxe et al.</a> (<a 
 href="#Xtauxe04b">2004</a>). [This
 may fail in Safari; if so, use an alternative browser like Firefox or Chrome.] To
@@ -1779,16 +1782,16 @@ save a file to your downloads folder. To unpack this file after downloading it
 from the database, open <a 
 href="#pmag_gui.py" >Pmag GUI</a> and click “unpack downloaded txt
 file“.
-</p><!--l. 873--><p class="noindent" >
+</p><!--l. 875--><p class="noindent" >
 </p>
-<!--l. 873--><p class="indent" >   <a name='sec3-8'></a></p><h3 class="sectionHead"><span class="titlemark">3.8   </span> <a 
+<!--l. 875--><p class="indent" >   <a name='sec3-8'></a></p><h3 class="sectionHead"><span class="titlemark">3.8   </span> <a 
 href="#QQ2-1-25" id="x1-250003.8">Preparing for MagIC</a></h3>
-<!--l. 875--><p class="noindent" ><a name='field_info'></a>
-</p><!--l. 877--><p class="noindent" >
+<!--l. 877--><p class="noindent" ><a name='field_info'></a>
+</p><!--l. 879--><p class="noindent" >
 </p>
-<!--l. 877--><p class="indent" >   <a name='subsec3-8-1'></a></p><h4 class="subsectionHead"><span class="titlemark">3.8.1   </span> <a 
+<!--l. 879--><p class="indent" >   <a name='subsec3-8-1'></a></p><h4 class="subsectionHead"><span class="titlemark">3.8.1   </span> <a 
 href="#QQ2-1-26" id="x1-260003.8.1">Field and sampling information</a></h4>
-<!--l. 879--><p class="noindent" >There is an astounding number of different ways that paleomagnetists document
+<!--l. 881--><p class="noindent" >There is an astounding number of different ways that paleomagnetists document
 data in the field and in the lab. This variety is met with a large number of
 method codes that describe sampling and orientation procedures (see
 <a 
@@ -1805,7 +1808,7 @@ href="#pmag_gui.py" >Pmag
 
                                                                      
 GUI</a>.
-</p><!--l. 881--><p class="indent" >   <a 
+</p><!--l. 883--><p class="indent" >   <a 
 href="#pmag_gui.py" >Pmag GUI</a> supports two different ways of getting orientation and other
 sampling related information into a MagIC usable format. The first way is
 through <a 
@@ -1822,11 +1825,11 @@ class="cmti-10x-x-109">orient.txt </span>file should have all the information fo
 class="cmti-10x-x-109">sensu</span>
 <span 
 class="cmti-10x-x-109">MagIC</span>.
-</p><!--l. 884--><p class="indent" >   <img 
+</p><!--l. 886--><p class="indent" >   <img 
 src="PmagPy17x.png" alt="PIC" class="graphics" width="426.79134pt" height="82.65268pt"  /><!--tex4ht:graphics  
 name="PmagPy17x.png" src="EPSFiles/orient.eps"  
 -->
-</p><!--l. 886--><p class="indent" >   The next row has the names of the columns. The required columns are:
+</p><!--l. 888--><p class="indent" >   The next row has the names of the columns. The required columns are:
 sample_name, mag_azimuth, field_dip, date, lat, long, sample_lithology,
 sample_type, sample_class) but there are a number of other possible columns
 (e.g., Optional Fields in orient.txt formatted files are: [date, shadow_angle,
@@ -1836,19 +1839,19 @@ site_name, and site_description, GPS_Az]). Column names in brackets must be
 supplied together and the data for stratigraphic_height are in meters. Also note
 that if these are unoriented samples, just set mag_azimuth and field_dip to
 0.
-</p><!--l. 894--><p class="indent" >   It is handy to document the lithology, type and material classification
+</p><!--l. 896--><p class="indent" >   It is handy to document the lithology, type and material classification
 information required by MagIC. These are all controlled vocabularies listed at
 <a 
 href="http://earthref.org/MAGIC/shortlists.htm" class="url" ><span 
 class="cmtt-10x-x-109">http://earthref.org/MAGIC/shortlists.htm</span></a>. For archaeological materials, set
 the lithology to “Not Specified”.
-</p><!--l. 896--><p class="indent" >   Put in stratigraphic height, sun compass, differential GPS orientation
+</p><!--l. 898--><p class="indent" >   Put in stratigraphic height, sun compass, differential GPS orientation
 information under the appropriate column headings. You can also flag a
 particular sample orientation as suspect, by having a column &#x2019;sample_flag&#x2019;
 and setting it to either &#x2019;g&#x2019; for good or &#x2019;b&#x2019; for bad. Other options include
 documenting digital field photograph names and who was involved with the
 sampling.
-</p><!--l. 898--><p class="indent" >   For Sun Compass measurements, supply the shadow_angle, date and time.
+</p><!--l. 900--><p class="indent" >   For Sun Compass measurements, supply the shadow_angle, date and time.
 The date must be in mm/dd/yy format. If you enter the time in local time, be
                                                                      
 
@@ -1857,14 +1860,14 @@ sure you know the offset to Universal Time as you will have to supply that when
 you import the file. Also, only put data from one time zone in a single file. The
 shadow angle should follow the convention shown in this figure (from Tauxe et
 al., 2010):
-</p><!--l. 900--><p class="indent" >   <img 
+</p><!--l. 902--><p class="indent" >   <img 
 src="PmagPy18x.png" alt="PIC" class="graphics" width="426.79134pt" height="166.80984pt"  /><!--tex4ht:graphics  
 name="PmagPy18x.png" src="EPSFiles/suncomp.eps"  
 -->
-</p><!--l. 902--><p class="indent" >   <a name='orientation_schemes'></a>
-</p><!--l. 904--><p class="indent" >   <span 
+</p><!--l. 904--><p class="indent" >   <a name='orientation_schemes'></a>
+</p><!--l. 906--><p class="indent" >   <span 
 class="cmbx-10x-x-109">Supported sample orientation schemes:</span>
-</p><!--l. 906--><p class="indent" >   There are options for different orientation conventions (drill direction with
+</p><!--l. 908--><p class="indent" >   There are options for different orientation conventions (drill direction with
 the Pomeroy orientation device [drill azimuth and hade] is the default), different
 naming conventions and a choice of whether to automatically calculate the IGRF
 value for magnetic declination correction, supply your own or ignore the
@@ -1872,13 +1875,13 @@ correction. The program generates or updates <span
 class="cmti-10x-x-109">samples.txt </span>and <span 
 class="cmti-10x-x-109">sites.txt</span>
 files.
-</p><!--l. 909--><p class="indent" >   All images, for example outcrop photos are supplied as a separate zip file.
+</p><!--l. 911--><p class="indent" >   All images, for example outcrop photos are supplied as a separate zip file.
 image_name is the name of the picture you will import, image_look is the “look
 direction“ and image_photographer is the person who took the picture. This
 information will be put in a file named <span 
 class="cmti-10x-x-109">images.txt </span>and will ultimately be read
 into the images table.
-</p><!--l. 911--><p class="indent" >   Often, paleomagnetists note when a sample orientation is suspect in the field.
+</p><!--l. 913--><p class="indent" >   Often, paleomagnetists note when a sample orientation is suspect in the field.
 To indicate that a particular sample may have an uncertainty in its orientation
 that is greater than about 5<sup><span 
 class="cmsy-8">∘</span></sup>, enter SO-GT5 in the method_codes column and
@@ -1886,7 +1889,7 @@ any other special codes pertaining to a particular sample from the method codes
 table. Other general method codes can be entered later. Note that unlike date
 and sample_class, the method codes entered in orient.txt pertain only to the
 sample on the same line.
-</p><!--l. 913--><p class="indent" >   Samples are oriented in the field with a “field arrow“ and measured in the
+</p><!--l. 915--><p class="indent" >   Samples are oriented in the field with a “field arrow“ and measured in the
 laboratory with a “lab arrow“. The lab arrow is the positive X direction of the
                                                                      
 
@@ -1899,62 +1902,62 @@ in the orient.txt file) and dip (field_dip in orient.txt) to the azimuth
 and plunge of the laboratory arrow (sample_azimuth and sample_dip in
 samples.txt). The two angles, mag_azimuth and field_dip are explained
 below.
-</p><!--l. 916--><p class="noindent" >[1] Standard Pomeroy convention of azimuth and hade (degrees from vertical
+</p><!--l. 918--><p class="noindent" >[1] Standard Pomeroy convention of azimuth and hade (degrees from vertical
 down) of the drill direction (field arrow). sample_azimuth = mag_azimuth;
 sample_dip =-field_dip.
-</p><!--l. 918--><p class="noindent" ><img 
+</p><!--l. 920--><p class="noindent" ><img 
 src="PmagPy19x.png" alt="PIC" class="graphics" width="426.79134pt" height="297.9259pt"  /><!--tex4ht:graphics  
 name="PmagPy19x.png" src="EPSFiles/orcon_1.eps"  
 -->
-</p><!--l. 920--><p class="noindent" >2] Field arrow is the strike of the plane orthogonal to the drill direction, Field dip
+</p><!--l. 922--><p class="noindent" >2] Field arrow is the strike of the plane orthogonal to the drill direction, Field dip
 is the hade of the drill direction. Lab arrow azimuth = mag_azimuth-90<sup><span 
 class="cmsy-8">∘</span></sup>; Lab
 arrow dip = -field_dip
                                                                      
 
                                                                      
-</p><!--l. 922--><p class="noindent" ><img 
+</p><!--l. 924--><p class="noindent" ><img 
 src="PmagPy20x.png" alt="PIC" class="graphics" width="426.79134pt" height="345.22017pt"  /><!--tex4ht:graphics  
 name="PmagPy20x.png" src="EPSFiles/orcon_2.eps"  
 -->
-</p><!--l. 924--><p class="noindent" >[3] Lab arrow is the same as the drill direction; hade was measured in the field.
+</p><!--l. 926--><p class="noindent" >[3] Lab arrow is the same as the drill direction; hade was measured in the field.
 Lab arrow azimuth = mag_azimuth; Lab arrow dip = 90<sup><span 
 class="cmsy-8">∘</span></sup>-field_dip.
                                                                      
 
                                                                      
-</p><!--l. 926--><p class="noindent" ><img 
+</p><!--l. 928--><p class="noindent" ><img 
 src="PmagPy21x.png" alt="PIC" class="graphics" width="426.79134pt" height="318.63841pt"  /><!--tex4ht:graphics  
 name="PmagPy21x.png" src="EPSFiles/orcon_3.eps"  
 -->
-</p><!--l. 928--><p class="noindent" >[4] Lab arrow orientation same as mag_azimuth and field_dip.
+</p><!--l. 930--><p class="noindent" >[4] Lab arrow orientation same as mag_azimuth and field_dip.
                                                                      
 
                                                                      
-</p><!--l. 930--><p class="noindent" ><img 
+</p><!--l. 932--><p class="noindent" ><img 
 src="PmagPy22x.png" alt="PIC" class="graphics" width="426.79134pt" height="273.23135pt"  /><!--tex4ht:graphics  
 name="PmagPy22x.png" src="EPSFiles/orcon_4.eps"  
 -->
-</p><!--l. 932--><p class="noindent" >[5] Lab arrow azimuth is mag_azimuth and lab arrow dip is the field_dip-90<sup><span 
+</p><!--l. 934--><p class="noindent" >[5] Lab arrow azimuth is mag_azimuth and lab arrow dip is the field_dip-90<sup><span 
 class="cmsy-8">∘</span></sup>
                                                                      
 
                                                                      
-</p><!--l. 934--><p class="noindent" ><img 
+</p><!--l. 936--><p class="noindent" ><img 
 src="PmagPy23x.png" alt="PIC" class="graphics" width="426.79134pt" height="275.22574pt"  /><!--tex4ht:graphics  
 name="PmagPy23x.png" src="EPSFiles/orcon_5.eps"  
 -->
-</p><!--l. 937--><p class="noindent" >[6] Lab arrow azimuth is mag_azimuth-90<sup><span 
+</p><!--l. 939--><p class="noindent" >[6] Lab arrow azimuth is mag_azimuth-90<sup><span 
 class="cmsy-8">∘</span></sup>, Lab arrow dip is 90<sup><span 
 class="cmsy-8">∘</span></sup>-field_dip, i.e.,
 the field arrow was strike and dip of orthogonal face:
-</p><!--l. 939--><p class="noindent" ><img 
+</p><!--l. 941--><p class="noindent" ><img 
 src="PmagPy24x.png" alt="PIC" class="graphics" width="426.79134pt" height="181.26195pt"  /><!--tex4ht:graphics  
 name="PmagPy24x.png" src="EPSFiles/orcon_6.eps"  
 -->
-</p><!--l. 942--><p class="indent" >   <span 
+</p><!--l. 944--><p class="indent" >   <span 
 class="cmbx-10x-x-109">Structural correction conventions:</span>
-</p><!--l. 945--><p class="indent" >   Because of the ambiguity of strike and dip, the MagIC database uses the dip
+</p><!--l. 947--><p class="indent" >   Because of the ambiguity of strike and dip, the MagIC database uses the dip
                                                                      
 
                                                                      
@@ -1962,8 +1965,8 @@ direction and dip where dip is positive from 0 <span
 class="cmsy-10x-x-109">→ </span>180. Dips<span 
 class="cmmi-10x-x-109">&#x003E;</span>90 are overturned
 beds.
-</p><!--l. 948--><p class="indent" >   <a name='naming_schemes'></a>
-</p><!--l. 950--><p class="indent" >   <span 
+</p><!--l. 950--><p class="indent" >   <a name='naming_schemes'></a>
+</p><!--l. 952--><p class="indent" >   <span 
 class="cmbx-10x-x-109">Supported sample naming schemes:</span>
                                                                      
 
@@ -1980,17 +1983,17 @@ class="cmbx-10x-x-109">Supported sample naming schemes:</span>
  <br />            [6] site name entered in site_name column in the orient.txt format input file
  <br />            [7-Z] [XXX]YYY:  XXX is site designation with Z characters from samples  XXXYYY
 </div>
-<!--l. 962--><p class="nopar" >
-</p><!--l. 964--><p class="indent" >   When you are finished with editing the <span 
+<!--l. 964--><p class="nopar" >
+</p><!--l. 966--><p class="indent" >   When you are finished with editing the <span 
 class="cmti-10x-x-109">orient.txt </span>file, return to <a 
 href="#orient" >step 2 on the
 GUI front panel</a>.
-</p><!--l. 967--><p class="indent" >   <a name='magnetometer_files'></a>
-</p><!--l. 969--><p class="noindent" >
+</p><!--l. 969--><p class="indent" >   <a name='magnetometer_files'></a>
+</p><!--l. 971--><p class="noindent" >
 </p>
-<!--l. 969--><p class="indent" >   <a name='subsec3-8-2'></a></p><h4 class="subsectionHead"><span class="titlemark">3.8.2   </span> <a 
+<!--l. 971--><p class="indent" >   <a name='subsec3-8-2'></a></p><h4 class="subsectionHead"><span class="titlemark">3.8.2   </span> <a 
 href="#QQ2-1-27" id="x1-270003.8.2">Supported Rock Magnetometer files</a></h4>
-<!--l. 971--><p class="noindent" >The MagIC database is designed to accept data from a wide variety
+<!--l. 973--><p class="noindent" >The MagIC database is designed to accept data from a wide variety
 of paleomagnetic and rock magnetic experiments. Because of this the
 magic_measurements table is complicated. Each measurement only makes sense
 in the context of what happened to the specimen before measurement and under
@@ -2010,8 +2013,8 @@ you.
                                                                      
 
                                                                      
-</p><!--l. 974--><p class="indent" >   The supported file formats are:
-</p><!--l. 976--><p class="indent" >   <span 
+</p><!--l. 976--><p class="indent" >   The supported file formats are:
+</p><!--l. 978--><p class="indent" >   <span 
 class="cmbx-10x-x-109">Rock Magnetometer Files:</span>
 </p>
      <ul class="itemize1">
@@ -2086,8 +2089,8 @@ href="http://pmagpy.github.io/PmagPy_MagIC.html#orientation_magic" >orientation_
      <li class="itemize"><a 
 href="http://pmagpy.github.io/PmagPy_MagIC.html#azdip_magic" >azdip_magic</a> : convert an ”azdip” formatted file to a samples.txt file
      format</li></ul>
-<!--l. 1002--><p class="indent" >   <a name='anisotropy_files'></a>
-</p><!--l. 1004--><p class="indent" >   <span 
+<!--l. 1004--><p class="indent" >   <a name='anisotropy_files'></a>
+</p><!--l. 1006--><p class="indent" >   <span 
 class="cmbx-10x-x-109">Anisotropy of Magnetic Susceptibility files:</span>
 </p>
      <ul class="itemize1">
@@ -2108,12 +2111,12 @@ href="http://pmagpy.github.io/PmagPy_MagIC.html#k15_magic" >k15_magic</a>   :   
 href="http://pmagpy.github.io/PmagPy_MagIC.html#sufar4_magic" >sufar4_magic</a> : convert the AGICO SUFAR program (ver.1.2.) ascii
      file format to MagIC
      </li></ul>
-<!--l. 1014--><p class="indent" >   <a name='Hysteresis_file_formats'></a>
-</p><!--l. 1016--><p class="noindent" >
+<!--l. 1016--><p class="indent" >   <a name='Hysteresis_file_formats'></a>
+</p><!--l. 1018--><p class="noindent" >
 </p>
-<!--l. 1016--><p class="indent" >   <a name='subsubsec3-8-2-0'></a></p><h5 class="subsubsectionHead"><a 
+<!--l. 1018--><p class="indent" >   <a name='subsubsec3-8-2-0'></a></p><h5 class="subsubsectionHead"><a 
 href="#x1-280003.8.2" id="x1-280003.8.2">Hysteresis file formats</a></h5>
-<!--l. 1017--><p class="noindent" ><span 
+<!--l. 1019--><p class="noindent" ><span 
 class="cmbx-10x-x-109">Pmag GUI </span>will import hysteresis data from room temperature Micromag
 alternating gradient magnetometers (AGM) in several different ways.
 You can import either hysteresis loops or backfield curves, or you can
@@ -2122,21 +2125,21 @@ must be either .agm (.AGM) or .irm (.IRM) and the first part of the file
 must be the specimen name. See the documentation for <a 
 href="http://pmagpy.github.io/PmagPy_MagIC.html#agm_magic" >agm_magic</a> for
 examples.
-</p><!--l. 1021--><p class="indent" >   Now you&#x2019;ve collected together all the files you need, we can start importing
+</p><!--l. 1023--><p class="indent" >   Now you&#x2019;ve collected together all the files you need, we can start importing
 them into <span 
 class="cmti-10x-x-109">MagIC </span>directory with <a 
 href="#convert2magic" ><span 
 class="cmbx-10x-x-109">Step 1 in Pmag GUI</span></a>.
-</p><!--l. 1025--><p class="indent" >   <a name='magic_gui.py'></a>
+</p><!--l. 1027--><p class="indent" >   <a name='magic_gui.py'></a>
                                                                      
 
                                                                      
-</p><!--l. 1027--><p class="indent" >
+</p><!--l. 1029--><p class="indent" >
                                                                      
 
                                                                      
 </p>
-<!--l. 1027--><p class="indent" >   <a name='ch4'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 4</span><br /><a 
+<!--l. 1029--><p class="indent" >   <a name='ch4'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 4</span><br /><a 
 href="#QQ2-1-29" id="x1-290004">MagIC GUI Tutorial</a></h2>
    <span 
 class="cmbx-10x-x-109">MagIC GUI </span>is a Graphical User Interface written by Lori Jonestrask. It is
@@ -2165,9 +2168,9 @@ class="cmbx-10x-x-109">_gui.py</span>.
 The two programs do work almost identically, so the tutorial should
 still point you in the right direction even if you are working with 3.0
 data.
-<!--l. 1035--><p class="noindent" ><a name='sec4-1'></a></p><h3 class="sectionHead"><span class="titlemark">4.1   </span> <a 
+<!--l. 1037--><p class="noindent" ><a name='sec4-1'></a></p><h3 class="sectionHead"><span class="titlemark">4.1   </span> <a 
 href="#QQ2-1-30" id="x1-300004.1">Starting with MagIC GUI</a></h3>
-<!--l. 1036--><p class="noindent" >Start up MagIC GUI. You&#x2019;ll do this by clicking on the icon (if you downloaded
+<!--l. 1038--><p class="noindent" >Start up MagIC GUI. You&#x2019;ll do this by clicking on the icon (if you downloaded
 the <a 
 href="#standalone" >standalone</a> version) or entering ‘magic_gui.py&#x2019; on your <a 
 href="#command_line" >command
@@ -2175,7 +2178,7 @@ line</a> (if you downloaded the full PmagPy installation). If you are using
 Anaconda Python, you will type ‘magic_gui_anaconda&#x2019; on your <a 
 href="#command_line" >command line</a>
 instead.
-</p><!--l. 1038--><p class="indent" >   When you first start <span 
+</p><!--l. 1040--><p class="indent" >   When you first start <span 
 class="cmbx-10x-x-109">magic</span><span 
 class="cmbx-10x-x-109">_gui.py</span>, you will change directories into a
 ‘Project Directory&#x2019;. For each study, create a directory with a name that relates to
@@ -2192,18 +2195,18 @@ there.
                                                                      
 
                                                                      
-</p><!--l. 1040--><p class="indent" >   <img 
+</p><!--l. 1042--><p class="indent" >   <img 
 src="PmagPy25x.png" alt="PIC" class="graphics" width="711.3189pt" height="457.362pt"  /><!--tex4ht:graphics  
 name="PmagPy25x.png" src="EPSFiles/MM_main_frame.eps"  
 -->
-</p><!--l. 1042--><p class="noindent" >
+</p><!--l. 1044--><p class="noindent" >
 </p>
                                                                      
 
                                                                      
-<!--l. 1042--><p class="indent" >   <a name='sec4-2'></a></p><h3 class="sectionHead"><span class="titlemark">4.2   </span> <a 
+<!--l. 1044--><p class="indent" >   <a name='sec4-2'></a></p><h3 class="sectionHead"><span class="titlemark">4.2   </span> <a 
 href="#QQ2-1-31" id="x1-310004.2">MagIC GUI example dataset</a></h3>
-<!--l. 1043--><p class="noindent" >Now we&#x2019;ll walk through a simple data input process, with fake data.
+<!--l. 1045--><p class="noindent" >Now we&#x2019;ll walk through a simple data input process, with fake data.
 </p>
      <ul class="itemize1">
      <li class="itemize">Start by clicking on ‘1. add location data&#x2019;. Enter location data as seen
@@ -2234,7 +2237,7 @@ name="PmagPy26x.png" src="EPSFiles/MM_location_grid_with_menu.eps"
                                                                      
 
                                                                      
-     <!--l. 1050--><p class="noindent" ><img 
+     <!--l. 1052--><p class="noindent" ><img 
 src="PmagPy27x.png" alt="PIC" class="graphics" width="426.79134pt" height="572.8416pt"  /><!--tex4ht:graphics  
 name="PmagPy27x.png" src="EPSFiles/MM_add_location_headers.eps"  
 -->
@@ -2259,7 +2262,7 @@ name="PmagPy27x.png" src="EPSFiles/MM_add_location_headers.eps"
                                                                      
 
                                                                      
-     <!--l. 1057--><p class="noindent" ><img 
+     <!--l. 1059--><p class="noindent" ><img 
 src="PmagPy28x.png" alt="PIC" class="graphics" width="1138.11023pt" height="298.44669pt"  /><!--tex4ht:graphics  
 name="PmagPy28x.png" src="EPSFiles/MM_site_grid_with_edit_all.eps"  
 -->
@@ -2269,11 +2272,11 @@ name="PmagPy28x.png" src="EPSFiles/MM_site_grid_with_edit_all.eps"
                                                                      
 
                                                                      
-     <!--l. 1062--><p class="noindent" ><img 
+     <!--l. 1064--><p class="noindent" ><img 
 src="PmagPy29x.png" alt="PIC" class="graphics" width="1138.11023pt" height="366.41362pt"  /><!--tex4ht:graphics  
 name="PmagPy29x.png" src="EPSFiles/MM_sample_grid.eps"  
 -->
-     </p><!--l. 1064--><p class="noindent" >All other required data will fill in automatically. If you don&#x2019;t provide
+     </p><!--l. 1066--><p class="noindent" >All other required data will fill in automatically. If you don&#x2019;t provide
      latitude and longitude data for a sample, it will propagate down from
      the site after you save and close the grid.
      </p></li>
@@ -2294,7 +2297,7 @@ name="PmagPy29x.png" src="EPSFiles/MM_sample_grid.eps"
                                                                      
 
                                                                      
-     <!--l. 1068--><p class="noindent" ><img 
+     <!--l. 1070--><p class="noindent" ><img 
 src="PmagPy30x.png" alt="PIC" class="graphics" width="1422.63779pt" height="549.2242pt"  /><!--tex4ht:graphics  
 name="PmagPy30x.png" src="EPSFiles/MM_sample_grid_added_cols.eps"  
 -->
@@ -2302,7 +2305,7 @@ name="PmagPy30x.png" src="EPSFiles/MM_sample_grid_added_cols.eps"
      <li class="itemize">Save and close the sample grid, then re-open it to see how the data
      have propagated (re-opening the grid isn&#x2019;t necessary for the program,
      this is just for you to see what MagIC GUI does automatically).
-     <!--l. 1072--><p class="noindent" ><img 
+     <!--l. 1074--><p class="noindent" ><img 
 src="PmagPy31x.png" alt="PIC" class="graphics" width="1422.63779pt" height="320.7369pt"  /><!--tex4ht:graphics  
 name="PmagPy31x.png" src="EPSFiles/MM_sample_grid_propagated_full.eps"  
 -->
@@ -2318,7 +2321,7 @@ name="PmagPy31x.png" src="EPSFiles/MM_sample_grid_propagated_full.eps"
 
                                                                      
      ‘age&#x2019; column. Fill in the grid as below:
-     <!--l. 1078--><p class="noindent" ><img 
+     <!--l. 1080--><p class="noindent" ><img 
 src="PmagPy32x.png" alt="PIC" class="graphics" width="711.3189pt" height="333.60963pt"  /><!--tex4ht:graphics  
 name="PmagPy32x.png" src="EPSFiles/MM_age_grid.eps"  
 -->
@@ -2333,7 +2336,7 @@ name="PmagPy32x.png" src="EPSFiles/MM_age_grid.eps"
                                                                      
 
                                                                      
-     <!--l. 1084--><p class="noindent" ><img 
+     <!--l. 1086--><p class="noindent" ><img 
 src="PmagPy33x.png" alt="PIC" class="graphics" width="1280.37401pt" height="285.61362pt"  /><!--tex4ht:graphics  
 name="PmagPy33x.png" src="EPSFiles/MM_result_grid.eps"  
 -->
@@ -2355,17 +2358,17 @@ name="PmagPy33x.png" src="EPSFiles/MM_result_grid.eps"
                                                                      
 
                                                                      
-     <!--l. 1090--><p class="noindent" ><img 
+     <!--l. 1092--><p class="noindent" ><img 
 src="PmagPy34x.png" alt="PIC" class="graphics" width="711.3189pt" height="504.22287pt"  /><!--tex4ht:graphics  
 name="PmagPy34x.png" src="EPSFiles/MM_validation_mainframe.eps"  
 -->
-     </p><!--l. 1092--><p class="noindent" >Open  the  result  grid  to  fix  the  error.  Click  ‘Show  help&#x2019;  for  more
+     </p><!--l. 1094--><p class="noindent" >Open  the  result  grid  to  fix  the  error.  Click  ‘Show  help&#x2019;  for  more
                                                                      
 
                                                                      
      information  about  validations.  In  this  case,  it  is  a  simple  fix:  add
      method code ‘LP-PI&#x2019; to the average V[A]DM result.
-     </p><!--l. 1094--><p class="noindent" ><img 
+     </p><!--l. 1096--><p class="noindent" ><img 
 src="PmagPy35x.png" alt="PIC" class="graphics" width="1280.37401pt" height="282.68892pt"  /><!--tex4ht:graphics  
 name="PmagPy35x.png" src="EPSFiles/MM_filled_in_result_validation.eps"  
 -->
@@ -2375,16 +2378,16 @@ name="PmagPy35x.png" src="EPSFiles/MM_filled_in_result_validation.eps"
 href="#magic_upload" >upload
      your data</a>!
      </li></ul>
-<!--l. 1105--><p class="indent" >   <a name='MagIC.py'></a>
+<!--l. 1107--><p class="indent" >   <a name='MagIC.py'></a>
                                                                      
 
                                                                      
 </p>
-<!--l. 1113--><p class="indent" >   <a name='ch5'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 5</span><br /><a 
+<!--l. 1115--><p class="indent" >   <a name='ch5'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 5</span><br /><a 
 href="#QQ2-1-32" id="x1-320005">Graphical data analysis programs</a></h2> <a name='demag_gui.py'></a>
-<!--l. 1115--><p class="noindent" ><a name='sec5-1'></a></p><h3 class="sectionHead"><span class="titlemark">5.1   </span> <a 
+<!--l. 1117--><p class="noindent" ><a name='sec5-1'></a></p><h3 class="sectionHead"><span class="titlemark">5.1   </span> <a 
 href="#QQ2-1-33" id="x1-330005.1">demag_gui.py</a></h3>
-<!--l. 1117--><p class="noindent" >The Demag GUI (<span 
+<!--l. 1119--><p class="noindent" >The Demag GUI (<span 
 class="cmbx-10x-x-109">demag</span><span 
 class="cmbx-10x-x-109">_gui.py</span>) program enables the display and analysis of
 paleomagnetic demagnetization data. The software will display specimen level
@@ -2393,16 +2396,16 @@ intensity plot. Interpretations can be made to the data as least-squares
 line or plane fits. Mean directions can be calculated and displayed for
 these interpretations. These interpretations can be exported as MagIC
 tables.
-</p><!--l. 1119--><p class="noindent" >
+</p><!--l. 1121--><p class="noindent" >
 </p>
-<!--l. 1119--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
+<!--l. 1121--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
 href="#x1-340005.1" id="x1-340005.1">Launching</a></h5>
-<!--l. 1121--><p class="noindent" >The best way to launch the Demag GUI application is through <a 
+<!--l. 1123--><p class="noindent" >The best way to launch the Demag GUI application is through <a 
 href="#pmag_gui.py" >Pmag GUI</a>. If you
 have installed PmagPy using pip, (or completed a developer install), you can run
 ‘pmag_gui.py&#x2019; at the command line to launch it. Anaconda users will instead use
 ‘pmag_gui_anaconda&#x2019;.
-</p><!--l. 1123--><p class="noindent" >To use Demag GUI, you must have a MagIC format measurements file. You can
+</p><!--l. 1125--><p class="noindent" >To use Demag GUI, you must have a MagIC format measurements file. You can
 convert other lab formats to MagIC format within <a 
 href="#pmag_gui.py" >Pmag GUI</a>. Click through step
 1 in <a 
@@ -2411,7 +2414,7 @@ href="#pmag_gui.py" >Pmag GUI</a> to import all of your files and then combine t
 well). Once you have converted all of your files, click on the Demag GUI button
 in <a 
 href="#pmag_gui.py" >Pmag GUI</a>.
-</p><!--l. 1126--><p class="noindent" >If you want to launch <span 
+</p><!--l. 1128--><p class="noindent" >If you want to launch <span 
 class="cmbx-10x-x-109">Demag GUI </span>directly, (assuming <span 
 class="cmbx-10x-x-109">PmagPy </span>was properly
 installed using pip or developer install), you can simply type ‘demag_gui.py&#x2019;
@@ -2420,11 +2423,11 @@ instead.
                                                                      
 
                                                                      
-</p><!--l. 1129--><p class="indent" >   <img 
+</p><!--l. 1131--><p class="indent" >   <img 
 src="PmagPy36x.png" alt="PIC" class="graphics" width="284.52756pt" height="198.81404pt"  /><!--tex4ht:graphics  
 name="PmagPy36x.png" src="EPSFiles/demag_gui_QuickMagicLauncher.eps"  
 -->
-</p><!--l. 1131--><p class="noindent" ><span 
+</p><!--l. 1133--><p class="noindent" ><span 
 class="cmbx-10x-x-109">Demag GUI </span>can also be launched through the command line by navigating to
 the directory containing <span 
 class="cmbx-10x-x-109">demag</span><span 
@@ -2437,12 +2440,12 @@ class="newline" />
    <div class="verbatim" id="verbatim-19">
 % python ./demag_gui.py
 </div>
-<!--l. 1135--><p class="nopar" >
-</p><!--l. 1142--><p class="noindent" >
+<!--l. 1137--><p class="nopar" >
+</p><!--l. 1144--><p class="noindent" >
 </p>
-<!--l. 1142--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
+<!--l. 1144--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
 href="#x1-350005.1" id="x1-350005.1">Adding and Editing Specimen Interpretations:</a></h5>
-<!--l. 1144--><p class="noindent" >To add a new fit, click the ‘add fit&#x2019; button (hotkey: ctrl-n). (For Mac users, all
+<!--l. 1146--><p class="noindent" >To add a new fit, click the ‘add fit&#x2019; button (hotkey: ctrl-n). (For Mac users, all
 hotkeys use the Command button instead of Ctrl.) If no fit has yet been created
 for the current specimen, you add a new fit by double clicking on two
 measurements in the list of measurements to the left, or by double clicking on
@@ -2457,18 +2460,18 @@ below.
                                                                      
 
                                                                      
-</p><!--l. 1146--><p class="indent" >   <img 
+</p><!--l. 1148--><p class="indent" >   <img 
 src="PmagPy37x.png" alt="PIC" class="graphics" width="284.52756pt" height="280.25258pt"  /><!--tex4ht:graphics  
 name="PmagPy37x.png" src="EPSFiles/demag_gui_Fit.eps"  
 -->
-</p><!--l. 1148--><p class="noindent" >Once the desired fit is selected, its bounds can be edited using the drop-down
+</p><!--l. 1150--><p class="noindent" >Once the desired fit is selected, its bounds can be edited using the drop-down
 boxes under the bounds header.<br 
 class="newline" />
-</p><!--l. 1150--><p class="indent" >   <img 
+</p><!--l. 1152--><p class="indent" >   <img 
 src="PmagPy38x.png" alt="PIC" class="graphics" width="85.35826pt" height="65.52069pt"  /><!--tex4ht:graphics  
 name="PmagPy38x.png" src="EPSFiles/demag_gui_BoundsBox.eps"  
 -->
-</p><!--l. 1152--><p class="noindent" >Another way to edit bounds is to double-click the list of measurement steps in
+</p><!--l. 1154--><p class="noindent" >Another way to edit bounds is to double-click the list of measurement steps in
 the list on the left. The included steps in the currently selected interpretation are
 highlighted blue on the measurement list and the measurements marked “bad”
 are highlighted red. Bad measurements can be marked and unmarked by right
@@ -2483,15 +2486,15 @@ class="newline" />
                                                                      
 
                                                                      
-</p><!--l. 1154--><p class="indent" >   <img 
+</p><!--l. 1156--><p class="indent" >   <img 
 src="PmagPy39x.png" alt="PIC" class="graphics" width="142.26378pt" height="211.72446pt"  /><!--tex4ht:graphics  
 name="PmagPy39x.png" src="EPSFiles/demag_gui_DataBox.eps"  
 -->
-</p><!--l. 1156--><p class="noindent" >Finally, you can select the bounds of an interpretation directly off the Zijderveld
+</p><!--l. 1158--><p class="noindent" >Finally, you can select the bounds of an interpretation directly off the Zijderveld
 plot by hovering your mouse over a measurement (should change to a hand
 shape) and double clicking.<br 
 class="newline" />
-</p><!--l. 1158--><p class="noindent" >When first created, the fit will be given a generic name such as <span 
+</p><!--l. 1160--><p class="noindent" >When first created, the fit will be given a generic name such as <span 
 class="cmti-10x-x-109">Fit 1</span>. The name
 of the fit can be changed from the default by typing into the drop-down box
 containing fit name. The default fit type is a least-squares line. You can choose
@@ -2505,62 +2508,62 @@ href="#x1-460005.1">high level mean plot</a>). This display option can
 be changed in the second drop-down menu in the ‘Interpretation Type&#x2019;
 box.<br 
 class="newline" />
-</p><!--l. 1161--><p class="indent" >   <img 
+</p><!--l. 1163--><p class="indent" >   <img 
 src="PmagPy40x.png" alt="PIC" class="graphics" width="284.52756pt" height="63.82838pt"  /><!--tex4ht:graphics  
 name="PmagPy40x.png" src="EPSFiles/demag_gui_SpecimenMeanType.eps"  
 -->
-</p><!--l. 1163--><p class="noindent" >The properties of the currently selected fit to the data can be seen in the
+</p><!--l. 1165--><p class="noindent" >The properties of the currently selected fit to the data can be seen in the
 upper center of the GUI in a box labeled ‘Interpretation Directions and
 Statistics&#x2019;.<br 
 class="newline" />
                                                                      
 
                                                                      
-</p><!--l. 1165--><p class="indent" >   <img 
+</p><!--l. 1167--><p class="indent" >   <img 
 src="PmagPy41x.png" alt="PIC" class="graphics" width="284.52756pt" height="63.65677pt"  /><!--tex4ht:graphics  
 name="PmagPy41x.png" src="EPSFiles/demag_gui_FitData.eps"  
 -->
-</p><!--l. 1168--><p class="noindent" >
+</p><!--l. 1170--><p class="noindent" >
 </p>
-<!--l. 1168--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
+<!--l. 1170--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
 href="#x1-360005.1" id="x1-360005.1">Deleting Specimen Interpretations</a></h5>
-<!--l. 1170--><p class="noindent" >If you would like to delete a single interpretation, select the one you wish to
+<!--l. 1172--><p class="noindent" >If you would like to delete a single interpretation, select the one you wish to
 delete from the interpretation drop-down menu and click ‘delete fit&#x2019;. If you wish
 to clear all interpretations you may go into the <a 
 href="#x1-470005.1">interpretation editor</a> located
 under the tools menu, select the fits you wish to delete and click the “delete
 selected” button.<br 
 class="newline" />
-</p><!--l. 1172--><p class="noindent" >
+</p><!--l. 1174--><p class="noindent" >
 </p>
-<!--l. 1172--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
+<!--l. 1174--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
 href="#x1-370005.1" id="x1-370005.1">Changing Specimen, Coordinate System, and Zijderveld Direction:</a></h5>
-<!--l. 1174--><p class="noindent" >You can switch current specimen by clicking the next or previous button
+<!--l. 1176--><p class="noindent" >You can switch current specimen by clicking the next or previous button
 under the specimen box in the side bar (hotkey: ctrl-right and ctrl-left
 respectively). You can also select specimen from the drop-down menu or type the
 name of the specimen directly into the specimen box and hit enter to go
 directly to that specimen. Finally, you can double click on any of the points
 on the higher level means plot to switch directly to that specimen and
 interpretation.
-</p><!--l. 1176--><p class="noindent" >The choice between coordinate systems (i.e. specimen, geographic or
+</p><!--l. 1178--><p class="noindent" >The choice between coordinate systems (i.e. specimen, geographic or
 tilt-corrected) is available on the left above the list of measurements.
 The data list and the plots will update to reflect the chosen coordinate
 system.
-</p><!--l. 1178--><p class="noindent" >You can alter the X axis of the Zijderveld plot using the Zijderveld Plot
+</p><!--l. 1180--><p class="noindent" >You can alter the X axis of the Zijderveld plot using the Zijderveld Plot
 Options box to set X=North, East, or NRM dec (found above the list of
 measurements).
                                                                      
 
                                                                      
-</p><!--l. 1180--><p class="indent" >   <img 
+</p><!--l. 1182--><p class="indent" >   <img 
 src="PmagPy42x.png" alt="PIC" class="graphics" width="142.26378pt" height="143.52325pt"  /><!--tex4ht:graphics  
 name="PmagPy42x.png" src="EPSFiles/demag_gui_ProjectionChoice.eps"  
 -->
-</p><!--l. 1182--><p class="noindent" >
+</p><!--l. 1184--><p class="noindent" >
 </p>
-<!--l. 1182--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
+<!--l. 1184--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
 href="#x1-380005.1" id="x1-380005.1">Flagging Bad Measurement Data</a></h5>
-<!--l. 1184--><p class="noindent" >Due to flux jumps or other such errors, individual measurements should
+<!--l. 1186--><p class="noindent" >Due to flux jumps or other such errors, individual measurements should
 sometimes be excluded from interpretation. Such measurements can be flagged as
 “bad” by right clicking them within the measurement list and the measurement
 will then be highlighted in red. Additionally, you can double right click on the
@@ -2574,7 +2577,7 @@ to being good, one can right click on it again. Upon doing so, the red
 highlighting will go away, the data will be shown colored in within the plots
 and any fit that spans that data point will be recalculated to include
 it.
-</p><!--l. 1186--><p class="noindent" >Acceptance criteria can be set by using the menu option [Analysis] <span 
+</p><!--l. 1188--><p class="noindent" >Acceptance criteria can be set by using the menu option [Analysis] <span 
 class="cmsy-10x-x-109">→</span>
 [Acceptance Criteria] <span 
 class="cmsy-10x-x-109">→ </span>[Change Acceptance Criteria]. These criteria
@@ -2582,14 +2585,14 @@ will be written to a <span
 class="cmti-10x-x-109">criteria.txt </span>table. These criteria can then be used
 to exclude interpretations that fail checks against this criteria during
 export.
-</p><!--l. 1189--><p class="noindent" >
+</p><!--l. 1191--><p class="noindent" >
 </p>
-<!--l. 1189--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
+<!--l. 1191--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
 href="#x1-390005.1" id="x1-390005.1">Plot Interface</a></h5>
                                                                      
 
                                                                      
-<!--l. 1191--><p class="noindent" >The four plots that take up the majority of the center of the GUI are where
+<!--l. 1193--><p class="noindent" >The four plots that take up the majority of the center of the GUI are where
 data and their interpretations are displayed. All plots are initially set
 to zoom mode and this is signified by a cross shaped cursor when you
 mouse over them. To zoom simply click and drag the rectangle to the
@@ -2603,25 +2606,25 @@ same time works on most laptops. In the case of Mac laptops, clicking
 with two fingers may work. If it doesn&#x2019;t, you will need to switch to a
 different specimen or change the interpretation bounds to cause the figure to
 reload.
-</p><!--l. 1193--><p class="noindent" >On the Zijderveld plot you have the additional option to select the current
+</p><!--l. 1195--><p class="noindent" >On the Zijderveld plot you have the additional option to select the current
 interpretation&#x2019;s bounds by double clicking on a measurement point. You can also
 double right click on a measurement point in the zijderveld plot to mark it bad
 (this second option may not work on all systems).
-</p><!--l. 1195--><p class="noindent" >On the equal area plots, both for the specimen and high level means, you can
+</p><!--l. 1197--><p class="noindent" >On the equal area plots, both for the specimen and high level means, you can
 double click on any interpretation to switch to that specimen and interpretation
 immediately.
-</p><!--l. 1197--><p class="noindent" >
+</p><!--l. 1199--><p class="noindent" >
 </p>
-<!--l. 1197--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
+<!--l. 1199--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
 href="#x1-400005.1" id="x1-400005.1">Saving Specimen Interpretations</a></h5>
-<!--l. 1199--><p class="noindent" >Once you have picked out your interpretations, you can save the session data
+<!--l. 1201--><p class="noindent" >Once you have picked out your interpretations, you can save the session data
 in two different ways: (1) as a .redo file which will allow you to have
 the fits preserved to be view again with Demag GUI or (2) as MagIC
 tables (at the specimen/sample/site levels) to be uploaded to the MagIC
 database or otherwise processed. In addition, you may save image files of the
 plots.
 </p>
-<!--l. 1201--><p class="noindent" ><span class="paragraphHead"><a 
+<!--l. 1203--><p class="noindent" ><span class="paragraphHead"><a 
 href="#x1-410005.1" id="x1-410005.1"><span 
 class="cmbx-10x-x-109">The .redo File:</span></a></span>
    You can use the menu option [File] <span 
@@ -2642,7 +2645,7 @@ class="cmsy-10x-x-109">→ </span>[Import
 previous interpretations from a redo file] (hotkey: ctrl-r) to restore your previous
 session.
 </p>
-<!--l. 1203--><p class="noindent" ><span class="paragraphHead"><a 
+<!--l. 1205--><p class="noindent" ><span class="paragraphHead"><a 
 href="#x1-420005.1" id="x1-420005.1"><span 
 class="cmbx-10x-x-109">The MagIC Tables:</span></a></span>
    By going to the menu [File] <span 
@@ -2663,7 +2666,7 @@ class="cmti-10x-x-109">demag</span><span
 class="cmti-10x-x-109">_gui.redo </span>file in the working
 directory.
 </p>
-<!--l. 1205--><p class="noindent" ><span class="paragraphHead"><a 
+<!--l. 1207--><p class="noindent" ><span class="paragraphHead"><a 
 href="#x1-430005.1" id="x1-430005.1"><span 
 class="cmbx-10x-x-109">Images of Plots:</span></a></span>
    Select the menu option [File] <span 
@@ -2673,11 +2676,11 @@ or you can save any of the plots individually. If you zoom or pan any of the
 plots the shifted image will be saved, not the originally plotted image
 (although the plot will redraw and reset to the original image in the
 GUI).
-</p><!--l. 1207--><p class="noindent" >
+</p><!--l. 1209--><p class="noindent" >
 </p>
-<!--l. 1207--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
+<!--l. 1209--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
 href="#x1-440005.1" id="x1-440005.1">Flag Specimen Interpretations Good or Bad</a></h5>
-<!--l. 1209--><p class="noindent" >You can flag the current specimen interpretation (marked by large diamonds
+<!--l. 1211--><p class="noindent" >You can flag the current specimen interpretation (marked by large diamonds
 on all plots) good or bad by using the menu option [Analysis] <span 
 class="cmsy-10x-x-109">→ </span>[Flag
 Interpretations]. The list of interpretations in the <a 
@@ -2691,11 +2694,11 @@ right clicking on the entry you want toggled. This will change the shape of the
 interpretation to a small diamond on all plots, remove it from use in any higher
 level means, and mark the entry result_quality ‘b&#x2019; instead of ‘g&#x2019; to signify
 this.
-</p><!--l. 1211--><p class="noindent" >
+</p><!--l. 1213--><p class="noindent" >
 </p>
-<!--l. 1211--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
+<!--l. 1213--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
 href="#x1-450005.1" id="x1-450005.1">Sample Orientation</a></h5>
-<!--l. 1213--><p class="noindent" >You can check sample orientation by using the menu option [Analysis] <span 
+<!--l. 1215--><p class="noindent" >You can check sample orientation by using the menu option [Analysis] <span 
 class="cmsy-10x-x-109">→ </span>[Sample
 Orientation] <span 
 class="cmsy-10x-x-109">→ </span>[Check Sample Orientations] (hotkey: ctrl-o). This function will
@@ -2723,22 +2726,22 @@ specimen.
                                                                      
 
                                                                      
-</p><!--l. 1215--><p class="indent" >   <img 
+</p><!--l. 1217--><p class="indent" >   <img 
 src="PmagPy43x.png" alt="PIC" class="graphics" width="284.52756pt" height="305.56915pt"  /><!--tex4ht:graphics  
 name="PmagPy43x.png" src="EPSFiles/demag_gui_CheckSampleOrient.eps"  
 -->
-</p><!--l. 1218--><p class="noindent" >
+</p><!--l. 1220--><p class="noindent" >
 </p>
-<!--l. 1218--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
+<!--l. 1220--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
 href="#x1-460005.1" id="x1-460005.1">High Level Means Plot and Statistics</a></h5>
-<!--l. 1220--><p class="noindent" >The set of drop-down boxes to the right of the interpretation data are there to
+<!--l. 1222--><p class="noindent" >The set of drop-down boxes to the right of the interpretation data are there to
 determine what level you want to analyse in the high level means plot and are
 grouped into the Display Level and Mean Options boxes.
-</p><!--l. 1222--><p class="indent" >   <img 
+</p><!--l. 1224--><p class="indent" >   <img 
 src="PmagPy44x.png" alt="PIC" class="graphics" width="227.62204pt" height="78.30089pt"  /><!--tex4ht:graphics  
 name="PmagPy44x.png" src="EPSFiles/demag_gui_HighLevel.eps"  
 -->
-</p><!--l. 1224--><p class="noindent" >The Display Level boxes consist of the upper drop-down menu which allows you
+</p><!--l. 1226--><p class="noindent" >The Display Level boxes consist of the upper drop-down menu which allows you
 to select the level at which interpretations are displayed options being all
 interpretations in the current: sample, site, location, or study. The lower
                                                                      
@@ -2746,34 +2749,34 @@ interpretations in the current: sample, site, location, or study. The lower
                                                                      
 drop-down menu lets you select the current sample, site, location, or
 study.
-</p><!--l. 1226--><p class="noindent" >The top drop-down menu in the Mean Options box lets you chose what kind of
+</p><!--l. 1228--><p class="noindent" >The top drop-down menu in the Mean Options box lets you chose what kind of
 mean you would like to take of the specimen components currently displayed.
 The lower drop-down menu lets you pick which specimen components to display
 allowing you to display All components, No components, or any single
 component.
-</p><!--l. 1228--><p class="noindent" >The mean statistics for the chosen high level mean are displayed in the lower
+</p><!--l. 1230--><p class="noindent" >The mean statistics for the chosen high level mean are displayed in the lower
 right of the GUI and can be cycled through using the arrow buttons next to the
 statistics boxes in the case of multiple high level means.
-</p><!--l. 1230--><p class="noindent" >It is possible to toggle on and off displaying any one of the means in the high
+</p><!--l. 1232--><p class="noindent" >It is possible to toggle on and off displaying any one of the means in the high
 level plot which can be useful in the case of a cluttered graph of all components.
 This can be done by going to the menu option [Analysis] <span 
 class="cmsy-10x-x-109">→ </span>[Toggle Mean
 Display] and selecting the name of the component you would like to
 toggle.
-</p><!--l. 1232--><p class="noindent" >All interpretations marked bad will appear as small diamonds regardless of type
+</p><!--l. 1234--><p class="noindent" >All interpretations marked bad will appear as small diamonds regardless of type
 on the high level mean plot. The below gives examples for a number of plane
 display options of bad interpretations (the symbols off to the side), best fit
 vectors to the means (sideways triangles), plane poles (squares), and the planes
 themselves.
-</p><!--l. 1234--><p class="indent" >   <img 
+</p><!--l. 1236--><p class="indent" >   <img 
 src="PmagPy45x.png" alt="PIC" class="graphics" width="853.58267pt" height="265.8108pt"  /><!--tex4ht:graphics  
 name="PmagPy45x.png" src="EPSFiles/demag_gui_HLMTypes.eps"  
 -->
-</p><!--l. 1236--><p class="noindent" >
+</p><!--l. 1238--><p class="noindent" >
 </p>
-<!--l. 1236--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
+<!--l. 1238--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
 href="#x1-470005.1" id="x1-470005.1">Interpretation Editor</a></h5>
-<!--l. 1238--><p class="noindent" >In order to more easily view and edit specimen interpretation data there is a
+<!--l. 1240--><p class="noindent" >In order to more easily view and edit specimen interpretation data there is a
 specimen interpretation editor which can be launched using the menu option
 [Tools] <span 
 class="cmsy-10x-x-109">→ </span>[Interpretation Editor] (hotkey: ctrl-e). <span 
@@ -2782,7 +2785,7 @@ help than provided here the interpretation editor has in context help same as th
 main GUI, see <a 
 href="#x1-530005.1">additional help</a> for details.
 </p>
-<!--l. 1239--><p class="noindent" ><span class="paragraphHead"><a 
+<!--l. 1241--><p class="noindent" ><span class="paragraphHead"><a 
 href="#x1-480005.1" id="x1-480005.1"><span 
 class="cmbx-10x-x-109">List of Interpretations:</span></a></span>
    This panel contains a list which details the fits made to the data and their
@@ -2798,7 +2801,7 @@ above the list. Finally, interpretations can be highlighted by clicking on
 the list and holding the shift or ctrl/command key to select multiple
 interpretations.
 </p>
-<!--l. 1240--><p class="noindent" ><span class="paragraphHead"><a 
+<!--l. 1242--><p class="noindent" ><span class="paragraphHead"><a 
 href="#x1-490005.1" id="x1-490005.1"><span 
 class="cmbx-10x-x-109">Buttons and Boxes:</span></a></span>
    Highlighting entries allows you to delete or alter the characteristics of
@@ -2819,7 +2822,7 @@ like giving every specimen a general magnetite interpretation inferring
 about where that should be (e.g. bounds=300C to 580C, name=MAG,
 color=violet).
 </p>
-<!--l. 1241--><p class="noindent" ><span class="paragraphHead"><a 
+<!--l. 1243--><p class="noindent" ><span class="paragraphHead"><a 
 href="#x1-500005.1" id="x1-500005.1"><span 
 class="cmbx-10x-x-109">Additional High Level Means Options:</span></a></span>
    The interpretation editor also allows the displaying of site and sample
@@ -2828,21 +2831,21 @@ bottom left display options drop-down box. The program does not yet
 allow taking fisher means of sample means or site means, so the mean
 type box will be forced to read ”None” if this option is changed from
 specimens.
-</p><!--l. 1243--><p class="indent" >   <img 
+</p><!--l. 1245--><p class="indent" >   <img 
 src="PmagPy46x.png" alt="PIC" class="graphics" width="426.79134pt" height="311.50034pt"  /><!--tex4ht:graphics  
 name="PmagPy46x.png" src="EPSFiles/demag_gui_InterpEditor.eps"  
 -->
                                                                      
 
                                                                      
-</p><!--l. 1245--><p class="noindent" >
+</p><!--l. 1247--><p class="noindent" >
 </p>
-<!--l. 1245--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
+<!--l. 1247--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
 href="#x1-510005.1" id="x1-510005.1">VGP Viewer</a></h5>
-<!--l. 1247--><p class="noindent" >Another tool offered by Demag GUI is the VGP (Virtual Geomagnetic Pole)
+<!--l. 1249--><p class="noindent" >Another tool offered by Demag GUI is the VGP (Virtual Geomagnetic Pole)
 Viewer which allows you to view your VGPs before exporting to MagIC tables.
 Note: this is not available in the standalone executables.
-</p><!--l. 1249--><p class="indent" >   The VGP viewer can be opened by using the menu option [Tools] <span 
+</p><!--l. 1251--><p class="indent" >   The VGP viewer can be opened by using the menu option [Tools] <span 
 class="cmsy-10x-x-109">→ </span>[View
 VGPs] (hotkey: ctrl-shift-v). The viewer requires latitude and longitude data for
 sites and locations in order to calculate all VGPs from specimen interpretations,
@@ -2853,45 +2856,45 @@ drop-down menu at the top. Plot interactions are the same here as in the
 main GUI and can be zoomed, panned, and points selected in the same
 manner. The list on the left shows all the data for the currently displayed
 VGPs.
-</p><!--l. 1251--><p class="indent" >   <img 
+</p><!--l. 1253--><p class="indent" >   <img 
 src="PmagPy47x.png" alt="PIC" class="graphics" width="426.79134pt" height="136.50337pt"  /><!--tex4ht:graphics  
 name="PmagPy47x.png" src="EPSFiles/demag_gui_VGPViewer.eps"  
 -->
-</p><!--l. 1253--><p class="noindent" >
+</p><!--l. 1255--><p class="noindent" >
 </p>
-<!--l. 1253--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
+<!--l. 1255--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
 href="#x1-520005.1" id="x1-520005.1">Current Warnings Box</a></h5>
-<!--l. 1255--><p class="noindent" >The white box in the far top right of the GUI is there to provide relevant
+<!--l. 1257--><p class="noindent" >The white box in the far top right of the GUI is there to provide relevant
 warnings about aspects of the current specimen and interpretation such
 as missing data or duplicate data and can be useful in debugging and
 analysis.
-</p><!--l. 1257--><p class="noindent" >
+</p><!--l. 1259--><p class="noindent" >
                                                                      
 
                                                                      
 </p>
-<!--l. 1257--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
+<!--l. 1259--><p class="indent" >   <a name='subsubsec5-1-0-0'></a></p><h5 class="subsubsectionHead"><a 
 href="#x1-530005.1" id="x1-530005.1">Additional Help</a></h5>
-<!--l. 1259--><p class="noindent" >Finally, if you need more help working with Demag GUI it offers in context
+<!--l. 1261--><p class="noindent" >Finally, if you need more help working with Demag GUI it offers in context
 assistance with the menu option [Help] <span 
 class="cmsy-10x-x-109">→ </span>[Usage and Tips] (hotkey: ctrl-h)
 which will change your cursor and then let you click on whichever aspect of the
 GUI you want help with. In most cases, a yellow pop-up box with information
 will appear, altough not all features have information.
-</p><!--l. 1261--><p class="indent" >   <img 
+</p><!--l. 1263--><p class="indent" >   <img 
 src="PmagPy48x.png" alt="PIC" class="graphics" width="284.52756pt" height="318.53963pt"  /><!--tex4ht:graphics  
 name="PmagPy48x.png" src="EPSFiles/demag_gui_ContextHelp.eps"  
 -->
-</p><!--l. 1263--><p class="indent" >   <a name='thellier_GUI.py'></a>
-</p><!--l. 1265--><p class="noindent" >
+</p><!--l. 1265--><p class="indent" >   <a name='thellier_GUI.py'></a>
+</p><!--l. 1267--><p class="noindent" >
 </p>
-<!--l. 1265--><p class="indent" >   <a name='sec5-2'></a></p><h3 class="sectionHead"><span class="titlemark">5.2   </span> <a 
+<!--l. 1267--><p class="indent" >   <a name='sec5-2'></a></p><h3 class="sectionHead"><span class="titlemark">5.2   </span> <a 
 href="#QQ2-1-54" id="x1-540005.2">thellier_gui.py</a></h3>
-<!--l. 1266--><p class="noindent" ><a 
+<!--l. 1268--><p class="noindent" ><a 
 href="http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#ch10" >[Essentials Chapter 10]</a> and <a 
 href="#MagIC" >[MagIC</a>] <a 
 href="https://github.com/PmagPy/PmagPy-Cookbook/blob/gh-pages/thellier_GUI_full_manual.pdf" >[Thellier_GUI_full_manual.pdf]</a>
-</p><!--l. 1269--><p class="indent" >   The program Thellier GUI (<span 
+</p><!--l. 1271--><p class="indent" >   The program Thellier GUI (<span 
 class="cmbx-10x-x-109">thellier</span><span 
 class="cmbx-10x-x-109">_gui.py</span>) combines functions from
                                                                      
@@ -2901,12 +2904,12 @@ class="cmbx-10x-x-109">_gui.py</span>) combines functions from
 href="#thellier_magic.py" >thellier_magic.py</a> and new tools described by <a 
 href="http://dx.doi.org/10.1002/ggge.20062" >Shaar and Tauxe (2013)</a> in a
 user-friendly graphical user interface (GUI).
-</p><!--l. 1271--><p class="indent" >   As with <a 
+</p><!--l. 1273--><p class="indent" >   As with <a 
 href="#demag_gui.py" >Demag GUI</a>, Thellier GUI can be called from the <a 
 href="#command_line" >command line</a> or
 from within <a 
 href="#pmag_gui.py" >Pmag GUI</a>.
-</p><!--l. 1273--><p class="indent" >   To launch Thellier GUI independently, find your command line and
+</p><!--l. 1275--><p class="indent" >   To launch Thellier GUI independently, find your command line and
 enter:
                                                                      
 
@@ -2915,8 +2918,8 @@ enter:
    <div class="verbatim" id="verbatim-20">
 thellier_gui.py
 </div>
-<!--l. 1277--><p class="nopar" >
-</p><!--l. 1279--><p class="indent" >   If using Anaconda Python, you will instead use:
+<!--l. 1279--><p class="nopar" >
+</p><!--l. 1281--><p class="indent" >   If using Anaconda Python, you will instead use:
                                                                      
 
                                                                      
@@ -2924,8 +2927,8 @@ thellier_gui.py
    <div class="verbatim" id="verbatim-21">
 thellier_gui_anaconda
 </div>
-<!--l. 1283--><p class="nopar" >
-</p><!--l. 1285--><p class="indent" >   Once open, Thellier GUI loads files already prepared in a <a 
+<!--l. 1285--><p class="nopar" >
+</p><!--l. 1287--><p class="indent" >   Once open, Thellier GUI loads files already prepared in a <a 
 href="#ThisProject" >This Project</a>
 directory and the interpretations from Thellier GUI are part of the workflow of
 <a 
@@ -2933,14 +2936,14 @@ href="#pmag_gui.py" >Pmag GUI</a>. This section is a brief introduction on how t
 stand alone application. Much more information is available within this manual:
 <a 
 href="https://github.com/PmagPy/PmagPy-Cookbook/blob/gh-pages/thellier_GUI_full_manual.pdf" >Thellier GUI full manual</a>.
-</p><!--l. 1287--><p class="noindent" >A complete list of the definitions for paleointensity statistics used by Thellier
+</p><!--l. 1289--><p class="noindent" >A complete list of the definitions for paleointensity statistics used by Thellier
 GUI is available as a supplement to the article by <a 
 href="#http://dx.doi.org/10.1002/2013GC005135" >Paterson et al., 2014</a> and
 available for download here:
-</p><!--l. 1289--><p class="indent" >   <a 
+</p><!--l. 1291--><p class="indent" >   <a 
 href="http://onlinelibrary.wiley.com/store/10.1002/2013GC005135/asset/supinfo/ggge20412-sup-0001-suppinfoCORRECTED.pdf?v=1&s=e1c3ab0a86c942d1039f6d2e15496aa172dc86ec" class="url" ><span 
 class="cmtt-10x-x-109">http://onlinelibrary.wiley.com/store/10.1002/2013GC005135/asset/supinfo/ggge20412-sup-0001-suppinfoCORRECTED.pdf?v=1&#x0026;s=e1c3ab0a86c942d1039f6d2e15496aa172dc86ec</span></a>
-</p><!--l. 1291--><p class="indent" >   <a name='choose_directory'></a> After launching the program, a “choose project directory” dialog window will
+</p><!--l. 1293--><p class="indent" >   <a name='choose_directory'></a> After launching the program, a “choose project directory” dialog window will
 appear as soon as the GUI is started. Your <a 
 href="#Project_Directory" >ThisProject</a> directory should include
 a file named <span 
@@ -2955,11 +2958,11 @@ class="cmti-10x-x-109">_anisotropy.txt </span>is in the project directory, then
 the program reads in the anisotropy data. Reading and processing the
 measurements files may take several seconds, depending on the number of the
 specimens.
-</p><!--l. 1300--><p class="noindent" >
+</p><!--l. 1302--><p class="noindent" >
 </p>
-<!--l. 1300--><p class="indent" >   <a name='subsubsec5-2-0-0'></a></p><h5 class="subsubsectionHead"><a 
+<!--l. 1302--><p class="indent" >   <a name='subsubsec5-2-0-0'></a></p><h5 class="subsubsectionHead"><a 
 href="#x1-550005.2" id="x1-550005.2">Reading and compiling measurements data</a></h5>
-<!--l. 1301--><p class="noindent" >When your <a 
+<!--l. 1303--><p class="noindent" >When your <a 
 href="#Project_Directory" >ThisProject</a> project directory is selected, the program reads all
 the measurement data, checks them, processes them and sorts them. If
 non-linear-TRM (NLT) data exist in <span 
@@ -2984,19 +2987,19 @@ options.
                                                                      
 
                                                                      
-</p><!--l. 1304--><p class="noindent" >
+</p><!--l. 1306--><p class="noindent" >
 </p>
-<!--l. 1304--><p class="indent" >   <a name='subsubsec5-2-0-0'></a></p><h5 class="subsubsectionHead"><a 
+<!--l. 1306--><p class="indent" >   <a name='subsubsec5-2-0-0'></a></p><h5 class="subsubsectionHead"><a 
 href="#x1-560005.2" id="x1-560005.2">Main panel</a></h5>
-<!--l. 1306--><p class="noindent" >This figure shows a snapshot of the main panel.
+<!--l. 1308--><p class="noindent" >This figure shows a snapshot of the main panel.
                                                                      
 
                                                                      
-</p><!--l. 1308--><p class="indent" >   <img 
+</p><!--l. 1310--><p class="indent" >   <img 
 src="PmagPy49x.png" alt="PIC" class="graphics" width="853.58267pt" height="533.4995pt"  /><!--tex4ht:graphics  
 name="PmagPy49x.png" src="EPSFiles/Screenshot_main_panel.eps"  
 -->
-</p><!--l. 1310--><p class="noindent" >The top field in the panel includes the following buttons/controls (from left to
+</p><!--l. 1312--><p class="noindent" >The top field in the panel includes the following buttons/controls (from left to
 right): </p>
      <ul class="itemize1">
      <li class="itemize"><span 
@@ -3037,7 +3040,7 @@ class="cmbx-10x-x-109">Dec/Inc: </span>Specimen declination/inclination calculat
      </li>
      <li class="itemize">Sample mean, number of specimens, standard deviation and percent
      standard deviation.</li></ul>
-<!--l. 1325--><p class="indent" >   The center of the main panel has these elements:
+<!--l. 1327--><p class="indent" >   The center of the main panel has these elements:
 </p>
                                                                      
 
@@ -3078,12 +3081,12 @@ class="cmbx-10x-x-109">sample data: </span>If at least two specimens have a save
      then their values are displayed on this plot. The mean <span 
 class="cmsy-10x-x-109">± </span>standard
      deviation of the mean are marked as horizontal lines.</li></ul>
-<!--l. 1336--><p class="indent" >   The bottom of the main panel include paleointensity statistics. The
+<!--l. 1338--><p class="indent" >   The bottom of the main panel include paleointensity statistics. The
 first line has the threshold values (empty if N/A). The second line is the
 specimen&#x2019;s statistics. For details see Appendix A1 in <a 
 href="http://dx.doi.org/10.1002/ggge.20062" >Shaar and Tauxe
 (2013)</a>.
-</p><!--l. 1417--><p class="indent" >   <a name='MagICDatabase'></a>
+</p><!--l. 1419--><p class="indent" >   <a name='MagICDatabase'></a>
                                                                      
 
                                                                      
@@ -3091,7 +3094,7 @@ href="http://dx.doi.org/10.1002/ggge.20062" >Shaar and Tauxe
 
                                                                      
 </p>
-<!--l. 1418--><p class="indent" >   <a name='ch6'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 6</span><br /><a 
+<!--l. 1420--><p class="indent" >   <a name='ch6'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 6</span><br /><a 
 href="#QQ2-1-57" id="x1-570006">The MagIC database and file formats</a></h2>
    A number of the programs in <span 
 class="cmbx-10x-x-109">PmagPy </span>were developed to take advantage of
@@ -3110,15 +3113,15 @@ something which we sincerely hope you will have a chance to do. After you
 register, go to <a 
 href="http://earthref.org/MAGIC/search" class="url" ><span 
 class="cmtt-10x-x-109">http://earthref.org/MAGIC/search</span></a>.
-<!--l. 1427--><p class="indent" >   You can <a 
+<!--l. 1429--><p class="indent" >   You can <a 
 href="#magic_download" >download data</a> using the <a 
 href="http://earthref.org/MAGIC/search" >MagIC search</a> website. After downloading,
 the data can be unpacked and examined using various tools in the <span 
 class="cmbx-10x-x-109">PmagPy</span>
 package, for example using <a 
 href="#pmag_gui.py" >Pmag GUI</a>.
-</p><!--l. 1436--><p class="indent" >   <a name='Uploading'></a>
-</p><!--l. 1440--><p class="indent" >   Paleomagnetic and rock magnetic data are collected and analyzed in a wide
+</p><!--l. 1438--><p class="indent" >   <a name='Uploading'></a>
+</p><!--l. 1442--><p class="indent" >   Paleomagnetic and rock magnetic data are collected and analyzed in a wide
 variety of ways with different objectives. Data sets can be extremely large
 or can be the barest boned data summaries published in legacy data
 tables. The goal of MagIC has been to have the flexibility to allow a
@@ -3131,19 +3134,19 @@ in the process as possible. All data that enters the database must be
 converted to the standard MagIC format either as a set of MagIC tables, or
 as one combined text file. These can then be uploaded into the MagIC
 database.
-</p><!--l. 1443--><p class="indent" >   <a name='DataTables'></a>
+</p><!--l. 1445--><p class="indent" >   <a name='DataTables'></a>
 </p>
-<!--l. 1445--><p class="noindent" ><a name='sec6-1'></a></p><h3 class="sectionHead"><span class="titlemark">6.1   </span> <a 
+<!--l. 1447--><p class="noindent" ><a name='sec6-1'></a></p><h3 class="sectionHead"><span class="titlemark">6.1   </span> <a 
 href="#QQ2-1-58" id="x1-580006.1">Structure of the database tables</a></h3>
-<!--l. 1447--><p class="noindent" >The MagIC database is organized around a series of data tables. The complete data
+<!--l. 1449--><p class="noindent" >The MagIC database is organized around a series of data tables. The complete data
 model can be found here: <a 
 href="https://www2.earthref.org/MagIC/data-models/3.0" class="url" ><span 
 class="cmtt-10x-x-109">https://www2.earthref.org/MagIC/data-models/3.0</span></a>
-</p><!--l. 1451--><p class="indent" >   The first line of each MagIC table looks something like this:
-</p><!--l. 1454--><p class="indent" >   tab      <span 
+</p><!--l. 1453--><p class="indent" >   The first line of each MagIC table looks something like this:
+</p><!--l. 1456--><p class="indent" >   tab      <span 
 class="cmbx-10x-x-109">table</span><span 
 class="cmbx-10x-x-109">_name</span>
-</p><!--l. 1456--><p class="noindent" >“tab” (or “tab delimited”) means that the table is tab delimited. In theory other
+</p><!--l. 1458--><p class="noindent" >“tab” (or “tab delimited”) means that the table is tab delimited. In theory other
 delimiters are possible, but <span 
 class="cmbx-10x-x-109">PmagPy </span>only uses tab delimited formats. The
                                                                      
@@ -3214,7 +3217,7 @@ class="hline"><td><hr /></td><td><hr /></td></tr><tr
  style="vertical-align:baseline;" id="TBL-2-11-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-11-1"  
 class="td11">              </td> </tr></table>
 </div>
-<!--l. 1480--><p class="indent" >   The second line of each MagIC table contains the column headers
+<!--l. 1482--><p class="indent" >   The second line of each MagIC table contains the column headers
 (meta-data) describing the included data. For example, a <span 
 class="cmbx-10x-x-109">sites </span>table might look
 like this:
@@ -3253,7 +3256,7 @@ class="td11">... </td>
 class="hline"><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr  
  style="vertical-align:baseline;" id="TBL-3-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-3-5-1"  
 class="td11">           </td> </tr></table></div>
-<!--l. 1493--><p class="indent" >   Although data can be entered directly into Excel spreadsheets by hand, it is
+<!--l. 1495--><p class="indent" >   Although data can be entered directly into Excel spreadsheets by hand, it is
 easier to generate the necessary tables as a by-product of ordinary data
 processing without having to know details of the meta-data and method codes.
 The section on <a 
@@ -3263,12 +3266,12 @@ analysis and generate the MagIC data tables automatically for the most common
 paleomagnetic studies involving directions and/or paleointensities. See also <a 
 href="#pmag_gui.py" >Pmag
 GUI</a>.
-</p><!--l. 1497--><p class="indent" >   <a name='method_codes'></a>
-</p><!--l. 1499--><p class="noindent" >
+</p><!--l. 1499--><p class="indent" >   <a name='method_codes'></a>
+</p><!--l. 1501--><p class="noindent" >
 </p>
-<!--l. 1499--><p class="indent" >   <a name='sec6-2'></a></p><h3 class="sectionHead"><span class="titlemark">6.2   </span> <a 
+<!--l. 1501--><p class="indent" >   <a name='sec6-2'></a></p><h3 class="sectionHead"><span class="titlemark">6.2   </span> <a 
 href="#QQ2-1-59" id="x1-590006.2">A word about method codes</a></h3>
-<!--l. 1501--><p class="noindent" >The MagIC database tags records with “method codes” which are short codes
+<!--l. 1503--><p class="noindent" >The MagIC database tags records with “method codes” which are short codes
 that describe various methods associated with a particular data record. The
 complete list is available here: <a 
 href="https://earthref.org/MagIC/method-codes" class="url" ><span 
@@ -3476,11 +3479,11 @@ class="td11">Zero field cooled, induced M measured on warming         </td>
 class="hline"><td><hr /></td><td><hr /></td><td><hr /></td></tr><tr  
  style="vertical-align:baseline;" id="TBL-4-37-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-37-1"  
 class="td11">              </td> </tr></table></div>
-<!--l. 1545--><p class="noindent" >
+<!--l. 1547--><p class="noindent" >
 </p>
-<!--l. 1545--><p class="indent" >   <a name='sec6-3'></a></p><h3 class="sectionHead"><span class="titlemark">6.3   </span> <a 
+<!--l. 1547--><p class="indent" >   <a name='sec6-3'></a></p><h3 class="sectionHead"><span class="titlemark">6.3   </span> <a 
 href="#QQ2-1-60" id="x1-600006.3">Uploading to MagIC</a></h3>
-<!--l. 1547--><p class="noindent" >For uploading to the database, all the individual tables can be assembled into a
+<!--l. 1549--><p class="noindent" >For uploading to the database, all the individual tables can be assembled into a
 single file. Each individual data table is separated from the next by a series
 of ‘<span 
 class="cmmi-10x-x-109">&#x003E;&#x003E;&#x003E;&#x003E;&#x003E;&#x003E;&#x003E;&#x003E;&#x003E;&#x003E;</span>&#x2019; symbols, so a typical upload file might look like
@@ -3509,8 +3512,8 @@ Lava Flow Igneous: Extrusive
  <br />.
  <br />.
 </div>
-<!--l. 1563--><p class="nopar" >
-</p><!--l. 1565--><p class="indent" >   Correctly formatted MagIC data tables can be assembled into a suitable
+<!--l. 1565--><p class="nopar" >
+</p><!--l. 1567--><p class="indent" >   Correctly formatted MagIC data tables can be assembled into a suitable
 upload text file by using the program <a 
 href="#upload_magic.py" >upload_magic.py</a> which reads in
 all MagIC tables in a given directory and puts them together as in the
@@ -3526,7 +3529,7 @@ generate your upload file, <a
 href="#upload_magic.py" >upload_magic.py</a> has some nifty tricks with
 propagating data from one table to another, deleting unneeded columns, and so
 on.
-</p><!--l. 1616--><p class="indent" >   <a name='survival_skills'></a>
+</p><!--l. 1618--><p class="indent" >   <a name='survival_skills'></a>
                                                                      
 
                                                                      
@@ -3534,7 +3537,7 @@ on.
 
                                                                      
 </p>
-<!--l. 1617--><p class="indent" >   <a name='ch7'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 7</span><br /><a 
+<!--l. 1619--><p class="indent" >   <a name='ch7'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 7</span><br /><a 
 href="#QQ2-1-61" id="x1-610007">Survival computer skills</a></h2>
    The ‘Py&#x2019; part of ‘PmagPy&#x2019; stands for Python, the language in which all the
 code is written. It is not essential, but it is helpful, to understand a bit about
@@ -3560,11 +3563,11 @@ href="#Python" >Python Programming
 Chapter</a>. For now, we are interested in having the skills to find a command line
 and navigate the file system in order to get started with <a 
 href="#PmagPy" >PmagPy</a>.
-<!--l. 1624--><p class="indent" >   <a name='command_line'></a>
+<!--l. 1626--><p class="indent" >   <a name='command_line'></a>
 </p>
-<!--l. 1625--><p class="noindent" ><a name='sec7-1'></a></p><h3 class="sectionHead"><span class="titlemark">7.1   </span> <a 
+<!--l. 1627--><p class="noindent" ><a name='sec7-1'></a></p><h3 class="sectionHead"><span class="titlemark">7.1   </span> <a 
 href="#QQ2-1-62" id="x1-620007.1">Finding your command line</a></h3>
-<!--l. 1626--><p class="noindent" >If you are not using a Unix-like computer (*NIX), you may never have
+<!--l. 1628--><p class="noindent" >If you are not using a Unix-like computer (*NIX), you may never have
 encountered a command line. Using any of the command line programs requires
 accessing the command line. If you are using the MacOS operating system, look
 for the Terminal application in the Utilities folder within the Applications folder.
@@ -3576,27 +3579,27 @@ here.
                                                                      
 
                                                                      
-</p><!--l. 1628--><p class="indent" >   <img 
+</p><!--l. 1630--><p class="indent" >   <img 
 src="PmagPy50x.png" alt="PIC" class="graphics" width="426.79134pt" height="139.84833pt"  /><!--tex4ht:graphics  
 name="PmagPy50x.png" src="EPSFiles/terminal.eps"  
 -->
-</p><!--l. 1630--><p class="indent" >   Under the Windows operating system, you can find your command line by
+</p><!--l. 1632--><p class="indent" >   Under the Windows operating system, you can find your command line by
 searching for the “Command Prompt” application.
-</p><!--l. 1632--><p class="indent" >   <img 
+</p><!--l. 1634--><p class="indent" >   <img 
 src="PmagPy51x.png" alt="PIC" class="graphics" width="426.79134pt" height="274.17616pt"  /><!--tex4ht:graphics  
 name="PmagPy51x.png" src="EPSFiles/cmd.eps"  
 -->
-</p><!--l. 1634--><p class="indent" >   Note that the location of this program varies on different computers, so you
+</p><!--l. 1636--><p class="indent" >   Note that the location of this program varies on different computers, so you
 may have to hunt around a little to find yours. Also, the actual “prompt” will
 vary for different machines.
                                                                      
 
                                                                      
-</p><!--l. 1638--><p class="noindent" >
+</p><!--l. 1640--><p class="noindent" >
 </p>
-<!--l. 1638--><p class="indent" >   <a name='sec7-2'></a></p><h3 class="sectionHead"><span class="titlemark">7.2   </span> <a 
+<!--l. 1640--><p class="indent" >   <a name='sec7-2'></a></p><h3 class="sectionHead"><span class="titlemark">7.2   </span> <a 
 href="#QQ2-1-63" id="x1-630007.2">File systems</a></h3>
-<!--l. 1640--><p class="noindent" >When you first open a terminal window, you are in your “home” directory.
+<!--l. 1642--><p class="noindent" >When you first open a terminal window, you are in your “home” directory.
 Fundamental to all operating systems is the concept of directories and files. On
 windows-based operating systems (MacOS or Windows), directories are depicted
 as “folders” and moving about is accomplished by clicking on the different icons.
@@ -3605,11 +3608,11 @@ a hierarchical sequence with the top directory being the “root” directory, k
 as “/” (or C:<span class="obeylines-h"><span class="verb"><span 
 class="cmtt-10x-x-109">\</span></span></span> in Windows) and the file system looks something like
 this:
-</p><!--l. 1648--><p class="indent" >   <img 
+</p><!--l. 1650--><p class="indent" >   <img 
 src="PmagPy52x.png" alt="PIC" class="graphics" width="426.79134pt" height="263.44528pt"  /><!--tex4ht:graphics  
 name="PmagPy52x.png" src="EPSFiles/filesys.eps"  
 -->
-</p><!--l. 1650--><p class="indent" >   Within the root directory, there are subdirectories (e.g. <span 
+</p><!--l. 1652--><p class="indent" >   Within the root directory, there are subdirectories (e.g. <span 
 class="cmbx-10x-x-109">Applications</span>
 and <span 
 class="cmbx-10x-x-109">Users </span>in bold face). In any directory, there can also be “files” (e.g.
@@ -3623,7 +3626,7 @@ from the root directory <span
 class="cmbx-10x-x-109">/ </span>and in DOS (the operating system working in the
 Windows command line window), it is C:<span class="obeylines-h"><span class="verb"><span 
 class="cmtt-10x-x-109">\</span></span></span>.
-</p><!--l. 1657--><p class="indent" >   The absolute pathname to the home directory <span 
+</p><!--l. 1659--><p class="indent" >   The absolute pathname to the home directory <span 
 class="cmbx-10x-x-109">lisa </span>in the figure is
                                                                      
 
@@ -3654,11 +3657,11 @@ directory “above”. Also, lisa&#x2019;s home directory would be <span
 class="cmsy-10x-x-109">∼</span>lisa, or if you are logged
 in as lisa yourself, then it is just <span 
 class="cmsy-10x-x-109">∼</span>.
-</p><!--l. 1667--><p class="indent" >   <a name='file_system'></a>
+</p><!--l. 1669--><p class="indent" >   <a name='file_system'></a>
 </p>
-<!--l. 1668--><p class="indent" >   <a name='sec7-3'></a></p><h3 class="sectionHead"><span class="titlemark">7.3   </span> <a 
+<!--l. 1670--><p class="indent" >   <a name='sec7-3'></a></p><h3 class="sectionHead"><span class="titlemark">7.3   </span> <a 
 href="#QQ2-1-64" id="x1-640007.3">Moving around in the file system</a></h3>
-<!--l. 1670--><p class="noindent" >Now that you have found your command line and are comfortable in your home
+<!--l. 1672--><p class="noindent" >Now that you have found your command line and are comfortable in your home
 directory, you can view the contents of your directory with the Unix command
 <span 
 class="cmbx-10x-x-109">ls </span>or the DOS command <span 
@@ -3671,7 +3674,7 @@ command
    <div class="verbatim" id="verbatim-23">
 % mkdir NEW_DIRECTORY_NAME
 </div>
-<!--l. 1675--><p class="nopar" > This command works in both Unix and DOS environments) and you can move
+<!--l. 1677--><p class="nopar" > This command works in both Unix and DOS environments) and you can move
 into your new directory with the command
                                                                      
 
@@ -3680,7 +3683,7 @@ into your new directory with the command
    <div class="verbatim" id="verbatim-24">
 % cd NEW_DIRECTORY_NAME
 </div>
-<!--l. 1679--><p class="nopar" > To move back up into the home directory, just type <span 
+<!--l. 1681--><p class="nopar" > To move back up into the home directory, just type <span 
 class="cmbx-10x-x-109">cd .. </span>remembering that <span 
 class="cmbx-10x-x-109">..</span>
 refers to the directory above. Also, <span 
@@ -3688,12 +3691,12 @@ class="cmbx-10x-x-109">cd </span>by itself will transport you home from
 where ever you are (there&#x2019;s no place like home....). You can also change to
 any arbitrary directory by specifying the full path of the destination
 directory.
-</p><!--l. 1695--><p class="indent" >   <a name='standard_IO'></a>
-</p><!--l. 1697--><p class="noindent" >
+</p><!--l. 1697--><p class="indent" >   <a name='standard_IO'></a>
+</p><!--l. 1699--><p class="noindent" >
 </p>
-<!--l. 1697--><p class="indent" >   <a name='sec7-4'></a></p><h3 class="sectionHead"><span class="titlemark">7.4   </span> <a 
+<!--l. 1699--><p class="indent" >   <a name='sec7-4'></a></p><h3 class="sectionHead"><span class="titlemark">7.4   </span> <a 
 href="#QQ2-1-65" id="x1-650007.4">Redirecting input and output</a></h3>
-<!--l. 1699--><p class="noindent" >Programs that operate at the command line level print output to the screen and
+<!--l. 1701--><p class="noindent" >Programs that operate at the command line level print output to the screen and
 read input from the keyboard. This is known as “standard input and output” or
 “standard I/O”. One of the nicest things about working at the command line
 level is the ability to redirect input and output. For example, instead of typing
@@ -3706,11 +3709,11 @@ with <span
 class="cmmi-10x-x-109">&#x003E;&#x003E; </span>or used as input to another program with the pipe operator
 (<span 
 class="cmsy-10x-x-109">|</span>).
-</p><!--l. 1707--><p class="noindent" >
+</p><!--l. 1709--><p class="noindent" >
 </p>
-<!--l. 1707--><p class="indent" >   <a name='sec7-5'></a></p><h3 class="sectionHead"><span class="titlemark">7.5   </span> <a 
+<!--l. 1709--><p class="indent" >   <a name='sec7-5'></a></p><h3 class="sectionHead"><span class="titlemark">7.5   </span> <a 
 href="#QQ2-1-66" id="x1-660007.5">Text editors</a></h3>
-<!--l. 1709--><p class="noindent" >There are many ways of editing text and the subject is beyond the scope of this
+<!--l. 1711--><p class="noindent" >There are many ways of editing text and the subject is beyond the scope of this
 documentation. Text editing is a blessing and a curse. You either love it or hate
 it and in the beginning, and if you are used to programs like Word, you will
 certainly hate it. (And if you are used to a decent text editor, you will hate
@@ -3726,7 +3729,7 @@ in the Windows operating system and the <a
 href="https://atom.io" >Atom</a> text editor is a free
 cross-platform option with lots of nice packages available that extend its
 functionality.
-</p><!--l. 1714--><p class="indent" >   <a name='Python'></a>
+</p><!--l. 1716--><p class="indent" >   <a name='Python'></a>
                                                                      
 
                                                                      
@@ -3734,7 +3737,7 @@ functionality.
 
                                                                      
 </p>
-<!--l. 1715--><p class="indent" >   <a name='ch8'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 8</span><br /><a 
+<!--l. 1717--><p class="indent" >   <a name='ch8'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 8</span><br /><a 
 href="#QQ2-1-67" id="x1-670008">Introduction to Python Programming</a></h2>
    There are many resources for learning Python, but Lisa Tauxe&#x2019;s <a 
 href="https://github.com/ltauxe/Python-for-Earth-Science-Students" >Python For
@@ -3745,7 +3748,7 @@ libraries. The entire course is freely available in a <a
 href="https://github.com/ltauxe/Python-for-Earth-Science-Students" >Github repository</a>. It
 is composed of an interactive series of lectures in the form of Jupyter
 notebooks.
-<!--l. 1720--><p class="indent" >   To get started, you will need to <a 
+<!--l. 1722--><p class="indent" >   To get started, you will need to <a 
 href="#getting_python" >install Python</a>. Then, <a 
 href="https://git-scm.com/downloads" >download git</a> and
 follow the install instructions. If you don&#x2019;t know whether you have git
@@ -3777,14 +3780,14 @@ href="#command_line" >command line</a>
       <br />
       <br />    jupyter notebook
 </div>
-     <!--l. 1734--><p class="nopar" >
+     <!--l. 1736--><p class="nopar" >
 </p>
      </li></ol>
-<!--l. 1737--><p class="noindent" >This will open a browser window with a list of Notebooks. Click on Lecture 1, which
+<!--l. 1739--><p class="noindent" >This will open a browser window with a list of Notebooks. Click on Lecture 1, which
 overviews the course and teaches you how to run Notebooks. From there, you can
 follow the lectures in order or pick and choose based on your interests. Python is
 a lot of fun - enjoy!
-</p><!--l. 1739--><p class="indent" >   NB: For Anaconda-specific information, see this <a 
+</p><!--l. 1741--><p class="indent" >   NB: For Anaconda-specific information, see this <a 
 href="https://docs.anaconda.com/_downloads/Anaconda-Starter-Guide-Cheat-Sheet.pdf" >handy cheat sheet</a> with
 information about how to install and update Python packages, as well as create
 custom Python environments and more.
@@ -3792,7 +3795,7 @@ custom Python environments and more.
 
                                                                      
 </p>
-<!--l. 1741--><p class="indent" >   <a name='ch9'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 9</span><br /><a 
+<!--l. 1743--><p class="indent" >   <a name='ch9'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 9</span><br /><a 
 href="#QQ2-1-68" id="x1-680009">Jupyter Notebooks</a></h2> <a name='Notebooks'></a>
    Data analysis in Python benefits from an increasingly robust ecosystem of
 packages for scientific computing and plotting. The Jupyter notebook is one
@@ -3814,7 +3817,7 @@ notebooks allow for executable code, results, text and graphical output to
 coherently coexist in a single document. With these combined components,
 they are excellent tools both for conducting data analysis and presenting
 results.
-<!--l. 1750--><p class="indent" >   To show some of what is possible in terms of data analysis using
+<!--l. 1752--><p class="indent" >   To show some of what is possible in terms of data analysis using
 <span 
 class="cmbx-10x-x-109">PmagPy </span>in a notebook environment, we have created example
 notebooks that are available for download from this repository:
@@ -3828,7 +3831,7 @@ class="cmtt-10x-x-109">http://pmagpy.github.io/Example_PmagPy_Notebook.html</spa
 <a 
 href="http://pmagpy.github.io/Additional_PmagPy_Examples.html" class="url" ><span 
 class="cmtt-10x-x-109">http://pmagpy.github.io/Additional_PmagPy_Examples.html</span></a>.
-</p><!--l. 1752--><p class="indent" >   The main example notebook (Example_PmagPy_Notebook.ipynb) combines
+</p><!--l. 1754--><p class="indent" >   The main example notebook (Example_PmagPy_Notebook.ipynb) combines
 data from two different studies for the sake of developing a mean paleomagnetic
 pole from the upper portion of a sequence of volcanics in the North American
 Midcontinent Rift (<a 
@@ -3849,7 +3852,7 @@ class="cmtt-10x-x-109">https://earthref.org/MagIC/doi/10.1002/2013GC005180/</spa
 these data files from the database and putting them into folders within a
 local ‘Project Directory&#x2019; allows them to be accessed within the Jupyter
 notebook.
-</p><!--l. 1754--><p class="indent" >   Within the example notebook, these data are unpacked into their respective
+</p><!--l. 1756--><p class="indent" >   Within the example notebook, these data are unpacked into their respective
 MagIC formatted tab delimited data files. The data are then loaded into
 dataframes and filtered using several different criteria (stratigraphic height and
 polarity). Several functions from the <span 
@@ -3874,7 +3877,7 @@ example code. Functions related to paleomagnetic and rock magnetic data
 analysis are shown as examples. The notebook also illustrates some of
 the interactivity that can be built into the notebook utilizing IPython
 widgets.
-</p><!--l. 1756--><p class="indent" >   If you want to to run the example notebook interactively, you&#x2019;ll need to follow
+</p><!--l. 1758--><p class="indent" >   If you want to to run the example notebook interactively, you&#x2019;ll need to follow
 these steps:
      </p><ol  class="enumerate1" >
      <li 
@@ -3901,24 +3904,24 @@ href="#command_line" >command line</a>
       <br />
       <br />  jupyter notebook
 </div>
-     <!--l. 1770--><p class="nopar" ></p></li></ol>
-<!--l. 1773--><p class="indent" >   This will open up a local IPython server in your default web browser. Click
+     <!--l. 1772--><p class="nopar" ></p></li></ol>
+<!--l. 1775--><p class="indent" >   This will open up a local IPython server in your default web browser. Click
 on <span 
 class="cmti-10x-x-109">Example</span><span 
 class="cmti-10x-x-109">_PmagPy</span><span 
 class="cmti-10x-x-109">_notebook.ipynb </span>to open and edit the main example
 notebook. You will see something like this:
-</p><!--l. 1775--><p class="indent" >   <img 
+</p><!--l. 1777--><p class="indent" >   <img 
 src="PmagPy53x.png" alt="PIC" class="graphics" width="426.79134pt" height="130.44284pt"  /><!--tex4ht:graphics  
 name="PmagPy53x.png" src="EPSFiles/notebook.eps"  
 -->
-</p><!--l. 1777--><p class="indent" >   Notebooks are constructed as a series of ‘cells&#x2019; which can be text or code. To
+</p><!--l. 1779--><p class="indent" >   Notebooks are constructed as a series of ‘cells&#x2019; which can be text or code. To
 view the ‘source&#x2019; of a text cell, just click on it. To render it, click on the ‘run&#x2019;
 button (sideways triangle on the toolbar). Similarly, to run the code in a code
 cell, click on the cell and then the ‘run&#x2019; button (or use the shift+enter short cut).
 To execute the entire notebook, click on the ‘Cell&#x2019; button and choose &#x2019;Run
 All&#x2019;.
-</p><!--l. 1781--><p class="indent" >   <a name='notebook_start'></a> Now you are ready to look at some data. In the code block under the
+</p><!--l. 1783--><p class="indent" >   <a name='notebook_start'></a> Now you are ready to look at some data. In the code block under the
 heading ‘Reading data from MagIC format results files&#x2019;, data are read in from a
 file <a 
 href="#magic_download" >downloaded</a> and unpacked from the MagIC database. The notebook shows
@@ -3928,11 +3931,11 @@ equal area projection:
                                                                      
 
                                                                      
-</p><!--l. 1784--><p class="indent" >   <img 
+</p><!--l. 1786--><p class="indent" >   <img 
 src="PmagPy54x.png" alt="PIC" class="graphics" width="426.79134pt" height="279.79002pt"  /><!--tex4ht:graphics  
 name="PmagPy54x.png" src="EPSFiles/SnakeRiver.eps"  
 -->
-</p><!--l. 1786--><p class="indent" >   There are several other tricks shown off in the notebook, which should be
+</p><!--l. 1788--><p class="indent" >   There are several other tricks shown off in the notebook, which should be
 enough to get you started using <span 
 class="cmbx-10x-x-109">ipmag </span>in a Python notebook environment.
 Conducting data analysis using <span 
@@ -3940,22 +3943,22 @@ class="cmbx-10x-x-109">PmagPy </span>in a notebook allows for the
 underlying code of statistical tests to be available and for the decisions
 made in the specific implementation of such tests to be transparently
 presented.
-</p><!--l. 1788--><p class="indent" >   Although there is much much more to do in Python, this documentation
+</p><!--l. 1790--><p class="indent" >   Although there is much much more to do in Python, this documentation
 is aimed at getting and using <span 
 class="cmbx-10x-x-109">PmagPy</span>, so that&#x2019;s it for this chapter.
 Congratulations if you made it to the end!
-</p><!--l. 1791--><p class="indent" >   <a name='trouble'></a>
+</p><!--l. 1793--><p class="indent" >   <a name='trouble'></a>
                                                                      
 
                                                                      
 </p>
-<!--l. 1792--><p class="indent" >   <a name='ch10'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 10</span><br /><a 
+<!--l. 1794--><p class="indent" >   <a name='ch10'></a></p><h2 class="chapterHead"><span class="titlemark">Chapter 10</span><br /><a 
 href="#QQ2-1-69" id="x1-6900010">Troubleshooting</a></h2>
-<!--l. 1795--><p class="noindent" ><a name='sec10-1'></a></p><h3 class="sectionHead"><span class="titlemark">10.1   </span> <a 
+<!--l. 1797--><p class="noindent" ><a name='sec10-1'></a></p><h3 class="sectionHead"><span class="titlemark">10.1   </span> <a 
 href="#QQ2-1-70" id="x1-7000010.1">Problems with installing Python</a></h3>
-<!--l. 1797--><p class="noindent" >First, please test that you have successfully installed the correct Python
+<!--l. 1799--><p class="noindent" >First, please test that you have successfully installed the correct Python
 distribution.
-</p><!--l. 1799--><p class="indent" >   Find your command line (Terminal for Mac users, Command Prompt
+</p><!--l. 1801--><p class="indent" >   Find your command line (Terminal for Mac users, Command Prompt
 for Windows users) and type <span 
 class="cmtt-10x-x-109">python</span>. You should see something like
 this:
@@ -3969,16 +3972,16 @@ $ python
  <br />[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
  <br />Type &#x0022;help&#x0022;, &#x0022;copyright&#x0022;, &#x0022;credits&#x0022; or &#x0022;license&#x0022; for more information.
 </div>
-<!--l. 1806--><p class="nopar" >
-</p><!--l. 1808--><p class="indent" >   If you get an error message, or you don&#x2019;t see “Anaconda” in the initial
+<!--l. 1808--><p class="nopar" >
+</p><!--l. 1810--><p class="indent" >   If you get an error message, or you don&#x2019;t see “Anaconda” in the initial
 message, you should go back to the <a 
 href="#getting_python" >installing Python</a> section and follow the
 instructions there.
-</p><!--l. 1825--><p class="noindent" >
+</p><!--l. 1827--><p class="noindent" >
 </p>
-<!--l. 1825--><p class="indent" >   <a name='sec10-2'></a></p><h3 class="sectionHead"><span class="titlemark">10.2   </span> <a 
+<!--l. 1827--><p class="indent" >   <a name='sec10-2'></a></p><h3 class="sectionHead"><span class="titlemark">10.2   </span> <a 
 href="#QQ2-1-71" id="x1-7100010.2">wxPython is not installed</a></h3>
-<!--l. 1827--><p class="noindent" >If you only have the core packages installed with the Anaconda distribution (plus
+<!--l. 1829--><p class="noindent" >If you only have the core packages installed with the Anaconda distribution (plus
 the PmagPy package you just installed), you may get the following ImportError
 when attempting to execute “eqarea.py -h”:
                                                                      
@@ -3988,8 +3991,8 @@ when attempting to execute “eqarea.py -h”:
    <div class="verbatim" id="verbatim-28">
 ImportError: No module named wx
 </div>
-<!--l. 1831--><p class="nopar" >
-</p><!--l. 1833--><p class="indent" >   To correct this error, simply execute at the command line:
+<!--l. 1833--><p class="nopar" >
+</p><!--l. 1835--><p class="indent" >   To correct this error, simply execute at the command line:
                                                                      
 
                                                                      
@@ -3997,12 +4000,12 @@ ImportError: No module named wx
    <div class="verbatim" id="verbatim-29">
 pip install --upgrade -f https://wxpython.org/Phoenix/snapshot-builds/ wxPython
 </div>
-<!--l. 1836--><p class="nopar" >
-</p><!--l. 1839--><p class="noindent" >
+<!--l. 1838--><p class="nopar" >
+</p><!--l. 1841--><p class="noindent" >
 </p>
-<!--l. 1839--><p class="indent" >   <a name='sec10-3'></a></p><h3 class="sectionHead"><span class="titlemark">10.3   </span> <a 
+<!--l. 1841--><p class="indent" >   <a name='sec10-3'></a></p><h3 class="sectionHead"><span class="titlemark">10.3   </span> <a 
 href="#QQ2-1-72" id="x1-7200010.3">Troubleshooting a pip install</a></h3>
-<!--l. 1840--><p class="noindent" >If you installed with pip but you have this error message or similar when you try
+<!--l. 1842--><p class="noindent" >If you installed with pip but you have this error message or similar when you try
 to run a program:
                                                                      
 
@@ -4011,12 +4014,12 @@ to run a program:
    <div class="verbatim" id="verbatim-30">
  -bash: eqarea.py: command not found
 </div>
-<!--l. 1843--><p class="nopar" >
-</p><!--l. 1845--><p class="indent" >   Make sure you are running the <a 
+<!--l. 1845--><p class="nopar" >
+</p><!--l. 1847--><p class="indent" >   Make sure you are running the <a 
 href="#which_command" >correct command</a> for your operating system
 and <span 
 class="cmbx-10x-x-109">PmagPy </span>install.
-</p><!--l. 1847--><p class="indent" >   Once you have the correct command, if you still see that error message, this
+</p><!--l. 1849--><p class="indent" >   Once you have the correct command, if you still see that error message, this
 probably means that you have not correctly installed PmagPy. On your
 command line, try:
                                                                      
@@ -4026,8 +4029,8 @@ command line, try:
    <div class="verbatim" id="verbatim-31">
 pip list
 </div>
-<!--l. 1851--><p class="nopar" >
-</p><!--l. 1853--><p class="indent" >   You should see both pmagpy-(version_number) and pmagpy-cli-(version_number)
+<!--l. 1853--><p class="nopar" >
+</p><!--l. 1855--><p class="indent" >   You should see both pmagpy-(version_number) and pmagpy-cli-(version_number)
 on that list. If you don&#x2019;t see them, go ahead and reinstall:
                                                                      
 
@@ -4037,14 +4040,14 @@ on that list. If you don&#x2019;t see them, go ahead and reinstall:
 pip install --upgrade --force-reinstall --no-cache-dir --no-deps pmagpy
  <br />pip install --upgrade --force-reinstall --no-cache-dir --no-deps pmagpy-cli
 </div>
-<!--l. 1858--><p class="nopar" >
-</p><!--l. 1860--><p class="indent" >   Fully uninstalling and reinstalling can occasionally fix other problems as
+<!--l. 1860--><p class="nopar" >
+</p><!--l. 1862--><p class="indent" >   Fully uninstalling and reinstalling can occasionally fix other problems as
 well!
-</p><!--l. 1863--><p class="noindent" >
+</p><!--l. 1865--><p class="noindent" >
 </p>
-<!--l. 1863--><p class="indent" >   <a name='sec10-4'></a></p><h3 class="sectionHead"><span class="titlemark">10.4   </span> <a 
+<!--l. 1865--><p class="indent" >   <a name='sec10-4'></a></p><h3 class="sectionHead"><span class="titlemark">10.4   </span> <a 
 href="#QQ2-1-73" id="x1-7300010.4">Troubleshooting a developer install</a></h3>
-<!--l. 1865--><p class="noindent" >For more information on the developer install, you can run:
+<!--l. 1867--><p class="noindent" >For more information on the developer install, you can run:
                                                                      
 
                                                                      
@@ -4052,28 +4055,28 @@ href="#QQ2-1-73" id="x1-7300010.4">Troubleshooting a developer install</a></h3>
    <div class="verbatim" id="verbatim-33">
 dev_setup.py -h
 </div>
-<!--l. 1868--><p class="nopar" >
-</p><!--l. 1870--><p class="indent" >   You can also check the specific <a 
+<!--l. 1870--><p class="nopar" >
+</p><!--l. 1872--><p class="indent" >   You can also check the specific <a 
 href="#getting_python" >install instructions</a>.
-</p><!--l. 1872--><p class="indent" >   For Mac users with a developer install, it is possible that you need to make
+</p><!--l. 1874--><p class="indent" >   For Mac users with a developer install, it is possible that you need to make
 the python scripts executable. On the command line in the PmagPy/programs
 directory, run the command: chmod a+x *.py
-</p><!--l. 1874--><p class="noindent" >
+</p><!--l. 1876--><p class="noindent" >
 </p>
-<!--l. 1874--><p class="indent" >   <a name='subsec10-4-1'></a></p><h4 class="subsectionHead"><span class="titlemark">10.4.1   </span> <a 
+<!--l. 1876--><p class="indent" >   <a name='subsec10-4-1'></a></p><h4 class="subsectionHead"><span class="titlemark">10.4.1   </span> <a 
 href="#QQ2-1-74" id="x1-7400010.4.1">PATH for Windows</a></h4>
-<!--l. 1876--><p class="noindent" >If you are trying to get a developer install to work on Windows, and you want to
+<!--l. 1878--><p class="noindent" >If you are trying to get a developer install to work on Windows, and you want to
 set/check your $PATH manually, see <a 
 href="http://www.mathworks.com/matlabcentral/answers/94933-how-do-i-set-my-system-path-under-windows" >Setting your Path in Windows</a>.
 More information about adding <span 
 class="cmbx-10x-x-109">PmagPy </span>to your $PATH is available
 <a 
 href="#setting_path" >here</a>.
-</p><!--l. 1878--><p class="noindent" >
+</p><!--l. 1880--><p class="noindent" >
 </p>
-<!--l. 1878--><p class="indent" >   <a name='subsec10-4-2'></a></p><h4 class="subsectionHead"><span class="titlemark">10.4.2   </span> <a 
+<!--l. 1880--><p class="indent" >   <a name='subsec10-4-2'></a></p><h4 class="subsectionHead"><span class="titlemark">10.4.2   </span> <a 
 href="#QQ2-1-75" id="x1-7500010.4.2">PATH for OSX or Linux</a></h4>
-<!--l. 1879--><p class="noindent" >You can test if your PATH has been properly set with this command:
+<!--l. 1881--><p class="noindent" >You can test if your PATH has been properly set with this command:
                                                                      
 
                                                                      
@@ -4082,21 +4085,21 @@ href="#QQ2-1-75" id="x1-7500010.4.2">PATH for OSX or Linux</a></h4>
  <br />  echo $PATH
  <br />
 </div>
-<!--l. 1883--><p class="nopar" >
-</p><!--l. 1885--><p class="indent" >   If you don&#x2019;t see PmagPy, PmagPy/programs, and PmagPy/programs/conversion_scripts
+<!--l. 1885--><p class="nopar" >
+</p><!--l. 1887--><p class="indent" >   If you don&#x2019;t see PmagPy, PmagPy/programs, and PmagPy/programs/conversion_scripts
 somewhere in the output, you have not successfully completed a developer
 install.
-</p><!--l. 1887--><p class="indent" >   If for some reason you need to add PmagPy to your $PATH manually, you
+</p><!--l. 1889--><p class="indent" >   If for some reason you need to add PmagPy to your $PATH manually, you
 can find more general information about setting $PATH <a 
 href="https://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux-unix" >here</a>, and specific
 information about adding <span 
 class="cmbx-10x-x-109">PmagPy </span>to your $PATH <a 
 href="#setting_path" >here</a>.
-</p><!--l. 1890--><p class="noindent" >
+</p><!--l. 1892--><p class="noindent" >
 </p>
-<!--l. 1890--><p class="indent" >   <a name='sec10-5'></a></p><h3 class="sectionHead"><span class="titlemark">10.5   </span> <a 
+<!--l. 1892--><p class="indent" >   <a name='sec10-5'></a></p><h3 class="sectionHead"><span class="titlemark">10.5   </span> <a 
 href="#QQ2-1-76" id="x1-7600010.5">Languages other than English</a></h3>
-<!--l. 1891--><p class="noindent" >If your computer uses multiple languages, or a language other than English, you
+<!--l. 1893--><p class="noindent" >If your computer uses multiple languages, or a language other than English, you
 may get an error message like this:
                                                                      
 
@@ -4114,7 +4117,7 @@ may get an error message like this:
  <br />  ValueError: unknown locale: UTF-8
  <br />  
 </div>
-<!--l. 1903--><p class="nopar" > Mac users can fix this by opening your .bashrc file and adding these
+<!--l. 1905--><p class="nopar" > Mac users can fix this by opening your .bashrc file and adding these
 lines:
                                                                      
 
@@ -4125,12 +4128,12 @@ lines:
  <br />  export LANG=en_US.UTF-8
  <br />  
 </div>
-<!--l. 1908--><p class="nopar" >
-</p><!--l. 1910--><p class="noindent" >
+<!--l. 1910--><p class="nopar" >
+</p><!--l. 1912--><p class="noindent" >
 </p>
-<!--l. 1910--><p class="indent" >   <a name='sec10-6'></a></p><h3 class="sectionHead"><span class="titlemark">10.6   </span> <a 
+<!--l. 1912--><p class="indent" >   <a name='sec10-6'></a></p><h3 class="sectionHead"><span class="titlemark">10.6   </span> <a 
 href="#QQ2-1-77" id="x1-7700010.6">Error loading dlls (Canopy Python/Windows only)</a></h3>
-<!--l. 1911--><p class="noindent" >Some of the modules used in PmagPy have dependencies that are not called
+<!--l. 1913--><p class="noindent" >Some of the modules used in PmagPy have dependencies that are not called
 directly. If you are missing one of those dependencies, the programs may fail in
 odd ways. In general, it is worthwhile to open Canopy, go into the package
 manager, and update all packages. More specifically, if you see an error message
@@ -4142,35 +4145,35 @@ like this:
    <div class="verbatim" id="verbatim-37">
 ImportError: DLL load failed: The specified procedure could not be found  
 </div>
-<!--l. 1911--><p class="nopar" > you may be missing the MKL package. Open Canopy, go to package manager,
+<!--l. 1913--><p class="nopar" > you may be missing the MKL package. Open Canopy, go to package manager,
 and select “Available packages”. Scroll down to MKL, and install it. This should
 fix the problem! Note that windows users who are having trouble opening one of
 the GUIs should try this solution whether or not they actually see this error
 message.
-</p><!--l. 1913--><p class="noindent" >
+</p><!--l. 1915--><p class="noindent" >
 </p>
-<!--l. 1913--><p class="indent" >   <a name='sec10-7'></a></p><h3 class="sectionHead"><span class="titlemark">10.7   </span> <a 
+<!--l. 1915--><p class="indent" >   <a name='sec10-7'></a></p><h3 class="sectionHead"><span class="titlemark">10.7   </span> <a 
 href="#QQ2-1-78" id="x1-7800010.7">Problem with a PmagPy dependency</a></h3>
-<!--l. 1915--><p class="noindent" ><span 
+<!--l. 1917--><p class="noindent" ><span 
 class="cmbx-10x-x-109">PmagPy </span>depends on a variety of Python packages. Sometimes you will run into
 problems if you have the wrong version of a dependency. You may get an
 ImportError or a SyntaxError in these cases. You can check the list of correct
 dependencies on <a 
 href="https://github.com/PmagPy/PmagPy/blob/master/environment.yml" >Github</a>.
-</p><!--l. 1917--><p class="indent" >   You can see what package versions you are running by using the command
+</p><!--l. 1919--><p class="indent" >   You can see what package versions you are running by using the command
 “conda list” (or “pip list” if you have a non-Anaconda Python). You can then
 compare with our list, and upgrade or downgrade if necessary. For example:
 “conda install pandas=0.24.2”.
-</p><!--l. 1919--><p class="noindent" >
+</p><!--l. 1921--><p class="noindent" >
 </p>
-<!--l. 1919--><p class="indent" >   <a name='sec10-8'></a></p><h3 class="sectionHead"><span class="titlemark">10.8   </span> <a 
+<!--l. 1921--><p class="indent" >   <a name='sec10-8'></a></p><h3 class="sectionHead"><span class="titlemark">10.8   </span> <a 
 href="#QQ2-1-79" id="x1-7900010.8">Problems with a specific program</a></h3>
-<!--l. 1920--><p class="noindent" >
+<!--l. 1922--><p class="noindent" >
 </p>
-<!--l. 1920--><p class="indent" >   <a name='subsec10-8-1'></a></p><h4 class="subsectionHead"><span class="titlemark">10.8.1   </span> <a 
+<!--l. 1922--><p class="indent" >   <a name='subsec10-8-1'></a></p><h4 class="subsectionHead"><span class="titlemark">10.8.1   </span> <a 
 href="#QQ2-1-80" id="x1-8000010.8.1">Thellier auto_interpreter crashes with a Segmentation Fault (on
 Mac).</a></h4>
-<!--l. 1922--><p class="noindent" >NB: This should no longer be a problem with matplotlib 2.0 and higher.
+<!--l. 1924--><p class="noindent" >NB: This should no longer be a problem with matplotlib 2.0 and higher.
 </p>
                                                                      
 
@@ -4185,11 +4188,11 @@ Mac).</a></h4>
      <li class="itemize">Alternative: download and use the <a 
 href="#standalone" >standalone Pmag GUI</a> distribution
      to access Thellier GUI.</li></ul>
-<!--l. 1930--><p class="noindent" >
+<!--l. 1932--><p class="noindent" >
 </p>
-<!--l. 1930--><p class="indent" >   <a name='sec10-9'></a></p><h3 class="sectionHead"><span class="titlemark">10.9   </span> <a 
+<!--l. 1932--><p class="indent" >   <a name='sec10-9'></a></p><h3 class="sectionHead"><span class="titlemark">10.9   </span> <a 
 href="#QQ2-1-81" id="x1-8100010.9">Wrong Python in Jupyter notebook</a></h3>
-<!--l. 1932--><p class="noindent" >If your jupyter notebook is calling the wrong version of python (i.e., using the
+<!--l. 1934--><p class="noindent" >If your jupyter notebook is calling the wrong version of python (i.e., using the
 OSX verion of python instead of Anaconda python), do this:
                                                                      
 
@@ -4200,7 +4203,7 @@ OSX verion of python instead of Anaconda python), do this:
  <br />    ln -s /Users/USERNAME/anaconda3/bin/python /usr/local/bin/python
  <br />
 </div>
-<!--l. 1938--><p class="nopar" > and this:
+<!--l. 1940--><p class="nopar" > and this:
                                                                      
 
                                                                      
@@ -4209,13 +4212,13 @@ OSX verion of python instead of Anaconda python), do this:
     unlink /usr/local/bin/pythonw
  <br />    ln -s /Users/USERNAME/anaconda3/bin/pythonw /usr/local/bin/pythonw
 </div>
-<!--l. 1944--><p class="nopar" >
-</p><!--l. 1946--><p class="indent" >   where USERNAME is your username.
-</p><!--l. 1949--><p class="noindent" >
+<!--l. 1946--><p class="nopar" >
+</p><!--l. 1948--><p class="indent" >   where USERNAME is your username.
+</p><!--l. 1951--><p class="noindent" >
 </p>
-<!--l. 1949--><p class="indent" >   <a name='sec10-10'></a></p><h3 class="sectionHead"><span class="titlemark">10.10   </span> <a 
+<!--l. 1951--><p class="indent" >   <a name='sec10-10'></a></p><h3 class="sectionHead"><span class="titlemark">10.10   </span> <a 
 href="#QQ2-1-82" id="x1-8200010.10">Making maps (Basemap vs. cartopy)</a></h3>
-<!--l. 1951--><p class="noindent" >In the past, <span 
+<!--l. 1953--><p class="noindent" >In the past, <span 
 class="cmbx-10x-x-109">PmagPy </span>used Basemap for all map plotting functionality. Basemap
 is no longer being developed, so we have switched to cartopy. We highly
 recommend that any newcomers simply follow the regular install instructions
@@ -4228,8 +4231,8 @@ still install it:
    <div class="verbatim" id="verbatim-40">
  <br />    conda install --channel conda-forge basemap basemap-data-hire
 </div>
-<!--l. 1956--><p class="nopar" >
-</p><!--l. 1958--><p class="indent" >   Then install the high-res data files:
+<!--l. 1958--><p class="nopar" >
+</p><!--l. 1960--><p class="indent" >   Then install the high-res data files:
                                                                      
 
                                                                      
@@ -4237,8 +4240,8 @@ still install it:
    <div class="verbatim" id="verbatim-41">
     install_etopo.py
 </div>
-<!--l. 1962--><p class="nopar" >
-</p><!--l. 1964--><p class="indent" >   By default, all pmagplotlib/ipmag functions will now use cartopy. If
+<!--l. 1964--><p class="nopar" >
+</p><!--l. 1966--><p class="indent" >   By default, all pmagplotlib/ipmag functions will now use cartopy. If
 you need the old Basemap version, the following functions have been
 preserved:
                                                                      
@@ -4251,18 +4254,18 @@ preserved:
  <br />    ipmag.plot_pole_basemap
  <br />    ipmag.plot_vgp_basemap
 </div>
-<!--l. 1971--><p class="nopar" >
-</p><!--l. 1973--><p class="indent" >   To use the most up-to-date Basemap, you will need to run it in a conda env.
+<!--l. 1973--><p class="nopar" >
+</p><!--l. 1975--><p class="indent" >   To use the most up-to-date Basemap, you will need to run it in a conda env.
 Otherwise, you will get a KeyError and/or a FileNotFoundError. <a 
 href="https://medium.com/data-science-in-practice/saving-the-environment-with-anaconda-ad68e603d8c5" >This article</a>
 explains how to create and run a conda env.
-</p><!--l. 1975--><p class="indent" >   All that is to say: you *can* still use Basemap, but please just use cartopy
+</p><!--l. 1977--><p class="indent" >   All that is to say: you *can* still use Basemap, but please just use cartopy
 instead.
-</p><!--l. 1977--><p class="noindent" >
+</p><!--l. 1979--><p class="noindent" >
 </p>
-<!--l. 1977--><p class="indent" >   <a name='sec10-11'></a></p><h3 class="sectionHead"><span class="titlemark">10.11   </span> <a 
+<!--l. 1979--><p class="indent" >   <a name='sec10-11'></a></p><h3 class="sectionHead"><span class="titlemark">10.11   </span> <a 
 href="#QQ2-1-83" id="x1-8300010.11">Other problems</a></h3>
-<!--l. 1977--><p class="noindent" >Report a problem not listed above on <a 
+<!--l. 1979--><p class="noindent" >Report a problem not listed above on <a 
 href="https://github.com/PmagPy/PmagPy/issues/new" >Github</a>, or e-mail <a 
 href="mailto:ltauxe@ucsd.edu" >ltauxe@ucsd.edu</a>. Please
 include the following information: 1) the version of PmagPy that you are using,
