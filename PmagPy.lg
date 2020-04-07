@@ -62,6 +62,7 @@ File: PmagPy.tmp
 File: PmagPy.tmp
 File: PmagPy.tmp
 File: PmagPy.tmp
+File: PmagPy.tmp
 Css: p.noindent { text-indent: 0em }
 Css: td p.noindent { text-indent: 0em; margin-top:0em; }
 Css: p.nopar { text-indent: 0em; }
@@ -210,7 +211,7 @@ Css: .figure img.graphics {margin-left:10%;}
 --- needs --- PmagPy.idv[44] ==> PmagPy21x.png ---
 --- needs --- PmagPy.idv[46] ==> PmagPy22x.png ---
 --- needs --- PmagPy.idv[48] ==> PmagPy23x.png ---
---- needs --- PmagPy.idv[49] ==> PmagPy24x.png ---
+--- needs --- PmagPy.idv[50] ==> PmagPy24x.png ---
 --- needs --- PmagPy.idv[51] ==> PmagPy25x.png ---
 --- needs --- PmagPy.idv[53] ==> PmagPy26x.png ---
 --- needs --- PmagPy.idv[55] ==> PmagPy27x.png ---
@@ -224,23 +225,24 @@ Css: .figure img.graphics {margin-left:10%;}
 --- needs --- PmagPy.idv[71] ==> PmagPy35x.png ---
 --- needs --- PmagPy.idv[73] ==> PmagPy36x.png ---
 --- needs --- PmagPy.idv[75] ==> PmagPy37x.png ---
---- needs --- PmagPy.idv[76] ==> PmagPy38x.png ---
+--- needs --- PmagPy.idv[77] ==> PmagPy38x.png ---
 --- needs --- PmagPy.idv[78] ==> PmagPy39x.png ---
---- needs --- PmagPy.idv[79] ==> PmagPy40x.png ---
+--- needs --- PmagPy.idv[80] ==> PmagPy40x.png ---
 --- needs --- PmagPy.idv[81] ==> PmagPy41x.png ---
 --- needs --- PmagPy.idv[83] ==> PmagPy42x.png ---
 --- needs --- PmagPy.idv[85] ==> PmagPy43x.png ---
---- needs --- PmagPy.idv[86] ==> PmagPy44x.png ---
+--- needs --- PmagPy.idv[87] ==> PmagPy44x.png ---
 --- needs --- PmagPy.idv[88] ==> PmagPy45x.png ---
 --- needs --- PmagPy.idv[90] ==> PmagPy46x.png ---
 --- needs --- PmagPy.idv[92] ==> PmagPy47x.png ---
 --- needs --- PmagPy.idv[94] ==> PmagPy48x.png ---
 --- needs --- PmagPy.idv[96] ==> PmagPy49x.png ---
 --- needs --- PmagPy.idv[98] ==> PmagPy50x.png ---
---- needs --- PmagPy.idv[99] ==> PmagPy51x.png ---
+--- needs --- PmagPy.idv[100] ==> PmagPy51x.png ---
 --- needs --- PmagPy.idv[101] ==> PmagPy52x.png ---
 --- needs --- PmagPy.idv[103] ==> PmagPy53x.png ---
 --- needs --- PmagPy.idv[105] ==> PmagPy54x.png ---
+--- needs --- PmagPy.idv[107] ==> PmagPy55x.png ---
 --- characters ---
 Font("cmr","10","10","109")
 Font("cmbx","10","10","109")
