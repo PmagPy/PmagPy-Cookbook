@@ -5,12 +5,12 @@ htlatex PmagPy "html,1,sections+"
 #mv *.html Cookbook-Web-Pages
 #mv PmagPy.pdf Cookbook-Web-Pages
 
- git add .
- git commit
- git push origin master
-
-opsol
-# cd Cookbook-Web-Pages
 # git add .
 # git commit
-# git push origin master:gh-pages
+# git push origin master
+
+#opsol
+ cd Cookbook-Web-Pages
+ git add .
+ git commit
+ git push origin master:gh-pages
