@@ -14,17 +14,28 @@ These are the install instructions for OSX/developer.  If this isn't your operat
 First, you will need to download a scientific Python distribution.  We strongly recommend Anaconda.  Be warned, your computer comes with a version of Python already installed; but this pre-installed version does NOT have everything you will need to run {\bf PmagPy}, so you will still need to download Anaconda.
 
 \begin{itemize}
-\item Download and install \href{https://www.anaconda.com/download}{Anaconda Python 3}.  If you are running OSX Catalina or later, you MUST use the command line installer, not the graphical installer.
-  \item Note: if you already installed Anaconda Python, and then you upgrade to OSX Catalina, you will need to reinstall Anaconda using the command line installer.
+\item Download and install \href{https://www.anaconda.com/download}{Anaconda Python 3}.
+  \item Note: if you already installed Anaconda Python, and then you upgrade to OSX Catalina, you may need to reinstall Anaconda.  In general, if you run into errors with your Anaconda Python environment, it can save time to simply \href{https://docs.anaconda.com/anaconda/install/uninstall/}{uninstall and reinstall}.
    \item Open your command line (Terminal).  See \href{https://earthref.org/PmagPy/cookbook/#command_line}{this Cookbook section} for more information on finding your command line.
-   \item Download a few non-default Python packages.  Run the following commands: \begin{verbatim}
+   \item Create and activate a new conda Python environment with some required packages: \begin{verbatim}
 
-    conda install future cartopy pandas matplotlib
-    conda install scripttest --channel conda-forge --no-deps
-    pip install --upgrade pip setuptools
-    pip install wxpython 
-
+    conda create -n pmagpy_env future wxPython cartopy pandas matplotlib requests
+    conda activate pmagpy_env
+    pip install --user --upgrade pip setuptools
+    conda install conda-forge::python-wget
 \end{verbatim}
+   \item You have now created a new environment called ``pmagpy\_env'' and activated it.  This gives you a Python environment with the packages you need to run PmagPy programs.  Each time you want to use PmagPy, you will open your Terminal and then run:
+
+     \begin{verbatim}
+     conda activate pmagpy_env
+\end{verbatim}
+     You can also deactivate the environment using:
+
+     \begin{verbatim}
+       conda deactivate
+       \end{verbatim}
+
+     You must always activate your pmagpy environment when you open a new Command Prompt window if you want to use PmagPy in that window.  To learn more about managing conda environments, etc., see the Anaconda documentation and \href{https://know.continuum.io/rs/387-XNW-688/images/conda-cheatsheet.pdf}{cheatsheet}.
    \item When running these commands you may see some warnings about dependencies, but you can just ignore them!
 
 \item If a package fails to install, you may need to use ``sudo'': i.e., \texttt{sudo pip install scripttest}.  You will then be asked for your computer password.
@@ -51,7 +62,7 @@ Here are the steps to clone and install {\bf PmagPy}.
 
 \begin{itemize}
 
-  \item You must use bash as your shell (not csh, zsh, etc.). This is the default for OSX, so if you have set up a different shell you will need to switch back.  Select Terminal \verb!-->! Preferences \verb!-->! General, and choose ``default login shell''.  Restart Terminal, and you'll be ready to go.
+  \item {\bf PmagPy} has been most extensively tested using the bash shell (not csh, zsh, etc.). However, bash is no longer the default for OSX.  The new default shell (zsh) should work, but if you run into trouble and need to switch, you can \href{https://support.apple.com/guide/terminal/change-the-default-shell-trml113/mac}{follow these instructions}.  Select Terminal \verb!-->! Preferences \verb!-->! General, and choose ``default login shell''.  Restart Terminal, and you'll be ready to go.
 
 \item Download and \href{https://git-scm.com/downloads}{install git}
 
@@ -109,7 +120,7 @@ pmag_gui.py
 
 \end{itemize}
 
-If any of these commands don't work, go back and carefully follow the install instructions.  If you still have a problem, try the \href{https://earthref.org/PmagPy/cookbook/#trouble}{Troubleshooting section}.  If you don't find an answer there, check out the existing \href{https://github.com/PmagPy/PmagPy/issues}{Github issues} and create a new one if necessary.
+Remember that the program may be very slow to initialize the first time!  You may also need to resize the GUI window.  If the program doesn't open or you get an error message, go back and carefully follow the install instructions to make sure you didn't miss a step.  If you still have a problem, try the \href{https://earthref.org/PmagPy/cookbook/#trouble}{Troubleshooting section}.  If you don't find an answer there, check out the existing \href{https://github.com/PmagPy/PmagPy/issues}{Github issues} and create a new one if necessary.
 
 \subsection{Finishing up}
 

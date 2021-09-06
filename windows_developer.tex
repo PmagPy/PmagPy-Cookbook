@@ -21,13 +21,13 @@ First, you will need to download a scientific Python distribution.  We strongly 
    \item Note: if you did not add Anaconda Python to your PATH as recommended above, you will open the ``Anaconda Prompt'' instead.
    \item Create and activate a new conda Python environment with some required packages: \begin{verbatim}
 
-    conda create -n pmagpy_env future cartopy pandas matplotlib
+    conda create -n pmagpy_env future cartopy pandas matplotlib requests
     conda activate pmagpy_env
     conda install scripttest --channel conda-forge --no-deps
     pip install --upgrade pip setuptools
-    pip install wxpython 
+    pip install wxpython
 \end{verbatim}
-   \item You have now created a new environment called ``pmagpy_env'' and activated it.  This gives you a Python environment with the packages you need to run PmagPy programs.  Each time you want to use PmagPy, you will open your Command Prompt and then run:
+   \item You have now created a new environment called ``pmagpy\_env'' and activated it.  This gives you a Python environment with the packages you need to run PmagPy programs.  Each time you want to use PmagPy, you will open your Command Prompt and then run:
 
      conda activate pmagpy_env
 
@@ -108,7 +108,7 @@ pmag_gui.py
 
 \end{itemize}
 
-If any of these commands don't work, go back and carefully follow the install instructions.  If you still have a problem, try the \href{https://earthref.org/PmagPy/cookbook/#trouble}{Troubleshooting section}.  If you don't find an answer there, check out the existing \href{https://github.com/PmagPy/PmagPy/issues}{Github issues} and create a new one if necessary.
+Remember that the program may be very slow to initialize the first time!  You may also need to resize the GUI window.  If the program doesn't open or you get an error message, go back and carefully follow the install instructionsto make sure you didn't miss a step.  If you still have a problem, try the \href{https://earthref.org/PmagPy/cookbook/#trouble}{Troubleshooting section}.  If you don't find an answer there, check out the existing \href{https://github.com/PmagPy/PmagPy/issues}{Github issues} and create a new one if necessary.
 
 \subsection{Finishing up}
 
