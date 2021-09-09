@@ -5,25 +5,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
 <meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
 <meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
-<!-- html,1,sections+ --> 
+<!-- html --> 
 <meta name="src" content="linux_pip.tex"> 
-<meta name="date" content="2021-09-06 20:15:00"> 
+<meta name="date" content="2021-09-09 09:24:00"> 
 <link rel="stylesheet" type="text/css" href="linux_pip.css"> 
 </head><body 
 >
-   <div class="tableofcontents">
-   <span class="likesectionToc" ><a 
-href="#x1-1000" id="QQ2-1-1">Contents</a></span>
-<br />   <span class="sectionToc" >1 <a 
-href="#x1-20001" id="QQ2-1-2">Linux pip install</a></span>
-<br />   <span class="sectionToc" >2 <a 
-href="#x1-100002" id="QQ2-1-10">Next steps</a></span>
-   </div>
    <h3 class="likesectionHead"><a 
-href="#QQ2-1-1" id="x1-1000">Contents</a></h3>
+ id="x1-1000"></a>Contents</h3>
    <div class="tableofcontents">
    <span class="sectionToc" >1 <a 
-href="#x1-20001">Linux pip install</a></span>
+href="#x1-20001" id="QQ2-1-2">Linux pip install</a></span>
 <br />   &#x00A0;<span class="subsectionToc" >1.1 <a 
 href="#x1-30001.1" id="QQ2-1-3">Install Python</a></span>
 <br />   &#x00A0;<span class="subsectionToc" >1.2 <a 
@@ -39,27 +31,24 @@ href="#x1-80001.6" id="QQ2-1-8">Finishing up</a></span>
 <br />   &#x00A0;<span class="subsectionToc" >1.7 <a 
 href="#x1-90001.7" id="QQ2-1-9">Keeping PmagPy up-to-date</a></span>
 <br />   <span class="sectionToc" >2 <a 
-href="#x1-100002">Next steps</a></span>
+href="#x1-100002" id="QQ2-1-10">Next steps</a></span>
    </div>
 <!--l. 9--><p class="noindent" >
    <h3 class="sectionHead"><span class="titlemark">1   </span> <a 
-href="#QQ2-1-2" id="x1-20001">Linux pip install</a></h3>
+ id="x1-20001"></a>Linux pip install</h3>
 <!--l. 11--><p class="noindent" >These are the install instructions for Linux/pip. If this isn&#8217;t your operating
 system, or you want a developer install, go back to the <a 
 href="https://earthref.org/PmagPy/cookbook/#next_steps" >Cookbook</a> and select the
 correct link.
 <!--l. 14--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.1   </span> <a 
-href="#QQ2-1-3" id="x1-30001.1">Install Python</a></h4>
+ id="x1-30001.1"></a>Install Python</h4>
 <!--l. 16--><p class="noindent" >First, you will need to download a scientific Python distribution. We strongly
 recommend Anaconda. Be warned, your computer comes with a version of
 Python already installed; but this pre-installed version does NOT have
 everything you will need to run <span 
 class="cmbx-10x-x-109">PmagPy</span>, so you will still need to download
 Anaconda.
-                                                                     
-
-                                                                     
      <ul class="itemize1">
      <li class="itemize">Download and install <a 
 href="https://www.anaconda.com/download" >Anaconda Python 3</a>.
@@ -67,6 +56,9 @@ href="https://www.anaconda.com/download" >Anaconda Python 3</a>.
      <li class="itemize">In  general,  if  you  run  into  errors  with  your  Anaconda  Python
      environment, it can save time to simply <a 
 href="https://docs.anaconda.com/anaconda/install/uninstall/" >uninstall and reinstall</a>.
+                                                                     
+
+                                                                     
      </li>
      <li class="itemize">Open your command line (Terminal). See <a 
 href="https://earthref.org/PmagPy/cookbook/#command_line" >this Cookbook section</a> for
@@ -78,7 +70,7 @@ href="https://earthref.org/PmagPy/cookbook/#command_line" >this Cookbook section
 
                                                                      
      <div class="verbatim" id="verbatim-1">
-     &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;conda&#x00A0;create&#x00A0;-n&#x00A0;pmagpy_env&#x00A0;future&#x00A0;wxPython&#x00A0;cartopy&#x00A0;pandas&#x00A0;matplotlib&#x00A0;requests
+     &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;conda&#x00A0;create&#x00A0;-n&#x00A0;pmagpy_env&#x00A0;future&#x00A0;wxPython&#x00A0;cartopy&#x00A0;pandas&#x00A0;matplotlib&#x00A0;requests&#x00A0;jupyter
      &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;conda&#x00A0;activate&#x00A0;pmagpy_env
      &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;pip&#x00A0;install&#x00A0;--user&#x00A0;--upgrade&#x00A0;pip&#x00A0;setuptools
      &#x00A0;<br />&#x00A0;&#x00A0;&#x00A0;&#x00A0;conda&#x00A0;install&#x00A0;conda-forge::python-wget
@@ -121,7 +113,7 @@ class="cmtt-10x-x-109">install scripttest</span>. You will then be asked for you
      </li></ul>
 <!--l. 49--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.2   </span> <a 
-href="#QQ2-1-4" id="x1-40001.2">Install wxPython</a></h4>
+ id="x1-40001.2"></a>Install wxPython</h4>
 <!--l. 51--><p class="noindent" >Next, you need to install wxPython.
 <!--l. 53--><p class="indent" >   Most recently (on Ubuntu 18.04.2), I&#8217;ve had success with simply running:
                                                                      
@@ -182,7 +174,7 @@ href="https://wxpython.org/blog/2017-08-17-builds-for-linux-with-pip/" >these in
      </li></ul>
 <!--l. 97--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.3   </span> <a 
-href="#QQ2-1-5" id="x1-50001.3">Test your python</a></h4>
+ id="x1-50001.3"></a>Test your python</h4>
 <!--l. 100--><p class="noindent" >Run python on your command line.
 <!--l. 102--><p class="indent" >   You should see something like this:
                                                                      
@@ -234,7 +226,7 @@ href="https://github.com/pyenv/pyenv/issues/691" >this Github issue</a>
 for more information.
 <!--l. 135--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.4   </span> <a 
-href="#QQ2-1-6" id="x1-60001.4">Install PmagPy</a></h4>
+ id="x1-60001.4"></a>Install PmagPy</h4>
      <ul class="itemize1">
      <li class="itemize">Install pmagpy and pmagpy-cli:
                                                                      
@@ -260,7 +252,7 @@ href="#QQ2-1-6" id="x1-60001.4">Install PmagPy</a></h4>
      </li></ul>
 <!--l. 157--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.5   </span> <a 
-href="#QQ2-1-7" id="x1-70001.5">Test PmagPy</a></h4>
+ id="x1-70001.5"></a>Test PmagPy</h4>
 <!--l. 159--><p class="noindent" >Test core functionality:
      <ul class="itemize1">
      <li class="itemize">On your command line, type &#8220;python&#8221; to start the interpreter. You will
@@ -309,7 +301,7 @@ href="https://github.com/PmagPy/PmagPy/issues" >Github issues</a> and create a n
 necessary.
 <!--l. 195--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.6   </span> <a 
-href="#QQ2-1-8" id="x1-80001.6">Finishing up</a></h4>
+ id="x1-80001.6"></a>Finishing up</h4>
 <!--l. 197--><p class="noindent" >Accessing example data files:
 <!--l. 199--><p class="indent" >   There are many data files used in the examples of programs and for use with
 the textbook <a 
@@ -330,7 +322,7 @@ If you have a developer install, you can simply navigate to PmagPy/data_files,
 and move_data_files.py will not be needed.
 <!--l. 209--><p class="noindent" >
    <h4 class="subsectionHead"><span class="titlemark">1.7   </span> <a 
-href="#QQ2-1-9" id="x1-90001.7">Keeping PmagPy up-to-date</a></h4>
+ id="x1-90001.7"></a>Keeping PmagPy up-to-date</h4>
 <!--l. 212--><p class="noindent" >To stay up to date with new features and bug fixes, you should periodically
 update both <span 
 class="cmbx-10x-x-109">PmagPy </span>packages.
@@ -367,7 +359,7 @@ Python package), run:
 <!--l. 232--><p class="nopar" >
 <!--l. 234--><p class="noindent" >
    <h3 class="sectionHead"><span class="titlemark">2   </span> <a 
-href="#QQ2-1-10" id="x1-100002">Next steps</a></h3>
+ id="x1-100002"></a>Next steps</h3>
 <!--l. 236--><p class="noindent" >Back to the <a 
 href="https://earthref.org/PmagPy/cookbook/#next_steps" >Cookbook</a>!
     

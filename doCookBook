@@ -1,16 +1,5 @@
-# uncomment the customlinks import and all the \customlink lines
-# then run: 
-htlatex PmagPy "html,1,sections+"
-#mv *.png Cookbook-Web-Pages
-#mv *.html Cookbook-Web-Pages
-#mv PmagPy.pdf Cookbook-Web-Pages
-
-# git add .
-# git commit
-# git push origin master
-
-#opsol
- cd Cookbook-Web-Pages
- git add .
- git commit
- git push origin master:gh-pages
+git checkout gh-pages     # if you’re not already on that branch
+htlatex PmagPy "xhtml,1,sections+,charset=utf-8" " -cmozhtf -utf8”
+git add .
+git commit -m “made some changes”
+git push
