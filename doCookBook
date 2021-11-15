@@ -1,5 +1,5 @@
 git checkout gh-pages     # if you’re not already on that branch
-htlatex PmagPy "xhtml,1,sections+,charset=utf-8" " -cmozhtf -utf8”
+htlatex PmagPy "xhtml,1,sections+,charset=utf-8" -cmozhtf -utf8
 git add .
 git commit -m “made some changes”
 git push
