@@ -7,20 +7,16 @@
 
 \section{OSX developer install}
 
-These are the install instructions for OSX/developer.  If this isn't your operating system, or you want a developer install, go back to the \href{https://earthref.org/PmagPy/cookbook/#next_steps}{Cookbook} and select the correct link.
+These are the install instructions for OSX/developer.  If this isn't your operating system, or you want a developer install, go back to the \href{https://earthref.org/PmagPy/cookbook/#next_steps%7D%7BCookbook} and select the correct link.
 
 
 \subsection{Install Python}
 First, you will need to download a scientific Python distribution.  We strongly recommend Anaconda.  Be warned, your computer comes with a version of Python already installed; but this pre-installed version does NOT have everything you will need to run {\bf PmagPy}, so you will still need to download Anaconda.
 
 \begin{itemize}
-\item Download and install \href{https://www.anaconda.com/download}{Anaconda Python 3}.
-  \item Note: if you already installed Anaconda Python, and then you upgrade to OSX Catalina, you may need to reinstall Anaconda.  In general, if you run into errors with your Anaconda Python environment, it can save time to simply \href{https://docs.anaconda.com/anaconda/install/uninstall/}{uninstall and reinstall}.
-   \item Open your command line (Terminal).  See \href{https://earthref.org/PmagPy/cookbook/#command_line}{this Cookbook section} for more information on finding your command line.
-   \item something happened in recent versions of pandas that breaks certain programs, so you need to downgrade your pandas installation:
-   
-       conda install pandas version==1.2.5
-       
+\item Download and install \href{https://urldefense.proofpoint.com/v2/url?u=https-3A__www.anaconda.com_download-257D-257BAnaconda&d=DwIGAg&c=-35OiAkTchMrZOngvJPOeA&r=HLmFoB00cDyPMQ7s6Fl35Q&m=9TB00hCAaShZt5cteDvwqhnCi3nTUrwrqW7n_PywH0XvmSc18bYYYeEFO5tqVczP&s=ENpPtJAjCpNHYtnmLp_LRXgHRjiPAS8aKu8PVoPzdwY&e=  Python 3}.
+  \item Note: if you already installed Anaconda Python, and then you upgrade to OSX Catalina, you may need to reinstall Anaconda.  In general, if you run into errors with your Anaconda Python environment, it can save time to simply \href{https://urldefense.proofpoint.com/v2/url?u=https-3A__docs.anaconda.com_anaconda_install_uninstall_-257D-257Buninstall&d=DwIGAg&c=-35OiAkTchMrZOngvJPOeA&r=HLmFoB00cDyPMQ7s6Fl35Q&m=9TB00hCAaShZt5cteDvwqhnCi3nTUrwrqW7n_PywH0XvmSc18bYYYeEFO5tqVczP&s=LBudYOOJBv4mTmKq3b8qVgQG8z2NDhgE2XO03GyBFXo&e=  and reinstall}.
+   \item Open your command line (Terminal).  See \href{https://earthref.org/PmagPy/cookbook/#command_line%7D%7Bthis Cookbook section} for more information on finding your command line.
    \item Create and activate a new conda Python environment with some required packages: \begin{verbatim}
    
 
@@ -40,7 +36,7 @@ First, you will need to download a scientific Python distribution.  We strongly 
        conda deactivate
        \end{verbatim}
 
-     You must always activate your pmagpy environment when you open a new Terminal window if you want to use PmagPy in that window.  To learn more about managing conda environments, etc., see the Anaconda documentation and \href{https://know.continuum.io/rs/387-XNW-688/images/conda-cheatsheet.pdf}{cheatsheet}.
+     You must always activate your pmagpy environment when you open a new Terminal window if you want to use PmagPy in that window.  To learn more about managing conda environments, etc., see the Anaconda documentation and \href{https://urldefense.proofpoint.com/v2/url?u=https-3A__know.continuum.io_rs_387-2DXNW-2D688_images_conda-2Dcheatsheet.pdf-257D-257Bcheatsheet&d=DwIGAg&c=-35OiAkTchMrZOngvJPOeA&r=HLmFoB00cDyPMQ7s6Fl35Q&m=9TB00hCAaShZt5cteDvwqhnCi3nTUrwrqW7n_PywH0XvmSc18bYYYeEFO5tqVczP&s=iipiccA7iYU7HeiVxN53TNt8byw3p4SLtTEGsdhVDhY&e= }.
    \item When running these commands you may see some warnings about dependencies, but you can just ignore them!
 
 \item If a package fails to install, you may need to use ``sudo'': i.e., \texttt{sudo pip install scripttest}.  You will then be asked for your computer password.
@@ -54,7 +50,7 @@ First, you will need to download a scientific Python distribution.  We strongly 
 
 To make sure that you have installed Python successfully, type \texttt{python} on your command line.  You should see something like this: \begin{verbatim}
 
-Python 3.7.10 (default, Feb 26 2021, 10:16:00)
+Python 3.7.11 (default, Jul 27 2021, 07:03:16)
 [Clang 10.0.0 ] :: Anaconda, Inc. on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>>\end{verbatim}
@@ -67,15 +63,15 @@ Here are the steps to clone and install {\bf PmagPy}.
 
 \begin{itemize}
 
-  \item {\bf PmagPy} has been most extensively tested using the bash shell (not csh, zsh, etc.). However, bash is no longer the default for OSX.  The new default shell (zsh) should work, but if you run into trouble and need to switch, you can \href{https://support.apple.com/guide/terminal/change-the-default-shell-trml113/mac}{follow these instructions}.  Select Terminal \verb!-->! Preferences \verb!-->! General, and choose ``default login shell''.  Restart Terminal, and you'll be ready to go.
+  \item {\bf PmagPy} has been most extensively tested using the bash shell (not csh, zsh, etc.). However, bash is no longer the default for OSX.  The new default shell (zsh) should work, but if you run into trouble and need to switch, you can \href{https://urldefense.proofpoint.com/v2/url?u=https-3A__support.apple.com_guide_terminal_change-2Dthe-2Ddefault-2Dshell-2Dtrml113_mac-257D-257Bfollow&d=DwIGAg&c=-35OiAkTchMrZOngvJPOeA&r=HLmFoB00cDyPMQ7s6Fl35Q&m=9TB00hCAaShZt5cteDvwqhnCi3nTUrwrqW7n_PywH0XvmSc18bYYYeEFO5tqVczP&s=shD2Rg0vfyRVu1Mj_sBn8M2TSo9y7b0d_Vl2eav7lmk&e=  these instructions}.  Select Terminal \verb!-->! Preferences \verb!-->! General, and choose ``default login shell''.  Restart Terminal, and you'll be ready to go.
 
-\item Download and \href{https://git-scm.com/downloads}{install git}
+\item Download and \href{https://urldefense.proofpoint.com/v2/url?u=https-3A__git-2Dscm.com_downloads-257D-257Binstall&d=DwIGAg&c=-35OiAkTchMrZOngvJPOeA&r=HLmFoB00cDyPMQ7s6Fl35Q&m=9TB00hCAaShZt5cteDvwqhnCi3nTUrwrqW7n_PywH0XvmSc18bYYYeEFO5tqVczP&s=d27GIuq5Z1kN-0OZ7S6alGB5RMz113EcsB6tOdh7Be0&e=  git}
 
   \item Navigate to the directory where you want to put the PmagPy folder, then run:
 
 \begin{verbatim}
 
-  git clone https://github.com/PmagPy/PmagPy.git
+  git clone https://urldefense.proofpoint.com/v2/url?u=https-3A__github.com_PmagPy_PmagPy.git&d=DwIGAg&c=-35OiAkTchMrZOngvJPOeA&r=HLmFoB00cDyPMQ7s6Fl35Q&m=9TB00hCAaShZt5cteDvwqhnCi3nTUrwrqW7n_PywH0XvmSc18bYYYeEFO5tqVczP&s=UHSG_hASMyt-o5ql0cdtQRTYM3-HTtCsdtaoaFiV9lU&e= 
 \end{verbatim}
 
 \item You should now have a full local copy of the PmagPy repository.  Change directories into PmagPy:
@@ -92,7 +88,7 @@ Here are the steps to clone and install {\bf PmagPy}.
   python dev_setup.py install
 \end{verbatim}
 
-\item If you have problems with the install, run \verb!python dev_setup.py -h! for more information.  You can also set your \href{https://earthref.org/PmagPy/cookbook/#setting_path}{PATH manually} if dev\_setup.py fails.
+\item If you have problems with the install, run \verb!python dev_setup.py -h! for more information.  You can also set your \href{https://earthref.org/PmagPy/cookbook/#setting_path%7D%7BPATH manually} if dev\_setup.py fails.
 
 \item After completing the developer install, you should restart your command line.
 
@@ -125,13 +121,13 @@ pmag_gui.py
 
 \end{itemize}
 
-Remember that the program may be very slow to initialize the first time!  You may also need to resize the GUI window.  If the program doesn't open or you get an error message, go back and carefully follow the install instructions to make sure you didn't miss a step.  If you still have a problem, try the \href{https://earthref.org/PmagPy/cookbook/#trouble}{Troubleshooting section}.  If you don't find an answer there, check out the existing \href{https://github.com/PmagPy/PmagPy/issues}{Github issues} and create a new one if necessary.
+Remember that the program may be very slow to initialize the first time!  You may also need to resize the GUI window.  If the program doesn't open or you get an error message, go back and carefully follow the install instructions to make sure you didn't miss a step.  If you still have a problem, try the \href{https://earthref.org/PmagPy/cookbook/#trouble%7D%7BTroubleshooting section}.  If you don't find an answer there, check out the existing \href{https://urldefense.proofpoint.com/v2/url?u=https-3A__github.com_PmagPy_PmagPy_issues-257D-257BGithub&d=DwIGAg&c=-35OiAkTchMrZOngvJPOeA&r=HLmFoB00cDyPMQ7s6Fl35Q&m=9TB00hCAaShZt5cteDvwqhnCi3nTUrwrqW7n_PywH0XvmSc18bYYYeEFO5tqVczP&s=lC18TbUvH50cdj2c4_qWjsRCFVTSBW16Ts8BZwG-Wrw&e=  issues} and create a new one if necessary.
 
 \subsection{Finishing up}
 
 Accessing example data files:
 
-   There are many data files used in the examples of programs and for use with the textbook  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3.html}{Essentials of Paleomagnetism}.  You can find these in PmagPy/data\_files.
+   There are many data files used in the examples of programs and for use with the textbook  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3.html%7D%7BEssentials of Paleomagnetism}.  You can find these in PmagPy/data\_files.
 
 
 \subsection{Keeping PmagPy up-to-date}
@@ -142,10 +138,10 @@ Accessing example data files:
     git pull
 \end{verbatim}
 
-This will grab all of the latest code from \href{https://github.com/PmagPy/PmagPy}{Github}, and will be immediately available to you.
+This will grab all of the latest code from \href{https://urldefense.proofpoint.com/v2/url?u=https-3A__github.com_PmagPy_PmagPy-257D-257BGithub&d=DwIGAg&c=-35OiAkTchMrZOngvJPOeA&r=HLmFoB00cDyPMQ7s6Fl35Q&m=9TB00hCAaShZt5cteDvwqhnCi3nTUrwrqW7n_PywH0XvmSc18bYYYeEFO5tqVczP&s=_BjUqK_ECYG_3-K2Rv19gfJkPdQEunmP5R6AmD0kOoU&e= }, and will be immediately available to you.
 
 \section{Next steps}
 
-Back to the \href{https://earthref.org/PmagPy/cookbook/#next_steps}{Cookbook}!
+Back to the \href{https://earthref.org/PmagPy/cookbook/#next_steps%7D%7BCookbook%7D!
 
 \end{document}
