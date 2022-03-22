@@ -1,5 +1,7 @@
-git checkout gh-pages     # if you’re not already on that branch
+#git checkout gh-pages     # if you’re not already on that branch
 htlatex PmagPy "xhtml,1,sections+,charset=utf-8" -cmozhtf -utf8
-git add .
+# do htlatex on any other .tex files that were modified,  for example:
+# htlatex osx_developer.tex
 git commit -m “made some changes”
+git pull # to make sure your were on the current version
 git push
