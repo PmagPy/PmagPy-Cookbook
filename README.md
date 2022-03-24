@@ -28,6 +28,6 @@ Generating website after edits to the cookbook
 
     % htlatex osx_developer.tex
 
-6) Commit the changes to the files: git commit -a "describe changes here"
+6) Commit the changes to the files: git commit -a -m "describe changes here"
 
 7) Push the changes: git push 
