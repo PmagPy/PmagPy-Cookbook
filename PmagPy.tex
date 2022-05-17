@@ -79,7 +79,7 @@ doi:10.1002/2016GC006307.}
 \chapter{Installing {\bf PmagPy}}
 
 %To skip all the details and just start using \href{#pmag_gui.py}{Pmag GUI} or \href{#magic_gui.py}{MagIC GUI} to upload data into the \href{#MagICDatabase}{MagIC database}, or to analyze using \href{#thellier_GUI.py}{Thellier GUI} or \href{#DemagGUI}{Demag GUI}, start here.
-You have three options for downloading and using PmagPy.
+You have multiple options for  using PmagPy.
 
 \begin{itemize}
 \item If you only want to use the graphical user interfaces (GUIs), you can download them as  \href{#standalone}{standalone programs}.  The standalone install doesn't require that you have Python, but is more limited than the full PmagPy install.
@@ -93,6 +93,14 @@ If you want the full {\bf PmagPy} functionality, you have two options:
   \item You can use pip to download and install the {\bf PmagPy} function library and the \href{#full_install}{{\bf PmagPy} command line} programs.
 
   \item If you want to actively participate in developing and modifying {\bf PmagPy}, you will do a \href{#full_install} {developer install}.
+\end{itemize}
+
+Alternatively, if you are familiar with Jupyter Notebooks and Python, you may want to use the pmagpy package without downloading anything, you should go to the our online option:
+\begin{itemize}
+\item If you do not have an earthref account, go to \href{https://earthref.org/log-in} {https://earthref.org/log-in} and create an account with your ORCID.  If you do not have one of those, you need to get one.  
+\item Once you have logged in, go to the website: \href{https://jupyterhub.earthref.org}{https://jupyterhub.earthref.org} and login with your earthref account
+\item Click on the `PmagPy Online - Setup.ipynb'  link and follow the instructions.  
+\item To learn more about Jupyter notebooks and Python, check out the online class for Earth Scientists: \href{https://github.com/ltauxe/Python-for-Earth-Science-Students}{https://github.com/ltauxe/Python-for-Earth-Science-Students}
 \end{itemize}
 
 
@@ -1471,8 +1479,7 @@ table\qquad &Brief description\\
  {\bf sites}\qquad & site level data, including geographic information, site averages of sample data, etc.\\
  {\bf samples}\qquad & sample level data, including orientation, sampling methods, sample averages of specimen data etc.\\
   {\bf specimens}\qquad & specimen level data, including interpretations of best-fit lines, planes, paleointensity, etc.\\
-   \hline
-   {\bf measurements} \qquad & \hskip 1em measurement data used in the study\\
+   {\bf measurements} \qquad &  measurement data used in the study\\
    {\bf ages}\qquad &age information.\\
    {\bf criteria}\qquad &criteria used in study for data selection\\
    {\bf images}\qquad & images associated with the study\\
